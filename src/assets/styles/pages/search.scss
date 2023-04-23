@@ -1,0 +1,484 @@
+$maxModalHeight-pc: 1030px;
+$maxModalHeight-tb: 600px;
+$popupSpacing: 48px;
+$searchHeader-pc: 56px;
+$searchHeader-tb: 64px;
+$searchHeader-mo: 60px;
+$categoryWrap-pc: 60px;
+$categoryWrap-tb: 64px;
+$categoryWrap-mo: 64px;
+
+.search-modal {
+  top: 25px;
+  overflow: hidden;
+  max-height: $maxModalHeight-pc;
+  padding-bottom: 0;
+  border-radius: 0;
+  box-shadow: 0 5px 20px rgb(0 0 0 / 20%);
+
+  @include md {
+    width: 640px !important;
+    max-width: calc(100vw - 128px);
+    max-height: $maxModalHeight-tb;
+  }
+
+  @include sm {
+    top: 0;
+    max-width: 100%;
+    height: calc((#{$vh} * 100));
+    max-height: calc((#{$vh} * 100));
+    border-radius: 0;
+    margin: 0;
+  }
+
+  .ant-modal-content {
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .ant-modal-close {
+    top: 16px;
+    right: 16px;
+
+    @include sm {
+      top: 18px;
+    }
+
+    .ant-modal-close-x {
+      width: auto;
+      height: auto;
+
+      svg {
+        width: 24px;
+        height: 24px;
+
+        @include md {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+
+  .ant-modal-header {
+    height: $searchHeader-pc;
+    padding: 16px 56px 0 16px;
+    border-radius: 0;
+    border-bottom-color: $gray50;
+
+    @include md {
+      height: $searchHeader-tb;
+      padding-right: 64px;
+    }
+
+    @include sm {
+      height: $searchHeader-mo;
+      padding: 18px 48px 0 18px;
+    }
+
+    .search-header {
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+
+    svg {
+      width: 24px;
+      height: 24px;
+      flex: none;
+      margin-right: 8px;
+
+      @include md {
+        width: 32px;
+        height: 32px;
+      }
+
+      @include sm {
+        display: none;
+      }
+    }
+
+    .search-input {
+      background: transparent;
+      caret-color: $gray00;
+      outline: none;
+
+      .ant-input-affix-wrapper {
+        border: none;
+
+        input {
+          height: 24px;
+          padding: 0;
+
+          @include placeholder($gray60);
+          @include fontFamilyInput(m);
+        }
+
+        .ant-input-clear-icon {
+          display: flex;
+          width: auto;
+          height: 20px;
+          align-items: center;
+          padding-right: 12px;
+          border-right: 1px solid $gray70;
+
+          span {
+            color: $gray60;
+
+            @include fontFamilyButton(sr);
+          }
+
+          @include sm {
+            padding-right: 0;
+            border-right: 0;
+          }
+        }
+      }
+
+      .ant-input-group-addon {
+        display: none;
+      }
+    }
+  }
+
+  .ant-modal-body {
+    padding: 0;
+
+    @include sm {
+      height: calc((#{$vh} * 100) - #{$searchHeader-mo});
+    }
+  }
+
+  // .trending-wrap {
+  //   height: calc((#{$vh} * 100) - $popupSpacing - $searchHeader-pc);
+  //   padding: 24px 32px;
+  //   overflow-y: auto;
+
+  //   @include sm {
+  //     height: calc((#{$vh} * 100) - $searchHeader-mo);
+  //     padding: 24px 20px;
+  //   }
+
+  //   & > strong {
+  //     display: block;
+
+  //     @include fontFamilyHeading(xs);
+  //   }
+
+  //   .trending-list {
+  //     display: flex;
+  //     flex-wrap: wrap;
+  //     margin-top: 16px;
+  //     gap: 12px 6px;
+
+  //     @include sm {
+  //       flex-direction: column;
+  //       gap: 10px;
+  //     }
+  //   }
+  // }
+
+  .history-wrap {
+    height: calc((#{$vh} * 100) - #{$popupSpacing - $searchHeader-pc});
+    max-height: calc(#{$maxModalHeight-pc - $popupSpacing - $searchHeader-pc});
+    padding: 12px 0;
+    background: $gray100;
+    overflow-y: auto;
+
+    @include scrollStyle;
+
+    @include md {
+      height: calc((#{$vh} * 100) - #{$popupSpacing - $searchHeader-tb});
+      max-height: calc(#{$maxModalHeight-tb - $searchHeader-tb});
+    }
+
+    @include sm {
+      height: calc((#{$vh} * 100) - #{$searchHeader-mo});
+      max-height: none;
+      padding: 8px 0;
+    }
+
+    .history-list {
+      li {
+        display: flex;
+        height: 40px;
+        align-items: center;
+        padding: 0 28px;
+
+        &:hover {
+          background: $gray90;
+        }
+
+        @include md {
+          height: 48px;
+          padding: 0 20px;
+        }
+
+        @include sm {
+          padding: 0 20px;
+        }
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+        flex: none;
+
+        @include md {
+          width: 32px;
+          height: 32px;
+        }
+      }
+
+      .history-button {
+        width: 100%;
+        height: 100%;
+        margin-left: 4px;
+        text-align: left;
+
+        @include ellipsis(1);
+        @include fontFamilyBody(mr);
+      }
+
+      .history-delete {
+        height: 100%;
+        color: $gray60;
+
+        @include fontFamilyBody(sr);
+      }
+    }
+  }
+
+  .result-wrap {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      right: 0;
+      width: 64px;
+      height: 60px;
+      background: linear-gradient(270deg, #fff 8.93%, rgb(255 255 255 / 0%) 100%);
+      content: "";
+    }
+
+    @include lg {
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  .category-wrap {
+    padding: 16px 24px;
+
+    @include md {
+      padding: 16px 24px;
+      overflow-x: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    @include sm {
+      display: block;
+      padding: 16px 20px 20px;
+      overflow-x: auto;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+
+    .category-list {
+      display: flex;
+
+      @include md {
+        width: fit-content;
+        padding-right: 24px;
+      }
+
+      @include sm {
+        width: fit-content;
+        padding-right: 20px;
+      }
+
+      li + li {
+        margin-left: 6px;
+      }
+    }
+  }
+
+  .result-content {
+    height: calc((#{$vh} * 100) - #{$popupSpacing - $searchHeader-pc - $categoryWrap-pc});
+    max-height: $maxModalHeight-pc - $popupSpacing - $searchHeader-pc - $categoryWrap-pc;
+    padding: 16px 24px;
+    overflow-y: auto;
+
+    @include scrollStyle;
+
+    @include md {
+      height: calc((#{$vh} * 100) - #{$popupSpacing - $searchHeader-tb - $categoryWrap-tb});
+      max-height: calc(#{$maxModalHeight-tb - $searchHeader-tb - $categoryWrap-tb});
+    }
+
+    @include sm {
+      height: calc((#{$vh} * 100) - #{$searchHeader-mo - $categoryWrap-mo});
+      max-height: none;
+      padding: 16px 20px;
+    }
+
+    &.empty {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .result-row {
+      & + .result-row {
+        margin-top: 32px;
+
+        @include sm {
+          margin-top: 24px;
+        }
+      }
+
+      // &.square {
+      //   .result-list {
+      //     .img-wrap {
+      //       border-radius: 0;
+      //     }
+      //   }
+      // }
+    }
+
+    .result-top {
+      display: flex;
+      align-items: baseline;
+
+      .name {
+        color: $gray00;
+
+        @include fontFamilyHeading(xs);
+      }
+
+      .count {
+        margin-left: 4px;
+        color: $gray00;
+
+        @include fontFamilyButton(mr);
+      }
+    }
+
+    .result-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding-top: 6px;
+      border-top: 1px solid $gray80;
+      margin-top: 8px;
+
+      li {
+        width: calc(50% - 12px);
+
+        @include sm {
+          width: 100%;
+        }
+
+        & + li {
+          @include sm {
+            margin-top: 12px;
+          }
+        }
+      }
+
+      a {
+        display: flex;
+        min-height: 52px;
+        align-items: center;
+        padding: 8px;
+
+        &:hover {
+          background: $gray90;
+        }
+      }
+
+      .img-wrap {
+        position: relative;
+        overflow: hidden;
+        width: 40px;
+        height: 40px;
+        flex: none;
+        border: 1px solid $gray80;
+
+        &.circle {
+          border-radius: 50%;
+        }
+      }
+
+      .desc-wrap {
+        width: calc(100% - 36px - 8px);
+        margin-left: 8px;
+
+        span {
+          display: block;
+          color: $gray00;
+
+          @include ellipsis;
+          @include fontFamilyBody(mr);
+
+          & + span {
+            color: $gray40;
+
+            @include fontFamilyBody(sr);
+          }
+        }
+      }
+    }
+
+    .infinite-loader {
+      margin: 12px auto 0;
+    }
+  }
+
+  .result-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 80px;
+    text-align: center;
+
+    @include md {
+      padding-bottom: 64px;
+    }
+
+    @include sm {
+      padding-bottom: 60px;
+    }
+
+    svg {
+      width: 72px;
+      height: 72px;
+
+      path {
+        fill: $gray80;
+      }
+    }
+
+    strong {
+      margin-top: 12px;
+      color: $gray00;
+
+      @include fontFamilyHeading(mb);
+    }
+
+    span {
+      margin-top: 2px;
+      color: $gray40;
+
+      @include fontFamilyBody(lr);
+    }
+  }
+}

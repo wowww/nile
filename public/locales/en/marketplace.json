@@ -1,0 +1,230 @@
+{
+  "collection": "Collection",
+  "nft": "NFT",
+  "onSale": "ON SALE",
+  "discoverBtn": "Discover Project",
+  "hero": {
+    "upcoming": "The auction for the <1>{{order}}</1> piece, '<0>{{name}}</0>' will begin soon. Check out this piece!",
+    "ongoingBeforeBidding": "There are <1>{{person}}</1> people viewing '<0>{{name}}</0>' right now. Make your bid now to be the owner of this NFT!",
+    "ongoingAfterBidding": "The first bid has been made on '<0>{{name}}</0>'. \nMake your bid now!",
+    "ongoingFixed": "There are <1>{{person}}</1> people viewing '<0>{{name}}</0>' right now. Buy it now to be the owner of this NFT!",
+    "textFirst": "first",
+    "textSecond": "second",
+    "nile": {
+      "article": "영문필요 환대"
+    },
+    "lus": {
+      "desc": "영국에서의 추억이 담긴 장소로 연결해 주는 264개의 작품을 만나보세요."
+    },
+    "tangled": {
+      "desc": "Tangled은 유저 모두가 커뮤니티 형성에 직접적으로 기여하고 서로 소통할 수 있는 Web3 라이브 커뮤니티 앱입니다."
+    },
+    "con": {
+      "desc": "신들의 도시 City of NILE의 첫번째 컬렉션 입니다. 88개의 PFP를 지금 만나보세요!"
+    }
+  },
+  "noTransaction": "no transaction history",
+  "ranking": {
+    "title": "Ranking",
+    "tabBtn": "Frequent Transactions",
+    "tabBtn2": "Highest last sale",
+    "notice": "Settled in order of the biggest number of transactions that occurred in a given period",
+    "notice2": "Settled in order of the most expensive latest sale price",
+    "unit": "Ranking",
+    "unit2": "NFT",
+    "unit3": "Transactions a"
+  },
+  "detailTop": {
+    "resultMsg": "{{name}} wins auction\nwith a bid of <0>{{price}}</0><0>{{mark}}</0>",
+    "linkText1": "Exchange WEMIX$",
+    "linkText1-1": "Exchange WEMIX",
+    "linkText2": "View NILE Guide",
+    "saleFeatureMessage": "'Creating listing' feature will be available soon.",
+    "offerFeatureMessage": "'Make Offer' feature will be available soon."
+  },
+  "bottom": {
+    "title": "NFT is for Everyone",
+    "notice": "NILE Marketplace is expanding into numerous new markets every day."
+  },
+  "listing": {
+    "title": "Listing",
+    "price": {
+      "placeholder": "Enter sale price."
+    },
+    "txt": "When this piece is sold for the price above, you will be getting this much as profits for this sale, excluding the fees shown below.",
+    "txt2": "When registering a piece for sale, the Gas Fee shown below will occur.",
+    "txt2-1": "If you cancel or modify the registered sale, the Gas Fee shown below will occur.",
+    "txt3": "NILE Platform Fee {{rate}} %",
+    "txt4": "Creator Profit Distribution {{rate}} %",
+    "txt5": "Estimated Total Profits",
+    "txt6": "Gas Fee for Sale Registration: variable",
+    "txt7": "Estimated Gas Fee",
+    "txt8": "A Gas Fee as shown below occurs for ownership transfer.",
+    "txt9": "Transfer Gas Fee : variable",
+    "placeholder1": "Please enter your Wallet address.",
+    "setStartingDate": "Set earliest sale time"
+  },
+  "buyMysteryBox": "Buy Mystery Box",
+  "snkrzInfo": "The SNKRZ Details page will be available from November 17th.",
+  "creator": "Rokkan Kim",
+  "collectionDetail": {
+    "lus": {
+      "desc": "Check out the collection of London Underground Stations(LUS) 264 Genesis that describes 264 London stations in Pixel art."
+    },
+    "son": {
+      "desc": "‘Sights of NILE’ is a project where the columns published by NILE, and the illustrations in ‘Story3.0’ articles are turned into NFT form, and NILE aims to touch on various trends and opinions on blockchain through the ‘Story3.0’ column. The diverse opinions of experts from various fields such as the arts, economics and blockchain will be condensed into inspired illustrations from Creators. NILE proposes to talk about the Web3 ecosystem that WEMIX dreams of in an original way - with the ‘Sights of NILE’."
+    },
+    "cone": {
+      "desc": "This is the first PFP collectible of the City of NILE. Explore the 88 NFTs in the City of NEITH, represented by the goddess of creation and mother of all gods!"
+    },
+    "tangled": {
+      "desc": "Tangled Timepieces is a NEITH NFT in NILE which allows you to claim WEMIX after a certain period of time upon purchasing the NFT. You can breed to obtain a High End Timepiece by using the upcoming Breeding Feature. The higher the rank of your Timpiece, the more WEMIX you can claim."
+    },
+    "kari": {
+      "desc": "Kari is an expansion of the virtual human multiverse world of the Ari project, and is the second project from the artist Doonbo. Become a Holder of Kari, the Korean dark-fantasy female warrior, and join in the various activities in the PAPYRUS community."
+    },
+    "cora": {
+      "desc": "This is the second PFP collectible of City of NILE. Discover the 88 NFTs of City of RA, a city built around the sun god Ra, who is considered the father of all things."
+    },
+    "snkrz": {
+      "desc": "The Starter Pack is designed to help new users get comfortable with SNKRZ. Meet three pairs of shoes, Nile-exclusive Epic Skin, random skin, and various items through the Starter Pack!"
+    }
+  },
+  "collectionPage": {
+    "title": "London Underground Station(LUS) 264 Genesis",
+    "desc": "Check out the collection of London Underground Stations(LUS) 264 Genesis that describes 264 London stations in Pixel art.",
+    "headBtn": "Go to About This Collection",
+    "head": {
+      "btn": "Discover Project",
+      "btn2": "NFT Holder Benefits and Starting Bid Guide",
+      "btn3": "How to purchase",
+      "btn4": "Go to NEITH Station",
+      "data": {
+        "1": "Total Number of NFTs",
+        "2": "On Auction",
+        "6": "On Sale",
+        "3": "Floor Price",
+        "4": "Total Transaction Volume",
+        "5": "Auction Closed",
+        "7": "Sale Closed"
+      }
+    },
+    "searchPlaceholder": "Look up an NFT name.",
+    "nftName": "NFT name",
+    "type": "Type",
+    "transactionAmount": "Transaction Amount",
+    "time": "Date and Time",
+    "noSearch": "There are no search results.",
+    "noSearchKeyword": "There are no search results for '{{keyword}}'.",
+    "filter": {
+      "1": "All",
+      "2": "Sales",
+      "3": "Listing",
+      "4": "Offers",
+      "5": "Transfers"
+    },
+    "refund": "Get Refund",
+    "neithDesc": "The NEITH Station is a new type of NEITH NFT that bears WEMIX under the promise of NEITH, the goddess of creation. Holders of this NFT can claim the covenant amount of WEMIX on or after the Covenant Date. The Covenant Value is disclosed transparently in NEITH Vault.",
+    "tangledDesc": "The Tangled are NFT for the Tangled community, with access permitted only for the extraordinary. Grab the chance the be a Luxury Holder before anyone else and try your luck at combining to get a higher grade. Only the chosen 1% will succeed in combining and having a limited-edition, a top tier NFT.",
+    "neithClaim": {
+      "title": "How to purchase and claim NEITH NFTs",
+      "0": "View the NEITH NFTs in the Marketplace or Project tab (look for the NEITH NFT symbol).",
+      "1": "Check the Covenant conditions in the collection page. The period and benefits for each collection may differ.",
+      "2": "Link your Wallet prior to purchase. Transactions will be quicker if you already own enough WEMIX$ for the purchase.",
+      "3": "Purchase the NFT with WEMIX$, and gas fees will be applied in WEMIX.",
+      "4": "Trading of each NFT will be available until the NFT is claimed.",
+      "5": "You can proceed to claim in the NEITH Station upon or after Covenant Date.",
+      "6": "Once you select Covenant Claim in the NEITH Station, the selected NEITH NFT will be burned on the NEITH Altar, and WEMIX stored in NEITH Vault will be transferred to your Wallet. (gas fees will occur upon claim)."
+    }
+  },
+  "bidResultPage": {
+    "successTitle": "Bid successful",
+    "successDesc": "Once the auction is over, you will be notified.",
+    "cancelTitle": "Bid has been canceled",
+    "cancelDesc": "The canceled bid money has been returned to the Wallet.",
+    "checkoutCompleteTitle": "NFT claimed",
+    "checkoutCompleteDesc": "The NFT is available in your Wallet.",
+    "refundTitle": "Bid Returned!",
+    "refundDesc": "Your bid has been safely returned.",
+    "purchaseTitle": "NFT bought!",
+    "purchaseDesc": "Successfully bought NFT!"
+  },
+  "retractingTooltip": "이전 입찰 내역을 취소할 수 있습니다. \n취소 시 Gas Fee가 발생합니다.",
+  "dontGetOfferTooltip": "판매를 위해 판매등록 하지 않더라도, 내가 보유한 NFT에 관심이 있는 사용자가 자유롭게 가격을 제안할 수 있습니다. 가격 제안을 받고 싶지 않다면 미판매 상태로 변경해 주세요. 상태 변경 시 Gas Fee를 지불해야 합니다.",
+  "getOfferTooltip": "가격 제안을 받고 싶다면 Open for Offers 상태로 변경해 주세요. 판매를 위해 판매등록 하지 않더라도, 내가 보유한 NFT에 관심이 있는 사용자가 자유롭게 가격을 제안할 수 있게 됩니다. 상태 변경 시 Gas Fee를 지불해야 합니다.",
+  "listProcess": {
+    "waitingForConfirmation": {
+      "contTitle": "Listing",
+      "title": "Checking Wallet…",
+      "desc": "Your Wallet has been verified."
+    },
+    "waitingForListing": {
+      "contTitle": "Register for Sale",
+      "title": "Registering NFT for Sale…",
+      "desc": "Marketplace NFT registration has been requested, \nand transaction will be activated soon."
+    },
+    "successfully": {
+      "contTitle": "Listing",
+      "title": "NFT Registered for Sale!",
+      "desc": "NFT successfully registered for sale in the Marketplace."
+    },
+    "resultEdit": {
+      "contTitle": "Change Sale Registration",
+      "title": "NFT Re-registered for Sale!",
+      "desc": "NFT successfully re-registered for sale in the Marketplace."
+    },
+    "resultCancel": {
+      "contTitle": "Cancel Sale",
+      "title": "NFT Sale Canceled!",
+      "desc": "NFT sale successfully canceled in the Marketplace."
+    },
+    "resultChangeNotForSale": {
+      "contTitle": "Change Status",
+      "title": "Status changed!",
+      "desc": "NFT status successfully changed to 'Not for Sale'."
+    },
+    "resultAccept": {
+      "title": "Sale complete!",
+      "desc": "Congratulations. Your NFT has been successfully sold at a good price."
+    },
+    "resultChange": {
+      "title": "Status Changed!",
+      "desc": "NFT status successfully changed to 'Open for Offers'."
+    },
+    "transfer": {
+      "title": "Transferred successfully",
+      "desc": "Your transfer has been successfully completed."
+    }
+  },
+  "offerProcess": {
+    "title": "Make an offer",
+    "desc": "When your offer is accepted, the NFT transaction will be fulfilled."
+  },
+  "detailHistory": {
+    "1": "Minted on the {{1}}.",
+    "2": "{{1}} started to sell.",
+    "3": "{{1}} placed the bid.",
+    "4": "{{1}} canceled the bid.",
+    "5": "{{1}} won the auction.",
+    "6": "{{1}} bought with {{2}} {{3}}.",
+    "7": "{{1}} made the offer of {{2}} {{3}}.",
+    "8": "{{1}} canceled the offer of {{2}} {{3}}.",
+    "9": "{{1}}’s offer of {{2}} {{3}} was expired.",
+    "10": "{{1}} bought with the offer of {{2}} {{3}}.",
+    "11": "Listed by {{1}}.",
+    "12": "{{1}} transferred to {{2}}."
+  },
+  "sonCollection": {
+    "desc": "How to purchase",
+    "q1": "What is the NFT issuing cycle like?",
+    "a1": "The NFT issuing cycle of the 'Sights of NILE' is the same as the publishing cycle of 'Story3.0' articles. Currently 'Story3.0' articles are \nplanned to be published twice every month, and a new illustration NFT will be made public and auction proceedings will take \nplace every time a new article is published.",
+    "q2": "How can I participate in auctions?",
+    "a2": "You can participate right away in the ongoing auctions in 'Marketplace', and also check the works in auction through the NFT tab on the \n'Life' project details page.",
+    "q3": "How are auctions advanced?",
+    "a3": "The English auction is used (the highest bidder is successful). Each subsequent bid is required to be higher than the previous bid, \nand the bidding is only available in $. The highest bid is kept for 3 hours after the bid is made, and the bid is confirmed as successful \nonce there are no additional bids made in those 3 hours.",
+    "q4": "How can I withdraw my intention to buy after my bid is successful?",
+    "a4": "It is impossible to withdraw your intention to buy after your bid is successful. Please be careful and take caution when making your \ndecision. By default, bids also cannot be withdrawn. Only in cases when there are higher bids can bids exceptionally be withdrawn. \n(However, Gas Fees must be paid)"
+  },
+  "nileBannerTitle": "SON #5 Borderless Era",
+  "claimInfo": "How to purchase and claim NEITH NFTs"
+}

@@ -1,0 +1,3839 @@
+.header {
+  &.active {
+    & + div {
+      .dao-sticky-tab-wrap {
+        .ant-tabs-nav {
+          top: 60px;
+
+          @include daoLg {
+            top: 104px;
+          }
+
+          @include daoMd {
+            top: 104px;
+            background-color: $gray100;
+          }
+
+          @include daoSm {
+            top: 112px;
+            background-color: $gray100;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-tabs > .ant-tabs-nav {
+  .ant-tabs-nav-operations {
+    display: none;
+  }
+}
+
+// start: dao - recruiting
+.station-section-title {
+  @include fontFamilyNHeading(MB_F);
+}
+
+.station-participate-wrap {
+  padding-top: 8px;
+  border-radius: 4px;
+  background-color: $gray100;
+
+  @include daoMd {
+    padding-top: 0;
+  }
+
+  &:not(:first-child) {
+    margin-top: 24px;
+
+    @include daoMd {
+      margin-top: 12px;
+    }
+
+    @include daoSm {
+      margin-top: 20px;
+    }
+  }
+
+  &.before-acquire-refund {
+    .history-wrap .list-type-dot .bold-colored-text {
+      @include themeChangeMixin(color, 1);
+
+      font-weight: 600;
+    }
+  }
+
+  @include daoSm {
+    padding: 0;
+  }
+
+  &.has-more-btn {
+    padding-bottom: 0;
+  }
+
+  .title-wrap {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    .left {
+      display: flex;
+      flex-direction: column;
+
+      .title-desc {
+        @include fontFamilyBody(mr);
+
+        margin-top: 12px;
+        color: $gray60;
+      }
+    }
+
+    .ant-btn {
+      width: 200px;
+    }
+  }
+
+  .box-wrap {
+    display: flex;
+    margin-top: 20px;
+
+    @include daoMd {
+      margin-top: 16px;
+    }
+
+    @include daoSm {
+      flex-direction: column;
+      margin-top: 16px;
+    }
+
+    .box {
+      @include themeChangeMixin(background-color, 3);
+
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      padding: 24px 60px;
+      border-radius: 4px;
+
+      @include daoMd {
+        padding: 21px 24px;
+      }
+
+      @include daoSm {
+        justify-content: flex-start;
+        padding: 21px 24px;
+      }
+
+      & + .box {
+        margin-left: 16px;
+
+        @include daoMd {
+          margin-left: 12px;
+        }
+
+        @include daoSm {
+          margin-top: 8px;
+          margin-left: 0;
+        }
+      }
+
+      svg {
+        width: 60px;
+        height: 60px;
+
+        @include daoSm {
+          width: 48px;
+          height: 48px;
+        }
+      }
+
+      .text-wrap {
+        margin-left: 16px;
+
+        @include daoMd {
+          margin-left: 12px;
+        }
+
+        .info-name {
+          @include fontFamilyNCaption(MR_F_Caption);
+
+          color: $gray30;
+        }
+
+        .figure-wrap {
+          margin-top: 8px;
+
+          @include daoMd {
+            margin-top: 4px;
+          }
+
+          .figure {
+            @include fontFamilyData(m3);
+          }
+
+          .unit {
+            @include fontFamilyData(sr);
+
+            margin-left: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  .history-wrap {
+    position: relative;
+    overflow: hidden;
+    height: auto;
+    margin-top: 16px;
+    transition: all 0.3s;
+    will-change: max-height;
+
+    @include daoMd {
+      margin-top: 16px;
+    }
+
+    @include daoSm {
+      margin-top: 24px;
+    }
+
+    & + a,
+    & + button {
+      margin-top: 16px;
+
+      @include daoSm {
+        width: 100%;
+      }
+    }
+
+    &.open {
+      max-height: 500px;
+    }
+
+    > li {
+      position: relative;
+      padding-left: 16px;
+
+      & > button {
+        position: absolute;
+        top: 0;
+        right: 0;
+
+        @include daoMd {
+          position: static;
+          margin-top: 8px;
+        }
+
+        @include sm {
+          position: static;
+          width: 100%;
+          margin-top: 12px;
+        }
+      }
+
+      .list-type-dot {
+        li {
+          @include fontFamilyNBody(MR_F);
+        }
+      }
+
+      & + li {
+        margin-top: 24px;
+
+        @include daoSm {
+          margin-top: 20px;
+        }
+
+        @include daoMd {
+          @include fontFamilyBody(sr);
+        }
+      }
+    }
+
+    > li::before {
+      @include themeChangeMixin(background-color, 1);
+
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      content: "";
+    }
+
+    .history-title-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include daoSm {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .left {
+        display: flex;
+        flex-direction: column;
+
+        .history-title {
+          @include fontFamilyNBody(LB_F);
+        }
+
+        .date {
+          @include fontFamilyData(cs);
+
+          margin-top: 8px;
+          color: $gray60;
+
+          @include daoSm {
+            margin-top: 4px;
+          }
+        }
+      }
+
+      .ant-btn {
+        width: 208px;
+
+        @include daoMd {
+          width: 232px;
+        }
+
+        @include daoSm {
+          margin-top: 16px;
+        }
+      }
+    }
+
+    .list-type-dot {
+      margin-top: 8px;
+
+      .bold-text {
+        color: $gray30;
+        font-weight: 600;
+      }
+
+      .bold-colored-text {
+        @include themeChangeMixin(color, 1);
+
+        &.number {
+          font-weight: 600;
+        }
+
+        color: $gray30;
+      }
+    }
+  }
+
+  & + .last-recruiting-result-wrap {
+    padding-top: 40px;
+    border-top: 1px solid $gray80;
+    margin-top: 40px;
+
+    @include daoSm {
+      padding-top: 40px;
+      margin-top: 16px;
+    }
+  }
+}
+
+.last-recruiting-result-wrap {
+  // border-radius: 4px;
+  margin-top: 24px;
+  background-color: $gray100;
+
+  .last-recruiting-result-header {
+    display: flex;
+    justify-content: space-between;
+
+    @include daoSm {
+      flex-direction: column;
+    }
+
+    .desc {
+      @include fontFamilyBody(sr);
+
+      margin-top: 8px;
+      color: $gray30;
+
+      @include daoSm {
+        margin-top: 4px;
+      }
+    }
+
+    .left {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .right {
+      display: flex;
+      margin-left: 40px;
+
+      @include daoSm {
+        position: relative;
+        border: 1px solid $gray80;
+        margin-top: 16px;
+        margin-left: 0;
+      }
+
+      &::before {
+        @include daoSm {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          width: 1px;
+          height: 40px;
+          background-color: $gray80;
+          content: "";
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .info-box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        @include daoSm {
+          flex-basis: 50%;
+          align-items: center;
+          justify-content: center;
+          padding: 16px 12px;
+        }
+
+        & + .info-box {
+          position: relative;
+          margin-left: 48px;
+
+          @include daoSm {
+            margin-left: 0;
+          }
+
+          &::before {
+            position: absolute;
+            top: 2px;
+            left: -24px;
+            width: 1px;
+            height: 100%;
+            background-color: $gray80;
+            content: "";
+
+            @include daoSm {
+              content: none;
+            }
+          }
+        }
+
+        .info-name {
+          @include fontFamilyNCaption(MR_F_Caption);
+
+          color: $gray30;
+          text-align: right;
+
+          @include daoLg {
+            white-space: pre-line;
+          }
+
+          @include daoMd {
+            white-space: pre-line;
+          }
+
+          @include daoSm {
+            text-align: center;
+
+            // @include fontFamilyNCaption(SR_F_Caption);
+            @include fontFamilyData(cs); /* 23.04.11 수정: 4/6 검수 - 스테이션 오류 수정 기준 */
+          }
+        }
+
+        .info-detail {
+          margin-top: 8px;
+
+          .figure {
+            @include fontFamilyData(sb);
+          }
+
+          .unit {
+            @include fontFamilyData(cs);
+
+            margin-left: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  &.has-btn {
+    .result-item-list-wrap {
+      &.more {
+        .result-item {
+          &::after {
+            @include themeChangeMixin(background-color, 1);
+
+            display: block;
+          }
+        }
+      }
+    }
+
+    .show-more-btn {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      margin-bottom: -24px;
+    }
+  }
+
+  .result-item-list-wrap {
+    overflow: hidden;
+    height: auto;
+    padding: 24px;
+    border: 1px solid $gray80;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: max-height 0.3s;
+
+    @include daoMd {
+      margin-top: 16px;
+    }
+
+    @include daoSm {
+      padding: 0;
+      border: none;
+      margin-top: 24px;
+    }
+
+    .result-item {
+      position: relative;
+      padding-left: 20px;
+
+      &::before {
+        @include themeChangeMixin(background-color, 1);
+
+        position: absolute;
+        top: 6px;
+        left: 0;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        content: "";
+      }
+
+      &::after {
+        // @include themeChangeMixin(background-color, 1);
+
+        position: absolute;
+        top: 8px;
+        left: 4px;
+        display: none;
+        width: 1px;
+        height: calc(100% + 40px);
+        content: "";
+        transform: translateX(-50%);
+      }
+
+      &:last-child::after {
+        content: none;
+      }
+
+      &.fail {
+        .list-type-dot li .colored.bold {
+          color: $gray30;
+        }
+      }
+
+      & + .result-item {
+        margin-top: 40px;
+      }
+
+      .lottie {
+        position: absolute;
+        top: 0;
+        left: 168px;
+        width: 172px;
+        height: auto;
+
+        @include daoMd {
+          left: 160px;
+        }
+      }
+
+      .result-item-header {
+        display: flex;
+        align-items: center;
+
+        strong {
+          @include fontFamilyHeading(s);
+
+          @include daoSm {
+            width: 76px;
+            word-wrap: break-word;
+          }
+        }
+
+        .tag {
+          margin-left: 4px;
+
+          @include daoSm {
+            height: 24px;
+            padding: 6px;
+          }
+        }
+      }
+
+      .date {
+        @include fontFamilyData(cs);
+
+        margin-top: 8px;
+        color: $gray60;
+      }
+
+      .list-type-dot {
+        margin-top: 8px;
+
+        li {
+          padding-left: 8px;
+
+          @include fontFamilyBody(sr);
+
+          .colored {
+            @include themeChangeMixin(color, 1);
+
+            &.fail {
+              color: $gray30;
+            }
+          }
+
+          .bold {
+            font-weight: 600;
+          }
+
+          &::before {
+            top: 7px;
+          }
+        }
+
+        @include daoMd {
+          margin-top: 16px;
+        }
+
+        @include daoSm {
+          margin-top: 16px;
+        }
+
+        li + li {
+          @include daoSm {
+            margin-top: 8px;
+          }
+        }
+      }
+
+      .info-box-list {
+        display: grid;
+        margin-top: 16px;
+        gap: 8px;
+        grid-template-columns: repeat(6, 1fr);
+
+        @include daoXl {
+          gap: 12px;
+        }
+
+        @include daoMd {
+          grid-template-columns: repeat(3, 1fr);
+        }
+
+        @include daoSm {
+          margin-top: 12px;
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        li {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 16px 6px;
+          border: 1px solid $gray80;
+
+          @include daoXl {
+            padding: 16px 8px;
+          }
+
+          @include daoSm {
+            padding: 16px 2px;
+          }
+
+          span {
+            text-align: center;
+          }
+
+          .info-name {
+            @include fontFamilyBody(cs);
+
+            color: $gray30;
+          }
+
+          .info-contents {
+            @include fontFamilyData(sb);
+
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            margin-top: 8px;
+            color: $gray30;
+            text-align: center;
+
+            .unit {
+              @include fontFamilyData(cs);
+
+              margin-left: 4px;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+
+      &.fail {
+        .list-type-dot .colored {
+          color: $negative;
+        }
+      }
+    }
+  }
+}
+
+.station-participate-wrap,
+.last-recruiting-result-wrap,
+.dao-station-tab {
+  .show-more-btn {
+    @include fontFamilyButton(sr);
+
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0;
+
+    svg {
+      margin-left: 4px;
+    }
+
+    &.open svg {
+      transform: rotate(180deg);
+    }
+  }
+}
+
+.additional-recruit-wrap {
+  border-radius: 4px;
+  background-color: $gray100;
+
+  .additional-recruit-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 24px 20px;
+
+    @include daoSm {
+      flex-direction: column;
+      padding: 24px 20px 20px;
+    }
+
+    .desc {
+      @include fontFamilyBody(sr);
+
+      margin-top: 8px;
+      color: $gray30;
+    }
+
+    .right {
+      margin-left: 24px;
+
+      @include daoSm {
+        margin-top: 20px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .station-recruit-item-wrap {
+    padding: 20px 24px;
+
+    .period-wrap {
+      flex-basis: calc(50% - 8px);
+
+      .caption-wrap {
+        margin-top: 20px;
+
+        @include daoSm {
+          margin-top: 12px;
+        }
+
+        .progress {
+          display: flex;
+
+          @include daoMd {
+            flex-direction: column;
+          }
+
+          @include daoSm {
+            flex-direction: column;
+          }
+
+          .inner + .inner {
+            position: relative;
+            margin-top: 0;
+            margin-left: 32px;
+
+            @include daoMd {
+              margin-top: 8px;
+              margin-left: 0;
+            }
+
+            @include daoSm {
+              margin-top: 8px;
+              margin-left: 0;
+            }
+
+            &::before {
+              position: absolute;
+              top: 0;
+              left: -16px;
+              width: 1px;
+              height: 20px;
+              background-color: $gray80;
+              content: "";
+
+              @include daoSm {
+                content: none;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .data-wrap {
+      flex-basis: calc(50% - 8px);
+      margin-left: 16px;
+
+      @include daoSm {
+        margin-left: 0;
+      }
+    }
+  }
+
+  .btn-area {
+    display: flex;
+    justify-content: flex-end;
+    padding: 16px 24px;
+    border-top: 1px solid $gray80;
+
+    @include daoSm {
+      flex-direction: column;
+    }
+
+    .ant-popover-open > .ant-btn {
+      @include daoSm {
+        width: 100%;
+      }
+    }
+
+    .ant-popover-open + .ant-btn {
+      margin-left: 8px;
+
+      @include daoSm {
+        margin-top: 8px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  & + .station-participate-wrap {
+    margin-top: 24px;
+
+    @include daoSm {
+      margin-top: 8px;
+    }
+  }
+}
+
+.dao-station-tab {
+  .ant-tabs-top {
+    .ant-tabs-nav {
+      position: relative;
+      border-bottom: 0 !important;
+
+      &::after {
+        @include content;
+
+        position: absolute;
+        z-index: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $gray80;
+      }
+
+      .ant-tabs-nav-wrap {
+        z-index: 1;
+        justify-content: center;
+
+        @media (max-width: 380px) {
+          justify-content: flex-start !important;
+        }
+      }
+    }
+  }
+}
+
+.station-sticky-tab-wrap {
+  .ant-tabs-nav {
+    border-bottom: 0 !important;
+
+    &::after {
+      @include content;
+
+      position: absolute;
+      z-index: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $gray80;
+    }
+
+    .ant-tabs-nav-wrap {
+      z-index: 1;
+    }
+  }
+}
+
+.station-tab-contents-wrap {
+  // padding: 38px 24px 24px;
+  padding-top: 8px;
+
+  @include daoLg {
+    padding-top: 16px;
+  }
+
+  .recruit-section-title {
+    @include fontFamilyHeading(mr);
+  }
+
+  @include daoSm {
+    padding: 0;
+  }
+
+  .participant-procedure-wrap {
+    margin-top: 38px;
+
+    @include daoSm {
+      margin-top: 28px;
+    }
+
+    @include daoMd {
+      margin-top: 34px;
+    }
+
+    .recruit-wrapper-title {
+      @include fontFamilyHeading(s);
+    }
+  }
+
+  .station-dao-introduce-wrap + .recruit-section-title {
+    padding-top: 40px;
+    border-top: 1px solid $gray80;
+    margin-top: 40px;
+  }
+
+  .dao-works-wrap .work-list > li:first-child {
+    border-top: none;
+  }
+
+  .dao-works-wrap .work-list > li:not(.distribution-method-item) .img-area {
+    margin-left: 40px;
+
+    @include daoSm {
+      margin-left: 0;
+    }
+  }
+
+  .dao-works-wrap .work-list > li .text-area .desc {
+    padding-right: 0;
+  }
+
+  .dao-works-wrap .work-list > li.distribution-method-item {
+    padding-top: 0;
+    border-top: none;
+    margin-top: 24px;
+
+    .distribution-method-wrap {
+      margin-top: 0;
+    }
+
+    & + li {
+      padding-top: 0;
+      border-top: none;
+      margin-top: 24px;
+    }
+  }
+
+  .business-management-wrap {
+    padding-bottom: 40px;
+    margin-top: 40px;
+
+    @include daoSm {
+      padding-bottom: 20px;
+    }
+
+    .detail-wrap {
+      margin-top: 40px;
+    }
+  }
+
+  .reward-flow-img-area {
+    @include daoLg {
+      margin-top: 24px;
+    }
+  }
+
+  .reward-flow-img-area .desc-list {
+    @include daoLg {
+      padding-left: 104px;
+    }
+  }
+
+  .station-members-card-view-list {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include daoMd {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include daoSm {
+      grid-template-columns: repeat(1, 1fr);
+    }
+
+    li {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 16px;
+      border: 1px solid $gray80;
+      border-radius: 4px;
+
+      .recent-activity-date {
+        @include fontFamilyData(cs);
+
+        position: absolute;
+        top: 12px;
+        right: 11px;
+        color: $gray60;
+      }
+
+      .user-id {
+        @include fontFamilyHeading(s);
+
+        margin-top: 8px;
+      }
+
+      .user-introduce {
+        @include fontFamilyNBody(MR_F);
+
+        min-height: 44px;
+        margin-top: 8px;
+        color: $gray30;
+        text-align: center;
+      }
+
+      .info-box {
+        @include themeChangeMixin(background-color, 3);
+
+        width: 100%;
+        padding: 16px;
+        margin-top: 16px;
+
+        > dl:nth-child(2) {
+          margin-top: 12px;
+        }
+
+        dl {
+          text-align: center;
+
+          dt {
+            @include fontFamilyData(cs);
+
+            color: $gray30;
+          }
+
+          dd {
+            @include fontFamilyData(sb);
+
+            margin-top: 8px;
+
+            .unit {
+              margin-left: 4px;
+
+              @include fontFamilyData(cs);
+
+              font-weight: 400;
+            }
+          }
+        }
+
+        .count-wrap {
+          display: flex;
+          padding-top: 12px;
+          border-top: 1px solid $gray80;
+          margin-top: 12px;
+
+          dl {
+            // width: 120px;
+            flex-basis: calc(50% - 8px);
+          }
+
+          dl + dl {
+            margin-left: 16px;
+          }
+        }
+      }
+
+      .date-area {
+        width: 100%;
+        margin-top: 8px;
+
+        .info-row {
+          display: flex;
+          width: 100%;
+          justify-content: space-between;
+
+          & + .info-row {
+            margin-top: 2px;
+          }
+
+          > span {
+            @include fontFamilyNBody(SR_F);
+
+            color: $gray30;
+          }
+        }
+      }
+    }
+  }
+
+  .participant-procedure-wrap .procedure-list > li .list-type-dot {
+    @include daoMd {
+      margin-top: 0;
+    }
+  }
+
+  .dao-wrap .participant-procedure-wrap + .recruit-section-title {
+    @include daoMd {
+      margin-top: 80px;
+    }
+  }
+
+  .dao-wrap .dao-works-wrap .work-list > li:not(.distribution-method-item) .text-area .desc {
+    @include daoMd {
+      margin-top: 16px;
+    }
+  }
+
+  .dao-wrap .dao-works-wrap .work-list > li:not(.distribution-method-item) .text-area .link {
+    @include daoMd {
+      margin-top: 24px;
+    }
+  }
+
+  .ant-tabs-top.tab-type.tab-dao .ant-tabs-nav {
+    @include daoSm {
+      padding: 0 20px;
+    }
+  }
+
+  .participant-procedure-wrap .procedure-list.two-columns {
+    @include daoSm {
+      gap: 12px;
+      grid-template-columns: 1fr;
+    }
+  }
+
+  .recruit-section-title + .dao-works-wrap {
+    @include daoSm {
+      margin-top: 28px;
+    }
+  }
+
+  .dao-works-wrap .work-list > li:not(.distribution-method-item) .text-area .link {
+    @include daoSm {
+      margin-top: 20px;
+    }
+  }
+
+  .view-switch-button-wrap {
+    justify-content: space-between;
+
+    .member-count {
+      @include fontFamilyNBody(SB_F);
+    }
+
+    .button-area {
+      display: flex;
+      align-items: center;
+
+      @include daoSm {
+        .ant-btn {
+          &:nth-child(3) {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .table-view-wrap {
+    .pagination-wrap {
+      margin-top: 12px;
+    }
+  }
+}
+
+.station-dao-introduce-wrap {
+  display: flex;
+
+  @include daoMd {
+    flex-direction: column-reverse;
+  }
+
+  @include daoSm {
+    flex-direction: column-reverse;
+  }
+
+  .text-area {
+    padding: 36px 0;
+
+    @include daoLg {
+      padding: 25px 0;
+    }
+
+    @include daoMd {
+      padding: 32px 0 0;
+    }
+
+    @include daoSm {
+      padding: 24px 0 0;
+    }
+
+    .title {
+      @include fontFamilyHeading(mb);
+    }
+
+    .desc {
+      @include fontFamilyBody(mr);
+
+      margin-top: 16px;
+    }
+
+    .ant-btn {
+      margin-top: 20px;
+
+      @include daoMd {
+        margin-top: 24px;
+      }
+    }
+  }
+
+  .img-wrap {
+    position: relative;
+    width: 400px;
+    height: 240px;
+    flex-shrink: 0;
+    margin-left: 48px;
+
+    @include daoMd {
+      width: auto;
+      margin-left: 0;
+    }
+
+    @include daoSm {
+      width: auto;
+      height: 160px;
+      margin: 0 -24px;
+    }
+
+    img {
+      @include daoMd {
+        object-fit: cover;
+      }
+
+      @include daoSm {
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+.dao-sticky-tab-wrap {
+  border-radius: 4px;
+  background: $gray100;
+
+  @include daoMd {
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+
+  .dao-sticky-tab {
+    .ant-tabs-nav {
+      position: sticky;
+      z-index: 11;
+      top: 0;
+      border-radius: 4px 4px 0 0;
+      border-bottom: 1px solid $gray80;
+      background-color: $gray100;
+      transition: top 0.3s;
+
+      @include daoLg {
+        top: 44px;
+      }
+
+      @include daoMd {
+        top: 44px;
+        /* stylelint-disable-next-line scss/no-global-function-names */
+        background-color: nth($daoWonder, 4);
+      }
+
+      @include daoSm {
+        top: 55px;
+        /* stylelint-disable-next-line scss/no-global-function-names */
+        background-color: nth($daoWonder, 4);
+      }
+
+      // TODO: 확인 필요
+      @include md {
+        margin-bottom: 24px;
+      }
+
+      @include sm {
+        margin-bottom: 24px;
+      }
+
+      .ant-tabs-nav-wrap {
+        justify-content: center;
+      }
+
+      .ant-tabs-tab {
+        padding: 22px 20px;
+
+        & + .ant-tabs-tab {
+          margin-left: 0 !important;
+        }
+
+        @include daoMd {
+          padding: 20px;
+        }
+
+        @include daoSm {
+          padding: 18px 20px;
+        }
+
+        &.ant-tabs-tab-active > .ant-tabs-tab-btn {
+          @include themeChangeMixin(color, 1);
+          @include fontFamilyUi(tabmb);
+        }
+
+        .ant-tabs-tab-btn {
+          @include fontFamilyUi(tabmr);
+        }
+      }
+    }
+  }
+
+  .ant-tabs-content {
+    overflow: hidden;
+    padding: 0 24px;
+
+    @include daoLg {
+      padding: 0 44px;
+    }
+
+    @include daoMd {
+      padding: 0 44px;
+    }
+
+    @include daoSm {
+      padding: 0 20px;
+    }
+
+    .station-tab-content {
+      .tab-content-title {
+        padding: 22px 0;
+        text-align: center;
+
+        @include md {
+          padding: 18px 0;
+        }
+
+        @include sm {
+          padding: 12px 0;
+        }
+
+        .title {
+          color: $gray00;
+
+          @include fontFamilyHeading(mb);
+        }
+      }
+    }
+  }
+
+  .list-dot-wrap {
+    margin-top: 4px;
+
+    & + .title {
+      margin-top: 16px;
+    }
+
+    > li {
+      position: relative;
+
+      &.tooltip-row {
+        z-index: 2;
+      }
+
+      z-index: 1;
+      padding-left: 8px;
+      color: $gray30;
+
+      @include fontFamilyNBody(MR_F);
+
+      @include sm {
+        padding-left: 8px;
+      }
+
+      & + li {
+        margin-top: 4px;
+      }
+
+      &::before {
+        position: absolute;
+        z-index: 10;
+        top: 9px;
+        left: 0;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: $gray30;
+        content: "";
+
+        @include md {
+          top: 8px;
+        }
+
+        @include sm {
+          top: 8px;
+        }
+      }
+
+      > ul > li {
+        position: relative;
+        color: $gray30;
+        white-space: pre-line;
+
+        & + li {
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+}
+
+// StationTitle
+
+.station-title-wrap {
+  display: flex;
+  align-items: bottom;
+  justify-content: space-between;
+  padding-bottom: 20px;
+
+  @include md {
+    padding-bottom: 16px;
+  }
+
+  @include daoSm {
+    display: block;
+    padding-bottom: 16px;
+  }
+
+  .title-inner {
+    .title {
+      @include fontFamilyNHeading(MB_F);
+
+      color: $gray00;
+    }
+
+    .desc {
+      margin-top: 8px;
+
+      @include fontFamilyBody(sr);
+
+      color: $gray30;
+    }
+  }
+
+  .content-inner {
+    &:not(:empty) {
+      margin: auto 0 0 8px;
+
+      @include daoMd {
+        margin: 8px 0 0;
+      }
+
+      @include sm {
+        margin: 12px 0 0;
+      }
+    }
+  }
+}
+
+// OperationProtocol
+.operation-protocol-wrap {
+  margin-top: 16px;
+
+  @include md {
+    margin-top: 24px;
+  }
+
+  @include sm {
+    margin-top: 24px;
+  }
+
+  .operation-content-wrap {
+    border: 1px solid $gray80;
+  }
+
+  .protocol-item-wrap {
+    display: flex;
+
+    @include md {
+      flex-wrap: wrap;
+    }
+
+    @include sm {
+      flex-wrap: wrap;
+    }
+
+    .protocol-item {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      width: 100%;
+      height: 180px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px;
+      border-bottom: 1px solid $gray80;
+      transition: color 0.3s ease-in-out;
+
+      @include daoMd {
+        padding: 18px;
+      }
+
+      @include md {
+        width: 33.33%;
+      }
+
+      @include sm {
+        width: 33.33%;
+        height: 120px;
+        padding: 10px 0;
+      }
+
+      .item-name {
+        @include fontFamilyHeading(xs);
+
+        color: $gray00;
+        text-align: center;
+      }
+
+      .item-image {
+        width: 100%;
+        max-width: 120px;
+
+        @include sm {
+          padding: 0 17px;
+        }
+
+        svg {
+          width: 100%;
+          height: auto;
+
+          // @include sm {
+          //   width: 82px;
+          //   height: 58px;
+          // }
+        }
+      }
+
+      & + .protocol-item {
+        border-left: 1px solid $gray80;
+      }
+
+      @include md {
+        &:nth-child(3n-2) {
+          border-left: 0;
+        }
+      }
+
+      @include sm {
+        &:nth-child(3n-2) {
+          border-left: 0;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        z-index: -1;
+        top: -1px;
+        right: -1px;
+        bottom: -1px;
+        left: -1px;
+        content: "";
+        transition: background-color 0.3s ease-in-out;
+      }
+
+      &.active {
+        .item-name {
+          color: $gray100;
+        }
+
+        &::after {
+          @include themeChangeMixin(background-color, 1);
+        }
+      }
+    }
+  }
+
+  .protocol-content-wrap {
+    .content-item {
+      padding: 16px 24px;
+
+      @include sm {
+        padding: 16px;
+      }
+
+      .title {
+        display: block;
+
+        @include fontFamilyBody(mb);
+
+        color: $gray00;
+      }
+    }
+  }
+}
+
+// OperationToken
+.operation-token-wrap {
+  margin-top: 40px;
+
+  .operation-content-wrap {
+    display: flex;
+    overflow: initial;
+
+    @include md {
+      display: block;
+    }
+
+    @include sm {
+      display: block;
+    }
+
+    .swiper-wrapper + .swiper-pagination {
+      margin-top: 16px;
+    }
+
+    .item {
+      display: flex;
+      flex-basis: 50%;
+      padding: 23px 24px;
+      border: 1px solid $gray80;
+
+      @include md {
+        padding: 24px 16px 16px 24px;
+      }
+
+      @include sm {
+        display: block;
+        height: auto;
+        flex-basis: auto;
+        padding: 15px 16px;
+      }
+
+      & + .item {
+        margin-left: 8px;
+
+        @include md {
+          margin: 8px 0 0;
+        }
+
+        @include sm {
+          margin: 0;
+        }
+      }
+
+      .image-wrap {
+        svg {
+          width: 60px;
+          height: 60px;
+
+          @include sm {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+
+      .inner {
+        margin-left: 16px;
+
+        @include sm {
+          margin: 16px 0 0;
+        }
+
+        .sub {
+          display: block;
+
+          @include fontFamilyNBody(MR_F);
+
+          color: $gray30;
+        }
+
+        .token-name {
+          .name {
+            @include fontFamilyNBody(LB_F);
+
+            color: $gray00;
+          }
+
+          .ticker {
+            margin-left: 4px;
+            color: $gray00;
+
+            @include fontFamilyData(cl);
+          }
+        }
+
+        .token-desc {
+          margin-top: 8px;
+
+          @include fontFamilyNBody(MR_F);
+
+          color: $gray30;
+        }
+
+        .list-dot-wrap {
+          margin-top: 8px;
+
+          li {
+            @include fontFamilyNBody(SR_F);
+
+            @include sm {
+              white-space: pre-line;
+            }
+
+            & + li {
+              margin-top: 0;
+            }
+
+            &::before {
+              top: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// TokenFlowInfo
+.operation-tokenomics-wrap {
+  margin-top: 40px;
+
+  @include sm {
+    margin-top: 24px;
+  }
+
+  .check-item-wrap {
+    .check-item.reward {
+      .list-wrapper {
+        padding: 23px 0;
+        border: 1px solid $gray80;
+        margin-top: 0;
+        text-align: center;
+
+        @include md {
+          padding: 15px 70px 29px; // border 라인 때문에 수치 변경
+        }
+
+        @include sm {
+          padding: 12px 0 24px;
+        }
+
+        .list-wrap {
+          display: inline-flex;
+          font-size: 0;
+
+          @include md {
+            width: 532px;
+            flex-wrap: wrap;
+            justify-content: center;
+          }
+
+          @include sm {
+            display: block;
+          }
+
+          li {
+            $iconWidth: 48px;
+            $iconHeight: 8px;
+            $space: 4px;
+
+            width: 147px;
+            min-height: 132px;
+
+            @include daoLg {
+              width: 140px;
+            }
+
+            @include md {
+              width: 140px;
+            }
+
+            @include sm {
+              display: inline-flex;
+              width: 100%;
+              min-height: 64px;
+              align-items: center;
+              justify-content: center;
+              padding-right: 18px;
+            }
+
+            &:nth-child(2) {
+              @include sm {
+                .text-wrap {
+                  .name {
+                    white-space: pre-line;
+                  }
+                }
+              }
+            }
+
+            & + li {
+              position: relative;
+              z-index: 1;
+              margin-left: calc(#{$iconWidth + $space * 2});
+
+              @include daoLg {
+                margin-left: 48px;
+              }
+
+              @include sm {
+                margin: 20px 0 0;
+              }
+            }
+
+            .arrow {
+              position: absolute;
+              z-index: 10;
+              top: 50%;
+              left: calc(#{$iconWidth * -1 - $space});
+              margin-top: calc(#{$iconHeight / 2 * -1});
+
+              @include sm {
+                top: -20px;
+                left: 50%;
+                margin: 0 0 0 -3px;
+              }
+
+              svg {
+                width: $iconWidth;
+                height: $iconHeight;
+
+                .dao-individual {
+                  @include themeChangeMixin(fill, 1);
+                }
+
+                .dao-individual-stroke {
+                  @include themeChangeMixin(stroke, 1);
+                }
+
+                @include sm {
+                  width: 6px;
+                  height: 20px;
+                }
+              }
+            }
+
+            .img-wrap {
+              display: block;
+
+              svg {
+                width: 88px;
+                height: 88px;
+                margin: 0 auto;
+
+                @include sm {
+                  width: 64px;
+                  height: 64px;
+                }
+
+                .dao-individual {
+                  @include themeChangeMixin(fill, 1);
+                }
+
+                .dao-individual-sub {
+                  @include themeChangeMixin(fill, 2);
+                }
+              }
+            }
+
+            .text-wrap {
+              @include sm {
+                min-width: 108px;
+                text-align: left;
+              }
+
+              .name {
+                @include fontFamilyBody(sb);
+
+                color: $gray00;
+                white-space: pre-line;
+
+                @include md {
+                  @include fontsizeMixin(14, 22);
+                }
+
+                @include sm {
+                  text-align: left;
+                  white-space: normal;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .reward-flow-img-area {
+    padding-bottom: 25px;
+    margin-top: 8px;
+
+    @include md {
+      padding: 32px;
+    }
+
+    @include sm {
+      max-height: none;
+      padding: 24px 20px;
+    }
+
+    .img-area {
+      @include sm {
+        width: 280px;
+        margin: 32px auto 0;
+      }
+    }
+
+    .text-paragraph {
+      @include sm {
+        margin-top: 16px;
+      }
+    }
+
+    .desc-list {
+      padding-left: 152px;
+
+      @include md {
+        padding: 0;
+      }
+
+      @include sm {
+        padding: 0;
+      }
+    }
+  }
+}
+
+// Participate info
+.participate-info-wrap {
+  margin-top: 6px;
+
+  @include daoLg {
+    margin-top: 16px;
+  }
+
+  @include md {
+    margin-top: 24px;
+  }
+
+  @include sm {
+    margin-top: 24px;
+  }
+
+  .station-title-wrap {
+    @include daoLg {
+      padding-bottom: 16px;
+    }
+  }
+
+  .check-item.recruit {
+    .list-wrapper {
+      margin-top: 0;
+    }
+
+    .list-wrap {
+      display: flex;
+
+      @include daoLg {
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include daoMd {
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(3, 1fr);
+      }
+
+      @include md {
+        // flex-wrap: wrap;
+        // margin: -16px 0 0 -16px;
+      }
+
+      @include sm {
+        display: grid;
+        gap: 8px;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      li {
+        @include themeChangeMixin(background-color, 4);
+        @include themeChangeMixin(border-color, 2);
+
+        // width: 160px;
+        width: 100%;
+        border: 1px solid;
+
+        &:last-child .text-wrap .name {
+          // @include symbolStar;
+
+          @include sm {
+            white-space: normal;
+          }
+        }
+
+        & + li {
+          margin-left: 8px;
+
+          @include daoLg {
+            margin-left: 0;
+          }
+
+          @include md {
+            margin-left: 0;
+          }
+
+          @include sm {
+            margin-left: 0;
+          }
+        }
+
+        .text-wrap {
+          display: flex;
+          height: 100%;
+          min-height: 100px;
+          flex-direction: column;
+          justify-content: center;
+          padding: 16px 8px;
+          text-align: center;
+
+          .name {
+            @include fontFamilyNBody(MB_F);
+
+            white-space: pre-line;
+          }
+
+          .value {
+            display: flex;
+            align-items: flex-end;
+            justify-content: center;
+            margin-top: 8px;
+
+            @include fontFamilyData(sb);
+            @include themeChangeMixin(color, 1);
+
+            @include daoXl {
+              margin-top: 4px;
+            }
+
+            @include daoLg {
+              margin-top: 4px;
+            }
+
+            @include daoSm {
+              @include fontFamilyData(sb);
+            }
+
+            .unit {
+              margin-left: 4px;
+              font-weight: 400;
+
+              @include fontFamilyData(cs);
+              @include themeChangeMixin(color, 1);
+
+              @include daoSm {
+                @include fontFamilyData(cs);
+              }
+            }
+
+            .icon-wrap {
+              position: relative;
+              z-index: 1;
+              display: inline-block;
+              margin: 0 4px;
+              vertical-align: middle;
+
+              svg {
+                width: 16px;
+                height: 16px;
+
+                .dao-individual-stroke {
+                  @include themeChangeMixin(stroke, 1);
+                }
+              }
+            }
+          }
+
+          span.value {
+            display: block;
+            line-height: 1.2;
+          }
+
+          .sub {
+            margin-top: 6px;
+            color: $gray30;
+            white-space: pre-line;
+
+            @include fontFamilyData(cs);
+
+            @include md {
+              margin-top: 8px;
+            }
+
+            @include sm {
+              margin-top: 8px;
+
+              @include fontsizeMixin(12, 12);
+            }
+          }
+        }
+      }
+    }
+
+    .caution-list-wrap {
+      margin-top: 8px;
+
+      .dot-style {
+        span {
+          @include fontFamilyNBody(SR_F);
+
+          position: relative;
+          padding-left: 8px;
+          color: $gray30;
+
+          &::before {
+            position: absolute;
+            top: 6px;
+            left: 0;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background-color: $gray30;
+            content: "";
+          }
+        }
+
+        > ul {
+          margin-top: 4px;
+
+          > li {
+            @include fontFamilyNBody(SR_F);
+
+            color: $gray30;
+          }
+        }
+      }
+
+      li {
+        & + li {
+          margin-top: 4px;
+        }
+
+        &:last-child .desc {
+          @include symbolStar;
+        }
+
+        .desc {
+          @include fontFamilyBody(sr);
+
+          color: $gray30;
+
+          @include sm {
+            @include fontsizeMixin(12, 12);
+          }
+        }
+      }
+    }
+  }
+
+  & + .participant-procedure-wrap {
+    margin-top: 40px;
+  }
+}
+
+.station-tab-content-section {
+  margin-top: 40px;
+
+  .wrapper-title {
+    @include fontFamilyHeading(s);
+  }
+
+  .reward-flow-img-area {
+    padding: 40px;
+    margin-top: 0;
+
+    @include sm {
+      max-height: none;
+      padding: 24px 20px;
+    }
+
+    .img-area {
+      margin: 0 auto;
+
+      @include sm {
+        width: 100%;
+      }
+    }
+
+    .img-desc {
+      @include fontFamilyBody(cs);
+
+      max-width: 624px;
+      margin: 16px auto 0;
+      color: $gray60;
+    }
+  }
+}
+
+// ParticipantProcedure
+.participant-procedure-wrap {
+  margin-top: 16px;
+
+  @include daoSm {
+    margin-top: 24px;
+  }
+
+  .procedure-list {
+    display: grid;
+    overflow: initial;
+    gap: 8px;
+    grid-template-columns: repeat(3, 1fr);
+
+    // TODO: 사용하는 컴포넌트가 있는지 추후 확인 필요
+    &.two-columns {
+      grid-template-columns: repeat(2, 1fr);
+
+      @include sm {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+
+    @include md {
+      gap: 10px;
+      grid-template-columns: 1fr;
+      grid-template-rows: 3fr;
+    }
+
+    @include sm {
+      display: block;
+
+      // gap: 16px;
+      // grid-template-columns: 1fr;
+      // grid-template-rows: 3fr;
+    }
+
+    .swiper-wrapper + .swiper-pagination {
+      margin-top: 16px;
+    }
+
+    > li,
+    .swiper-slide {
+      padding: 24px;
+      border: 1px solid $gray80;
+
+      @include sm {
+        height: auto;
+      }
+
+      .right {
+        .list-type-dot {
+          .remark {
+            display: block;
+
+            @include fontFamilyBody(sb);
+          }
+
+          li {
+            @include fontFamilyNBody(MR_F);
+
+            & + li {
+              margin-top: 12px;
+
+              @include sm {
+                margin-top: 8px;
+              }
+            }
+          }
+        }
+
+        @include sm {
+          margin-top: 16px;
+        }
+      }
+
+      @include md {
+        display: flex;
+        padding: 24px;
+
+        .left {
+          width: 260px;
+          flex-shrink: 0;
+          margin-right: 52px;
+        }
+
+        .right {
+          flex: 1;
+        }
+      }
+
+      @include sm {
+        padding: 20px 16px 24px;
+      }
+
+      @include lg {
+        .right {
+          margin-top: 16px;
+        }
+      }
+
+      .step {
+        @include themeChangeMixin(background-color, 1);
+        @include fontFamilyChip(mr);
+
+        display: inline-block;
+        padding: 6px 12px;
+        border-radius: 24px;
+        color: $gray100;
+
+        @include daoMd {
+          padding: 8px 16px;
+        }
+
+        @include daoSm {
+          padding: 8px 12px;
+        }
+
+        & + .step-title {
+          margin-top: 20px;
+
+          @include fontFamilyNHeading(MB_F);
+
+          @include sm {
+            margin-top: 8px;
+          }
+        }
+      }
+
+      .intro {
+        @include fontFamilyNBody(MR_F);
+
+        display: block;
+        margin-top: 20px;
+
+        @include themeChangeMixin(color, 1);
+
+        @include md {
+          margin-top: 16px;
+        }
+
+        @include daoSm {
+          margin-top: 8px;
+        }
+      }
+
+      .step-title {
+        @include fontFamilyNHeading(MB_F);
+
+        display: block;
+        margin-top: 2px;
+      }
+
+      .list-dot-wrap {
+        margin-top: 16px;
+
+        @include md {
+          margin-top: 0;
+        }
+
+        li {
+          @include fontFamilyNBody(MR_F);
+
+          padding-left: 8px;
+
+          .remark {
+            display: block;
+            color: $gray30;
+            font-weight: 600;
+          }
+
+          button {
+            display: inline-block;
+            margin: 2px 0 0 4px;
+
+            svg {
+              width: 12px;
+              height: 12px;
+
+              path {
+                fill: $gray30;
+              }
+            }
+          }
+
+          .tooltip {
+            max-width: 240px;
+
+            .ant-popover-arrow {
+              @include md {
+                right: -4px;
+              }
+
+              @include sm {
+                right: -4px;
+              }
+            }
+
+            .tooltip-contents {
+              width: 240px;
+            }
+          }
+
+          & + li {
+            margin-top: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.reward-flow-img-area {
+  .text-area-title {
+    @include fontFamilyHeading(s);
+  }
+}
+
+// distribution method
+.distribution-method-wrap {
+  margin-top: 40px;
+
+  @include sm {
+    margin-top: 32px;
+  }
+
+  .text-area {
+    padding: 40px 0;
+    border: 1px solid $gray80;
+
+    @include daoMd {
+      padding: 32px 0;
+    }
+
+    @include daoSm {
+      padding: 20px 0;
+    }
+
+    .text-area-title {
+      @include fontFamilyHeading(s);
+    }
+
+    .text-paragraph {
+      @include fontFamilyBody(sr);
+
+      margin-top: 12px;
+      color: $gray30;
+      text-align: center;
+
+      @include md {
+        padding: 0 32px;
+      }
+
+      @include sm {
+        padding: 0 20px;
+        margin-top: 12px;
+      }
+
+      strong {
+        @include fontFamilyBody(mb);
+
+        color: $gray30;
+      }
+    }
+
+    .hidden-tooltip-btn {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+
+      &.first {
+        top: 80px;
+        right: 48px;
+      }
+
+      &.second {
+        top: 237px;
+        right: 48px;
+      }
+
+      &.third {
+        top: 496px;
+        right: 48px;
+      }
+    }
+
+    .popup-wrap.en {
+      .hidden-tooltip-btn {
+        &.first {
+          top: 96px;
+          right: 48px;
+        }
+
+        &.second {
+          top: 226px;
+          right: 48px;
+        }
+
+        &.third {
+          top: 506px;
+          right: 48px;
+        }
+      }
+    }
+  }
+
+  .img-area {
+    position: relative;
+    width: 624px;
+    margin: 0 auto;
+
+    @include sm {
+      width: 280px;
+    }
+
+    & > span {
+      position: unset !important;
+
+      > img {
+        position: relative !important;
+        height: auto !important;
+      }
+    }
+  }
+
+  .desc-list {
+    width: 624px;
+    margin: 16px auto 0;
+
+    @include daoMd {
+      margin-top: 24px;
+    }
+
+    @include daoSm {
+      width: 280px;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    li {
+      @include fontFamilyBody(cs);
+
+      color: $gray60;
+    }
+  }
+}
+
+// Recruit Member
+.recruiting-member-box {
+  margin-top: 24px;
+
+  @include daoMd {
+    margin: 12px -20px 0;
+  }
+
+  @include daoSm {
+    margin-top: 20px;
+  }
+
+  .date {
+    white-space: nowrap;
+  }
+
+  .dao-box {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+
+    @include daoMd {
+      padding: 16px 44px;
+      margin-bottom: 12px;
+    }
+
+    @include daoSm {
+      margin-bottom: 8px;
+    }
+  }
+}
+
+.recruit-member-wrap {
+  &:not(:first-child) {
+    margin-top: 24px;
+
+    @include daoMd {
+      margin-top: 12px;
+    }
+
+    @include daoSm {
+      margin-top: 20px;
+    }
+  }
+
+  .title {
+    @include fontFamilyHeading(mb);
+
+    display: block;
+    padding: 14px 0;
+    text-align: center;
+
+    b {
+      font-weight: 600;
+
+      @include themeChangeMixin(color, 1);
+    }
+  }
+
+  .recruit-member-table {
+    margin-top: 16px;
+
+    &.ant-table-wrapper {
+      .ant-table-container {
+        .ant-table-content {
+          background-color: transparent;
+        }
+      }
+    }
+
+    .member-cell {
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        .wallet-address {
+          text-decoration: underline;
+        }
+      }
+
+      .ant-avatar {
+        margin-right: 4px;
+      }
+    }
+
+    .amount-cell {
+      strong {
+        font-weight: 600;
+      }
+    }
+  }
+
+  .pagination-wrap {
+    margin-top: 0;
+  }
+}
+
+.station-members-table-contain {
+  width: 100%;
+  padding: 20px 24px;
+  border: 1px solid $gray80;
+  border-radius: 4px;
+  margin-bottom: 16px;
+
+  @include daoMd {
+    padding: 16px 24px;
+  }
+
+  @include daoSm {
+    padding: 16px 20px;
+  }
+
+  .members-wrap {
+    display: flex;
+
+    li + li {
+      margin-left: 16px;
+    }
+
+    @include daoSm {
+      flex-wrap: wrap;
+
+      li + li {
+        margin-left: 20px;
+
+        &:nth-child(3) {
+          margin-left: 0;
+        }
+      }
+    }
+
+    li {
+      width: 25%;
+      text-align: center;
+
+      @include daoSm {
+        width: calc(50% - 10px);
+        margin-top: 20px;
+
+        &:first-child {
+          margin-top: 0;
+        }
+
+        &:nth-child(2) {
+          margin-top: 0;
+        }
+      }
+
+      span {
+        color: $gray30;
+
+        @include fontFamilyBody(cs);
+      }
+
+      strong {
+        display: block;
+        margin-top: 8px;
+        color: $gray00;
+
+        @include fontFamilyData(m3);
+      }
+    }
+  }
+}
+
+// end: dao - recruiting
+
+// dao - station
+
+.dao-recruit-condition-wrap {
+  display: flex;
+  overflow: hidden;
+
+  // height: 360px;
+  border: 1px solid $gray80;
+  border-radius: 4px;
+  box-shadow: 0 9px 13px rgba(#ddd, 0.26);
+
+  &.completed {
+    .recruitment-lottie {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 50%;
+      width: 320px;
+      height: 254px;
+      transform: translate(-50%, 0);
+    }
+  }
+
+  &.completed,
+  &.failed {
+    height: auto;
+
+    .condition-card-wrap {
+      @include daoMd {
+        flex-wrap: wrap;
+        padding-bottom: 16px;
+      }
+    }
+
+    // .condition-title-wrap {
+    //   @include daoMd {
+    //     height: calc(276px + 48px);
+    //   }
+    // }
+  }
+
+  &.refund-completed {
+    .condition-title-wrap .participant-wrap {
+      display: none;
+    }
+  }
+
+  &.participant {
+    // height: 408px;
+
+    .condition-card-wrap {
+      @include daoMd {
+        min-height: 226px;
+        flex-wrap: wrap;
+      }
+    }
+
+    .condition-title-wrap {
+      @include daoMd {
+        height: auto;
+      }
+    }
+  }
+
+  &.failed {
+    .dao-recruit-condition-wrap .condition-card-wrap .recruitment-result-content {
+      @include fontFamilyBody(xlb);
+    }
+  }
+
+  &.recruiting {
+    height: auto;
+    margin-bottom: 24px;
+
+    @include md {
+      margin-bottom: 12px;
+    }
+
+    @include sm {
+      margin-bottom: 20px;
+    }
+
+    .condition-title-wrap .img-wrap {
+      bottom: -12px;
+    }
+  }
+
+  @include daoMd {
+    overflow: hidden;
+    height: auto;
+    flex-direction: column;
+  }
+
+  @include daoSm {
+    display: block;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .condition-title-wrap {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background: $gray100;
+
+    // @include daoMd {
+    //   height: 276px;
+    // }
+
+    @include daoSm {
+      background: transparent;
+    }
+
+    .text-wrap {
+      position: relative;
+      z-index: 1;
+      height: 100%;
+      padding: 40px;
+
+      @include daoMd {
+        padding: 32px;
+      }
+
+      @include daoSm {
+        padding: 20px 20px 16px;
+      }
+
+      .title {
+        @include fontFamilyPhrase(mb);
+        @include themeChangeMixin(color, 1);
+      }
+
+      .protocol-name {
+        @include fontFamilyDp(topl);
+
+        color: $gray00;
+      }
+
+      .protocol-desc {
+        @include fontFamilyBody(cardxl);
+
+        max-width: 366px;
+        margin-top: 24px;
+        color: $gray00;
+        white-space: pre-line;
+        word-break: break-word;
+
+        @include daoMd {
+          max-width: 466px;
+        }
+
+        @include daoSm {
+          max-width: none;
+          margin-top: 12px;
+        }
+      }
+
+      .protocol-sub-desc {
+        max-width: 330px;
+
+        @include fontFamilyBody(cardsr);
+
+        margin-top: 16px;
+        color: $gray30;
+        white-space: pre-line;
+
+        @include daoMd {
+          max-width: 466px;
+        }
+
+        @include daoSm {
+          display: none;
+          max-width: none;
+          margin-top: 8px;
+        }
+      }
+    }
+
+    .img-wrap {
+      position: absolute;
+      z-index: -1;
+      right: -81px;
+      bottom: 0;
+
+      @include daoSm {
+        display: none;
+      }
+
+      svg {
+        width: 280px;
+        height: 228px;
+      }
+    }
+
+    .participant-wrap {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      min-height: 63px;
+      align-items: center;
+      padding: 20px 40px;
+      margin-top: auto;
+
+      @include daoMd {
+        padding: 20px 0;
+      }
+
+      @include daoSm {
+        padding: 12px 20px;
+      }
+
+      &.additional,
+      &.participant {
+        border-top: 1px solid $gray80;
+        background: $gray100;
+
+        @include daoMd {
+          &::after {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            display: inline-block;
+            width: 1px;
+            height: 100%;
+            border-left: 1px solid $gray80;
+            content: "";
+            transform: translate(-50%, 0);
+          }
+        }
+
+        @include daoSm {
+          background: none;
+        }
+      }
+
+      &.additional:not(.participant) {
+        display: none;
+      }
+
+      .item {
+        display: flex;
+        align-items: center;
+
+        @include daoMd {
+          display: block;
+          width: 50%;
+          text-align: center;
+        }
+
+        @include daoSm {
+          display: block;
+          width: 50%;
+          text-align: center;
+        }
+
+        .name {
+          @include daoSm {
+            display: block;
+          }
+
+          @include fontFamilyBody(mr);
+
+          color: $gray00;
+        }
+
+        .value {
+          display: inline-flex;
+          align-items: flex-end;
+          margin-left: 8px;
+
+          @include fontFamilyData(m3);
+          @include themeChangeMixin(color, 1);
+
+          @include daoSm {
+            margin: 4px 0 0;
+          }
+
+          .unit {
+            margin-left: 4px;
+
+            @include fontFamilyData(sr);
+            @include themeChangeMixin(color, 1);
+
+            font-weight: 400;
+          }
+        }
+
+        & + .item {
+          @include daoSm {
+            border-left: 1px solid $gray80;
+          }
+
+          &::before {
+            display: inline-block;
+            width: 1px;
+            height: 16px;
+            margin: 0 24px;
+            background: $gray80;
+            content: "";
+
+            @include daoMd {
+              display: none;
+            }
+
+            @include daoSm {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .condition-card-wrap {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 480px;
+    flex-direction: column;
+    flex-shrink: 0;
+    padding: 24px 40px 32px;
+    margin-left: auto;
+
+    @include themeChangeMixin(background-color, 1);
+
+    @include daoLg {
+      width: 420px;
+      padding: 24px 27px 32px;
+    }
+
+    @include daoMd {
+      width: 100%;
+      min-height: 206px;
+      flex-direction: row;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding: 32px 24px;
+    }
+
+    @include daoSm {
+      width: auto;
+      padding: 20px;
+      border-radius: 4px;
+      margin: 0 20px;
+    }
+
+    .top-wrap {
+      text-align: center;
+
+      @include daoMd {
+        width: 300px;
+        flex: 0 0 300px;
+        margin-bottom: auto;
+        text-align: left;
+      }
+
+      .condition-main-title {
+        @include fontFamilyBody(xlb);
+
+        color: $gray100;
+        white-space: pre-line;
+
+        @include daoSm {
+          @include fontFamilyBody(lb);
+        }
+      }
+
+      .condition-sub-title {
+        padding: 0 40px 44px;
+        border-bottom: 1px solid rgba($gray100, 0.3);
+        margin: 8px -40px 0;
+
+        @include themeChangeMixin(color, 2);
+        @include fontFamilyBody(mr);
+
+        @include daoMd {
+          padding: 0;
+          border: none;
+          margin: 8px 0 0;
+        }
+
+        @include daoSm {
+          padding: 0 0 24px;
+          margin: 8px 0 0;
+
+          @include fontFamilyBody(sr);
+
+          white-space: pre-line;
+        }
+      }
+
+      .condition-date-wrap {
+        margin-top: 8px;
+
+        @include fontFamilyData(cl);
+        @include themeChangeMixin(color, 2);
+
+        @include daoSm {
+          @include fontFamilyBody(sr);
+        }
+      }
+
+      .recruitment-time {
+        margin-top: 16px;
+
+        @include daoMd {
+          margin-top: 20px;
+        }
+
+        @include daoSm {
+          padding-bottom: 20px;
+          border-bottom: 1px solid rgba($gray100, 0.2);
+          margin-top: 8px;
+        }
+
+        .time-flicker .unit-wrap {
+          @include daoSm {
+            height: 64px;
+          }
+        }
+      }
+    }
+
+    .recruitment-result-content {
+      display: flex;
+      min-height: 80px;
+      align-items: center;
+      justify-content: center;
+      padding: 16px 0;
+      border-radius: 2px;
+      margin-top: 20px;
+      color: $gray100;
+      text-align: center;
+      white-space: pre-line;
+
+      @include themeChangeMixin(background-color, 5);
+      @include fontFamilyBody(cardmb);
+
+      @include daoMd {
+        min-height: 70px;
+        padding: 11px 0;
+      }
+
+      @include daoSm {
+        min-height: 70px;
+        padding: 11px 0;
+        margin-top: 8px;
+      }
+    }
+
+    .recruitment-card-wrap {
+      padding: 22px 0 12px;
+
+      @include daoMd {
+        padding: 0 0 20px;
+      }
+
+      @include daoSm {
+        padding: 20px 0 8px;
+      }
+
+      &.notice {
+        .progress-type.reward-wrap {
+          @include daoSm {
+            min-height: 28px;
+          }
+
+          &::after {
+            @include daoSm {
+              top: 32px;
+            }
+          }
+
+          .progress-rate {
+            @include daoSm {
+              top: 12px;
+            }
+          }
+        }
+      }
+
+      // .progress-type.reward-wrap {
+      //   min-height: 72px;
+
+      //   @include sm {
+      //     min-height: 62px;
+      //   }
+
+      //   @include daoSm {
+      //     min-height: 62px;
+      //   }
+
+      //   &::before {
+      //     right: auto;
+      //     left: calc(var(--goal) - 16px / 2);
+      //     display: none;
+      //   }
+
+      //   &::after {
+      //     top: 38px;
+      //     height: 10px;
+
+      //     @include daoSm {
+      //       top: 32px;
+      //       height: 8px;
+      //     }
+      //   }
+
+      //   .progress-rate {
+      //     top: 18px;
+      //     height: 10px;
+
+      //     @include daoSm {
+      //       top: 12px;
+      //       height: 8px;
+      //     }
+
+      //     &::after {
+      //       top: 2px;
+
+      //       // right: 6px; //TODO:
+
+      //       @include daoSm {
+      //         top: 1px;
+      //       }
+      //     }
+      //   }
+
+      //   .notice {
+      //     position: absolute;
+      //     z-index: 10;
+      //     top: 0;
+      //     left: 0;
+
+      //     @include fontFamilyData(cl);
+
+      //     color: $gray100;
+      //   }
+
+      //   .guide {
+      //     display: flex;
+      //     align-items: center;
+
+      //     .percent {
+      //       @include fontFamilyData(m3);
+
+      //       color: $gray100;
+      //     }
+
+      //     .amount {
+      //       display: flex;
+      //       align-items: center;
+
+      //       @include fontFamilyData(m3);
+
+      //       color: $gray100;
+
+      //       &::before {
+      //         width: 1px;
+      //         height: 20px;
+      //         margin: 0 12px;
+      //         background: $gray100;
+      //         content: "";
+      //       }
+
+      //       .unit {
+      //         margin-left: 2px;
+
+      //         @include fontFamilyData(cl);
+
+      //         color: $gray100;
+      //         font-weight: 400;
+      //       }
+      //     }
+      //   }
+
+      //   .progress-line {
+      //     height: 18px;
+
+      //     @include daoSm {
+      //       height: 8px;
+      //     }
+
+      //     @include sm {
+      //       height: 20px;
+      //     }
+
+      //     .progress-goal {
+      //       position: absolute;
+      //       z-index: 10;
+      //       top: 8px;
+      //       left: calc(var(--goal) - 12px);
+
+      //       @include daoMd {
+      //         top: 7px;
+      //       }
+
+      //       @include daoSm {
+      //         top: 2px;
+      //       }
+
+      //       .img-goal {
+      //         position: relative;
+      //         z-index: 20;
+      //         top: -3px;
+
+      //         svg {
+      //           width: 14px;
+      //           height: 13px;
+      //         }
+
+      //         svg path {
+      //           stroke: $gray100;
+      //         }
+      //       }
+
+      //       .target-goal {
+      //         position: absolute;
+      //         z-index: 10;
+      //         right: 0;
+      //         bottom: -31px;
+      //         padding: 4px 6px;
+      //         border-radius: 12px;
+      //         border-radius: 20px;
+      //         color: $gray100;
+      //         white-space: nowrap;
+
+      //         @include fontFamilyData(cxs);
+      //         @include themeChangeMixin(background-color, 5);
+
+      //         @include daoMd {
+      //           bottom: -32px;
+      //         }
+
+      //         @include daoSm {
+      //           bottom: -23px;
+      //           padding: 2px 4px;
+      //         }
+
+      //         &.center {
+      //           transform: translate(calc(50% - 16px / 2), 0);
+      //         }
+      //       }
+      //     }
+      //   }
+
+      //   .chart-field-wrap {
+      //     margin-top: 20px;
+
+      //     @include daoSm {
+      //       margin-top: 20px;
+      //     }
+
+      //     .counting {
+      //       display: block;
+      //       max-width: 100px;
+      //       height: 24px;
+      //       color: $gray100;
+
+      //       .number {
+      //         margin-right: 2px;
+      //         color: $gray100;
+      //       }
+      //     }
+      //   }
+      // }
+    }
+
+    .bottom-wrap {
+      margin-top: auto;
+
+      @include daoMd {
+        display: flex;
+        width: calc(100% - 300px - 80px);
+
+        // flex: 0 0 calc(100% - 300px - 52px);
+        flex: 0 0 52%;
+        flex-direction: column;
+        margin-top: 0;
+
+        // margin: 0 0 0 80px;
+      }
+
+      .btn-wrap {
+        display: flex;
+
+        &.skeleton-button {
+          span {
+            width: 100%;
+          }
+        }
+
+        @include sm {
+          display: block;
+        }
+
+        .ant-btn {
+          @include sm {
+            width: 100%;
+          }
+
+          @include daoSm {
+            width: 100%;
+          }
+        }
+
+        @include daoSm {
+          display: block;
+        }
+
+        .ant-btn + .ant-btn {
+          margin-left: 8px;
+
+          @include daoSm {
+            margin: 8px 0 0;
+          }
+        }
+      }
+    }
+
+    .pc-guide {
+      @include daoMd {
+        display: none;
+      }
+
+      @include daoSm {
+        display: none;
+      }
+    }
+
+    .tm-guide {
+      width: 100%;
+
+      @include daoXl {
+        display: none;
+      }
+
+      @include daoLg {
+        display: none;
+      }
+    }
+
+    .guide-text {
+      margin-top: 8px;
+
+      @include fontFamilyBody(sr);
+
+      color: $gray100;
+      white-space: pre-line;
+
+      @include daoMd {
+        margin-top: 16px;
+        white-space: normal;
+      }
+
+      @include daoSm {
+        white-space: normal;
+      }
+    }
+  }
+}
+
+.recruiting-wrap {
+  .dao-recruit-condition-wrap {
+    & + .station-sticky-tab-wrap {
+      margin-top: 24px;
+
+      @include daoSm {
+        margin-top: 20px;
+      }
+    }
+  }
+
+  .participant-procedure-wrap {
+    margin-top: 40px;
+
+    @include daoSm {
+      margin-top: 32px;
+    }
+  }
+}
+
+.station-member-table {
+  .ant-table-content {
+    @include daoSm {
+      padding: 0 !important;
+      margin-left: 20px;
+    }
+  }
+}
+
+// RecruitmentConditionReward - 다오 모집 카드
+.recruitment-card-wrap {
+  &.dao-showcase {
+    .right {
+      .recruitment-main-content {
+        @include fontFamilyBody(cardmb);
+
+        @include sm {
+          white-space: pre-line;
+        }
+      }
+
+      .btn-wrap {
+        @include md {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+
+  .progress-type.reward-wrap {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-width: 329px;
+    min-height: 74px;
+
+    @include sm {
+      min-height: 58px;
+    }
+
+    @include daoSm {
+      min-width: auto;
+      min-height: 62px;
+    }
+
+    &::before {
+      right: auto;
+      left: calc(var(--goal) - 16px / 2);
+      display: none;
+    }
+
+    &::after {
+      @include content;
+      @include chartLine($left: 0, $top: 38px, $height: 10px);
+
+      width: 100%;
+      border-radius: 6px;
+      background: rgba($veryBlack, 0.3);
+
+      // @include sm {
+      //   // top: 54px;
+      //   height: 8px;
+      // }
+
+      @include sm {
+        top: 34px;
+        height: 8px;
+      }
+    }
+
+    .progress-line {
+      position: relative;
+      z-index: 1;
+      display: block;
+      height: 100%;
+
+      .progress-rate {
+        position: absolute;
+        z-index: 10;
+        display: block;
+        min-width: 10px;
+        transition: width 500ms;
+        will-change: width;
+
+        @include chartLine($left: 0, $top: 18px, $height: 10px);
+
+        @include sm {
+          top: 12px;
+          min-width: 8px;
+          height: 8px;
+        }
+
+        @include daoSm {
+          top: 12px;
+          height: 8px;
+        }
+
+        &::after {
+          @include content;
+
+          position: absolute;
+          z-index: 20;
+          top: 2px;
+          right: 2px;
+          width: 6px;
+          height: 6px;
+          border-radius: 100%;
+
+          .wonder & { /* 23.04.17 수정: nile home에서는 themeChangeMixin이 적용되지 않아, list-top-item에 wonder 클래스 이용하여 수정 */
+            background: nth($daoWonder, 1);
+          }
+
+          @include themeChangeMixin(background-color, 1);
+
+          @include sm {
+            top: 2px;
+            right: 2px !important;
+            width: 4px;
+            height: 4px;
+          }
+
+          @include daoSm {
+            top: 2px;
+            right: 2px;
+          }
+        }
+      }
+    }
+
+    .notice {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+
+      @include fontFamilyData(cl);
+
+      color: $gray100;
+    }
+
+    .guide {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      color: $white;
+
+      .percent {
+        @include fontFamilyData(m3);
+
+        color: $gray100;
+      }
+
+      .amount {
+        display: flex;
+        align-items: center;
+        color: $gray100;
+
+        @include fontFamilyData(m3);
+
+        &::before {
+          width: 1px;
+          height: 20px;
+          margin: 0 12px;
+          background: $gray100;
+          content: "";
+        }
+
+        .unit {
+          padding-top: 3px;
+          margin-left: 2px;
+
+          @include fontFamilyData(cl);
+
+          color: $gray100;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .progress-line {
+      height: 18px;
+
+      @include sm {
+        height: 21px;
+        margin-top: 3px;
+      }
+
+      @include daoSm {
+        height: 21px;
+      }
+
+      .progress-rate {
+        border-radius: 10px;
+        background: $white;
+      }
+
+      .progress-goal {
+        position: absolute;
+        z-index: 10;
+        top: 8px;
+        left: calc(var(--goal) - 12px);
+
+        @include daoMd {
+          top: 7px;
+        }
+
+        @include sm {
+          top: 2px;
+        }
+
+        @include daoSm {
+          top: 2px;
+        }
+
+        .img-goal {
+          position: relative;
+          z-index: 20;
+          top: -4px;
+
+          svg {
+            width: 17px;
+            height: 15px;
+
+            @include sm {
+              width: 14px;
+              height: 13px;
+            }
+          }
+
+          svg path {
+            stroke: $gray100;
+          }
+        }
+
+        .target-goal {
+          position: absolute;
+          z-index: 10;
+          right: 0;
+          bottom: -31px;
+          padding: 4px 6px;
+          border-radius: 12px;
+          border-radius: 20px;
+          color: $gray100;
+          white-space: nowrap;
+
+          @include fontFamilyData(cxs);
+          @include themeChangeMixin(background-color, 5);
+
+          @include md {
+            bottom: -32px;
+          }
+
+          @include sm {
+            bottom: -23px;
+            padding: 2px 4px;
+          }
+
+          &.center {
+            transform: translate(calc(50% - 16px / 2), 0);
+          }
+        }
+      }
+    }
+
+    .chart-field-wrap {
+      @include fontFamilyBody(cs);
+
+      margin-top: 20px;
+      color: $white;
+
+      @include sm {
+        margin-top: 6px;
+      }
+
+      .counting {
+        display: block;
+        max-width: 100px;
+        color: $gray100;
+        text-align: left;
+
+        .number {
+          margin-right: 2px;
+          color: $gray100;
+        }
+      }
+    }
+  }
+}

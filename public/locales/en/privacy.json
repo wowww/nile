@@ -1,0 +1,567 @@
+{
+  "privacy": {
+    "title": "Privacy Policy",
+    "ltd": "Last Update: October 13th, 2022",
+    "desc": "Pursuant to the law of the Personal Information Protection Act, the WEMIX PTE.LTD. (hereinafter “Company”) protects the personal information of the information subjects. The Company establishes and discloses privacy policy in the document to promptly and peacefully resolve related difficulties.",
+    "desc2": "The Company puts upmost value to the protection of the users’ personal information and does its best to protect the personal information provided to the Company online at the moment when users use Company’s WEMIX platform service (hereinafter “Service”). The Company, as an information and communication service provider, complies with the applicable laws pursuant to the Personal Information Protection Act.",
+    "desc3": "The Company uses personal information in certain use and methods in accordance with the Personal Information Protection Act and the Company discloses what measures are being processed for personal information protection.",
+    "desc4": "The Company possesses the right to revise the policy at any time. Any policies changed by the Company in the future shall be apprised through the website, app, and announcement and may ask users for their consent if required by the applicable law.",
+    "h3-1": {
+      "title": "Article 1 : Information to be collected and method of collection",
+      "1": {
+        "title": "(1) Personal information to be collected",
+        "1": {
+          "title": "Personal information to be collected by the Company are as follows :",
+          "1": "Information provided by the users ",
+          "text": "The Company may collect the information directly from the users.",
+          "table": {
+            "thead": {
+              "tr": {
+                "1": "Title of Service",
+                "2": "Information to be collected"
+              }
+            },
+            "tbody": {
+              "tr1": {
+                "1": "WEMIX Wallet",
+                "2": {
+                  "text": "Email address, WEMIX Wallet ID/address, Social network ID, One-way hashed password, Encrypted key"
+                }
+              },
+              "tr2": {
+                "1": "Personalized Advertising",
+                "2": {
+                  "text": "Website visit history of the user, Application usage history of the user, Search history of the user, Advertising ID"
+                }
+              },
+              "tr3": {
+                "1": "Game",
+                "2": {
+                  "text": "SNS ID, Email address, WEMIX Wallet address, Nickname, Equipment information"
+                }
+              },
+              "tr4": {
+                "1": "WEMIX Auction",
+                "2": {
+                  "text": "User name, Email address, WEMIX Wallet ID/Address, Phone number"
+                }
+              },
+              "tr5": {
+                "1": "WEMIX Support Center",
+                "2": {
+                  "text": "Email address, Device OS, Inquiry type, WEMIX Wallet ID, WEMIX Wallet address(Optional), personal information that user submitted for customer service(Optional)"
+                }
+              }
+            }
+          }
+        },
+        "2": {
+          "1": "Information collected during service usage of users",
+          "text": "Besides the information directly from the users, the Company may collect information in the course of service usage of the user",
+          "table": {
+            "thead": {
+              "tr": {
+                "1": "Title of Service",
+                "2": "Information to be collected"
+              }
+            },
+            "tbody": {
+              "tr1": {
+                "1": "WEMIX Wallet",
+                "2": {
+                  "text": "Email address, WEMIX Wallet ID/address, Social network ID, One-way hashed password, Encrypted key"
+                }
+              },
+              "tr2": {
+                "1": "Personalized Advertising",
+                "2": {
+                  "text": "Website visit history of the user, Application usage history of the user, Search history of the user, Advertising ID"
+                }
+              },
+              "tr3": {
+                "1": "Game",
+                "2": {
+                  "text": "SNS ID, Email address, WEMIX Wallet address, Nickname, Equipment information"
+                }
+              },
+              "tr4": {
+                "1": "WEMIX Auction",
+                "2": {
+                  "text": "User name, Email address, WEMIX Wallet ID/Address, Phone number"
+                }
+              },
+              "tr5": {
+                "1": "WEMIX Support Center",
+                "2": {
+                  "text": "Email address, Device OS, Inquiry type, WEMIX Wallet ID, WEMIX Wallet address(Optional), personal information that user submitted for customer service(Optional)"
+                }
+              }
+            }
+          }
+        },
+        "3": {
+          "1": "Optional information",
+          "text": "The user may reject the collection and use of optional information and, even in case of rejection, there is no limit on service usage.",
+          "table": {
+            "thead": {
+              "tr": {
+                "1": "Title of Service",
+                "2": "Information to be collected"
+              }
+            },
+            "tbody": {
+              "tr1": {
+                "1": "WEMIX Wallet",
+                "2": {
+                  "text": "Email address, WEMIX Wallet ID/address, Social network ID, One-way hashed password, Encrypted key"
+                }
+              },
+              "tr2": {
+                "1": "Personalized Advertising",
+                "2": {
+                  "text": "Website visit history of the user, Application usage history of the user, Search history of the user, Advertising ID"
+                }
+              },
+              "tr3": {
+                "1": "Game",
+                "2": {
+                  "text": "SNS ID, Email address, WEMIX Wallet address, Nickname, Equipment information"
+                }
+              },
+              "tr4": {
+                "1": "WEMIX Auction",
+                "2": {
+                  "text": "User name, Email address, WEMIX Wallet ID/Address, Phone number"
+                }
+              },
+              "tr5": {
+                "1": "WEMIX Support Center",
+                "2": {
+                  "text": "Email address, Device OS, Inquiry type, WEMIX Wallet ID, WEMIX Wallet address(Optional), personal information that user submitted for customer service(Optional)"
+                }
+              }
+            }
+          }
+        }
+      },
+      "2": {
+        "title": "(2) Method of collection",
+        "text": "The Company collects the information of users in a way of the followings:",
+        "1": "Webpage, written form, fax, telephone calling, emailing, tools for collection of created information",
+        "2": "Provided by partner companies"
+      },
+      "3": {
+        "title": "(3) Assignment of collected personal information",
+        "text1": "For carrying out services, the Company assigns external professional companies (subcontractors) to process personal information as follows. This assigning task of processing works only if necessary for providing the services.",
+        "text2": "When assigning the task of processing personal information to the subcontractors, the Company supervises the subcontractors and ensures the requirements in the agreement with subcontractors in order to secure safety of personal information. The requirements include, but are not limited to, strict compliance with directions regarding personal information protection, confidentiality of personal information, prohibition of disclosure to 3rd party, accountability for accidents, responsibility of returning or destruction of personal information upon termination of assignment agreement or completion of processing.",
+        "table": {
+          "thead": {
+            "tr": {
+              "1": "Title of Service",
+              "2": "Information to be collected"
+            }
+          },
+          "tbody": {
+            "tr1": {
+              "1": "WEMIX Wallet",
+              "2": {
+                "text": "Email address, WEMIX Wallet ID/address, Social network ID, One-way hashed password, Encrypted key"
+              }
+            },
+            "tr2": {
+              "1": "Personalized Advertising",
+              "2": {
+                "text": "Website visit history of the user, Application usage history of the user, Search history of the user, Advertising ID"
+              }
+            },
+            "tr3": {
+              "1": "Game",
+              "2": {
+                "text": "SNS ID, Email address, WEMIX Wallet address, Nickname, Equipment information"
+              }
+            },
+            "tr4": {
+              "1": "WEMIX Auction",
+              "2": {
+                "text": "User name, Email address, WEMIX Wallet ID/Address, Phone number"
+              }
+            },
+            "tr5": {
+              "1": "WEMIX Support Center",
+              "2": {
+                "text": "Email address, Device OS, Inquiry type, WEMIX Wallet ID, WEMIX Wallet address(Optional), personal information that user submitted for customer service(Optional)"
+              }
+            }
+          }
+        }
+      },
+      "4": {
+        "title": "(4) Details of provision of personal information to 3rd Party",
+        "text": "Except for the following cases, the Company does not disclose or provide personal information of the users to a 3rd party:"
+      },
+      "5": {
+        "title": "(5) Period of retention and use of personal information",
+        "text1": "In principle, the Company destructs personal information of users without delay when: the purpose of its collection and use has been achieved; the legal or management needs are satisfied; or users request.",
+        "text2": "The Company will retain the information if it is required to retain the information by relevant laws and regulations. The information to be retained as required by the relevant laws and regulations are as follows :",
+        "table": {
+          "thead": {
+            "tr": {
+              "1": "Title of Service",
+              "2": "Information to be collected"
+            }
+          },
+          "tbody": {
+            "tr1": {
+              "1": "WEMIX Wallet",
+              "2": {
+                "text": "Email address, WEMIX Wallet ID/address, Social network ID, One-way hashed password, Encrypted key"
+              }
+            },
+            "tr2": {
+              "1": "Personalized Advertising",
+              "2": {
+                "text": "Website visit history of the user, Application usage history of the user, Search history of the user, Advertising ID"
+              }
+            },
+            "tr3": {
+              "1": "Game",
+              "2": {
+                "text": "SNS ID, Email address, WEMIX Wallet address, Nickname, Equipment information"
+              }
+            },
+            "tr4": {
+              "1": "WEMIX Auction",
+              "2": {
+                "text": "User name, Email address, WEMIX Wallet ID/Address, Phone number"
+              }
+            },
+            "tr5": {
+              "1": "WEMIX Support Center",
+              "2": {
+                "text": "Email address, Device OS, Inquiry type, WEMIX Wallet ID, WEMIX Wallet address(Optional), personal information that user submitted for customer service(Optional)"
+              }
+            }
+          }
+        }
+      },
+      "6": {
+        "title": "(6) Procedure and method of destruction of personal information",
+        "text": "In principle, the Company destructs the information immediately after the purposes of its collection and use have been achieved: Provided that, if any information is to be retained as required by relevant laws and regulations, the Company retains it for the period as required by those laws and regulations before destruction and, in such event, the personal information which is stored and managed separately will not be used for other purposes. The Company destructs: hard copies of personal information by shredding with a pulverizer or incineration; and deletes personal information stored in the form of electronic file by using technological methods, ensuring that the personal information is impossible to be restored."
+      },
+      "7": {
+        "title": "(7) Technical, managerial and physical measures for protection of personal information",
+        "text": "In order to prevent the loss, theft, leakage, alteration or damage of personal information of the users, the Company takes technical, managerial and physical measures for securing safety as follows:",
+        "table": {
+          "thead": {
+            "tr": {
+              "1": "Title of Service",
+              "2": "Information to be collected"
+            }
+          },
+          "tbody": {
+            "tr1": {
+              "1": "WEMIX Wallet",
+              "2": {
+                "text": "Email address, WEMIX Wallet ID/address, Social network ID, One-way hashed password, Encrypted key"
+              }
+            },
+            "tr2": {
+              "1": "Personalized Advertising",
+              "2": {
+                "text": "Website visit history of the user, Application usage history of the user, Search history of the user, Advertising ID"
+              }
+            },
+            "tr3": {
+              "1": "Game",
+              "2": {
+                "text": "SNS ID, Email address, WEMIX Wallet address, Nickname, Equipment information"
+              }
+            },
+            "tr4": {
+              "1": "WEMIX Auction",
+              "2": {
+                "text": "User name, Email address, WEMIX Wallet ID/Address, Phone number"
+              }
+            },
+            "tr5": {
+              "1": "WEMIX Support Center",
+              "2": {
+                "text": "Email address, Device OS, Inquiry type, WEMIX Wallet ID, WEMIX Wallet address(Optional), personal information that user submitted for customer service(Optional)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "h3-2": {
+      "title": "Article 2 : Use of collected information",
+      "text": "The Company uses the collected information of users for the following purposes:",
+      "1": "User management and identification",
+      "2": "To detect and deter unauthorized or fraudulent use of or abuse of the Service",
+      "3": "Performance of contract, service fee payment and service fee settlement regarding provision of services demanded by the users",
+      "4": "Improvement of existing services and development of new services",
+      "5": "Making notice of function of company sites or applications or matters on policy amendment",
+      "6": "Use of information with prior consent of the users (for example, utilization of marketing advertisement)",
+      "7": "To make statistics on member’s service usage, to provide services and place advertisements based on statistical characteristics",
+      "8": "To provide information on promotional events as well as opportunity to participate",
+      "9": "To comply with applicable laws or legal obligation",
+      "10": "When necessary for uninterrupted provision of Service",
+      "desc": "The Company agrees that it will obtain a consent from the users, if the Company desires to use the information other than expressly stated in this Policy."
+    },
+    "h3-3": {
+      "title": "Article 3 : Disclosure of collected information",
+      "text": "Except for the following cases, the Company will not disclose personal information with a 3rd party:",
+      "1": {
+        "title": "1) When the Company discloses the information with its affiliates, partners and service providers;",
+        "1": "when the Company's affiliates, partners and service providers carry out services such as bill payment, execution of orders, products delivery and dispute resolution (including disputes on payment and delivery) for and on behalf of the Company"
+      },
+      "2": {
+        "title": "2) When the users consent to disclose in advance;",
+        "1": "when the user selects to be provided by the information of products and services of certain companies by sharing his or her personal information with those companies",
+        "2": "when the user selects to allow his or her personal information to be shared with the sites or platform of other companies such as social networking sites",
+        "3": "other cases where the user gives prior consent for sharing his or her personal information"
+      },
+      "3": {
+        "title": "3) When disclosure is required by the laws:",
+        "1": "if required to be disclosed by the laws and regulations; or",
+        "2": " if required to be disclosed by the investigative agencies for detecting crimes in accordance with the procedure and method as prescribed in the laws and regulations"
+      }
+    },
+    "h3-4": {
+      "title": "Article 4 : Cookies, Beacons and Similar Technologies",
+      "text": "The Company may collect collective and impersonal information through 'cookies' or 'web beacons'. Cookies are very small text files to be sent to the browser of the users by the server used for operation of the websites of the Company and will be stored in hard-disks of the users' computer. Web beacon is a small quantity of code which exists on the websites and emails. By using web beacons, we may know whether an user has interacted with certain webs or the contents of email. These functions are used for evaluating, improving services and setting-up users' experiences so that much improved services can be provided by the Company to the users.",
+      "1": {
+        "title": "The items of cookies to be collected by the Company and the purpose of such collection are as follows:",
+        "table": {
+          "thead": {
+            "tr": {
+              "1": "Title of Service",
+              "2": "Information to be collected"
+            }
+          },
+          "tbody": {
+            "tr1": {
+              "1": "WEMIX Wallet",
+              "2": {
+                "text": "Email address, WEMIX Wallet ID/address, Social network ID, One-way hashed password, Encrypted key"
+              }
+            },
+            "tr2": {
+              "1": "Personalized Advertising",
+              "2": {
+                "text": "Website visit history of the user, Application usage history of the user, Search history of the user, Advertising ID"
+              }
+            },
+            "tr3": {
+              "1": "Game",
+              "2": {
+                "text": "SNS ID, Email address, WEMIX Wallet address, Nickname, Equipment information"
+              }
+            },
+            "tr4": {
+              "1": "WEMIX Auction",
+              "2": {
+                "text": "User name, Email address, WEMIX Wallet ID/Address, Phone number"
+              }
+            },
+            "tr5": {
+              "1": "WEMIX Support Center",
+              "2": {
+                "text": "Email address, Device OS, Inquiry type, WEMIX Wallet ID, WEMIX Wallet address(Optional), personal information that user submitted for customer service(Optional)"
+              }
+            }
+          }
+        }
+      },
+      "desc": "The users have the choice for cookie installation. Thus, they may: 1) allow all cookies through settings in the web browser, 2) confirm each cookie save, or 3) refuse all cookies to be saved: Provided that, if the users reject the installation of cookies, use of certain services provided by the Company may be restricted."
+    },
+    "h3-5": {
+      "title": "Article 5 : User’s right",
+      "text": "The users or their legal representatives, as main agents of the information, may exercise the following rights regarding the collection, use and sharing of personal information by the Company:",
+      "1": "exercise right to access personal information;",
+      "2": "make corrections or deletion;",
+      "3": "make temporary suspension of treatment of personal information; or",
+      "4": " request the withdrawal of their prior consent",
+      "desc": "If, in order to exercise the above rights, user uses the menu of 'edit member information’ or contact the Company by sending a document or email to the Company (or person in charge of management of personal information or a deputy), the Company will take measures without delay: However, the Company may reject the request of you only to the extent that there exists either proper cause as prescribed in the laws or equivalent cause."
+    },
+    "h3-6": {
+      "title": "Article 6 : Security",
+      "text": "The Company regards the security of personal information of users as very important. The company constructs the following security measures to protect the users' personal information from any unauthorized access, release, use or modification :",
+      "1": {
+        "title": "1) Encryption of personal information",
+        "1": "Transmit users' personal information by using encrypted communication zone",
+        "2": "Store important information after encryption of such information."
+      },
+      "2": {
+        "title": "2) Counter-measures against hacking",
+        "1": "Install a system in the area to which external access is controlled so as to prevent leakage or damage of users' personal information by hacking or computer virus."
+      },
+      "3": {
+        "title": "3) Establish and execute internal management plan"
+      },
+      "4": {
+        "title": "4) Install and operate access control system"
+      },
+      "5": {
+        "title": "5) Take measures to prevent forging or alteration of access record"
+      }
+    },
+    "h3-7": {
+      "title": "Article 7 : Protection of personal information of Minor",
+      "text": "In principle, the Company does not collect any information from the minor under 18 or equivalent minimum age as prescribed in the laws in relevant jurisdiction. In principle, the website, application, products and services of the Company are to be provided to ordinary people. The website or application of the Company prevents minors from use of service through consent to age restriction, and through the consent the Company intentionally does not collect any personal information of minors."
+    },
+    "h3-8": {
+      "title": "Article 8 : Modification of Privacy Protection Policy",
+      "text": "The Company retains the right to amend or modify this Policy. In such cases, the Company makes a public notice of such amendments or modifications through bulletin board of its website (or through individual notice such as written document, fax or email) and obtains consent from the users if required by relevant laws."
+    },
+    "h3-9": {
+      "title": "Article 9 : Lawful processing of personal information under PDPA, GDPR",
+      "text1": "The Company complies with the Singapore Personal Data Protection Act 2012 and the domestic laws of each member country.",
+      "1": {
+        "title": "1) Processing personal information by the Company shall be lawful only if and to the extent that at least one of the following applies :",
+        "1": {
+          "1": {
+            "title": "A user has given consent to the processing of his or her personal information."
+          },
+          "2": {
+            "title": "Processing is necessary for the performance of a contract to which a user is party or provision of Service, or in order to take steps at the request of a user prior to entering into a contract or use of Service :",
+            "1": "Member management, identification, etc.",
+            "2": "Performance of a contract in relation to providing the services required by users, payment and settlement of fees or provision of Service, etc."
+          },
+          "3": {
+            "title": "Processing is necessary for compliance with a legal obligation to which the Company is subject",
+            "1": "Compliance with relevant law, regulations, legal proceedings, requests by the government"
+          },
+          "4": {
+            "title": "Processing is necessary in order to protect the vital interests of users, or other natural persons",
+            "1": "Detection of, prevention of, and response to fraud, abuse, security risks, and technical issues that may harm users or other natural persons"
+          },
+          "5": {
+            "title": "Processing is necessary for the performance of a task carried out in the public interest or in the exercise of official authority vested in the Company"
+          },
+          "6": {
+            "title": "Processing is necessary for the purposes of the legitimate interests pursued by the Company or by a third party (except where such interests are overridden by the interests or fundamental rights and freedoms of the data subject which require protection of personal data, in particular where the data subject is a minor)"
+          }
+        }
+      },
+      "2": {
+        "title": "2) User’s right under GDPR",
+        "text1": "The users or their legal representatives, as main agents of the information, may exercise the following rights regarding the collection, use and sharing of personal information by the Company:",
+        "1": {
+          "title": "The right to access to personal information :",
+          "text": "The users or their legal representatives may access the information and check the records of the collection, use and sharing of the information under the applicable law."
+        },
+        "2": {
+          "title": "The right to rectification",
+          "text": "The users or their legal representatives may request to correct inaccurate or incomplete information."
+        },
+        "3": {
+          "title": "The right to erasure:",
+          "text": "The users or their legal representatives may request the deletion of the information after the achievement of their purpose and the withdrawal of their consent."
+        },
+        "4": {
+          "title": "The right to restriction of processing :",
+          "text": "The users or their legal representatives may make temporary suspension of treatment of personal information in case of the disputes over the accuracy of information and the legality of information treatment, or if necessary to retain the information."
+        },
+        "5": {
+          "title": "The right to data portability :",
+          "text": "The users or their legal representatives may request to provide or transfer the information."
+        },
+        "6": {
+          "title": "The right to object :",
+          "text": "The users or their legal representatives may suspend the treatment of personal information if the information is used for the purpose of direct marketing, reasonable interests, the exercise  of official duties and authority, and research and statistics."
+        },
+        "7": {
+          "title": "The right to automated individual decision-making, including profiling :",
+          "text": "The users or their legal representatives may request to cease the automated treatment of personal information, including profiling, which has critical impact or cause legal effect on them."
+        },
+        "text2": "If, in order to exercise the above rights, you, as an user, use the menu of 'edit member information” of service or contact the Company by sending a document or emails, or using telephone to the Company (or person in charge of management of personal information or a deputy), the Company will take measures without delay: Provided that the Company may reject the request of you only to the extent that there exists either proper cause as prescribed in the laws or equivalent cause."
+      },
+      "3": {
+        "title": "3) Data transfer to other countries",
+        "text": "Considering that it engages in global businesses, the Company may provide the users' personal information to the companies located in other countries for the purpose as expressly stated in this Policy. For the places where the personal information is transmitted, retained or processed, the Company takes reasonable measures for protecting those personal information."
+      },
+      "4": {
+        "title": "4) 3rd party’s sites and services",
+        "text": "The website, product or service of the Company may include the links to the ones of a 3rd party and the privacy protection policy of the site of 3rd party may be different from that of the Company. Thus, it is required for the users to additionally review the policy of a 3rd party site linked to the site of the Company."
+      },
+      "5": {
+        "title": "5) Guide for users residing in California",
+        "text": "If the user resides in California, certain rights may be given. The Company prepares preventive measures for protecting personal information of members so that the Company can comply with online privacy protection laws of California."
+      },
+      "text2": "In case of leakage of personal information, an user may request the Company to examine the leakage. In addition, all the users in the website of the Company can modify their information at any time by using the menu for changing information by accessing their personal account.",
+      "text3": "In addition, the Company does not trace the visitors of its website nor use any signals for 'tracing prevention'. The Company will not collect nor provide any personal identification information through advertisement services without consent of users."
+    },
+    "h3-10": {
+      "title": "Article 10 : Contact Information of Company",
+      "text1": "Please use one of the following methods to contact the Company should you have any inquiries in respect to this policy or wish to update your information:",
+      "1": {
+        "title": "Company Name : WEMIX PTE. LTD.",
+        "1": "Address : 18 Cross Street, #02-101, Singapore 048423",
+        "2": "Tel. : +65.3174.0791",
+        "3": "email : customer@wemadetree.com.sg"
+      },
+      "2": {
+        "title": "The Company designates the following Data Protection Officer (DPO) in order to protect personal information of customers and resolve any related complaints.",
+        "1": "DPO : Jae Sung Park",
+        "2": "Address : 18 Cross Street, #02-101, Singapore 048423",
+        "3": "Tel. : +65.3174.0791",
+        "4": "email : dpo@wemadetree.com.sg"
+      },
+      "3": {
+        "title": "The company has a designated agent in the EU in case of GDPR, and the contact information of the EU agent is as below.",
+        "1": "Company Name : VeraSafe Netherlands BV",
+        "2": " Address : Keizersgracht 391 A 1016 EJ Amsterdam The Netherlands",
+        "3": " Contact : https://verasafe.com/public-resources/contact-data-protection-representative"
+      },
+      "4": {
+        "title": "The company has a designated agent in the UK in case of GDPR, and the contact information of the UK agent is as below.",
+        "1": "Company Name : VeraSafe United Kingdom Ltd.",
+        "2": " Address : 37 Albert Embankment London SE1 7TL United Kingdom",
+        "3": "Contact : https://verasafe.com/public-resources/contact-data-protection-representative"
+      },
+      "text2": "Notification Date: July 1, 2022 Enforcement Date: July 1, 2022",
+      "text3": "Revision History",
+      "table": {
+        "thead": {
+          "tr": {
+            "1": "Title of Service",
+            "2": "Information to be collected"
+          }
+        },
+        "tbody": {
+          "tr1": {
+            "1": "WEMIX Wallet",
+            "2": {
+              "text": "Email address, WEMIX Wallet ID/address, Social network ID, One-way hashed password, Encrypted key"
+            }
+          },
+          "tr2": {
+            "1": "Personalized Advertising",
+            "2": {
+              "text": "Website visit history of the user, Application usage history of the user, Search history of the user, Advertising ID"
+            }
+          },
+          "tr3": {
+            "1": "Game",
+            "2": {
+              "text": "SNS ID, Email address, WEMIX Wallet address, Nickname, Equipment information"
+            }
+          },
+          "tr4": {
+            "1": "WEMIX Auction",
+            "2": {
+              "text": "User name, Email address, WEMIX Wallet ID/Address, Phone number"
+            }
+          },
+          "tr5": {
+            "1": "WEMIX Support Center",
+            "2": {
+              "text": "Email address, Device OS, Inquiry type, WEMIX Wallet ID, WEMIX Wallet address(Optional), personal information that user submitted for customer service(Optional)"
+            }
+          }
+        }
+      }
+    }
+  }
+}

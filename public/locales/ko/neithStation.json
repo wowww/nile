@@ -1,0 +1,166 @@
+{
+  "tba": "추후 공개",
+  "home": {
+    "challenge": {
+      "title": "NILE의 위대한 도전, 새로운 가치를 만들다",
+      "desc": "NEITH NFT는 미래의 안정된 가치를 보장합니다."
+    },
+    "collections": {
+      "title": "네이트의 약속이 담긴 NFT 컬렉션"
+    },
+    "howTo": {
+      "title": "네이트의 약속을 받기 위한 여정",
+      "journey": {
+        "0": {
+          "subject": "네이트의 약속을 받기 위한 준비",
+          "item": {
+            "0": "Marketplace 또는 Projects에서 NEITH NFT를 확인합니다. NEITH NFT를 나타내는 심볼을 확인하세요.",
+            "1": "컬렉션 페이지에서 Covenant 조건을 확인합니다. 컬렉션마다 기간 및 혜택이 다르게 구성되어 있습니다.",
+            "2": "월렛 연결 후 구매 합니다. 이때 미리 결제해야 할 WEMIX$를 보유하고 있으면 편리하게 거래 할 수 있습니다."
+          }
+        },
+        "1": {
+          "subject": "여정의 시작",
+          "desc": "옥션 또는 고정가로 NEITH NFT를 구매하세요.\nNFT는 WEMIX$로 구매하고, 거래 시 발생하는 소정의 가스비는 WEMIX로 지불해야 합니다."
+        },
+        "2": {
+          "subject": "NFT에 염원을 담아, 약속의 날을 향한 기다림",
+          "desc": "클레임 전까지 유저간 NFT거래가 가능하며, PAPYRUS에서 NFT 홀더와 소통할 수 있습니다. 거래와 소통을 통해 NFT의 가치를 높여보세요."
+        }
+      },
+      "covenantDate": {
+        "subject": "네이트의 약속의 날",
+        "desc": "네이트가 약속한 Covenant Date가 도래하면 클레임 절차를 진행할 수 있습니다.\nNEITH Station에서 Covenant Claim 버튼을 선택하면 NEITH NFT가 NEITH Altar에서 소각되며, NEITH Vault에 보관되어있던 WEMIX가 월렛으로 들어옵니다.",
+        "sub": "* 클레임 할 때 발생하는 가스비는 홀더가 부담합니다."
+      }
+    },
+    "about": {
+      "title": "NEITH Station, 위대한 도전의 시작"
+    },
+    "threeValue": {
+      "title": "NILE이 주목하는 NFT의 세 가지 가치",
+      "desc": "NEITH NFT는 NEITH Covenant라고 불리는 자산의 보유가치를 기반으로, NFT의 효용가치와 새롭게 더해질 프리미엄 가치를 통해 안정적인 NFT를 활용한 DeFi를 가능하게 할 것입니다.",
+      "value": {
+        "1": {
+          "title": "효용 가치",
+          "desc": "NFT가 가지고 있는 쓰임새를 기반으로 인식되는 가치로, NFT를 보유함으로 나의 삶이 나아지는가에 대한 대답이 ‘네'라면 해당 NFT는 효용가치가 있는 것입니다."
+        },
+        "2": {
+          "title": "상승 가치",
+          "desc": "우리가 NFT에 기대하는 것은 시간이 지남에 따라 그 가치가 올라가는 것이며 이것이 바로 상승 가치입니다. 나의 NFT가 1년 후 가격이 높아질 것으로 기대한다면 당신은 그 NFT의 상승 가치를 기대하는 것입니다."
+        },
+        "3": {
+          "title": "프리미엄 가치",
+          "desc": "자산의 효용과 돈으로써의 가치가 아닌 존재와 보유만으로 창조되는 새로운 가치입니다. 당신이 특정 NFT를 아무리 많은 돈을 댓가로도 팔고 싶지 않다면 그 NFT는 프리미엄 가치가 있는 것입니다."
+        }
+      }
+    },
+    "whatToDo": {
+      "title": "풍요의 염원을 담아 약속의 날을 기다리다",
+      "subTitle1": "풍요를 위한 약속의 나눔",
+      "subTitle2": "풍요를 기원하는 사람들의 모임",
+      "desc1": "NEITH NFT는 클레임 전까지 거래가 가능합니다.\n거래하려는 NEITH NFT의 상태를 꼭 확인하세요!",
+      "desc2": "NEITH NFT를 보유하고 있는 홀더들과 소통하며\n함께 NFT의 가치를 높여나갈 수 있습니다.\nPAPYRUS에서 NEITH NFT 홀더들을 만나보세요."
+    },
+    "faq": {
+      "title": "네이트의 응답"
+    }
+  }, 
+  "hero": {
+    "title": "NEITH Station",
+    "sub": "네이트의 약속과 함께 탄생한 새로운 NFT, 위대한 도전의 시작 ",
+    "desc": "NEITH NFT는 창조의 신 네이트의 약속을 담아 NFT에 WEMIX를 포함해 판매하는 신개념 NFT 입니다. NEITH NFT 구매 후 Covenant Date가 도래하면 약속된 수량만큼의 WEMIX를  NEITH Vault를 통해 수령할 수 있습니다. Covenant Value는 NEITH Vault에서 언제든지 확인할 수 있습니다.",
+    "button": "NEITH Vault & Altar 바로가기",
+    "totalValue": "NEITH Covenant (AUM)",
+    "totalNft": "총 NEITH NFT 수",
+    "covenantPrice": "Covenant가 실행된 총 수량",
+    "covenantNft": "Covenant를 실행한 NFT 수",
+    "tooltip": {
+      "1": "NEITH Vault에 보관되어 있는 약속된 총 WEMIX 수량입니다.",
+      "2": "AUM : Asset under Management (총 운용자산)"
+    }
+  },
+  "greatChallenge": {
+    "covenant": {
+      "title": "NEITH Covenant",
+      "description": "NEITH NFT는 Covenant Date가 도래하면 언제든지 약속된 수량만큼의 WEMIX를 수령할 수 있습니다. 오랜 시간이 지나도 미래의 안정된 가치를 보장 받을 수 있습니다."
+    },
+    "protocol": {
+      "title": "세계 최초 탈중앙화 프로토콜 NFTFi",
+      "description": "NEITH NFT는  DeFi와 결합되어\n대출, 스왑, 스테이킹 등 탈중앙화 프로토콜 기반의 NFTFi가 가능합니다."
+    },
+    "vault": {
+      "title": "NEITH Vault와 NEITH Altar",
+      "description": "NEITH Station은 NEITH Covenant가 보관된 NEITH Vault와 NFT가 소각되는 NEITH Altar로 구성되어있습니다. NEITH Station에서 Covenant Claim 버튼을 선택하면 NEITH NFT가 NEITH Altar에서 소각되며, NEITH Vault에 보관되어있던 WEMIX가 월렛으로 들어옵니다. "
+    }
+  },
+  "faq": {
+    "1": {
+      "question": "2차 거래를 하면 Covenant Date가 달라지나요?",
+      "answer": "Covenant Date가 도래하면 NFT를 가지고 있는 홀더가 클레임 할 수 있습니다. NFT 홀더가 변경되어도 Covenant Date는 변경되지 않습니다.",
+      "desc": "해당 내용은 컬렉션 마다 다를 수 있습니다."
+    },
+    "2": {
+      "question": "클레임을 하고나면 가지고 있던 NEITH NFT는 어떻게 되나요?",
+      "answer": "클레임 후 NEITH NFT는 모두 소각 됩니다."
+    },
+    "3": {
+      "question": "NEITH Station에서 NFT 판매는 어떻게 진행되나요?",
+      "answer": "사전에 NILE 운영팀과 협의하여 판매할 NFT에 일정 수량의 WEMIX를 담거나, NILE 운영팀이 자체 NEITH NFT를 기획하여 일정 수량의 WEMIX를 담은 후 리스팅을 통해 판매가 진행됩니다."
+    },
+    "4": {
+      "question": "아직 클레임 되지 않은 WEMIX는 어디에 보관되나요?",
+      "answer": "NEITH Covenant를 위해 준비한 WEMIX는 NEITH Vault에 보관됩니다. Vault의 주소는 모두가 알 수 있게 곧 공개할 예정입니다.",
+      "desc": "WEMIX 수령자에게는 세금 부과의무가 주어지며, 수령시 안내문구를 통해 안내해 드릴 예정입니다."
+    },
+    "5": {
+      "question": "NEITH Station 커뮤니티에 참여하려면 어떻게 해야하나요?",
+      "answer": "NEITH Station의 NFT 홀더는 PAPYRUS 를 통해 커뮤니티 진입 가능하며, 홀더가 아닌 경우 NILE Discord를 통해 커뮤니티 진입이 가능합니다."
+    }
+  },
+  "vault": {
+    "title": {
+      "desc": "NEITH Vault 는 NEITH NFT 컬렉션의 전체 NEITH Covenant를 보관하고 있습니다.\nNEITH Vault에 보관된 수량과 모든 거래내역은 누구나 확인할 수 있습니다."
+    },
+    "topInfo": {
+      "1": {
+        "title": "NEITH Covenant (AUM)",
+        "tooltip": {
+          "1": "NEITH Vault에 보관되어 있는 약속된 총 WEMIX 수량입니다.",
+          "2": "AUM : Asset under Management (총 운용자산)"
+        }
+      },
+      "2": {
+        "title": "Total Covenant Value (TVL)",
+        "tooltip": {
+          "1": "NEITH Vault에 보관되어 있는 약속된 총 WEMIX 수량입니다.",
+          "2": "TVL : Total Value Locked (예치된 자산규모의 총 합계 금액)"
+        }
+      },
+      "3": {
+        "title": "Vault Address",
+        "guide": "Vault의 주소는 곧 공개할 예정입니다."
+      }
+    },
+    "altar": {
+      "titleDesc": "NEITH Altar는 네이트에게 NFT를 바치는 제단입니다. Covenant Claim절차를 진행하면 보유하고 있는 NEITH NFT는 소각되고 약속된 WEMIX를 수령할 수 있습니다.",
+      "list": {
+        "1": "NEITH NFT 불러오기",
+        "2": "Covenant 실행할 NFT 선택",
+        "3": "Covenant 조건 확인",
+        "4": "Covenant Claim 실행"
+      },
+      "empty": {
+        "title": "Burning Soon",
+        "desc": "네이트 제단이 곧 열립니다."
+      },
+      "btn": "Covenant Claim 시작하기"
+    },
+    "upcomingCovenant": {
+      "bagc": {
+        "releaseDate": "23년 5월 예정",
+        "covenantDate": "24년 5월 예정"
+      }
+    }
+  }
+}

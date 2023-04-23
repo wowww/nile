@@ -1,0 +1,132 @@
+.page-not-found-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 104px 0 103px;
+
+  @include md {
+    padding: 0;
+  }
+
+  @include sm {
+    padding: 0;
+  }
+
+  @include maxWidthLg;
+
+  .page-not-found {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include md {
+      min-height: 85vh;
+    }
+
+    @include sm {
+      min-height: 85vh;
+    }
+
+    .image-wrap {
+      position: relative;
+      width: 662px;
+      height: 279px;
+
+      @include md {
+        width: 530px;
+        height: 238px;
+      }
+
+      @include sm {
+        width: 300px;
+        height: 135px;
+      }
+    }
+  }
+
+  section {
+    margin-bottom: 32px;
+    text-align: center;
+
+    h2 {
+      @include fontFamilyHeading(l);
+    }
+
+    p {
+      max-width: 321px;
+      margin-top: 12px;
+
+      @include fontFamilyBody(lr);
+
+      @include md {
+        max-width: 361px;
+      }
+
+      @include sm {
+        max-width: 320px;
+      }
+    }
+  }
+
+  // 페이지를 찾을수 없습니다
+  &.inspection {
+    padding: 170px 0;
+
+    @include md {
+      padding: 334px 0;
+    }
+
+    @include sm {
+      padding: 117px 24px;
+    }
+
+    .page-not-found {
+      min-height: auto;
+
+      @include md {
+        min-height: auto;
+      }
+    }
+
+    .image-wrap {
+      width: 221px;
+      height: 166px;
+
+      @include md {
+        width: 221px;
+        height: 166px;
+      }
+
+      @include sm {
+        width: 160px;
+        height: 120px;
+      }
+
+      & + section {
+        margin-top: 12px;
+      }
+    }
+
+    section {
+      margin-bottom: 28px;
+
+      @include md {
+        margin-bottom: 24px;
+      }
+
+      @include sm {
+        margin-bottom: 28px;
+      }
+
+      p {
+        max-width: inherit;
+        white-space: pre-line;
+
+        @include md {
+          max-width: inherit;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1179 @@
+.life-bagc {
+  // bagcOverview
+  .bagc-color {
+    color: $bagc;
+    font-weight: 600;
+  }
+
+  .bagc-overview-contain-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: $veryBlack;
+  }
+
+  .bagc-overview-wrap {
+    width: 100%;
+    max-width: 1200px;
+    margin: 80px 0 20px;
+
+    @include md {
+      margin: 60px 0 20px;
+    }
+
+    @include sm {
+      margin: 40px 20px;
+    }
+
+    .bagc-overview-box {
+      display: flex;
+      flex-direction: column;
+
+      @include sm {
+        align-items: center;
+      }
+
+      .title-wrap {
+        text-align: center;
+
+        strong {
+          @include fontFamilyHeading(xxl);
+
+          color: $gray100;
+        }
+
+        p {
+          @include fontFamilyBody(cardmr);
+
+          display: block;
+          margin-top: 16px;
+          color: $gray85;
+          white-space: break-spaces;
+
+          @include sm {
+            margin-top: 12px;
+          }
+        }
+      }
+
+      .bagc-overview-detail {
+        display: flex;
+        padding: 32px 40px;
+        margin-top: 32px;
+
+        @include gradientBorder (1px, 4px, rgb(0 0 0 / 50%), linear-gradient(269.38deg, $bagc 0.04%, #755FFF 99.26%));
+
+        @include md {
+          flex-wrap: wrap;
+          margin: 40px 40px;
+        }
+
+        @include sm {
+          width: 320px;
+          flex-direction: column;
+          padding: 20px;
+          margin-top: 40px;
+        }
+
+        dl {
+          position: relative;
+          display: flex;
+          width: calc(100% / 4 - 20px);
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          @include md {
+            width: 50%;
+          }
+
+          @include sm {
+            width: 100%;
+          }
+        }
+
+        dt {
+          color: $gray90;
+
+          @include fontFamilyHeading(mb);
+        }
+
+        dd {
+          margin-top: 12px;
+          color: $gray100;
+          text-align: center;
+
+          @include fontFamilyBody(xlr);
+        }
+
+        dl + dl {
+          margin-left: 40px;
+
+          &::before {
+            position: absolute;
+            left: -20px;
+            display: block;
+            width: 1px;
+            height: 100%;
+            border-left: 1px solid $bagc;
+            content: "";
+
+            @include md {
+              left: 0;
+            }
+
+            @include sm {
+              display: none;
+            }
+          }
+
+          @include md {
+            margin-left: 0;
+
+            &::after {
+              position: absolute;
+              top: -20px;
+              display: block;
+              width: 100%;
+              height: 1px;
+              border-top: 1px solid  $bagc;
+              content: "";
+            }
+
+            &:nth-child(2) {
+              &::after {
+                display: none;
+              }
+            }
+
+            &:nth-child(3) {
+              margin-top: 40px;
+
+              &::before {
+                display: none;
+              }
+            }
+
+            &:last-child {
+              margin-top: 40px;
+            }
+          }
+
+          @include sm {
+            margin-top: 40px;
+            margin-left: 0;
+
+            &::after {
+              position: absolute;
+              top: -20px;
+              display: block;
+              width: 100%;
+              height: 1px;
+              border-top: 1px solid  $bagc;
+              content: "";
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // bagc-neith-nft
+  .bagc-neith-nft-contain {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: $veryBlack;
+
+    .bagc-neith-nft-wrap {
+      display: flex;
+      width: 100%;
+      max-width: 1200px;
+      justify-content: space-between;
+      padding: 80px 0;
+      border-bottom: 1px solid $gray20;
+      gap: 56px;
+
+      @include md {
+        flex-direction: column;
+        padding: 60px 0;
+        margin: 0 40px;
+        gap: 0;
+      }
+
+      @include sm {
+        flex-direction: column;
+        padding: 40px 0;
+        margin: 0 20px;
+        gap: 0;
+      }
+
+      .bagc-neith-nft-detail {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: top;
+
+        @include md {
+          width: 590px;
+          margin: 0 auto;
+        }
+
+        .bagc-nft-title {
+          @include fontFamilyHeading(xxl);
+
+          color: $gray100;
+
+          @include md {
+            text-align: center;
+          }
+
+          @include sm {
+            text-align: center;
+          }
+        }
+
+        dl {
+          dt {
+            color: $bagc;
+
+            @include fontFamilyData(m3);
+          }
+
+          dd {
+            margin-top: 12px;
+            color: $gray60;
+            white-space: pre-line;
+
+            @include fontFamilyBody(lr);
+          }
+        }
+
+        &:first-child {
+          dl {
+            margin-top: 40px;
+
+            @include sm {
+              margin-top: 24px;
+            }
+          }
+        }
+
+        dl + dl {
+          margin-top: 60px;
+        }
+      }
+
+      .bagc-video-wrap {
+        position: relative;
+        min-height: 500px;
+        flex: 1;
+
+        @include md {
+          min-height: auto;
+          margin-top: 40px;
+        }
+
+        @include sm {
+          min-height: auto;
+          flex: none;
+          margin-top: 24px;
+        }
+      }
+    }
+  }
+
+  // bagc-nft-utility
+  .bagc-nft-utility-contain {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    background-color: $veryBlack;
+
+    .bagc-nft-utility-wrap {
+      position: relative;
+      display: flex;
+      width: 100%;
+      max-width: 1200px;
+      flex-direction: column;
+      align-items: center;
+      padding: 80px 0;
+
+      &::before {
+        position: absolute;
+        left: 50%;
+        top: 110px;
+        transform: translateX(-50%);
+        z-index: 1;
+        content: '';
+        display: block;
+        width: 100%;
+        height:780px;
+        background-image: url("#{$rootPath}/img/bagc/bg_grade_benefit.png");
+        background-size: 100% auto;
+        background-repeat: no-repeat;
+        z-index: 0;
+
+        @include md {
+          width: 100%;
+          height: 650px;
+        }
+
+        @include sm {
+          top: 86px;
+          width: 100%;
+          height: 488px;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        display: block;
+        width: 1200px;
+        height: 1px;
+        background-color: $gray20;
+        content: "";
+
+        @include md {
+          left: 50%;
+          width: calc(100% - 80px);
+          transform: translateX(-50%);
+        }
+
+        @include sm {
+          left: 50%;
+          width: calc(100% - 40px);
+          transform: translateX(-50%);
+        }
+      }
+
+      @include md {
+        padding: 60px 0;
+      }
+
+      @include sm {
+        padding: 40px 0;
+      }
+
+      .title-wrap {
+        text-align: center;
+
+        @include md {
+          padding: 0 40px;
+        }
+
+        @include sm {
+          padding: 0 20px;
+        }
+
+        p {
+          color: $gray100;
+          white-space: pre-line;
+
+          @include fontFamilyBody(xxlb);
+
+          > strong {
+            color: $bagc;
+          }
+        }
+      }
+
+      .bagc-grade-benefit {
+        position: relative;
+        width: 1326px;
+        height: 437px;
+        margin-top: 60px;
+        background-image: url("#{$rootPath}/img/bagc/img_grade_benefit.png");
+        background-position: 0 129px;
+        background-repeat: no-repeat;
+        background-size: 1326px auto;
+
+        @at-root [lang="en"] & {
+          background-image: url("#{$rootPath}/img/bagc/img_grade_benefit_en.png");
+        }
+
+        @include md {
+          width: 100%;
+          height: 396px;
+          background-position: center;
+          background-size: 1200px auto;
+        }
+
+        @include sm {
+          width: 100%;
+          height: 292px;
+          margin-top: 20px;
+          background-position: center;
+          background-size: 800px auto;
+        }
+
+        .card-wrap {
+          position: absolute;
+          top: 0;
+          left: 50%;
+          width: 420px;
+          height: 100%;
+          transform: translateX(-50%);
+
+          @include md {
+            width: 380px;
+          }
+
+          @include sm {
+            width: 280px;
+          }
+
+          > div {
+            position: absolute;
+            display: block;
+            width: 220px;
+            height: 388px;
+
+            @include md {
+              width: 210px;
+              height: 370px;
+            }
+
+            @include sm {
+              width: 200px;
+              height: 353px;
+            }
+
+            &.neith-pfp {
+              z-index: 1;
+              top: 0;
+              left: 0;
+
+              &::after {
+                position: absolute;
+                right: 4px;
+                bottom: 16px;
+                display: block;
+                width: 52px;
+                height: 52px;
+                background-image: url("#{$rootPath}/icon/ico_neith_mural_stamp.png");
+                background-size: 100% auto;
+                content: "";
+
+                @include md {
+                  right: 3px;
+                  bottom: 13px;
+                  width: 48px;
+                  height: 48px;
+                }
+
+                @include sm {
+                  right: 6px;
+                  bottom: 12px;
+                  width: 48px;
+                  height: 48px;
+                }
+              }
+            }
+
+            &.merch-nft {
+              z-index: 0;
+              right: 0;
+              bottom: 0;
+
+              .content-area {
+                margin-left: 2px;
+
+                @include sm {
+                  margin-left: 0;
+                }
+              }
+
+              .info {
+                flex-direction: column;
+                gap: 2px;
+
+                ul {
+                  display: grid;
+                  gap: 2px 9px;
+                  grid-template-columns: 1fr 1fr;
+
+                  @include sm {
+                    gap: 2px 0;
+                    grid-template-columns: 94px auto;
+                  }
+                }
+
+                li {
+                  flex: 1;
+                  color: $gray100;
+
+                  @include fontFamilyNBody(SB_F);
+                }
+              }
+            }
+          }
+
+          .content-area {
+            position: absolute;
+            top: 224px;
+            left: 0;
+            width: 100%;
+            padding: 6px 16px 6px;
+
+            @include md {
+              top: 214px;
+              padding: 4px 12px 0;
+            }
+
+            @include sm {
+              top: 204px;
+              padding: 6px 14px 0;
+            }
+
+            em {
+              display: block;
+              color: $gray100;
+
+              @include fontFamilyNBody(SR_F);
+            }
+
+            strong {
+              display: block;
+              color: $gray100;
+
+              @include fontFamilyNHeading(SB_F);
+
+              @include md {
+                margin-top: -2px;
+              }
+
+              @include sm {
+                margin-top: -3px;
+              }
+            }
+
+            .info {
+              display: flex;
+              flex-wrap: wrap;
+              justify-content: space-between;
+              padding-top: 6px;
+              border-top: 1px solid rgba($gray100, 10%);
+              margin-top: 6px;
+
+              // gap: 0 12px;
+
+              // @at-root [lang="en"] & {
+              //   gap: 0 5px;
+              // }
+
+              @include sm {
+                padding-top: 4px;
+                margin-top: 4px;
+              }
+
+              em {
+                color: $gray60;
+              }
+
+              strong {
+                @include fontFamilyNBody(SB_F);
+              }
+            }
+          }
+        }
+      }
+
+      .bagc-card-wrap {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding-top: 80px;
+
+        @include md {
+          max-width: 586px;
+          padding: 56px 0 0;
+        }
+
+        @include sm {
+          max-width: 316px;
+          padding: 60px 0 0;
+        }
+
+        @include xs {
+          max-width: 240px;
+          padding: 60px 0 0;
+        }
+      }
+    }
+  }
+
+  // bagc-more-about
+  .bagc-more-about {
+    width: 100%;
+    padding-top: 60px;
+    background-color: $veryBlack;
+
+    @include md {
+      padding-bottom: 40px;
+    }
+
+    @include sm {
+      padding: 40px 0;
+    }
+
+    .bagc-more-about-title-content {
+      @include sm {
+        margin: 0 20px;
+      }
+    }
+
+    .title-wrap {
+      text-align: center;
+
+      strong {
+        @include fontFamilyHeading(xxl);
+
+        color: $gray100;
+      }
+    }
+
+    .bagc-content-wrap {
+      display: flex;
+      width: 1200px;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 auto;
+
+      @include md {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 40px;
+      }
+
+      @include sm {
+        width: 100%;
+        flex-direction: column;
+        justify-content: center;
+        margin-top: 8px;
+      }
+
+      .img-wrap {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        max-width: 543px;
+        height: 247px;
+        flex-shrink: 0;
+
+        @include sm {
+          width: 320px;
+          height: 146px;
+        }
+      }
+
+      .content-list {
+        max-width: 588px;
+
+        @include md {
+          margin-top: 0px;
+        }
+
+        @include sm {
+          min-width: 320px;
+          margin-top: 20px;
+        }
+
+        strong {
+          color: $gray80;
+
+          @include fontFamilyBody(xlb);
+        }
+
+        .content-detail {
+          margin-top: 4px;
+
+          li {
+            margin-left: 15px;
+            color: $gray80;
+            list-style: disc;
+
+            @include fontFamilyBody(cardmr);
+          }
+        }
+      }
+
+      .mobile-bagc-desc {
+        display: block;
+        margin-top: 16px;
+        color: $gray100;
+        text-align: center;
+
+        @include fontFamilyBody(cardmr);
+      }
+    }
+  }
+}
+
+// BagcNftCard : wrap-bagc-nft-card
+.wrap-bagc-nft-card {
+  width: calc(25% - 12px);
+  text-align: center;
+
+  @include md {
+    width: calc(50% - 12px);
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin-top: 24px;
+    }
+  }
+
+  @include sm {
+    width: calc(50% - 8px);
+
+    &:nth-child(3),
+    &:nth-child(4) {
+      margin-top: 16px;
+    }
+  }
+
+  .inner-bagc-nft-card {
+    position: relative;
+    width: 281px;
+    height: 266px;
+    margin: auto;
+
+    @include sm {
+      width: 150px;
+      height: 142px;
+    }
+
+    @include xs {
+      width: 112px;
+      height: 107px;
+    }
+  }
+
+  .card-title {
+    display: block;
+    margin-top: 16px;
+    color: $gray100;
+
+    @include fontFamilyNData(2SB_V);
+
+    @include md {
+      margin-top: 12px;
+    }
+
+    @include sm {
+      margin-top: 8px;
+    }
+  }
+
+  .card-allocation {
+    margin-top: 4px;
+    color: $gray100;
+
+    @include fontFamilyNBody(SR_F);
+  }
+
+  //  통 이미지로 교체전 코드 (추후 하드코딩으로 변경될 여지가 있을 듯 하여 남겨둠)
+  // &:first-child .bagc-nft-card {
+  //   background-image: conic-gradient(transparent, transparent), conic-gradient(from -37.02deg at 50% 50%, #034a7d -28.12deg, #1a4bca 8.87deg, #b6edff 99.37deg, #82c3ff 157.5deg, #01639a 215.62deg, #0f3fb9 285deg, #034a7d 331.88deg, #1a4bca 368.87deg);
+  // }
+
+  // &:nth-child(2) .bagc-nft-card {
+  //   background-image: conic-gradient(transparent, transparent), conic-gradient(from -37.02deg at 50% 50%, #830550 0deg, #d5629a 65.79deg, #ff88a5 109.83deg, #9c0e8e 228.88deg, #72098c 285deg, #770b79 331.88deg, #830550 360deg);
+  // }
+
+  // &:nth-child(3) .bagc-nft-card {
+  //   background-image: conic-gradient(transparent, transparent), conic-gradient(from -37.02deg at 50% 50%, #a54f00 0deg, #e8d07c 78.53deg, #d99f0b 148.12deg, #c89c00 215.62deg, #9a3c06 285deg, #8a2100 331.88deg, #a54f00 360deg);
+  // }
+
+  // &:last-child .bagc-nft-card {
+  //   background-image: conic-gradient(transparent, transparent), conic-gradient(from -37.02deg at 50% 50%, #636363 0deg, #e9e9e9 69.03deg, #bfbfbf 157.5deg, #9e9e9e 215.62deg, #696969 285deg, #545454 331.88deg, #636363 360deg);
+  // }
+
+  // .card-title {
+  //   display: block;
+  // }
+
+  // .inner-bagc-nft-card {
+  //   display: flex;
+  //   flex-shrink: 0;
+  // }
+
+  // // bagc-nft-card
+  // .bagc-nft-card {
+  //   position: relative;
+  //   z-index: 2;
+  //   width: 160px;
+  //   height: 266px;
+  //   flex-basis: 160px;
+  //   border: 3px solid transparent;
+  //   border-radius: 6px;
+  //   background-clip: content-box, border-box;
+  //   background-origin: border-box;
+
+  //   @include md {
+  //     width: calc(50% - 12px);
+  //   }
+
+  //   @include sm {
+  //     width: calc(50% - 10px);
+  //   }
+
+  //   .bagc-nft-img-wrap {
+  //     position: relative;
+  //     width: 100%;
+  //     min-height: 153px;
+  //     flex: 1;
+
+  //     @include sm {
+  //       min-height: 145px;
+  //       max-height: 145px;
+  //     }
+  //   }
+
+  //   .nft-detail-wrap {
+  //     position: relative;
+  //     width: 100%;
+  //     flex: 1;
+  //     background-color: $gray100;
+
+  //     @include md {
+  //       min-height: 200px;
+  //       max-height: 200px;
+  //     }
+
+  //     @include sm {
+  //       min-height: 163px;
+  //       max-height: 163px;
+  //     }
+
+  //     .nft-detail-info {
+  //       height: 107px;
+  //       padding: 10px 10px 14px;
+
+  //       .card-name {
+  //         color: $veryBlack;
+
+  //         @include fontFamilyNHeading(MB_V);
+  //       }
+
+  //       ul {
+  //         margin-top: 8px;
+
+  //         li + li {
+  //           margin-top: 6px;
+  //         }
+
+  //         li {
+  //           display: flex;
+  //           justify-content: space-between;
+  //           padding-bottom: 4px;
+  //           border-bottom: 1px solid $gray80;
+
+  //           &:last-child {
+  //             border-bottom: none;
+  //           }
+
+  //           .card-title {
+  //             color: $veryBlack;
+
+  //             @include fontFamilyNBody(SR_F);
+  //           }
+
+  //           .card-desc {
+  //             display: flex;
+  //             flex-direction: column;
+  //             color: $veryBlack;
+  //             text-align: end;
+
+  //             @include fontFamilyNBody(SB_F);
+  //           }
+  //         }
+  //       }
+  //     }
+
+  //     &::after {
+  //       position: absolute;
+  //       bottom: 9px;
+  //       left: 9px;
+  //       display: block;
+  //       width: 48px;
+  //       height: 48px;
+  //       background: url("#{$rootPath}/icon/ico_neith_mural_stemp.png") no-repeat center center / 48px;
+  //       content: "";
+
+  //       @include sm {
+  //         width: 32px;
+  //         height: 32px;
+  //         background: url("#{$rootPath}/icon/ico_neith_mural_stemp.png") no-repeat center center / 32px;
+  //       }
+  //     }
+  //   }
+  // }
+
+  // .bagc-nft-card + .bagc-nft-card {
+  //   z-index: 1;
+  //   margin-left: -38px;
+
+  //   @include md {
+  //     margin-left: 0;
+
+  //     &:nth-child(2) {
+  //       margin-left: 24px;
+  //     }
+
+  //     &:nth-child(3) {
+  //       margin-top: 24px;
+  //     }
+
+  //     &:last-child {
+  //       margin-top: 24px;
+  //       margin-left: 24px;
+  //     }
+  //   }
+
+  //   @include sm {
+  //     margin-left: 0;
+
+  //     &:nth-child(2) {
+  //       margin-left: 12px;
+  //     }
+
+  //     &:nth-child(3) {
+  //       margin-top: 12px;
+  //     }
+
+  //     &:last-child {
+  //       margin-top: 12px;
+  //       margin-left: 12px;
+  //     }
+  //   }
+
+  //   .nft-detail-wrap::after {
+  //     display: none;
+  //   }
+  // }
+}
+
+// bagc-holder-card
+.bagc-holder-card {
+  display: flex;
+  width: calc(100% / 4 - 20px);
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  @include md {
+    width: calc(50% - 24px);
+  }
+
+  @include sm {
+    width: 100%;
+    min-width: 240px;
+  }
+
+  .holder-img-wrap {
+    position: relative;
+    display: inline-block;
+    width: 240px;
+    height: 240px;
+    padding: 0 15px;
+  }
+
+  .bagc-holder-detail {
+    margin-top: 16px;
+
+    strong {
+      color: $gray100;
+      white-space: break-spaces;
+
+      @include fontFamilyBody(xlb);
+    }
+
+    p {
+      display: block;
+      margin-top: 8px;
+      color: $gray60;
+
+      @include fontFamilyBody(mr);
+
+      @include md {
+        margin-top: 8px;
+      }
+
+      @include sm {
+        margin-top: 4px;
+      }
+    }
+  }
+}
+
+.bagc-holder-card + .bagc-holder-card {
+  margin-left: 40px;
+
+  @include md {
+    &:nth-child(2) {
+      margin-left: 48px;
+    }
+
+    &:nth-child(3) {
+      margin-top: 48px;
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-top: 48px;
+      margin-left: 48px;
+    }
+  }
+
+  @include sm {
+    margin-top: 24px;
+    margin-left: 0;
+  }
+}
+
+.faq-contain-box {
+  background-color: $veryBlack;
+
+  &.bagc {
+    padding: 80px 0;
+
+    @include md {
+      padding: 60px 0 84px;
+    }
+
+    @include sm {
+      padding: 40px 0;
+    }
+
+    .title {
+      text-align: center;
+
+      strong {
+        color: $gray100;
+
+        @include fontFamilyNDisplay(LB_V);
+      }
+    }
+
+    .faq-contain {
+      padding-bottom: 0;
+    }
+  }
+}
+
+// Hero Banner
+.life-top-section.bagc {
+  &.bagc {
+    @include lg {
+      background-color: #e0eaf2;
+    }
+
+    &::before {
+      background-image: url("#{$rootPath}/img/img_bagc_visual.png");
+      background-position: center bottom;
+      background-size: 1920px auto;
+
+      @include md {
+        background-position: center bottom;
+        background-size: auto 100%;
+      }
+
+      @include sm {
+        background-position: center bottom;
+        background-size: auto 100%;
+        mask-image: none;
+      }
+    }
+
+    &::after {
+      @include sm {
+        content: none;
+      }
+    }
+  }
+
+  .con-inner {
+    h2 {
+      .title {
+        .text {
+          color: $gray00;
+        }
+      }
+
+      strong {
+        color: $gray00;
+      }
+    }
+  }
+}
+
+// More Information
+.bagc-information-container {
+  background-color: $neithBlack;
+
+  .bagc-information-wrap {
+    @include maxWidthLg;
+
+    position: relative;
+    display: flex;
+    height: 293px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @include md {
+      height: 260px;
+    }
+
+    @include sm {
+      height: 200px;
+    }
+
+    .bagc-information-title {
+      @include fontFamilyHeading(xl);
+
+      color: $white;
+    }
+
+    .bagc-information-link {
+      display: flex;
+      margin-top: 24px;
+
+      @include md {
+        margin-top: 28px;
+      }
+
+      @include sm {
+        margin-top: 12px;
+      }
+
+      a + a {
+        margin-left: 24px;
+
+        @include sm {
+          margin-left: 16px;
+        }
+      }
+
+      svg {
+        width: 52px;
+        height: 52px;
+
+        @include sm {
+          width: 40px;
+          height: 40px;
+        }
+
+        path {
+          fill: $white;
+        }
+      }
+    }
+  }
+}

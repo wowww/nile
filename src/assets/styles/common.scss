@@ -1,0 +1,62 @@
+// common
+@import "swiper/css";
+@import "swiper/css/scrollbar";
+@import "./variables";
+@import "./fontOld";
+@import "./font";
+@import "./mixins";
+@import "./reset";
+@import "./antd";
+@import "./tabs";
+
+// layout
+@import "./layout/header";
+@import "./layout/footer";
+@import "./layout/components";
+@import "./layout/modal";
+
+// pages
+@import "./pages/nile";
+@import "./pages/search";
+@import "./pages/dao";
+@import "./pages/life";
+@import "./pages/lifeTangled";
+@import "./pages/marketplace";
+@import "./pages/community";
+@import "./pages/tokens";
+@import "./pages/papyrus";
+@import "./pages/mypage";
+@import "./pages/story";
+@import "./pages/404";
+@import "./pages/notification";
+@import "./pages/policy";
+@import "./pages/daoGovernance";
+@import "./pages/daoMaker";
+@import "./pages/daoStation";
+@import "./pages/daoHome";
+@import "./pages/daoIndividualHome";
+@import "./pages/daoStakingPool";
+@import "./pages/daoScan";
+@import "./pages/neithStation";
+@import "./pages/cone";
+@import "./pages/lifeKari";
+@import "./pages/lifeSnkrz";
+@import "./pages/lifeBagc";
+
+// common page용
+@import "./pages/commonPage";
+
+.a11y {
+  position: absolute !important;
+  display: block !important;
+  overflow: hidden !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  border: 0 !important;
+  margin: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  clip-path: inset(50%) !important;
+  word-break: initial !important;
+  word-wrap: initial !important;
+}

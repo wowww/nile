@@ -1,0 +1,1913 @@
+{
+  "daoChart": {
+    "total": "Total Supply"
+  },
+  "amountUnit": {
+    "wonder": {
+      "unit1": "WDR",
+      "unit2": "g.WDR"
+    },
+    "arteum": {
+      "unit1": "WDR",
+      "unit2": "g.WDR"
+    },
+    "delta": {
+      "unit1": "WDR",
+      "unit2": "g.WDR"
+    },
+    "oracle": {
+      "unit1": "WDR",
+      "unit2": "g.WDR"
+    }
+  },
+  "individualHome": {
+    "chart": {
+      "title": "DAO Token Currency",
+      "item": {
+        "0": {
+          "name": "DT Price (Wonder)"
+        },
+        "1": {
+          "name": "Circulating supply"
+        }
+      }
+    },
+    "stakingPool": {
+      "tableColumns": {
+        "0": "Date",
+        "1": "Members",
+        "2": "Status",
+        "3": "Transfer Amount",
+        "4": "Ratio"
+      }
+    },
+    "timeline": {
+      "trustNoticeButton": "Go to All Trust Notices",
+      "stationButton": "Go to Station",
+      "agendaButton": "Go to Proposal",
+      "beforeChange": "Before",
+      "afterChange": "After",
+      "stationDesc1": "Recruitment successful. Obtain {{type}} and get WEMIX reimbursements in Station.",
+      "stationDesc2": "Additional recruitment has started. Check the details regarding the recruitment in Station.",
+      "stationDesc3": "Recruiting Period : {{startPeriod}} ~ {{endPeriod}} (For {{day}}days)",
+      "stationDesc4": "The target amount of {{n}} WEMIX has been reached in the additional recruitment.  Recruitment status can be found in Station.",
+      "stationDesc5": "Additional recruitment successful. Obtain {{type}} and get WEMIX reimbursements in Station.",
+      "stationDesc6": "Additional recruitment failed. WEMIX refunds can be processed in Station. ",
+      "treasuryDesc1": "<0>{{n}} WEMIX</0> has been deposited from [{{wallet}}].",
+      "treasuryDesc2": "<0>{{n}} WEMIX</0> has been sent to [{{wallet}}]",
+      "trustDesc1": "<0>{{n}} WEMIX</0> has been deposited from [{{wallet}}].",
+      "trustDesc2": "<0>{{n}} WEMIX</0> has been sent to [{{wallet}}]",
+      "trustDesc3": "New notice available. The content is available in the All Trust Notices board.",
+      "trustDesc4": "DAO Profit Distribution Ratio (Treasury Reserve Fund : Incinerator Fund) has been changed.",
+      "trustDesc5": "Before Changes - {{n1}}% : {{n2}}%",
+      "trustDesc6": "After Changes - {{n1}}% : {{n2}}%",
+      "incineratorDesc1": "Burned <0>{{n}} {{unit}}</0>.",
+      "incineratorDesc2": "There is less than 1 WEMIX for Gas Fees left in the System Wallet for DAO operations. Gas Fees can be recharged through a Use Treasury Funds proposal in Governance.",
+      "incineratorDesc3": "Buyback {{type}} Distribution Ratio (Burning Fund : Funds redistributed to the Obelisk) has been changed.",
+      "incineratorDesc4": "Before Changes - {{n1}}% : {{n2}}%",
+      "incineratorDesc5": "After Changes - {{n1}}% : {{n2}}%",
+      "obeliskDesc1": "Incinerator has sent over <0>{{n}} {{unit}}</0>.",
+      "governanceDesc1": "A new proposal has been registered in Temperature Check. Proposal details are available in Governance.",
+      "governanceDesc2": "A new proposal has been registered in Consensus Check. Proposal details are available in Governance.",
+      "governanceDesc3": "A new proposal has been registered in Governance Check. Proposal details are available in Governance.",
+      "governanceDesc4": "A new proposal has been registered in Trust Check. Proposal details are available in Governance.",
+      "governanceDesc5": "A proposal has been passed in Governance Check. Proposal details are available in Governance.",
+      "governanceDesc6": "A proposal has been rejected in Governance Check. Proposal details are available in Governance.",
+      "governanceDesc7": "A proposal has been made invalid in Governance Check. Proposal details are available in Governance.",
+      "governanceDesc8": "A proposal has been passed in Trust Check. Proposal details are available in Governance.",
+      "governanceDesc9": "A new proposal has been rejected in Trust Check. Proposal details are available in Governance.",
+      "agenda": "Proposal : {{text}}",
+      "agendaText": {
+        "1": "Use Treasury Funds"
+      }
+    },
+    "community": {
+      "discuss": {
+        "discussNow": "discuss now",
+        "like": "Likes",
+        "comment": "Comment",
+        "count": "View Count",
+        "recentlyActivity": "Last Active Date",
+        "item": {
+          "0": {
+            "title": "How to earn the WEMIX$?",
+            "desc": "You can exchange money through a cryptocurrency wallet"
+          },
+          "1": {
+            "title": "How to get Governance Token?",
+            "desc": "If you deposit a lot of DAO tokens in the staking pool for a long time, you can get governance to ..."
+          },
+          "2": {
+            "title": "How to translate WEMIX$ to Dollars?",
+            "desc": "You can exchange money through a cryptocurre-ncy wallet. In particular, if you use a wallet mad ..."
+          }
+        }
+      },
+      "agora": {
+        "item": {
+          "0": {
+            "title": "Proposal to change the ratio of profit and storage distribution within Trust."
+          },
+          "1": {
+            "title": "Proposal for the re-opening of the station to recruit additional participants"
+          }
+        }
+      }
+    },
+    "social": {
+      "title": "Check out <0>{{num}}</0> mentions of\n {{type}} DAO on <1>{{strong}}</1>",
+      "strong": "Twitter"
+    }
+  },
+  "stakingPool": {
+    "title": "Obelisk",
+    "desc": "The Obelisk is where DAO membership (Governance participation rights) can be acquired. Any {{dtName}} Token holder who wishes to participate in DAO Governance and join the long-term vision for {{dtName}} DAO can Stake {{dtName}} in Obelisk to obtain g.{{dtName}}.",
+    "chart": {
+      "name": "Staked {{token}}",
+      "summary": "{{token}} Staking Ratio in Relation with Total Supply"
+    },
+    "report": {
+      "title": "Obelisk Report",
+      "item": {
+        "0": "{{token}} : g.{{token}}",
+        "1": "Staked {{token}}",
+        "2": "Total issued amount of g.{{token}}"
+      }
+    },
+    "tokens": {
+      "title": "My Tokens",
+      "tooltip": {
+        "title": "DAO Token Lock-up",
+        "desc1": "Upon staking DAO Tokens, they will be subject to a Lock-up period and cannot be Unstaked for 90 days.",
+        "desc2": "*If you Stake additionally, the 90-day Lock-up will be reset based on the last Staking date."
+      },
+      "item": {
+        "0": "{{token}} Balance",
+        "1": "{{token}} Balance",
+        "2": "Staked {{token}}"
+      },
+      "desc": "Connect your Wallet to check your Token balance.",
+      "btn1": "Stake",
+      "btn2": "Unstaking",
+      "btn3": "Connect Wallet",
+      "toastTooltip": "Unstaking is available from 2023-05-09"
+    },
+    "modal": {
+      "stake": "Stake",
+      "managingStake": "Manage Staking",
+      "ratio": "Exchange Ratio",
+      "placeholder": {
+        "1": "A maximum of {{n}} {{unit}} can be entered.",
+        "2": "Enter {{unit1}} to see the amount of {{unit2}} you will be claiming."
+      },
+      "box": {
+        "1": "Tokens in My Balance",
+        "2": "Your staking Tokens in Pool",
+        "3": "Transaction Fees",
+        "4": "Tokens in My Balance",
+        "5": "My Staking Token Balance",
+        "6": "Earliest possible date for Unstaking",
+        "7": "Please check the available Unstaking date.",
+        "8": "Unstaking is not available during the lock-up period.",
+        "9": "Staking Information",
+        "10": "Unstaking Information"
+      },
+      "btn": {
+        "1": "Request approval",
+        "2": "Complete",
+        "back": "Go Back",
+        "wemixfi": "Buy {{token}}"
+      },
+      "error": {
+        "1": "This exceeds the amount of {{unit}}  in your balance.",
+        "2": "Please enter {{n}} {{unit}} or more."
+      },
+      "complete1": "Staking complete!",
+      "complete2": "Unstaking complete!",
+      "info1": "If you Stake now, the earliest possible date to Unstake will be",
+      "info2": "90-day reset based on the last date of additional Staking",
+      "get": "Obtain",
+      "expectancyGet": "Expected {{ token }} Acquisition",
+      "return": "Return",
+      "input": {
+        "title": {
+          "stake": "Stake Token",
+          "unstake": "Unstake Token"
+        },
+        "max": "Max"
+      },
+      "nextStep": {
+        "stake": "Proceed to Stake with the following information.",
+        "unstake": "Proceed to Unstake with the following information."
+      },
+      "token": {
+        "stake": "Tokens in My Balance after Staking",
+        "unstake": "My Tokens after Unstaking"
+      },
+      "message1": "Gas Fees for transfers will be charged to your Wallet.",
+      "message2": "Estimated Gas Fees may change according to network traffic status.",
+      "message3": "You must purchase additional WEMIX if you do not have enough Gas Fees (WEMIX) to proceed with Staking.",
+      "message4": "You must purchase additional WEMIX If you do not have enough Gas Fees (WEMIX) to proceed with Unstaking."
+    }
+  },
+  "station": {
+    "title": "NEITH Protocol & Smart Contract",
+    "neithProtocol": {
+      "title": "NEITH Protocol",
+      "desc": "The protocol of a DAO is usually a system. The term, DAO, is short for 'Decentralized Autonomous Organization'.\nIt can also be explained as an open source blockchain protocol, which is managed by a set of rules created by elected group members, that automatically executes certain tasks without an intermediary.\nThe NEITH Protocol is comprised of 7 important components with which {{type}} DAO functions. Each component has a unique role that makes to DAO work.\nIn {{type}} DAO, the protocol works with 6 components."
+    },
+    "smartContract": {
+      "title": "Smart Contract",
+      "desc": "The Smart Contract is a protocol to execute a DAO. Each NEITH Protocol component operates with\npre-defined Smart Contracts. Established rules can be modified or changed through Governance."
+    },
+    "operationSystem": {
+      "title": "{{type}} DAO Operating System",
+      "station": {
+        "title1": "Role of the Station",
+        "desc1": "The Station carries out tasks to recruit DAO members.\nIt provides various information (Missions, rewards, methods of operation, etc.) that users must know to participate in a DAO.",
+        "title2": "Smart Contract in Station",
+        "desc2": "Smart Contracts in the Station set the ways in which the recruiting process should be operated. This can be decided on through Governance.",
+        "item": {
+          "0": {
+            "text": "Upon creation of a DAO, an amount of DAO Tokens equivalent to the amount participated compared to the amount of issued DAO Tokens is distributed."
+          },
+          "1": {
+            "title": "Initial Recruitment",
+            "list": {
+              "0": {
+                "text": "Recruiting conditions cannot be set for initial recruiting"
+              },
+              "1": {
+                "text": "Initial Recruiting Results",
+                "desc": "Final Collected Amount: {{amount}} WEMIX / Total Amount of Issued {{type}}: {2} WDR [Date Updated : {{volume}}]"
+              }
+            }
+          },
+          "2": {
+            "title": "Additional Recruiting",
+            "list": {
+              "0": {
+                "text": "Minimum recruiting amount and currency unit can be set"
+              },
+              "1": {
+                "text": "Total issued amount of {{type}} can be set"
+              },
+              "2": {
+                "text": "Recent additional recruiting results",
+                "desc": "Final Collected Amount: {{amount}} WEMIX / Total Amount of Issued {{type}}: {5} WDR [Date Updated : {{date}}]"
+              }
+            }
+          }
+        }
+      },
+      "treasury": {
+        "title1": "Role of the Treasury",
+        "desc1": "The Treasury is the community vault where DAO funds are collected and stored. Influx of funds come from recruiting in the Station and from the result of DAO businesses, and these funds are used as funds for DAO businesses, and for operation costs for the execution of DAO contracts\netc. DAO funds are used through on-chain governance decisions.",
+        "title2": "Smart Contract in Treasury",
+        "item": {
+          "0": {
+            "text": "Smart Contracts in the Treasury set the ways in which funds within the Treasury are used and stored. This can be decided on through Governance.",
+            "list": {
+              "0": {
+                "text": "Stored funds may be used as business funds"
+              },
+              "1": {
+                "text": "Part of the Stored funds may be converted into a specified currency unit, or the amount designated to be Stored"
+              }
+            }
+          }
+        }
+      },
+      "trust": {
+        "title1": "Role of the Trust",
+        "desc1": "The Trust is an organization that is delegated the name and authorities of the {{type}}, and becomes the contract object in off-chain environments. Information about execution of the investment is available.",
+        "title2": "Smart Contract in Trust",
+        "item": {
+          "0": {
+            "text": "Smart Contracts in the Trust set the ways in which the influx of profits into the Trust are managed. This can be decided on through Governance.",
+            "list": {
+              "0": {
+                "text": "Trust Wallet addresses can be added, changed, and edited"
+              },
+              "1": {
+                "text": "Business profit distribution ratio can be set",
+                "list2": {
+                  "0": {
+                    "text": "Current Profit Distribution Ratio for Each Business",
+                    "list3": {
+                      "0": {
+                        "text": "{{business}}",
+                        "desc": "Treasury Reserve Fund: {{type}} Purchase Fund (Sent to the Incinerator) = <0>{{strong1}}</0> / Fee Ratio : <1>{{strong2}}</1> [Date Updated : {{date}}]"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "incinerator": {
+        "title1": "Role of the Incinerator",
+        "desc1": "The Incinerator purchases {{type}} (DAO Tokens) in circulation using DAO profits, and burns part of it in the Incinerator to induce increases in the value of {{type}} (DAO Token).",
+        "title2": "Smart Contract in Incinerator",
+        "item": {
+          "0": {
+            "text": "Smart Contracts in the Incinerator set the ways in which the influx of purchased {{type}} sent to the Incinerator are managed. This can be decided on through Governance.",
+            "list": {
+              "0": {
+                "text": "{{type}} purchase fund distribution ratio can be set",
+                "list2": {
+                  "0": {
+                    "text": "Current Profit Distribution Ratio for Each Business",
+                    "list3": {
+                      "0": {
+                        "text": "{{business}}",
+                        "desc": "Governance Rewards (Sent to Obelisk) : Burnt = <0>{{strong1}}</0> [Date Updated : {{date}}]"
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "stakingPool": {
+        "title1": "Role of the Obelisk",
+        "desc1": "The Obelisk is where your {{type}} (WDR) can be staked, and Governance Tokens and g.{{type}} (g.WDR) can be claimed. {{type}} DAO members owning g.{{type}} and participating in proposals will lead to growth of the DAO. Also, part of the {{type}} purchased with DAO rewards are supplied here to become rewards with g.{{type}}.",
+        "title2": "Smart Contract in Obelisk",
+        "item": {
+          "0": {
+            "text": "Smart Contracts in the Obelisk manage the claiming and supply of {{type}} and g.{{type}}.",
+            "list": {
+              "0": {
+                "text": "Staking: When users stake their {{type}}, the Obelisk pays out g.{{type}} according to the Exchange Ratio"
+              },
+              "1": {
+                "text": "Unstaking: When users return their g.{{type}}, the Obelisk unstakes {{type}} according to the Exchange Ratio"
+              },
+              "2": {
+                "text": "{{type}}: Status of g.{{type}} Exchange Ratio",
+                "desc": "{{type}} : g.{{type}} = <0>{{strong1}}</0> [Date Update : {{date}}]"
+              }
+            }
+          }
+        }
+      },
+      "governance": {
+        "title1": "Role of Governance",
+        "desc1": "This is where governance participants owning g.{{type}} Tokens decide on matters on operations of the {{type}} DAO by raising proposals and voting. Free discussion is possible in 'Discussions', and the processes and results of voting that takes place on-chain in 'Proposals' is executed with smart contracts, as a result supporting transparent DAO operations.",
+        "title2": "Smart Contract in Governance",
+        "item": {
+          "0": {
+            "text": "Smart Contracts in Governance support the execution of various proposals related to DAO operations.",
+            "list": {
+              "0": {
+                "text": "Type of governance proposals",
+                "list2": {
+                  "0": {
+                    "text": "Station",
+                    "desc1": "Additional recruiting (Additional issuing of DAO Tokens)"
+                  },
+                  "1": {
+                    "text": "Treasury",
+                    "desc1": "Use of funds",
+                    "desc2": "Change of reserve fund currency"
+                  },
+                  "2": {
+                    "text": "Trust",
+                    "desc1": "Add to and change Trust Wallet addresses ",
+                    "desc2": "Change DAO profit distribution ratio"
+                  },
+                  "3": {
+                    "text": "Incinerator",
+                    "desc1": "Change purchased {{type}} distribution ratio"
+                  },
+                  "4": {
+                    "text": "Governance",
+                    "desc1": "Change Conditions to proceed with proposals"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "recruitCondition": {
+      "desc": "Participate in DAO recruitment with your WEMIX, and join us in operating the WEMIX3.0 Mainnet with the {{type}} you obtain.",
+      "subDesc": "Station is a protocol that recruits members through a stake-based proportional distribution and performs an initial sale of DAO Tokens. Successful recruitment grants access to menus of other protocols.",
+      "title": "Additional Recruitment in Station",
+      "participant": {
+        "amount": "My Amount Participated",
+        "occupy": "My Participation Share"
+      },
+      "condition": {
+        "btnParticipant": "Participate",
+        "btnCancelParticipant": "Cancel Participation",
+        "btnAddParticipant": "Participate Additionally",
+        "btnCalculator": "Calculating {{type}} distribution",
+        "btnRefund": "Get a Refund",
+        "btnRefundCompleted": "Refund Complete",
+        "refundCompleted": "환불 완료되었습니다.",
+        "status": {
+          "recruited": {
+            "title": "Recruitment opens in \nQ1 of 2023.",
+            "desc": "The schedule will be announced in the near future.",
+            "notice": "Recruitment has not started yet."
+          },
+          "recruitedConfirmed": {
+            "title": "모집 시작까지 남은 시간"
+          },
+          "recruiting": {
+            "title": "Time Remaining Until the End of Recruitment."
+          },
+          "recruitingParticipated": {
+            "title": "Time Remaining Until the End of Recruitment.",
+            "guide": "Increase your share participated through additional participation. \nThe higher your participation amount, the more {{type}} you can obtain."
+          },
+          "completed": {
+            "title": "Recruitment has ended.",
+            "result": "Successfully collected a total of {{number}} WEMIX \nthrough recruitment!",
+            "guide": "The distribution calculation for {{type}} is expected to be completed within 24 hours. \nOnce the calculation is complete, {{type}} can be acquired at the Station."
+          },
+          "failed": {
+            "title": "Recruitment has ended.",
+            "result": "Failed to reach recruitment target amount",
+            "result2": "Additional Recruiting Failed.",
+            "guide": "Recruitment failed as the minimum recruitment goal has not been met.",
+            "guideRefund": "Please proceed with the refund of your participated amount.",
+            "guide2": "Additional recruitment failed as the minimum recruitment goal has not been met.",
+            "guide3": "Recruitment failed as the minimum recruitment goal has not been met.",
+            "guide4": "Additional recruitment failed as the minimum recruitment goal has not been met.",
+            "guide5": "The reflection of the contract based on the recruitment results is scheduled to be completed within 24 hours after the end of the recruitment. After the completion of the reflection, it is possible to get a refund of the participation amount."
+          }
+        }
+      }
+    },
+    "recruiting": {
+      "checkMore": {
+        "title": "Join the WEMIX blockchain ecosystem through WONDER DAO!"
+      },
+      "banner": {
+        "header": "Up to {{n}} members have joined!",
+        "tag": "Participated member no. {{n}}!"
+      },
+      "navBar": {
+        "1": "Recruitment\ninformation",
+        "2": "Participation\nprocedure",
+        "3": "Purpose of\nDAO",
+        "4": "DAO\nOperation",
+        "5": "Tokens",
+        "6": "Tokenomics",
+        "7": "Trust\nInformation"
+      },
+      "section": {
+        "1": {
+          "title": "How to participate in {{type}} DAO?",
+          "1": {
+            "imgArea": {
+              "title": "Example of How {{type}} (DAO Token) Distribution is Calculated",
+              "tooltip": {
+                "1": "Upon successful recruitment and ending of the recruitment period, the participation ratio of the recruitment will be calculated.",
+                "2": "Calculates the total amount of {{type}} that can be obtained by multiplying the total amount of distributed {{type}} to the share participated.",
+                "3": "Converts {{type}} that can be obtained into WEMIX, and calculates the difference between the amount participated and the amount converted to get the reimburse amount."
+              }
+            }
+          },
+          "2": {
+            "title": "Participation procedure",
+            "1": {
+              "desc": "If you have not yet participated",
+              "title": "Participate in Recruitment",
+              "list": {
+                "1": "Recruitment of WONDER DAO is carried out through subscription.",
+                "1-tooltip": "In the subscription method, the person wishing to participate uses WEMIX owned by the person who wants to participate to express their intention to participate, and when the recruitment ends, they can acquire Wonder issued by WONDER DAO in proportion to the amount of WEMIX they used.",
+                "2": "WONDER DAO can participate using WEMIX. The WEMIX used for participation will be paid in the corresponding Wonder (DAO Token) after the end of the recruitment.",
+                "3": "After the end of the recruitment, Wonder will be distributed to each participating member in a proportional distribution method according to the amount of WEMIX participating in the final recruitment WEMIX amount.",
+                "4": "If the participating WEMIX quantity is greater than the WEMIX quantity corresponding to the distributed Wonder quantity, the difference will be refunded."
+              },
+              "link": "Curious about Wonder distribution?"
+            },
+            "2": {
+              "desc": "If the recruitment ends after participation is completed",
+              "title": "Acquiring Wonder (DAO Token)",
+              "list": {
+                "1": "After the end of the recruitment, it will take about 2 hours to calculate the distribution of Wonder.",
+                "2": "Allocated Wonders can be obtained by selecting the ‘Acquire’ button in Station.",
+                "3": "If there is a refund amount, the refund process goes along with the Wonder acquisition process.",
+                "4": "If there is a refund amount, the refund process goes along with the Wonder acquisition process."
+              }
+            },
+            "3": {
+              "desc": "If you want to participate in WONDER DAO's important decision-making",
+              "title": "Acquire g.Wonder (Governance Token)",
+              "list": {
+                "1": "To participate in Governance, you must acquire g.Wonder (Governance Token).",
+                "1-bold": "*If you click the ‘Staking’ button in the Obelisk, you can acquire g.Wonder through the staking of your Wonder.",
+                "2": "Upon staking DAO Tokens, they will be subject to a Lock-up period and cannot be Unstaked for 90 days.",
+                "2-bold": "*If you Stake additionally, the 90-day Lock-up will be reset based on the last Staking date.",
+                "3": "The more g.Wonder you hold, the more influence you have on WONDER DAO's decision-making."
+              }
+            },
+            "4": {
+              "title": "Claim WONDER",
+              "list": {
+                "1": "To participate in WONDER DAO after recruitment ends, you must purchase WONDER in WEMIX.Fi.",
+                "2": "You will automatically join WONDER DAO PAPYRUS Community upon purchasing WONDER tokens."
+              }
+            },
+            "5": {
+              "title": "Obtain G.WONDER and Participate in Governance",
+              "list": {
+                "1": "After claiming WONDER (DAO Token), you must obtain g.WONDER (Governance Tokens) to participate in Governance.",
+                "1-bold": "*Click the \"Stake\" button in Obelisk to get g.WONDER by Staking WONDER in your balance.",
+                "2": "Upon Staking DAO Tokens, they will be subject to a Lock-up period for 90 days and cannot be Unstaked.",
+                "2-bold": "*If you Stake additionally, the 90-day Lock-up period will be reset based on the last Stake date.",
+                "3": "The g.WONDER you claim represents voting rights to participate in Governance. The more g.WONDER you hold, the more influence you have on WONDER DAO decision-making."
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "How does WONDER DAO work?",
+          "1": {
+            "title": "Purpose of DAO",
+            "desc": "WEMIX's first DAO project, WONDER DAO, joins 40 WONDERS*, the 40 Node Council Partners (NCPs) that make up the axis of the stake-based Proof of Authority (SPoA) consensus algorithm chosen by the WEMIX3.0 mainnet. As the NCP of WONDER DAO WEMIX3.0 mainnet, we want to contribute to the safety and expansion of the mainnet by becoming a growing community with the development of the WEMIX mega ecosystem.",
+            "link": "Curious about the roadmap of WEMIX3.0 operation?"
+          },
+          "2": {
+            "title": "DAO operation (Governance)",
+            "desc": "WONDER DAO decides all matters related to DAO operation through the On-chain Governance Program. The governance token, g.Wonder, is used as voting rights, and the steps of DAO governance are as follows.",
+            "list": {
+              "1": "1.Temperature Check WONDER DAO Governance goes through the process of checking responses and opinions on the issue before voting on the agenda through free discussion in the form of a bulletin board. It can be accessed through the Discussion menu under Governance in the WONDER DAO service menu.",
+              "2": "2. Consensus Check If an agenda is judged worthy of voting, any DAO member can vote on the topic on-chain. Voting achieves the primary consensus of DAO members through the ‘consultation’ stage, and registration becomes possible through the ‘resolution’ stage voting.",
+              "3": "3. Governance Proposal Agenda for which the ‘consultation’ vote has been passed can proceed with on-chain voting in the ‘resolution’ stage. The ‘resolution’ stage generally has higher participation conditions than the ‘consultation’ stage. When an agenda is approved in the ‘resolution’ stage, the contract to which the content applies can be executed, and anyone can execute the contract."
+            }
+          },
+          "3": {
+            "title": "Tokens",
+            "desc": {
+              "1": {
+                "title": "Wonder (Ticker: WDR)",
+                "desc": "Wonder Token is a utility token that proves membership in the WONDER DAO. Wonder tokens will be distributed through an initial sale at Station.",
+                "ul": {
+                  "1": "Issued amount: 1,500,010 WDR (based on the date of formation of DAO)",
+                  "2": "Issuance method: Issuance through the subscription method at the station",
+                  "3": "Obtained from: Participating in Station or WEMIX.Fi"
+                }
+              },
+              "2": {
+                "title": "g.Wonder (Ticker: g.WDR)",
+                "desc": "g.Wonder Token is the governance token of WONDER DAO. g.Wonder tokens can be acquired by staking Wonder in the Obelisk, and issued or burned in the Obelisk.",
+                "ul": {
+                  "1": "Issued amount: no limit",
+                  "2": "Issuance Method: Issuance/Incineration in Obelisk",
+                  "3": "Acquired from: Obelisk"
+                }
+              }
+            }
+          },
+          "tokenomics": {
+            "title": "Tokenomics",
+            "desc": "WEMIX mainnet allocates a certain percentage (40%, based on WEMIX3.0 phase 01) of newly minted WEMIX per block to Node Council Partners. WONDER DAO is one of the 40 NCPs on the WEMIX mainnet and will be allocated a PMR equivalent to 1%. It is used only for DAO operation and growth, and its use and conditions are determined through WONDER DAO's Onchain governance and recorded on the smart contract.",
+            "desc-2": "WEMIX allocated by DAO is transferred to Treasury and Incinerator according to the distribution ratio on the contract.",
+            "ul": {
+              "1": "Funds received by the Treasury: used as DAO operating funds",
+              "2": "Funds received by Incinerator: Buyback Wonder (DAO Token) at WEMIX.Fi, and the Buyback Wonder is used in the following two directions according to the distribution ratio",
+              "2-1": "1) Incinerator burns Wonder (DAO Token)",
+              "2-2": "2) Send Wonder to the Obelisk"
+            }
+          },
+          "4": {
+            "title": "WONDER DAO Tokenomics Flow Chart",
+            "desc": "The number shown is the initial setting value, and the distribution ratio can be changed through governance later.",
+            "list": {
+              "1": "*Includes Trust fee and WEMIX.Fi fee",
+              "2": "*The figures shown are the initial settings, and the distribution ratio can be changed through governance later."
+            }
+          },
+          "5": {
+            "title": "Trust Information",
+            "desc": "WONDER DAO Trust performs the following roles under the name of WONDER DAO.",
+            "btn": "Read more NEITH Protocol & Smart Contract",
+            "list": {
+              "1": {
+                "title": "Trust Configuration",
+                "list": {
+                  "1": "This is the place where the name and authority of WONDER DAO are delegated and the subject of business conduct, management and contracts.",
+                  "2": "Trust Wallet",
+                  "3": "Member Information",
+                  "3-1": "Member Name",
+                  "4": "Operating Fee",
+                  "4-1": "3% of the amount of business revenue is paid to the trust operator as a commission for trust operation."
+                }
+              },
+              "2": {
+                "title": "Trust Performance",
+                "1": "WONDER DAO's NCP node operation agency",
+                "2": "Practicing voting rights on WEMIX3.0 Governance agenda",
+                "3": "Notice to WONDER DAO about the above performance details",
+                "4": "Acting for other fund execution and other tasks necessary for contracts"
+              }
+            }
+          }
+        }
+      },
+      "tabs": {
+        "button": {
+          "0": "How To Participate",
+          "1": "How It Operates",
+          "2": "Member",
+          "4": "Participation and Recruitment History"
+        },
+        "title": {
+          "0": "How can I participate in {{type}} DAO?",
+          "1": "How is {{type}} DAO Operated?"
+        }
+      },
+      "table": {
+        "title": "<0>{{count}}</0> members have participated so far!"
+      },
+      "participantStep": {
+        "title": "Guide to Participating",
+        "list": [
+          {
+            "title": "Use WEMIX to Participate in Station",
+            "subTitle": "If you have not participated yet",
+            "list": [
+              {
+                "desc": "{{type}} DAO recruitment will be conducted through stake-based proportional distribution where you can participate in with WEMIX and receive the corresponding amount of {{type}} (DAO Tokens) after the recruitment ends."
+              },
+              {
+                "desc": "The rest of the WEMIX used for participation, excluding the amount corresponding to the {{type}} distribution, will be refunded."
+              },
+              {
+                "desc": "The minimum amount required for participation is 10 WEMIX, and there is no maximum limit."
+              },
+              {
+                "desc": "Additional participation and participation cancellation are only available during the recruitment period."
+              }
+            ]
+          },
+          {
+            "title": "Obtain {{type}} (DAO Tokens)",
+            "subTitle": "If recruitment ends after you participate",
+            "list": [
+              {
+                "desc": "It is expected to take about 24 hours to calculate the distribution of {{type}} after the recruitment is over."
+              },
+              {
+                "desc": "{{type}} will be distributed to each member proportionally based on the amount of WEMIX participated to the total amount of WEMIX participated. "
+              },
+              {
+                "desc": "The distributed {{type}} can be obtained by selecting 'Obtain {{type}} & Get WEMIX Reimburse'."
+              },
+              {
+                "desc": "If you are eligible for a reimburse, the reimburse process will take place while you obtain the distributed {{type}}."
+              }
+            ]
+          },
+          {
+            "title": "Obtain g.{{type}} (Governance Tokens)",
+            "subTitle": "If you wish to participate in the decision-making of important issues in {{type}} DAO",
+            "list": [
+              {
+                "desc": "To participate in Governance, you must obtain g.{{type}} (Governance Tokens).",
+                "strong": "In the Obelisk, tap the “Stake” button to get g.{{type}} by Staking the {{type}} in your balance. "
+              },
+              {
+                "desc": "Upon Staking DAO Tokens, they will be subject to a Lock-up period and cannot be Unstaked for 90 days. ",
+                "strong": "If you stake additionally, the 90-day Lock-up period will be reset from the last Staked date and time."
+              },
+              {
+                "desc": "The more g.{{type}} you have, the more influence you will have on the decision-making process of {{type}} DAO."
+              }
+            ]
+          }
+        ]
+      },
+      "protocol": {
+        "title": "Protocol",
+        "desc": "The 6 protocols play a pivotal role in the operation and development of {{type}} DAO.",
+        "button": "Smart Contract 내역보기",
+        "listTitle": "Role of {{protocol}}",
+        "list": [
+          {
+            "desc1": [
+              "Station performs the task of recruiting DAO members. Those who wish to participate can become a member of the DAO by purchasing DAO Tokens ({{type}}, Ticker: {{unit1}}) through Station, expressing their agreement with the purpose and operation of the DAO."
+            ],
+            "desc2": [
+              "Smart Contracts in Station governs the recruitment operation which can be decided through Governance Proposals.",
+              "Conditions such as recruitment period, recruitment target amount, DAO Token issuance, and participation criteria can be set. "
+            ]
+          },
+          {
+            "desc1": [
+              "Treasury is the community vault where DAO assets are stored. It is a smart contract-based protocol, and the use of stored Tokens can only be executed through on-chain governance."
+            ],
+            "desc2": [
+              "Smart Contracts in Treasury regulate the use and storage of funds in the Treasury, which can be determined through Governance proposals.",
+              "Part of the stored funds can be converted and stored in a specific currency unit on WEMIX 3.0."
+            ]
+          },
+          {
+            "desc1": [
+              "The Obelisk is where DAO membership (the right to participate in Governance) can be acquired. Any {{type}} Token Holders who have the same long-term vision for {{type}} DAO and wish to participate in DAO Governance, can Stake {{type}} in Obelisk and obtain g.{{type}}."
+            ],
+            "desc2": [
+              "Smart Contracts in the Obelisk manage how members can obtain g.{{type}} by Staking {{type}}, and the Unstaking of {{type}} through the return of g.{{type}}."
+            ]
+          },
+          {
+            "desc1": [
+              "g.{{type}} holders can propose and vote on matters related to the operation of {{type}} DAO in Governance.",
+              "1. Temperature Check\nIn this step, responses and opinions of DAO members are collected and heard. Posts with significant support from DAO members are registered as on-chain suggestions later on.",
+              "2. Consensus Check\nThis is the first step of On-chain voting for a proposal suggestion, where the consensus on changing the current status quo is decided. Proposals that passed the Consensus Check step proceed to the next step, Governance Check.",
+              "3. Governance Check\nThis is the stage where the final decision to execute a proposal is made. Proposals that have been passed the Governance Check stage are recorded and executed on-chain."
+            ],
+            "desc2": [
+              "Smart Contracts in Governance support the execution of various Proposals related to DAO operations and changing the settings that are approved."
+            ]
+          },
+          {
+            "desc1": ["Trust acts as a deputy to execute decisions of DAO Governance on behalf of the DAO."],
+            "desc2": [
+              "The Smart Contracts within the Trust determine how profits are managed and this can be decided through Governance.",
+              "It is possible to set the distribution ratio of the revenue."
+            ]
+          },
+          {
+            "desc1": [
+              "Incinerator buybacks and burns {{type}} tokens according to the ratio set in the Smart Contract, then redistributes them to the Obelisk."
+            ],
+            "desc2": [
+              "Smart Contracts in Incinerator execute Buyback and Distribution of DAO tokens.",
+              "Burning of buyback {{type}} and setting the Obelisk redistribution ratio can be determined through Governance."
+            ]
+          }
+        ]
+      },
+      "token": {
+        "desc": "Get DAO Tokens and Governance Tokens to become a member of {{type}} DAO and participate in the decision-making process.",
+        "item": [
+          {
+            "ticker": "(Ticker: {{unit1}})",
+            "name": "{{type}}",
+            "desc": "{{type}} Token is a utility token that can be used to issue Governance Tokens. You can Stake {{type}} to obtain g.{{type}} Tokens.",
+            "list": ["Amount Issued :{{num}} {{unit1}}", "Source of Acquisition : Participate in Station or use the Swap service in WEMIX.Fi"]
+          },
+          {
+            "ticker": "(Ticker: {{unit2}})",
+            "name": "g.{{type}}",
+            "desc": "g.{{type}} is a Token that gives you the right to participate in On-chain Governance, which decides on all matters of {{type}} DAO operations.",
+            "list": ["Governance Token that is issued or burned in the DAO Obelisk", "Source of Acquisition: {{type}} DAO Obelisk"]
+          }
+        ]
+      },
+      "tokenomics": {
+        "desc": "The WEMIX3.0 mainnet allocates 40% of PMR (Permanent Minting Reward, 1 WEMIX per a block, in the WEMIX3.0 phase 01) to Node Council Partners. {{type}} DAO will receive 0.01 WEMIX per a block as one of the 40 NCPs on the WEMIX3.0 Mainnet. Through the tokenomics of {{type}} DAO, we pursue the vision of a growing community.",
+        "list": ["DAO Token\nInitial Sale", "{{type}} DAO\nJoin NCP & Get PMR", "DAO Token\nBuyback", "DAO Token\nBurned", "DAO Token\nGrowth"],
+        "algorism": {
+          "title": "Flow Chart of {{type}} DAO Tokenomics",
+          "desc": "*This is a chart of the estimated tokenomics concepts drawn out with default values. You can use this to get an understanding of the Token-based flow of {{type}} DAO.",
+          "guide": "*Includes Trust Fees and WEMIX.Fi Fees"
+        }
+      }
+    },
+    "complete": {
+      "title": "Station",
+      "desc": "The Station carries out tasks to recruit DAO members.\nIt provides various information (Missions, rewards, methods of operation, etc.) that users must know to participate in a DAO.",
+      "additional": {
+        "title": "DAO Additional Recruiting",
+        "key_one": "({{count}}st)",
+        "key_two": "({{count}}nd)",
+        "key_few": "({{count}}rd)",
+        "key_other": "({{count}}th)",
+        "desc": "Additional recruitment has begun! This additional recruitment will be held for a total of 6 days. Get involved right now!"
+      },
+      "participate": {
+        "title": "My Station Participation History",
+        "beforeConnect": {
+          "desc": "Please connect your Wallet to view participation history.",
+          "button": "Connect Wallet"
+        },
+        "beforeParticipate": {
+          "desc": "No participation history. You can participate in {{type}} DAO by purchasing {{type}} (DAO Token) on WEMIX.Fi.",
+          "button": "Go to WEMIX.Fi"
+        },
+        "after": {
+          "box-1": "WEMIX used to participate in Station (Accumulated)",
+          "box-2": "{{type}} obtained from participating in Station (Accumulated)",
+          "history": {
+            "button": "Obtain {{type}} & Get WEMIX Reimburse",
+            "date": "Participation date",
+            "open": "View More",
+            "close": "View Less",
+            "tooltip": {
+              "1": "Proceed with the Wallet Signature",
+              "2": "Obtain {{type}} & WEMIX refund Complete"
+            },
+            "title": {
+              "1": "Initial Recruiting",
+              "2": "Additional Recruitment",
+              "key_one": "(No. {{count}})",
+              "key_two": "(No. {{count}})",
+              "key_few": "(No. {{count}})",
+              "key_other": "(No. {{count}})"
+            },
+            "desc": {
+              "1": "Your participation ratio is <0>{{percent}}</0>%%. (Amount participated/Total recruiting amount: <1>{{figure1}}</1> WEMIX/<2>{{figure2}}</2> WEMIX)",
+              "2": "<0>Obtain {{type}} & WEMIX reimburse complete.</0> (Obtained {{type}}: <1>{{figure1}}</1> {{unit1}}, Reimbursed WEMIX: <2>{{figure2}}</2> WEMIX)",
+              "3": "<0>Proceed to obtain {{type}} & get WEMIX reimburse.</0> (The amount of {{type}} you can obtain: <1>{{figure1}}</1> <2>{{unit1}}</2>, the amount of WEMIX available for reimburse: <3>{{figure2}}</3> <4>WEMIX</4>)"
+            }
+          }
+        }
+      },
+      "result": {
+        "title": "Past Recruitment Results",
+        "desc": "You can check the recruitment history through Station.",
+        "headerInfo1": "Accumulated Recruited \nAmount in Station",
+        "headerInfo2": "Accumulated Members \nParticipating in Station",
+        "person": "",
+        "list": {
+          "title": {
+            "1": "Initial Recruiting",
+            "2": "Additional Recruiting",
+            "key_one": "({{count}}st)",
+            "key_two": "({{count}}nd)",
+            "key_few": "({{count}}rd)",
+            "key_other": "({{count}}th)"
+          },
+          "tag": {
+            "1": "Recruitment Successful",
+            "2": "Recruiting Failed"
+          },
+          "desc": {
+            "1": "Participation Ratio in Relation with Minimum Recruiting Funding Goal: <0>{{n}}%</0> (Total amount participated/Total amount recruited: <1>{{figure1}}</1> WEMIX/<2>{{figure2}}</2> WEMIX)",
+            "2": "Members Recruited: <0>{{n}}</0>"
+          },
+          "date": "Participation date",
+          "box": {
+            "title": {
+              "1": "How recruitment works",
+              "2": "Recruitment token unit",
+              "3": "Recruitment target amount",
+              "4": "Minimum amount to participate",
+              "5": "Amount of Distributed WONDER",
+              "6": "WONDER Exchange Ratio"
+            },
+            "contents": {
+              "1": "Subscription method",
+              "2": "Limitless",
+              "3": "or more"
+            }
+          }
+        }
+      },
+      "introduce": {
+        "title": "About DAOs",
+        "desc": "As a Wonder (WEMIX On-chain Network Decentralized Ecosystem Regulator) that has been given WEMIX3.0 mainnet net operation authorities, it will have the same responsibilities and access to rewards as other authority nodes. With the Wonder DAO, we will also take one step further towards complete decentralization with WEMIX3.0's SPoA (Stake-based Proof of Authority) consensus algorithm method."
+      },
+      "table": {
+        "totalMember": "Total Members",
+        "update": "Date Updated",
+        "participateDate": "Participation Date/Time",
+        "greeting": "Greetings",
+        "header": {
+          "1": "Members",
+          "2": "g.{{type}} Holdings",
+          "3": "{{type}} Holdings",
+          "4": "참여 Proposal",
+          "5": "제안 Proposal"
+        }
+      },
+      "card": {
+        "recent": "Recent Activity",
+        "1": "g.{{type}} Holdings",
+        "2": "{{type}} Holdings",
+        "3": "참여 Proposal",
+        "4": "제안 Proposal"
+      }
+    },
+    "participate": {
+      "title": "Information About Participating",
+      "item": {
+        "0": {
+          "name": "How Recruitment Works",
+          "value": "Stake-based Proportional Distribution"
+        },
+        "1": {
+          "name": "Recruitment Token Unit"
+        },
+        "2": {
+          "name": "Recruitment Target Amount"
+        },
+        "3": {
+          "name": "Minimum Amount to Participate",
+          "value": "or more"
+        },
+        "4": {
+          "name": "Amount of Distributed {{type}}"
+        },
+        "5": {
+          "name": "{{type}} Exchange Ratio"
+        }
+      },
+      "caution": {
+        "0": "If the participating WEMIX quantity is greater than the WEMIX quantity corresponding to the distributed {{type}} quantity, the difference will be refunded.",
+        "1": "Additional participation and cancellation of participation are only possible during the recruitment period.",
+        "2": "Recruitment information may change later.",
+        "3": "(영문 필요){{type}} 발행량 참여 비중에 따라 배분",
+        "4": {
+          "text": "The issued {{type}} and recruited WEMIX is used as follows:",
+          "1": "- Total Issued Amount of {{type}}: {{n1}} {{unit}} (Station Allocation Amount: {{n2}} {{unit}}, Liquidity pool creation: {{n3}} {{unit}})",
+          "2": "- Station recruitment target amount: {{n1}} WEMIX (WEMIX NCP participation: {{n2}} WEMIX, Liquidity pool creation: {{n3}} WEMIX)"
+        }
+      }
+    },
+    "stationMembersTop": {
+      "members": "Total members",
+      "voters": "Total Voters",
+      "proposal": "Total Proposals",
+      "governance": "Governance Members"
+    },
+    "participationProcess": {
+      "title": "Participate",
+      "title2": "Participate Additionally",
+      "title3": "Welcome to {{type}} DAO!",
+      "step1": "Bio",
+      "step2": "Enter WEMIX",
+      "step3": "Important Information",
+      "complete": "Complete",
+      "fill": "Fill",
+      "availableWemix": "WEMIX available in your Wallet",
+      "availableWemixError1": "To participate, you must have at least 10.5 WEMIX*.",
+      "availableWemixError2": "For additional participation, you must have at least 1.5 WEMIX*.",
+      "availableWemixErrorSub1": "*Total recruitment target amount (10 WEMIX) and estimated Gas Fees (0.5 WEMIX)",
+      "availableWemixErrorSub2": "*Minimum amount for additional participation (1 WEMIX) and estimated Gas Fees (0.5 WEMIX)",
+      "bannerText": "This community is in charge of the first node among the 40 nodes gathered to participate in the WEMIX3.0 Mainnet Governance.",
+      "inputBio": "Check your profile information, and enter your bio!",
+      "welcomeMessage": "Leave a message to say hello to the members of {{type}} DAO!",
+      "optional": "optional",
+      "placeholder1": "A maximum of {{num}} characters can be entered.",
+      "placeholder2": "Enter an integer of {{num}} WEMIX or more.",
+      "placeholderType1": "Hello! Nice to meet you.",
+      "placeholderType2": "I'll do my best to contribute!",
+      "placeholderType3": "Lovely to meet you.",
+      "placeholderType4": "Let's get things going!",
+      "placeholderType5": "It's an honor to be a part of this!",
+      "inputWemix": "Enter the amount of WEMIX to participate with!",
+      "infoText1": "The higher the amount of participation, the more {{type}} you can acquire and the more influence you can have on decision-making for DAO operation.",
+      "rankText": "<0>If you participate with this much WEMIX</0> you will be in the <strong>top {{num}} %</strong> of the current total of {{totalNum}} participants.",
+      "rankText2": "<0>If you participate additionally with {{amount}} WEMIX,</0> you will be in the <1>top {{num}}%</1> of the current total of {{totalNum}} participants.",
+      "maximumAmount": "Highest Amount Participated",
+      "averageAmount": "Average Amount Participated",
+      "errorMessage1": "Enter amount to participate with.",
+      "errorMessage2": "Enter an integer of {{num}} WEMIX or more.",
+      "errorMessage3": "The maximum amount excluding Gas Fees.",
+      "errorMessage4": "You have exceeded the amount of WEMIX required for participation. Please check your balance.",
+      "noteHead": "Please check the relevant information before participating!",
+      "noteTitle1": "Distribution of {{type}}",
+      "noteTitle2": "Precautions",
+      "note1": "It will take approximately {{num}} hours to calculate the distribution of {{type}} after the recruitment process has ended.",
+      "note2": "{{type}} will be distributed proportionally based on the amount of participation compared to the final total of recruited WEMIX.",
+      "note3": "To obtain the distributed {{type}}, simply tap on the \"Obtain {{type}} & Get WEMIX Reimburse\" button. If you are entitled to a reimburse, it will be processed at the same time as you receive the distributed {{type}}.",
+      "note4": "The Station of NEITH Protocol is established by 2 or more Wallet (multi-sig) signatures.",
+      "note5": "Anyone who wants to participate in a DAO must read and acknowledge the Station guide. The decision to participate through Wallet signature will be considered as agreeing to the default set values.",
+      "note6": "WEMIX used for participation will be used for DAO operations. Once the WONDER tokens have been distributed, any remaining amount of WEMIX will be refunded.",
+      "noteRef1": "Gas Fees will incur for transfers from the Wallet. Expected gas fees may vary depending on network traffic conditions.",
+      "checkIt": "Yes, I have checked it.",
+      "completeMessage1": "Once the DAO has been created, please check the <0>2 following points!</0>",
+      "completeMessage2": "Once {{type}} DAO has been created, you can participate the {{type}} DAO channel in PAPYRUS.",
+      "completeMessage2-1": "If you have participated in a DAO, you will automatically be invited to the PAPYRUS channel.",
+      "completeMessage3": "After the recruitment period ends, DAO Tokens will be allocated according to the participation share, and DAO Token claims and remaining WEMIX refunds are possible through Station.",
+      "addComplete1": "Additional Participation Complete",
+      "addComplete2": "Participation amount has been added. The additional amount will be displayed by adding it to the participation amount.",
+      "cancelTitle1": "Cancel Participation",
+      "cancelTitle2": "Participation Canceled",
+      "cancelDesc1": "Would you like to cancel your participation? If you cancel your participation, the participation amount will be reimbursed, and a Gas Fee will be incurred during the reimburse process.",
+      "cancelDesc2": "The Gas Fee for fund transfer will be paid from your Wallet. Depending on network traffic, the estimated Gas Fee may change.",
+      "cancelDesc3": "Your amount participated has been refunded. The amount refunded can be viewed in your Wallet.",
+      "cancelDesc4": "You must purchase additional WEMIX if you do not have enough Gas Fees (WEMIX) to proceed."
+    }
+  },
+  "trust": {
+    "title": "Trust",
+    "desc": "Trust acts as a deputy to execute decisions of DAO Governance on behalf of the DAO.",
+    "chart": {
+      "name": "Trust Rate of Return",
+      "summary": "Rate of Return Now"
+    },
+    "graphTitle": "Accumulated APR",
+    "report": {
+      "title": "Trust Report",
+      "item": {
+        "0": "Accumulated Rewards",
+        "1": "Accumulated Funds Sent To The Treasury",
+        "2": "Accumulated Funds Sent To The Incinerator",
+        "3": "Accumulated Trust Fees",
+        "tooltip1": "Total amount of accumulated rewards sent to Treasury Reserve Fund.",
+        "tooltip2": "Total amount of accumulated rewards sent to Incinerator.",
+        "tooltip3": "Total amount of accumulated rewards used as Trust Fees."
+      }
+    },
+    "about": {
+      "title": "Trust in WONDER DAO",
+      "desc": "Designated Trust Agency",
+      "item": {
+        "0": {
+          "title": "About",
+          "desc": "The Trust acts as a deputy to execute decisions of DAO on behalf of the DAO. Wemade takes on the role of the Trust of {{type}} DAO, participating as a Node Council Partner(NCP), storing and managing the Trust wallet, and more."
+        },
+        "1": {
+          "title": "Structure",
+          "list": {
+            "0": {
+              "title": "Trust Contract",
+              "list2": {
+                "0": "Trust is composed of smart contracts that keep a record of tokens sent from the Treasury to the Trust Wallet, and distribute and record tokens sent from the Trust Wallet to the Treasury and Incinerator components."
+              }
+            },
+            "1": {
+              "title": "Trust Wallet",
+              "list2": {
+                "0": "{{type}} Trust Wallet\n0x60D349aA8a9F200d182653D64dFE8271AA28d0D7",
+                "1": "{{type}} NCP Wallet\n0x247a949B5e2c7DA0C2F73C58AE51c0Cb97Ea35A9 ",
+                "2": "{{type}} LP Wallet\n0xef26FBd3d89b9c67b5E9f0733BB2CB087E65c0C9",
+                "3": " The Trust Wallet is managed transparently with Multi-sig."
+              },
+              "caption": {
+                "0": "The wallet connected to NEITH Protocol, responsible for sending and receiving tokens",
+                "1": "The wallet to participate as {{type}} 1",
+                "2": "The wallet to create the {{unit1}}-WEMIX pair pool on WEMIX.Fi "
+              }
+            }
+          }
+        },
+        "2": {
+          "title": "Policy",
+          "list": {
+            "0": {
+              "title": "PMR Transfer Cycle",
+              "list2": {
+                "0": "PMR accumulated from participation of {{type}} DAO in NCP will be transferred to the Trust Contract on the first Tuesday of each month. If Tuesday is a holiday, it will be transferred on Thursday. "
+              }
+            },
+            "1": {
+              "title": "Trust Fees",
+              "list2": {
+                "0": "Trust takes a 2% fee on PMR transfers. Trust fee is paid by a smart contract and transparently recorded on the blockchain."
+              }
+            }
+          }
+        }
+      }
+    },
+    "activity": {
+      "select": {
+        "0": "All Business"
+      },
+      "tooltip": {
+        "name": "Profit sharing ratio of the business",
+        "fee": "Trust Fee",
+        "treasuryRate": "Treasury Funding Ratio",
+        "incineratorRate": "Incinerator Funding Ratio"
+      }
+    },
+    "notice": "All Notices",
+    "registerNotice": {
+      "btn": "Write Notice",
+      "title": "Write Notice",
+      "content": "Please enter notice content."
+    },
+    "wemixSend": "Transfer WEMIX",
+    "send": "Send to Contract",
+    "funding": "Fund Recipient",
+    "useToken": "Token Used",
+    "ownToken": "WEMIX in Balance",
+    "usingValue": "Amount to use",
+    "max": "Max.",
+    "error": "Please enter the amount to use.",
+    "sendComplete": "Transaction Complete"
+  },
+  "treasury": {
+    "title": "Treasury",
+    "desc": "Treasury is the community vault where DAO assets are stored. It is a smart contract-based protocol, and the use of stored Tokens can only be executed through on-chain governance.",
+    "chart": {
+      "title": "Funds in My Balance",
+      "name": "Treasury now",
+      "summary": "Rate of Return Now",
+      "legend": {
+        "0": "Deposit",
+        "1": "Withdraw",
+        "2": "In Balance",
+        "3": "Deposit",
+        "4": "Withdraw",
+        "5": "Legend"
+      }
+    },
+    "information": {
+      "title": "Asset Information for Each Currency"
+    },
+    "activity": {
+      "title": "Activity"
+    },
+    "report": {
+      "title": "Treasury Report",
+      "item": {
+        "0": "Current Balance",
+        "1": "Accumulated Amount of Deposits",
+        "2": "Accumulated Amount of Withdrawals"
+      }
+    }
+  },
+  "incinerator": {
+    "title": "Incinerator",
+    "desc": "Incinerator buybacks and burns {{type}} tokens according to the ratio set in the Smart Contract, then redistributes them to the Obelisk.",
+    "chart": {
+      "title": "Accumulated {{type}} Burnt",
+      "summary": "Total Supply",
+      "legend": {
+        "0": "{{type}} Price",
+        "1": "Amount Burnt"
+      }
+    },
+    "report": {
+      "title": "Incinerator Report",
+      "item": {
+        "1": "Accumulated {{type}} Purchased",
+        "2": "Accumulated {{type}} Burnt",
+        "3": "Accumulated {{type}} Transferred",
+        "4": "Total Expenses for {{type}} Purchase",
+        "5": "Incinerator Balance",
+        "6": "Balance of Gas Fee for {{type}} Purchase",
+        "tooltip1": "Accumulated {{type}} redistributed to the Obelisk.",
+        "tooltip2": "{{type}} purchases are executed through random algorithms that require Gas Fees. If there are not enough Gas Fees, the Incinerator operation will be halted, so please add Gas Fees to the protocol operating Bot-Wallet through Proposal about funds in Governance."
+      }
+    },
+    "tooltip": {
+      "title": "Profit sharing ratio of the business",
+      "desc": {
+        "list": {
+          "0": "Incinerate {{type}}",
+          "1": "Obelisk Transfer*"
+        },
+        "text": "*Governance reward purpose"
+      }
+    }
+  },
+  "daoInformationTable": {
+    "table": {
+      "th1": "Currency Classification",
+      "th2": "Accumulated Deposits",
+      "th3": "Accumulated Withdrawals",
+      "th4": "Total Balance",
+      "th5": "Value of Balance",
+      "th6": "Asset Ratio",
+      "th7": "Participanting Members",
+      "th8": "Amount Participated",
+      "th9": "Greetings",
+      "th10": "Participation Date/Time"
+    }
+  },
+  "daoActivityTable": {
+    "table": {
+      "th1": "Date",
+      "th2": "Status",
+      "th3": "Amount",
+      "th4": "From",
+      "th5": "To",
+      "th6": "Type",
+      "th7": "Executer",
+      "showBtn": "Show More",
+      "th8": "Type",
+      "th9": "Ratio",
+      "th10": "Wonder in SP",
+      "th11": "g.Wonder in DAO",
+      "th12": "Status",
+      "td1": "Inflow",
+      "td2": "Outflow",
+      "td3": "Purchase",
+      "td4": "Outflow(Burn)"
+    }
+  },
+  "governance": {
+    "title": "Governance",
+    "desc": "g.{{type}} holders can propose and vote on matters related to {{type}} DAO operations through Governance.",
+    "agenda": {
+      "item": {
+        "0": "Total Proposals",
+        "1": "Use Treasury Funds",
+        "2": "Change DAO Profit Distribution Ratio",
+        "3": "Change Buyback WONDER Distribution Ratio",
+        "4": "Change Governance Settings",
+        "5": "Change Type of Tokens Stored in Treasury",
+        "6": "Re-open Station",
+        "7": "Change Trust Check Period",
+        "8": "Misc. Proposal",
+        "9": "Trust Check Proposal"
+      },
+      "confirm": "Complete",
+      "modifying": "Edit Proposed Action",
+      "emptyAgenda": "Please set Proposed Action conditions.",
+      "tab1": {
+        "desc": "Proposals about using the DAO Reserve Fund.",
+        "th1": "Fund Recipient",
+        "th2": "Token to use",
+        "th3": "Amount to use",
+        "td1": "Trust Wallet",
+        "td2": "System Wallet (Protocol operating bot)",
+        "td3": "{{coin}} ({{balance}} {{coin}} in Balance)",
+        "placeholder1": "Select the Token to use to enter amount.",
+        "placeholder2": "Up to 18 decimal places can be entered.",
+        "error1": "Please enter the amount.",
+        "btn1": "Max."
+      },
+      "tab2": {
+        "desc": "Proposals about setting the distribution ratio for distributing DAO profits such as PMR to the Treasury Reserve Fund and Incinerator Fund.",
+        "th1": "Distribution Ratio",
+        "th2": "Treasury Reserve Fund Ratio",
+        "th3": "Incinerator Fund Ratio",
+        "td1": "Before",
+        "td2": "After",
+        "label1": "Maintain",
+        "label2": "Enter Manually (Up to 4 decimal places)",
+        "error1": "Please enter a number between 0 and 100.",
+        "info1": "*The ratio for these choices are ratios for 'Treasury Reserve Fund : Incinerator Fund'.",
+        "info2": "*Distribution ratio of the amount left after the 2% Trust fees."
+      },
+      "tab3": {
+        "desc": "Proposals about setting the distribution ratio for DAO Tokens purchased from the Incinerator.",
+        "th1": "Distribution Ratio",
+        "th2": "Burn Rate",
+        "th3": "Obelisk Distribution Ratio",
+        "td1": "Before",
+        "td2": "After",
+        "label1": "Maintain",
+        "label2": "Enter Manually (Up to 4 decimal places)",
+        "error1": "Please enter a number between 0 and 100.",
+        "info1": "*The ratio for these choices are ratios for \"Burn : Obelisk Distribution\"."
+      },
+      "tab4": {
+        "desc": "Proposals about changing the Consensus check and Governance check operation conditions for on-chain votes.",
+        "th1": "Proposal to Change Conditions",
+        "th2": "Conditions for Registering On-chain Proposals",
+        "th3": "Voting Period",
+        "th4": "Consensus Check",
+        "th5": "Governance Check",
+        "th6": "Quorum",
+        "th7": "(or more)",
+        "th8": "Pass Conditions",
+        "th9": "(over)",
+        "td1": "Before",
+        "td2": "After",
+        "label1": "Maintain",
+        "label2": "{{percent}}%",
+        "label3": "{{day}} days",
+        "label4": "Enter Manually (Up to 4 decimal places)",
+        "label5": "Enter Manually",
+        "label6": "(Unchanged)",
+        "placeholder1": "Min.: 1 / Max.: 30",
+        "placeholder2": "Min.: 50",
+        "error1": "Please enter a number over 0 and under 100.",
+        "error2": "Please enter a number between 1 and 30."
+      },
+      "tab5": {
+        "desc": "Proposals to change the type of Token stored in the Treasury.",
+        "th1": "Token to pay with",
+        "th2": "Amount to use",
+        "th3": "Amount to claim",
+        "td1": "{{coin}} ({{balance}} {{coin}} in Balance)",
+        "placeholder1": "Input available when 'Token to pay with' is selected.",
+        "placeholder2": "Up to 18 decimal places can be entered",
+        "error1": "Please enter the amount.",
+        "btn1": "Max.",
+        "exchange1": "Estimated amount to claim : {{amount}} {{coin}}",
+        "info1": "*The estimated amount to claim is calculated based on current prices."
+      },
+      "tab6": {
+        "desc": "Proposals to reopen the Station to raise additional funds and issue additional DAO Tokens.",
+        "th1": "Recruiting Period",
+        "th2": "Target Recruiting Amount",
+        "th3": "Amount of DAO Tokens to Additionally Issue",
+        "th4": "Minimum Participation Amount",
+        "th5": "Unit of Increase",
+        "label1": "Enter Manually",
+        "placeholder1": "You can only enter integers.",
+        "placeholder2": "Please enter 18 decimal places or less.",
+        "error1": "Please enter the amount to use.",
+        "error2": "Please enter the amount.",
+        "error3": "Please enter a number between 1 and 30.",
+        "desc1": "Min.: 1 / Max.: 30",
+        "desc2": "*Conducted in the token unit of the initial Station recruitment, and the raised funds will be sent to the Treasury.",
+        "desc3": "*Recruitment begins once the proposal is finally approved and the contract is executed. ",
+        "day": "days"
+      },
+      "tab7": {
+        "desc": "Proposals to check changing conditions of urgent proposals that can only be suggested by Trust.",
+        "th1": "Voting Period",
+        "th2": "Pass Conditions",
+        "td1": "Before",
+        "td2": "After",
+        "label1": "Maintain",
+        "label2": "{{percent}}%",
+        "label3": "{{day}} days",
+        "label4": "Enter Manually",
+        "label5": "Enter Manually (Up to 4 decimal places)",
+        "placeholder1": "Max. value: 30",
+        "placeholder2": "Min.: 50",
+        "error1": "Please enter a number between 1 and 30.",
+        "error2": "Please enter a number of 50 or over."
+      },
+      "tab8": {
+        "desc": "Proposals to check Yes/No answers by DAO on various other topics.",
+        "th1": "Proposal Content",
+        "placeholder1": "Please enter proposal information.",
+        "desc1": "*Content entered and voting results will be recorded on the blockchain."
+      },
+      "modalTitle": "Proposed Action",
+      "modalDesc": "Detailed conditions for this proposal can be entered."
+    },
+    "contents": {
+      "1": {
+        "title": "How it works",
+        "items": {
+          "1": {
+            "title": "Consensus Check",
+            "desc": "As a first suggestion step, decide whether you are willing to change the status quo. An agenda approved by a majority vote in the Consensus Check stage can be registered as a Governance Proposal in the next stage.",
+            "list": {
+              "1": "Proposal Threshold: N% of GT issuance",
+              "2": "Quorum: N% of GT issuance",
+              "3": "Voting period: 3 days"
+            }
+          },
+          "2": {
+            "title": "Governance proposal",
+            "desc": "This is the stage where the voting to decide whether to execute the agenda for which the Consensus Check has been completed is in progress. In the Governance Proposal stage, an agenda approved by a majority vote is executed by DAO members or the system.",
+            "list": {
+              "1": "Proposal Threshold: N% of GT issuance",
+              "2": "Quorum: N% of GT issuance",
+              "3": "Voting period: 5 days"
+            }
+          },
+          "3": {
+            "title": "Execution",
+            "desc": "The final approved agenda is applied by contract execution. The contract executor can be any DAO member, and is basically executed by the DAO System.",
+            "list": {
+              "1": "DAO System: (Wallet address)",
+              "2": "DAO Operating Expense Balance: n WEMIX"
+            }
+          }
+        },
+        "bottom": {
+          "title": "Easy Governance",
+          "desc": "NILE's Governance Program is designed so that even DAO members without programming skills can easily participate by providing the type of agenda and the conditions to be changed in a well-configured UI. Please check <0>{{link}}</0> for details related to Governance operation.",
+          "link": "here"
+        }
+      },
+      "2": {
+        "tab": {
+          "1": "Proposals",
+          "2": "Discussions",
+          "3": "Governance Members"
+        }
+      }
+    },
+    "discussion": {
+      "notice": "NOTICE"
+    },
+    "membersTable": {
+      "title": "Governance Members",
+      "total": "Total Members",
+      "date": "Updated",
+      "showMore": "Show More",
+      "emptyMembers": "There are no members.",
+      "column": {
+        "1": "Members",
+        "2": "g.WONDER Holdings",
+        "3": "Vote",
+        "4": "Proposal",
+        "5": "Comments Posted"
+      }
+    },
+    "step1": "Consensus Check",
+    "step2": "Governance Proposal",
+    "step3": "Execution",
+    "remainTimeDay": "Days",
+    "remainTimeHour": "Hours",
+    "remainTime": "Left",
+    "votingPeriod": "voting period",
+    "agreement": "For",
+    "against": "Against",
+    "quorum": "Quorum",
+    "viewMyAgenda": "My Proposals",
+    "replies": "Replies",
+    "hits": "Views",
+    "recentActivity": "Activity",
+    "votedOnly": "Voted Only",
+    "showMore": "Show More",
+    "createProposal": {
+      "title": "Create {{type}} Check",
+      "titleModify": "Edit Proposal",
+      "submit": "Submit",
+      "titlePlaceholder": "Please enter title.",
+      "contentPlaceholder": "Please enter proposal information.",
+      "purposePlaceholder": "Select a purpose."
+    },
+    "timeLeft": "left",
+    "vote": "Vote",
+    "doVote": "Vote",
+    "proposal": {
+      "all": "All",
+      "btn": {
+        "1": "Convert to Governance Proposal",
+        "2": "Share",
+        "3": "Copy",
+        "4": "Executing the conclusively passed contract of this proposal.",
+        "5": "Edit",
+        "6": "Delete"
+      },
+      "dropdown2": {
+        "option1": "Sort by Recent Proposals",
+        "option2": "Sort by Expiry",
+        "option3": "Sort by Tokens Participated",
+        "option4": "Sort by Tokens Voted"
+      },
+      "person": "Members",
+      "entire": "All",
+      "for": "Yes",
+      "against": "No",
+      "noempathy": "Disagree",
+      "empathy": "Agree",
+      "quorumCondition": "Quorum Requirement",
+      "attain": "Fulfilled",
+      "unattained": "Not Fulfilled",
+      "participationPeriod": "Participation Period",
+      "buttonText": {
+        "onChained": "Recorded on-chain. ({{text}} 기준)",
+        "waitProceed": "Waiting to proceed.",
+        "waitExecution": "(영문수급)Execution 대기 중입니다.",
+        "consensusCheck": "The proposal has been moved to the Consensus Check step. {{text}}",
+        "governanceCheck": "The proposal has been moved to the Governance Check step. {{text}}",
+        "etcApproval": "Executed. ({{text}} 기준)"
+      },
+      "cardStatus": {
+        "bePassed": "Passed.",
+        "lackOfQuorum": "Rejected due to insufficient Quorum.",
+        "endOfVote": "Voting Closed",
+        "noEmpathyPredominance": "Rejected due to strong opposition.",
+        "againstPredominance": "Rejected due to opposition majority.",
+        "majorityInFavor": "Immediately passed by a majority approval. {{text}}",
+        "majorityInAgainst": "Immediately rejected by a majority opposition. {{text}}"
+      },
+      "cancelVote": "Cancel Vote",
+      "voterTable": {
+        "th": {
+          "1": "Voter",
+          "2": "Voted for",
+          "3": "Number of Votes",
+          "4": "Date"
+        },
+        "voters": "Voters",
+        "showAll": "Show all",
+        "empty": "There are no voters."
+      },
+      "action": {
+        "inputError": "The withdrawal amount has exceeded the selected Treasury Fund. Please modify the estimated amount to be used.",
+        "inputError2": "Only min. 1 day to max. 10 days can entered for voting period.",
+        "inputError3": "Min. 0.01% to max. 100% must be entered for the conditions for registration of an proposal.",
+        "inputError4": "Only min. 1% to max. 100% can entered for quorum.",
+        "cases": {
+          "dropdown": {
+            "default": "Please choose a goal.",
+            "1": "Use Treasury Funds",
+            "2": "Change DAO Profit Distribution Ratio",
+            "3": "Change Purchased DAO Token Distribution Ratio",
+            "4": "Change Treasury Reserve Fund Currency",
+            "5": "Change Conditions to Proceed with Proposals",
+            "6": "Additional Recruitment in Station (Additional Issuing of DAO Tokens)",
+            "7": "Add to And Change Trust Wallet Addresses"
+          },
+          "popover": {
+            "1": "[Use of Treasury]\nCommunity funding for a particular purpose You can decide whether to use it or not.",
+            "2": "[Change DAO Revenue Distribution Ratio]\nYou can change the share of DAO revenue.",
+            "3": "[Change purchase DAO Token distribution ratio]\nEarnings allow you to change the share of DAO Token acquired by Incinerator.",
+            "4": "[Change the currency of Treasury deposit fund]\nYou can change the unit of Treasure funds.",
+            "5": "[Change Proposal progress conditions]\nYou can change the registration conditions, quorum criteria, and approval conditions for each type of agenda and each stage of progress.",
+            "6": "[Additional Recruitment in Station (Dao Token Additional Issue)]\nAdditional stations can be recruited for the purpose of issuing additional DAO Token.",
+            "7": "[Change/Add Trust Wallet Address]\nYou can change, add, or delete the Trust wallet address."
+          },
+          "infoTitle": {
+            "1": "Business Name",
+            "2": "Treasury Fund",
+            "3": "Estimated Amount to be Used",
+            "4": "Receiver's Wallet",
+            "5": "Treasury Reserve Fund and Incinerator Fund Ratio, Trust Fee Ratio",
+            "6": "DAO Token Distribution Ratio of Incinerator Purchase",
+            "7": "Trust Fee",
+            "8": "Change Treasury Reserve Fund Currency",
+            "9": "Currency to Change to",
+            "10": "Voting Period",
+            "11": "Conditions for Registration of an Proposal",
+            "12": "Based on Quorum",
+            "13": "Pass Conditions",
+            "14": "Recruitment Period",
+            "15": "Recruiting Currency Unit",
+            "16": "Minimum Participated Amount",
+            "17": "Unit of Increase",
+            "18": "Minimum Recruiting Funding Goal",
+            "19": "Trust Wallets List",
+            "20": "Wallet Name",
+            "21": "Wallet Address",
+            "22": "Wallet Creation Date",
+            "23": "Latest Wallet Modified Date"
+          },
+          "infoContent": {
+            "1": "Please choose the name of this business.",
+            "2": "Add New Business",
+            "3": "You can add a new business.",
+            "4": "Treasury Reserve Fund",
+            "5": "Incinerator Fund",
+            "6": "Treasury Reserve Fund : Incinerator Fund",
+            "7": "Trust Fee",
+            "8": "DAO Tokens burnt",
+            "9": "Obelisk Governance Rewards",
+            "10": "DAO Tokens burnt : Obelisk Governance Rewards",
+            "11": "Treasury balance of the selected currency",
+            "12": "Trust Fee",
+            "13": "Withdrawal Amount",
+            "14": "Wallet Address",
+            "15": "[Default Settings]",
+            "16": "",
+            "17": "Current Settings",
+            "18": "Changed Settings",
+            "19": "Estimated SWAP Fee",
+            "20": "Estimate Changed Amount",
+            "21": "0.25% of the WEMIX.Fi Transaction Volume",
+            "22": "GT Balance compared to GT Issued Amount",
+            "23": "일",
+            "24": "Please choose the currency unit for the additional recruiting.",
+            "25": "Please choose a name of a registered Trust Wallet.",
+            "26": "Add Trust Wallet",
+            "27": "You may add Trust Wallets.",
+            "28": "Delete Wallet",
+            "29": "Please enter Wallet name.",
+            "30": "Withdrawal amount",
+            "31": "If more than {{N}}% of vote participants agree",
+            "32": "Enter the name of the business."
+          },
+          "bottomDesc": {
+            "1": "*Related fees are taken out of the Treasury funds, and if the Treasury has not enough WEMIX, this proposal will not be executed even if passes.",
+            "2": "*The Trust Fee is deducted from the total amount upon on moving of business funds and generation of profit, and moved according to the Incinerator Fund Ratio and Treasury Reserve Fund, set based on the amount after the fees.",
+            "3": "*When passed, the funds are exchanged in WEMIX.Fi, then deposited in the Treasury again. Related fees are taken out of the Treasury funds, and if the Treasury has not enough WEMIX, this proposal will not be executed even if passes."
+          }
+        }
+      }
+    },
+    "smallPopup": {
+      "btn": {
+        "no": "Cancel",
+        "yes": "OK",
+        "cancel": "Cancel",
+        "exit": "Exit",
+        "next": "Next",
+        "check": "Confirm",
+        "close": "Close",
+        "editCancel": "Cancel Edit",
+        "no2": "No",
+        "yes2": "Yes"
+      },
+      "toast": {
+        "delete": "Deleted.",
+        "edit": "Edited.",
+        "register": "Posted.",
+        "register2": "Notice posted."
+      },
+      "registCheck": {
+        "title": "Confirm Proposal Registration",
+        "temperature": "Would you like to register this proposal? \nThe text can be edited or deleted only during the participation period.",
+        "consensus": "Would you like to register this proposal? \nThe text can be edited or deleted only during the voting period.",
+        "governance": "Would you like to register this proposal? \nThe body text cannot be edited or deleted after the proposal has been registered."
+      },
+      "registerStop": {
+        "title": "Quit Proposed Action",
+        "desc": "Would you like to stop creating this proposal? \nThe written content will not be saved."
+      },
+      "typeSelect": {
+        "title": "Select Proposal Type",
+        "typeTitle1": "Trust Check Proposal",
+        "typeDesc1": "Proposals requiring prompt processing will undergo a single decision-making step (lasting one day) before being processed.",
+        "typeTitle2": "Normal Proposal",
+        "typeDesc2": "Proposals that undergo the standard decision-making process will go through three steps of decision-making."
+      },
+      "unableToRegister": {
+        "title": "Proposal Register Unavailable ",
+        "desc": "Selected condition has not changed from the previous condition. At least one condition must be updated to register for this offer."
+      },
+      "cantWrite": {
+        "title": "Unable to propose an agenda",
+        "desc": "You must own {{n}}% or more of total issued g.{{ticker}} to register proposals.\n<0>(Amount needed to fulfil requirement to register proposals: {{n2}} g.{{shortTicker}})</0>"
+      },
+      "commentDel": {
+        "title": "Delete Comment",
+        "desc": "Would you like to delete this comment?",
+        "msg": "Deleted."
+      },
+      "commentCantWrite": {
+        "title": "Comment Post Unavailable",
+        "desc": "You must have g.{{type}} Tokens in your balance to post."
+      },
+      "commentEditCancel": {
+        "title": "Cancel Edit",
+        "desc": "Would you like to cancel editing?"
+      },
+      "delProposal": {
+        "title": "Delete Proposal",
+        "desc": "Would you like to delete this proposal?",
+        "msg": "Deleted."
+      },
+      "checkQuantity": {
+        "title": "Participation Amount Information",
+        "desc": "You cannot participate because you do not own g.{{ticker}}. You can get g.{{ticker}} by staking {{ticker}} in the Obelisk."
+      },
+      "cantFeasible": {
+        "title": "Proposal Execution Unavailable",
+        "desc": "You must own more than {{n}}% of total issued g.{{ticker}} to execute proposal suggestions. \n<0>(Amount required to execute proposal suggestions: {{n2}} g.{{shortTicker}})</0>"
+      },
+      "cancelVote": {
+        "title": "Confirm Cancellation of Vote",
+        "desc": "Would you like to cancel your vote?\nAll of your votes will be collectively canceled."
+      },
+      "cantVoting": {
+        "title": "Vote Unavailable",
+        "desc": "You cannot vote because you do not own g.{{ticker}}. You can get g.{{ticker}} by staking {{ticker}} in the Obelisk."
+      },
+      "editReset": {
+        "title": "Reset Changes",
+        "desc": "Would you like to stop editing? \nIf you leave the screen while editing, the changes will not be saved."
+      },
+      "limitVoting": {
+        "title": "Vote Restriction Notification",
+        "desc": "Additional votes of Yes or No can only be cast only in the same way as your original vote."
+      },
+      "noticeDel": {
+        "title": "Delete Notice",
+        "desc": "Would you like to delete this notice?"
+      },
+      "noticeAdd": {
+        "title": "Confirm Posting of Notice",
+        "desc": "Would you like to post this Trust notice?"
+      },
+      "inputClear": {
+        "title": "Reset to Default",
+        "desc": "Would you like to stop writing this notice? \nIf you leave the screen while writing, the content will not be saved."
+      }
+    },
+    "createDiscussion": {
+      "title": "Create Discussion"
+    },
+    "noOffer": "No registered proposals.",
+    "governanceRunBtn": "How Governance Operates",
+    "proposalWriteBtn": "Proposed Action",
+    "filters": "Filters",
+    "tabletWarning": "Proposals can only be created on PC.",
+    "statusData": {
+      "1": "Total Proposals",
+      "2": "Executed Proposals",
+      "3": "Proposal Creators",
+      "4": "Voters"
+    },
+    "governanceMember": "Governance Members",
+    "filter": {
+      "apply": "Apply",
+      "category": "[영문]카테고리",
+      "align": "[영문]정렬"
+    },
+    "agendaHistoryItem": {
+      "title": "Proposal History",
+      "votingPeriod": "Voting Period",
+      "partiPeriod": "Participation period",
+      "text": {
+        "1": "<0>{{percentage}}%</0> (2,000 g.WDR) selected Agree; this proposal has been moved to the <1>{{step}}</1> step.",
+        "2": "<0>{{percentage}}%</0> (2,000 g.WDR) selected Yes; this proposal has been moved to the <1>{{step}}</1> step."
+      }
+    },
+    "checkContent": {
+      "title": "Details"
+    },
+    "checkComment": {
+      "title": "Comments",
+      "btnWrite": "Post",
+      "btnWrite2": "Post",
+      "term": "Inappropriate comments may lead to disadvantages under the terms of use.",
+      "btnReply": "Reply",
+      "btnMore": "View More",
+      "btnFold": "View Less",
+      "commentPlaceHolder": "Please enter a comment.",
+      "replyPlaceHolder": "Please enter a reply.",
+      "btnSave": "Save",
+      "btnCancel": "Cancel",
+      "btnWriteCancel": "Cancel",
+      "btnEdit": "Edit",
+      "btnDelete": "Delete",
+      "btnShowComments": "View Comments",
+      "btnAdd": "Post",
+      "quoteDeleted": "Deleted.",
+      "commentsNone": "There are no registered comments."
+    },
+    "create": {
+      "registerBtn": "Register",
+      "modifyBtn": "Edit",
+      "modifyToast": "Edited.",
+      "info": {
+        "1": "Participation period",
+        "2": "Quorum",
+        "3": "Pass Conditions",
+        "desc": "In the Temperature Check step, the body text can only be edited during the participation period.",
+        "1-1": "{{n}} days",
+        "2-1": "<0>{{n}}%</0>  of issued g.{{type}}",
+        "3-1": "<0>Exceeded {1}% </0>Yes"
+      }
+    }
+  },
+  "previous": "Previous",
+  "next": "Next",
+  "price": "{{type}} Price",
+  "scan": {
+    "title": "{{type}} Scan",
+    "desc": "{{type}} Scan is an explorer that allows everyone to visualize all transactions in {{type}} DAO.  Check the validated codes transparently in {{type}} Scan.",
+    "empty": "The search string you entered is invalid. \nPlease try again."
+  },
+  "coinConfirm": {
+    "title": "Approve Coin use",
+    "desc": "NILE requires approval of authorization for using coins. Coin usage authorization is a one-time requirement.",
+    "confirmList": "Approval Items",
+    "approve": "Approve",
+    "approved": "Approved",
+    "next": "Next"
+  },
+  "howItWorksModal": {
+    "title": "How Governance Operates",
+    "content": "{{type}} DAO Governance supports transparent and secure DAO operation through a three-step voting process.",
+    "step": {
+      "1": {
+        "title": "Temperature Check",
+        "desc": "In this step, the reaction and intentions of DAO are confirmed off chain; and posts that have received support from DAO members will be registered as on-chain proposals later on.",
+        "list": {
+          "0": "Proposal Threshold: 0.1% of issued {{type}}",
+          "1": "Quorum: 5% of issued {{type}}",
+          "2": "Voting Period: 3 days"
+        }
+      },
+      "2": {
+        "title": "Consensus Check",
+        "desc": "This is the first on-chain voting step for the suggested proposal, which determine whether there is an intention to change the status quo. Proposals that have been approved during the Consensus Check step can proceed to the next stage, the Governance Check.",
+        "list": {
+          "0": "Proposal Threshold: 0.1% of issued {{type}}",
+          "1": "Quorum: 10% of issued {{type}}",
+          "2": "Voting Period: 3 days"
+        }
+      },
+      "3": {
+        "title": "Governance Check",
+        "desc": "This is the step to determine the final execusion of the proposal. Proposals that have been approved during the Governance Check stage will be recorded and executed on-chain.",
+        "list": {
+          "0": "Proposal Threshold: 0.1% of issued {{type}}",
+          "1": "Quorum: 20% of issued {{type}}",
+          "2": "Voting Period: 5 days"
+        }
+      }
+    }
+  },
+  "governanceSet": {
+    "title": {
+      "tag": "Proposal Topic",
+      "text": "Change Governance Settings"
+    },
+    "changeNotice": {
+      "same": "Same as {{type}} Check.",
+      "diff": "Changes were made after {{type}} Check."
+    },
+    "proposal": {
+      "title": "Proposal to Change Conditions",
+      "content": "Change DAO Profit Distribution Ratio"
+    },
+    "detail": {
+      "before": "Before",
+      "after": "After",
+      "title": {
+        "threshold": "Conditions for Registering On-chain Proposals",
+        "period": "Voting period",
+        "quorum": {
+          "strong": "Quorum",
+          "normal": "(or more)"
+        },
+        "approval": {
+          "strong": "Pass Conditions",
+          "normal": "(over)"
+        }
+      },
+      "content": {
+        "day": "days",
+        "same": "(Unchanged)"
+      }
+    }
+  },
+  "vote": {
+    "modal": {
+      "vote1": "Vote",
+      "vote2": "Votes",
+      "addVote1": "Vote Additionally",
+      "addVote2": "Vote Additionally",
+      "infoText": "Should the community participate in the Protocol Guild Pilot? It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      "agreement": "Yes",
+      "opposition": "No",
+      "voteAmountInfo": "Current Proposal",
+      "voteUseInfo": "Enter the amount of g.{{type}} to use for voting.",
+      "voteGasFeeInfo": "Gas Fees will be processed upon voting.",
+      "voteAmount": "Amount to vote with",
+      "voteAddAmount": "Amount for additional vote",
+      "voteComplete": "Voted successfully!",
+      "gasFee": "Gas Fee",
+      "complete": "Complete",
+      "ConsensusCheck": "This includes the 500 g.WDR used in Consensus Check."
+    },
+    "GovernanceVote": {
+      "voter": "Voters:",
+      "participant": "Participants:",
+      "voterAmount": "Number of votes",
+      "vote": "Vote",
+      "agreement": "Yes",
+      "opposite": "No",
+      "agreeCancel": "You have canceled Agree.",
+      "agreeSelect": "You have selected Agree.",
+      "disagreeCancel": "You have canceled Disagree.",
+      "disagreeSelect": "You have selected Disagree.",
+      "agree": "Agree",
+      "disagree": "Disagree",
+      "executed": "The proposal has been processed. \nIt will now move on to the Consensus Check step.",
+      "stepMovement": "The proposal has been moved to the Consensus Check step.",
+      "proceedOnCall": "Waiting to proceed.",
+      "voteCancel": "Cancel Vote",
+      "voteCancelToast": "Retrieved all Governance Tokens voted on this proposal. ({{type}} g.WDR)",
+      "addVote": "Vote Additionally",
+      "beVote": "Vote",
+      "counting": "Counting",
+      "proceed": "Proceed",
+      "execution": "Execution",
+      "finallyApproved": "Executed.",
+      "standard": "기준",
+      "onChained": "Recorded On-chain.",
+      "gTypeReclaimcomplete": "g.{{type}} Retrieved",
+      "gTypeReclaim": "Retrieve g.{{type}}",
+      "participationDuration": "Participation period",
+      "voteDuration": "Voting Period",
+      "finishedVoteDuration": "투표 기간이 종료되었습니다.",
+      "approved": "Passed.",
+      "disagreePreponderance": "Rejected due to strong opposition.",
+      "rejectionQuorum": "Rejected due to insufficient Quorum.",
+      "day": "day",
+      "time": "hour",
+      "day2": "days",
+      "time2": "hours",
+      "remain": "left",
+      "connectWallet1": "Connect your Wallet to participate.",
+      "connectWallet2": "Connect your Wallet to vote.",
+      "myVoteResult": "My Voting Results",
+      "myVoteState": "My Vote",
+      "myParticipating": "My Participation",
+      "myParticipatingResult": "My Participation Results",
+      "npolledVote": "Not Voted",
+      "notParticipating": "Not Participated",
+      "numberVotesAvailable": "Available",
+      "TotalHoldingQuantity": "Total Balance",
+      "numberVotesOtherAgenda": "Other Proposals",
+      "numberVotesAgenda": "Current Proposal",
+      "nogType": "You do not own g.{{type}}. You can get g.{{type}} by staking {{type}} in the Obelisk.",
+      "governanceVoteInfo": "g.WDR used for the Consensus Check vote on the same proposal will be automatically retrieved and included in the available vote count for the Governance Check. If you do not wish to participate in the Governance Check vote, please retrieve it manually from the Consensus Check proposal.",
+      "participationStatus": "Current Participation",
+      "voteStatus": "Current Votes",
+      "total1": "Total",
+      "total2": "All",
+      "person": "",
+      "voteInfoList1": "A <0>{{word}}</0> based on the issuance of Governance Tokens must be reached to proceed to the Consensus Check step.",
+      "voteInfoList1word": "A quorum of at least 5%",
+      "voteInfoList2": "By selecting Agree or Disagree, you participate in the decision-making process with the number of Governance Tokens you own. <0>{{word}}</0>",
+      "voteInfoList2word": "Governance Tokens are not used even if you participate.",
+      "voteInfoList3": "A  <0>{{word1}}</0> based on the issuance of Governance Tokens and a majority approval are <1>{{word2}}</1>",
+      "voteInfoList3word1_1": "A quorum of at least 10%",
+      "voteInfoList3word1_2": "required to proceed to the Governance Check step",
+      "voteInfoList3word2_1": "A quorum of at least 20%",
+      "voteInfoList3word2_2": "required to execute the proposal.",
+      "voteInfoList4": "If a majority support is reached based on the number of issued Governance Tokens at the time of registration, the proposal will be passed immediately. Otherwise, it will be instantly rejected.",
+      "detailView": "View Details",
+      "noVoter": "No voters.",
+      "majorityInFavor": "Immediately passed by a majority approval.\n<0>{{word}}</0>",
+      "underPriceCondition": "가결 조건 미달로 부결되었습니다.",
+      "underQuorumCondition": "Rejected due to insufficient Quorum.",
+      "immediateRejection": "Immediately rejected by a majority opposition. \n<0>{{word}}</0>"
+    }
+  }
+}

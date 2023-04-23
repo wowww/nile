@@ -1,0 +1,352 @@
+.policy-wrap {
+  @include maxWidthLg;
+
+  $contentSpacing: 40px;
+  $depthSpacing: 15px;
+  $depthBracketSpacing: 22px;
+  $verticalSpacing: 22px;
+
+  padding: $contentSpacing 0;
+
+  @include md {
+    $verticalSpacing: 24px;
+  }
+
+  @include sm {
+    padding-top: 32px;
+  }
+
+  // Terms
+  &.terms {
+    .underline-text {
+      padding-right: 5px;
+      text-decoration: underline;
+    }
+
+    .bottom-area .contents-text .paragraph {
+      .h4-wrap {
+        & + .h4-wrap {
+          margin-top: $verticalSpacing;
+        }
+
+        .title-h4 ~ .related-text,
+        .title-h4 ~ p,
+        .related-anchor,
+        .ol-list,
+        .list-dash {
+          padding-left: $depthSpacing;
+        }
+
+        .title-h4 + .related-text ~ .ol-list-en {
+          padding-left: calc($depthSpacing + $depthBracketSpacing);
+        }
+
+        .table-layout + .list-dash {
+          padding-left: 0;
+        }
+      }
+
+      .ol-list-en {
+        padding-left: $depthBracketSpacing;
+        text-indent: $depthBracketSpacing * -1;
+      }
+
+      .ol-list {
+        & > li {
+          & + li {
+            margin-top: $verticalSpacing;
+          }
+        }
+
+        > .ol-list,
+        > .list-dash {
+          padding-left: $depthSpacing;
+        }
+
+        .related-text + .ol-list-en,
+        .related-text + .ol-list-ko {
+          margin-top: 8px;
+        }
+
+        & + .related-text {
+          margin-top: $verticalSpacing;
+        }
+      }
+    }
+  }
+
+  // Privacy
+  &.privacy {
+    .bottom-area .contents-text .paragraph {
+      .h4-wrap {
+        & + .h4-wrap {
+          margin-top: $verticalSpacing;
+        }
+
+        .related-text:not(:first-child) {
+          margin-top: $verticalSpacing;
+        }
+
+        .related-text + .list-dash {
+          margin-top: 0;
+        }
+
+        .title-h4 + .ol-list {
+          margin-top: $verticalSpacing;
+        }
+      }
+
+      .related-text {
+        & + .list-dash {
+          margin-top: $verticalSpacing;
+        }
+      }
+
+      .list-dash {
+        &.mt-lg {
+          li {
+            margin-top: $verticalSpacing;
+          }
+        }
+
+        & + .related-text {
+          margin-top: $verticalSpacing;
+        }
+      }
+    }
+  }
+
+  .title-area {
+    display: flex;
+    align-items: center;
+    padding-bottom: $contentSpacing;
+    border-bottom: 1px solid $gray60;
+
+    @include sm {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    h2 {
+      padding: 10px 0;
+
+      @include fontFamilyHeading(l);
+
+      @include sm {
+        padding: 0;
+      }
+    }
+
+    .version-only-one {
+      @include fontFamilyBody(mr);
+
+      margin-left: 20px;
+      color: $gray30;
+
+      @include sm {
+        margin-top: 4px;
+        margin-left: 0;
+      }
+    }
+
+    .version-wrap {
+      margin-left: 20px;
+
+      .ant-select.outline-black {
+        .ant-select-selector {
+          border-color: $gray00;
+          border-radius: 4px;
+        }
+
+        .ant-select-arrow {
+          svg path {
+            fill: $gray30;
+          }
+        }
+      }
+
+      .ant-select-item-option.ant-select-item-option-disabled {
+        display: none;
+      }
+    }
+  }
+
+  .bottom-area {
+    white-space: pre-line;
+
+    .contents-text .paragraph {
+      padding-top: $contentSpacing;
+      margin-bottom: $contentSpacing;
+
+      @include sm {
+        padding-top: 20px;
+      }
+
+      & + .paragraph {
+        border-top: 1px solid $gray80;
+      }
+
+      .subtitle {
+        padding-bottom: 20px;
+
+        @include fontFamilyBody(xlr);
+
+        &.bold {
+          @include fontFamilyBody(xlb);
+        }
+      }
+
+      .related-anchor {
+        @include fontFamilyBody(mr);
+      }
+
+      .related-text {
+        @include fontFamilyBody(mr);
+
+        & + .related-text,
+        & + .h4-wrap,
+        & + .ol-list {
+          margin-top: $verticalSpacing;
+        }
+      }
+
+      .h4-wrap {
+        .title-h4,
+        p {
+          @include fontFamilyBody(mr);
+
+          // &.bold {
+          //   font-weight: 700 !important;
+          // }
+        }
+      }
+
+      .list-dash {
+        @include fontFamilyBody(mr);
+
+        & > li {
+          word-break: keep-all;
+
+          &::before {
+            display: inline;
+            padding-right: 4px;
+            content: "-";
+          }
+        }
+      }
+
+      .ol-list-ko {
+        padding-left: $depthSpacing;
+
+        // 디자인은 없지만 임의 작업
+        & > li {
+          @include fontFamilyBody(mr);
+        }
+      }
+
+      .ol-list-en {
+        & > li {
+          @include fontFamilyBody(mr);
+
+          &::before {
+            display: inline;
+            margin-right: 4px;
+          }
+        }
+      }
+
+      .ol-list {
+        counter-reset: counter;
+
+        & > li {
+          padding-left: $depthSpacing;
+          text-indent: $depthSpacing * -1;
+
+          @include fontFamilyBody(mr);
+
+          &::before {
+            display: inline;
+            content: counter(counter) ". ";
+            counter-increment: counter;
+            text-align: right;
+          }
+
+          .related-text {
+            display: inline;
+          }
+        }
+      }
+
+      .table-layout {
+        margin: 20px 0;
+
+        @include sm {
+          padding: 0 20px;
+          margin: 20px -20px;
+          overflow-x: scroll;
+        }
+
+        table {
+          width: 100%;
+          word-break: keep-all;
+
+          @include sm {
+            max-width: 100%;
+            overflow-x: scroll;
+          }
+        }
+
+        th {
+          border: 1px solid $gray30;
+
+          @include fontFamilyBody(m);
+        }
+
+        td {
+          border: 1px solid $gray30;
+
+          @include fontFamilyBody(m);
+        }
+
+        thead {
+          th {
+            padding: 16px 8px;
+            background-color: $gray80;
+            font-weight: 600;
+
+            @include sm {
+              vertical-align: middle;
+            }
+          }
+        }
+
+        tbody {
+          text-align: left;
+
+          td {
+            padding: 16px 8px;
+
+            &.table-td-bg {
+              background-color: $gray90;
+            }
+          }
+        }
+      }
+    }
+
+    .date-wrap {
+      padding: $contentSpacing 0;
+      border-top: 1px solid $gray00;
+
+      @include sm {
+        padding: 20px 0;
+      }
+
+      span {
+        display: block;
+
+        @include fontFamilyBody(mr);
+      }
+    }
+  }
+}

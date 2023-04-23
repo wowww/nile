@@ -1,0 +1,42 @@
+[
+  {
+    "value": "COLLECTIBLES",
+    "img": "/img/banner/bg_apply_collectibles.png"
+  },
+  {
+    "value": "PIXEL ART",
+    "img": "/img/banner/bg_apply_pixelart.png"
+  },
+  {
+    "value": "PFP",
+    "img": "/img/banner/bg_apply_pfp.png"
+  },
+  {
+    "value": "MOVE TO EARN",
+    "img": "/img/banner/bg_apply_movetoearn.png"
+  },
+  {
+    "value": "PLAY TO EARN",
+    "img": "/img/banner/bg_apply_playtoearn.png"
+  },
+  {
+    "value": "UTILITY",
+    "img": "/img/banner/bg_apply_utility.png"
+  },
+  {
+    "value": "TALK TO EARN",
+    "img": "/img/banner/bg_apply_talktoearn.png"
+  },
+  {
+    "value": "RELAX TO EARN",
+    "img": "/img/banner/bg_apply_relaxtoearn.png"
+  },
+  {
+    "value": "SPORTS",
+    "img": "/img/banner/bg_apply_sports.png"
+  },
+  {
+    "value": "MUSIC",
+    "img": "/img/banner/bg_apply_music.png"
+  }
+]

@@ -1,0 +1,166 @@
+{
+  "tba": "TBA",
+  "home": {
+    "challenge": {
+      "title": "The mystical journey of NILE, creating new value",
+      "desc": "NEITH NFTs is the world's first NFT that conveys value via an underlying asset."
+    },
+    "collections": {
+      "title": "NFT Collection under the promise of NEITH Covenant"
+    },
+    "howTo": {
+      "title": "Journey towards the NEITH Covenant",
+      "journey": {
+        "0": {
+          "subject": "Preparation for the NEITH Covenant",
+          "item": {
+            "0": "View the NEITH NFTs, distinguished by its unique symbol, in the Marketplace of Projects tab.",
+            "1": "Check the Covenant conditions in the collection page. Each collectible has a Covenant Date of its own and WEMIX amount according to its rarily.",
+            "2": "Link your Wallet prior to purchase. Transactions will be quicker if you already own enough WEMIX$ for the purchase."
+          }
+        },
+        "1": {
+          "subject": "Beginning of the Journey",
+          "desc": "You can purchase the NFT in the Marketplace via auction or fixed-price sales.\nPurchase the NFT with WEMIX$, and gas fees will be applied in WEMIX."
+        },
+        "2": {
+          "subject": "The mystical journey towards the promise of NEITH",
+          "desc": "NEITH NFT can be traded freely at any time prior to the Claim, and holders can engage and communicate with others who own the same collection. Increase the value of your NFTs through collective potential."
+        }
+      },
+      "covenantDate": {
+        "subject": "NEITH Covenant Date",
+        "desc": "Upon the Covenant Date, you can proceed with the claim process. By selecting Covenant Claim, the selected NEITH NFT is burned in NEITH Altar and the amount of WEMIX stored in NEITH Vault will be transferred to the Wallet.",
+        "sub": "* Gas fees will occur upon Claim."
+      }
+    },
+    "about": {
+      "title": "NEITH Station, the Beginning of a New Venture"
+    },
+    "threeValue": {
+      "title": "NILE emphasizes three values of NFT",
+      "desc": "The Neith NFT is based on the Appreciating Value of the asset, Neith Covenant, and incorporates both Utility and Premium Value, allowing the community to utilize the stability of NFTs in DeFi.",
+      "value": {
+        "1": {
+          "title": "Utility Value",
+          "desc": "To determine whether an NFT has Utility Value, the following question must be asked: “Will owning this NFT enhance my life”. If the answer is “yes”, then the NFT is deemed to have Utility Value."
+        },
+        "2": {
+          "title": "Appreciating Value",
+          "desc": "We expect the value of NFTs as assets to grow steadily over time. If you anticipate that the price of your NFT will increase after a year, you are expecting an increase in its Appreciating Value."
+        },
+        "3": {
+          "title": "Premium Value",
+          "desc": "Premium Value is a new form of value that is not based solely on its utility or monetary worth, but rather on its mere existence and ownership."
+        }
+      }
+    },
+    "whatToDo": {
+      "title": "Ample blessings of the Covenant",
+      "subTitle1": "Promise of Opportunity",
+      "subTitle2": "Promise of Unity",
+      "desc1": "NEITH NFT can be traded prior to the Claim.\nMake sure to check the claim status of the NFT you want to trade.",
+      "desc2": "You can communicate with other NEITH NFT holders to increase the value of the NFTs.\nMeet up with NEITH NFT Holders in PAPYRUS!"
+    },
+    "faq": {
+      "title": "The response of NEITH"
+    }
+  }, 
+  "hero": {
+    "title": "NEITH Station",
+    "sub": "The unfolding of NEITH Station, the beginning of a mystical journey in search of the promise of NEITH.",
+    "desc": "The NEITH Station is a new type of NEITH NFT that bears WEMIX under the promise of NEITH, the goddess of creation. Holders of this NFT can claim the covenant amount of WEMIX on or after the Covenant Date. The Covenant Value is disclosed transparently in NEITH Vault.",
+    "button": "Go to NEITH Vault & Altar",
+    "totalValue": "NEITH Covenant (AUM)",
+    "totalNft": "Total Number of NEITH NFT ",
+    "covenantPrice": "Covenants Fulfilled",
+    "covenantNft": "NFTs fulfilled under Covenant",
+    "tooltip": {
+      "1": "This is the\ntotal amount of promised WEMIX stored in the NEITH Vault.",
+      "2": "AUM: Asset Under Management\nTotal assets under management."
+    }
+  },
+  "greatChallenge": {
+    "covenant": {
+      "title": "NEITH Covenant",
+      "description": "You can exchange NEITH NFTs for the covenanted amount of WEMIX at any time after the Covenant Date. NEITH NFTs is the world's first NFT that conveys value via an underlying asset."
+    },
+    "protocol": {
+      "title": "The World's first protocol-based NFTFi",
+      "description": "NEITH NFT combines DeFi and enables NFTFi, a decentralized protocol that facilitates Lending, Swaps, Staking, and more."
+    },
+    "vault": {
+      "title": "NEITH Vault and NEITH Altar",
+      "description": "The NEITH Station consists of NEITH Vault, where the NEITH Covenant is stored, and NEITH Altar, where NFTs are burned. Claim to burn your NFT in the NEITH Altar receive the promised amount of affixed WEMIX."
+    }
+  },
+  "faq": {
+    "1": {
+      "question": "Does trading affect the Covenant Date?",
+      "answer": "Only the holder of the NEITH NFT is authorized to claim. Ownership transfer will not affect the Covenant Date.",
+      "desc": "Each information may differ for each collection."
+    },
+    "2": {
+      "question": "What happens to the NEITH NFT in my balance upon claiming?",
+      "answer": "All NFTs will be burned upon Claim."
+    },
+    "3": {
+      "question": "How are NFTs sold in the NEITH Station?",
+      "answer": "A prefixed number of WEMIX can be set in the NFT upon discussion with the NILE operations team, or NILE operations team may set a prefixed number of WEMIX prior to listing of the NFT for sale."
+    },
+    "4": {
+      "question": "Where is the yet unclaimed WEMIX stored?",
+      "answer": "WEMIX under NEITH Covenant is stored in the NEITH Vault. The Vault address will soon be disclosed for transparent operation.",
+      "desc": "Those who claim WEMIX will be subject to taxes, and related information will be included in the guide given when claiming."
+    },
+    "5": {
+      "question": "How can I join the NEITH Station community?",
+      "answer": "NFT holders of NEITH Station can enter the community through PAPYRUS, while non-holders can join the community through the NILE Discord."
+    }
+  },
+  "vault": {
+    "title": {
+      "desc": "The total amount of WEMIX under NEITH Covenant is stored in the NEITH Vault.\nThe amount stored along with the transactions are disclosed in real-time for transparent operation."
+    },
+    "topInfo": {
+      "1": {
+        "title": "NEITH Covenant (AUM)",
+        "tooltip": {
+          "1": "This is the\ntotal amount of promised WEMIX stored in the NEITH Vault.",
+          "2": "AUM: Asset Under Management\nTotal assets under management."
+        }
+      },
+      "2": {
+        "title": "Total Covenant Value (TVL)",
+        "tooltip": {
+          "1": "This is the\ntotal amount of promised WEMIX in WEMIX$ stored in the NEITH Vault.",
+          "2": "TVL: Total Value Locked\nTotal value of deposited assets"
+        }
+      },
+      "3": {
+        "title": "Vault Address",
+        "guide": "The Vault address will soon be disclosed."
+      }
+    },
+    "altar": {
+      "titleDesc": "The NEITH Altar is an offering ceremony of the NFT to NEITH.\nOnce Covenant Claim is processed, the NFT will be burned and affixed WEMIX to the NFT can be claimed.",
+      "list": {
+        "1": "Load my NEITH NFT",
+        "2": "Select the NFT to process Covenant",
+        "3": "Check Covenant Conditions",
+        "4": "Process Covenant Claim"
+      },
+      "empty": {
+        "title": "Burning Soon",
+        "desc": "NEITH Altar will unveil soon."
+      },
+      "btn": "Make Covenant Claim"
+    },
+    "upcomingCovenant": {
+      "bagc": {
+        "releaseDate": "Scheduled in May 2023",
+        "covenantDate": "Scheduled in May 2024"
+      }
+    }
+  }
+}

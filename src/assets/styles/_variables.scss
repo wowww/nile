@@ -1,0 +1,133 @@
+// Font Family
+$fontFamily: "Pretendard", sans-serif;
+$fontSerifEN: "Pretendard", sans-serif;
+$fontEN: "Pretendard", sans-serif;
+$fontKR: "Pretendard", sans-serif;
+$fontSerifKR: $fontKR;
+
+// Font Size
+$baseSize: 16px;
+
+// breakpoint
+$breakpointSM: 768px;
+$breakpointMD: 1280px;
+$maxWidthLg: 1200px;
+$vh: var(--vh, 1vh);
+$scroll: var(--scroll);
+
+// image root path
+$rootPath: "https://nile.blob.core.windows.net/images/assets/images";
+$publicPath: "https://nile.blob.core.windows.net/images/icons";
+$publicImgPath: "https://nile.blob.core.windows.net/images/images";
+
+// ui image root path
+$ui-rootPath: "../../images";
+$ui-publicPath: "/icons";
+$ui-publicImgPath: "/images";
+
+// colors palette
+$veryBlack: #000;
+$black: #1a1a1a;
+$white: #fff;
+$gray100: #fff;
+$gray90: #f2f2f2;
+$gray80: #d9d9d9;
+$gray85: #e8e8e8;
+$gray70: #bfbfbf;
+$gray60: #a6a6a6;
+$gray50: #8c8c8c;
+$gray40: #737373;
+$gray30: #595959;
+$gray20: #404040;
+$gray10: #2e2e2e;
+$gray00: #1a1a1a;
+
+// NILE Signature Color
+$nile10: #ecaafd;
+$nile20: #ec98ff;
+$nile30: #ec80ff;
+$nile40: #a864ff;
+$nile50: #9860ff;
+$nile60: #875cff;
+
+// status
+$positive: #27c683;
+$negative: #fa5454;
+$warning: #ff810d;
+$highlight: #9860ff;
+$favorite: #ffd138;
+
+// text color
+$textDefault: $black;
+$textSubdued: $gray30;
+$textDisabled: $gray60;
+
+// dao color system
+$daoWonder: #7246ee, #e4ddf8, #f8f7fa, #fdfcff, #5937ba, #1a1a1a, $white , $gray60;
+$daoArteum: #eb605f, #f8d4d1, #faf7f7, #fffcfc, #b84b4a, #1a1a1a, $white , $gray60;
+$daoDelta: #1f8df2, #d4ebff, #f7f9fa, #fcfeff, #196fbf, #1a1a1a, $white , $gray60;
+$daoOracle: #7ca016, #e9f2b3, #f9faf7, #fefffc, #556e0f, #1a1a1a, $white , $gray60;
+$daoTopstpot: #005391, #f5faff, #f3f3fc, #fbfbfe, #6f70f6, #1a1a1a, $white , $gray60;
+
+// graph
+$increase: $positive;
+$decrease: $negative;
+$complement: $gray10;
+$complementDark: $gray80;
+$increaseBg: #eafbf4;
+$decreaseBg: #fff5f5;
+$complementBg: $gray90;
+$increaseBgDark: #0d402a;
+$decreaseBgDark: #4a0202;
+$complementBgDark: $gray20;
+$category1: $highlight;
+$category2: #1d94f5;
+$category3: #465cff;
+$category4: #04c35c;
+$category2Dark: #36b8ff;
+$category3Dark: #5e5ff5;
+$category4Dark: #62e1c3;
+$etc: #eda20b;
+$etcDark: #ffd056;
+$total: $gray00;
+
+// header height
+$headerHeight-pc: 60px;
+$headerHeight-mo: 48px;
+$headerHeight-mo-dao: 56px;
+
+// footer height
+$footerHeight-pc: 312px;
+$footerHeight-tb: 480px;
+$footerHeight-mo: 440px;
+
+// profile color set
+$egypt: (
+  1: #41414b,
+  2: #a78174,
+  3: #b05945,
+  4: #2f729c,
+  5: #4b8167,
+  6: #6a696e,
+  7: #ca9b75,
+  8: #d48588,
+  9: #96b8ba,
+  10: #89a97a,
+);
+
+// con
+$gold1: #8e7554;
+$gold2: #bd8855;
+$gold3: #ceb394;
+$gold4: #e2d2b7;
+$gold5: #ffe3c2;
+$brown: #5d432a;
+
+// neith
+$neithBlack: #111;
+
+// snkrz
+$snkr2: #94f800;
+
+// bagc
+$bagc: #96d1fb;

@@ -1,0 +1,6695 @@
+// marketplace layout
+.marketplace-wrap {
+  .marketplace-hero-wrap {
+    min-height: 400px;
+  }
+
+  .marketplace-inner {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @include md {
+      max-width: 100%;
+      padding: 0 40px;
+    }
+
+    @include sm {
+      padding: 0 20px;
+    }
+
+    &.filter-type {
+      display: flex;
+      justify-content: space-between;
+
+      &.temporary {
+        justify-content: center;
+
+        .total-num {
+          padding-left: 0;
+        }
+      }
+
+      .filter-wrap {
+        @include lg {
+          padding-top: 4px;
+        }
+      }
+
+      .nft-wrap {
+        width: calc(100% - 260px);
+      }
+
+      @include md {
+        justify-content: flex-start;
+
+        .nft-wrap {
+          width: 100%;
+        }
+
+        .filter-btn-wrap {
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 40px;
+        }
+      }
+
+      @include sm {
+        justify-content: flex-start;
+
+        .nft-wrap {
+          width: 100%;
+        }
+
+        .filter-btn-wrap {
+          position: absolute;
+          top: 0;
+          left: 20px;
+        }
+      }
+    }
+
+    @at-root .header.active:not(.header-top) + .marketplace-wrap .filter-wrap {
+      top: 80px;
+    }
+  }
+}
+
+.marketplace-container {
+  & > .ant-tabs {
+    position: relative;
+    z-index: 10;
+
+    @include sm {
+      margin-top: 20px;
+    }
+
+    .ant-tabs-tab-disabled {
+      .ant-tabs-tab-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $gray60;
+
+        &:active {
+          color: $gray60;
+        }
+
+        &::after {
+          @include fontFamilyChip(mr);
+
+          padding: 4px 8px;
+          border-radius: 2px;
+          margin-left: 10px;
+          background-color: $gray20;
+          color: $white;
+          content: "Unfolding Soon";
+          font-family: $fontEN !important;
+
+          @include sm {
+            margin-left: 8px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// marketplace nft view change
+.nft-view-change-wrap {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+
+  .total-num {
+    @include fontFamilyData(sr);
+
+    position: relative;
+    top: 0;
+    left: 0;
+
+    @include md {
+      margin-left: 136px;
+    }
+
+    @include sm {
+      margin-left: 115px;
+    }
+  }
+
+  @include md {
+    height: 40px;
+    margin-bottom: 24px;
+  }
+
+  @include sm {
+    height: 36px;
+    margin-bottom: 16px;
+  }
+}
+
+// marketplace apply
+.marketplace-apply {
+  padding: 80px 0;
+  margin-top: 80px;
+  background: $gray10;
+  color: $white;
+
+  @include md {
+    margin-top: 80px;
+  }
+
+  @include sm {
+    padding: 60px 0 40px;
+    margin-top: 60px;
+  }
+
+  .apply-title {
+    @include fontFamilyPhrase(l);
+
+    text-align: center;
+  }
+
+  .apply-desc {
+    @include fontFamilyBody(mr);
+
+    padding: 0 20px;
+    margin-top: 12px;
+    color: $gray60;
+    text-align: center;
+    white-space: pre-line;
+    word-break: keep-all;
+
+    @include md {
+      margin-top: 16px;
+    }
+
+    @include sm {
+      margin-top: 16px;
+    }
+  }
+
+  .marquee-banner-wrap {
+    margin-top: 40px;
+
+    @include md {
+      margin-top: 32px;
+    }
+
+    @include sm {
+      margin-top: 56px;
+    }
+  }
+
+  .apply-button-wrap {
+    margin-top: 44px;
+    text-align: center;
+
+    @include md {
+      margin-top: 40px;
+    }
+
+    @include sm {
+      margin-top: 50px;
+    }
+  }
+}
+
+// sub banner
+.marketplace-sub-banner {
+  position: relative;
+  display: flex;
+  height: 160px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: $veryBlack;
+  background-position: calc(100% + 156px) 100%;
+  background-repeat: no-repeat;
+  background-size: 792px 396px;
+
+  &.kari {
+    background-position: 78%;
+    background-size: cover;
+
+    @include md {
+      background-position: 100%;
+      background-size: 100%;
+    }
+  }
+
+  &.cora {
+    background-size: 150%;
+
+    @include md {
+      background-position: center;
+      background-size: cover;
+    }
+
+    @include sm {
+      background-position: 66% -50%;
+      background-size: cover;
+    }
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 600px;
+    background-image: linear-gradient(90deg, $veryBlack 0%, rgb(0 0 0 / 0%) 100%);
+    content: "";
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  &.hasInfo {
+    @include sm {
+      margin-bottom: 74px;
+    }
+  }
+
+  & + .marketplace-sub-banner {
+    margin-top: 80px;
+
+    @include md {
+      margin-top: 40px;
+    }
+
+    @include sm {
+      margin-top: 60px;
+    }
+  }
+
+  @include md {
+    height: 180px;
+    padding: 30px 24px;
+    background-position: calc(100% + 130px) 100%;
+    background-size: 660px 330px;
+  }
+
+  @include sm {
+    height: 280px;
+    justify-content: flex-start;
+    padding: 24px 20px;
+    background-position: 50% 100%;
+    background-size: 660px 330px;
+
+    &::before {
+      width: 100%;
+      height: 180px;
+      background-image: linear-gradient(180deg, $veryBlack 0%, rgb(0 0 0 / 0%) 100%);
+    }
+  }
+
+  &.lus {
+    background-color: #798991;
+    background-position: 100% 100%;
+    background-size: 792px 320px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  &.snkrz-banner-disabled {
+    .btn {
+      border-color: $gray60;
+      background: transparent;
+
+      span {
+        color: $gray60;
+      }
+    }
+  }
+
+  .title-wrap {
+    position: relative;
+    z-index: 1;
+
+    .sales-status {
+      @include fontFamilyHeading(s);
+
+      display: block;
+      color: $white;
+    }
+
+    .title {
+      @include fontFamilyBody(xxlb);
+      @include ellipsis(2);
+
+      max-width: 370px;
+      color: $white;
+      word-break: break-word;
+    }
+  }
+
+  .button-wrap {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    margin-top: 6px;
+
+    .btn {
+      min-width: 160px;
+
+      & + .btn {
+        margin-left: 8px;
+      }
+    }
+
+    @include md {
+      margin-top: 20px;
+    }
+
+    @include sm {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 24px;
+
+      .btn {
+        min-width: 160px;
+
+        & + .btn {
+          margin-top: 8px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+.marketplace-banner {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  height: 320px;
+  align-items: center;
+  background-color: $veryBlack;
+
+  @include md {
+    height: 400px;
+    align-items: flex-start;
+    padding: 60px 40px 48px;
+  }
+
+  @include sm {
+    position: relative;
+    height: 280px;
+    align-items: flex-start;
+    padding: 24px 20px 36px;
+  }
+
+  &.work {
+    .img-wrap {
+      width: 100%;
+      background-position: center;
+      background-size: cover;
+
+      @include md {
+        background-position: center;
+        background-size: cover;
+      }
+
+      @include sm {
+        background-position: center;
+        background-size: cover;
+      }
+
+      .ongoing-dim {
+        display: block;
+      }
+    }
+
+    .content-wrap {
+      .text-wrap {
+        .top-wrap {
+          .title-wrap {
+            flex-direction: column;
+            align-items: flex-start;
+
+            @include sm {
+              align-items: center;
+              justify-content: flex-start;
+            }
+
+            .icon-logo-wrap {
+              display: none;
+            }
+
+            .name {
+              display: block;
+              margin-bottom: 4px;
+              color: $gray100;
+
+              @include fontFamilyBody(mr);
+
+              @include md {
+                margin-bottom: 6px;
+              }
+            }
+          }
+
+          .button-wrap {
+            margin-top: 18px;
+          }
+        }
+
+        .auction-list-wrap {
+          display: none;
+        }
+      }
+    }
+  }
+
+  .img-wrap {
+    @include content;
+
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 50%;
+    width: 1920px;
+    height: 100%;
+    background-image: url("#{$rootPath}/img/img_con_visual.png");
+    background-position: right 180px bottom;
+    background-repeat: no-repeat;
+    background-size: auto 495px;
+    transform: translateX(-50%);
+
+    @include md {
+      width: 1279px;
+      background-position: right -260px bottom;
+      background-size: auto 660px;
+      transform: translateX(-50%);
+    }
+
+    @include sm {
+      width: 767px;
+      background-position: center bottom;
+      transform: translateX(-50%);
+
+      &::before {
+        @include content;
+
+        position: absolute;
+        z-index: 1;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 140px;
+        background: linear-gradient(180deg, rgb(0 0 0 / 0%) 0%, #000 100%);
+      }
+
+      &::after {
+        @include content;
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: rgb(26 26 26 / 30%);
+      }
+    }
+
+    .ongoing-dim {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      display: none;
+      background: rgb(26 26 26 / 70%);
+
+      @include sm {
+        display: block;
+      }
+    }
+  }
+
+  .content-wrap {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 1200px;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    @include lg {
+      padding-block: 40px;
+    }
+
+    .text-wrap {
+      display: flex;
+      flex-direction: column;
+
+      @include sm {
+        width: 100%;
+      }
+
+      .top-wrap {
+        .title-wrap {
+          display: flex;
+          align-items: center;
+
+          @include sm {
+            min-height: 56px;
+            justify-content: center;
+          }
+
+          .icon-logo-wrap {
+            margin-right: 10px;
+          }
+
+          .name {
+            display: none;
+          }
+
+          .title {
+            color: $gray100;
+            font-family: $fontSerifEN;
+
+            @include fontFamilyPhrase(l);
+          }
+        }
+
+        .button-wrap {
+          margin-top: 24px;
+
+          @include md {
+            margin-top: 40px;
+          }
+
+          @include sm {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+          }
+
+          .ant-btn {
+            min-width: 160px;
+
+            @include sm {
+              width: 100%;
+            }
+          }
+        }
+      }
+
+      .auction-list-wrap {
+        display: inline-flex;
+        align-items: flex-start;
+
+        @include sm {
+          display: none;
+        }
+
+        li {
+          display: inline-block;
+          min-width: 140px;
+          margin-bottom: 18px;
+          text-align: center;
+
+          @include md {
+            min-width: 150px;
+          }
+
+          .field {
+            display: flex;
+            align-items: center;
+            color: $gray100;
+
+            @include fontFamilyData(cs);
+          }
+
+          .value {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            margin-top: 12px;
+            color: $gray100;
+            text-align: left;
+
+            @include fontFamilyData(sb);
+
+            .wemix-value {
+              margin-top: 2px;
+              color: $gray60;
+              font-weight: 400;
+              text-align: left;
+
+              @include fontFamilyData(cxs);
+            }
+          }
+
+          + li {
+            padding-left: 10px;
+            border-left: 1px solid $gray60;
+            margin-left: 20px;
+
+            @include md {
+              padding-left: 12px;
+            }
+          }
+        }
+      }
+
+      .bottom-wrap {
+        margin-top: auto;
+
+        @include sm {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 17px;
+        }
+
+        .article-progress {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          color: $gray100;
+          vertical-align: top;
+
+          @include fontFamilyHeading(xs);
+
+          &.red-dot {
+            &::before {
+              display: inline-block;
+              width: 6px;
+              height: 6px;
+              border-radius: 50%;
+              margin-right: 4px;
+              background: $negative;
+              content: "";
+            }
+          }
+        }
+
+        .auction-time {
+          justify-content: flex-start;
+          margin-top: 12px;
+
+          @include md {
+            margin-top: 10px;
+          }
+
+          @include sm {
+            display: inline-flex;
+            margin-top: 4px;
+          }
+
+          li {
+            padding: 0;
+            background-color: transparent;
+
+            @include lg {
+              padding-block: 3px 7px;
+            }
+
+            @include md {
+              width: 60px;
+            }
+
+            @include sm {
+              width: 60px;
+              padding-block: 3px 7px;
+            }
+
+            strong {
+              @include md {
+                margin-top: -2px;
+              }
+            }
+
+            span {
+              color: $gray80;
+              padding-block: 1px;
+            }
+
+            + li {
+              position: relative;
+              z-index: 1;
+              margin-left: 10px;
+
+              &::before {
+                position: absolute;
+                z-index: 10;
+                top: 11px;
+                left: -6px;
+                width: 2px;
+                height: 2px;
+                background: $gray100;
+                content: "";
+
+                @include md {
+                  top: 7px;
+                  left: -8px;
+                }
+
+                @include sm {
+                  top: 20px;
+                }
+              }
+
+              &::after {
+                position: absolute;
+                z-index: 10;
+                top: 28px;
+                left: -6px;
+                width: 2px;
+                height: 2px;
+                background: #fff;
+                content: "";
+
+                @include md {
+                  top: 7px + 15px;
+                  left: -8px;
+                }
+
+                @include sm {
+                  top: 35px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .thumb-wrap {
+      width: 240px;
+      height: 240px;
+      margin-top: 10px;
+
+      @include md {
+        display: none;
+      }
+
+      @include sm {
+        display: none;
+      }
+
+      > span {
+        aspect-ratio: 1/1;
+      }
+    }
+  }
+}
+
+// Small Thumb nail list
+.marketplace-card-list {
+  display: flex;
+  flex-wrap: wrap;
+
+  &.view-card {
+    @at-root .Red & {
+      li {
+        @include lg {
+          width: calc(50% - 19px);
+
+          &:not(:nth-child(3n+1)) {
+            margin-left: 0;
+          }
+
+          &:not(:nth-child(n+1):nth-child(-n+3)) {
+            margin-top: 0;
+          }
+
+          & + li {
+            margin-left: 38px !important;
+          }
+
+          &:nth-child(3) {
+            margin-left: 0 !important;
+          }
+
+          &:not(:nth-child(n-1):nth-child(-n+2)) {
+            margin-top: 48px;
+          }
+        }
+      }
+    }
+
+    li {
+      @include lg {
+        &:not(:nth-child(3n+1)) {
+          margin-left: 34px;
+        }
+
+        &:not(:nth-child(n+1):nth-child(-n+3)) {
+          margin-top: 48px;
+        }
+      }
+
+      @include md {
+        &:not(:nth-child(2n+1)) {
+          margin-left: 24px;
+        }
+
+        &:not(:nth-child(n+1):nth-child(-n+2)) {
+          margin-top: 48px;
+        }
+      }
+
+      @include sm {
+        &:not(:nth-child(2n+1)) {
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  &.view-list {
+    flex-flow: column nowrap;
+  }
+}
+
+// Small Thumb nail card component
+.marketplace-card-view {
+  > div {
+    width: 100%;
+
+    > a {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  @include lg {
+    width: 288px;
+  }
+
+  @include md {
+    width: calc(50% - 12px);
+  }
+
+  @include sm {
+    display: flex;
+    width: 100%;
+
+    & + .marketplace-card-view {
+      padding-top: 12px;
+      border-top: 1px solid $gray80;
+      margin-top: 12px;
+    }
+  }
+
+  .link-tag {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  .offer-card {
+    .card-view-link {
+      .info-block {
+        @include sm {
+          padding-top: 4px;
+        }
+      }
+    }
+  }
+
+  .card-view-link {
+    cursor: pointer;
+
+    @include sm {
+      display: flex;
+      width: 100%;
+
+      .info-block {
+        width: calc(100% - 42.222vw - 12px);
+      }
+    }
+  }
+
+  .img-block {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    @include sm {
+      width: 42.222vw;
+      flex-shrink: 0;
+    }
+
+    .video-wrap {
+      display: block;
+      overflow: hidden;
+      width: calc(100% + 2px);
+      height: calc(100% + 2px);
+      margin-top: -1px;
+      margin-left: -1px;
+
+      @include sm {
+        width: calc(42.222vw + 2px);
+      }
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &.mine {
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: -8px;
+        left: -8px;
+        width: calc(100% + 8px + 8px);
+        height: calc(100% + 8px + 49px);
+        border: 1px solid $gray00;
+        content: "";
+
+        @include md {
+          height: calc(100% + 8px + 53px);
+        }
+
+        @include sm {
+          top: -6px;
+          left: -6px;
+          width: calc(100% + 6px + 6px);
+          height: calc(100% + 6px + 6px);
+        }
+      }
+
+      .card-link {
+        &::before {
+          position: absolute;
+          z-index: 1;
+          top: 8px;
+          right: 8px;
+          display: flex;
+          width: 28px;
+          height: 28px;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          background: $gray00;
+          color: $gray100;
+          content: "My";
+
+          @include fontFamilyData(xsb);
+        }
+      }
+    }
+
+    .card-link {
+      position: relative;
+      display: block;
+      overflow: hidden;
+      aspect-ratio: 1 / 1;
+      background-color: $gray90;
+
+      &:hover {
+        @include lg {
+          .product-info {
+            opacity: 1;
+          }
+        }
+      }
+
+      .covenant-value-badge-wrap {
+        top: 8px;
+        left: 8px;
+      }
+    }
+
+    .product-info {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px;
+      background: linear-gradient(180deg, rgb(26 26 26 / 0%) 0%, rgb(26 26 26 / 80%) 76.04%, #1a1a1a 100%);
+      opacity: 0;
+      transition: opacity 0.3s;
+
+      .product-info-top {
+        .open-time {
+          @include fontFamilyData(cl);
+
+          color: $white;
+        }
+
+        .product-name {
+          @include fontFamilyBody(mb);
+
+          margin-top: 8px;
+          color: $white;
+        }
+      }
+
+      .product-info-bottom {
+        display: flex;
+        padding-top: 10px;
+        border-top: 1px solid $gray50;
+        margin-top: 12px;
+
+        dl {
+          width: calc(50% - 4px);
+        }
+
+        dt {
+          @include fontFamilyData(cs);
+
+          color: $white;
+          font-weight: 400;
+        }
+
+        dd {
+          display: flex;
+
+          // height: 28px;
+          align-items: center;
+          margin-top: 7px;
+
+          svg {
+            width: 24px;
+            height: 24px;
+
+            path {
+              fill: $white;
+            }
+
+            & + span {
+              margin-left: 4px;
+            }
+          }
+
+          .user-image {
+            flex-shrink: 0;
+          }
+
+          span {
+            @include fontFamilyData(cs);
+            @include ellipsis;
+
+            color: $white;
+
+            & + span {
+              margin-left: 4px;
+              line-height: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .info-block {
+    margin-top: 12px;
+
+    @include md {
+      margin-top: 10px;
+    }
+
+    @include sm {
+      position: relative;
+      display: flex;
+      width: calc(100% - 42.222vw - 12px);
+      flex-direction: column;
+      justify-content: space-between;
+      padding-top: 36px;
+      padding-bottom: 4px;
+      margin-top: 0;
+      margin-left: 12px;
+    }
+
+    .info-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .product-name {
+      @include fontFamilyBody(tb);
+      @include ellipsis;
+
+      line-height: 1.4;
+
+      @include md {
+        line-height: 1.4;
+      }
+
+      @include sm {
+        @include ellipsis(2);
+
+        height: 36px;
+        white-space: normal;
+      }
+    }
+
+    .btn-like {
+      margin-left: 8px;
+
+      @include sm {
+        display: none;
+      }
+    }
+
+    .info-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 12px;
+      border-top: 1px solid $gray80;
+      margin-top: 12px;
+
+      @include md {
+        padding-top: 10px;
+        margin-top: 10px;
+      }
+
+      @include sm {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 0;
+        border: none;
+        margin-top: 0;
+      }
+    }
+
+    .price-info {
+      dt {
+        @include fontFamilyData(cs);
+
+        color: $gray60;
+        font-weight: 400;
+      }
+
+      dd {
+        @include fontFamilyData(sb);
+
+        margin-top: 8px;
+
+        @include md {
+          margin-top: 12px;
+        }
+
+        @include sm {
+          margin-top: 8px;
+        }
+
+        .unit {
+          @include fontFamilyData(cs);
+
+          padding-left: 4px;
+          font-weight: 400;
+        }
+      }
+    }
+
+    .tag {
+      @include sm {
+        position: absolute;
+        top: 4px;
+        left: 0;
+        transform: translateX(-4px);
+      }
+    }
+  }
+
+  .tag-market.border-none {
+    border: none;
+  }
+}
+
+// list card component
+.marketplace-list-view {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  border-bottom: 1px solid $gray80;
+
+  @include sm {
+    border-bottom: none;
+  }
+
+  &:first-child {
+    padding: 0 0 20px;
+
+    .btn-like {
+      margin-top: 0;
+    }
+  }
+
+  & > div {
+    width: 100%;
+  }
+
+  .card-link {
+    display: flex;
+    width: 100%;
+
+    @include sm {
+      flex-direction: column;
+    }
+  }
+
+  .offer-card {
+    .info-block {
+      padding-top: 8px;
+
+      @include md {
+        padding-top: 8px;
+      }
+
+      @include sm {
+        padding-top: 0;
+      }
+    }
+  }
+
+  .btn-like {
+    position: absolute;
+    z-index: 2;
+    top: 48px;
+    right: 0;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+
+    @include md {
+      top: 56px;
+    }
+
+    @include sm {
+      top: auto;
+      bottom: 90px;
+      flex-direction: row;
+    }
+
+    .like-count {
+      margin-top: 4px;
+      margin-left: 0;
+
+      @include sm {
+        margin-top: 0;
+        margin-left: 4px;
+      }
+    }
+  }
+
+  .img-block {
+    position: relative;
+    width: 240px;
+    flex-shrink: 0;
+    aspect-ratio: 1/1;
+    background: #f2f2f2;
+
+    .video-wrap {
+      display: block;
+      overflow: hidden;
+      width: 100%;
+      height: 100%;
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &.mine {
+      &::before {
+        position: absolute;
+        z-index: 1;
+        top: -8px;
+        left: -8px;
+        width: calc(100% + 8px + 8px);
+        height: calc(100% + 8px + 8px);
+        border: 1px solid $gray00;
+        border-radius: 2px;
+        content: "";
+
+        @include sm {
+          top: -6px;
+          left: -6px;
+          width: calc(100% + 6px + 6px);
+          height: calc(100% + 6px + 58px + 1px);
+        }
+      }
+
+      &::after {
+        position: absolute;
+        z-index: 1;
+        top: 8px;
+        right: 8px;
+        display: flex;
+        width: 28px;
+        height: 28px;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        background: $gray00;
+        color: $gray100;
+        content: "My";
+
+        @include fontFamilyData(xsb);
+      }
+    }
+
+    @include sm {
+      width: 100%;
+    }
+  }
+
+  .info-block {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 48px;
+    margin-left: 40px;
+
+    @include md {
+      padding-top: 56px;
+      margin-left: 24px;
+    }
+
+    @include sm {
+      padding-top: 0;
+      margin-top: 12px;
+      margin-left: 0;
+    }
+
+    .tag {
+      position: absolute;
+      top: 8px;
+      left: 0;
+
+      @include sm {
+        top: auto;
+        right: 0;
+        bottom: 8px;
+        left: auto;
+      }
+    }
+
+    .info-top {
+      position: relative;
+      padding-right: 56px;
+
+      @include sm {
+        padding: 4px 0;
+        padding-right: 64px;
+      }
+
+      .collection-name {
+        display: block;
+
+        @include fontFamilyHeading(xs);
+
+        @include sm {
+          display: none;
+        }
+      }
+
+      .product-name {
+        display: block;
+        margin-top: 8px;
+
+        @include fontFamilyPhrase(sb);
+
+        @include md {
+          @include ellipsis(2);
+        }
+
+        @include sm {
+          margin-top: 0;
+
+          @include ellipsis(1);
+        }
+      }
+    }
+
+    .info-bottom {
+      display: flex;
+
+      @include sm {
+        padding-top: 12px;
+        border-top: 1px solid $gray80;
+        margin-top: 12px;
+      }
+
+      dl {
+        min-width: 180px;
+
+        & + dl {
+          margin-left: 32px;
+        }
+
+        @include md {
+          min-width: 200px;
+
+          & + dl {
+            margin-left: 24px;
+          }
+
+          &:nth-child(3) {
+            display: none;
+          }
+        }
+
+        @include sm {
+          display: none;
+
+          &:first-child {
+            display: block;
+          }
+        }
+
+        dt {
+          color: $gray60;
+
+          @include fontFamilyData(cs);
+        }
+
+        dd {
+          margin-top: 12px;
+
+          @include fontFamilyData(m3);
+
+          @include sm {
+            margin-top: 8px;
+          }
+
+          &.column {
+            display: flex;
+            align-items: center;
+
+            svg {
+              width: 20px;
+              height: 20px;
+            }
+
+            span {
+              @include fontFamilyData(m3);
+
+              margin-left: 4px;
+            }
+          }
+
+          &.user-info {
+            display: flex;
+            align-items: center;
+            margin-top: 6px;
+
+            .name {
+              margin-left: 8px;
+
+              @include ellipsis(1);
+              @include fontFamilyData(sb);
+            }
+          }
+
+          .unit {
+            margin-left: 4px;
+            font-weight: 400;
+
+            @include fontFamilyData(cl);
+          }
+        }
+      }
+    }
+  }
+
+  &.list-hover {
+    width: 100%;
+    border-bottom: 0;
+
+    &:first-child {
+      padding: 0;
+    }
+
+    .img-block {
+      position: relative;
+      width: 368px;
+      background-color: $gray80;
+
+      &:hover {
+        .product-info {
+          opacity: 1;
+        }
+      }
+
+      @include md {
+        width: calc((100% - 24px) / 2);
+      }
+
+      @include sm {
+        width: 42.222vw;
+      }
+
+      .product-info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 20px;
+        background: linear-gradient(180deg, rgb(26 26 26 / 0%) 0%, rgb(26 26 26 / 80%) 76.04%, #1a1a1a 100%);
+        opacity: 0;
+        transition: opacity 0.3s;
+
+        @include md {
+          display: none;
+        }
+
+        @include sm {
+          display: none;
+        }
+
+        * {
+          color: $white;
+        }
+
+        .open-time {
+          @include fontFamilyData(cl);
+        }
+
+        .product-name {
+          @include fontFamilyBody(mb);
+
+          margin-top: 8px;
+        }
+
+        .product-info-bottom {
+          display: flex;
+          padding-top: 12px;
+          border-top: 1px solid $gray50;
+          margin-top: 12px;
+
+          dl {
+            width: calc(50% - 4px);
+          }
+
+          dt {
+            @include fontFamilyData(cs);
+
+            color: $white;
+            font-weight: 400;
+          }
+
+          dd {
+            display: flex;
+
+            // height: 28px;
+            align-items: center;
+            margin-top: 7px;
+
+            svg {
+              width: 24px;
+              height: 24px;
+
+              path {
+                fill: $white;
+              }
+
+              & + span {
+                margin-left: 4px;
+              }
+            }
+
+            .user-image {
+              flex-shrink: 0;
+            }
+
+            span {
+              @include fontFamilyData(cs);
+              @include ellipsis;
+
+              color: $white;
+
+              & + span {
+                margin-left: 4px;
+                line-height: normal;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .info-block {
+      padding: 52px 0 12px;
+      margin-left: 48px;
+
+      @include md {
+        padding-top: 58px;
+        margin-left: 20px;
+      }
+
+      @include sm {
+        padding: 36px 0 4px;
+        margin-left: 16px;
+      }
+
+      .tag {
+        top: 12px;
+
+        @include md {
+          top: 8px;
+        }
+
+        @include sm {
+          top: 4px;
+        }
+      }
+
+      .info-top {
+        .product-name {
+          @include fontFamilyDp(marketl);
+
+          margin-top: 4px;
+
+          @include sm {
+            margin-top: 0;
+          }
+        }
+      }
+
+      .info-bottom {
+        padding-top: 20px;
+        border-top: 1px solid $gray80;
+
+        @include md {
+          flex-direction: column;
+          padding-top: 0;
+          border-top: 0;
+        }
+
+        @include sm {
+          padding-top: 0;
+          border-top: 0;
+        }
+
+        dl {
+          & + dl {
+            @include md {
+              margin-top: 20px;
+              margin-left: 0;
+            }
+          }
+        }
+      }
+    }
+
+    .btn-like {
+      @include sm {
+        display: none;
+      }
+    }
+  }
+
+  .tag-market.border-none {
+    border: none;
+  }
+}
+
+// Collections Small Thumb nail
+.marketplace-collections-section {
+  margin-top: 32px;
+
+  @include md {
+    margin-top: 20px;
+  }
+
+  @include sm {
+    margin-top: 16px;
+  }
+
+  & + .marketplace-sub-banner {
+    margin-top: 80px;
+
+    @include md {
+      margin-top: 40px;
+    }
+
+    @include sm {
+      margin-top: 60px;
+    }
+  }
+
+  .marketplace-card-list {
+    &.view-list {
+      .marketplace-list-view {
+        padding-bottom: 0;
+        border-bottom: none;
+
+        .btn-like {
+          @include sm {
+            bottom: 70px;
+          }
+
+          .like-count {
+            margin-left: 0;
+
+            @include sm {
+              margin-left: 4px;
+            }
+          }
+        }
+      }
+    }
+
+    .card-link {
+      @include sm {
+        flex-direction: row;
+      }
+
+      .img-block {
+        @include sm {
+          width: 42.222vw;
+        }
+      }
+
+      .info-block {
+        @include sm {
+          position: relative;
+          padding-top: 36px;
+          padding-bottom: 4px;
+          margin-top: 0;
+          margin-left: 16px;
+        }
+
+        .info-top {
+          @include sm {
+            padding: 0;
+          }
+
+          .product-name {
+            @include sm {
+              @include fontFamilyBody(tb);
+
+              font-family: $fontKR;
+              line-height: 1.4 !important;
+            }
+          }
+        }
+
+        .info-bottom {
+          @include sm {
+            padding-top: 0;
+            border: none;
+            margin-top: 0;
+          }
+
+          dl {
+            @include sm {
+              min-width: auto;
+            }
+
+            dd {
+              @include sm {
+                @include fontFamilyData(sb);
+              }
+
+              .unit {
+                @include sm {
+                  @include fontFamilyData(cs);
+                }
+              }
+            }
+          }
+        }
+
+        .tag {
+          @include sm {
+            top: 4px;
+            right: auto;
+            bottom: auto;
+            left: 0;
+            transform: translateX(-4px);
+          }
+        }
+      }
+    }
+
+    li {
+      @include lg {
+        &:not(:nth-child(3n+1)) {
+          margin-left: 48px;
+        }
+      }
+
+      @include md {
+        &:not(:nth-child(2n+1)) {
+          margin-left: 24px;
+        }
+
+        &:not(:nth-child(n+1):nth-child(-n+2)) {
+          margin-top: 20px;
+        }
+      }
+
+      @include sm {
+        &:not(:nth-child(2n+1)) {
+          margin-left: 0;
+        }
+
+        &:not(:nth-child(n+1):nth-child(-n+2)) {
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+
+  .marketplace-card-view {
+    @include lg {
+      width: 368px;
+    }
+
+    @include md {
+      width: calc((100% - 24px) / 2);
+    }
+
+    @include sm {
+      width: 100%;
+    }
+  }
+}
+
+// marketplace ranking
+.marketplace-ranking-section {
+  padding: 80px 0 0;
+
+  @include md {
+    padding: 40px 0 80px;
+  }
+
+  @include sm {
+    padding: 40px 0 36px;
+  }
+
+  h3 {
+    @include fontFamilyDp(mb);
+  }
+
+  .ranking-category {
+    display: flex;
+    margin-top: 20px;
+
+    button + button {
+      margin-left: 8px;
+    }
+  }
+
+  .ranking-list-wrap {
+    margin-top: 20px;
+  }
+
+  .ranking-list-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include sm {
+      flex-direction: column;
+      align-items: flex-end;
+
+      .ant-select {
+        margin-top: 8px;
+      }
+    }
+
+    p {
+      padding-left: 8px;
+      color: $gray30;
+
+      @include dotStyle;
+      @include fontFamilyBody(mr);
+
+      @include md {
+        @include dotStyle($top: 11px);
+      }
+
+      @include sm {
+        width: 100%;
+        min-height: 44px;
+      }
+    }
+  }
+
+  .ranking-list-content {
+    position: relative;
+    margin-top: 12px;
+    column-gap: 0;
+    columns: 2;
+
+    @include md {
+      columns: unset;
+    }
+
+    @include sm {
+      columns: unset;
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: calc(50% - 20px);
+      height: 2px;
+      background: $gray00;
+      content: "";
+
+      @include md {
+        display: none;
+      }
+
+      @include sm {
+        display: none;
+      }
+    }
+  }
+
+  .column {
+    &-ranking {
+      width: 62px;
+      flex-shrink: 62px;
+      justify-content: center;
+
+      @include md {
+        width: 70px;
+      }
+    }
+
+    &-nft {
+      // width: 100%;
+      flex: 1 1;
+
+      // justify-content: center;
+
+      // @include md {
+      //   width: 70px;
+      // }
+    }
+
+    &-transition-day {
+      width: 150px;
+      justify-content: flex-end;
+      text-align: right;
+
+      @include md {
+        width: 250px;
+      }
+
+      @include sm {
+        width: 80px;
+      }
+    }
+
+    &-price {
+      width: 138px;
+      justify-content: flex-end;
+      text-align: right;
+
+      @include md {
+        width: 200px;
+      }
+
+      @include sm {
+        width: 90px;
+      }
+    }
+
+    &-change {
+      width: 76px;
+      justify-content: flex-end;
+
+      @include md {
+        width: 90px;
+      }
+    }
+  }
+
+  .ranking-list {
+    position: relative;
+
+    @include md {
+      display: block;
+    }
+  }
+
+  .ranking-list-head {
+    display: table;
+    width: calc(100% - 20px);
+    height: 40px;
+    border-top: 2px solid $gray00;
+    border-bottom: 1px solid $gray80;
+
+    @include md {
+      position: relative;
+      width: 100%;
+    }
+
+    @include sm {
+      width: 100%;
+    }
+
+    [class*="column"] {
+      display: table-cell;
+      padding: 0 8px;
+      vertical-align: middle;
+
+      @include fontFamilyTable("tr");
+    }
+
+    .column-change {
+      text-align: center;
+
+      @include sm {
+        display: none;
+      }
+    }
+  }
+
+  .ranking-list-body {
+    .row-list {
+      width: calc(100% - 20px);
+      margin-left: auto;
+
+      @include md {
+        width: 100%;
+      }
+
+      @include sm {
+        width: 100%;
+      }
+
+      a {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        border-bottom: 1px solid $gray80;
+      }
+
+      [class*="column"] {
+        display: flex;
+        height: 63px;
+        align-items: center;
+        padding: 0 8px;
+      }
+
+      .column-change {
+        @include sm {
+          display: none;
+        }
+      }
+
+      .ranking-wrap {
+        position: relative;
+
+        strong {
+          @include fontFamilyDp(sb);
+        }
+
+        .tag-data {
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          display: flex;
+
+          // width: 100%;
+          justify-content: center;
+          margin-top: 8px;
+          transform: translateX(-50%);
+
+          @include md {
+            display: none;
+          }
+
+          @include sm {
+            display: none;
+          }
+        }
+      }
+
+      .nft-wrap {
+        display: flex;
+        align-items: center;
+
+        .img-wrap {
+          position: relative;
+          width: 40px;
+          height: 40px;
+          flex: none;
+        }
+
+        .nft-title-wrap {
+          display: flex;
+          flex-direction: column;
+          margin-left: 8px;
+          word-break: break-all;
+
+          .nft-title,
+          .nft-sub-title {
+            @include ellipsis(1);
+
+            @include sm {
+              @include ellipsis(2);
+            }
+          }
+
+          .nft-title {
+            @include fontFamilyTable(br);
+          }
+
+          .nft-sub-title {
+            margin-top: 2px;
+            color: $gray60;
+
+            @include fontFamilyTable(br);
+
+            @include sm {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .transition-day-wrap {
+        @include fontFamilyTable(br);
+      }
+
+      .price-wrap {
+        @include fontFamilyBody(lr);
+
+        @include md {
+          @include fontFamilyTable(br);
+        }
+
+        @include sm {
+          @include fontFamilyTable(br);
+        }
+      }
+    }
+
+    .row-list.big {
+      position: relative;
+      margin-top: 0;
+      margin-left: unset;
+
+      [class*="column"] {
+        height: 135px;
+
+        @include md {
+          height: 63px;
+        }
+
+        @include sm {
+          height: 63px;
+        }
+      }
+
+      .ranking-wrap {
+        strong {
+          border-bottom: 2px solid $gray00;
+
+          @include fontFamilyDp(mb);
+
+          @include md {
+            border-bottom: 0;
+
+            @include fontFamilyDp(sb);
+          }
+
+          @include sm {
+            border-bottom: 0;
+
+            @include fontFamilyDp(sb);
+          }
+        }
+      }
+
+      .nft-wrap {
+        .img-wrap {
+          width: 80px;
+          height: 80px;
+
+          @include md {
+            width: 40px;
+            height: 40px;
+          }
+
+          @include sm {
+            width: 40px;
+            height: 40px;
+          }
+        }
+
+        .nft-title-wrap {
+          .nft-title,
+          .nft-sub-title {
+            @include ellipsis(2);
+
+            @include md {
+              @include ellipsis(1);
+            }
+          }
+
+          .nft-title {
+            @include fontFamilyTable(blr);
+
+            @include md {
+              @include fontFamilyTable(br);
+            }
+
+            @include sm {
+              @include fontFamilyTable(br);
+            }
+          }
+
+          .nft-sub-title {
+            @include sm {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .transition-day-wrap,
+      .price-wrap {
+        @include fontFamilyBody(lr);
+
+        @include md {
+          @include fontFamilyTable(br);
+        }
+
+        @include sm {
+          @include fontFamilyTable(br);
+        }
+      }
+    }
+  }
+}
+
+// marketplace detail page
+.marketplace-detail-wrap {
+  padding: 40px 0 80px;
+
+  @include md {
+    padding: 40px 0 80px;
+  }
+
+  @include sm {
+    padding: 24px 0 80px;
+  }
+}
+
+// marketplace detail page top section
+.marketplace-top-section {
+  @include maxWidthLg;
+
+  display: flex;
+
+  @include md {
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+
+  @include sm {
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+
+  .img-block {
+    position: relative;
+    width: 678px;
+    height: 464px;
+
+    .video-wrap {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      video {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+
+    @include md {
+      width: 462px;
+      height: 464px;
+      margin: 0 auto;
+    }
+
+    @include sm {
+      width: 100%;
+      max-width: 320px;
+      height: 320px;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 299px) {
+      height: 105.714vw;
+    }
+
+    img {
+      object-fit: contain;
+
+      &.item-image {
+        width: auto;
+        height: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .frame-img {
+    position: relative;
+    display: flex;
+    width: 376px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 28px 12px 0;
+    margin: 0 auto;
+
+    &::after {
+      background-image: url("#{$rootPath}/img/bg_con_luxury.png");
+    }
+
+    @include sm {
+      width: 100%;
+      max-width: 260px;
+      padding: 20px 7px 0;
+      border-radius: 8px;
+    }
+
+    .video-control {
+      // 23.4.3 마켓플레이스 상세 썸네일 이미지 / 동영상 비율에 따른 프레임 수치 조정
+      @include md {
+        margin: -2px auto;
+      }
+
+      @include sm {
+        margin: 4px auto;
+      }
+
+      @media (max-width: 299px) {
+        margin: 5px auto;
+      }
+    }
+
+    $types: (mythical, legendary, epic, rare, civic, zenith, high-end, luxury);
+
+    @each $type in $types {
+      &.#{$type} {
+        &.CONE {
+          &::after {
+            background-image: url("#{$rootPath}/img/bg_con_#{$type}.png");
+          }
+        }
+
+        &.CORA {
+          @if $type == mythical {
+            &::after {
+              background-image: url("#{$rootPath}/img/bg_cora_mythical.png");
+            }
+          } @else if $type == rare {
+            &::after {
+              background-image: url("#{$rootPath}/img/bg_cora_rare.png");
+            }
+          } @else {
+            &::after {
+              background-image: url("#{$rootPath}/img/bg_con_#{$type}.png");
+            }
+          }
+        }
+      }
+    }
+
+    $transparent: (zenith, high-end, luxury);
+
+    @each $el in $transparent {
+      &.#{$el} {
+        & > span {
+          background-color: $gray90 !important;
+        }
+      }
+    }
+
+    &::after {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      background-image: url("#{$rootPath}/img/bg_con_luxury.png");
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: contain;
+      content: "";
+      transform: translateX(-50%);
+    }
+
+    & > span {
+      top: 28px !important;
+      left: 50% !important;
+      width: 352px !important;
+      height: 352px !important;
+      transform: translateX(-50%);
+
+      @include sm {
+        top: 18px !important;
+        width: 100% !important;
+        max-width: 244px !important;
+        height: auto !important;
+        aspect-ratio: 1/1;
+      }
+
+      @media (max-width: 299px) {
+        top: 17px !important;
+        width: calc(100% - 5vw) !important;
+      }
+    }
+
+    .item-info {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      padding: 10px 4px 14px;
+
+      @include sm {
+        padding: 0 5px 7px;
+      }
+
+      &::before {
+        width: 60px;
+        height: 60px;
+        background: url("#{$rootPath}/icon/ico_neith_mural_stemp.png") no-repeat center center / contain;
+        content: "";
+
+        @include sm {
+          display: none;
+        }
+      }
+
+      .info-list {
+        display: flex;
+        align-items: flex-start;
+        padding-top: 6px;
+        margin-left: 20px;
+
+        @include sm {
+          padding-top: 0;
+          margin-left: 0;
+        }
+
+        & > div {
+          & + div {
+            margin-left: 20px;
+          }
+        }
+
+        dt {
+          @include fontFamilyBody(cs);
+
+          color: $gray80;
+        }
+
+        dd {
+          @include fontFamilyData(sb);
+
+          @media (max-width: 299px) {
+            @include fontsizeMixin(12, 12);
+          }
+
+          margin-top: 8px;
+          color: $white;
+
+          @include sm {
+            margin-top: 2px;
+          }
+
+          .unit {
+            @include fontFamilyData(cs);
+
+            margin-left: 4px;
+            color: $white;
+            font-weight: 400;
+          }
+
+          &.dollar-price {
+            @include fontFamilyData(cs);
+
+            margin-top: 4px;
+
+            @include sm {
+              margin-top: 2px;
+            }
+
+            span {
+              color: $gray80;
+              font-weight: 400;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .info-block {
+    position: relative;
+    display: flex;
+    width: 472px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 50px;
+
+    @include md {
+      width: 100%;
+      margin-top: 40px;
+      margin-left: 0;
+    }
+
+    @include sm {
+      width: 100%;
+      margin-top: 23px;
+      margin-left: 0;
+    }
+
+    .status-wrap {
+      display: flex;
+      justify-content: space-between;
+
+      @include sm {
+        display: block;
+      }
+
+      &.status-offer {
+        justify-content: flex-end;
+
+        .utils {
+          @include sm {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+
+    .utils {
+      display: flex;
+      align-items: center;
+
+      @include sm {
+        position: relative;
+        display: block;
+        margin-top: 12px;
+
+        &::after {
+          @include content;
+        }
+      }
+
+      .watch,
+      .bidders {
+        display: inline-flex;
+        align-items: center;
+
+        @include sm {
+          float: left;
+        }
+
+        & ~ * {
+          margin-left: 12px;
+        }
+
+        svg {
+          width: 24px;
+          height: 24px;
+
+          @include md {
+            width: 32px;
+            height: 32px;
+          }
+
+          @include sm {
+            width: 24px;
+            height: 24px;
+          }
+        }
+
+        &-number {
+          @include fontFamilyData(cs);
+
+          margin-left: 4px;
+
+          @include sm {
+            margin-left: 0;
+          }
+        }
+      }
+
+      .btn-like {
+        @include sm {
+          margin-right: 36px;
+          float: right;
+        }
+
+        .like-count {
+          margin-left: 0;
+        }
+      }
+
+      .share-wrap {
+        width: 24px;
+
+        @include sm {
+          position: absolute;
+          top: 0;
+          right: 0;
+          float: right;
+        }
+      }
+    }
+
+    .title-wrap {
+      margin-top: 8px;
+
+      @include md {
+        margin-top: 12px;
+      }
+
+      @include lg {
+        min-height: 124px;
+      }
+
+      .collection-name {
+        @include fontFamilyBody(mr);
+      }
+
+      .product-title {
+        @include fontFamilyPhrase(mb);
+
+        display: block;
+        margin-top: 4px;
+
+        @include sm {
+          margin-top: 8px;
+
+          @include fontFamilyPhrase(l);
+        }
+      }
+
+      .edition-info {
+        @include fontFamilyBody(sr);
+
+        margin-top: 4px;
+        color: $gray50;
+
+        @include sm {
+          margin-top: 8px;
+        }
+      }
+    }
+
+    .bottom-info-wrap {
+      border-top: 1px solid $black;
+      margin-top: 12px;
+
+      @include md {
+        margin-top: 40px;
+      }
+
+      @include sm {
+        margin-top: 32px;
+      }
+
+      .price-info-block {
+        display: flex;
+        height: 84px;
+        padding-top: 15px;
+
+        @include sm {
+          display: block;
+          height: auto;
+          padding: 0;
+        }
+
+        & + .bidding-block,
+        & + .notice-block,
+        & + .etc-wrap {
+          border-top: 1px solid $gray80;
+        }
+
+        .price-info-wrap {
+          @include md {
+            width: calc((100% - 24px) / 2);
+          }
+
+          @include sm {
+            width: 100%;
+          }
+
+          &:first-child {
+            @include lg {
+              width: 208px;
+            }
+          }
+
+          &:nth-child(2) {
+            @include sm {
+              border-top: 1px solid $gray80;
+            }
+          }
+
+          & + .price-info-wrap {
+            margin-left: 24px;
+
+            @include sm {
+              margin-left: 0;
+            }
+          }
+        }
+
+        dl {
+          @include sm {
+            height: 76px;
+            padding-top: 12px;
+          }
+
+          &.avatar-type {
+            dd {
+              display: flex;
+              align-items: center;
+              margin-top: 4px;
+
+              @include md {
+                margin-top: 6px;
+              }
+            }
+
+            .user-name {
+              @include fontFamilyData(cl);
+            }
+
+            .user-image {
+              border: none;
+              margin-right: 8px;
+            }
+          }
+        }
+
+        .info-title {
+          @include fontFamilyData(cs);
+
+          display: flex;
+
+          & > span {
+            @include fontFamilyData(cs);
+
+            display: inline-block;
+            height: 22px;
+            color: $gray60;
+            line-height: 22px;
+
+            @include md {
+              line-height: 22px;
+            }
+
+            @include sm {
+              line-height: 22px;
+            }
+          }
+
+          .bidding-block {
+            margin-left: 4px;
+          }
+        }
+
+        dd {
+          margin-top: 6px;
+
+          &.user-info {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+          }
+
+          .info-text {
+            @include fontFamilyData(m3);
+          }
+
+          .counting-time {
+            color: $negative;
+          }
+
+          .unit {
+            @include fontFamilyData(cl);
+
+            margin-left: 4px;
+          }
+        }
+      }
+
+      .bidding-block {
+        display: flex;
+        align-items: center;
+
+        .btn-outline {
+          padding: 0 12px;
+          border-color: $gray80;
+        }
+
+        span {
+          @include fontFamilyBody(cs);
+
+          color: $gray50;
+        }
+      }
+
+      .notice-block {
+        &.list-type-dot {
+          padding-top: 16px;
+
+          li {
+            @include fontFamilyBody(sr);
+
+            padding-left: 8px;
+            color: $gray60;
+            white-space: pre-line;
+
+            @include md {
+              white-space: normal;
+            }
+
+            @include sm {
+              white-space: normal;
+            }
+
+            .btn-setting {
+              @include fontFamilyBody(u);
+
+              display: inline-flex;
+              align-items: center;
+              padding-right: 2px;
+              color: $gray30;
+
+              svg {
+                width: 12px;
+                height: 12px;
+                transform: rotate(-90deg);
+              }
+            }
+
+            & + li {
+              margin-top: 2px;
+
+              @include md {
+                margin-top: 0;
+              }
+
+              @include sm {
+                margin-top: 0;
+              }
+            }
+
+            &::before {
+              top: 7px;
+              background-color: $gray60;
+
+              @include md {
+                top: 8px;
+              }
+
+              @include sm {
+                top: 8px;
+              }
+            }
+
+            .tooltip-wrap {
+              display: inline-block;
+              margin-right: 4px;
+              vertical-align: middle;
+
+              .ant-popover-arrow {
+                transform: translateY(100%) translateX(-17px);
+              }
+
+              .tooltip-contents {
+                width: 332px;
+              }
+            }
+          }
+        }
+
+        &.border-top-gray {
+          border-top: 1px solid $gray80;
+        }
+
+        & + .button-block {
+          padding-top: 16px;
+        }
+      }
+
+      .amount-block {
+        display: flex;
+        padding-top: 8px;
+
+        @include sm {
+          flex-direction: column;
+        }
+
+        .input-number-wrap {
+          flex: 1 0 auto;
+        }
+
+        .btn {
+          margin-left: 8px;
+
+          @include md {
+            width: 216px;
+          }
+
+          @include sm {
+            margin-top: 8px;
+            margin-left: 0;
+          }
+        }
+      }
+
+      .button-block-wrap {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+      }
+
+      .button-block {
+        display: flex;
+        flex-wrap: wrap;
+
+        @include sm {
+          flex-direction: column;
+        }
+
+        .btn {
+          &:first-child {
+            max-width: 190px;
+            flex-shrink: 0;
+
+            @include md {
+              width: 200px;
+              max-width: none;
+            }
+
+            @include sm {
+              width: 100%;
+              max-width: none;
+            }
+          }
+
+          &:first-child:last-child {
+            width: 100%;
+            max-width: none;
+
+            @include md {
+              width: 100%;
+            }
+
+            @include sm {
+              width: 100%;
+            }
+          }
+
+          &:nth-child(2) {
+            width: calc(100% - 168px);
+            margin-left: 8px;
+
+            @include md {
+              width: calc(100% - 208px);
+            }
+
+            @include sm {
+              width: 100%;
+              margin-top: 8px;
+              margin-left: 0;
+            }
+          }
+
+          &:nth-child(3) {
+            width: 100%;
+            margin-top: 10px;
+          }
+        }
+      }
+
+      .tooltip-wrap {
+        path {
+          fill: $gray60;
+        }
+
+        .tooltip-contents {
+          @include fontFamilyBody(sr);
+
+          min-width: 200px;
+          border-radius: 2px;
+          background-color: $gray20;
+          color: $white;
+        }
+
+        .ant-popover-arrow {
+          width: 18px;
+          height: 18px;
+          transform: translateY(100%) translateX(18px);
+        }
+
+        .ant-popover-arrow-content {
+          background-color: $gray20;
+        }
+      }
+
+      .link-block {
+        display: flex;
+        align-items: center;
+        padding-left: 8px;
+        margin-top: 16px;
+
+        @include sm {
+          flex-wrap: wrap;
+        }
+
+        & + .button-block {
+          padding-top: 20px;
+
+          @include sm {
+            padding-top: 28px;
+          }
+        }
+
+        li {
+          .btn-text {
+            display: inline-flex;
+            color: $gray30;
+            vertical-align: top;
+
+            span {
+              color: inherit;
+            }
+
+            svg {
+              path {
+                fill: $gray30;
+              }
+            }
+          }
+
+          & + li {
+            position: relative;
+            padding-left: 8px;
+            margin-left: 8px;
+
+            &::before {
+              position: absolute;
+              top: 50%;
+              left: 0;
+              width: 1px;
+              height: 12px;
+              background: $gray80;
+              content: "";
+              transform: translateY(-50%);
+            }
+          }
+
+          &:nth-child(3) {
+            @include sm {
+              width: 100%;
+              padding-left: 0;
+              margin-top: 12px;
+              margin-left: 0;
+
+              &::before {
+                display: none;
+              }
+            }
+          }
+        }
+
+        & + .amount-block {
+          padding-top: 20px;
+
+          @include sm {
+            padding-top: 28px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// marketplace detail page floating bar
+.marketplace-floating-bar-wrap {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: $gray00;
+  transform: translateY(calc(100% + 50px));
+  transition: transform 0.3s;
+
+  &::after {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba($white, 0.2);
+    content: "";
+  }
+
+  &.active {
+    transform: translateY(0);
+  }
+
+  .marketplace-floating-bar-inner {
+    position: relative;
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    padding: 14px 0;
+    margin: 0 auto;
+
+    @include md {
+      width: 100%;
+      padding: 14px 40px;
+      margin: 0;
+    }
+
+    @include sm {
+      width: 100%;
+      padding: 14px 20px 30px;
+      margin: 0;
+    }
+
+    .info-area {
+      display: flex;
+      width: 600px;
+      margin-right: 44px;
+
+      @include md {
+        display: none;
+      }
+
+      @include sm {
+        display: none;
+      }
+
+      .img-block {
+        position: relative;
+        width: 52px;
+        height: 52px;
+        flex-shrink: 0;
+        margin-bottom: 0;
+
+        video {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .info-detail {
+        display: flex;
+        width: 604px;
+        flex-direction: column;
+        margin-left: 24px;
+
+        strong {
+          @include fontFamilyPhrase(sb);
+
+          display: block;
+          overflow: hidden;
+          max-width: 604px;
+          color: $gray100;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+
+          &.active {
+            position: relative;
+            padding-left: 14px;
+
+            &::before {
+              @include content(inline-flex);
+              @include fontFamilyChip(mb);
+
+              position: absolute;
+              top: 12px;
+              left: 1px;
+              width: 6px;
+              height: 6px;
+              border-radius: 100%;
+              margin-right: 4px;
+              animation: dot-ani 0.8s cubic-bezier(0.47, 2, 0.21, 0.8) infinite;
+              animation-direction: alternate;
+              background-color: $negative;
+            }
+          }
+
+          @keyframes dot-ani {
+            0% {
+              transform: scale(0);
+            }
+
+            100% {
+              transform: scale(1.1);
+            }
+          }
+        }
+
+        span {
+          @include fontFamilyData("cl");
+
+          margin-top: 8px;
+          color: $gray50;
+        }
+      }
+    }
+
+    .interactive-area {
+      display: flex;
+      width: 556px;
+      align-items: center;
+
+      @include md {
+        width: 100%;
+      }
+
+      @include sm {
+        width: 100%;
+        flex-wrap: wrap;
+      }
+
+      & > .btn {
+        &:first-child:last-child {
+          width: 100%;
+          max-width: none;
+
+          @include md {
+            width: 100%;
+          }
+
+          @include sm {
+            width: 100%;
+          }
+        }
+
+        &:first-child {
+          max-width: 190px;
+          flex-shrink: 0;
+
+          @include lg {
+            padding: 0 26px;
+          }
+
+          @include md {
+            width: 200px;
+            max-width: none;
+          }
+
+          @include sm {
+            width: calc(50% - 4px);
+            max-width: none;
+          }
+        }
+
+        & + .btn {
+          width: 100%;
+          margin-left: 8px;
+
+          @include sm {
+            width: calc(50% - 4px);
+          }
+        }
+
+        &:nth-child(3) {
+          width: 100%;
+
+          @include sm {
+            width: 100%;
+            margin-top: 10px;
+            margin-left: 0;
+          }
+        }
+
+        svg {
+          path {
+            fill: $gray100;
+          }
+        }
+      }
+
+      .amount-block {
+        display: flex;
+        width: 100%;
+
+        @include sm {
+          flex-direction: column;
+        }
+
+        .input-number-wrap {
+          @include md {
+            flex: 1 0 auto;
+          }
+        }
+
+        > button {
+          width: 100%;
+          margin-left: 8px;
+
+          @include md {
+            width: 216px;
+          }
+
+          @include sm {
+            margin-top: 8px;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+
+    .tooltip {
+      @include fontFamilyBody("cs");
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      max-width: unset;
+      align-items: center;
+      padding: 6px 12px;
+      border-radius: 100px;
+      background-color: $gray100;
+      box-shadow: 0 5px 20px rgb(0 0 0 / 20%);
+      color: $textDefault;
+      opacity: 0;
+      transition: top 0.3s 0.2s, opacity 0.3s 0.2s;
+
+      &.active {
+        top: -48px;
+        opacity: 1;
+      }
+
+      @include md {
+        top: -44px;
+        left: 40px;
+      }
+
+      @include sm {
+        top: -40px;
+        left: 20px;
+      }
+
+      .profile-img {
+        // border-radius: 50%;
+        margin-right: 4px;
+
+        img {
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #8a3737;
+
+    .progress-filled {
+      position: absolute;
+      right: 0;
+      height: 4px;
+      background-color: $negative;
+    }
+  }
+}
+
+// marketplace detail page bottom section
+.marketplace-bottom-section {
+  margin-top: 40px;
+
+  @include md {
+    margin-top: 28px;
+  }
+
+  @include sm {
+    margin-top: 28px;
+  }
+
+  .ant-tabs-nav {
+    margin-bottom: 60px;
+
+    @include md {
+      margin-bottom: 40px;
+    }
+
+    @include sm {
+      margin-bottom: 24px;
+    }
+  }
+
+  .marketplace-detail-inner {
+    @include maxWidthLg;
+  }
+}
+
+.marketplace-about {
+  @include lg {
+    position: relative;
+    padding-left: 304px;
+  }
+
+  .about-item {
+    & + .about-item {
+      margin-top: 40px;
+
+      @include sm {
+        margin-top: 28px;
+      }
+    }
+  }
+
+  .about-title {
+    @include fontFamilyHeading(s);
+  }
+
+  .about-content {
+    margin-top: 12px;
+
+    @include sm {
+      margin-top: 8px;
+    }
+  }
+
+  .utility-wrap {
+    p {
+      @include fontFamilyBody(mr);
+
+      & + ul {
+        margin-top: 12px;
+      }
+    }
+
+    ul {
+      li {
+        @include fontFamilyBody(mr);
+        @include dotStyle(4px, $black, 9px);
+
+        padding-left: 8px;
+      }
+    }
+
+    span {
+      display: block;
+      padding-left: 8px;
+      margin-top: 8px;
+      color: $gray60;
+
+      @include fontFamilyBody(mr);
+      @include dotStyle($bg: $gray60, $top: 9px);
+
+      @include sm {
+        margin-top: 6px;
+      }
+    }
+  }
+
+  .properties-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -12px;
+
+    @include md {
+      margin-top: -14px;
+    }
+
+    @include sm {
+      margin-top: -8px;
+    }
+
+    &.neith {
+      li {
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3) {
+          .properties-item {
+            border-color: $black;
+          }
+        }
+      }
+    }
+
+    li {
+      width: calc(33.33% - 8px);
+      margin-top: 12px;
+
+      &:nth-child(3n+2),
+      &:nth-child(3n+3) {
+        margin-left: 12px;
+      }
+
+      @include md {
+        width: calc(33.33% - 9.33px);
+        margin-top: 14px;
+
+        &:nth-child(3n+2),
+        &:nth-child(3n+3) {
+          margin-left: 14px;
+        }
+      }
+
+      @include sm {
+        width: 100%;
+        margin-top: 8px;
+
+        &:nth-child(3n+2),
+        &:nth-child(3n+3) {
+          margin-left: 0;
+        }
+      }
+    }
+
+    .properties-item {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      padding: 15px;
+      border: 1px solid $gray80;
+      border-radius: 4px;
+      transition: background 0.2s ease-in-out;
+      height: 100%;
+
+      @include sm {
+        padding: 11px;
+      }
+
+      &:hover {
+        padding: 16px;
+        border: none;
+        background: $gray00;
+
+        @include sm {
+          padding: 12px;
+        }
+
+        .type {
+          color: $gray60;
+        }
+
+        .name {
+          color: $gray100;
+        }
+      }
+
+      .type {
+        transition: color 0.2s ease-in-out;
+
+        @include fontFamilyBody(sr);
+      }
+
+      .name {
+        margin-top: 4px;
+        transition: color 0.2s ease-in-out;
+        text-align: left;
+
+        @include fontFamilyBody(mb);
+
+        @include sm {
+          margin-top: 2px;
+        }
+      }
+
+      .rarity {
+        display: inline-flex;
+        margin-top: 16px;
+        color: $gray60;
+
+        @include fontFamilyButton(sr);
+
+        @include sm {
+          margin-top: 12px;
+        }
+
+        svg {
+          width: 12px;
+          height: 12px;
+          margin-left: 4px;
+          transform: rotate(-90deg);
+
+          @include md {
+            width: 16px;
+            height: 16px;
+          }
+
+          path {
+            fill: $gray60;
+          }
+        }
+      }
+
+      &:disabled {
+        pointer-events: none;
+      }
+    }
+  }
+
+  .profile {
+    @include lg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 264px;
+    }
+
+    .about-title {
+      @include lg {
+        display: none;
+      }
+    }
+
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 52px 0 26px;
+      border: 1px solid $gray80;
+      border-radius: 2px;
+
+      @include lg {
+        margin: 0;
+      }
+
+      @include md {
+        flex-direction: row;
+        padding: 24px;
+      }
+
+      @include sm {
+        padding: 24px 0 20px;
+      }
+
+      .type {
+        display: none;
+        margin-top: 16px;
+        color: $gray30;
+
+        @include fontFamilyBody(sb);
+
+        @include lg {
+          display: block;
+        }
+      }
+
+      .name {
+        margin-top: 4px;
+
+        @include fontFamilyBody(lb);
+
+        @include md {
+          margin-top: 0;
+          margin-left: 20px;
+        }
+
+        @include sm {
+          margin-top: 8px;
+        }
+      }
+
+      .sns-list {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 43px;
+        margin-top: 40px;
+
+        @include md {
+          padding: 0;
+          margin-top: 0;
+          margin-left: auto;
+        }
+
+        @include sm {
+          padding: 0;
+          margin-top: 16px;
+        }
+
+        li + li {
+          margin-left: 16px;
+        }
+
+        a {
+          display: block;
+          width: 32px;
+          height: 32px;
+
+          svg {
+            width: 32px;
+            height: 32px;
+
+            path {
+              fill: $gray60;
+              transition: fill 0.2s ease-in-out;
+            }
+          }
+
+          &:hover {
+            svg path {
+              fill: $gray00;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.marketplace-history {
+  display: flex;
+
+  @include md {
+    flex-direction: column;
+  }
+
+  @include sm {
+    flex-direction: column;
+  }
+
+  .chart-wrap {
+    width: 680px;
+    flex: none;
+
+    @include md {
+      width: 100%;
+    }
+
+    @include sm {
+      width: 100%;
+    }
+
+    .price-history-chart-wrap {
+      height: 480px;
+
+      @include md {
+        height: 360px;
+      }
+
+      @include sm {
+        height: 340px;
+      }
+    }
+  }
+
+  .history-wrap {
+    width: 100%;
+    margin-left: 48px;
+
+    @include md {
+      margin-top: 40px;
+      margin-left: 0;
+    }
+
+    @include sm {
+      margin-top: 40px;
+      margin-left: 0;
+    }
+
+    strong {
+      @include fontFamilyHeading(s);
+    }
+  }
+
+  .history-list-wrap {
+    width: 100%;
+    height: 480px;
+    border: 1px solid $gray80;
+    border-radius: 2px;
+    margin-top: 12px;
+    overflow-y: overlay;
+
+    @include scrollStyle;
+
+    @include md {
+      height: 293px;
+    }
+
+    @include sm {
+      height: 360px;
+      margin-top: 16px;
+    }
+  }
+
+  .infinite-loader {
+    margin-bottom: 20px;
+
+    @include sm {
+      margin-bottom: 16px;
+    }
+  }
+
+  .history-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid $gray80;
+
+    &:hover {
+      background: $gray90;
+    }
+
+    & > button {
+      flex: none;
+    }
+
+    a {
+      position: relative;
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+      padding-right: 40px;
+      margin-left: 12px;
+
+      .text {
+        @include fontFamilyTable(blr);
+      }
+
+      .time {
+        margin-top: 2px;
+        color: $gray60;
+
+        @include fontFamilyTable(br);
+      }
+
+      svg {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        width: 16px;
+        height: 16px;
+        margin-top: -8px;
+        transform: rotate(-90deg);
+      }
+    }
+  }
+}
+
+.marketplace-recommend {
+  margin-top: 80px;
+
+  @include sm {
+    margin-top: 60px;
+  }
+
+  & > strong {
+    @include fontFamilyHeading(mb);
+  }
+
+  .recommend-list {
+    margin-top: 28px;
+
+    a {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include sm {
+      margin-top: 16px;
+    }
+  }
+}
+
+.collection-banner-section {
+  @include sm {
+    // height: 140px;
+  }
+
+  .collection-banner {
+    position: relative;
+    height: 200px;
+
+    @include sm {
+      height: 140px;
+    }
+
+    .img-wrap {
+      height: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: auto 200px;
+
+      @include sm {
+        background-size: auto 140px;
+      }
+    }
+
+    &.img-type {
+      background: $gray90;
+    }
+  }
+}
+
+.collection-top-section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 42px;
+
+  @include maxWidthLg;
+
+  @include md {
+    display: block;
+  }
+
+  @include sm {
+    display: block;
+    padding-top: 30px;
+  }
+
+  .collection-img-wrap {
+    position: absolute;
+    top: -90px;
+    width: 120px;
+    aspect-ratio: 1/1;
+
+    @include sm {
+      top: -48px;
+      width: 64px;
+    }
+  }
+
+  .collection-info-wrap {
+    padding-bottom: 48px;
+
+    @include md {
+      padding-bottom: 0;
+    }
+
+    @include sm {
+      padding-bottom: 0;
+    }
+
+    h2 {
+      @include fontFamilyPhrase(l);
+
+      @include lg {
+        @include ellipsis(2);
+      }
+    }
+
+    p {
+      max-width: 800px;
+      margin-top: 4px;
+      color: $gray30;
+      word-break: keep-all;
+
+      @include fontFamilyBody(mr);
+
+      @include md {
+        max-width: none;
+        margin-top: 8px;
+      }
+
+      @include sm {
+        max-width: none;
+        margin-top: 6px;
+      }
+    }
+
+    .tag-list {
+      display: flex;
+      margin-top: 16px;
+
+      @include sm {
+        margin-top: 12px;
+      }
+
+      .tag + .tag {
+        margin-left: 4px;
+      }
+    }
+  }
+
+  .collection-data-wrap {
+    display: flex;
+    width: 288px;
+    flex: none;
+    flex-wrap: wrap;
+    align-self: flex-start;
+    border-top: 1px solid $gray00;
+
+    @include md {
+      width: 100%;
+      margin-top: 32px;
+    }
+
+    @include sm {
+      width: 100%;
+      justify-content: space-between;
+      margin-top: 28px;
+    }
+
+    &.neith-type {
+      width: 329px;
+      margin-top: 50px;
+
+      @include md {
+        width: 100%;
+        margin-top: 32px;
+      }
+
+      @include sm {
+        width: 100%;
+        margin-top: 28px;
+      }
+
+      & > div {
+        & + div {
+          border-top: 1px solid $gray80;
+        }
+
+        dl {
+          align-self: flex-start;
+
+          &:first-child {
+            width: 183px;
+
+            @include md {
+              width: 50%;
+            }
+
+            @include sm {
+              width: 55%;
+            }
+          }
+
+          &:last-child {
+            width: 130px;
+
+            @include md {
+              width: 50%;
+            }
+
+            @include sm {
+              width: 45%;
+            }
+          }
+
+          & + dl {
+            margin-left: 16px;
+
+            @include md {
+              margin-left: 0;
+            }
+          }
+
+          dd {
+            @include fontFamilyData(sb);
+
+            margin-top: 10px;
+
+            @include md {
+              margin-top: 12px;
+            }
+
+            .unit {
+              @include fontFamilyData(cl);
+
+              margin-left: 4px;
+            }
+          }
+        }
+      }
+
+      .convert-value {
+        @include fontFamilyData(cl);
+
+        display: block;
+        margin-top: 4px;
+
+        @include md {
+          margin-top: 6px;
+        }
+      }
+    }
+
+    & > div {
+      display: flex;
+      width: 100%;
+
+      @include md {
+        width: 100%;
+
+        & + dl {
+          margin-left: 0;
+        }
+      }
+
+      dl {
+        display: flex;
+        flex-direction: column;
+        /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        @include md {
+          width: 100%;
+          margin-left: 0;
+        }
+
+        &:nth-child(1),
+        &:nth-child(2) {
+          width: calc(100% - 2px);
+        }
+
+        dt,
+        dd {
+          width: 100%;
+        }
+      }
+    }
+
+    dl {
+      width: 100%;
+      padding: 16px 0;
+      margin-left: 4px;
+
+      &:first-child {
+        margin-left: 0;
+      }
+
+      @include md {
+        padding: 20px 0;
+      }
+    }
+
+    & > dl {
+      border-top: 1px solid $gray80;
+
+      @include md {
+        // border-top: 0;
+        width: 50%;
+        margin-left: 0;
+      }
+    }
+
+    dt {
+      color: $gray30;
+
+      @include fontFamilyData(cs);
+    }
+
+    dd {
+      margin-top: 12px;
+
+      @include fontFamilyData(m3);
+
+      span {
+        font-weight: 400;
+
+        @include fontFamilyData(cl);
+      }
+    }
+  }
+
+  .collection-utils-wrap {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+
+    .btn-like {
+      margin-left: 24px;
+
+      @include sm {
+        margin-top: 20px;
+        margin-left: 0;
+      }
+    }
+
+    .share-wrap {
+      margin-left: 24px;
+
+      @include md {
+        margin-top: 0;
+      }
+
+      @include sm {
+        margin-top: 20px;
+        margin-left: 0;
+      }
+    }
+
+    @include md {
+      position: relative;
+      margin-top: 20px;
+    }
+
+    @include sm {
+      position: relative;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .ant-btn.btn-md {
+      & + .ant-btn.btn-md {
+        margin-left: 8px;
+
+        @include sm {
+          margin-top: 8px;
+          margin-left: 0;
+        }
+      }
+
+      @include sm {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.collection-bottom-section {
+  margin-top: 40px;
+
+  .collection-inner {
+    padding-bottom: 60px;
+
+    @include maxWidthLg;
+
+    @include md {
+      padding-bottom: 40px;
+    }
+
+    @include sm {
+      padding-bottom: 40px;
+    }
+
+    &.filter-type {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-bottom: 40px;
+
+      &.temporary {
+        justify-content: center;
+      }
+
+      .nft-wrap {
+        width: calc(100% - 260px);
+      }
+
+      @include md {
+        flex-direction: column;
+
+        .nft-wrap {
+          width: 100%;
+          margin-top: 24px;
+        }
+      }
+
+      @include sm {
+        flex-direction: column;
+
+        .nft-wrap {
+          width: 100%;
+          margin-top: 16px;
+        }
+      }
+
+      @at-root .header.active:not(.header-top) + .marketplace-collection-wrap .filter-wrap {
+        top: 180px;
+      }
+    }
+  }
+
+  .activity-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include sm {
+      position: relative;
+      flex-direction: column;
+      align-items: flex-start;
+      padding-bottom: 36px;
+    }
+
+    .activity-utils {
+      display: flex;
+      width: 100%;
+      align-items: center;
+
+      .total {
+        margin-right: 16px;
+
+        @include fontFamilyData(sr);
+
+        @include sm {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          margin-right: 0;
+        }
+      }
+
+      .ant-select + .ant-select {
+        margin-left: 8px;
+      }
+    }
+
+    .activity-search {
+      @include sm {
+        width: 100%;
+        margin-top: 8px;
+      }
+
+      .ant-input-affix-wrapper {
+        width: 240px;
+
+        @include sm {
+          width: 100%;
+        }
+      }
+    }
+
+    .ant-select {
+      @include sm {
+        width: calc(50% - 4px);
+      }
+    }
+  }
+
+  /* 18일 검수사항 마켓플레이스 상세만 히든 */
+  .refund-btn {
+    display: none;
+  }
+}
+
+// marketplace-bid-wrap
+.marketplace-bid-wrap {
+  @include maxWidthLg;
+
+  padding-top: 20px;
+
+  @include md {
+    flex-direction: column;
+    padding-top: 28px;
+  }
+
+  @include sm {
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  .bid-top-section {
+    padding-top: 20px;
+    padding-bottom: 80px;
+
+    @include md {
+      padding-top: 28px;
+      padding-bottom: 40px;
+    }
+
+    @include sm {
+      padding-top: 20px;
+      padding-bottom: 40px;
+    }
+
+    .bid-cont-wrap {
+      display: flex;
+
+      @include md {
+        flex-direction: column;
+      }
+
+      @include sm {
+        flex-direction: column;
+      }
+
+      .profile-card {
+        @include md {
+          margin: 0 auto;
+        }
+
+        @include sm {
+          width: 100%;
+          margin: 0 auto;
+        }
+      }
+
+      .state-wrap {
+        padding-top: 133px;
+
+        @include md {
+          padding-top: 113px;
+        }
+
+        @include sm {
+          padding-top: 32px;
+        }
+      }
+    }
+  }
+}
+
+// content-title
+.content-title {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 16px;
+  border-bottom: 1px solid $black;
+  margin: 0 auto;
+
+  h2 {
+    @include fontFamilyHeading(l);
+
+    &.xs {
+      @include fontFamilyHeading(s);
+    }
+  }
+
+  &.serif {
+    h2 {
+      @include fontFamilyDp(sb);
+
+      &.md {
+        @include fontFamilyDp(mb);
+      }
+    }
+  }
+
+  a {
+    @include fontFamilyButton(sr);
+
+    display: inline-flex;
+    align-items: center;
+    color: $gray30;
+    font-weight: 400;
+
+    &:hover {
+      text-decoration: underline;
+      text-underline-offset: 0.25em;
+    }
+
+    svg {
+      margin-left: 4px;
+      transform: rotate(-90deg);
+    }
+  }
+
+  p {
+    @include fontFamilyBody(mr);
+
+    width: 100%;
+    margin: 12px 0 8px;
+    color: $gray30;
+    white-space: pre-line;
+
+    @include sm {
+      margin-bottom: 10px;
+    }
+  }
+
+  @include md {
+    padding-bottom: 16px;
+  }
+
+  @include sm {
+    padding-bottom: 14px;
+  }
+
+  .btn-wrap {
+    display: flex;
+
+    .btn-swiper {
+      padding: 6px;
+      border: 1px solid $gray00;
+
+      &.swiper-button-disabled {
+        border-color: $gray80;
+      }
+
+      &.btn-prev {
+        transform: rotate(90deg);
+      }
+
+      &.btn-next {
+        transform: rotate(-90deg);
+      }
+
+      svg {
+        font-size: 12px;
+
+        @include md {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .page-text {
+      margin: 0 12px;
+
+      @include md {
+        margin: 0 10px;
+      }
+
+      .divider {
+        margin: 0 4px;
+      }
+
+      span {
+        @include fontFamilyBody(mr);
+
+        color: $gray60;
+      }
+
+      .now {
+        color: $gray30;
+      }
+    }
+  }
+}
+
+// profile-card
+.profile-card {
+  width: 320px;
+  height: fit-content;
+  padding: 16px;
+  border: 1px solid $gray80;
+
+  .img-block {
+    position: relative;
+    width: 288px;
+    height: 288px;
+    margin: 0 auto;
+
+    video {
+      width: 100%;
+      height: 100%;
+    }
+
+    @include sm {
+      width: 165px;
+      height: 165px;
+    }
+  }
+
+  .profile-info-block {
+    margin-top: 12px;
+
+    @include sm {
+      margin-top: 16px;
+    }
+
+    .profile-info-top {
+      .product-name {
+        @include ellipsis;
+        @include fontFamilyBody(tb);
+
+        display: block;
+      }
+    }
+
+    .profile-info-bottom {
+      padding-top: 12px;
+      border-top: 1px solid $gray80;
+      margin-top: 12px;
+
+      dl {
+        display: flex;
+
+        .ant-avatar {
+          flex: 0 0 28px;
+        }
+
+        button {
+          width: 50%;
+
+          dt {
+            @include fontFamilyData(cs);
+
+            color: $gray60;
+            text-align: left;
+          }
+
+          .profile-user-info {
+            display: flex;
+            margin-top: 8px;
+
+            .name {
+              @include fontFamilyData(sm);
+              @include ellipsis;
+
+              align-self: center;
+              margin-left: 8px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// state-wrap page
+.state-wrap {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &.success {
+    justify-content: flex-end;
+  }
+
+  .state-logo {
+    width: 60px;
+    height: 60px;
+
+    & + .state-cont {
+      margin-top: 53px;
+
+      @include sm {
+        margin-top: 8px;
+      }
+    }
+
+    svg {
+      width: 60px;
+      height: 60px;
+
+      @include sm {
+        width: 36px;
+        height: 36px;
+      }
+    }
+
+    .result-loader {
+      .infinite-loader {
+        margin: 0 auto;
+      }
+    }
+  }
+
+  .state-title {
+    @include fontFamilyBody(lb);
+
+    margin-top: 21px;
+    text-align: center;
+
+    @include md {
+      margin-top: 18px;
+    }
+
+    @include sm {
+      margin-top: 4px;
+    }
+  }
+
+  .state-cont {
+    @include fontFamilyBody(mr);
+
+    margin-top: 8px;
+    color: $gray50;
+    text-align: center;
+    white-space: pre-line;
+
+    @include md {
+      max-width: 400px;
+    }
+
+    @include sm {
+      margin-top: 4px;
+    }
+  }
+
+  .state-btn-wrap {
+    display: flex;
+    margin-top: 122px;
+
+    @include sm {
+      width: 100%;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .btn {
+      @include sm {
+        width: 100%;
+        flex: 0 0 100%;
+      }
+
+      & + .btn {
+        margin-left: 8px;
+
+        @include sm {
+          margin-top: 8px;
+          margin-left: 0;
+        }
+
+        &.bg-black {
+          text-transform: capitalize;
+        }
+      }
+
+      & + div {
+        margin-left: 8px;
+
+        @include sm {
+          margin-top: 8px;
+          margin-left: 0;
+        }
+      }
+    }
+
+    .share-wrap {
+      margin-left: 8px;
+
+      @include sm {
+        width: 100%;
+        margin-top: 8px;
+        margin-left: 0;
+      }
+
+      .btn {
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+
+// listing page
+.marketplace-listing-wrap {
+  min-height: calc(100vh - 100px);
+
+  @include maxWidthLg;
+
+  .listing-section {
+    display: flex;
+    padding-top: 20px;
+    margin-bottom: 80px;
+
+    @include md {
+      flex-direction: column;
+      padding-top: 28px;
+      margin-bottom: 40px;
+      row-gap: 113px;
+    }
+
+    @include sm {
+      flex-direction: column;
+      padding-top: 20px;
+      margin-bottom: 40px;
+      row-gap: 32px;
+    }
+
+    .profile-card {
+      @include md {
+        margin: 0 auto;
+      }
+
+      @include sm {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    .listing-area {
+      width: 100%;
+      padding-left: 40px;
+
+      // margin-top: 36px;
+
+      @include md {
+        padding-left: 0;
+        margin-top: 32px;
+      }
+
+      @include sm {
+        padding-left: 0;
+        margin-top: 32px;
+      }
+
+      .listing-title {
+        @include fontFamilyHeading(xs);
+
+        display: block;
+
+        & + .ant-picker {
+          margin-top: 8px;
+        }
+      }
+
+      .listing-form-wrap {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-top: 8px;
+
+        & + .listing-form-desc {
+          @include fontFamilyBody(sr);
+
+          margin-top: 8px;
+          color: $gray60;
+
+          & + .listing-title {
+            margin-top: 24px;
+          }
+        }
+
+        & + .listing-form-info {
+          @include fontFamilyBody(cs);
+
+          padding-left: 16px;
+          margin-top: 8px;
+          background: url("#{$publicPath}/ico_information.svg") no-repeat left center;
+
+          @include md {
+            padding: 2px 0 2px 20px;
+            background-size: 16px;
+          }
+        }
+
+        .ant-select-selector {
+          background-color: transparent;
+        }
+
+        .ant-input-number {
+          width: 100%;
+          margin-left: 8px;
+
+          &::placeholder {
+            color: $gray30;
+          }
+
+          @include md {
+            width: 100%;
+          }
+
+          @include sm {
+            width: 100%;
+          }
+
+          .ant-input-number-input {
+            text-align: right;
+          }
+        }
+
+        &.single-type {
+          .ant-input-lg {
+            width: 632px;
+            margin-left: 0;
+            text-align: left;
+          }
+        }
+
+        &.error {
+          .ant-input-lg {
+            border-color: $negative;
+          }
+        }
+
+        .btn-md {
+          height: 46px;
+          margin-left: 8px;
+
+          &:hover {
+            border-color: $gray00;
+          }
+        }
+
+        .btn-now-time {
+          @include fontFamilyBody(u);
+
+          margin-left: 16px;
+
+          @include sm {
+            position: absolute;
+            top: -8px;
+            right: 0%;
+            margin-left: 0;
+            transform: translateY(-100%);
+          }
+        }
+      }
+
+      .listing-list-wrap {
+        display: flex;
+        padding-top: 20px;
+        border-top: 1px solid $gray80;
+        margin-top: 32px;
+
+        // todo: WEMIX$ 환전 가능 시 삭제
+        &:not(.single-type) > div:first-child {
+          padding-bottom: 16px;
+
+          @media (min-width: 768px) and (max-width: 788px) {
+            padding-bottom: 0;
+          }
+
+          .list-unit {
+            align-items: center;
+
+            dt {
+              @media (min-width: 768px) and (max-width: 788px) {
+                flex-basis: 40%;
+              }
+            }
+          }
+        }
+
+        @include md {
+          padding: 0 40px;
+          padding-top: 24px;
+          margin-top: 36px;
+          margin-right: -40px;
+          margin-left: -40px;
+        }
+
+        @include sm {
+          flex-wrap: wrap;
+          padding: 0 20px;
+          padding-top: 24px;
+          margin-top: 32px;
+          margin-right: -20px;
+          margin-left: -20px;
+        }
+
+        &.single-type {
+          padding-top: 0;
+          border: none;
+          margin-top: 84px;
+
+          @include md {
+            margin-top: 94px;
+          }
+
+          @include sm {
+            margin-top: 56px;
+          }
+
+          .list-item-area {
+            .list-item-title {
+              min-height: auto;
+            }
+
+            .list-content {
+              margin-top: 28px;
+
+              @include md {
+                margin-top: 24px;
+              }
+
+              @include sm {
+                margin-top: 16px;
+              }
+
+              .list-cont {
+                min-height: auto;
+              }
+            }
+          }
+        }
+
+        .list-item-area {
+          flex: 1 1 50%;
+          padding-left: 12px;
+
+          @include sm {
+            flex: 1 1 100%;
+          }
+
+          & + .list-item-area {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            margin-left: 40px;
+
+            @include md {
+              margin-left: 20px;
+
+              @media (min-width: 768px) and (max-width: 788px) {
+                padding-bottom: 8px;
+              }
+            }
+
+            @include sm {
+              margin-top: 20px;
+              margin-left: 0;
+            }
+          }
+
+          .list-content {
+            margin-top: 18px;
+
+            @include md {
+              margin-top: 12px;
+            }
+
+            @include sm {
+              margin-top: 16px;
+            }
+
+            .list-cont {
+              display: flex;
+              min-height: 38px;
+              flex-wrap: wrap;
+              align-items: center;
+              justify-content: space-between;
+
+              > dd,
+              > dt {
+                @include fontFamilyBody(sr);
+
+                // flex: 0 0 50%;
+                // align-self: flex-end;
+                color: $gray60;
+              }
+
+              dt {
+                display: flex;
+                flex-basis: 60%;
+                align-items: center;
+
+                @include md {
+                  display: block;
+                  flex-basis: 60%;
+
+                  .tooltip-wrap {
+                    vertical-align: text-bottom;
+                  }
+                }
+
+                @include sm {
+                  display: block;
+                  flex-basis: 62%;
+
+                  .tooltip-wrap {
+                    vertical-align: text-bottom;
+                  }
+                }
+
+                button {
+                  margin-left: 2px;
+
+                  svg path {
+                    fill: $gray60;
+                  }
+                }
+              }
+
+              dd {
+                display: flex;
+                align-items: center;
+
+                // justify-content: flex-end;
+                margin-left: 20px;
+
+                .btn-count {
+                  margin-left: 4px;
+                }
+
+                @include sm {
+                  margin-left: 0;
+                }
+              }
+            }
+
+            .list-unit {
+              display: flex;
+              justify-content: space-between;
+              padding-top: 16px;
+              border-top: 1px solid $gray80;
+              margin-top: 16px;
+
+              @include md {
+                padding-top: 12px;
+                margin-top: 12px;
+              }
+
+              dd,
+              dt {
+                @include fontFamilyBody(mb);
+
+                color: $black;
+
+                em {
+                  @include fontFamilyData(m3);
+                }
+              }
+
+              dd {
+                flex-shrink: 0;
+                flex-wrap: wrap;
+              }
+            }
+          }
+
+          .list-all-unit {
+            @include fontFamilyData(cl);
+
+            display: block;
+            margin-top: 2px;
+            color: $gray60;
+            text-align: right;
+          }
+
+          .list-item-title {
+            @include fontFamilyBody(mr);
+
+            position: relative;
+            min-height: 44px;
+            color: $black;
+
+            @include sm {
+              min-height: auto;
+            }
+
+            &::before {
+              position: absolute;
+              top: 9px;
+              left: -8px;
+              width: 4px;
+              height: 4px;
+              border-radius: 50%;
+              background: $black;
+              content: "";
+              transform: translateX(-100%);
+            }
+          }
+        }
+      }
+
+      .list-btn-area {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 39px;
+
+        button + button {
+          margin-left: 8px;
+        }
+
+        @include md {
+          margin-top: 32px;
+        }
+
+        @include sm {
+          margin-top: 24px;
+
+          .ant-btn {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+.marketplace-bid-list {
+  height: 144px;
+  padding: 12px;
+  border: 1px solid $gray80;
+  border-radius: 4px;
+
+  @include md {
+    height: 146px;
+  }
+
+  li {
+    display: flex;
+    justify-content: space-between;
+
+    & + li {
+      margin-top: 12px;
+    }
+
+    &.order0 {
+      opacity: 0.3;
+    }
+
+    &.order-1,
+    &.order2-0 {
+      opacity: 0.6;
+    }
+
+    .profile {
+      display: flex;
+      align-items: center;
+
+      .info {
+        display: flex;
+        flex-direction: column;
+        margin-left: 8px;
+
+        .name {
+          @include fontFamilyTable(bb);
+        }
+
+        .time {
+          margin-top: 2px;
+          color: $gray60;
+
+          @include fontFamilyBody(cs);
+        }
+      }
+    }
+
+    .price {
+      display: flex;
+      align-items: center;
+
+      strong {
+        @include fontFamilyData(sb);
+      }
+
+      .unit {
+        margin-left: 4px;
+
+        @include fontFamilyData(cs);
+      }
+    }
+  }
+
+  & + .button-block {
+    padding-top: 16px;
+  }
+}
+
+.marketplace-bid-result {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid $gray80;
+
+  p {
+    margin-top: 8px;
+    text-align: center;
+    white-space: pre-line;
+
+    @include fontFamilyBody(cl);
+
+    strong {
+      @include fontFamilyTable(blb);
+    }
+  }
+
+  .time {
+    margin-top: 8px;
+    color: $gray60;
+
+    @include fontFamilyTable(br);
+  }
+
+  .lottie-area {
+    position: absolute;
+    z-index: -1;
+    top: -40px;
+    left: 50%;
+    width: 320px;
+    height: auto;
+    margin-left: -160px;
+  }
+}
+
+// market place sub banner info
+.marketplace-sub-banner-info-wrap {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: rgba($gray30, 0.5);
+
+  @include sm {
+    top: auto;
+    right: 0;
+    bottom: -58px;
+    width: 100%;
+    background-color: $gray30;
+  }
+
+  ul {
+    display: flex;
+
+    @include md {
+      flex-direction: column;
+    }
+
+    @include sm {
+      justify-content: space-around;
+    }
+
+    li {
+      display: flex;
+      width: 120px;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px 0;
+
+      @include md {
+        width: 110px;
+        padding: 8px 0;
+        margin: 0 10px;
+      }
+
+      @include sm {
+        width: 100%;
+        margin: 12px 0;
+      }
+
+      & + li {
+        border-left: 1px solid rgba($gray100, 0.2);
+
+        @include md {
+          border-top: 1px solid rgba($gray100, 0.2);
+          border-left: none;
+        }
+      }
+
+      .item-name {
+        @include fontFamilyData(cs);
+
+        display: inline-flex;
+        align-items: center;
+        color: $gray100;
+
+        &.live {
+          &::before {
+            display: block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            margin-right: 4px;
+            animation: market-dot-ani 0.8s cubic-bezier(0.47, 2, 0.21, 0.8) infinite;
+            animation-direction: alternate;
+            background-color: $negative;
+            content: "";
+          }
+
+          @keyframes market-dot-ani {
+            0% {
+              transform: scale(0);
+            }
+
+            100% {
+              transform: scale(1.1);
+            }
+          }
+        }
+      }
+
+      .figure {
+        @include fontFamilyData(sb);
+
+        display: block;
+        margin-top: 8px;
+        color: $gray100;
+
+        @include md {
+          margin-top: 6px;
+        }
+
+        @include sm {
+          margin-top: 6px;
+        }
+      }
+    }
+  }
+}
+
+.contents-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  .notice-block {
+    order: 1;
+  }
+
+  .link-block {
+    order: 2;
+  }
+
+  .amount-block {
+    order: 3;
+
+    &.reverse {
+      order: 0;
+    }
+  }
+
+  & + .button-block {
+    padding-top: 16px;
+  }
+}
+
+// marketplace hero
+.marketplace-hero-section {
+  .marketplace-swiper {
+    height: 100%;
+
+    .swiper-pagination {
+      position: absolute;
+      z-index: 1;
+      bottom: 20px;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+
+      @include sm {
+        bottom: 16px;
+        padding: 0 24px;
+      }
+    }
+
+    .swiper-pagination-bullet {
+      position: relative;
+      width: 80px;
+      height: 4px;
+      border-radius: 0;
+      background: rgba($gray100, 20%);
+      cursor: pointer;
+
+      @include sm {
+        width: 53px;
+      }
+
+      &::after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: $gray100;
+        content: "";
+      }
+
+      &::before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        height: 20px;
+        margin-top: -10px;
+        content: "";
+      }
+
+      & + .swiper-pagination-bullet {
+        margin-left: 4px;
+      }
+    }
+
+    .swiper-pagination-bullet-active {
+      &::after {
+        width: 100%;
+        animation: pagination linear var(--swiper-time);
+        animation-iteration-count: unset;
+      }
+    }
+
+    @keyframes pagination {
+      from {
+        width: 0;
+      }
+
+      to {
+        width: 100%;
+      }
+    }
+  }
+
+  .marketplace-swiper-slide {
+    height: 100%;
+
+    @include md {
+      height: auto;
+    }
+
+    @include sm {
+      height: auto;
+    }
+
+    .swiper-slide {
+      height: 100%;
+    }
+  }
+}
+
+.marketplace-banner-list {
+  @mixin negativeDot {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin-right: 4px;
+    background: $negative;
+    content: "";
+  }
+
+  overflow: hidden;
+  height: 400px;
+
+  &.upcoming {
+    .inner-wrap .text-wrap .title-wrap .title-inner {
+      .title {
+        @include lg {
+          @include ellipsis(2);
+        }
+
+        @include md {
+          @include ellipsis(2);
+        }
+      }
+    }
+  }
+
+  &.ongoing:not(.fixed-sale) {
+    .auction-list-wrap li:first-child .field::before {
+      @include negativeDot;
+    }
+  }
+
+  &.bidding {
+    .inner-wrap .article-wrap .desc-wrap .desc {
+      @include sm {
+        white-space: normal;
+      }
+    }
+
+    &:not(.fixed-sale) {
+      .inner-wrap .article-wrap .desc-wrap .desc {
+        span::before {
+          @include md {
+            display: block;
+            content: "";
+          }
+        }
+      }
+    }
+
+    &.fixed-sale {
+      .inner-wrap .article-wrap .desc-wrap .desc {
+        @include md {
+          white-space: normal;
+        }
+      }
+    }
+  }
+
+  .banner-thumb-wrap {
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    aspect-ratio: 2560/400;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &::after {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      backdrop-filter: blur(5px);
+      background: rgba($gray00, 70%);
+      content: "";
+
+      @include md {
+        backdrop-filter: blur(6px);
+      }
+
+      @include sm {
+        backdrop-filter: blur(6px);
+      }
+    }
+  }
+
+  .inner-wrap {
+    @include maxWidthLg;
+
+    position: relative;
+    z-index: 1;
+    display: flex;
+    height: 100%;
+    justify-content: space-between;
+    padding: 60px 0 38px;
+
+    @include md {
+      padding-bottom: 60px;
+    }
+
+    @include sm {
+      display: block;
+      padding: 126px 24px 44px;
+    }
+
+    .text-wrap {
+      display: flex;
+      flex-direction: column;
+
+      .top-wrap {
+        @include sm {
+          text-align: center;
+        }
+
+        .title-wrap {
+          padding-bottom: 20px;
+
+          .title-inner {
+            @include sm {
+              display: flex;
+              height: 56px;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+
+          .title {
+            @include fontFamilyPhrase(l);
+            @include ellipsis(3);
+
+            color: $gray100;
+
+            @include sm {
+              @include ellipsis(2);
+            }
+          }
+        }
+
+        .ant-btn {
+          min-width: 160px;
+
+          @include sm {
+            position: absolute;
+            z-index: 0;
+            bottom: 44px;
+            left: 50%;
+            min-width: 120px;
+            transform: translate(-50%, 0);
+          }
+        }
+      }
+
+      .bottom-wrap {
+        margin-top: auto;
+
+        @include lg {
+          padding-bottom: 22px;
+        }
+
+        @include sm {
+          display: flex;
+          height: 80px;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+        }
+
+        .auction-list-wrap {
+          display: inline-flex;
+          align-items: center;
+
+          li {
+            min-width: 140px;
+            text-align: center;
+
+            @include sm {
+              width: 104px;
+            }
+
+            & + li {
+              border-left: 1px solid $gray100;
+              margin-left: 20px;
+            }
+
+            .field {
+              display: flex;
+              align-items: center;
+              justify-content: center;
+
+              @include fontFamilyData(cs);
+
+              color: $gray100;
+            }
+
+            .value {
+              display: flex;
+              justify-content: center;
+              margin-top: 8px;
+
+              @include fontFamilyData(sb);
+
+              color: $gray100;
+            }
+          }
+        }
+
+        .article-progress {
+          span {
+            @include fontFamilyHeading(xs);
+
+            color: $gray100;
+
+            @include md {
+              @at-root [lang=ko] & {
+                padding: 1px 0;
+              }
+            }
+
+            @include sm {
+              @at-root [lang=ko] & {
+                padding: 1px 0;
+              }
+            }
+
+            & + span {
+              margin-left: 4px;
+            }
+
+            &.name {
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              vertical-align: top;
+
+              &::before {
+                @include negativeDot;
+              }
+            }
+
+            &.progress {
+              vertical-align: top;
+            }
+          }
+        }
+
+        .auction-time {
+          justify-content: left;
+          margin-top: 12px;
+
+          @include sm {
+            display: inline-flex;
+            margin-top: 4px;
+          }
+
+          li {
+            padding: 3px 0 7px;
+            background: transparent;
+
+            @include md {
+              width: 60px;
+            }
+
+            @include sm {
+              width: 60px;
+            }
+
+            & + li {
+              position: relative;
+              z-index: 1;
+              margin-left: 10px;
+
+              @include md {
+                margin-left: 18px;
+              }
+
+              &::before {
+                position: absolute;
+                z-index: 10;
+                top: 11px;
+                left: -6px;
+                width: 2px;
+                height: 2px;
+                background: $gray100;
+                content: "";
+
+                @include md {
+                  left: -8px;
+                }
+              }
+
+              &::after {
+                position: absolute;
+                z-index: 10;
+                top: 28px;
+                left: -6px;
+                width: 2px;
+                height: 2px;
+                background: $gray100;
+                content: "";
+
+                @include md {
+                  left: -8px;
+                }
+              }
+            }
+
+            span {
+              padding: 1px 0;
+            }
+          }
+        }
+      }
+    }
+
+    .article-wrap {
+      position: relative;
+      z-index: 1;
+      display: block;
+      width: 400px;
+      flex: none;
+      text-align: right;
+
+      @include md {
+        align-self: flex-end;
+      }
+
+      .article-link {
+        display: inline-block;
+
+        @include sm {
+          display: flex;
+          text-align: left;
+        }
+      }
+
+      @include md {
+        width: 264px;
+      }
+
+      @include sm {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        display: flex;
+        width: 100%;
+        padding: 12px 26px 12px 10px;
+        background: $gray10;
+
+        &::after {
+          position: absolute;
+          top: 50%;
+          right: 10px;
+          width: 16px;
+          height: 16px;
+          margin-top: -8px;
+          background: url("#{$rootPath}/icon/ico_arrow_24.svg") no-repeat 0 0;
+          background-size: 16px auto;
+          content: "";
+          transform: rotate(-90deg);
+        }
+      }
+
+      .thumb-wrap {
+        width: 224px;
+        margin-left: auto;
+
+        > span {
+          position: relative;
+          z-index: 1;
+
+          &::after {
+            position: absolute;
+            z-index: -1;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: $gray90;
+            content: "";
+          }
+        }
+
+        @include md {
+          width: 200px;
+        }
+
+        @include sm {
+          width: 64px;
+          margin: 0;
+        }
+      }
+
+      .desc-wrap {
+        margin-top: 12px;
+
+        @include sm {
+          margin: 0 0 0 10px;
+        }
+
+        .tag-wrap {
+          position: absolute;
+          z-index: 10;
+          top: 8px;
+          left: calc(400px - 224px + 8px);
+
+          @include md {
+            left: calc(264px - 200px + 8px);
+          }
+
+          @include sm {
+            position: static;
+
+            .tag {
+              @include sm {
+                &.tag {
+                  height: 20px;
+                  padding: 4px 8px;
+                  border-radius: 20px;
+                }
+
+                &.tag-dark-gray {
+                  background: transparent;
+                  color: $gray80;
+                }
+
+                &.tag-market.tag-negative {
+                  background: $black;
+                }
+
+                &.tag-market.tag-lg-m {
+                  border: 1px solid $negative;
+                  background: $black;
+                  color: $negative !important;
+
+                  @include fontsizeMixin(12px, 12px);
+                }
+              }
+            }
+          }
+        }
+
+        .desc {
+          color: $gray100;
+          text-align: right;
+          white-space: pre-line;
+
+          @include fontFamilyBody(mr);
+
+          @include md {
+            @include fontFamilyBody(sr);
+
+            line-height: 20px;
+          }
+
+          @include sm {
+            margin-top: 4px;
+
+            @include fontFamilyBody(sr);
+
+            text-align: left;
+          }
+
+          span {
+            color: $gray100;
+          }
+
+          strong {
+            @include fontFamilyBody(mb);
+
+            color: $gray100;
+
+            @include md {
+              @include fontFamilyBody(sb);
+            }
+
+            @include sm {
+              @include fontFamilyBody(sb);
+            }
+          }
+        }
+      }
+    }
+
+    .upcoming-tangled-wrap {
+      position: absolute;
+      z-index: -1;
+      top: 50%;
+      left: 360px;
+
+      // right: 0;
+      width: 1200px;
+      height: 1000px;
+      background: url("#{$publicImgPath}/img_market_banner_tangled_upcoming.png") no-repeat 0 0;
+      background-size: 1200px 1000px;
+      transform: translate(0, -50%);
+
+      @include md {
+        right: auto;
+        left: 384px;
+        width: 800px;
+        height: 668px;
+        background-size: 800px auto;
+      }
+
+      @include sm {
+        left: 50%;
+        width: 600px;
+        height: 500px;
+        background-size: 600px auto;
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+}
+
+// marketplace collection tab banner type
+.marketplace-collection-banner-type {
+  display: flex;
+  min-height: 402px;
+  padding: 32px;
+
+  @include md {
+    display: block;
+    min-height: auto;
+    padding: 24px 24px 12px;
+  }
+
+  @include sm {
+    position: relative;
+    display: block;
+    min-height: auto;
+    padding: 20px 20px calc(76px - 12px); // 12px : 스크롤 높이값
+    margin-right: -20px;
+    margin-left: -20px;
+  }
+
+  &.upcoming-collection {
+    .text-block {
+      .info-wrap {
+        .info-list {
+          div {
+            &:first-child {
+              @include md {
+                // width: 180px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  & + .marketplace-collection-banner-type {
+    margin-top: 40px;
+
+    @include sm {
+      margin-top: 16px;
+    }
+  }
+
+  &.new-open {
+    .text-block .button-wrap {
+      @include lg {
+        position: static;
+        margin-top: 20px;
+      }
+    }
+  }
+
+  &.lus {
+    background-color: #233c43;
+  }
+
+  &.son {
+    background-color: $black;
+
+    .text-block {
+      .img-wrap {
+        border: 1px solid $white;
+      }
+    }
+  }
+
+  &.tangled,
+  &.ttps {
+    background-color: #21113f;
+  }
+
+  &.cone {
+    background-color: #031531;
+  }
+
+  &.kari {
+    background-color: #191547;
+  }
+
+  &.cora {
+    background-color: #281212;
+  }
+  
+  &.snkrz {
+    background-color: #2f0543;
+  }
+
+  &.new-open {
+    @include lg {
+      display: block;
+
+      .text-block {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-bottom: 20px;
+
+        .button-wrap {
+          right: inherit;
+          bottom: 44px;
+          width: auto;
+          min-width: 160px;
+        }
+
+        .info-wrap {
+          margin-top: 72px;
+        }
+      }
+
+      .list-block {
+        margin-left: 0;
+
+        .marketplace-card-list {
+          gap: 25px 32px;
+
+          li {
+            margin-top: 0 !important;
+            margin-left: 0 !important;
+          }
+        }
+      }
+    }
+  }
+
+  .text-block {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: calc(38px + 12px);
+
+    @include md {
+      width: auto;
+
+      // min-height: 190px;
+      flex-direction: row;
+      padding-bottom: 0;
+    }
+
+    @include sm {
+      position: static;
+      padding-bottom: 0;
+    }
+
+    @include sm {
+      display: block;
+      width: 100%;
+    }
+
+    .title-wrap {
+      .img-wrap {
+        position: relative;
+        z-index: 1;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+
+        @include md {
+          width: 64px;
+          height: 64px;
+        }
+
+        @include sm {
+          width: 48px;
+          height: 48px;
+        }
+      }
+
+      .title {
+        @include fontFamilyPhrase(mb);
+
+        margin-top: 12px;
+        color: $white;
+
+        @include md {
+          margin-top: 8px;
+        }
+
+        @include sm {
+          @include fontFamilyPhrase(sb);
+
+          margin-top: 4px;
+        }
+      }
+    }
+
+    .button-wrap {
+      position: absolute;
+      z-index: 10;
+      right: 0;
+      bottom: 0;
+      left: 0;
+
+      @include md {
+        position: static;
+        margin-top: 20px;
+      }
+
+      @include sm {
+        right: 20px;
+        bottom: 20px;
+        left: 20px;
+      }
+    }
+
+    .info-wrap {
+      @include md {
+        margin-top: 72px;
+      }
+
+      @include sm {
+        margin-top: 20px;
+      }
+
+      .info-list {
+        width: 300px;
+
+        @include md {
+          margin-left: auto;
+        }
+
+        @include sm {
+          width: 100%;
+        }
+
+        div {
+          display: flex;
+          height: 34px;
+          align-items: center;
+          justify-content: space-between;
+          color: $white;
+
+          & + div {
+            position: relative;
+            z-index: 1;
+            margin-top: 8px;
+
+            &::before {
+              position: absolute;
+              z-index: 10;
+              top: -4px;
+              left: 0;
+              width: 100%;
+              border-top: 1px solid rgba($white, 0.2);
+              content: "";
+            }
+          }
+        }
+
+        dt {
+          display: inline-flex;
+          align-items: center;
+
+          @include fontFamilyData(cl);
+
+          color: $gray80;
+
+          &.on-auction {
+            &::before {
+              width: 6px;
+              height: 6px;
+              border-radius: 50%;
+              margin-right: 4px;
+              background-color: $negative;
+              content: "";
+            }
+          }
+        }
+
+        dd {
+          display: inline-flex;
+          flex-direction: column;
+          color: $white;
+          text-align: right;
+
+          @include fontFamilyData(clb);
+
+          .figure-text {
+            @include fontFamilyData(clb);
+
+            color: $white;
+            line-height: 22px;
+
+            @include md {
+              line-height: 22px;
+            }
+
+            @include sm {
+              line-height: 22px;
+            }
+          }
+
+          .figure-addition {
+            @include fontFamilyData(cxs);
+
+            color: $gray60;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+
+  .list-block {
+    margin-left: 24px;
+
+    @include md {
+      margin-top: 20px;
+      margin-left: 0;
+    }
+
+    @include sm {
+      margin-top: 20px;
+      margin-left: 0;
+    }
+
+    .marketplace-card-list.view-card {
+      @include md {
+        flex-wrap: nowrap;
+        padding-bottom: 12px;
+        margin-right: -24px;
+        overflow-x: auto;
+      }
+
+      @include sm {
+        flex-wrap: nowrap;
+        padding-bottom: 12px;
+        margin-right: -20px;
+        overflow-x: auto;
+      }
+    }
+
+    .marketplace-card-view {
+      width: 260px;
+
+      @include md {
+        width: 370px;
+        flex-shrink: 0;
+      }
+
+      @include sm {
+        width: 288px;
+        flex-shrink: 0;
+      }
+
+      & + .marketplace-card-view {
+        margin-left: 16px;
+
+        @include md {
+          margin-left: 20px;
+
+          &:not(:nth-child(2n+1)) {
+            margin-left: 20px;
+          }
+
+          &:not(:nth-child(n+1):nth-child(-n+2)) {
+            margin-top: 0;
+          }
+
+          &:last-child {
+            width: 394px;
+            padding-right: 24px;
+          }
+        }
+
+        @include sm {
+          padding-top: 0;
+          border: none;
+          margin-top: 0;
+
+          &:last-child {
+            width: 308px;
+            padding-right: 20px;
+          }
+        }
+      }
+
+      .card-view-link {
+        background-color: $white;
+
+        @include sm {
+          display: block;
+        }
+      }
+
+      .img-block {
+        @include sm {
+          width: 100%;
+        }
+
+        .product-info {
+          padding: 12px;
+
+          .product-info-bottom {
+            padding-top: 8px;
+            margin-top: 8px;
+          }
+        }
+
+        .video-wrap {
+          @include sm {
+            width: calc(100% + 2px);
+          }
+        }
+      }
+
+      .info-block {
+        padding: 4px 8px 7px;
+        margin-top: 0;
+
+        @include md {
+          padding: 6px 8px 9px;
+        }
+
+        @include sm {
+          display: block;
+          width: 100%;
+          padding: 8px 8px 9px;
+          margin-left: 0;
+        }
+
+        .product-name {
+          @include fontFamilyHeading(xs);
+
+          line-height: 24px;
+
+          @include md {
+            padding: 8px 0;
+          }
+
+          @include sm {
+            display: initial;
+            height: auto;
+            padding: 5px 0;
+            white-space: nowrap;
+          }
+        }
+
+        .btn-like {
+          display: flex;
+        }
+
+        .info-bottom {
+          padding-top: 8px;
+          margin-top: 4px;
+
+          @include md {
+            margin-top: 6px;
+          }
+
+          @include sm {
+            flex-direction: row;
+            align-items: center;
+            padding-top: 8px;
+            border-top: 1px solid #d9d9d9;
+            margin-top: 8px;
+          }
+        }
+
+        .price-info {
+          dd {
+            @include fontFamilyButton(mb);
+
+            margin-top: 4px;
+
+            @include md {
+              margin-top: 7px;
+            }
+
+            @include md {
+              margin-top: 6px;
+            }
+
+            .unit {
+              @include fontFamilyData(cl);
+            }
+          }
+        }
+
+        .tag {
+          @include sm {
+            position: static;
+            transform: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+.covenant-value-badge-wrap {
+  position: absolute;
+  z-index: 1;
+  top: 8px;
+  left: 8px;
+  display: inline-flex;
+  height: 24px;
+  align-items: center;
+  padding: 2px 6px 2px 2px;
+  border-radius: 24px;
+  background-color: $gray100;
+  gap: 2px;
+
+  @include sm {
+    top: 4px;
+    left: 4px;
+  }
+
+  .covenant-value {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+    strong {
+      font-weight: 600;
+
+      @include fontFamilyData(cs);
+    }
+
+    .unit {
+      @include fontFamilyData(cxs);
+    }
+  }
+}
+
+.marketplace-auction-sale-hero-wrap {
+  display: flex;
+  min-width: 528px;
+  padding: 12px 0;
+  background-color: $gray00;
+
+  @include sm {
+    width: calc(100vw - 48px);
+    min-width: auto;
+    padding: 8px 0;
+  }
+
+  & > div {
+    position: relative;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 8px 0;
+
+    & + div {
+      &::after {
+        @include content;
+
+        position: absolute;
+        top: 8px;
+        left: 0;
+        height: calc(100% - 16px);
+        border-left: 1px solid $gray60;
+      }
+    }
+
+    @include sm {
+      &:last-child {
+        display: none;
+      }
+    }
+
+    dt {
+      color: $gray100;
+
+      @include fontFamilyData(cs);
+    }
+
+    dd {
+      display: flex;
+      height: 100%;
+      flex-wrap: wrap;
+      align-items: center;
+      margin-top: 12px;
+
+      strong {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        color: $gray100;
+
+        @include fontFamilyData(m3);
+      }
+
+      span {
+        @include fontFamilyData(cxs);
+
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        margin-top: 2px;
+        color: $gray60;
+        line-height: 16px;
+      }
+    }
+  }
+}

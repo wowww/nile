@@ -1,0 +1,3587 @@
+/* stylelint-disable scss/no-global-function-names */
+// index2 테스트용 추후 수정 후 삭제 예정
+.dao-color {
+  @include themeChangeMixin(fill, 1);
+  @include themeChangeMixin(stroke, 1);
+}
+
+.dao-color2 {
+  @include themeChangeMixin(fill, 2);
+  @include themeChangeMixin(stroke, 2);
+}
+
+.dao-color5 {
+  @include themeChangeMixin(fill, 5);
+  @include themeChangeMixin(stroke, 5);
+}
+
+.dao-color-fill {
+  @include themeChangeMixin(fill, 1);
+}
+
+.dao-lineup-wrap {
+  position: sticky;
+  z-index: 1010;
+  top: 0;
+  left: 0;
+  display: flex;
+  border-bottom: 1px solid $gray80;
+  background-color: $white;
+  transition: top 300ms ease-in-out;
+  will-change: top;
+
+  &.header-active {
+    top: 60px;
+
+    @include sm {
+      top: 48px;
+    }
+  }
+
+  .top-text {
+    text-align: center;
+
+    h2 {
+      @include fontFamilyDp("topl");
+
+      margin-top: 9px;
+      color: $gray00;
+      white-space: pre-wrap;
+
+      @include md {
+        padding: 0 40px;
+        margin-top: 0;
+      }
+
+      @include sm {
+        padding: 0 20px;
+        margin-top: 0;
+      }
+
+      & ~ button {
+        margin-top: 24px;
+        background: $gray00;
+
+        @include lg {
+          &:hover {
+            border: 1px solid $gray80;
+            background: $gray90;
+
+            span {
+              color: $gray20;
+            }
+          }
+        }
+
+        @include md {
+          margin-top: 16px;
+        }
+
+        @include sm {
+          margin-top: 16px;
+        }
+
+        svg {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+
+  .sticky-btns {
+    display: flex;
+    width: 100%;
+    height: 98px;
+    align-items: flex-end;
+
+    ul {
+      display: flex;
+      width: 100%;
+      justify-content: center;
+
+      @include md {
+        transform: translate(0, 0);
+      }
+
+      @include sm {
+        transform: translate(0, 0);
+      }
+
+      li {
+        display: flex;
+        width: 185px;
+        align-items: flex-end;
+
+        @include md {
+          width: 156px;
+        }
+
+        @include sm {
+          width: 80px;
+        }
+
+        button {
+          &.active svg {
+            @include md {
+              width: 92px;
+              height: 113px;
+            }
+
+            @include sm {
+              width: 74px;
+              height: 92px;
+            }
+          }
+        }
+
+        a {
+          position: relative;
+          display: flex;
+
+          // button {
+          width: 100%;
+          justify-content: center;
+          padding-bottom: 8px;
+
+          &::after {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+
+            @include themeChangeMixin(background-color, 1);
+          }
+
+          svg {
+            width: 60px;
+            height: 74px;
+          }
+
+          &.active {
+            &::after {
+              @include content;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .dao-lineup-swiper {
+    position: relative;
+    z-index: 1;
+    width: auto;
+    padding-left: 24px;
+    margin: 20px auto -15px;
+
+    @include md {
+      width: 100%;
+      padding-left: 0;
+      margin: 7px auto -22px;
+    }
+
+    @include sm {
+      width: 100%;
+      padding-left: 0;
+      margin: 8px auto -15px;
+    }
+
+    .dao-lineup {
+      overflow: hidden;
+      width: 100%;
+
+      .swiper-wrapper {
+        min-height: 370px;
+        padding-bottom: 103px;
+
+        @include md {
+          padding-bottom: 108px;
+        }
+
+        @include sm {
+          min-height: 334px;
+          padding-bottom: 0;
+        }
+
+        .swiper-slide {
+          width: auto !important;
+
+          a {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            width: 260px;
+            height: 282px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 6px;
+            background-color: $gray90;
+            transform-origin: bottom;
+            /* stylelint-disable-next-line max-line-length */
+            transition: width 250ms ease-in-out, box-shadow 50ms ease-in-out, height 250ms ease-in-out, background-color 250ms ease-in-out;
+            will-change: width, box-shadow, height, background-color;
+
+            @include md {
+              height: 300px;
+            }
+
+            @include sm {
+              height: 200px;
+            }
+
+            .flag {
+              transform-origin: top;
+              transition: width 250ms ease-in-out, height 250ms ease-in-out;
+              will-change: width, height;
+
+              svg {
+                width: 82px;
+                height: 100px;
+                transform-origin: top;
+                transition: width 250ms ease-in-out, height 250ms ease-in-out;
+                will-change: width, height;
+              }
+            }
+
+            .top-image {
+              display: block;
+              overflow: hidden;
+              width: 100%;
+              height: 150px;
+              border-radius: 0 0 6px 6px;
+              background: url("#{$publicImgPath}/bg_showcase_wonder.svg") no-repeat top -80px center;
+              background-size: 436px auto;
+              transform-origin: center bottom;
+              transition: width 250ms ease-in-out, height 250ms ease-in-out;
+              will-change: width, height;
+            }
+
+            .info-wrap {
+              @include fontFamilyBody("sb");
+
+              width: 100%;
+              padding: 7px;
+              border-radius: 0 0 6px 6px;
+              color: $white;
+              text-align: center;
+              transition: bottom 50ms ease-in-out;
+              will-change: bottom;
+
+              span {
+                color: inherit;
+              }
+
+              .detail {
+                @include fontFamilyBody("xlb");
+
+                position: absolute;
+                z-index: 10;
+                top: 0;
+                left: 0;
+                display: flex;
+                width: 100%;
+                height: 100%;
+                align-items: center;
+                justify-content: center;
+                border-radius: 4px;
+                opacity: 0;
+              }
+
+              &.recruit {
+                .detail {
+                  display: flex;
+                  padding: 10px 23px;
+
+                  .time {
+                    @include fontFamilyData("cxs");
+
+                    display: inline-flex;
+                    flex: 1;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    font-weight: 400;
+
+                    em {
+                      @include fontFamilyData("m2");
+
+                      margin-bottom: 4px;
+                      color: inherit;
+                    }
+                  }
+                }
+              }
+
+              &.end {
+                .detail {
+                  flex-direction: column;
+                  justify-content: space-between;
+                  padding: 4px 16px;
+
+                  & > span {
+                    @include fontFamilyData("cl");
+
+                    display: flex;
+                    width: 100%;
+                    align-items: center;
+                    justify-content: space-between;
+                    padding: 8px 0;
+                    border-top: 1px solid rgba($white, 20%);
+                    font-weight: 400;
+
+                    &:first-child {
+                      border-top: 0;
+                    }
+
+                    .result-text-wrap {
+                      padding: 0;
+                    }
+
+                    .result-text {
+                      @include fontFamilyData("m3");
+                    }
+                  }
+                }
+
+                @include sm {
+                  padding: 0;
+
+                  .detail {
+                    padding: 0 16px;
+                  }
+                }
+              }
+
+              &.failure {
+                .detail {
+                  padding: 0 45px;
+
+                  @include fontFamilyBody(mb);
+
+                  @include daoMd {
+                    padding: 0 14px;
+
+                    @include fontFamilyBody(xlb);
+                  }
+
+                  @include daoSm {
+                    padding: 0 20px;
+
+                    @include fontFamilyBody(xlb);
+                  }
+                }
+              }
+
+              .chips {
+                @include fontFamilyChip("lb");
+
+                position: absolute;
+                z-index: 15;
+                top: 100%;
+                left: 50%;
+                padding: 8px 20px;
+                border: 1px solid transparent;
+                border-radius: 100px;
+                background-color: $white;
+                opacity: 0;
+                transform: translate(-50%, -50%);
+                white-space: nowrap;
+
+                @include md {
+                  padding: 9px 20px;
+                }
+              }
+
+              .arrow {
+                position: absolute;
+                z-index: 20;
+                top: calc(100% + 32px);
+                left: 50%;
+                opacity: 0;
+
+                @include sm {
+                  top: calc(100% + 24px);
+                }
+
+                &::after,
+                &::before {
+                  position: absolute;
+                  z-index: 10;
+                  top: 0;
+                  left: 50%;
+                  width: 15px;
+                  height: 20px;
+                  border: 30px solid  transparent;
+                  border-width: 20px 15px;
+                  content: "";
+                  transform: translateX(-50%);
+                }
+
+                &::after {
+                  z-index: 5;
+                  top: 8px;
+                }
+              }
+            }
+
+            &.wonder-wrap {
+              .info-wrap {
+                background-color: nth($daoWonder, 1);
+
+                .detail {
+                  background-color: nth($daoWonder, 1);
+                }
+
+                .chips {
+                  border-color: nth($daoWonder, 1);
+                  color: nth($daoWonder, 1);
+                }
+
+                .arrow {
+                  &::before {
+                    border-top-color: nth($daoWonder, 1);
+                  }
+
+                  &::after {
+                    border-top-color: nth($daoWonder, 2);
+                  }
+                }
+              }
+
+              .top-image {
+                background-image: url("#{$publicImgPath}/bg_showcase_wonder.svg");
+              }
+
+              &.active {
+                border: 1px solid nth($daoWonder, 1);
+                background-color: nth($daoWonder, 3);
+              }
+            }
+
+            &.arteum-wrap {
+              .info-wrap {
+                background-color: nth($daoArteum, 1);
+
+                .detail {
+                  background-color: nth($daoArteum, 1);
+                }
+
+                .chips {
+                  border-color: nth($daoArteum, 1);
+                  color: nth($daoArteum, 1);
+                }
+
+                .arrow {
+                  &::before {
+                    border-top-color: nth($daoArteum, 1);
+                  }
+
+                  &::after {
+                    border-top-color: nth($daoArteum, 2);
+                  }
+                }
+              }
+
+              .top-image {
+                background-image: url("#{$publicImgPath}/bg_showcase_arteum.svg");
+              }
+
+              &.active {
+                border: 1px solid nth($daoArteum, 1);
+                background-color: nth($daoArteum, 3);
+              }
+            }
+
+            &.delta-wrap {
+              .info-wrap {
+                background-color: nth($daoDelta, 1);
+
+                .detail {
+                  background-color: nth($daoDelta, 1);
+                }
+
+                .chips {
+                  border-color: nth($daoDelta, 1);
+                  color: nth($daoDelta, 1);
+                }
+
+                .arrow {
+                  &::before {
+                    border-top-color: nth($daoDelta, 1);
+                  }
+
+                  &::after {
+                    border-top-color: nth($daoDelta, 2);
+                  }
+                }
+              }
+
+              .top-image {
+                background-image: url("#{$publicImgPath}/bg_showcase_delta.svg");
+              }
+
+              &.active {
+                border: 1px solid nth($daoDelta, 1);
+                background-color: nth($daoDelta, 3);
+              }
+            }
+
+            &.oracle-wrap {
+              .info-wrap {
+                background-color: nth($daoOracle, 1);
+
+                .detail {
+                  background-color: nth($daoOracle, 1);
+                }
+
+                .chips {
+                  border-color: nth($daoOracle, 1);
+                  color: nth($daoOracle, 1);
+                }
+
+                .arrow {
+                  &::before {
+                    border-top-color: nth($daoOracle, 1);
+                  }
+
+                  &::after {
+                    border-top-color: nth($daoOracle, 2);
+                  }
+                }
+              }
+
+              .top-image {
+                background-image: url("#{$publicImgPath}/bg_showcase_oracle.svg");
+              }
+
+              &.active {
+                border: 1px solid nth($daoOracle, 1);
+                background-color: nth($daoOracle, 3);
+              }
+            }
+
+            &.active {
+              width: 310px;
+              height: 317px;
+              box-shadow: 0 15px 20px rgba($veryBlack, 15%);
+
+              @include md {
+                height: 300px;
+                box-shadow: none;
+              }
+
+              @include sm {
+                height: 200px;
+                box-shadow: none;
+              }
+
+              .flag svg {
+                width: 123px;
+                height: 150px;
+              }
+
+              .info-wrap {
+                position: absolute;
+                z-index: 10;
+                bottom: -16px;
+                height: 80px;
+                padding: 26px 0;
+                border-radius: 4px;
+                transform: translateY(100%);
+
+                .detail,
+                .chips,
+                .arrow {
+                  opacity: 1;
+                }
+              }
+
+              .top-image {
+                height: 165px;
+                background-position: top -160px center;
+                background-size: 610px auto;
+              }
+            }
+
+            @include md {
+              width: 450px;
+
+              .top-image {
+                height: 300px;
+                background-position: top -160px center;
+                background-size: 872px auto;
+              }
+
+              .info-wrap {
+                display: none;
+              }
+
+              &.wonder-wrap {
+                border: 1px solid nth($daoWonder, 1);
+                background-color: nth($daoWonder, 3);
+              }
+
+              &.arteum-wrap {
+                border: 1px solid nth($daoArteum, 1);
+                background-color: nth($daoArteum, 3);
+              }
+
+              &.delta-wrap {
+                border: 1px solid nth($daoDelta, 1);
+                background-color: nth($daoDelta, 3);
+              }
+
+              &.oracle-wrap {
+                border: 1px solid nth($daoOracle, 1);
+                background-color: nth($daoOracle, 3);
+              }
+
+              &.active {
+                .info-wrap {
+                  bottom: -12px;
+                  display: block;
+                  height: 96px;
+                }
+              }
+            }
+
+            @include sm {
+              width: 300px;
+
+              .top-image {
+                height: 200px;
+                background-position: top -120px center;
+                background-size: 610px auto;
+              }
+
+              .info-wrap {
+                display: none;
+              }
+
+              &.wonder-wrap {
+                border: 1px solid nth($daoWonder, 1);
+                background-color: nth($daoWonder, 3);
+              }
+
+              &.arteum-wrap {
+                border: 1px solid nth($daoArteum, 1);
+                background-color: nth($daoArteum, 3);
+              }
+
+              &.delta-wrap {
+                border: 1px solid nth($daoDelta, 1);
+                background-color: nth($daoDelta, 3);
+              }
+
+              &.oracle-wrap {
+                border: 1px solid nth($daoOracle, 1);
+                background-color: nth($daoOracle, 3);
+              }
+
+              &.active {
+                .top-image {
+                  height: 200px;
+                  background-position: top -120px center;
+                  background-size: 610px auto;
+                }
+
+                .info-wrap {
+                  bottom: -8px;
+                  display: block;
+                  height: 72px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 다오 핵심 가치
+.dao-core-value-wrap {
+  position: relative;
+  z-index: 1;
+  top: 0;
+  overflow: hidden;
+  padding: 80px 0;
+
+  @include md {
+    padding: 60px 0 40px;
+  }
+
+  @include sm {
+    padding: 40px 0;
+  }
+}
+
+.dao-core-value-wrap .dao-lottie-inner {
+  position: relative;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  .lottie-component-wrap {
+    position: relative;
+    z-index: 1;
+
+    .lottie-component-inner {
+      position: relative;
+      z-index: -1;
+      width: 1200px;
+      height: 546px;
+      margin: 26px auto 0;
+
+      @include md {
+        left: 50%;
+        margin-top: 40px;
+        transform: translate(-50%, 0);
+      }
+
+      @include sm {
+        left: 50%;
+        width: 600px;
+        height: 273px;
+        margin-top: 44px;
+        transform: translate(-50%, 0);
+      }
+
+      .image-component {
+        svg {
+          width: 1200px;
+          height: 546px;
+
+          @include sm {
+            width: 600px;
+            height: 273px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dao-core-value-wrap .lottie-desc-wrap {
+  position: relative;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+
+  .lottie-desc-inner {
+    position: relative;
+    z-index: 1;
+
+    @include maxWidthLg;
+
+    @include sm {
+      padding: 0;
+    }
+  }
+
+  .lottie-title-wrap {
+    h2 {
+      text-align: center;
+
+      span {
+        display: block;
+
+        &:first-child {
+          @include fontFamilyHeading(s);
+        }
+
+        &:last-child {
+          margin-top: 24px;
+
+          @include fontFamilyPhrase(l);
+
+          @include md {
+            margin-top: 24px;
+          }
+
+          @include sm {
+            margin-top: 12px;
+            white-space: pre-line;
+          }
+        }
+      }
+    }
+  }
+
+  .desc-list-wrap {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    margin-top: -84px;
+    counter-reset: number;
+
+    @include md {
+      display: block;
+      margin-top: -56px;
+    }
+
+    @include sm {
+      margin-top: -41px;
+    }
+
+    .swiper {
+      @include sm {
+        padding: 0 20px 17px;
+      }
+
+      &.first-slide {
+        margin-right: -20px;
+      }
+
+      &.last-slide {
+        margin-left: -20px;
+      }
+
+      .swiper-pagination {
+        position: absolute;
+        z-index: 10;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+
+        .swiper-pagination-bullet {
+          background-color: $gray80;
+        }
+
+        .swiper-pagination-bullet-active {
+          background-color: $gray00;
+        }
+      }
+    }
+
+    .swiper-slide .item,
+    li {
+      width: 100%;
+      padding: 24px;
+      border: 1px solid $gray80;
+      background: $gray100;
+      transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+
+      @include sm {
+        height: 100%;
+        padding: 16px;
+      }
+
+      & + li {
+        margin-left: 18px;
+
+        @include md {
+          margin: 16px 0 0;
+        }
+
+        @include sm {
+          margin-left: 0;
+        }
+      }
+
+      h3 {
+        @include fontFamilyBody(xlb);
+
+        &::before {
+          padding-right: 4px;
+          content: "0"counter(number);
+          counter-increment: number;
+        }
+      }
+
+      .lottie-desc-box {
+        margin-top: 8px;
+
+        strong {
+          display: block;
+          transition: color 0.2s ease-in-out;
+          white-space: pre-line;
+
+          @include fontFamilyBody(lr);
+
+          @include sm {
+            @include fontFamilyBody(mr);
+          }
+
+          & + div {
+            margin-top: 4px;
+            color: $gray30;
+            transition: color 0.2s ease-in-out;
+            white-space: pre-line;
+
+            @include fontFamilyBody(sr);
+
+            @include md {
+              margin-top: 8px;
+            }
+
+            @include sm {
+              margin-top: 8px;
+            }
+          }
+        }
+
+        @include daoMd {
+          padding-left: 45px;
+
+          strong {
+            @include fontsizeMixin(18, 26);
+
+            padding-top: 0;
+
+            & + div {
+              @include fontsizeMixin(16, 24);
+
+              padding: 12px 0 24px;
+            }
+          }
+        }
+
+        @include sm {
+          height: auto !important;
+          padding-left: 0;
+        }
+      }
+
+      &.active {
+        opacity: 1;
+
+        .lottie-desc-box {
+          height: auto;
+        }
+      }
+    }
+  }
+}
+
+// 다오 홈 프로토콜 섹션
+.dao-protocol-wrap {
+  @include themeChangeMixin(background-color, 4);
+
+  padding: 47px 0 48px;
+  border-top: 1px solid $gray80;
+  background: url("#{$rootPath}/img/bg_dao_home_protocol.png") repeat-y top center / 1920px;
+
+  @include md {
+    padding: 60px 0 64px;
+  }
+
+  @include sm {
+    padding: 40px 0;
+    background-size: cover;
+  }
+
+  .protocol-inner {
+    @include maxWidthLg;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include md {
+      display: block;
+      padding: 0;
+    }
+
+    @include sm {
+      display: block;
+      padding: 0;
+    }
+  }
+
+  .protocol-sub-title {
+    @include fontFamilyHeading(s);
+    @include themeChangeMixin(color, 1);
+
+    display: block;
+    text-align: left;
+
+    @include md {
+      padding: 0 40px;
+      text-align: center;
+    }
+
+    @include sm {
+      padding: 0 20px;
+      text-align: left;
+    }
+  }
+
+  .protocol-main-title {
+    @include fontFamilyBody(xxlb);
+
+    display: block;
+    max-width: 338px;
+    margin-top: 40px;
+    color: $black;
+    text-align: left;
+    white-space: pre-line;
+
+    @include md {
+      max-width: none;
+      padding: 0 40px;
+      margin-top: 32px;
+      text-align: center;
+    }
+
+    @include sm {
+      max-width: none;
+      padding: 0 20px;
+      margin-top: 12px;
+    }
+  }
+
+  .protocol-lottie {
+    overflow: hidden;
+    width: 828px;
+
+    // margin: 16px auto 0;
+
+    @include md {
+      width: 100%;
+      margin: 40px auto 0;
+    }
+
+    @include sm {
+      width: 100%;
+      margin: 16px auto 0;
+    }
+
+    &.wonder {
+      svg {
+        @include md {
+          margin-left: -20px;
+        }
+
+        @include sm {
+          margin-left: -10px;
+        }
+      }
+    }
+  }
+}
+
+// 다오 프로필
+.dao-profile-section {
+  padding: 40px;
+
+  @include md {
+    padding: 20px 40px;
+  }
+
+  @include sm {
+    position: relative;
+    padding: 20px 20px 24px;
+  }
+
+  .profile-section-title {
+    text-align: center;
+
+    > h2 {
+      @include themeChangeMixin(color, 1);
+      @include fontFamilyDp(l);
+
+      p {
+        margin-top: 8px;
+
+        @include fontFamilyDp(mb);
+
+        @include sm {
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+
+  .profile-section-card {
+    display: flex;
+    overflow: hidden;
+    width: 1200px;
+    min-height: 360px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    margin: 40px auto 0;
+    box-shadow: 0 9px 13px rgb(177 178 222 / 26%);
+
+    @include md {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+    }
+
+    @include sm {
+      width: auto;
+      height: auto;
+      flex-direction: column;
+
+      // border: none;
+      // padding: 20px;
+      margin-top: 24px;
+      box-shadow: none;
+    }
+
+    .profile-section-cont {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      width: calc(100% - 480px);
+      flex-direction: column;
+      flex-shrink: 0;
+      padding: 40px 0 40px 48px;
+
+      @include md {
+        width: 100%;
+        min-height: 390px;
+        padding: 32px 0 32px 28px;
+      }
+
+      @include sm {
+        display: block;
+        width: 100%;
+        justify-content: flex-start;
+        padding: 0;
+
+        // background: none !important;
+        background-size: 263px 184px !important;
+      }
+
+      &.wonder {
+        background: url("#{$publicImgPath}/bg_showcase_wonder.svg") no-repeat right -200px bottom -118px;
+        background-size: 584px 407px;
+
+        @include sm {
+          background: url("#{$publicImgPath}/bg_showcase_wonder.svg") no-repeat right -94px bottom -57px;
+        }
+      }
+
+      &.arteum {
+        background: url("#{$publicImgPath}/bg_showcase_arteum.svg") no-repeat right -200px bottom -118px;
+        background-size: 584px 407px;
+
+        @include sm {
+          background: url("#{$publicImgPath}/bg_showcase_arteum.svg") no-repeat right -100px bottom -50px;
+        }
+      }
+
+      &.delta {
+        background: url("#{$publicImgPath}/bg_showcase_delta.svg") no-repeat right -200px bottom -118px;
+        background-size: 584px 407px;
+
+        @include sm {
+          background: url("#{$publicImgPath}/bg_showcase_delta.svg") no-repeat right -100px bottom -50px;
+        }
+      }
+
+      &.oracle {
+        background: url("#{$publicImgPath}/bg_showcase_oracle.svg") no-repeat right -200px bottom -118px;
+        background-size: 584px 407px;
+
+        @include sm {
+          background: url("#{$publicImgPath}/bg_showcase_oracle.svg") no-repeat right -100px bottom -50px;
+        }
+      }
+
+      .wrap {
+        @include sm {
+          padding: 20px;
+        }
+
+        .wrap-tag {
+          @include sm {
+            display: none;
+            width: 235px;
+            margin: 0 auto;
+            text-align: center;
+          }
+
+          .tag {
+            margin: 0 2px;
+          }
+        }
+
+        .wrap-text {
+          width: 485px;
+          margin-top: 20px;
+
+          .tooltip {
+            display: none;
+
+            @include sm {
+              display: inline;
+              vertical-align: middle;
+            }
+
+            svg {
+              path {
+                @include sm {
+                  fill: #a6a6a6;
+                }
+              }
+            }
+          }
+
+          @include md {
+            width: 47.396vw;
+          }
+
+          @include sm {
+            width: auto;
+            max-width: 232px;
+            margin-top: 0;
+            text-align: left;
+          }
+
+          .title {
+            white-space: pre-line;
+
+            @include fontFamilyBody(xlb);
+
+            @include md {
+              white-space: inherit;
+
+              @include fontFamilyBody(cardxl);
+            }
+
+            @include sm {
+              display: inline;
+              vertical-align: middle;
+              white-space: inherit;
+
+              @include fontFamilyBody(mb);
+            }
+          }
+
+          .desc {
+            margin-top: 20px;
+
+            @include fontFamilyBody(lr);
+
+            @include md {
+              // @include fontFamilyBody(mr);
+              @include fontsizeMixin(16, 24);
+            }
+
+            @include sm {
+              display: none;
+              margin-top: 4px;
+
+              @include fontFamilyBody(mr);
+            }
+
+            .footnote {
+              display: block;
+              margin-top: 4px;
+              color: $gray60;
+
+              @include fontFamilyBody(sr);
+            }
+          }
+        }
+
+        .btn-wrap {
+          margin-top: 52px;
+
+          @include md {
+            margin-top: 44px;
+          }
+
+          @include sm {
+            margin-top: 16px;
+            text-align: left;
+          }
+
+          .btn-link {
+            .text {
+              color: $gray00;
+            }
+
+            + .btn-link {
+              margin-left: 16px;
+
+              @include sm {
+                margin-left: 10px;
+              }
+            }
+
+            &.whitepaper {
+              display: inline-block;
+              width: auto;
+              padding: 12px 24px;
+              border: 1px solid $gray00;
+              border-radius: 2px;
+
+              @include fontFamilyButton(mr);
+
+              @include md {
+                padding: 12px 19px;
+              }
+
+              @include sm {
+                padding: 11px 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .profile-section-countdown {
+      width: 100%;
+
+      .recruitment-card-wrap {
+        height: 100%;
+        padding: 24px 40px 28px;
+
+        @include lg {
+          justify-content: center;
+          gap: 24px;
+        }
+
+        @include md {
+          flex-direction: row;
+          padding: 32px 24px;
+        }
+
+        @include sm {
+          padding: 35px 20px 20px;
+          border-radius: 0 0 4px 4px;
+        }
+
+        .recruitment-complete-title,
+        .recruitment-fail-title {
+          @include fontFamilyBody(xlb);
+
+          display: flex;
+          width: 100%;
+          min-height: 80px;
+          align-items: center;
+          justify-content: center;
+          padding: 12px 65px;
+          white-space: pre-line;
+
+          @include md {
+            min-height: 70px;
+            padding: 12px;
+            text-align: left;
+          }
+
+          @include sm {
+            min-height: 52px;
+            padding: 12px;
+            background-color: transparent;
+          }
+        }
+
+        .recruitment-complete-content,
+        .recruitment-fail-content {
+          @include fontFamilyBody(mb);
+        }
+
+        .right {
+          .recruitment-complete-content,
+          .recruitment-fail-content {
+            margin-top: 27px;
+
+            @include fontFamilyBody(mb);
+
+            @include md {
+              margin-top: 0;
+              text-align: left;
+            }
+          }
+
+          .recruitment-complete-notice {
+            @include md {
+              text-align: left;
+            }
+          }
+
+          .recruitment-fail-notice {
+            @include fontFamilyBody(mb);
+
+            margin-top: 44px;
+            color: $gray100;
+
+            @include md {
+              margin-top: 24px;
+              text-align: left;
+            }
+
+            @include sm {
+              margin-top: 20px;
+            }
+          }
+        }
+
+        &.fail {
+          justify-content: flex-start;
+          padding: 24px 40px;
+
+          @include md {
+            padding: 32px 24px 24px;
+          }
+
+          @include sm {
+            padding: 24px 20px;
+          }
+        }
+
+        &.complete {
+          padding: 24px 40px;
+
+          @include md {
+            padding: 32px 24px 24px;
+          }
+
+          @include sm {
+            padding: 22px 16px 20px;
+          }
+
+          .right {
+            .btn-wrap {
+              margin-top: 27px;
+
+              @include md {
+                margin-top: 20px;
+                margin-left: calc(-100% - 40px);
+              }
+
+              @include sm {
+                display: block;
+              }
+
+              .ant-btn {
+                @include sm {
+                  width: 100%;
+                }
+
+                @include daoSm {
+                  width: 100%;
+                }
+
+                & + .ant-btn {
+                  @include sm {
+                    margin: 8px 0 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .recruitment-main-title {
+          &:not(:first-child) {
+            margin-top: 20px;
+          }
+
+          @include md {
+            margin-top: 0;
+            text-align: start;
+          }
+
+          @include sm {
+            margin-top: 0;
+          }
+        }
+
+        .recruitment-sub-title {
+          /* 23.04.18 수정: components.scss에 적용돼있었는데, 나일 홈까지 공통 스타일 변경되어 이 쪽으로 옮김 */
+          @include fontFamilyBody(xlb);
+        }
+
+        .recruitment-date {
+          @include themeChangeMixin(color, 2);
+          @include fontFamilyData(cl);
+
+          margin-top: 8px;
+        }
+
+        .recruitment-sub-content {
+          @include themeChangeMixin(color, 2);
+          @include fontFamilyBody(mr);
+
+          @include md {
+            text-align: left;
+          }
+
+          @include sm {
+            margin: 8px -15px 0;
+          }
+        }
+
+        .recruitment-time {
+          margin-top: 16px;
+
+          @include md {
+            margin-top: 20px;
+          }
+        }
+
+        .progress-type {
+          // margin-top: 22px;
+
+          @include md {
+            margin-top: 6px;
+
+            &.reward-wrap {
+              min-width: auto;
+            }
+          }
+
+          @include sm {
+            margin-top: 20px;
+
+            &.reward-wrap {
+              min-width: auto;
+            }
+          }
+        }
+
+        .recruitment-main-content {
+          @include md {
+            padding-top: 20px;
+            margin-top: 8px;
+          }
+
+          &.after-time {
+            position: relative;
+            border-top: 0;
+
+            &::after {
+              position: absolute;
+              top: -40px;
+              left: 0;
+              width: 100%;
+              height: 1px;
+              background-color: $gray100;
+              content: "";
+              opacity: 0.3;
+
+              @include md {
+                display: none;
+              }
+
+              @include sm {
+                top: 0;
+              }
+            }
+          }
+
+          // padding-top: 54px;
+
+          // @include md {
+          //   @include fontFamilyHeading(s);
+
+          //   padding: 0;
+          //   border-top: none;
+          //   margin: 36px 0 0;
+          // }
+
+          // @include sm {
+          //   @include fontFamilyBody(lb);
+
+          //   padding-top: 19px;
+          //   margin: 30px -15px 0;
+          // }
+
+          // &.after-time {
+          //   padding-top: 0;
+          //   border-top: none;
+          //   margin: 58px 0 0;
+
+          //   @include sm {
+          //     margin-top: 25px;
+          //   }
+          // }
+        }
+
+        // .progress-type.reward-wrap {
+        //   @include sm {
+        //     margin-top: 24px;
+        //   }
+        // }
+
+        // .btn-wrap {
+        //   margin-top: 28px;
+
+        //   @include md {
+        //     margin-top: 24px;
+        //   }
+
+        //   @include sm {
+        //     margin-top: 25px;
+        //   }
+
+        //   &.after-time {
+        //     margin-top: 24px;
+
+        //     @include sm {
+        //       margin-top: 25px;
+        //     }
+        //   }
+
+        //   &.reward-progress {
+        //     @include sm {
+        //       margin-top: 18px;
+        //     }
+        //   }
+        // }
+      }
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: auto 0;
+
+        @include md {
+          flex-basis: calc(50% - 20px);
+          align-items: flex-start;
+          justify-content: flex-start;
+        }
+
+        @include sm {
+          align-items: center;
+          padding-bottom: 30px;
+        }
+      }
+
+      .right {
+        margin-top: auto;
+
+        @include md {
+          display: flex;
+          flex-basis: calc(50% - 20px);
+          flex-direction: column;
+          justify-content: flex-end;
+          margin-left: 40px;
+        }
+      }
+    }
+  }
+
+  .icon-btns {
+    display: flex;
+    width: 1200px;
+    justify-content: flex-end;
+    margin: 10px auto 0;
+
+    @include md {
+      width: 100%;
+      margin-top: 12px;
+    }
+
+    @include sm {
+      width: auto;
+      margin-top: 12px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      font-size: 0;
+
+      svg {
+        width: 28px;
+        height: 28px;
+
+        @include md {
+          width: 24px;
+          height: 24px;
+        }
+
+        @include md {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .number {
+        @include fontFamilyData(cl);
+
+        @include md {
+          margin-left: 2px;
+        }
+
+        @include sm {
+          margin-left: 2px;
+        }
+      }
+
+      & + li {
+        margin-left: 16px;
+      }
+
+      .ant-dropdown li {
+        margin: 0;
+      }
+    }
+  }
+}
+
+.dao-home-governance-wrap {
+  border-top: 1px solid $gray80;
+
+  .dao-home-governance-inner {
+    width: 1200px;
+    padding: 80px 0;
+    margin: 0 auto;
+
+    @include md {
+      width: 100%;
+      padding: 60px 40px 40px;
+    }
+
+    @include sm {
+      width: 100%;
+      padding: 40px 20px;
+    }
+
+    span,
+    strong {
+      display: block;
+    }
+
+    .section-name {
+      @include fontFamilyHeading(s);
+      @include themeChangeMixin(color, 1);
+    }
+
+    .title {
+      @include fontFamilyBody(xxlb);
+
+      margin-top: 40px;
+
+      @include md {
+        margin-top: 32px;
+      }
+
+      @include sm {
+        margin-top: 12px;
+      }
+    }
+
+    > .desc {
+      @include fontFamilyBody(mr);
+
+      margin-top: 16px;
+      color: $gray30;
+
+      @include sm {
+        margin-top: 8px;
+      }
+    }
+
+    .visualization-area {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 66px;
+
+      @include md {
+        flex-direction: column;
+        margin-top: 60px;
+      }
+
+      @include sm {
+        flex-direction: column;
+        margin-top: 24px;
+      }
+
+      .tag-box-area {
+        .tag-box-list {
+          display: flex;
+          flex-wrap: wrap;
+
+          @include md {
+            max-width: 450px;
+          }
+
+          @include sm {
+            flex-direction: column;
+            align-items: center;
+          }
+
+          li {
+            @include fontFamilyHeading(s);
+            @include themeChangeMixin(background-color, 1);
+
+            padding: 8px 16px;
+            border-radius: 2px;
+            margin-right: 12px;
+            margin-bottom: 12px;
+            color: $gray100;
+
+            @include sm {
+              margin-right: 0;
+              margin-bottom: 8px;
+              text-align: center;
+            }
+          }
+        }
+
+        svg {
+          width: 4px;
+          height: 20px;
+          margin-top: 4px;
+
+          @include sm {
+            margin: 4px auto 0;
+          }
+
+          circle {
+            @include themeChangeMixin(fill, 1);
+          }
+        }
+      }
+
+      .step-area {
+        width: 707px;
+        flex-shrink: 0;
+        margin-left: 62px;
+
+        @include md {
+          width: 100%;
+          margin-top: 40px;
+          margin-left: 0;
+        }
+
+        @include sm {
+          width: 100%;
+          margin-top: 24px;
+          margin-left: 0;
+        }
+
+        .desc {
+          @include fontFamilyBody(mr);
+
+          color: $gray30;
+          white-space: pre-line;
+
+          @include sm {
+            padding: 0 46px;
+            text-align: center;
+            white-space: initial;
+          }
+        }
+
+        .step-list {
+          position: relative;
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 8px;
+          margin-top: 24px;
+
+          @include md {
+            padding-bottom: 8px;
+          }
+
+          @include sm {
+            padding-bottom: 4px;
+          }
+
+          &::before {
+            @include themeChangeMixin(background-color, 1);
+
+            position: absolute;
+            top: 12px;
+            left: 37px;
+            width: 635px;
+            height: 1px;
+            content: "";
+
+            @include md {
+              width: calc(100% - 72px);
+            }
+
+            @include sm {
+              left: 35px;
+              width: calc(100% - 70px);
+            }
+          }
+
+          li {
+            @include fontFamilyBody(sb);
+
+            position: relative;
+            padding-top: 28px;
+            padding-top: 26px;
+            color: $gray30;
+            text-align: center;
+            white-space: pre-line;
+
+            &::before {
+              @include themeChangeMixin(background-color, 1);
+
+              position: absolute;
+              top: 2px;
+              left: 50%;
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              content: "";
+              transform: translateX(-50%);
+            }
+
+            &::after {
+              position: absolute;
+              top: 8px;
+              left: 50%;
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background-color: $gray100;
+              content: "";
+              transform: translateX(-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// 다오 트러스트 멤버십
+.dao-trust-membership-wrap {
+  border-top: 1px solid $gray80;
+
+  .dao-trust-membership-inner {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+
+    @include md {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    @include sm {
+      width: 100%;
+      flex-direction: column;
+    }
+
+    & > div {
+      width: 600px;
+      padding: 80px 40px;
+
+      @include md {
+        width: 100%;
+        padding: 60px 40px;
+      }
+
+      @include sm {
+        width: 100%;
+        padding: 40px 20px;
+      }
+
+      &.dao-membership {
+        border-left: 1px solid $gray80;
+
+        @include md {
+          border-top: 1px solid $gray80;
+          border-left: 0 none;
+        }
+
+        @include sm {
+          border-top: 1px solid $gray80;
+          border-left: 0 none;
+        }
+      }
+    }
+
+    .title-wrap {
+      @include fontFamilyHeading(s);
+      @include themeChangeMixin(color, 1);
+    }
+
+    .text {
+      @include fontFamilyBody(xxlb);
+
+      margin-top: 40px;
+      white-space: pre-line;
+
+      @include md {
+        margin-top: 32px;
+        white-space: normal;
+      }
+
+      @include sm {
+        margin-top: 12px;
+        white-space: normal;
+      }
+    }
+
+    .descript {
+      margin-top: 24px;
+
+      @include fontFamilyBody(mr);
+
+      color: $gray30;
+      white-space: pre-line;
+
+      @include md {
+        white-space: normal;
+      }
+
+      @include sm {
+        margin-top: 8px;
+        white-space: normal;
+      }
+    }
+
+    .dao-graphic {
+      height: 320px;
+      margin-top: 40px;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+
+      @at-root .oracle-wrap & {
+        margin-top: 24px;
+      }
+
+      @include sm {
+        height: 208px;
+        margin-top: 24px;
+      }
+
+      &.dao-wonder-graphic {
+        background-image: url("#{$publicImgPath}/img_dao_wonder_pc.svg");
+
+        @include sm {
+          background-image: url("#{$publicImgPath}/img_dao_wonder_mo.svg");
+        }
+      }
+
+      &.dao-arteum-graphic {
+        background-image: url("#{$publicImgPath}/img_dao_arteum_pc.svg");
+
+        @include sm {
+          background-image: url("#{$publicImgPath}/img_dao_arteum_mo.svg");
+        }
+      }
+
+      &.dao-delta-graphic {
+        background-image: url("#{$publicImgPath}/img_dao_delta_pc.svg");
+
+        @include sm {
+          background-image: url("#{$publicImgPath}/img_dao_delta_mo.svg");
+        }
+      }
+
+      &.dao-oracle-graphic {
+        background-image: url("#{$publicImgPath}/img_dao_oracle_pc.svg");
+
+        @include sm {
+          background-image: url("#{$publicImgPath}/img_dao_oracle_mo.svg");
+        }
+      }
+    }
+
+    .dao-tokens {
+      margin-top: 32px;
+
+      @include md {
+        display: flex;
+      }
+
+      @include sm {
+        margin-top: 40px;
+      }
+
+      .dao-tokens-inner {
+        position: relative;
+        padding: 40px 0 0 84px;
+
+        @include md {
+          flex: 1;
+          padding: 0 20px 0 0;
+        }
+
+        @include sm {
+          padding: 0 0 0 56px;
+        }
+
+        & + .dao-tokens-inner {
+          margin-top: 20px;
+
+          @include md {
+            padding-right: 0;
+            padding-left: 20px;
+            border-left: 1px solid $gray80;
+            margin-top: 0;
+          }
+
+          @include sm {
+            margin-top: 32px;
+          }
+        }
+
+        .icon {
+          position: absolute;
+          top: 40px;
+          left: 0;
+
+          @include md {
+            position: static;
+          }
+
+          @include sm {
+            top: 0;
+          }
+        }
+
+        .cate {
+          display: block;
+          color: $gray30;
+          white-space: pre-line;
+
+          @include fontFamilyBody(cl);
+
+          @include md {
+            margin-top: 24px;
+          }
+        }
+
+        .name {
+          display: block;
+          margin-top: 8px;
+          color: $gray00;
+          white-space: pre-line;
+
+          @include fontFamilyData(m3);
+
+          @include sm {
+            margin-top: 6px;
+          }
+
+          .tiker {
+            margin-left: 4px;
+            font-weight: 400;
+
+            @include fontFamilyData(cl);
+          }
+        }
+
+        .desc {
+          margin-top: 16px;
+          color: $gray30;
+          white-space: pre-line;
+
+          @include fontFamilyBody(mr);
+
+          @include sm {
+            margin-top: 12px;
+          }
+        }
+
+        .features {
+          margin-top: 8px;
+
+          @include md {
+            margin-top: 12px;
+          }
+
+          li {
+            position: relative;
+            padding-left: 1.5em;
+            color: $gray30;
+
+            @include fontFamilyBody(sr);
+
+            &::after {
+              position: absolute;
+              top: 0.75em;
+              left: 0.75em;
+              display: block;
+              width: 3px;
+              height: 3px;
+              border-radius: 3px;
+              background-color: $gray30;
+              content: "";
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.dao-home-showcase-video-wrap {
+  padding: 60px 0;
+
+  @include md {
+    padding: 60px 40px;
+  }
+
+  @include sm {
+    padding: 32px 20px;
+  }
+
+  .title {
+    text-align: center;
+
+    @include fontFamilyDp(mb);
+  }
+
+  .dao-home-showcase-video-inner {
+    position: relative;
+    z-index: 1;
+    width: 960px;
+    margin: 0 auto;
+    margin-top: 32px;
+    aspect-ratio: 320/180;
+
+    @include md {
+      width: 100%;
+    }
+
+    @include sm {
+      width: 100%;
+      margin-top: 16px;
+    }
+
+    &.active {
+      .video-play-wrap {
+        z-index: -1;
+        opacity: 0;
+      }
+
+      video {
+        z-index: 10;
+      }
+    }
+
+    .video-play-wrap {
+      position: absolute;
+      z-index: 10;
+      width: 100%;
+      height: 100%;
+      transition: opacity 0.1s ease-in-out;
+
+      &::before {
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 8px;
+        content: "";
+        transition: background-color 0.2s ease-in-out;
+      }
+
+      &:hover {
+        .play-button {
+          svg {
+            path {
+              @include themeChangeMixin(fill, 1);
+            }
+          }
+        }
+
+        &::before {
+          background-color: rgba($black, 0.2);
+        }
+      }
+
+      .play-button {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        svg {
+          width: 120px;
+          height: 120px;
+
+          @include sm {
+            width: 60px;
+            height: 60px;
+          }
+
+          path {
+            transition: fill 0.2s ease-in;
+          }
+        }
+      }
+    }
+
+    video {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 320/180;
+
+      @include md {
+        height: auto;
+      }
+
+      @include sm {
+        height: auto;
+      }
+    }
+  }
+}
+
+// 다오 소셜 - 텔레그램
+
+.btn-social-wrap {
+  &.link-wrap,
+  &.bth-wrap {
+    .wrap-whitepaper {
+      display: inline-flex;
+      justify-content: center;
+      margin-right: 16px;
+      vertical-align: top;
+
+      @include sm {
+        width: 100%;
+        justify-content: flex-start;
+        margin-right: 0;
+        margin-bottom: 8px;
+      }
+    }
+
+    .btn-link {
+      @include md {
+        width: auto;
+        height: auto;
+        border: 0;
+        border-radius: 0;
+      }
+
+      @include sm {
+        width: auto;
+        height: auto;
+        border: 0;
+        border-radius: 0;
+      }
+
+      .text {
+        @include md {
+          display: block;
+        }
+
+        @include sm {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .btn-link {
+    position: relative;
+    z-index: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &.discord {
+      svg {
+        width: 20px;
+        height: 15px;
+        margin: 0 3px;
+      }
+    }
+
+    &.papyrus {
+      svg {
+        width: 20px;
+        height: 20px;
+        margin: 0 3px;
+      }
+    }
+
+    .text {
+      @include fontFamilyButton(mr);
+
+      padding: 12px 0 12px 8px;
+      color: $gray00;
+
+      @include sm {
+        padding: 11px 0 11px 4px;
+      }
+    }
+
+    svg {
+      margin: 0 auto;
+    }
+
+    & + .btn-link {
+      margin-left: 16px;
+      vertical-align: top;
+    }
+
+    @include lg {
+      &:hover {
+        .tooltip-wrap {
+          opacity: 1;
+        }
+      }
+    }
+
+    .tooltip-wrap {
+      position: absolute;
+      z-index: 10;
+      bottom: -44px;
+      left: 50%;
+      padding: 6px 8px;
+      border-radius: 2px;
+      background: $gray20;
+      color: $gray100;
+      opacity: 0;
+      text-align: center;
+      transform: translate(-50%, 0);
+      transition: opacity 0.3s ease-in-out;
+
+      @include fontFamilyBody(sr);
+
+      &::after {
+        position: absolute;
+        z-index: 20;
+        top: -7px;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-right: 5px solid transparent;
+        border-bottom: 7px solid $gray20;
+        border-left: 5px solid transparent;
+        content: "";
+        transform: translate(-50%, 0);
+      }
+    }
+  }
+}
+
+.dao-home-social-wrap {
+  @include themeChangeMixin(background-color, 1);
+
+  padding: 98px 0 120px;
+
+  @include md {
+    padding: 60px 40px 78px;
+  }
+
+  @include sm {
+    padding: 40px 20px 34px;
+  }
+
+  .social-inner-wrap {
+    position: relative;
+    z-index: 1;
+    display: flex;
+
+    @include maxWidthLg;
+
+    @include md {
+      flex-direction: column;
+      padding: 0;
+    }
+
+    @include sm {
+      flex-direction: column;
+      padding: 0;
+    }
+  }
+
+  .title-wrap {
+    display: flex;
+    width: 652px; // wonder 테마에서 한줄 처리를 위해 넓이 수정
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+
+    @include md {
+      width: 100%;
+      text-align: center;
+    }
+
+    @include sm {
+      width: 100%;
+      text-align: center;
+    }
+
+    .title {
+      width: 100%;
+      color: $gray100;
+
+      @include fontFamilyPhrase(mb);
+    }
+
+    .desc {
+      margin-top: 24px;
+
+      @include fontFamilyBody(mr);
+
+      color: $gray90;
+
+      @include md {
+        margin-top: 16px;
+        white-space: pre-line;
+      }
+
+      @include sm {
+        margin-top: 12px;
+      }
+    }
+
+    .btn-social-wrap {
+      margin: 40px auto 0 0;
+
+      @include md {
+        margin: 24px 0 0;
+      }
+
+      @include sm {
+        margin: 24px 0 0;
+      }
+
+      .telegram {
+        svg {
+          path {
+            fill: $gray100;
+          }
+        }
+      }
+
+      .discord {
+        svg {
+          path {
+            fill: $gray100;
+          }
+        }
+      }
+
+      .papyrus {
+        svg {
+          path:first-child {
+            fill: $gray80;
+          }
+
+          path:last-child {
+            fill: $gray100;
+          }
+        }
+      }
+
+      .text {
+        color: $gray100;
+      }
+    }
+  }
+
+  .content-wrap {
+    position: absolute;
+    z-index: 1;
+    top: -18px;
+    right: 0;
+    width: 494px;
+    height: 268px;
+
+    @include md {
+      position: relative;
+      top: 0;
+      right: auto;
+      left: 50%;
+      margin-top: 40px;
+      transform: translate(-50%, 0);
+    }
+
+    @include sm {
+      position: relative;
+      top: 0;
+      right: auto;
+      left: 50%;
+      width: 320px;
+      height: 206px;
+      margin-top: 32px;
+      transform: translate(-50%, 0);
+    }
+
+    .comment-list-wrap {
+      li {
+        position: absolute;
+        z-index: 10;
+        top: -29px;
+        padding: 12px 5px;
+        border-radius: 8px;
+        background: $gray100;
+        box-shadow: 0 2px 8px 0 rgba($veryBlack, 0.4);
+        text-align: center;
+        white-space: pre-line;
+
+        @include fontFamilyBody(sb);
+        @include themeChangeMixin(color, 1);
+
+        @include sm {
+          padding: 8px 16px;
+        }
+
+        &::after {
+          position: absolute;
+          z-index: 20;
+          bottom: -12px;
+          left: 50%;
+          width: 20px;
+          height: 12px;
+          background: url("#{$rootPath}/img/img_dao_social_triangle.png") no-repeat 0 0;
+          background-size: 20px 12px;
+          content: "";
+          transform: translate(-50%, 0);
+
+          @include sm {
+            bottom: -10px;
+            height: 10px;
+            background: url("#{$rootPath}/img/img_dao_social_triangle_mobile.png") no-repeat 0 0;
+            background-size: 20px 10px;
+          }
+        }
+
+        &.list-item1 {
+          top: 0;
+          right: 0;
+          min-width: 312px;
+
+          @include sm {
+            min-width: 309px;
+          }
+        }
+
+        &.list-item2 {
+          z-index: 30;
+          top: 52px;
+          right: 243px;
+          min-width: 251px;
+
+          @at-root [lang="en"] & {
+            top: 46px;
+          }
+
+          @include sm {
+            display: none;
+          }
+        }
+
+        &.list-item3 {
+          top: 76px;
+          right: 13px;
+          min-width: 250px;
+
+          @at-root [lang="en"] & {
+            right: -3px;
+          }
+
+          @include sm {
+            top: 46px;
+            right: 88px;
+            min-width: 232px;
+
+            @at-root [lang="en"] & {
+              right: 88px;
+            }
+          }
+        }
+
+        &.list-item4 {
+          top: 110px;
+          right: 284px;
+          min-width: 180px;
+
+          @include sm {
+            display: none;
+          }
+        }
+
+        &.list-item5 {
+          top: 152px;
+          right: 13px;
+          min-width: 250px;
+
+          @include sm {
+            top: 112px;
+            right: 0;
+            min-width: 256px;
+          }
+        }
+      }
+    }
+
+    .image-wrap {
+      .image {
+        position: absolute;
+        z-index: 10;
+
+        &.people1 {
+          right: 332px;
+          bottom: 6px;
+
+          @include sm {
+            right: 190px;
+            bottom: 2px;
+          }
+
+          svg {
+            width: 85px;
+            height: 68px;
+
+            @include sm {
+              width: 55px;
+              height: 45px;
+            }
+          }
+        }
+
+        &.people2 {
+          right: 93px;
+          bottom: 0;
+
+          @include sm {
+            right: 79px;
+          }
+
+          svg {
+            width: 89px;
+            height: 54px;
+
+            @include sm {
+              width: 59px;
+              height: 36px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+[lang="en"] {
+  .dao-home-social-wrap .content-wrap .comment-list-wrap li.list-item3 {
+    @include sm {
+      right: auto;
+      left: 0;
+      min-width: 100%;
+    }
+  }
+
+  .arteum-wrap {
+    .dao-home-social-wrap .content-wrap .comment-list-wrap li.list-item1 {
+      top: -20px;
+    }
+  }
+
+  .delta-wrap {
+    .dao-home-social-wrap .content-wrap .comment-list-wrap li.list-item1 {
+      top: -20px;
+    }
+
+    .dao-home-social-wrap .content-wrap .comment-list-wrap li.list-item5 {
+      top: 132px;
+    }
+  }
+}
+
+// dao showcase marquee 컴포넌트
+.marquee-wrap {
+  overflow: hidden;
+  padding-top: 80px;
+  padding-bottom: 84px;
+  border-top: 1px solid $gray80;
+
+  @include md {
+    padding-top: 60px;
+    padding-bottom: 39px;
+  }
+
+  @include sm {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .marquee-wrap-title {
+    @include fontFamilyBody(xxlb);
+
+    display: block;
+    text-align: center;
+
+    @include md {
+      padding: 0 40px;
+    }
+
+    @include sm {
+      padding: 0 20px;
+    }
+  }
+
+  .type-banner {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+
+    // overflow-x: hidden;
+
+    @include sm {
+      margin-top: 24px;
+    }
+
+    .banner-item {
+      height: 230px;
+      margin-left: 40px;
+
+      @include md {
+        height: 172px;
+        margin-left: 30px;
+      }
+
+      @include sm {
+        height: 130px;
+        margin-left: 24px;
+      }
+
+      .banner-inner {
+        position: relative;
+
+        > span {
+          position: inherit !important;
+          width: inherit !important;
+          height: inherit !important;
+        }
+
+        img {
+          position: inherit !important;
+          width: auto !important;
+          min-width: inherit !important;
+          max-width: inherit !important;
+          height: 230px !important;
+          min-height: inherit !important;
+          max-height: inherit !important;
+
+          @include md {
+            height: 172px !important;
+          }
+
+          @include sm {
+            height: 130px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.time-flicker {
+  $easeInOut: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  $turnDuration: 0.6s;
+
+  // Animation mixin
+  /* stylelint-disable-next-line max-line-length */
+  @mixin animate($name, $easing, $duration: 300ms, $delay: 0s, $iteration: 1, $direction: normal, $fill-mode: forwards) {
+    animation: $name $duration $easing $delay $iteration $direction $fill-mode;
+  }
+
+  @mixin topColor {
+    @at-root .wonder-wrap & {
+      background-color: #5032a7;
+    }
+
+    @at-root .arteum-wrap & {
+      background-color: #a64343;
+    }
+
+    @at-root .delta-wrap & {
+      background-color: #2268b1;
+    }
+
+    @at-root .oracle-wrap & {
+      background-color: #4c630b;
+    }
+  }
+
+  .flip-clock {
+    @include themeChangeMixin(background-color, 1);
+
+    display: flex;
+    width: 368px;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    @include md {
+      width: 300px;
+    }
+
+    @include sm {
+      width: 276px;
+    }
+  }
+
+  .unit-wrap {
+    @include themeChangeMixin(background-color, 5);
+
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2px;
+
+    @include md {
+      width: 66px;
+      height: 70px;
+    }
+
+    @include sm {
+      width: 64px;
+      height: 56px;
+    }
+
+    .unit-text {
+      @include fontFamilyData(cxs);
+
+      position: absolute;
+      z-index: 100;
+      bottom: 10px;
+      left: 50%;
+      margin-top: 4px;
+      color: $gray100;
+      transform: translateX(-50%);
+
+      @include sm {
+        margin-top: 6px;
+      }
+    }
+  }
+
+  .flip-unit-container {
+    @include themeChangeMixin(background-color, 5);
+
+    position: relative;
+    display: block;
+
+    // width: 40px;
+    width: 100%;
+    height: 60px;
+    border-radius: 3px;
+
+    @include sm {
+      // width: 28px;
+      height: 44px;
+    }
+
+    // background-color: $card;
+    // box-shadow: 0 10px 10px -10px grey;
+    // perspective: 300px;
+    // perspective-origin: 50% 50%;
+  }
+
+  .upper-card,
+  .lower-card {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+
+    // border: 1px solid $border;
+
+    span {
+      @include fontFamilyData(card);
+
+      color: $gray100;
+
+      // color: $font-color;
+      // font-family: $font-family;
+      // font-size: $font-size;
+      // font-weight: $font-width;
+    }
+  }
+
+  .upper-card {
+    // border-bottom: 0.5px solid $border;
+    // border-top-left-radius: 3px;
+    // border-top-right-radius: 3px;
+    z-index: 10;
+    align-items: flex-end;
+
+    @include topColor;
+
+    span {
+      // color: red;
+      color: $gray70;
+      transform: translateY(50%);
+    }
+  }
+
+  .lower-card {
+    z-index: 20;
+
+    // border-top: 0.5px solid $border;
+    // border-bottom-left-radius: 3px;
+    // border-bottom-right-radius: 3px;
+    align-items: flex-start;
+
+    span {
+      transform: translateY(-50%);
+    }
+  }
+
+  .flip-card {
+    position: absolute;
+    z-index: 30;
+    left: 0;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 50%;
+    justify-content: center;
+    backface-visibility: hidden;
+
+    span {
+      @include fontFamilyData(card);
+
+      color: $gray100;
+
+      // color: $font-color;
+      // font-family: $font-family;
+      // font-size: $font-size;
+      // font-weight: $font-width;
+    }
+
+    &.unfold {
+      @include themeChangeMixin(background-color, 5);
+
+      top: 50%;
+      align-items: flex-start;
+
+      // border: 0.5px solid $border;
+      // border-top: 0.5px solid $border;
+
+      // background-color: $card;
+      // border-bottom-left-radius: 3px;
+      // border-bottom-right-radius: 3px;
+      transform: rotateX(180deg); // from 180 to 0
+      transform-origin: 50% 0%;
+
+      span {
+        transform: translateY(-50%);
+      }
+    }
+
+    &.fold {
+      // @include themeChangeMixin(background-color, 5);
+
+      top: 0%;
+      align-items: flex-end;
+
+      @include topColor;
+
+      // border: 0.5px solid $border;
+      // border-bottom: 0.5px solid $border;
+      // background-color: $card;
+      // border-top-left-radius: 3px;
+      // border-top-right-radius: 3px;
+      transform: rotateX(0deg); // from 0 to -180
+      transform-origin: 50% 100%;
+
+      span {
+        color: $gray70;
+        transform: translateY(50%);
+      }
+    }
+  }
+
+  .fold {
+    @include animate(fold, $easeInOut, 0.6s);
+
+    transform-style: preserve-3d;
+  }
+
+  .unfold {
+    @include animate(unfold, $easeInOut, 0.6s);
+
+    animation-fill-mode: both;
+    transform-style: preserve-3d;
+  }
+
+  @keyframes fold {
+    0% {
+      transform: rotateX(0deg);
+    }
+
+    100% {
+      transform: rotateX(-180deg);
+    }
+  }
+
+  @keyframes unfold {
+    0% {
+      transform: rotateX(180deg);
+    }
+
+    100% {
+      transform: rotateX(0deg);
+    }
+  }
+}
+
+// 다오 Purpose
+
+.purpose-contain {
+  overflow: hidden;
+  border-top: 1px solid $gray80;
+
+  &:not(.arteum) {
+    .purpose-wrap .purpose-detail-info .purpose-info-list {
+      .info-list-detail {
+        min-height: 72px;
+
+        @include md {
+          min-height: 80px;
+        }
+
+        @include sm {
+          min-height: 80px;
+        }
+      }
+
+      .info-img-wrap {
+        svg {
+          width: 292px;
+          height: 276px;
+
+          @include sm {
+            width: 219px;
+            height: 207px;
+          }
+        }
+      }
+    }
+  }
+
+  &.arteum {
+    .purpose-wrap .purpose-detail-info {
+      .swiper-slide {
+        &:nth-child(1) {
+          background: url("#{$rootPath}/img/img_dao_purpose_arteum1.jpg") no-repeat center /cover;
+        }
+
+        &:nth-child(2) {
+          background: url("#{$rootPath}/img/img_dao_purpose_arteum2.jpg") no-repeat center/cover;
+        }
+      }
+
+      .purpose-info-list {
+        .info-list-num {
+          .tag-tag {
+            background-color: $gray100;
+            color: $veryBlack;
+          }
+        }
+
+        .info-list-title {
+          color: $gray100;
+        }
+
+        .info-list-detail {
+          color: $gray100;
+        }
+
+        @include sm {
+          min-height: 380px;
+        }
+      }
+    }
+  }
+
+  .purpose-wrap {
+    display: flex;
+    width: $maxWidthLg;
+    height: auto;
+    justify-content: center;
+    margin: 0 auto;
+
+    @include md {
+      width: 100%;
+      height: 100%;
+      flex-direction: column;
+    }
+
+    @include sm {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      padding: 40px 0;
+    }
+
+    .purpose-info {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+
+      @include md {
+        display: flex;
+        width: 100%;
+        padding: 60px 40px 40px;
+        border-bottom: 1px solid $gray80;
+      }
+
+      @include sm {
+        display: flex;
+        width: 100%;
+        height: auto;
+        justify-content: flex-start;
+        padding: 0;
+      }
+
+      .purpose-box {
+        display: flex;
+        width: 100%;
+        max-width: 440px;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-right: 80px;
+
+        @include md {
+          max-width: none;
+          height: auto;
+          justify-content: center;
+          margin-right: 0;
+        }
+
+        @include sm {
+          max-width: none;
+          height: auto;
+          padding: 0 20px;
+          margin-right: 0;
+        }
+
+        .purpose-title {
+          @include fontFamilyHeading(s);
+          @include themeChangeMixin(color, 1);
+        }
+
+        .purpose-subtitle {
+          display: block;
+          margin-top: 40px;
+          color: $black;
+          white-space: pre-line;
+
+          @include fontFamilyBody(xxlb);
+
+          @include md {
+            margin-top: 32px;
+            white-space: normal;
+          }
+
+          @include sm {
+            margin-top: 12px;
+            white-space: normal;
+          }
+        }
+
+        .info {
+          display: block;
+          margin-top: 24px;
+          color: $gray30;
+          line-height: 22px;
+          white-space: pre-wrap;
+
+          @include fontFamilyBody(mr);
+
+          @include md {
+            margin-top: 8px;
+          }
+
+          @include sm {
+            margin-top: 8px;
+          }
+        }
+
+        .purpose-comment {
+          display: block;
+          margin-top: 4px;
+          color: $gray60;
+
+          @include fontFamilyBody(sr);
+
+          @include sm {
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+
+    .purpose-detail-info {
+      width: 680px;
+      border-right: 1px solid $gray80;
+      border-left: 1px solid $gray80;
+
+      @include md {
+        width: 100%;
+        border: none;
+      }
+
+      @include sm {
+        width: 100%;
+        border: none;
+      }
+
+      .swiper-slide {
+        height: 100%;
+        border-right: 1px solid $gray80;
+
+        &:last-child {
+          border-right: none;
+        }
+
+        @include sm {
+          padding: 20px 20px 50px;
+        }
+      }
+
+      .purpose-info-list {
+        display: flex;
+        height: 100%;
+        min-height: 528px;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 60px 24px 24px;
+
+        @include md {
+          min-height: 536px;
+          padding: 40px 24px 36px;
+        }
+
+        @include sm {
+          min-height: 416px;
+
+          // padding: 20px;
+          padding: 0;
+        }
+
+        .info-list-num {
+          .tag-tag {
+            padding: 3px 8px;
+            background-color: $gray00;
+            color: $gray100;
+
+            @include fontFamilyData(cs);
+
+            @include md {
+              padding: 7px 12px 5px;
+            }
+
+            @include sm {
+              padding: 7px 12px 5px;
+            }
+          }
+        }
+
+        .info-list-title {
+          display: block;
+          width: 292px;
+          margin-top: 8px;
+          white-space: pre-line;
+
+          @include fontFamilyBody(xlr);
+        }
+
+        .info-list-detail {
+          display: block;
+          margin-top: 24px;
+          color: $gray30;
+          white-space: pre-wrap;
+
+          @include fontFamilyBody(sr);
+
+          @include sm {
+            margin-top: 8px;
+          }
+        }
+
+        .info-img-wrap {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          margin-top: -12px;
+
+          @include md {
+            margin: 0;
+          }
+
+          @include sm {
+            margin: 0;
+          }
+        }
+      }
+
+      .swiper {
+        width: 100%;
+
+        @include lg {
+          height: 100%;
+        }
+
+        @include sm {
+          padding: 0 20px;
+          margin-top: 24px;
+
+          .swiper-slide {
+            border: 1px solid $gray80;
+            border-radius: 4px;
+          }
+        }
+
+        .swiper-pagination {
+          @include lg {
+            display: none;
+          }
+
+          @include md {
+            display: none;
+          }
+
+          @include sm {
+            margin-top: 20px;
+
+            .swiper-pagination-bullet {
+              background-color: $gray60;
+            }
+
+            .swiper-pagination-bullet-active {
+              background-color: $black;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.bottom-popup-modal {
+  @include sm {
+    &.active {
+      display: flex;
+      align-items: flex-end;
+      visibility: visible;
+
+      .ant-modal {
+        top: auto;
+        bottom: 0;
+        opacity: 1;
+      }
+    }
+
+    .ant-modal {
+      position: absolute;
+      top: auto;
+      bottom: -100%;
+      left: 0;
+      display: block !important;
+      overflow: hidden;
+      max-height: calc((#{$vh} * 90));
+      padding: 0;
+      margin: 0;
+      animation: sliding 0.3s;
+      opacity: 1;
+      transition: all 0.2s;
+    }
+
+    .modal-wrap {
+      position: absolute;
+      top: auto;
+      bottom: -100%;
+      transition: bottom 1s;
+
+      &.open {
+        bottom: 0;
+      }
+
+      .ant-modal-content {
+        border-radius: 8px 8px 0 0;
+      }
+    }
+
+    .modal-wrap.modal-size-lg {
+      .ant-modal-header {
+        height: 49px;
+        padding: 12px;
+        border: none;
+        border-radius: 8px 8px 0 0;
+      }
+
+      .ant-modal-body {
+        padding: 20px 20px 40px;
+      }
+
+      .ant-modal-close {
+        height: 49px;
+      }
+    }
+
+    .wrap-tag {
+      display: flex;
+      max-width: 191px;
+      flex-wrap: wrap;
+      gap: 4px;
+
+      &.wonder {
+        .tag {
+          border: 1px solid nth($daoWonder, 1);
+          color: nth($daoWonder, 1);
+        }
+      }
+
+      &.oracle {
+        .tag {
+          border: 1px solid nth($daoOracle, 1);
+          color: nth($daoOracle, 1);
+        }
+      }
+
+      &.arteum {
+        .tag {
+          border: 1px solid nth($daoArteum, 1);
+          color: nth($daoArteum, 1);
+        }
+      }
+
+      &.delta {
+        .tag {
+          border: 1px solid nth($daoDelta, 1);
+          color: nth($daoDelta, 1);
+        }
+      }
+    }
+
+    .bottom-popup-title {
+      margin-top: 10px;
+
+      @include fontFamilyBody(cardxl);
+    }
+
+    .bottom-popup-desc {
+      margin-top: 4px;
+
+      @include fontFamilyBody(cardmr);
+
+      color: #595959;
+    }
+
+    .bottom-popup-footnote {
+      margin-top: 4px;
+
+      @include fontFamilyBody(sr);
+
+      color: #a6a6a6;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+FROM node:18-alpine AS deps
+
+RUN apk add --no-cache libc6-compat g++ make python3
+
+WORKDIR /app
+
+COPY .pnp* package* yarn.lock*  ./
+COPY .yarnrc.yml                ./
+COPY .yarn/cache                ./.yarn/cache
+COPY .yarn/releases             ./.yarn/releases
+COPY .yarn/plugins             ./.yarn/plugins
+
+RUN cd /app && echo 'YARN VERSION IN BUILDER: ' && yarn --version
+
+RUN yarn set version stable
+
+RUN yarn install --immutable
+
+FROM node:18-alpine AS runner
+WORKDIR /app
+
+RUN yarn set version stable
+
+RUN yarn add -D @swc/cli @swc/core
+RUN npm install --global pm2
+
+COPY --from=deps /app/.yarn ./.yarn
+COPY --from=deps /app/.pnp.cjs ./pnp.cjs
+COPY . .
+COPY .env.production ./.env.production
+
+ENV NODE_ENV production
+ENV NEXT_TELEMETRY_DISABLED 1
+
+RUN yarn build
+
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
+
+RUN chown -R nextjs:nodejs /app/.next
+
+USER nextjs
+
+EXPOSE 3000
+
+ENV PORT 3000
+
+CMD ["yarn", "eco"]

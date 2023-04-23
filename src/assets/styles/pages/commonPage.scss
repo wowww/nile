@@ -1,0 +1,232 @@
+.common-wrap {
+  padding-top: 0;
+
+  header,
+  footer {
+    display: none;
+  }
+
+  .marketplace-floating-bar-wrap {
+    position: static !important;
+  }
+
+  .life-floating-bar {
+    position: static !important;
+    transform: none;
+  }
+}
+
+.common-content-wrap {
+  position: relative;
+  padding: 0 0 30px;
+
+  .common-links {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 20px;
+    background-color: rgba($black, 0.95);
+    overflow-x: auto;
+    white-space: nowrap;
+
+    a {
+      background-color: transparent;
+      color: $white;
+
+      & + a {
+        margin-left: 30px;
+      }
+    }
+  }
+
+  .common-section {
+    &.no-padding {
+      > .common-title + div {
+        padding: 0;
+
+        @include sm {
+          padding: 0;
+        }
+      }
+    }
+
+    & > .common-title {
+      height: 80px;
+      padding: 0 0 0 30px;
+      background-color: $gray90;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 80px;
+
+      & + div {
+        padding: 30px;
+
+        @include sm {
+          padding: 30px 10px;
+        }
+
+        .common-sub-title {
+          @include fontsizeMixin(24, 34);
+
+          &::before {
+            display: inline;
+            padding-right: 6px;
+            content: "-";
+          }
+
+          padding: 30px 0 20px 14px;
+          font-weight: 700;
+
+          // text-indent: -14px;
+        }
+
+        & > div {
+          & + div {
+            margin-top: 20px;
+          }
+        }
+
+        .bg-common-black {
+          background-color: $black;
+        }
+
+        .common-notice {
+          padding-bottom: 30px;
+          border-bottom: 1px solid $gray80;
+          margin-bottom: 30px;
+
+          li {
+            padding-left: 14px;
+            line-height: 1.4;
+            text-indent: -9px;
+
+            b {
+              color: $negative;
+              font-weight: 400;
+            }
+
+            span {
+              color: $highlight;
+            }
+
+            & + li {
+              padding-top: 8px;
+            }
+
+            &::before {
+              display: inline;
+              padding-right: 4px;
+              content: "-";
+            }
+
+            strong {
+              color: inherit;
+              font-weight: 700;
+            }
+          }
+        }
+
+        .common-display-flex {
+          display: flex;
+          flex-wrap: wrap;
+          padding: 10px;
+          margin-top: -20px;
+
+          .common-flex-column {
+            width: 49%;
+          }
+
+          > div {
+            margin-top: 20px;
+            margin-right: 20px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+
+        .common-name {
+          display: inline-block;
+          padding: 10px 20px;
+          border-radius: 30px;
+          margin-bottom: 20px;
+          background-color: $gray90;
+        }
+      }
+    }
+  }
+
+  .color-set-view {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -20px !important;
+
+    & > div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      margin-right: 20px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+
+    .color-set {
+      position: relative;
+      display: flex;
+      width: 170px;
+      height: 150px;
+      align-items: flex-end;
+      border: 8px solid $white;
+
+      &::after {
+        @include content;
+
+        position: absolute;
+        top: -8px;
+        left: -8px;
+        width: calc(100% + 16px);
+        height: calc(100% + 16px);
+        border: 1px solid $gray80;
+      }
+
+      p {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        padding: 15px 3px 10px;
+        background-color: #fff;
+
+        span {
+          display: block;
+          color: $black;
+          font-family: $fontEN;
+
+          & + span {
+            padding-top: 10px;
+            color: $gray60;
+          }
+        }
+      }
+    }
+  }
+
+  .common-fonts {
+    @include fontsizeMixin(40, 70);
+  }
+
+  .bottom-banner-wrap {
+    position: relative;
+  }
+}
+
+.dao-wrap .common-section .wrap-governance-vote {
+  .wrap-button {
+    position: relative !important;
+  }
+}

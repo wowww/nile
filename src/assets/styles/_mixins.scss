@@ -1,0 +1,259 @@
+/* stylelint-disable scss/no-global-function-names */
+// ~ 359
+@mixin xs {
+  @media (max-width: 359px) {
+    @content;
+  }
+}
+
+// ~ 767
+@mixin sm {
+  @media (max-width: #{$breakpointSM - 1px}) {
+    @content;
+  }
+}
+
+// 768 ~ 1279
+// @mixin md {
+//   @media (min-width: #{$breakpointSM}) and (max-width: #{$breakpointMD - 1}) {
+//     @content;
+//   }
+// }
+@mixin md {
+  @at-root body:not(.dao-wrap) & {
+    @media (min-width: #{$breakpointSM}) and (max-width: #{$breakpointMD - 1}) {
+      @content;
+    }
+  }
+
+  @include daoMd {
+    @content;
+  }
+}
+
+// 1280 ~
+@mixin lg {
+  @media (min-width: #{$breakpointMD}) {
+    @content;
+  }
+}
+
+// 개별 다오홈 브레이크 포인트
+// 1440 ~ (PC)
+@mixin daoXl {
+  @at-root .dao-wrap & {
+    @media (min-width: 1440px) {
+      @content;
+    }
+  }
+}
+
+// 1024 ~ 1439 (PC)
+@mixin daoLg {
+  @at-root .dao-wrap & {
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      @content;
+    }
+  }
+}
+
+// 768 ~ 1023 (Tablet)
+@mixin daoMd {
+  @at-root .dao-wrap & {
+    @media (min-width: 768px) and (max-width: 1023px) {
+      @content;
+    }
+  }
+}
+
+// ~ 767 (Mobile)
+@mixin daoSm {
+  @at-root .dao-wrap & {
+    @media (max-width: 767px) {
+      @content;
+    }
+  }
+}
+
+@mixin content($display: block) {
+  display: $display;
+  clear: both;
+  content: "";
+}
+
+// 말줄임
+@mixin ellipsis($type: 0) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: keep-all;
+
+  @if $type == 0 {
+    white-space: nowrap;
+    word-wrap: normal;
+    word-wrap: break-word;
+  } @else {
+    /* stylelint-disable-next-line value-no-vendor-prefix */
+    display: -webkit-box;
+    -webkit-line-clamp: $type;
+    /* stylelint-disable-next-line order/properties-order */
+    -webkit-box-orient: vertical;
+  }
+}
+
+/*
+* 테마
+  $attr : 다오테마에 따라 변경 될 프로퍼티 명
+  $colorIdx : _variables.scss에 정의된 다오 시스템 컬러 인덱스
+  테마 class: wonder,
+*/
+@mixin themeChangeMixin($property, $colorIdx, $important...) {
+  @at-root .wonder-wrap & {
+    #{$property}: nth($daoWonder, $colorIdx) $important;
+  }
+
+  @at-root .oracle-wrap & {
+    #{$property}: nth($daoOracle, $colorIdx);
+  }
+
+  @at-root .arteum-wrap & {
+    #{$property}: nth($daoArteum, $colorIdx);
+  }
+
+  @at-root .delta-wrap & {
+    #{$property}: nth($daoDelta, $colorIdx);
+  }
+
+  @at-root .topstpot-wrap & {
+    #{$property}: nth($daoTopstpot, $colorIdx);
+  }
+}
+
+// placeholder
+@mixin placeholder($color) {
+  /* stylelint-disable-next-line selector-pseudo-element-no-unknown */
+  &::input-placeholder {
+    color: $color;
+  }
+
+  &:placeholder {
+    color: $color;
+  }
+
+  &::placeholder {
+    color: $color;
+  }
+
+  &:input-placeholder {
+    color: $color;
+  }
+}
+
+// font size
+@function fontsize($size) {
+  @return #{$baseSize + ($size - $baseSize)};
+}
+
+@mixin fontsizeMixin($size, $lineHeight: $size) {
+  font-size: fontsize($size);
+  line-height: $lineHeight / $size;
+}
+
+// pc max width 설정 mixin
+@mixin maxWidthLg {
+  width: $maxWidthLg;
+  margin: 0 auto;
+
+  @include md {
+    width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  @include sm {
+    width: 100%;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+// scrollbar
+@mixin scrollStyle($width: 4px, $gap: 4px, $color: $gray80) {
+  &::-webkit-scrollbar {
+    width: calc(#{$width + ($gap * 2)});
+    height: calc(#{$width + ($gap * 2)});
+    background-color: transparent;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border: $gap solid transparent;
+    border-radius: 100px;
+    background-clip: content-box;
+    background-color: $color;
+  }
+}
+
+@mixin hiddenScroll {
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+// tabStyle
+@mixin tabLgStyle($active: false) {
+  height: 60px;
+  padding: 0 40px;
+
+  @if $active == false {
+    @include fontFamilyUi(tabmr);
+  } @else {
+    @include fontFamilyUi(tabmb);
+  }
+
+  @include sm {
+    height: 48px;
+    padding: 0;
+  }
+}
+
+@mixin dotStyle($size: 4px, $bg: $gray30, $top: 10px) {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    top: $top;
+    left: 0;
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    background: $bg;
+    content: "";
+  }
+}
+
+@mixin gradientBorder($stroke:1px, $radius: 1px, $background, $gradient) {
+  position: relative;
+  z-index: 1;
+  border: $stroke solid transparent;
+  border-radius: $radius;
+  background-clip: padding-box;
+  background-color: $background;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    padding: $stroke;
+    border-radius: $radius;
+    background: $gradient;
+    background-origin: border-box;
+    background-position: 0 0;
+    content: "";
+    inset: 0;
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0) padding-box;
+    mask-composite: xor;
+    pointer-events: none;
+  }
+}

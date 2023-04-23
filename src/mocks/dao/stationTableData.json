@@ -1,0 +1,146 @@
+[
+  {
+    "id": 1,
+    "profile": {
+      "imgUrl": "",
+      "userId": "user id",
+      "introduce": "인사말!"
+    },
+    "count": {
+      "proposal": 2000,
+      "proposalJoin": 200
+    },
+    "figure": {
+      "wonder": 200,
+      "gWonder": 20
+    },
+    "participateDate": "2022-03-01 13:30:04",
+    "recentActivityDate": "2022-03-01 13:30:04"
+  },
+  {
+    "id": 2,
+    "profile": {
+      "imgUrl": "",
+      "userId": "user id",
+      "introduce": ""
+    },
+    "count": {
+      "proposal": 20000000,
+      "proposalJoin": 200000
+    },
+    "figure": {
+      "wonder": 20000,
+      "gWonder": 20
+    },
+    "participateDate": "2022-07-01 13:30:04",
+    "recentActivityDate": "2022-07-01 13:30:04"
+  },
+  {
+    "id": 3,
+    "profile": {
+      "imgUrl": "",
+      "userId": "user id",
+      "introduce": ""
+    },
+    "count": {
+      "proposal": 20000000,
+      "proposalJoin": 200000
+    },
+    "figure": {
+      "wonder": 20000,
+      "gWonder": 20
+    },
+    "participateDate": "2022-07-01 13:30:04",
+    "recentActivityDate": "2022-07-01 13:30:04"
+  },
+  {
+    "id": 4,
+    "profile": {
+      "imgUrl": "",
+      "userId": "user id",
+      "introduce": ""
+    },
+    "count": {
+      "proposal": 20000000,
+      "proposalJoin": 200000
+    },
+    "figure": {
+      "wonder": 20000,
+      "gWonder": 20
+    },
+    "participateDate": "2022-07-01 13:30:04",
+    "recentActivityDate": "2022-07-01 13:30:04"
+  },
+  {
+    "id": 5,
+    "profile": {
+      "imgUrl": "",
+      "userId": "user id",
+      "introduce": ""
+    },
+    "count": {
+      "proposal": 20000000,
+      "proposalJoin": 200000
+    },
+    "figure": {
+      "wonder": 20000,
+      "gWonder": 20
+    },
+    "participateDate": "2022-07-01 13:30:04",
+    "recentActivityDate": "2022-07-01 13:30:04"
+  },
+  {
+    "id": 6,
+    "profile": {
+      "imgUrl": "",
+      "userId": "user id",
+      "introduce": ""
+    },
+    "count": {
+      "proposal": 20000000,
+      "proposalJoin": 200000
+    },
+    "figure": {
+      "wonder": 20000,
+      "gWonder": 20
+    },
+    "participateDate": "2022-07-01 13:30:04",
+    "recentActivityDate": "2022-07-01 13:30:04"
+  },
+  {
+    "id": 7,
+    "profile": {
+      "imgUrl": "",
+      "userId": "user id",
+      "introduce": ""
+    },
+    "count": {
+      "proposal": 20000000,
+      "proposalJoin": 200000
+    },
+    "figure": {
+      "wonder": 20000,
+      "gWonder": 20
+    },
+    "participateDate": "2022-07-01 13:30:04",
+    "recentActivityDate": "2022-07-01 13:30:04"
+  },
+  {
+    "id": 8,
+    "profile": {
+      "imgUrl": "",
+      "userId": "user id",
+      "introduce": ""
+    },
+    "count": {
+      "proposal": 20000000,
+      "proposalJoin": 200000
+    },
+    "figure": {
+      "wonder": 20000,
+      "gWonder": 20
+    },
+    "participateDate": "2022-07-01 13:30:04",
+    "recentActivityDate": "2022-07-01 13:30:04"
+  }
+]

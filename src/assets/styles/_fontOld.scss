@@ -1,0 +1,1059 @@
+@mixin fontFamilyDp($size) {
+  font-family: $fontSerifEN;
+  font-weight: 700;
+
+  @if $size == "xl" {
+    @include fontsizeMixin(60, 62);
+
+    @include md {
+      @include fontsizeMixin(64, 66);
+    }
+
+    @include sm {
+      @include fontsizeMixin(32, 34);
+    }
+  } @else if $size == "hl" {
+    @include fontsizeMixin(54, 60);
+
+    @include md {
+      @include fontsizeMixin(54, 60);
+    }
+
+    @include sm {
+      @include fontsizeMixin(30, 34);
+    }
+  } @else if $size == "l" {
+    @include fontsizeMixin(40, 48);
+
+    @include md {
+      @include fontsizeMixin(40, 48);
+    }
+
+    @include sm {
+      @include fontsizeMixin(24, 28);
+    }
+  } @else if $size == "mr" {
+    font-weight: 400;
+
+    @include fontsizeMixin(30, 36);
+
+    @include md {
+      @include fontsizeMixin(32, 40);
+    }
+
+    @include sm {
+      @include fontsizeMixin(20, 24);
+    }
+  } @else if $size == "mb" {
+    @include fontsizeMixin(30, 36);
+
+    @include md {
+      @include fontsizeMixin(32, 40);
+    }
+
+    @include sm {
+      @include fontsizeMixin(20, 24);
+    }
+  } @else if $size == "sb" {
+    @include fontsizeMixin(24, 28);
+
+    @include md {
+      @include fontsizeMixin(26, 32);
+    }
+
+    @include sm {
+      @include fontsizeMixin(22, 26);
+    }
+  } @else if $size == "title" {
+    @include fontsizeMixin(30, 36);
+
+    @include md {
+      @include fontsizeMixin(32, 40);
+    }
+
+    @include sm {
+      @include fontsizeMixin(24, 28);
+    }
+  } @else if $size == "marketl" {
+    @include fontsizeMixin(40, 48);
+
+    @include md {
+      @include fontsizeMixin(32, 40);
+    }
+
+    @include sm {
+      @include fontsizeMixin(14, 18);
+
+      font-family: $fontKR;
+    }
+  } @else if $size == "herol" {
+    @include fontsizeMixin(54, 60);
+
+    @include md {
+      @include fontsizeMixin(54, 60);
+    }
+
+    @include sm {
+      @include fontsizeMixin(30, 32);
+    }
+  } @else if $size == "topl" {
+    @include fontsizeMixin(36, 44);
+
+    @include md {
+      @include fontsizeMixin(36, 44);
+    }
+
+    @include sm {
+      @include fontsizeMixin(22, 28);
+    }
+  } @else if $size == "xsb" {
+    @include fontsizeMixin(18, 28);
+
+    @include md {
+      @include fontsizeMixin(22, 32);
+    }
+
+    @include sm {
+      @include fontsizeMixin(18, 26);
+    }
+  }
+}
+
+@mixin fontFamilyUi($size) {
+  @at-root [lang="en"] & {
+    font-family: $fontEN;
+  }
+
+  @if $size == "br" {
+    @include fontsizeMixin(16, 20);
+
+    @include md {
+      @include fontsizeMixin(20, 24);
+    }
+
+    @include sm {
+      @include fontsizeMixin(16, 20);
+    }
+  } @else if $size == "bb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(16, 20);
+
+    @include md {
+      @include fontsizeMixin(20, 24);
+    }
+
+    @include sm {
+      @include fontsizeMixin(16, 20);
+    }
+  } @else if $size == "lnbr" {
+    @include fontsizeMixin(14, 14);
+
+    @include md {
+      @include fontsizeMixin(16, 16);
+    }
+
+    @include sm {
+      @include fontsizeMixin(16, 16);
+    }
+  } @else if $size == "lnbb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(14, 14);
+
+    @include md {
+      @include fontsizeMixin(16, 16);
+    }
+
+    @include sm {
+      @include fontsizeMixin(16, 16);
+    }
+  } @else if $size == "tabmr" {
+    @include fontsizeMixin(16, 16);
+
+    @include md {
+      @include fontsizeMixin(16, 16);
+    }
+
+    @include sm {
+      @include fontsizeMixin(14, 14);
+    }
+  } @else if $size == "tabmb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(16, 16);
+
+    @include md {
+      @include fontsizeMixin(16, 16);
+    }
+
+    @include sm {
+      @include fontsizeMixin(14, 14);
+    }
+  } @else if $size == "tabsr" {
+    @include fontsizeMixin(14, 14);
+
+    @include md {
+      @include fontsizeMixin(14, 14);
+    }
+
+    @include sm {
+      @include fontsizeMixin(12, 12);
+    }
+  } @else if $size == "tabsb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(14, 14);
+
+    @include md {
+      @include fontsizeMixin(14, 14);
+    }
+
+    @include sm {
+      @include fontsizeMixin(12, 12);
+    }
+  } @else if $size == "gnbr" {
+    font-family: $fontEN;
+
+    @include fontsizeMixin(14, 20);
+
+    @include md {
+      @include fontsizeMixin(16, 16);
+    }
+
+    @include sm {
+      @include fontsizeMixin(16, 16);
+    }
+  } @else if $size == "gnbb" {
+    font-family: $fontEN;
+    font-weight: 600;
+
+    @include fontsizeMixin(14, 20);
+
+    @include md {
+      @include fontsizeMixin(16, 16);
+    }
+
+    @include sm {
+      @include fontsizeMixin(16, 16);
+    }
+  }
+}
+
+@mixin fontFamilyHeading($size) {
+  @at-root [lang="en"] & {
+    font-family: $fontEN;
+  }
+
+  @if $size == "xl" {
+    font-weight: 600;
+
+    @include fontsizeMixin(28, 32);
+
+    @include md {
+      @include fontsizeMixin(28, 32);
+    }
+
+    @include sm {
+      @include fontsizeMixin(20, 28);
+    }
+  } @else if $size == "l" {
+    font-weight: 600;
+
+    @include fontsizeMixin(24, 24);
+
+    @include md {
+      @include fontsizeMixin(24, 24);
+    }
+
+    @include sm {
+      @include fontsizeMixin(20, 20);
+    }
+  } @else if $size == "mr" {
+    @include fontsizeMixin(20, 20);
+
+    @include md {
+      @include fontsizeMixin(20, 20);
+    }
+
+    @include sm {
+      @include fontsizeMixin(16, 16);
+    }
+  } @else if $size == "mb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(20, 20);
+
+    @include md {
+      @include fontsizeMixin(20, 20);
+    }
+
+    @include sm {
+      @include fontsizeMixin(16, 16);
+    }
+  } @else if $size == "s" {
+    font-weight: 600;
+
+    @include fontsizeMixin(16, 16);
+
+    @include md {
+      @include fontsizeMixin(18, 18);
+    }
+
+    @include sm {
+      @include fontsizeMixin(16, 16);
+    }
+  } @else if $size == "xs" {
+    font-weight: 600;
+
+    @include fontsizeMixin(14, 14);
+
+    @include md {
+      @include fontsizeMixin(16, 16);
+    }
+
+    @include sm {
+      @include fontsizeMixin(14, 14);
+    }
+  } @else if $size == "xxl" {
+    font-weight: 600;
+
+    @include fontsizeMixin(32, 40);
+
+    @include md {
+      @include fontsizeMixin(32, 40);
+    }
+
+    @include sm {
+      @include fontsizeMixin(28, 32);
+    }
+  }
+}
+
+@mixin fontFamilyBody($size) {
+  @if $size == "tb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(16, 20);
+
+    @include md {
+      @include fontsizeMixin(16, 20);
+    }
+
+    @include sm {
+      @include fontsizeMixin(14, 18);
+    }
+  } @else if $size == "xxlb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(24, 32);
+
+    @include md {
+      @include fontsizeMixin(22, 30);
+    }
+
+    @include sm {
+      @include fontsizeMixin(20, 28);
+    }
+  } @else if $size == "xlr" {
+    @include fontsizeMixin(20, 28);
+
+    @include md {
+      @include fontsizeMixin(22, 30);
+    }
+
+    @include sm {
+      @include fontsizeMixin(20, 28);
+    }
+  } @else if $size == "xlb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(20, 28);
+
+    @include md {
+      @include fontsizeMixin(22, 30);
+    }
+
+    @include sm {
+      @include fontsizeMixin(20, 28);
+    }
+  } @else if $size == "lr" {
+    @include fontsizeMixin(16, 24);
+
+    @include md {
+      @include fontsizeMixin(18, 26);
+    }
+
+    @include sm {
+      @include fontsizeMixin(16, 24);
+    }
+  } @else if $size == "lb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(16, 24);
+
+    @include md {
+      @include fontsizeMixin(18, 26);
+    }
+
+    @include sm {
+      @include fontsizeMixin(16, 24);
+    }
+  } @else if $size == "mr" {
+    @include fontsizeMixin(14, 22);
+
+    @include md {
+      @include fontsizeMixin(16, 24);
+    }
+
+    @include sm {
+      @include fontsizeMixin(14, 22);
+    }
+  } @else if $size == "mb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(14, 22);
+
+    @include md {
+      @include fontsizeMixin(16, 24);
+    }
+
+    @include sm {
+      @include fontsizeMixin(14, 22);
+    }
+  } @else if $size == "sr" {
+    @include fontsizeMixin(14, 22);
+
+    @include md {
+      @include fontsizeMixin(14, 22);
+    }
+
+    @include sm {
+      @include fontsizeMixin(14, 22);
+    }
+  } @else if $size == "sb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(14, 22);
+
+    @include md {
+      @include fontsizeMixin(14, 22);
+    }
+
+    @include sm {
+      @include fontsizeMixin(12, 20);
+    }
+  } @else if $size == "cl" {
+    @include fontsizeMixin(14, 14);
+
+    @include md {
+      @include fontsizeMixin(14, 14);
+    }
+
+    @include sm {
+      @include fontsizeMixin(12, 12);
+    }
+  } @else if $size == "cs" {
+    @include fontsizeMixin(12, 12);
+
+    @include md {
+      @include fontsizeMixin(12, 12);
+    }
+
+    @include sm {
+      @include fontsizeMixin(12, 12);
+    }
+  } @else if $size == "cxs" {
+    @include fontsizeMixin(10, 12);
+
+    @include md {
+      @include fontsizeMixin(10, 12);
+    }
+
+    @include sm {
+      @include fontsizeMixin(10, 12);
+    }
+  } @else if $size == "u" {
+    text-decoration: underline;
+
+    @include fontsizeMixin(12, 12);
+
+    @include md {
+      @include fontsizeMixin(12, 12);
+    }
+
+    @include sm {
+      @include fontsizeMixin(12, 12);
+    }
+  } @else if $size == "m" {
+    @include fontsizeMixin(14, 26);
+  } @else if $size == "cardxl" {
+    font-weight: 600;
+
+    @include fontsizeMixin(20, 28);
+
+    @include md {
+      @include fontsizeMixin(20, 28);
+    }
+
+    @include sm {
+      @include fontsizeMixin(14, 22);
+    }
+  } @else if $size == "cardmr" {
+    @include fontsizeMixin(16, 24);
+
+    @include md {
+      @include fontsizeMixin(16, 24);
+    }
+
+    @include sm {
+      @include fontsizeMixin(14, 22);
+    }
+  } @else if $size == "cardmb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(16, 24);
+
+    @include md {
+      @include fontsizeMixin(16, 24);
+    }
+
+    @include sm {
+      @include fontsizeMixin(16, 24);
+    }
+  } @else if $size == "cardsr" {
+    @include fontsizeMixin(14, 22);
+
+    @include md {
+      @include fontsizeMixin(14, 22);
+    }
+
+    @include sm {
+      @include fontsizeMixin(12, 20);
+    }
+  }
+}
+
+@mixin fontFamilyData($size) {
+  font-family: $fontEN;
+
+  @if $size == "xl" {
+    font-weight: 600;
+
+    @include fontsizeMixin(52, 52);
+
+    @include md {
+      @include fontsizeMixin(52, 52);
+    }
+
+    @include sm {
+      @include fontsizeMixin(52, 52);
+    }
+  } @else if $size == "lr" {
+    @include fontsizeMixin(40, 40);
+
+    @include md {
+      @include fontsizeMixin(40, 40);
+    }
+
+    @include sm {
+      @include fontsizeMixin(40, 40);
+    }
+  } @else if $size == "lb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(40, 40);
+
+    @include md {
+      @include fontsizeMixin(40, 40);
+    }
+
+    @include sm {
+      @include fontsizeMixin(40, 40);
+    }
+  } @else if $size == "m1r" {
+    @include fontsizeMixin(32, 32);
+
+    @include md {
+      @include fontsizeMixin(32, 32);
+    }
+
+    @include sm {
+      @include fontsizeMixin(28, 28);
+    }
+  } @else if $size == "m1b" {
+    font-weight: 600;
+
+    @include fontsizeMixin(32, 32);
+
+    @include md {
+      @include fontsizeMixin(32, 32);
+    }
+
+    @include sm {
+      @include fontsizeMixin(28, 28);
+    }
+  } @else if $size == "m2" {
+    font-weight: 600;
+
+    @include fontsizeMixin(24, 24);
+
+    @include md {
+      @include fontsizeMixin(28, 28);
+    }
+
+    @include sm {
+      @include fontsizeMixin(24, 24);
+    }
+  } @else if $size == "m3" {
+    font-weight: 600;
+
+    @include fontsizeMixin(20, 20);
+
+    @include md {
+      @include fontsizeMixin(22, 22);
+    }
+
+    @include sm {
+      @include fontsizeMixin(20, 20);
+    }
+  } @else if $size == "m4r" {
+    font-weight: 400;
+
+    @include fontsizeMixin(16, 16);
+
+    @include md {
+      @include fontsizeMixin(20, 20);
+    }
+
+    @include sm {
+      @include fontsizeMixin(12, 12);
+    }
+  } @else if $size == "m4b" {
+    font-weight: 600;
+
+    @include fontsizeMixin(20, 20);
+
+    @include md {
+      @include fontsizeMixin(22, 22);
+    }
+
+    @include sm {
+      @include fontsizeMixin(12, 12);
+    }
+  } @else if $size == "sr" {
+    @include fontsizeMixin(16, 16);
+
+    @include md {
+      @include fontsizeMixin(20, 20);
+    }
+
+    @include sm {
+      @include fontsizeMixin(16, 16);
+    }
+  } @else if $size == "sb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(16, 16);
+
+    @include md {
+      @include fontsizeMixin(20, 20);
+    }
+
+    @include sm {
+      @include fontsizeMixin(16, 16);
+    }
+  } @else if $size == "cl" {
+    @include fontsizeMixin(14, 14);
+
+    @include md {
+      @include fontsizeMixin(14, 14);
+    }
+
+    @include sm {
+      @include fontsizeMixin(14, 14);
+    }
+  } @else if $size == "cs" {
+    @include fontsizeMixin(12, 12);
+
+    @include md {
+      @include fontsizeMixin(12, 12);
+    }
+
+    @include sm {
+      @include fontsizeMixin(12, 12);
+    }
+  } @else if $size == "csb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(12, 12);
+
+    @include md {
+      @include fontsizeMixin(12, 12);
+    }
+
+    @include sm {
+      @include fontsizeMixin(12, 12);
+    }
+  } @else if $size == "clb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(14, 14);
+
+    @include md {
+      @include fontsizeMixin(14, 14);
+    }
+
+    @include sm {
+      @include fontsizeMixin(14, 14);
+    }
+  } @else if $size == "card" {
+    font-weight: 600;
+
+    @include fontsizeMixin(32, 32);
+
+    @include md {
+      @include fontsizeMixin(28, 28);
+    }
+
+    @include sm {
+      @include fontsizeMixin(24, 24);
+    }
+  } @else if $size == "cxs" {
+    @include fontsizeMixin(12, 12);
+
+    @include md {
+      @include fontsizeMixin(12, 12);
+    }
+
+    @include sm {
+      @include fontsizeMixin(10, 10);
+    }
+  }
+}
+
+@mixin fontFamilyTable($size) {
+  @if $size == "tr" {
+    @include fontsizeMixin(12, 14);
+
+    @include md {
+      @include fontsizeMixin(12, 14);
+    }
+
+    @include sm {
+      @include fontsizeMixin(12, 14);
+    }
+  } @else if $size == "tb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(12, 14);
+
+    @include md {
+      @include fontsizeMixin(12, 14);
+    }
+
+    @include sm {
+      @include fontsizeMixin(12, 14);
+    }
+  } @else if $size == "blr" {
+    @include fontsizeMixin(14, 20);
+
+    @include md {
+      @include fontsizeMixin(14, 20);
+    }
+
+    @include sm {
+      @include fontsizeMixin(14, 20);
+    }
+  } @else if $size == "blb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(14, 20);
+
+    @include md {
+      @include fontsizeMixin(14, 20);
+    }
+
+    @include sm {
+      @include fontsizeMixin(14, 20);
+    }
+  } @else if $size == "br" {
+    @include fontsizeMixin(12, 18);
+
+    @include md {
+      @include fontsizeMixin(12, 18);
+    }
+
+    @include sm {
+      @include fontsizeMixin(12, 18);
+    }
+  } @else if $size == "bb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(12, 18);
+
+    @include md {
+      @include fontsizeMixin(12, 18);
+    }
+
+    @include sm {
+      @include fontsizeMixin(12, 18);
+    }
+  }
+}
+
+@mixin fontFamilyButton($size) {
+  @at-root [lang="en"] & {
+    font-family: $fontEN;
+  }
+
+  @if $size == "lr" {
+    @include fontsizeMixin(16, 16);
+
+    @include md {
+      @include fontsizeMixin(18, 18);
+    }
+
+    @include sm {
+      @include fontsizeMixin(16, 16);
+    }
+  } @else if $size == "lb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(16, 16);
+
+    @include md {
+      @include fontsizeMixin(20, 20);
+    }
+
+    @include sm {
+      @include fontsizeMixin(16, 16);
+    }
+  } @else if $size == "mr" {
+    @include fontsizeMixin(14, 14);
+
+    @include md {
+      @include fontsizeMixin(16, 16);
+    }
+
+    @include sm {
+      @include fontsizeMixin(14, 14);
+    }
+  } @else if $size == "mb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(14, 14);
+
+    @include md {
+      @include fontsizeMixin(16, 16);
+    }
+
+    @include sm {
+      @include fontsizeMixin(14, 14);
+    }
+  } @else if $size == "sr" {
+    @include fontsizeMixin(12, 12);
+
+    @include md {
+      @include fontsizeMixin(12, 12);
+    }
+
+    @include sm {
+      @include fontsizeMixin(12, 12);
+    }
+  } @else if $size == "sb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(12, 12);
+
+    @include md {
+      @include fontsizeMixin(12, 12);
+    }
+
+    @include sm {
+      @include fontsizeMixin(12, 12);
+    }
+  }
+}
+
+@mixin fontFamilyChip($size) {
+  @at-root [lang="en"] & {
+    font-family: $fontEN;
+  }
+
+  @if $size == "lr" {
+    @include fontsizeMixin(16, 16);
+
+    @include md {
+      @include fontsizeMixin(16, 16);
+    }
+
+    @include sm {
+      @include fontsizeMixin(14, 14);
+    }
+  } @else if $size == "lb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(16, 16);
+
+    @include md {
+      @include fontsizeMixin(16, 16);
+    }
+
+    @include sm {
+      @include fontsizeMixin(14, 14);
+    }
+  } @else if $size == "mr" {
+    @include fontsizeMixin(12, 12);
+
+    @include md {
+      @include fontsizeMixin(14, 14);
+    }
+
+    @include sm {
+      @include fontsizeMixin(12, 12);
+    }
+  } @else if $size == "mb" {
+    font-weight: 600;
+
+    @include fontsizeMixin(12, 12);
+
+    @include md {
+      @include fontsizeMixin(14, 14);
+    }
+
+    @include sm {
+      @include fontsizeMixin(12, 12);
+    }
+  } @else if $size == "s" {
+    @include fontsizeMixin(12, 12);
+
+    @include md {
+      @include fontsizeMixin(12, 12);
+    }
+
+    @include sm {
+      @include fontsizeMixin(10, 10);
+    }
+  } @else if $size == "m1b" {
+    font-weight: 600;
+
+    @include fontsizeMixin(14, 18);
+  }
+}
+
+@mixin fontFamilyInput($size) {
+  @at-root [lang="en"] & {
+    font-family: $fontEN;
+  }
+
+  @if $size == "m" {
+    @include fontsizeMixin(16, 20);
+
+    @include md {
+      @include fontsizeMixin(16, 20);
+    }
+
+    @include sm {
+      @include fontsizeMixin(16, 20);
+    }
+  } @else if $size == "s" {
+    @include fontsizeMixin(14, 20);
+
+    @include md {
+      @include fontsizeMixin(14, 20);
+    }
+
+    @include sm {
+      @include fontsizeMixin(14, 20);
+    }
+  } @else if $size == "xs" {
+    @include fontsizeMixin(12, 16);
+
+    @include md {
+      @include fontsizeMixin(12, 16);
+    }
+
+    @include sm {
+      @include fontsizeMixin(10, 12);
+    }
+  }
+}
+
+@mixin fontFamilyPhrase($size) {
+  @at-root [lang="en"] & {
+    font-family: $fontSerifEN;
+  }
+
+  @if $size == "l" {
+    font-weight: 700;
+
+    @include fontsizeMixin(36, 48);
+
+    @include md {
+      @include fontsizeMixin(36, 48);
+    }
+
+    @include sm {
+      @include fontsizeMixin(22, 28);
+    }
+  } @else if $size == "mr" {
+    @include fontsizeMixin(30, 36);
+
+    @include md {
+      @include fontsizeMixin(32, 40);
+    }
+
+    @include sm {
+      @include fontsizeMixin(20, 24);
+    }
+  } @else if $size == "mb" {
+    font-weight: 700;
+
+    @include fontsizeMixin(30, 36);
+
+    @include md {
+      @include fontsizeMixin(32, 40);
+    }
+
+    @include sm {
+      @include fontsizeMixin(20, 24);
+    }
+  } @else if $size == "sb" {
+    font-weight: 700;
+
+    @include fontsizeMixin(24, 28);
+
+    @include md {
+      @include fontsizeMixin(26, 32);
+    }
+
+    @include sm {
+      @include fontsizeMixin(22, 26);
+    }
+  } @else if $size == "herol" {
+    font-weight: 700;
+
+    @include fontsizeMixin(54, 60);
+
+    @include md {
+      @include fontsizeMixin(54, 60);
+    }
+
+    @include sm {
+      @include fontsizeMixin(30, 32);
+    }
+  } @else if $size == "xsb" {
+    font-weight: 700;
+
+    @include fontsizeMixin(18, 28);
+
+    @include md {
+      @include fontsizeMixin(22, 32);
+    }
+
+    @include sm {
+      @include fontsizeMixin(18, 26);
+    }
+  }
+}

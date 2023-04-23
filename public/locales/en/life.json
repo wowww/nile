@@ -1,0 +1,1569 @@
+{
+  "home": {
+    "snkrz": {
+      "banner": {
+        "desc": "Run with my NFT in the metaverse. \nSNKRZ is a blockchain-based social activity reward platform. Wear SNKRZ unique to you and receive rewards whenever you walk or run."
+      }
+    },
+    "nft": {
+      "button": "Go to Project",
+      "item": {
+        "0": {
+          "desc": "London Underground Station 264 Genesis (LUS264) is a collection of NFTs created with intricate pixels. The English auction goes live with different starting prices according to the number of passengers at the station. People NFT will be airdropped to the LUS264 holders.",
+          "text1": "Total Transaction Amount",
+          "text2": "Total Transactions",
+          "text3": "Floor Price"
+        },
+        "1": {
+          "desc": "Tangled Timepieces is a NEITH NFT in NILE which allows you to claim WEMIX after a certain period of time upon purchasing the NFT. You can breed to obtain a High End Timepiece by using the upcoming Breeding Feature. The higher the rank of your Timepiece, the more WEMIX you can claim.",
+          "text1": "TIPO Market Cap",
+          "text2": "TIPO Price",
+          "text3": "App Downloads"
+        },
+        "2": {
+          "desc": "Sights of NILE is a project where illustrations inspired by Story3.0 are created as NFT. Discover more about the perspectives of experts and Creators from  NILE and Web3. Make a bid in the English auction now.",
+          "text1": "Total Transaction Amount",
+          "text2": "Total Transactions",
+          "text3": "Floor Price"
+        },
+        "3": {
+          "desc": "The newly released SNKR2 implements a stable tokenomics ecosystem through a metaverse designed around the interaction of Workout, LAND and SNKR2 NFT. Get the SNKR2 Starter Pack NFT, only available on NILE, for about 50% off and experience the completely renewed SNKR2 on the WEMIX chain!",
+          "text1": "Total Transaction Amount",
+          "text2": "Total Transactions",
+          "text3": "Floor Price",
+          "text4": "App Downloads",
+          "unfoldingSoon": "Details about SNKRZ will be available from November 17th."
+        },
+        "4": {
+          "desc": "The first NEITH NFT project of NILE. In the City of NILE, you can choose from 10 cities of 10 gods who protect NILE. Check out the 888 distinct NFTs that reflect each city!"
+        },
+        "5": {
+          "desc": "Kari is an expansion of the virtual human multiverse world of the Ari project, and is the second project from the artist Doonbo. Become a Holder of Kari, the Korean dark-fantasy female warrior, and join in the various activities in the PAPYRUS community."
+        },
+        "6": {
+          "desc": "The KLPGA Tour and WEMIX are coming together in 2023! Follow the dazzling performances of the players towards the WEMIX Championship via NEITH NFTs from the first to the final round of the KLPGA 2023. Players from 1st to 60th place will be awarded NFTs with prizes, and one more NFT, identical to the one given to the player, will be minted and soon available for sale."
+        },
+        "7": {
+          "desc": "BAGC is a golf NFT project launched by ALTAVA Group, utilizing over 110 BAYC in collaboration with Anymoca Brands, The Sandbox, and Elite Apes. BAGG on NILE is an NEITH NFT, which allows you to Claim the covenanted amount of WEMIX at any time once the Covenant Date arrives."
+        }
+      },
+      "text": "Stay tuned for the next project that will change your Life."
+    },
+    "apply": {
+      "desc": "We welcome project enquiries to change Life with NILE."
+    },
+    "banner": {
+      "desc": "Meet TIPO, the SocialFi token in NILE Tokens! \nA variety of NILE ecosystem tokens will be released shortly."
+    }
+  },
+  "lus": {
+    "main": {
+      "title": "LONDON\nUNDERGROUND\nSTATION 264 GENESIS"
+    },
+    "btn": "Preview NFTs",
+    "btn1": "NFT Holder Benefits and Auction Guide",
+    "overview": {
+      "desc": "London Underground Station(LUS) 264 Genesis is a pixel art project that shows the symbolic history of the London subway.",
+      "text1": "Widely known as the London Tube, the London Underground is a means of transportation for many Londoners and tourists, a tunnel that connects to nostalgic memories.",
+      "text2": "LUS 264 showcases stations of various sizes with different heights and widths in a square of 320px, which started from the King’s Cross station in 2013 to Paddington station in 2017. As Zeeha and Locho’s genesis NFTs, 2,112 Generation NFTs are reconstructed into eight themes.",
+      "text3": "The English auction for LUS 264 will go live with different starting prices according to the number of passengers at the station. People NFT will be airdropped to the LUS 264 holders."
+    },
+    "generation": {
+      "label": "Upcoming",
+      "title": "LUS Generation",
+      "desc": "LUS Generation collection is extended NFTs of LUS Genesis, redesigned with eight distinctive themes; nighttime, raining, snowing, and more.",
+      "subTitle": "LUS264 Genesis Benefit {{num}}",
+      "subDesc": "LUS 264 Genesis holders can earn an additional 1% reward of the transaction when each Generation NFT is sold.",
+      "desc2": "* This rate of certain portion will be notified."
+    },
+    "people": {
+      "label": "Upcoming",
+      "title": "People of LUS",
+      "desc": "People of LUS is a collection of 9,999 locals who live in the pixel metaverse. Experience the one and only universe of pixel People NFTs.",
+      "subTitle": "LUS264 Genesis Benefit {{num}}",
+      "subDesc": "People NFT (PFP) will be airdropped for free to LUS264 Genesis holders.",
+      "notice": "*PFPs will be given away randomly."
+    },
+    "auctionGuide": {
+      "title": "Auction Guide",
+      "item": {
+        "0": {
+          "title": "Check Point 01",
+          "desc": "264 NFTs of LUS264 Genesis will be sold through an English auction.",
+          "button": "Read more about English Auction"
+        },
+        "1": {
+          "title": "Check Point 02",
+          "desc": "A three-hour countdown begins when the first bidder makes an offer, and the highest bidder wins the auction.",
+          "caption": "* NFTs without any price offers can be bidded anytime. "
+        },
+        "2": {
+          "title": "Check Point 03",
+          "desc": "The starting price of the auction is divided into 5 parts, according to the number of annual passengers* at each station.",
+          "list": {
+            "0": {
+              "name": "Blue",
+              "value": "(186 Stations)",
+              "sub": {
+                "desc1": "<0>{{strong1}}</0> less than 10 million people",
+                "desc2": "<0>{{strong2}}</0> 750 WEMIX$",
+                "strong1": "Number of\nannual passengers",
+                "strong2": "Starting from"
+              }
+            },
+            "1": {
+              "name": "Green",
+              "value": "(44 Stations)",
+              "sub": {
+                "desc1": "<0>{{strong1}}</0> 10M ~ 20M",
+                "desc2": "<0>{{strong2}}</0> 1,100 WEMIX$",
+                "strong1": "Number of\nannual passengers",
+                "strong2": "Starting from"
+              }
+            },
+            "2": {
+              "name": "Yellow",
+              "value": "(21 Stations)",
+              "sub": {
+                "desc1": "<0>{{strong1}}</0> 20M ~ 40M",
+                "desc2": "<0>{{strong2}}</0> 1,400 WEMIX$",
+                "strong1": "Number of\nannual passengers",
+                "strong2": "Starting from"
+              }
+            },
+            "3": {
+              "name": "Orange",
+              "value": "(9 Stations)",
+              "sub": {
+                "desc1": "<0>{{strong1}}</0> 40M ~ 70M",
+                "desc2": "<0>{{strong2}}</0> 1,800 WEMIX$",
+                "strong1": "Number of\nannual passengers",
+                "strong2": "Starting from"
+              }
+            },
+            "4": {
+              "name": "Red",
+              "value": "(4 Stations)",
+              "sub": {
+                "desc1": "<0>{{strong1}}</0> 70M ~ 90M",
+                "desc2": "<0>{{strong2}}</0> 2,200 WEMIX$",
+                "strong1": "Number of\nannual passengers",
+                "strong2": "Starting from"
+              }
+            }
+          },
+          "caption": "*According to the number of total passengers in 2019",
+          "comment": "*According to the number of total passengers in 2019"
+        }
+      }
+    },
+    "artist": {
+      "desc1": "Zeeha is an illustrator, and Locho is a typographer who also creates pixel artwork. The artist duo started the design team called PICDOT, which began in London in 2009.",
+      "desc2": "Based in London and Seoul, the two creators have made various pixel artworks such as \"Pixel World 2009,\" \"Pixel World 2019,\" \"LUS 264,\" \"PEOPLE,\" \"VIKLS,\" and \" Ash19HX.\" They are currently working on creating a pixel metaverse that connects all of their projects."
+    },
+    "detail": {
+      "desc": "Check out the collection of London Underground Stations(LUS) 264 Genesis that describes 264 London stations in Pixel art."
+    }
+  },
+  "tangled": {
+    "main": {
+      "text": "Tangled",
+      "title": "The Beginning of Women Friendly Web3 Live Chat life",
+      "btnOfficial": "Tangled Official Website",
+      "comingsoon": "Marketplace will be begin soon"
+    },
+    "nft": {
+      "desc": "The Tangled are NFT for the Tangled community, with access permitted only for the extraordinary. Grab the chance to be a Luxury Holder before anyone else and try your luck at combining to get a higher grade. Only the chosen 1% will succeed in combining and having a limited-edition, a top tier NFT.",
+      "luxury": {
+        "title": "Luxury",
+        "text1": "Consisting 74% of all NFTs.",
+        "text2": "Be a Tangled Holder right now."
+      },
+      "highEnd": {
+        "title": "High-end",
+        "text1": "A higher grade that can only be breeding, \nthis grade is limited to 25% of all NFTs.",
+        "text2": "A successful breeding of 2 Luxury Timepieces is necessary to obtain this."
+      },
+      "zenith": {
+        "title": "Zenith",
+        "text1": "A top tier NFT,\nonly permitted for the 1%.",
+        "text2": "Only the best of the best who have succeeded in combining a high-end timepiece can be Holders."
+      },
+      "timepieces": {
+        "title": "Tangled Timepieces",
+        "desc": "Tangled Timepieces are watch NFTs that store Time Points from DApps. \nThe initial sale on NILE will only include Luxury class.",
+        "items": {
+          "0": {
+            "key": "Sale Class and Quantity per Round",
+            "val": "Luxury 50 Timepieces"
+          },
+          "1": {
+            "key": "First Sale Price and Method",
+            "val": "200 WEMIX$ / Fixed Price"
+          },
+          "2": {
+            "key": "Sale Rounds",
+            "val": "Total of 10 Rounds"
+          }
+        }
+      },
+      "timepiecesClass": {
+        "title": "Tangled Timepieces Class",
+        "desc": "Higher class results in more saved Time Points and shorter Cooldown period for breeding.\nOnly NEITH NFTs that hold WEMIX are eligible for breeding.",
+        "cards": {
+          "luxury": {
+            "title": "Luxury",
+            "desc": "A basic Timepiece NFT. You can breed two or more of them to create a high-end Timepiece."
+          },
+          "highEnd": {
+            "title": "High-end",
+            "desc": "A higher-class NFT that can be obtained upon successfully breeding Luxury Timepieces."
+          },
+          "zenith": {
+            "title": "Zenith",
+            "desc": "A top-tier NFT that can only be owned by 1% of those who have successfully bred High-End Timepieces."
+          }
+        },
+        "cardRatio": "{{number}}% of all NFTs",
+        "cardProbability": "Breeding Success Rate",
+        "classInfo": {
+          "0": "Breeding Feature will be available later",
+          "1": "TIPO and gas fees must be paid for breeding attempts regardless of the result.",
+          "2": "If the breeding attempt fails, you can try again after a certain Cooldown period has passed."
+        }
+      },
+      "rounds": {
+        "status": {
+          "on": "On Sale",
+          "off": "Upcoming",
+          "soldout": "Sold Out"
+        },
+        "round": "Round {{number}}",
+        "showAll": "View All Timepieces for Round {{number}}"
+      }
+    },
+    "overview": {
+      "womenFriendly": {
+        "desc": "Tangled provides a new live chat experience where women can enjoy talking safely and pleasantly with perfect gender filtering based on AI.",
+        "list": {
+          "0": {
+            "title": "Only women can decide who to talk to",
+            "desc": "Enjoy safe conversation with verified users and get a good experience."
+          },
+          "1": {
+            "title": "Male users must pass profile screening.",
+            "desc": "Male users have to get more than 55% of positive review of their profile from the female users to use live chat."
+          },
+          "2": {
+            "title": "No fake male profiles.",
+            "desc": "Male users must use their real photo on their profile. Find new friends with no anxiety about catfishing."
+          },
+          "3": {
+            "title": "AI Gender Detection",
+            "desc": "AI detects the gender accurately and quickly removes the users who have selected false gender by malicious reasons."
+          }
+        }
+      },
+      "understanding": {
+        "title": "About Tangled",
+        "items": {
+          "dapp": {
+            "def": "DApp",
+            "name": "Web3 Live Community",
+            "text": "Chat with new friends through live video chats. Get the in-app token \"Time Points\" as rewards for talking on the service, and enjoy the various features of Tangled with your new friends."
+          },
+          "nft": {
+            "def": "NFT",
+            "name": "Tangled",
+            "text": "Save the rewarded Time Points from your in-app activities to your watch.\nUsers can buy Timepieces NFTs from NFT marketplaces like NILE, or use the Basic Watch in the app."
+          },
+          "inapp": {
+            "def": "In-App Token(Non-crypto)",
+            "name": "TIME point",
+            "text": "This is Tangled's in-app non-crypto token rewarded for in-app activities.\nYou can get them from various in-app activities like live chats, profile votes, feedback, and more."
+          },
+          "crypto": {
+            "def": "Cryptocurrency Token",
+            "name": "TIPO",
+            "text": "This is Tangle's crypto token. This can be swapped to Time Points, the in-app token of Tangled, as well as to other tokens through decentralizes exchanges."
+          }
+        }
+      },
+      "serviceStructure": {
+        "title": "Tangled service structure",
+        "timePoint": "Time Points will be saved to your watch.\nThe space for saving Time Points will be different for each class.",
+        "earn": "Earn",
+        "consumption": "Spend",
+        "card": {
+          "desc1": "Live chats with randomly matched people",
+          "desc2": "Vote with stars on others' profiles",
+          "desc3": "Respond to others' feedback",
+          "desc4": "You can exchange the Time Points saved in your watch with TIPO",
+          "desc5": "You can exchanged TIPO with WEMIX$",
+          "desc6": "Use Time Points to watch the video until the end",
+          "desc7": "Give Time Points to your friends as gifts",
+          "desc8": "Make paid calls to the friends you want to call"
+        }
+      },
+      "ability": {
+        "title": "Explore Tangled features",
+        "desc": "Get ready to discover a variety of upcoming features!",
+        "features": {
+          "game": {
+            "status": "Released",
+            "name": "Rock Paper Scissors",
+            "text": "In live chats, you can ask the other person to play Rock Paper Scissors. Don't miss this chance to make new friends in a fun and quick way!",
+            "info": ""
+          },
+          "gift": {
+            "status": "Unfolding Soon",
+            "name": "GIFT",
+            "text": "In live chats, you can gift others with Time Points, and also read secret chat messages that the other person has sent.",
+            "info": "To be revealed Gift in 2023 3Q"
+          },
+          "show": {
+            "status": "Unfolding Soon",
+            "name": "Tangled Show",
+            "text": "Check out the many categories of videos uploaded on Tangled. Collect Time Points to watch the videos until the end. Enjoy watching!",
+            "info": "To be revealed Tangled Show in 2023 4Q"
+          },
+          "live": {
+            "status": "Unfolding Soon",
+            "name": "Tangled Live",
+            "text": "Join in the live streams from many creators in Tangled. Make your voice heard with chat messages and gifts.",
+            "info": "To be revealed Tangled Live in 2023 3Q"
+          }
+        }
+      }
+    },
+    "neith": {
+      "covenant": {
+        "title": "The NEITH Covenant on Tangled",
+        "desc": "After buying Timepieces in the Marketplace, you can Claim the covenanted amount of WEMIX at any time once the Covenant Date arrives.",
+        "imgAlt": "High-End33, Zenith 18, LUXURY 19"
+      },
+      "classCovenant": {
+        "title": "NEITH Covenant for each Class",
+        "desc": "The amount of covenanted WEMIX will be different for each Timepiece class. With higher class Timepieces, you will be able to Claim more WEMIX once the Covenant Date arrives. Higher class Timepieces can be obtained by successful combining lower class Timepieces, as well as bought from secondary markets.",
+        "luxury": {
+          "type": "Basic Class",
+          "name": "Luxury"
+        },
+        "highend": {
+          "type": "Higher Class",
+          "name": "High-End"
+        },
+        "zenith": {
+          "type": "Top-tier Class",
+          "name": "Zenith"
+        }
+      },
+      "date": {
+        "date": "2024-03-22"
+      },
+      "use": {
+        "title": "Use cases of Tangled",
+        "covenant": {
+          "title": "NEITH Covenant",
+          "description": "You can exchange NEITH NFTs for the covenanted amount of WEMIX at any time after the Covenant Date. NEITH NFTs is the world's first NFT that conveys value via an underlying asset."
+        },
+        "protocol": {
+          "title": "Protocol-based NFTFi",
+          "description": "Tangled is a collection of NEITH NFTs that bear redeemable WEMIX. Users can expand the value of these NFTs by using them as collateral for DeFi services such as Loans, Swaps, Staking, and more. Experience the new world of of NFTFi!"
+        },
+        "community": {
+          "title": "Community",
+          "description": "You can communicate with other NEITH NFT holders to increase the value of the NFTs. Meet up with NEITH NFT Holders in PAPYRUS!"
+        },
+        "btnStation": "Go to NEITH Station",
+        "btnPapyrus": "Go to PAPYRUS"
+      }
+    },
+    "stripBanner": {
+      "desc": "<0>[NEW]</0> <1>TIPO has been listed in Tokens!</1>"
+    }
+  },
+  "nile": {
+    "nft": {
+      "button": "Related articles",
+      "alarm": "Your notification request has been registered.",
+      "piece": {
+        "title": "SON #1 New World",
+        "info": "2160x2704 MP4 with sound (00:58)",
+        "desc": "Like how the Nile river floodings flourished the Egyptian civilization, NILE will be the origin of the evolution of life in the third-generation internet. Inspired by the values of NILE, New World visualizes the new civilization of Web3. The artwork embraces the joy, birth of unique culture, and emotions that would greet the new era."
+      },
+      "creator": {
+        "name": "Rokkan Kim",
+        "desc": "Rokkan Kim (Jong Hyuk Kim) is a media artist who has been creating artworks that reinterpret the social scenes that we live in and American culture from the 1960s to the 70s.\nKim came across New Hollywood films when he was young and started to explore social phenomena like politics, ideology, design, fashion, and architecture from the movies. This marks the creation of the world of JFK-JHK—the initials of John F. Kennedy and Kim. Kim’s work covers numerous topics and industries that have inspired him since childhood. The “Space Oddity” series present spatial experience and ambivalent lives of astronauts, who were Kim’s childhood idols. The “Sea the Wall” collection alarms viewers about the earth’s climate change caused by environmental destruction. “May Be In My Past Life” looks into the supposed perspective of John F. Kennedy on the present, society, and politics. “The Occurrence of Thought” is the collection inspired by the design philosophy and architecture from the 1960s to now, with the stories from Kim’s grandfather, a veteran of the Korean War. “Fashion Component” is a graphic work that reassembles magazines and photos that inspired Kim when he studied fashion design at school."
+      },
+      "career": {
+        "title": "Works",
+        "list": [
+          "THEMUT - Creative Director",
+          "MSUC -  Producer",
+          "Documentary film “They Kill My Mother”– Producer, Art Director, Actor",
+          "Glitchers – Creative Director, Artist"
+        ]
+      },
+      "exhibition": {
+        "title": "Exhibitions",
+        "item": {
+          "0": {
+            "title": "Private Exhibitions",
+            "list": [
+              {
+                "year": "2022",
+                "text": "Banpo Art Academy (Scheduled) - Seoul, Korea"
+              },
+              {
+                "year": "2022",
+                "text": "“Space Oddity” at KwanHoon Gallery - Seoul, Korea"
+              },
+              {
+                "year": "2022",
+                "text": "“Space Oddity” at Seoul Gallery of Seoul Shinmun - Seoul, Korea"
+              }
+            ]
+          },
+          "1": {
+            "title": "Group Exhibitions",
+            "list": [
+              {
+                "year": "2022",
+                "text": "“BWB 2022” at BEXCO - Busan, Korea"
+              },
+              {
+                "year": "2022",
+                "text": "“Earth Mood” at Gallery Earth - Seoul, Korea"
+              },
+              {
+                "year": "2022",
+                "text": "“GLITCHERS ART INVASION VOL.1” at Art Space Blue Screen - Seoul, Korea"
+              },
+              {
+                "year": "2020",
+                "text": "“ERROR : 404 NOT FOUND” at Art Space Blue Screen - Seoul, Korea"
+              },
+              {
+                "year": "2020",
+                "text": "“They Kill My Mother” at Leesoo Gallery - Seoul, Korea"
+              },
+              {
+                "year": "2018",
+                "text": "“Hello New York” at Able Fine Art NY Gallery - New York, USA"
+              },
+              {
+                "year": "2017",
+                "text": "ASYAAF (Asian Students and Young Artists Art Festival) at Dongdaemun Design Plaza - Seoul, Korea"
+              }
+            ]
+          }
+        }
+      },
+      "whoNext": "Stay tuned for the next NFTs on \n Sights of NILE.",
+      "2": {
+        "piece": {
+          "title": "SON #2 Invitation",
+          "info": "3753x2676 Image",
+          "desc": "Only rampant speculation surrounds how Web3, the buzzword media has become infatuated with, will shape our lives. But times have changed endlessly and we are only in the process of that change. The essence of everything is eternal, so let’s put our fears aside and welcome Web3 with open arms.",
+          "desc2": "Docent : \n Web3 is a new environment that triggers the imagination of creators. The creator herself is looking forward to the era of Web3 and hopes to create a world in which everything is possible, but she is also afraid to fully embrace the dynamics of the new change.",
+          "desc3": "Through NILE, the creator aims to portray the experience of a new world on Web3 that goes beyond her limitations. \"Invitation\" is based on surrealistic ideas and is also a self-portrait that faces and transcends the essence."
+        },
+        "creator": {
+          "name": "Young (Seo So-young)",
+          "desc": "Young (Seo So-young) is a graphic artist specializing in graphic-based artwork, painting, and branding who will present her first NFT art on NILE.\nIn pursuit of a unique atmosphere created by the fusion of spaces and elements that differ from each other, So-young is currently working on a series of Caterpillar paintings inspired by the confusing and abstract expression of the conceptual elements in the Paprika anime.\nThe creator transcends the limits of the realm through collaborations with the identity and symbolism of artists/brands and various digital artworks."
+        },
+        "career": {
+          "title": "Career history",
+          "list": ["Atispaus – Graphics Creator", "Studio 326Art – Creative Director, Artist"]
+        },
+        "exhibition": {
+          "title": "Exhibitions",
+          "item": {
+            "list": [
+              {
+                "year": "2022",
+                "text": "“Year of the Tiger” IFLAND Metaverse, Korea"
+              },
+              {
+                "year": "2020",
+                "text": "“Youth Page” Seoul Arts Center, Seoul, Korea"
+              },
+              {
+                "year": "2017",
+                "text": "“Seoul Illustration Fair” Coex, Seoul, Korea"
+              }
+            ]
+          }
+        },
+        "collaboration": {
+          "title": "Artist Collaboration",
+          "item": {
+            "list": [
+              "Seori [?depacse ohw]",
+              "Seori [Long night (feat.Giriboy)]",
+              "KIXO [My first love song (Feat. BIG Naughty)]",
+              "EZUZ [Twerk it]",
+              "Nilo [Unnamed Emotion]",
+              "CINNA [Like a rain (feat.Mad Clown,Kim Seungmin)]",
+              "ZINGO [Searching for green]",
+              "AVOKID [Color]",
+              "Yoon sister [I miss you more today]"
+            ]
+          }
+        }
+      },
+      "3": {
+        "piece": {
+          "title": "SON #3 Utopia",
+          "info": "3840 X 2160 MP4",
+          "desc": "Unlike traditional organizations, the Decentralized Autonomous Organization(DAO) is an entity with no central authority. There have been numerous historical events, such as the start of cryptography in the 1970s and the Cypherphunk movement in the 1990s, that have led to the birth of crypto and blockchain. This phenomenon began with the intention to protect privacy, rejecting the act of the government violating public rights and implementing restrictive regulations.",
+          "desc1": "A world in which individuals can trust each other with no central leadership, a system in which individuals work towards a common goal in a trustless environment; this is the utopian world we aim for through DAOs.",
+          "desc2": "There are many obstacles to overcome, such as incomplete structure and unification of regulations, but history has evolved to this day through the process of different events, conflicts, and difficulties. In order to reach the creation of this ideal organization we dream of, we must gradually solve the challenges and difficulties we face.",
+          "desc3": "No one can predict how social dynamics will work, or how it will evolve; however, we have experienced uncertainty throughout history and one must create, rather than predict, the future. No one can anticipate the exact form DAOs will take in our society, and the DAO we will eventually face in the near fear future is still a sweet utopian dream."
+        },
+        "creator": {
+          "name": "NAKTA",
+          "desc": "Graphic artist NAKTA conveys imaginary worlds in his art through digital collage techniques. Starting off with brand collaborations, he has designed album artworks, book covers, carried out artworks with media and also holds continuous exhibitions to portray his worldview and message.\nThrough his dreamy and fantasy artwork, NAKTA expands the scope of expression with a touch of imagination to the real world; portraying his desire for us to escape the dullness of a repetitive life where colors have been lost in such a busy modern society. The artist hopes that through the creation of new order and rules by dismantling and re-arranging the forms of elements that exist in the real world trigger a mix of emotions that can fill the daily life of the viewers.\nStarting with NFT, NAKTA continuously participates in various domestic and foreign digital media exhibitions and fairs, and is also actively engaged as a speaker in his field."
+        },
+        "career": {
+          "title": "Career history",
+          "list": [
+            "GRAPHIC ARTIST",
+            "2021~2022. [COLOSO] Graphic Artwork Speaker",
+            "2022. [NBNB NEWS] ‘Kim Minji’s Art & Tech’ NFT Artist Interview",
+            "2022. [Gyeonggi Content Agency] ‘NFT Creation Camp’ Judge and Artist Talk",
+            "2022. [Ulsan Contents Korea Lab] NFT Creator Talk"
+          ]
+        },
+        "exhibition": {
+          "title": "Exhibitions",
+          "item": {
+            "list": [
+              {
+                "year": "2022",
+                "text": "[Hyundai Duty Free] Digital Media Exhibition"
+              },
+              {
+                "year": "2022",
+                "text": "[BWB Blockchain Week in Busan] NFT Special Hall Exhibition"
+              },
+              {
+                "year": "2022",
+                "text": "[KIAFX Incheon Airport Special Exhibition] Klip Drops NFT Exhibition"
+              },
+              {
+                "year": "2022",
+                "text": "[NEO Shibuya TV] Tokyo Shibuya Digital Media Exhibition"
+              },
+              {
+                "year": "2022",
+                "text": "[Vancourver International Art Fair] NFT Exhibition"
+              },
+              {
+                "year": "2022",
+                "text": "[Hyundai Duty Free Shop] Digital Media Exhibition & NFT Drop Artist Collaboration"
+              },
+              {
+                "year": "2021",
+                "text": "[XENO NFT Contest] WINNER Coex Media Exhibition"
+              },
+              {
+                "year": "2021",
+                "text": "[PRINTBAKERY] ‘THE GENESIS : IN THE BEGINNING’ Crypto Voxel Inauguration"
+              },
+              {
+                "year": "2021",
+                "text": "[URBAN BREAK] Art Fair NFT Exhibition[M contemporary]"
+              },
+              {
+                "year": "2021",
+                "text": "[France Iham Gallery] ‘NFTATHOME’ NFT Group Exhibition"
+              }
+            ]
+          }
+        }
+      },
+      "4": {
+        "piece": {
+          "title": "SON #4 An unbounded frame",
+          "info": "3840 X 2160 JPG",
+          "desc": "The square frame builds a boundary that leads viewers to perceive the spatial limit connected through the four dots. From a broader perspective, the square frame becomes a passage that connects a new space and a way to connect with the world.",
+          "desc1": "The barriers of investing in artworks are collapsing, and a new way to look at and own artworks in the Web3 era is approaching. Traditional artworks are mostly framed as objects of possession rather than enjoyment; today, artworks have been taken out from the frame.",
+          "desc2": "“An unbounded frame” intends to portray the changing world(art market) through a frame projected in Web3. With the arrival of blockchain and the Web3 era, the possession and investment of art which was exclusive to certain classes has opened up to the public as an opportunity. It is possible for the public not only to own and invest in artworks through NFT and DAO, but also to fully enjoy the artworks while communicating with different people.",
+          "desc3": "Inspired by the article that claims roles and influences can be expanded infinitely beyond transactions to communicate the true meaning and value of art, and collective action to support artists, ‘An unbounded frame’ depicts the connectivity that all objects seem to lead to one. The roads and new spaces connected to the frame symbolize the establishment of a new ecosystem along with the aspect of Web3 with full blockchain potential."
+        },
+        "creator": {
+          "name": "Y.Rapic",
+          "desc": "Digital collage artist Y.Rapic assembles fragments of thoughts, worries and emotions into ‘a collage artwork that depicts a day’. Y.Rapic merges various objects that may seem incompatible with each other to form a single display, as if completing a day by filling in the pieces.",
+          "desc2": "The collage work by Y.Rapic is so elaborate and precise that it may be confused with a painting. In particular, the materials assembled like sculptural beams appear to be a scene in a frame. Thus, viewers can immerse in the world illustrated in the artwork, triggering an interest in the symbolic message the artist aims to convey.",
+          "desc3": "Her works also convey a unique atmosphere. In the stage of conceiving the actual work, the artist first organizes her inspiration in writing and rather than exposing all of her emotions, she pays attention to her heart and portrays it in the work as a metaphor. Finally, she carefully organizes all of the elements in the artwork from the composition to the tone and mood.",
+          "desc4": "Y.Rapic is active not only as a digital collage artist but also as an online exhibition influencer. While participating in various exhibitions, she also actively collaborates with global companies at home and abroad. Recently, she collaborated on album covers by artists such as Ravi, Brick, NS Yoonji, and Gowoon."
+        },
+        "career": {
+          "title": "Career History",
+          "list": ["Digital Collage Artist"]
+        },
+        "exhibition": {
+          "title": "Exhibitions",
+          "item": {
+            "0": {
+              "title": "Key Collaboration and Directing",
+              "list": [
+                {
+                  "year": "2022",
+                  "text": "[Hypebeast] Sulwhasoo Universe in a Bottle Collaboration"
+                },
+                {
+                  "year": "2022",
+                  "text": " [Amore Pacific] Brand project collaboration"
+                },
+                {
+                  "year": "2022",
+                  "text": "[Upthumb channel] KT&G Sangsangmadang EP.5 Artwork."
+                },
+                {
+                  "year": "2021",
+                  "text": "[Ofor] My Bus Project Crowd Art Collaboration"
+                },
+                {
+                  "year": "~2020",
+                  "text": "[Korean Film Council] Designing and directing 'Where Rabbit' contents."
+                },
+                {
+                  "year": "2020",
+                  "text": "[Lee Jung-seob Museum] VR content art directing."
+                },
+                {
+                  "year": "2020",
+                  "text": "[Bisket] NFT Artist Invitation Exhibition"
+                }
+              ]
+            },
+            "1": {
+              "title": "Key Album Cover Collaboration",
+              "list": [
+                {
+                  "year": "2022",
+                  "text": "[Ravi] LOVE & HOLIDAY, BYE( feat. Whee In)"
+                },
+                {
+                  "year": "2022",
+                  "text": "[O:Ne] Flower"
+                },
+                {
+                  "year": "2022",
+                  "text": "[Ma1ro] Be ok, My type"
+                },
+                {
+                  "year": "2022",
+                  "text": "[Brick] Calling you, Bad, Mine, Rainy Day, Stay with me, Adventure, Hold on"
+                },
+                {
+                  "year": "2022",
+                  "text": "[I-ROM] SpaceStation."
+                },
+                {
+                  "year": "2022",
+                  "text": "[ECOg] Eco Music 2022 Environmental Series Project"
+                },
+                {
+                  "year": "2021",
+                  "text": "[NS Yoonji] If you love me (feat. Jooheon)"
+                },
+                {
+                  "year": "2021",
+                  "text": "[Seogyeol] We’ll Run tonight"
+                },
+                {
+                  "year": "2021",
+                  "text": "[Gowoon] City light."
+                },
+                {
+                  "year": "2021",
+                  "text": "[Various Artist] Fairt Tale in Forest, Atmosphere"
+                },
+                {
+                  "year": "2021",
+                  "text": "[Joonsang] Summer flying."
+                }
+              ]
+            }
+          }
+        }
+      },
+      "5": {
+        "piece": {
+          "title": "SON #5 Borderless Era",
+          "info": "3840 X 2160 MP4",
+          "desc": "Beyond the Web1 and Web2 era, we are now entering the Web3 era. Along with the evolution of Dapp, the connection of the real world with the virtual world has enabled development of various contents, communities, and economic activities in the virtual world.",
+          "desc1": "It is the beginning of a new digital civilization, an invention emerging from human wisdom. Just like the mind and heart of our ancestors who built buildings to get closer to the sky, we are now in charge of designing the new world of Web3. Our new virtual space will play the same role as the buildings that were built through human wisdom to create a space that allows people to gather around and enjoy a comfortable and prosperous life.",
+          "desc2": "Over time, more people from all over the world will gather together to expand the space. However, there have been cases in which faulty building designs led to its collapse and caused unfortunate deaths. If we fail to structure and build our digital world correctly, there is a high risk of collapse. In order for this digital building to sustain itself beyond time and space, it is necessary to examine it from different perspectives and angles to harmonize the real and the virtual world. We must explore the direction of the future and understand the digital knowledge gap between the rich and the poor, whilst preserving human dignity and wisdom amid machine creation. Ultimately, we must create a solid base of the virtual space and open a Web3 world that can coexist and create synergy with reality."
+        },
+        "creator": {
+          "name": "Regina Kim",
+          "desc": "\"As an artist who stands on the border to observe the world from a broader spectrum, I aim to create a world beyond limits.” - Regina Kim-",
+          "desc2": "Visual artist Regina Kim creates her work through various mediums such as collages, illustrations, and animations. In “Beyond Borders”, Regina Kim presents an intense surreal world by overlapping images, rearranging them, and removing boundaries.",
+          "desc3": "Regina Kim projects her perspective and thought through various genres of art, including illustrations, photography, and painting; she vividly portrays her visualizations regarding her thoughts regarding emotions, human rights, stories of minorities, environment, and peace encountered through life. She constantly navigates new areas to expand the scope of the world in her work, without setting any boundaries. Through “Beyond Borders”, viewers can perceive that her work is like a short film filled with complex emotions and stories.",
+          "desc4": "Moreover, Regina Kim is invited regularly to attend a wide range of international fairs and galleries to exhibit her NFT and media works, while actively collaborating with global brands at home and abroad. Through her creativity and expression, she is currently one of the most popular visual artists in Korea."
+        },
+        "career": {
+          "title": "Career History",
+          "list": ["Visual Artist"]
+        },
+        "exhibition": {
+          "title": "Exhibitions",
+          "item": {
+            "0": {
+              "title": "Upcoming exhibitions",
+              "list": [
+                {
+                  "year": "2023",
+                  "text": "Collage Exhibition of Superrare and Niftygate, Paris"
+                },
+                {
+                  "year": "2023",
+                  "text": "DDP playNomm X New York Superchief Gallery, DDP"
+                }
+              ]
+            },
+            "1": {
+              "title": "Past exhibitions",
+              "list": [
+                {
+                  "year": "2022",
+                  "text": "2022 BWB 2022 NFT Artists Special Exhibition, Selected Artist, Bexco"
+                },
+                {
+                  "year": "2022",
+                  "text": "Saatchi gallery, Selected Artist, StART Art Fair, London"
+                },
+                {
+                  "year": "2022",
+                  "text": "StART Airt Fair, Galleria Forêt, Regina Kim X Billie Girl Group Collabo Exhibition, Seoul"
+                },
+                {
+                  "year": "2022",
+                  "text": "Keep the peace, Jeon Tae Il Memorial Hall, Seoul"
+                },
+                {
+                  "year": "2022",
+                  "text": "New Era Collabo Exhibition, Seoul"
+                },
+                {
+                  "year": "2022",
+                  "text": "Urban Break COEX, Start art booth & Blue Canvas, Seoul"
+                },
+                {
+                  "year": "2022",
+                  "text": "Intercontinental Parnas Exhibition, Seoul"
+                },
+                {
+                  "year": "2022",
+                  "text": "Musinsa Soldout Custom Shoes Exhibition, Seongsu Soldout, Seoul"
+                },
+                {
+                  "year": "2022",
+                  "text": "Artcross Eugene Gallery, Garosu-gil Garogolmok, Seoul"
+                },
+                {
+                  "year": "2022",
+                  "text": "Korea Illustration X Blue Canvas, Seoul"
+                },
+                {
+                  "year": "2022",
+                  "text": "Paris Korean Cultural Center, Lantern Festival NFT Exhibition, Paris"
+                },
+                {
+                  "year": "2022",
+                  "text": "Ilham Gallery NFT Exhibition, Paris"
+                },
+                {
+                  "year": "2022",
+                  "text": "New York Times Square Exhibition, New York"
+                },
+                {
+                  "year": "2022",
+                  "text": "Suwon Korea Artshow, Suwon"
+                },
+                {
+                  "year": "2022",
+                  "text": "Porsche VIP lounge exhibition, Seoul"
+                },
+                {
+                  "year": "2022",
+                  "text": "BAMA Busan Art Fair, Busan"
+                },
+                {
+                  "year": "2022",
+                  "text": "SK Hynix Exhibition, Selected Artist, Exhibition in 3 locations including Dohwa Gallery"
+                },
+                {
+                  "year": "2022",
+                  "text": "Xeno Coex Exhibition, Selected Artist, Seoul"
+                },
+                {
+                  "year": "2022",
+                  "text": "Andaz Hotel Media Exhibition, Selected Artist, Seoul"
+                },
+                {
+                  "year": "2022",
+                  "text": "NFT X Playboy Party & Exhibition, Lisbon"
+                },
+                {
+                  "year": "2022",
+                  "text": "Miami Art basel X PLAYBOY party, Miami"
+                },
+                {
+                  "year": "2022",
+                  "text": "PLAYBOY NFT Exhibition, LA"
+                },
+                {
+                  "year": "2021",
+                  "text": "Christmas NFT exhibition, Paris"
+                },
+                {
+                  "year": "2021",
+                  "text": "Paris collage exhibition, Netherlands"
+                },
+                {
+                  "year": "2021",
+                  "text": "Gwangju Design Biennale exhibition, sponsored by Porsche"
+                },
+                {
+                  "year": "2021",
+                  "text": "Asean award exhibition, the Special prize, Asean culture center, Korea"
+                },
+                {
+                  "year": "2021",
+                  "text": "NFT group exhibition, Beijing"
+                },
+                {
+                  "year": "2021",
+                  "text": "NFT group exhibition, Chicago"
+                },
+                {
+                  "year": "2021",
+                  "text": "NFT group exhibition, New York"
+                },
+                {
+                  "year": "2021",
+                  "text": "URBAN BREAK | Bluecanvas x Regina Kim, collaboration, Coex, Seoul"
+                },
+                {
+                  "year": "2021",
+                  "text": "ASYAFF Hidden Artist Exhibition, Korea"
+                },
+                {
+                  "year": "2021",
+                  "text": "The exhibition for Myanmar, Main Artist, 1898 gallery, Korea"
+                }
+              ]
+            }
+          }
+        }
+      },
+      "6": {
+        "piece": {
+          "title": "SON #6 Emotion : Road. DNA",
+          "info": "2280 X 2280 MP4",
+          "desc": "“May my (DNA) viewpoints come together harmoniously to become a brilliantly shining universe”",
+          "desc1": "Story3.0 conveys the meaning that experiencing DAO can be a gateway towards finding one's ‘true self’. As described in the article, it is not about fitting into a uniform standard, but about exploring the various aspects of oneself. In this process, there may be various internal and external challenges, both realistic and idealistic. This art piece originates from the idea that perhaps DAO is not something that was created by small universes that we already possess or have polished through various challenges; an expectation that an ideal social form can emerge by the coming together of individuals that focus on and explore their ‘true self’.",
+          "desc2": "Each and every one of us possess small universes of our own. I hope that these universes, similar and different in their own way, can harmoniously connect to shine and help us grow."
+        },
+        "creator": {
+          "name": "UiD",
+          "desc": "UiD, a digital graphic artist, portrays emotions from everyday life through his artwork. He focuses on storytelling the emotions and light that shine brightly even in the depths of darkness. The art works by UiD are often a combination of music and 2D/3D art, expressing the changing and complex emotions and flow of thoughts from past or present moments. The works naturally portray such emotions that humans willfully unfold in a dreamy and fantastical atmosphere, creating a unique and extraordinary artwork that cannot be imitated.",
+          "desc2": "We are stained with each other · Even in the dark there is Light. - UiD",
+          "desc3": "The art by UiD incorporates a unique worldview centered around his object ‘Sirius.' While each work has its own unique composition and expression, they are also endowed with a symbolic meaning reminiscent of a series within the universe symbolized by darkness and light. Viewers can fully immerse into the worldview of the artist, where the connectivity of objects within the vast universe contribute towards the meaning of each and every composition."
+        },
+        "career": {
+          "title": "Career History",
+          "list": ["Digital Graphics Artist"]
+        },
+        "exhibition": {
+          "title": "Exhibitions",
+          "item": {
+            "list": [
+              {
+                "year": "2023",
+                "text": "NFETA New Year Group Exhibition"
+              },
+              {
+                "year": "2022",
+                "text": "Wiple Christmas Group Exhibition"
+              },
+              {
+                "year": "2022",
+                "text": "ZEJUVERSE Metaverse Joint Exhibition, Jeju Culture and Arts Foundation"
+              },
+              {
+                "year": "2022",
+                "text": "CULTR3 CR3ATRSSEONGSU NFT FESTIVAL, Seongsu Puntoblue"
+              },
+              {
+                "year": "2022",
+                "text": "19th Metaverse Tent Film Festival"
+              },
+              {
+                "year": "2022",
+                "text": "DDP-NFT Collecting Vol.1, Dongdaemun Design Plaza (DDP), Seoul Design Foundation"
+              },
+              {
+                "year": "2022",
+                "text": "[ NFT Art Therapy ]  Exhibition,  HDC Labs"
+              },
+              {
+                "year": "2022",
+                "text": "[ Digilog Exhibition: Liberation], Seongnam Cube Art Museum"
+              },
+              {
+                "year": "2022",
+                "text": "International Hybrid Exhibition [ BORDERLESS ], Oslo, Norway & Manila, Philippines"
+              },
+              {
+                "year": "2022",
+                "text": "CCC, SeongsuDer Bartete"
+              },
+              {
+                "year": "2022",
+                "text": "3spacart : [ REFUEL YOUR DAILY ] 展, 서울 현대오일뱅크"
+              },
+              {
+                "year": "2022",
+                "text": "[ Continue Vibes] Exhibition, HaeBangChon C:VIBES"
+              },
+              {
+                "year": "2022",
+                "text": "‘SectionUiD Universe' Exhibition"
+              },
+              {
+                "year": "2022",
+                "text": "3spaceART : NFT 'CITY NIGHT' "
+              },
+              {
+                "year": "2022",
+                "text": "3spaceART : NFT 'The ART POOL'"
+              },
+              {
+                "year": "2021",
+                "text": "Pixpills Artbook Project, Seoul"
+              },
+              {
+                "year": "2021",
+                "text": "BISKET : NFT EXHIBITION vol.3"
+              },
+              {
+                "year": "2021",
+                "text": "[ RECORD OF THE NIGHT ] Solo Exhibition, Seoul Gallery Korea Press Center, Seoul"
+              },
+              {
+                "year": "2019",
+                "text": "' Swallowing the Moon’, 'Memories of this Star', Naver [ Emotional Charge ]"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "overview": {
+      "key": {
+        "title": "Web3 Themed NFT Arts : \n Sights of NILE",
+        "subtitle": "'Sights of NILE' is a collection of NILE's view of Web3, and your views of NILE.",
+        "desc": "'Sights of NILE' is a project where the columns published by NILE, and the illustrations in 'Story3.0' articles are turned into NFT form, and NILE aims to touch on various trends and opinions on blockchain through the 'Story3.0' column. The diverse opinions of experts from various fields such as the arts, economics and blockchain will be condensed into inspired illustrations from Creators. NILE proposes to talk about the Web3 ecosystem that WEMIX dreams of in an original way - with the 'Sights of NILE'."
+      },
+      "cont1": {
+        "title": "The Creator's view, showcased in whole.",
+        "subtitle": "Gate to Web3 : Sights of Creators",
+        "desc": "The 'Sights of NILE' pieces are creations of the columnist's view realized in each 'Story3.0' article, reinterpreted in the illustrator(NFT Creator)'s view. The columnist and illustrator of each article is connected as one through NILE, showcasing the Creators' view in whole. Check out the illustrations born of Creators' inspirations through NILE auctions."
+      },
+      "cont2": {
+        "title": "Share your view with NILE.",
+        "subtitle": "View along with NILE : Sights of Community",
+        "desc": "Access the views of various experts with 'Story3.0' articles, and the views of curious Creators with the 'Sights of NILE'. And share your views of them with NILE. Your views will also change NILE's views in the 'Sights of NILE'."
+      },
+      "space": {
+        "desc": "If you want to know more about the more professional and fresh standpoints in Web3 and blockchain, where evolution takes place every day, meet eye to eye with NILE through the 'Sights of NILE' now.",
+        "btn": "View Story3.0"
+      },
+      "FAQ": {
+        "title": "FAQ",
+        "q1": {
+          "title": "What is the NFT issuing cycle like?",
+          "desc": "The NFT issuing cycle of the 'Sights of NILE' is the same as the publishing cycle of 'Story3.0' articles. Currently 'Story3.0' articles are planned to be published twice every month, and a new illustration NFT will be made public and auction proceedings will take place every time a new article is published."
+        },
+        "q2": {
+          "title": "How can I participate in auctions?",
+          "desc": "You can find information about pieces in ongoing auctions in the 'NFT' tab in the top half of the webpage. Or, you could also participate in ongoing auctions in the 'NILE Marketplace' directly."
+        },
+        "q3": {
+          "title": "How are auctions advanced?",
+          "desc": "The English auction is used (the highest bidder is successful). Each subsequent bid is required to be higher than the previous bid, and the bidding is only available in $. The highest bid is kept for 3 hours after the bid is made, and the bid is confirmed as successful once there are no additional bids made in those 3 hours."
+        },
+        "q4": {
+          "title": "How can I withdraw my intention to buy after my bid is successful?",
+          "desc": "It is impossible to withdraw your intention to buy after your bid is successful. Please be careful and take caution when making your decision. By default, bids also cannot be withdrawn. Only in cases when there are higher bids can bids exceptionally be withdrawn. (However, Gas Fees must be paid)"
+        }
+      }
+    }
+  },
+  "snkrz": {
+    "main": {
+      "title": "All-new SNKRZ 2.0 on WEMIX Chain",
+      "btnOfficial": "SNKR2 Official Website"
+    },
+    "mystery": {
+      "sale": {
+        "title": "Mystery Box Sale",
+        "desc": "Mystery boxes with a variety of surprises will be available for purchase soon.",
+        "desc2": "The boxes are limited edition, so don’t miss out!"
+      },
+      "contents": {
+        "title": "Mystery Box Contents",
+        "desc": "The purchased Mystery Box and random components can be opened in the Inventory of the SNKRZ app.",
+        "item": {
+          "0": {
+            "title": "NFT Shoes",
+            "desc": "The optimal speed of NFT shoes varies with each mode and the user's exercise type; the more the number of shoes, the more stamina a user can exercise. The levels of NFT shoes determine the number of rewards the user can receive daily."
+          },
+          "1": {
+            "title": "Shoe Skin NFT",
+            "desc": "Shoe skin NFTs are vouchers for shoes that can be used in the SNKRZ app. Each skin has its unique properties."
+          },
+          "2": {
+            "title": "$FIT",
+            "desc": "This governance token allows users to participate in essential decision-making on SNKRZ. Open the Mystery Box and get $FIT tokens!"
+          },
+          "3": {
+            "title": "$SKZ",
+            "desc": "This utility token can be spent throughout the SNKRZ dApp from leveling up, breeding, repairing, participating in lucky draws, and more. Open the Mystery Box and get $SKZ tokens!"
+          }
+        }
+      },
+      "usage": {
+        "title": "How do I open the Mystery Box?",
+        "1": {
+          "img": "/images/img_snkrz_step_1_en.png",
+          "step": "STEP 01",
+          "desc": "From the Inventory section on the SNKRZ app, click Import to select WEMIX Wallet."
+        },
+        "2": {
+          "img": "/images/img_snkrz_step_2_en.png",
+          "step": "STEP 02",
+          "desc": "After selecting the wallet, press Export to Inventory, then Mystery Box in the Select Collection. ",
+          "notice": "*For Export to Inventory, a gas fee may be charged to you. "
+        },
+        "3": {
+          "img": "/images/img_snkrz_step_3_en.png",
+          "step": "STEP 03",
+          "desc": "When the inventory export is complete, the Mystery Box gets added to your Inventory from the Collection page. "
+        },
+        "4": {
+          "img": "/images/img_snkrz_step_4_en.png",
+          "step": "STEP 04",
+          "desc": "Open the Mystery Box following the pop-up. "
+        }
+      }
+    },
+    "overview": {
+      "moreAbout": {
+        "title": "Learn more about SNKR2",
+        "card1": {
+          "label": "NFT",
+          "top": {
+            "title": "SNKRZ NFT",
+            "desc": "A 3D shoe NFT in a metaverse. Each NFT has a unique design and different attributes. The rewards for exercise are determined by attributes, rarity, and level of the shoe."
+          },
+          "bottom": {
+            "title": "LAND NFT",
+            "desc": "A metaverse space NFT linked to a real-world map. It is connected to the map and follows the actual movement of users, and the price of the Land NFT fluctuates according to the traffic flow of users."
+          }
+        },
+        "card2": {
+          "label": "TOKEN",
+          "top": {
+            "title": "FORCE",
+            "desc": "FORCE is the utility token of SNKR2. With FORCE tokens, you can foster SNKRZ NFTs and purchase skins, items, and land, which diversifies the usage compared to SNKRZ 1.0"
+          },
+          "bottom": {
+            "title": "FIT",
+            "desc": "FIT is the governance token of SNKR2, with a limited issuance of 6 billion tokens. It is used to develop land and shoes and advertising can be executed using traffic within the land."
+          }
+        },
+        "card3": {
+          "label": "Point",
+          "top": {
+            "title": "Workout Point (WP)",
+            "desc": "WP is a point that users can earn, which can be obtained every time stamina is consumed during exercise. The amount of WP that can be obtained per 1 stamina depends on the shoes users own and various contents available."
+          },
+          "bottom": {
+            "title": "Land Point (LP)",
+            "desc": "LP is a point that a land owner can earn. The hourly available LP is determined by the user traffic on the land, the average rating of the tiles, the number of lands owned, and the occupancy rate within the entire land."
+          }
+        }
+      },
+      "easyFun": {
+        "title": "SNKR2 just got easier and more fun",
+        "card1": {
+          "title": "Simplified breeding system",
+          "desc": "The breeding system has been simplified so that shoeboxes with a lower grade than the rarity of the shoes involved in breeding will not appear."
+        },
+        "card2": {
+          "title": "Stamina cap, gain limit removed",
+          "desc": "Unlike in SNKRZ 1.0, where stamina was capped at 100 minutes per day, there is no limit to stamina gains per sneaker, so the more shoes you have, the more workouts you can do."
+        },
+        "card3": {
+          "title": "Newly added 2.0 items",
+          "desc": "Various items have been added to improve user experience and increase burn rate. The newly added items can be purchased with FORCE tokens.",
+          "detail": "Time Save: Reduces workout time and increases stamina efficiency\nTile Boost: Influences the tile you are working out on and the tiles around you\nTile Magnet: automatically acquire spots while working out\nExperience Potion: adds experience to selected sneakers"
+        }
+      },
+      "introduction": {
+        "head": {
+          "title": "SNKR2",
+          "desc": "The newly released SNKR2 aims to implement a stable tokenomics ecosystem through a metaverse designed around the interaction of exercise, land, and SNKR2 NFT.",
+          "button": "Go to Whitepaper"
+        },
+        "point": {
+          "1": {
+            "num": "Point 1",
+            "title": "Establishment of a stable tokenomics system",
+            "desc": "We have established a system to enhance the stability of tokenomics by replacing the infinitely issued SKZ token with 1 billion FORCE tokens and launching a major incinerator, Land."
+          },
+          "2": {
+            "num": "Point 2",
+            "title": "Increased inflow of open mode users and strengthened social features",
+            "desc": "Both open-mode users (those without NFTs) and NFT-mode users can participate in competitions and quests."
+          },
+          "3": {
+            "num": "Point 3",
+            "title": "SNKR2 Land : Pay to Move ",
+            "desc": "Land owners can earn profits when users walk on their owned land, and users can enjoy various benefits on the land through spots and tiles."
+          }
+        }
+      },
+      "faq": {
+        "0": {
+          "question": "Where can I use the Starter Pack?",
+          "answer": "You can reveal the Starter Pack in the SNKRZ app by following these steps: \"Purchase → Transfer to my SNKRZ wallet → Send to inventory (from the SNKRZ wallet)\". Then, you can go to the in-app inventory, select Collection, and find the Starter Pack under the More menu to reveal it."
+        },
+        "1": {
+          "question": "What's in the Starter Pack?",
+          "answer": "1) SNKRZ Shoebox, 2) Nile Starter Pack Special Epic Skin, 3) Random Skin Box, and 4) Various items to help you with your Sneaker workouts."
+        },
+        "2": {
+          "question": "How does the airdrop event work?",
+          "answer": "We'll airdrop a unique shoebox to a randomly selected buyer who purchased the Starter Pack. The winners will be announced 7 days after the start of the sale."
+        },
+        "3": {
+          "question": "How do I earn FORCE?",
+          "answer": "When you work out in your sneakers, you earn Workout Points. The number of Workout Points you earn throughout the day determines your tier and ranking for the day and rewards you with FORCE tokens."
+        },
+        "4": {
+          "question": "Let me know where to use FORCE tokens",
+          "answer": "As a utility token on the SNKRZ platform, FORCE can be used for purchasing items such as SNKRZ level-ups, skins, and also for future SNKRZ Land NFT purchases."
+        },
+        "5": {
+          "question": "What are the features of skins?",
+          "answer": "Available in the SNKRZ app, each shoe skin gives you a unique set of additional stats. Complete your skin collection to earn higher Workout points."
+        },
+        "6": {
+          "question": "What's in the Starter Pack?",
+          "answer": "It consists of 'Time Save' that reduces workout time, 'Tile Boost' that records workout distance on multiple tiles, 'Spot Magnet' that automatically acquires spots around you, and 'Experience Potion' that increases the experience of your sneakers."
+        }
+      }
+    },
+    "nft": {
+      "starterPack": {
+        "subTitle": "Get the SNKR2 Starter Pack NFTs at a special price, available only on NILE!",
+        "card1": {
+          "tag": "Sale price",
+          "discount": "Approximately {{value}}% off"
+        },
+        "card2": {
+          "tag": "Sale Amount and Process"
+        },
+        "card3": {
+          "tag": "Release Date"
+        }
+      },
+      "whatsIn": {
+        "title": "What’s in the Starter Pack NFT",
+        "desc": "The Starter Pack NFT consists of four items, and one person will be selected through a draw among those who purchase it to receive one Unique Shoe Box via airdrop. Check out the details below!"
+      },
+      "event": {
+        "title": "Unique Shoe Box Airdrop",
+        "desc": {
+          "normal": "We will be airdropping a 'Unique Shoe Box' to one lucky winner among those who purchased the Starter Pack NFT. <0>{{strong}}</0>",
+          "strong": "The winner will be announced on the SNKR2 Discord channel."
+        },
+        "descList": {
+          "0": "Event start: When the Starter Pack NFT sales end (sold out)",
+          "1": "Winner announcement: 7 days after the start of sales"
+        }
+      },
+      "mystery": {
+        "list": {
+          "0": {
+            "desc": "A Sneakers shoebox is a box that contains sneakers. The Starter Pack contains three normal-grade sneakers boxes, and the shoe modes are randomly assigned. It consists of one G1 shoe and two G2 shoes.\n*Once the SNKR2 Starter Pack NFT has been revealed, it will not be available for resale for 90 days."
+          },
+          "1": {
+            "desc": "NILE Edition Epic Skin is a limited edition skin that can only be obtained from the <0>{{strong}}</0>. The skin can change the appearance of the shoes and is an item that can upgrade the attributes of the sneakers, such as Performance, Luck, Tenacity, Quality, and Fever.\n*Once the SNKR2 Starter Pack NFT has been revealed, it will not be available for resale for 90 days.",
+            "strong": "NILE Starter Pack"
+          },
+          "2": {
+            "desc": "This is a skin box where you can randomly acquire a Rare-grade sneaker skin. The skin can change the appearance of the shoes and is an item that can upgrade the attributes of the sneakers, such as Performance, Luck, Tenacity, Quality, and Fever."
+          },
+          "3": {
+            "desc": "This is a consumable item that can only be purchased with FORCE within the Sneakers store. The Starter Pack consists of five items that can reduce exercise time ('Time Save'), save workout records in multiple tiles ('Tile Boost'), automatically acquire nearby spots ('Spot Magnet'), increase Sneakers experience points ('Experience Potion'), and increase Sneakers stats ('Stat Potion').",
+            "innerList": {
+              "title": "[Detailed item list]",
+              "list": {
+                "0": "Time Save (50%) 1d 3ea",
+                "1": "Tile Boost (Premium) 1d 3ea",
+                "2": "Spot Magnet (Premium) 1d 3ea",
+                "3": "XP Potion (50xp) 1ea",
+                "4": "Stat Potion 5ea (Performance, Luck, Tenacity, Quality, Fever)"
+              }
+            }
+          }
+        }
+      }
+    },
+    "tokenomics": {
+      "tokenSystem": {
+        "title": "SNKR2 Token System at a glance",
+        "list": {
+          "0": {
+            "title": "Workout with SNKR2 NFTs",
+            "desc": "Since there is no stamina cap, the more shoes you own, the more you can exercise."
+          },
+          "1": {
+            "title": "Earn WP by using stamina",
+            "desc": "The amount of WP you can earn depends on the various contents of Sneakers and your shoes collection."
+          },
+          "2": {
+            "title": "WPs are rewarded with FORCE tokens based on your daily ranking and tier."
+          },
+          "3": {
+            "title": "You can purchase LAND NFTs with FORCE tokens.",
+            "desc": "Land NFTs are connected to real-world maps, and the price of the NFTs fluctuates based on actual offline traffic flows."
+          },
+          "4": {
+            "title": "Be a LAND owner and earn LP",
+            "desc": "Land owners can earn rewards whenever users walk on their land."
+          },
+          "5": {
+            "title": "LPs are rewarded with FIT tokens based on daily ranking and tier",
+            "desc": "It is possible to earn FIT tokens by staking FORECE tokens and utilizing LV 50 SNKRZ."
+          }
+        }
+      }
+    }
+  },
+  "con": {
+    "main": {
+      "title": "The city of gods who protect NILE, a PFP project composed of 888 pieces.",
+      "btn": "Go to NEITH Station",
+      "tooltip": "NEITH Station will begin soon"
+    },
+    "overview": {
+      "tenCities": {
+        "engSub": "10 Collectibles, 888 NFTs",
+        "title": "Great Cities Built on NILE",
+        "desc": "City of NILE consists of 10 cities represented by 10 gods or goddesses who guard and protect the NILE.\nVenture into these ceities which embody features and symbols of these gods or goddesses.",
+        "desc2": "NEITH NFT collection will consist of 10 cities with a total of 88 NFTs will be minted per collectibles.",
+        "list": {
+          "0": "City of NEITH",
+          "1": "City of RA",
+          "2": "City of SHU",
+          "3": "City of TEFNUT",
+          "4": "City of GEB",
+          "5": "City of NUT",
+          "6": "City of OSIRIS",
+          "7": "City of ISIS",
+          "8": "City of SETH",
+          "9": "City of NEPHTHYS"
+        }
+      },
+      "tiers": {
+        "title": "888NFTs with 5 Tiers",
+        "subtitle": "Each city consists of of 88 members: 4 gods and goddesses, 4 pharaohs, and 80 civics.\nBecome part of the history, and join the 888 journeys in the unfolding of the City of NILE.",
+        "contents": {
+          "tier1": "Mythical gods and goddesses of the\nCity of NILE make up the 1%.",
+          "tier2": "Legendary gods and goddesses of the\nCity of NILE make up the 1%.",
+          "tier3": "Epic gods and goddesses of the\nCity of NILE make up the 2%.",
+          "tier4": "Rare pharaohs of the\nCity of NILE make up the 5%.",
+          "tier5": "Civics who reside in the\nCity of NILE make up the 91%."
+        }
+      }
+    },
+    "use": {
+      "title": "Use cases of City of NILE",
+      "covenant": {
+        "title": "NEITH Covenant",
+        "description": "You can exchange NEITH NFTs for the covenanted amount of WEMIX at any time after the Covenant Date. NEITH NFTs is the world's first NFT that conveys value via an underlying asset."
+      },
+      "protocol": {
+        "title": "Protocol-based NFTFi",
+        "description": "City of NILE is a collection of NEITH NFTs that bear redeemable WEMIX. Users can expand the value of these NFTs by using them as collateral for DeFi services such as Loans, Swaps, Staking, and more. Experience the new world of of NFTFi!"
+      },
+      "community": {
+        "title": "Community",
+        "description": "You can communicate with City of NILE NFT Holders to increase the value of the NFTs. Meet up with NEITH NFT Holders in PAPYRUS!"
+      },
+      "btnPapyrus": "Go to PAPYRUS"
+    },
+    "nft": {
+      "cone": {
+        "release": {
+          "desc": "Korea Standard Time(KST)",
+          "civic": "Auction for 80 Civics",
+          "rare": "Auction for 4 Rares",
+          "epic": "Auction for 2 Epics",
+          "legendary": "Auction for 1 Legendary",
+          "mythical": "Auction for 1 Mythical"
+        }
+      },
+      "cora": {
+        "release": {
+          "desc": "Korea Standard Time(KST)",
+          "civic": "Auction for 80 Civics",
+          "rare": "Auction for 4 Rares",
+          "epic": "Auction for 2 Epics",
+          "legendary": "Auction for 1 Legendary",
+          "mythical": "Auction for 1 Mythical"
+        }
+      },
+      "cities": {
+        "list": {
+          "0": "City of NEITH",
+          "1": "City of RA",
+          "2": "City of SHU",
+          "3": "City of TEFNUT",
+          "4": "City of GEB",
+          "5": "City of NUT",
+          "6": "City of OSIRIS",
+          "7": "City of ISIS",
+          "8": "City of SETH",
+          "9": "City of NEPHTHYS"
+        },
+        "props": {
+          "0": "The Beginning",
+          "1": "Sun",
+          "2": "The God of Creation and The Beginning3",
+          "3": "The God of Creation and The Beginning4",
+          "4": "The God of Creation and The Beginning5",
+          "5": "The God of Creation and The Beginning6",
+          "6": "The God of Creation and The Beginning7",
+          "7": "The God of Creation and The Beginning8",
+          "8": "The God of Creation and The Beginning9",
+          "9": "The God of Creation and The Beginning10"
+        },
+        "release": "Released Date",
+        "covenant": "Covenant Date",
+        "neith": "NEITH Covenant"
+      }
+    },
+    "neith": {
+      "covenant": {
+        "title": "NEITH Covenant under City of NILE",
+        "desc": "City of NILE NFTs are WEMIX-bearing NFTs you can purchase in NILE to claim the reedemable amount of WEMIX on or after Covenant Date. The amount of WEMIX that can be claimed will vary on the fiver tiers of the NFT."
+      },
+      "date": {
+        "subTitle": "City of NEITH",
+        "date": "2024-03-16"
+      },
+      "about": {
+        "title": "About NEITH Station"
+      }
+    },
+    "collections": {
+      "headingTitle": "Sale information and amount of NFTs per collectibles",
+      "auctionTitle": "Auction Sale",
+      "collectionCount": "Amount of NFTs per collection",
+      "count": ""
+    },
+    "tierCovenant": {
+      "headingTitle": "NEITH Covenant for each Tier",
+      "description": "The amount of WEMIX you can receive is subject to the Tier of the NFT.\nHolders of NFTs belonging to a higher Tier will be able to receive a larger amount of WEMIX after the Covenant Date."
+    }
+  },
+  "godsCard": {
+    "cone": {
+      "1": "NEITH, goddess of creation, is considered the mother of all gods and goddesses. She is known to have been present before the creation of the world, and she is considered as all-encompassing.",
+      "2": "Atum, the god of creation. Atum is known as self-created, considered responsible for the creation of the universe and other Egyptian Gods. He is known to have emerged out of the waters arising from the primordial hill.",
+      "3": "Apophis, the almost-immortal god who had the form of a serpent. He was the foe of the sun and is known as the demon of chaos, but was also the reason for every sunrise.",
+      "4": "KHNUM is the god of the source of the NILE. As the \"Divine Potter,\" he molded the base of the world and was called the \"Lord of created things from himself.\""
+    },
+    "cora": {
+      "1": "Ra is considered the god of the sun, as well as the father of all life, death, and everything in the world. He has the face of a bird and is the creator god who rules over every part of the world, from the heavens to the earth and the underworld.",
+      "2": "Amun is the god of the kings and the god of the wind. He is associated with the air element and symbolizes things that are formless and odorless, such as the wind. He presides over dualistic thinking.",
+      "3": "Mut is worshipped as the goddess of the sun. She is referred to as the queen of the sky and all goddesses, the eye of Ra, and the one who gave birth to herself. She is often represented by the image of a bald eagle.",
+      "4": "Sopdu represents the scorching heat of the summer sun. The flicker of the sun represents war, and therefore, he was worshipped as the god of war."
+    }
+  },
+  "neithStationTab": {
+    "date": {
+      "title": "Covenant Date",
+      "desc01": "City of NEITH Covenant Date is March 16th, 2024\nCovenant Date is unaffected despite transfer of ownership.",
+      "desc02": "Tangled Covenant Date is March 22th, 2024\nCovenant Date is unaffected despite transfer of ownership."
+    },
+    "claim": {
+      "title": "How to purchase and claim NEITH NFT",
+      "list": {
+        "1": {
+          "title": "Purchase the NFT in the Marketplace via auction or fixed-price sales.",
+          "desc": "You must connect your wallet to purchase NFTs, and WEMIX is required to pay for gas fees."
+        },
+        "2": {
+          "title": "Own the NFT until Covenant Date.",
+          "desc": "The Covenant Date is one year after the start of the sale."
+        },
+        "3": {
+          "title": "Secondary trading between users is available during the ownership period.",
+          "desc": "Covenant Date is unaffected despite alterations in the NFT ownership, only the sole owner at the time of Covenant Date is authorized to claim."
+        },
+        "4": {
+          "title": "Check the Covenant Date to claim an NFT. If the claim conditions have been met, you can proceed with the claim.",
+          "desc": "Claim is processed in NEITH Station. The selected NEITH NFT is burned in NEITH Altar, and the amount of WEMIX stored in NEITH Vault will be transferred to the Wallet."
+        }
+      }
+    }
+  },
+  "kari": {
+    "about": {
+      "desc": "Kari is an expansion of the virtual human multiverse world of the Ari project, and is the second project from the artist Doonbo. \nBecome a Holder of Kari, the Korean dark-fantasy female warrior, and join in the various activities in the PAPYRUS community.",
+      "card": {
+        "title1": "Primary Sale Prices",
+        "title2": "Sale Amount and Process",
+        "title3": "Release Date"
+      }
+    },
+    "universe": {
+      "speechBubble": {
+        "0": "It all began at the end of the world, where the sky meets land, the space where the energy of the heavens and earth intertwined themselves.",
+        "1": "Where will this space unknown lead us? To the past? To the present? Or to yet another world we cannot see. These things from the space unknown, encroaching upon our lands and skies, are they our karma come back to haunt us? Or are they what we call absolute evil?"
+      },
+      "desc": "Kari is the second protagonist of the worlds of the Ari project. Kari exists in many forms in each multiverse world: as the heir to a stolen empire, as an idol trainee, and more. Soon, Ari and Kari will be telling their stories of searching for the meaning in their existence in this vast universe. Various types of content will be continuously added to the Ari, Kari IP NFT project. The worlds of their stories and the steps that Ari, Kari take will be made with the Holders."
+    },
+    "nftFeatures": {
+      "list": {
+        "0": {
+          "title": "The strong and female warrior, a new paradigm of heroes",
+          "desc": "Compared to Ari’s virtuous and guileless charms, Kari’s modern looks were designed to look more bold and courageous. Kari’s wide monolid eyes, the beauty mark under them, and the somewhat sharp air about her are what people notice about her at a glance."
+        },
+        "1": {
+          "title": "The K-POP idol concept",
+          "desc": "The Kari Project was designed with the concept of styling Kari as a K-POP idol, like those that influence several global industries in real life. Complete your profile in PAPYRUS with NFTs designed with Kari’s sharp yet courageous modern looks and widely-known styles inspired by K-POP idols."
+        }
+      }
+    },
+    "community": {
+      "title": "Community of Holders in the Kari world",
+      "desc": "Kari Project NFT Holders can use PAPYRUS to participate in various activities and promotions related to the project. Holders of the Ari Project, the first project from the artist Doonbo, have been given APT (Ari Project Tokens) and are participating in PAPYRUS. The Ari & Kari PAPYRUS will be created in the first quarter of 2023. A project roadmap is scheduled to be created through talks with the community of Ari and Kari Holders. Web novels, artwork, and more related to the world of the two projects will be made available on PAPYRUS. Stay tuned for the various exclusive Holder-only community activities."
+    },
+    "creator": {
+      "desc": "The artist, Doonbo, not only creates art, but also teaches on various Web3-related topics including NFT and also manages communities. The Ari Project was the first PFP collection made public last year by Doonbo within the world of these two projects, and the virtual Ari PFP was sold out and gained a loyal following. The world created by Doonbo with these two projects will be expanded even further through collaborations with NILE, and even more interesting stories with NFT will be made available soon."
+    }
+  },
+  "bagc": {
+    "faq": {
+      "1": {
+        "question": "How can I join the BAGC community?",
+        "answer": "BAGC holders can join the community throught the ALTAVA Discord. Also, holders in WEMIX mainnet can enter the community in PAPYRUS."
+      },
+      "2": {
+        "question": "How can I switch the mainnet to WEMIX or Ethereum?",
+        "answer": "The process of developing a bridge system between WEMIX and Ethereum mainnet is currently underway."
+      },
+      "3": {
+        "question": "How can I go to the Golf CC using BAGC NEITH PFP?",
+        "answer": "To access the BAGC Golf CC reservation app, the BAGC NFT should first be switched to the Ethereum mainnet."
+      },
+      "4": {
+        "question": "What is the reveal process?",
+        "answer": "The final Tier of unrevealed BAGC(Ready to BAGC) will be confirmed by the reveal process, and the information about the hat and background color will be available."
+      },
+      "5": {
+        "question": "How can I get BAGC MERCH?",
+        "answer": "You can claim MERCH by submitting MERCH NFT in September 2023."
+      }
+    },
+    "overView": {
+      "subTitle": "BAGC is a golf NFT project launched by ALTAVA Group, utilizing over \n110 BAYC in collaboration with Animoca Brands, The Sandbox, and Elite Apes.",
+      "history": {
+        "1": "Pre-sale round last year exceeded <0>40,000 concurrent users!</0>",
+        "2": "Debuted at Kiaf x Frieze last year and presented <0>'WEB3 to WEB2'</0> through a pop-up store at Hyundai Department Store Trade Center.",
+        "3": "Revenue-sharing IP Management Pool for the Hyundai Department Store Daegu pop-up store was <0>sold out within 1 minute</0> on a first-come-first-served basis."
+      },
+      "info": {
+        "1": {
+          "title": "Primary Sale Prices",
+          "info": "TBA"
+        },
+        "2": {
+          "title": "NEITH Covenant",
+          "info": "TBA"
+        },
+        "3": {
+          "title": "Sale Amount and Process",
+          "info": "300 NFTs / Fixed Price"
+        },
+        "4": {
+          "title": "Release Date",
+          "info": "Sale scheduled in early May 2023"
+        }
+      }
+    },
+    "neithNft": {
+      "stepInfo": {
+        "1": "Purchase BAGC golf ball NFT with the concept of Mystery Box on Marketplace.",
+        "2": "Once you reveal the purchased NFT, BAGC NEITH PFP and MERCH NFT will be created based on the confirmed final tier. Details of the hat and background color will also be available.",
+        "3": "BAGC NEITH PFP : You can enjoy various utilities corresponding to the tier of your NFT and claim NEITH Convenant when the Convenant Date arrives.\nMERCH NFT : You can claim MERCH by submitting MERCH NFT.\n* Both BAGC NEITH PFP and MERCH NFT are available for Secondary Sales on the Marketplace."
+      }
+    },
+    "nftUtility": {
+      "desc": "Experience BAGC with NEITH Covenant that can only be found on NILE.\nReveal and Explore various tiers of <0>{{strong1}}</0> and <1>{{strong2}}</1>!",
+      "benefitList": "Voxelized Character, Golf CC Ticket, NEITH STATION, BAGC Boston Bag, WacC Boston Bag, WaaC Pouch Bag",
+      "saleSchedule": {
+        "release": " May 2023 (TBA)",
+        "covenant": " May 2024 (TBA)",
+        "neith": "TBA"
+      },
+      "benefitLst": {
+        "0": "WacC Boston Bag",
+        "1": "Custom Name Tag",
+        "2": "T-Shirt",
+        "3": "Hat"
+      }
+    },
+    "holder": {
+      "title": "BAGC NFT Holder Utility",
+      "subTitle": "The BAGC is both a unique digital artwork and a membership card. By connecting the WEB3 IP with the IRL golf experience, we want to build an NFT community and leap into a new digital IP.",
+      "cardData": {
+        "1": {
+          "title": "Exclusive Golf Merch \nonly for Holders",
+          "desc": "BAGC PFP NFT holders will be able to get custom merchandise with their own PFP imprinted and premium limited edition merchandise featuring APEs offline."
+        },
+        "2": {
+          "title": "Premuium \nGolf Experience",
+          "desc": "BAGC PFP NFT can be used as a famous golf CC rounding membership ticket in Korea. You can book and visit affiliated golf courses to enjoy playing golf."
+        },
+        "3": {
+          "title": "PAPYRUS \nBAGC Community",
+          "desc": "BAGC PFP NFT on NILE is used as an entrance ticket to the PAPYRUS Channel. You can interact with BAGC PFP holders in the community and increase the value of your NFTs together."
+        },
+        "4": {
+          "title": "BAGC IP \nOwnership",
+          "desc": "Once purchased, NFTs can be utilized as PFPs and can also be used commercially."
+        }
+      }
+    },
+    "main": {
+      "title": "The beginning of WEB3 Golf Life, with NEITH Covenant",
+      "btn": "BAGC Official Website"
+    }
+  },
+  "comingSoon1": "Coming soon."
+}

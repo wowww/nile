@@ -1,0 +1,622 @@
+/* stylelint-disable declaration-block-no-redundant-longhand-properties */
+/* stylelint-disable max-line-length */
+.staking-pool-wrap {
+  @include daoMd {
+    display: flex;
+  }
+
+  .table-type-md {
+    margin-top: 16px;
+
+    &.dao-individual {
+      .ant-empty-normal {
+        display: flex;
+        height: calc(228px - 16px);
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+
+        .ant-empty-image {
+          display: none;
+        }
+
+        .ant-empty-description {
+          @include fontFamilyBody(lr);
+
+          color: $gray60;
+        }
+      }
+    }
+
+    @include daoMd {
+      margin: 0 0 0 16px;
+    }
+
+    thead tr th {
+      height: 30px;
+
+      &.padding-default {
+        padding: {
+          right: 0;
+          left: 0;
+        }
+      }
+
+      @include daoSm {
+        min-width: 66px;
+      }
+    }
+
+    tbody {
+      tr {
+        &.ant-table-placeholder {
+          .ant-table-cell {
+            .ant-table-expanded-row-fixed {
+              padding: 0;
+              margin: 0;
+
+              .empty-wrap {
+                height: 240px;
+
+                @include sm {
+                  height: 244px;
+                }
+              }
+            }
+          }
+        }
+
+        td {
+          &.padding-amount {
+            // 디자인에서 letter-spacing 으로 조절 해주었으나 padding 값 reset 으로 변경
+            padding: {
+              left: 0;
+            };
+          }
+
+          &.padding-default {
+            padding: {
+              right: 0;
+              left: 0;
+            }
+          }
+
+          .tooltip-wrap {
+            white-space: nowrap;
+
+            @include daoLg {
+              white-space: normal;
+            }
+          }
+
+          .amount-value {
+            @include daoMd {
+              display: flex;
+              justify-content: flex-end;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .box-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 11px 0;
+    border: 1px solid $gray00;
+    border-radius: 4px;
+
+    @include daoMd {
+      width: 152px;
+      flex: none;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 53px 16px;
+    }
+
+    @include daoSm {
+      padding: 11px 35px;
+      margin-bottom: 12px;
+    }
+
+    > span {
+      @include daoMd {
+        width: auto;
+      }
+    }
+
+    .ratio-number {
+      display: flex;
+      align-items: baseline;
+      color: $gray00;
+
+      @include daoMd {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      &:last-child {
+        .unit {
+          @include daoMd {
+            margin-top: 8px;
+          }
+        }
+      }
+
+      .num {
+        @include fontFamilyData(m3);
+      }
+
+      .unit {
+        @include fontFamilyBody(cl);
+
+        margin-left: 4px;
+
+        @include daoMd {
+          margin-top: 8px;
+        }
+
+        @include daoSm {
+          @include fontsizeMixin(14, 14);
+        }
+      }
+    }
+
+    .equal {
+      display: block;
+      margin: 0 16px;
+
+      @include fontFamilyData(m3);
+    }
+  }
+
+  .ant-table-tbody tr td {
+    padding: 13px 8px 9px;
+    background-color: $gray100;
+
+    @include daoMd {
+      padding: 17.5px 8px;
+    }
+
+    @include daoSm {
+      height: auto;
+      padding: {
+        top: 12px;
+        bottom: 12px;
+      }
+    }
+  }
+}
+
+// dao individual home timeline
+.dao-timeline {
+  .title-wrap {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    @include daoSm {
+      display: block;
+    }
+
+    .inner-wrap {
+      @include daoSm {
+        padding-bottom: 14px;
+      }
+    }
+
+    .title {
+      @include fontFamilyNHeading(MB_F);
+    }
+
+    .desc {
+      @include fontFamilyBody(mr);
+
+      margin-top: 8px;
+      color: $gray60;
+    }
+
+    .btn-outline {
+      @include daoSm {
+        display: none;
+      }
+    }
+  }
+
+  .ant-btn {
+    svg {
+      transform: rotate(-90deg);
+    }
+  }
+
+  .dao-timeline-wrap {
+    .protocol-list {
+      display: grid;
+      height: 80px;
+      margin-top: 16px;
+      column-gap: 8px;
+      grid-template-columns: 72px repeat(6, 1fr);
+      grid-template-rows: 1fr;
+
+      @include daoMd {
+        display: flex;
+        height: auto;
+        flex-wrap: wrap;
+        column-gap: 0;
+      }
+
+      @include daoSm {
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        row-gap: 8px;
+      }
+
+      .protocol-item {
+        position: relative;
+        overflow: hidden;
+        border-radius: 4px;
+
+        // grid-row-end: span 2;
+
+        @include themeChangeMixin(background-color, 3);
+
+        @include daoMd {
+          flex-basis: calc((100% - 24px) / 4);
+          margin-left: 8px;
+        }
+
+        &:nth-child(4) ~ .protocol-item {
+          @include daoMd {
+            flex-basis: calc((100% - 16px) / 3);
+            margin-top: 8px;
+            margin-left: 8px;
+          }
+        }
+
+        &:first-child,
+        &:nth-child(5) {
+          margin-left: 0 !important;
+        }
+
+        &:nth-child(2n) {
+          @include daoSm {
+            grid-column-start: 2;
+          }
+        }
+
+        > button {
+          display: flex;
+          width: 100%;
+          height: 100%;
+          flex-direction: column;
+          padding: 12px;
+          text-align: left;
+
+          @include daoMd {
+            height: 56px;
+          }
+
+          @include daoSm {
+            height: 56px;
+            padding: 10px;
+          }
+        }
+
+        .label-title {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+
+          @include daoMd {
+            flex-direction: row;
+            align-items: center;
+          }
+
+          @include daoSm {
+            flex-direction: row;
+            align-items: center;
+          }
+        }
+
+        svg {
+          position: absolute;
+          bottom: 0;
+          left: 68px;
+          width: 81.13px;
+          height: auto;
+          pointer-events: none;
+
+          @include daoMd {
+            right: -4px;
+            bottom: -12px;
+            left: auto;
+            width: 68.75px;
+          }
+
+          @include daoSm {
+            right: -4.5px;
+            bottom: -12px;
+            left: auto;
+            width: 68.75px;
+          }
+
+          .dao-neith {
+            @include themeChangeMixin(fill, 1);
+          }
+        }
+
+        &.all {
+          width: 72px;
+
+          @include daoSm {
+            width: 100%;
+            grid-row: 1;
+          }
+        }
+
+        &.station {
+          @include daoSm {
+            display: flex;
+            align-items: center;
+            grid-column-start: 2;
+            grid-row: 1;
+          }
+        }
+
+        &.treasury {
+          @include daoSm {
+            grid-row: 2;
+          }
+        }
+
+        &.incinerator {
+          @include daoSm {
+            grid-column: span 2;
+          }
+        }
+
+        .protocol-name {
+          @include fontFamilyNBody(MB_F);
+
+          width: 100%;
+          pointer-events: none;
+          transition: all 0.3s;
+          white-space: nowrap;
+
+          @include daoLg {
+            line-height: 24px;
+          }
+        }
+
+        .tag {
+          @include themeChangeMixin(border-color, 1);
+          @include themeChangeMixin(color, 1);
+
+          position: relative;
+          z-index: 1;
+          margin-top: 4px;
+          color: $white;
+          pointer-events: none;
+
+          @include daoMd {
+            height: 20px;
+            margin-top: 0;
+            margin-left: 4px;
+          }
+
+          @include daoSm {
+            height: 20px;
+            margin-top: 0;
+            margin-left: 4px;
+          }
+        }
+
+        .amount-wrap {
+          position: relative;
+          width: 100%;
+          padding-left: 14px;
+          margin-top: 16px;
+          pointer-events: none;
+
+          @include daoSm {
+            margin-top: 12px;
+          }
+
+          .unit {
+            @include fontFamilyData(m3);
+
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all 0.3s;
+          }
+
+          .amount {
+            @include fontFamilyData(m3);
+
+            transition: all 0.3s;
+          }
+        }
+
+        &.active {
+          @include themeChangeMixin(background-color, 1);
+
+          .protocol-name {
+            color: $white;
+          }
+
+          .tag {
+            @include themeChangeMixin(color, 1);
+
+            border-color: $white;
+            background-color: $white !important;
+          }
+
+          .amount-wrap {
+            .unit {
+              color: $white;
+            }
+
+            .amount {
+              color: $white;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .timeline {
+    margin-top: 24px;
+
+    .ant-timeline {
+      @include scrollStyle;
+
+      max-height: 324px;
+      margin-top: 20px;
+      overflow-y: auto;
+
+      @include daoXl {
+        max-height: 321px;
+      }
+
+      @include daoSm {
+        max-height: 424px;
+      }
+    }
+  }
+}
+
+// dao home 검수사항 scss
+.dao-box.dao-home-type {
+  .chart-box {
+    .chart-area .info-area .right .total {
+      padding: 4px 8px;
+
+      .info-name,
+      .unit {
+        @include fontFamilyChip(s);
+      }
+
+      .figure {
+        @include fontFamilyChip(mb);
+      }
+    }
+
+    .title {
+      span {
+        @include fontFamilyNHeading(MB_F);
+      }
+    }
+  }
+
+  .dao-title-box {
+    padding-bottom: 18px;
+
+    @include sm {
+      padding-bottom: 14px;
+    }
+  }
+}
+
+.dao-title-box.dao-home-type {
+  padding-bottom: 16px;
+}
+
+.amount-icon {
+  &.outflow {
+    svg {
+      circle {
+        @include themeChangeMixin(stroke, 1);
+      }
+
+      path {
+        @include themeChangeMixin(fill, 1);
+      }
+    }
+  }
+
+  &.inflow {
+    svg {
+      transform: rotate(180deg);
+
+      circle {
+        stroke: $gray40;
+      }
+
+      path {
+        fill: $gray40;
+      }
+    }
+  }
+}
+
+.dao-individual-home-governance-area {
+  border-radius: 4px;
+  margin-top: 24px;
+  background-color: $gray100;
+
+  @include daoMd {
+    margin-top: 12px;
+  }
+
+  @include daoSm {
+    margin-top: 8px;
+  }
+
+  .area-header {
+    padding: 18px 24px;
+    border-bottom: 1px solid $gray80;
+  }
+
+  .contents-area {
+    padding: 16px 24px 60px;
+
+    @include daoLg {
+      padding-bottom: 40px;
+    }
+
+    @include daoMd {
+      padding: 24px 24px 40px;
+    }
+
+    @include daoSm {
+      padding: 12px 20px 60px;
+    }
+  }
+
+  .content-radio-group {
+    overflow-x: auto;
+
+    .ant-radio-group {
+      padding-bottom: 12px;
+    }
+
+    @include daoSm {
+      padding: 0 20px;
+      margin: 0 -20px;
+    }
+
+    & + .governance-card {
+      margin-top: 0;
+    }
+
+    .ant-radio-button-wrapper {
+      .chip {
+        &.chip-sm {
+          border: none;
+          background-color: $gray90;
+          color: $gray30;
+
+          &.chip-bg {
+            background-color: $veryBlack;
+            color: $gray100;
+          }
+        }
+      }
+    }
+  }
+}

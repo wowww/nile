@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: nile-fe
+  name: nile-fe
+spec:
+  replicas: 8
+  minReadySeconds: 1
+  selector:
+    matchLabels:
+      app: nile-fe
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 50%
+      maxUnavailable: 50%
+  template:
+    metadata:
+      labels:
+        app: nile-fe
+    spec:
+      containers:
+        - name: nile-fe
+          image: nilecr.azurecr.io/nile-fe/www
+          ports:
+            - containerPort: 3000

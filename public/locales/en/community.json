@@ -1,0 +1,99 @@
+{
+  "representativeImage": "representative image",
+  "openProfile": "open profile",
+  "banner": {
+    "title": "Token Gated Communication Platform",
+    "description": "PAPYRUS is a communication platform that connects people in the WEMIX ecosystem through tokens and NFTs in their balance.",
+    "googlePlay": "Google Play",
+    "appStore": "App Store",
+    "download": "PAPYRUS Official Website"
+  },
+  "card": {
+    "daoText": "A Community for {{name}} DAO members.",
+    "nftText": "A Community for {{name}} NFT holders.",
+    "needNFT": "You need to own an NFT to enter the Community.",
+    "needToken": "You need to buy {{token}} to enter the Community.",
+    "needDao": "You need to participate in {{dao}} DAO to enter the Community.",
+    "link": "Discover {{link}}",
+    "lastConversation": "Last Conversation",
+    "participate": "Join",
+    "totalMembers": "Total Members",
+    "nftVolume": "Total Accumulated NFT Transaction Volume",
+    "walletRequired": "Wallet required",
+    "connectWallet": "Wallet Connection needed.",
+    "connectWalletAnnounce": "Please connect your Wallet to enter the Community.",
+    "advice": "Participate in the {{daoName}} DAO, now recruiting!",
+    "participateComplete": "Participation complete! The Community will be open on {{mm}} {{dd}}."
+  },
+  "papyrus": {
+    "title-1": "PAPYRUS is a communication tool based on blockchain tokens.",
+    "text-1": "In the Web3 world, people need new methods of communication. PAPYRUS goes beyond logging in, finding and participating in Communities, and connects people with similar interests based on tokens and NFTs.",
+    "title-2": "Own a particular token or NFT? You'll automatically get into related Communities.",
+    "text-2": "In PAPYRUS, you don't need to find Communities yourself. Just by owning tokens and NFTs created on the WEMIX blockchain network ecosystem, you'll automatically get into related Communities. Like this, Community participants will be able to have more meaningful conversations.",
+    "title-3": "Various channels and DM will also be available in each Community.",
+    "text-3": "Each Community will have channel features so participants can talk about various topics.\nAnd participants can have separate conversations with specific participants using DM.\nOf course, all of these conversations will be between verified participants who own the same tokens or NFTs.",
+    "title-4": "You can take many paths to own Tokens and NFTs.",
+    "text-4": "You can buy and exchange tokens and NFTs on the various platforms of the WEMIX ecosystem.",
+    "title-5": "Claim tokens by participating in a DAO",
+    "text-5": "You can get DAO Tokens by participating in a DAO that is recruiting, or in one of your DAOs when the Station is open additionally.",
+    "title-6": "Buy in WEMIX.Fi",
+    "text-6": "You can buy DAO Tokens in WEMIX's official DeFi Service. You can use the Swap feature to exchange DAO Tokens.",
+    "title-7": "Buy NFT",
+    "text-7": "Various NFTs are up for sale in the NILE Marketplace. Buy an NFT here to participate in a related Community."
+  },
+  "unfoldingSoon": "Community will be open soon.",
+  "official": {
+    "title": "Official Channels",
+    "name": {
+      "0": "TIPO Token Official",
+      "1": "Sights of NILE(SON) Official",
+      "2": "London Underground Station(LUS) 264 Genesis Official",
+      "3": "City of NILE Official"
+    },
+    "description": {
+      "0": "en) TIPO Token의 공식 채널입니다. TIPO를 보유한 멤버라면 누구나 참여할 수 있습니다. TIPO는 Web3 소셜 라이브 채팅 플랫폼 Tangled의 유틸리티 토큰이자, 참여자의 Tangled 기여도에 따라 소셜 생태계 내의 지위와 영향력을 누릴 수 있도록 설계된 SocialFi 토큰입니다.",
+      "1": "en) Sights of NILE의 공식 채널입니다.Sights of NILE(SON) NFT를 보유한 멤버라면 누구나 참여할 수 있습니다. SON은 NILE에서 발행하는 ‘Story3.0’ 아티클 칼럼의 일러스트 삽화를 NFT로 발행하는 프로젝트입니다. 블록체인에 관한 다양한 트렌드와 견해를 크리에이터의 영감 어린 시각으로 선보입니다.",
+      "2": "en) London Underground Station(LUS) 264 Genesis NFT 홀더를 위한 공간입니다. LUS를 보유한 멤버라면 누구나 참여할 수 있습니다. LUS는 런던의 264개 역을 픽셀 아트로 표현한 작업입니다. 2013년 King's Cross 역에서 시작해 2017년 Paddington 역까지 약 5년 동안 진행된 장기 프로젝트입니다.",
+      "3": "en) City of NILE 프로젝트의 NFT 홀더를 위한 공간입니다."
+    }
+  },
+  "upcoming": {
+    "title": "Upcoming Channels",
+    "name": {
+      "0": "Tangled Official",
+      "1": "WONDER DAO Official",
+      "2": "g.WONDER Official",
+      "3": "SNKRZ Token Official",
+      "4": "SNKRZ NFT Official",
+      "5": "ARTEUM DAO Official ",
+      "6": "g.ARTEUM DAO Official ",
+      "7": "DELTA DAO Official",
+      "8": "g.DELTA DAO Official",
+      "9": "ORACLE DAO Official",
+      "10": "g.ORACLE DAO Official"
+    },
+    "schedule": {
+      "0": "Opening in the first half of 2023",
+      "1": "Opening in the first half of 2023",
+      "2": "Opening in the first half of 2023",
+      "3": "Opening in the first half of 2023",
+      "4": "Opening in the first half of 2023",
+      "5": "Opening in the first half of 2023",
+      "6": "Opening in the first half of 2023",
+      "7": "Opening in the first half of 2023",
+      "8": "Opening in the first half of 2023",
+      "9": "Opening in the second half of 2023",
+      "10": "Opening in the second half of 2023"
+    },
+    "toast": "The official channel will be open soon."
+  },
+  "communityPopUp": {
+    "enter": "Enter Channel",
+    "title": "Scan QR code with mobile to enter channel",
+    "info": "Share channel invite link",
+    "copy": "Copy",
+    "copyLinkInfo": "Invite link copied"
+  },
+  "comingSoon1": "Coming soon.",
+  "comingSoon2": "PAPYRUS will be unveiled soon."
+}

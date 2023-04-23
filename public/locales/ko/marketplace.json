@@ -1,0 +1,230 @@
+{
+  "collection": "Collection",
+  "nft": "NFT",
+  "onSale": "ON SALE",
+  "discoverBtn": "프로젝트 보러가기",
+  "hero": {
+    "upcoming": "<0>{{order}}</0> 작품 ‘<1>{{name}}</1>’의 옥션이 곧 시작됩니다. \n작품을 확인해보세요!",
+    "ongoingBeforeBidding": "‘<0>{{name}}</0>’를 <1>{{person}}</1>명이 보고 있습니다. \n지금 응찰에 참여해 NFT의 소유자가 되세요!",
+    "ongoingAfterBidding": "‘<0>{{name}}</0>’의 <1>{{person}}</1> 응찰자가 나타났습니다.\n지금 응찰에 참여하세요!",
+    "ongoingFixed": "‘<0>{{name}}</0>’ 를 <1>{{person}}</1>명이 보고 있습니다. \n지금 구매하고 NFT의 소유자가 되세요!",
+    "textFirst": "첫번째",
+    "textSecond": "두번째",
+    "nile": {
+      "article": "환대"
+    },
+    "lus": {
+      "desc": "영국에서의 추억이 담긴 장소로 연결해 주는 264개의 작품을 만나보세요."
+    },
+    "tangled": {
+      "desc": "Tangled은 유저 모두가 커뮤니티 형성에 직접적으로 기여하고 서로 소통할 수 있는 Web3 라이브 커뮤니티 앱입니다."
+    },
+    "con": {
+      "desc": "신들의 도시 City of NILE의 첫번째 컬렉션 입니다. 88개의 PFP를 지금 만나보세요!"
+    }
+  },
+  "noTransaction": "거래 이력이 없습니다",
+  "ranking": {
+    "title": "Ranking",
+    "tabBtn": "Frequent Transactions",
+    "tabBtn2": "Highest last sale",
+    "notice": "일정 기간동안 발생한 Transactions이 많은 순으로 정산",
+    "notice2": "최근 판매가가 가장 비싼 순으로 정산",
+    "unit": "Ranking",
+    "unit2": "NFT",
+    "unit3": "Transactions a"
+  },
+  "detailTop": {
+    "resultMsg": "{{name}}님이\n<0>{{price}}</0>에 낙찰했습니다!",
+    "linkText1": "WEMIX$ 교환하기",
+    "linkText1-1": "WEMIX 교환하기",
+    "linkText2": "NILE 이용가이드 보기",
+    "saleFeatureMessage": "'판매 등록하기' 기능은 추후 지원될 예정입니다.",
+    "offerFeatureMessage": "'제안하기' 기능은 추후 지원될 예정입니다."
+  },
+  "bottom": {
+    "title": "NFT is for Everyone",
+    "notice": "NILE Marketplace에서는 다양한 분야의 NFT를 소개합니다. \n NILE과 함께하고 싶다면 언제든지 문의해 주세요."
+  },
+  "listing": {
+    "title": "Listing",
+    "price": {
+      "placeholder": "판매 금액을 입력하세요."
+    },
+    "txt": "위 가격으로 작품 판매 시 아래 수수료를 제외한 금액을 판매 수익으로 얻을 수 있습니다.",
+    "txt2": "판매 등록 시 아래와 같이 가스비가 발생합니다.",
+    "text2-1": "판매 취소 또는 수정시 아래와 같이 가스비가 발생합니다.",
+    "txt3": "나일 플랫폼 수수료 {{rate}} %",
+    "txt4": "제작자 수익분배 {{rate}} %",
+    "txt5": "총 예상 수익",
+    "txt6": "판매 등록 가스비 : 변동",
+    "txt7": "예상 가스비",
+    "txt8": "소유자 이전 시 아래와 같이 가스비가 발생합니다.",
+    "txt9": "Transfer Gas Fee : 변동",
+    "placeholder1": "지갑주소를 입력해 주세요.",
+    "setStartingDate": "빠른 판매일로 설정"
+  },
+  "buyMysteryBox": "Mystery Bosx 구매하기",
+  "snkrzInfo": "SNKRZ 상세내용은 11월 17일부터 확인할 수 있습니다.",
+  "creator": "Rokkan Kim(김종혁)",
+  "collectionDetail": {
+    "lus": {
+      "desc": "런던의 264개 각 역을 픽셀아트로 표현한 London Underground Station(LUS) 264 Genesis  컬렉션을 NFT로 만나보세요."
+    },
+    "son": {
+      "desc": "'Sights of NILE’은 NILE이 발행하는 칼럼인 ‘Story3.0’ 아티클의 일러스트 삽화를 NFT로 발행하는 프로젝트입니다.\n칼럼니스트와 일러스트레이터는 NILE에서 하나로 연결되며, 블록체인에 관한 다양한 트렌드와 견해를\n크리에이터의 영감 어린 시각으로 선보입니다."
+    },
+    "cone": {
+      "desc": "City of NILE의 첫번째 PFP컬렉터블입니다. 창조의 여신이자 모든 신들의 어머니인 네이트를 중심으로 모여든 사람들로 구성된 도시, City of NEITH의 88개 NFT를 지금 만나보세요!"
+    },
+    "tangled": {
+      "desc": "Tangled Timepieces는 NFT 구매 후 일정기간 이후에 클레임을 통해 WEMIX를 수령할 수 있는 NILE의 NEITH NFT입니다. 추후 제공 될 합성을 통해 상위 등급의 Timepiece를 얻을 수 있으며 합성 성공 시 더 많은 WEMIX를 획득 할 수 있습니다."
+    },
+    "kari": {
+      "desc": "Kari는 가상인간 멀티버스 세계관의 Ari프로젝트에서 확장된 Doonbo의 두번째 프로젝트 입니다. \n한국형 다크 판타지의 여전사인 Kari의 홀더가 되어, PAPYRUS 커뮤니티의 다양한 활동들을 함께 하세요."
+    },
+    "cora": {
+      "desc": "City of NILE의 두번째 PFP컬렉터블입니다. 태양신이자 세계 모든것들의 아버지라 여겨지는 라(RA)를 중심으로 모여든 사람들로 구성된 도시, City of RA의 88개 NFT를 지금 만나보세요!"
+    },
+    "snkrz": {
+      "desc": "스니커즈를 처음 이용하시는 분들이 편하게 스니커즈에 적응하실 수 있도록 구성된 스타터 팩입니다. 3개의 신발, 나일 전용 에픽 스킨, 랜덤 스킨, 각종 아이템을 스타터 팩을 통해 만나보세요!"
+    }
+  },
+  "collectionPage": {
+    "title": "London Underground Station(LUS) 264 Genesis",
+    "desc": "런던의 264개 각 역을 픽셀아트로 표현한 London Underground Station(LUS) 264 Genesis  컬렉션을 NFT로 만나보세요.",
+    "headBtn": "컬렉션 소개 보러가기",
+    "head": {
+      "btn": "프로젝트 보러가기",
+      "btn2": "홀더 혜택 및 시작가 안내",
+      "btn3": "구매 방식 안내",
+      "btn4": "NEITH Station 바로가기",
+      "data": {
+        "1": "총 NFT 수량",
+        "2": "응찰 중",
+        "6": "판매 중",
+        "3": "바닥가",
+        "4": "총 거래액",
+        "5": "응찰 종료",
+        "7": "판매 종료"
+      }
+    },
+    "searchPlaceholder": "NFT 이름을 검색해보세요.",
+    "nftName": "NFT 이름",
+    "type": "유형",
+    "transactionAmount": "거래액",
+    "time": "일시",
+    "noSearch": "검색 결과가 없습니다.",
+    "noSearchKeyword": "'{{keyword}}'에 해당하는 검색 결과가 없습니다.",
+    "filter": {
+      "1": "전체",
+      "2": "거래",
+      "3": "판매 등록",
+      "4": "제안",
+      "5": "소유자 이전"
+    },
+    "refund": "환불받기",
+    "neithDesc": "NEITH NFT는 창조의 신 네이트의 약속을 담아 NFT에 WEMIX를 포함해 판매하는 신개념 NFT 입니다. NFT 구매 후 Covenant Date가 도래하면 약속된 수량만큼의 WEMIX를  NEITH Vault를 통해 수령할 수 있습니다. Covenant Value는 NEITH Vault에서 언제든지 확인할 수 있습니다.",
+    "tangledDesc": "Tangled는 특별한 사람에게만 허락되는 탱글 커뮤니티의 NFT입니다. 누구보다 먼저 럭셔리 타임피스 홀더가 되어 상위 클래스 합성에 도전하세요. 선택받은 1%만이 합성에 성공하여 한정판 최상위 클래스 NFT를 가질 수 있습니다.",
+    "neithClaim": {
+      "title": "NEITH NFT 구매 및 Claim 방법",
+      "0": "Marketplace 또는 Projects에서 NEITH NFT를 확인합니다. (NEITH NFT를 나타내는 심볼을 확인하세요.)",
+      "1": "컬렉션 페이지에서 NEITH Covenant 조건을 확인합니다. 컬렉션 마다 기간 및 혜택이 다르게 구성되어 있습니다.",
+      "2": "월렛 연결 후 NFT를 구매 합니다. 미리 결제해야 할 WEMIX$를 보유하고 있으면 편리하게 거래 할 수 있습니다.",
+      "3": "NFT는 WEMIX$로 구매하고, 거래 시 발생하는 소정의 가스비는 WEMIX로 지불해야 합니다.",
+      "4": "클레임 전에는 유저간 거래가 가능합니다.",
+      "5": "네이트가 약속한 Covenant Date가 도래하면 NEITH Station에서 클레임 절차를 진행할 수 있습니다.",
+      "6": "NEITH Station에서 Covenant Claim버튼을 선택하면, NFT가 NEITH Altar에서 소각되며 NEITH Vault에 보관되어있던 WEMIX가 월렛으로 들어옵니다.(클레임 할 때 발생하는 가스비는 홀더가 부담합니다.)"
+    }
+  },
+  "bidResultPage": {
+    "successTitle": "응찰에 성공했습니다",
+    "successDesc": "옥션이 종료되면 알림을 받으실 수 있습니다.",
+    "cancelTitle": "응찰이 취소 되었습니다",
+    "cancelDesc": "취소한 응찰금이 월렛으로 반환되었습니다.",
+    "checkoutCompleteTitle": "NFT 수령이 완료되었습니다",
+    "checkoutCompleteDesc": "NFT는 월렛에서 확인하실 수 있습니다.",
+    "refundTitle": "응찰금 반환 완료!",
+    "refundDesc": "응찰금이 안전하게 반환되었어요.",
+    "purchaseTitle": "NFT 구매 성공!",
+    "purchaseDesc": "NFT구매가 성공적으로 완료되었습니다."
+  },
+  "retractingTooltip": "이전 입찰 내역을 취소할 수 있습니다. \n취소 시 Gas Fee가 발생합니다.",
+  "dontGetOfferTooltip": "판매를 위해 판매등록 하지 않더라도, 내가 보유한 NFT에 관심이 있는 사용자가 자유롭게 가격을 제안할 수 있습니다. 가격 제안을 받고 싶지 않다면 미판매 상태로 변경해 주세요. 상태 변경 시 Gas Fee를 지불해야 합니다.",
+  "getOfferTooltip": "가격 제안을 받고 싶다면 Open for Offers 상태로 변경해 주세요. 판매를 위해 판매등록 하지 않더라도, 내가 보유한 NFT에 관심이 있는 사용자가 자유롭게 가격을 제안할 수 있게 됩니다. 상태 변경 시 Gas Fee를 지불해야 합니다.",
+  "listProcess": {
+    "waitingForConfirmation": {
+      "contTitle": "판매",
+      "title": "월렛 확인 중...",
+      "desc": "월렛이 확인되었습니다."
+    },
+    "waitingForListing": {
+      "contTitle": "판매 등록",
+      "title": "NFT 판매 등록 중...",
+      "desc": "Marketplace에 NFT 등록이 요청되었으며,\n거래가 곧 활성화 됩니다."
+    },
+    "successfully": {
+      "contTitle": "판매",
+      "title": "NFT 판매 등록 완료!",
+      "desc": "Marketplace에 NFT 판매 등록이 성공적으로 완료되었습니다."
+    },
+    "resultEdit": {
+      "contTitle": "판매 등록 변경",
+      "title": "NFT 재 판매 등록 완료!",
+      "desc": "NFT가 성공적으로 다시 판매 등록되었습니다."
+    },
+    "resultCancel": {
+      "contTitle": "판매 취소",
+      "title": "NFT 판매 취소 완료!",
+      "desc": "Marketplace에 등록하신 NFT 판매 취소가 성공적으로 완료되었습니다."
+    },
+    "resultChangeNotForSale": {
+      "contTitle": "상태 변경",
+      "title": "상태 변경 완료!",
+      "desc": "NFT '미판매' 상태 변경이 성공적으로 완료되었습니다."
+    },
+    "resultAccept": {
+      "title": "판매가 완료되었습니다!",
+      "desc": "축하합니다. 당신의 NFT가 좋은 가격에 성공적으로 판매되었습니다."
+    },
+    "resultChange": {
+      "title": "상태 변경 완료!",
+      "desc": "NFT '가격 제안 받기' 상태 변경이 성공적으로 완료되었습니다."
+    },
+    "transfer": {
+      "title": "Transferred successfully",
+      "desc": "Your transfer has been successfully completed."
+    }
+  },
+  "offerProcess": {
+    "title": "가격 제안을 완료했습니다.",
+    "desc": "제안한 가격이 수락되면 NFT 거래가 체결됩니다."
+  },
+  "detailHistory": {
+    "1": "{{1}}에 민팅되었습니다.",
+    "2": "{{1}}가 판매를 시작했습니다.",
+    "3": "{{1}}가 응찰했습니다.",
+    "4": "{{1}}가 {{2}} WEMIX$ 응찰을 취소했습니다.",
+    "5": "{{1}}가 낙찰 받았습니다.",
+    "6": "{{1}}가 {{2}} {{3}}에 구매했습니다.",
+    "7": "{{1}}가 {{2}} {{3}}을 제안했습니다.",
+    "8": "{{1}}가 {{2}} {{3}} 제안을 취소했습니다.",
+    "9": "{{1}}의 {{2}} {{3}} 제안이 만료되었습니다.",
+    "10": "{{1}}가 {{2}} {{3}} 제안에 구매했습니다.",
+    "11": "{{1}}가 판매등록했습니다. (2차 거래 등록을 의미)",
+    "12": "{{1}}에서 {{2}}로 소유자가 이전되었습니다."
+  },
+  "sonCollection": {
+    "desc": "구매 방식 안내",
+    "q1": "NFT 발행 주기는 어떻게 되나요?",
+    "a1": "‘Sights of NILE’의 NFT 발행 주기는 ‘Story3.0’ 아티클의 발행 주기와 일치합니다. 현재 ‘Story3.0’ 아티클은 월 2회 발행 예정이며, \n새로운 아티클이 발행될 때마다 새로운 일러스트 NFT가 공개, 옥션이 진행될 예정입니다.",
+    "q2": "옥션에 어떻게 참여하나요?",
+    "a2": "‘Marketplace’에서 진행 중인 옥션에 바로 참여하실 수 있으며, ‘Life’의 프로젝트 상세페이지 NFT 탭을 통해서도 현재 옥션이 진행 중인 작품을 \n확인하실 수 있습니다.",
+    "q3": "옥션은 어떤 방식으로 진행되나요?",
+    "a3": "잉글리시 옥션(가장 높은 금액을 응찰하는 사람에게 낙찰)으로 진행됩니다. 현재 최고가보다 높은 금액으로만 응찰할 수 있으며, \n응찰은 WEMIX$로 가능합니다. 현재 최고가는 응찰 후 3시간 동안 유지되고, 3시간 이내에 추가 응찰이 없는 경우 낙찰이 확정됩니다.",
+    "q4": "낙찰 확정 후 구매 의사를 철회하고 싶으면 어떻게 하나요?",
+    "a4": "낙찰 확정 후 구매 의사 철회는 불가능합니다. 신중한 결정 부탁드립니다. 응찰도 기본적으로 철회가 불가능합니다. \n다만, 상위 응찰자 발생시에만 예외적으로 반환 가능합니다. (단, 가스비 지불 필요)"
+  },
+  "nileBannerTitle": "SON #5 무경계 시대",
+  "claimInfo": "NEITH NFT 구매 및 Claim 방법"
+}

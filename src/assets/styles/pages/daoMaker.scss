@@ -1,0 +1,424 @@
+.dao-maker-wrap {
+  width: 960px;
+  padding: 40px 0 60px;
+  margin: 0 auto;
+
+  &.prevent-edit {
+    .direct-input {
+      color: rgba($veryBlack, 25%);
+    }
+  }
+
+  @include md {
+    box-sizing: content-box;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  @include sm {
+    box-sizing: content-box;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .content-title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 0;
+    padding-bottom: 18px;
+    border-bottom-width: 2px;
+
+    h2 {
+      // align-self: flex-start;
+    }
+
+    p {
+      @include themeChangeMixin(color, 1);
+      @include fontFamilyBody(lr);
+
+      width: auto;
+
+      // padding: 8px 0;
+      margin: 0;
+
+      // color: $gray30;
+
+      strong {
+        @include fontFamilyBody(lb);
+      }
+    }
+  }
+
+  .form-heading-title {
+    @include fontFamilyHeading(l);
+
+    padding-top: 60px;
+    border-top: 1px solid $gray00;
+    margin-top: 40px;
+  }
+
+  .form-title {
+    @include fontFamilyHeading(mb);
+
+    margin-top: 60px;
+  }
+
+  .maker-form-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 32px;
+
+    & + .form-title {
+      padding-top: 60px;
+      border-top: 1px solid $gray80;
+      margin-top: 40px;
+    }
+
+    &.type-governance {
+      .ant-form-item {
+        width: 100%;
+      }
+    }
+
+    .ant-form-item {
+      width: 456px;
+
+      &.full-type {
+        width: 100%;
+
+        &.select-type {
+          .ant-form-item-control {
+            width: 456px;
+          }
+        }
+      }
+
+      &.has-checkbox {
+        .ant-checkbox-wrapper {
+          position: absolute;
+          top: -31px;
+          right: 0;
+
+          span {
+            color: $gray30;
+
+            @include fontFamilyNBody(SR_F);
+          }
+        }
+      }
+
+      .slider-info-list {
+        li {
+          @include fontFamilyNBody(SR_F);
+        }
+      }
+
+      .slider-desc {
+        @include fontFamilyNBody(SR_F);
+      }
+
+      .ant-radio-wrapper {
+        @include fontFamilyNBody(SR_F);
+
+        span {
+          color: $gray30;
+        }
+      }
+    }
+
+    .ant-input-affix-wrapper {
+      input[type="number"],
+      input[type="text"] {
+        text-align: right;
+      }
+
+      .ant-input-suffix {
+        @include fontFamilyInput(xs);
+
+        color: $gray60;
+      }
+
+      &.ant-input-affix-wrapper-disabled {
+        background-color: $gray90;
+
+        .ant-input-suffix {
+          color: $gray80;
+        }
+      }
+    }
+
+    .input-counting-wrap {
+      .ant-input-affix-wrapper {
+        .ant-input-suffix {
+          @include fontFamilyInput(m);
+
+          margin-left: 0;
+          color: $black;
+        }
+
+        &.ant-input-affix-wrapper-disabled {
+          background-color: $white;
+
+          .ant-input-suffix {
+            color: $gray80;
+          }
+        }
+      }
+    }
+
+    .input-info-desc {
+      @include fontFamilyNBody(SR_F);
+
+      margin-top: 8px;
+      color: $gray60;
+    }
+  }
+
+  .bottom-button-wrap {
+    padding-top: 32px;
+    border-top: 1px solid $gray80;
+    margin-top: 60px;
+    text-align: right;
+
+    .btn + .btn {
+      margin-left: 10px;
+    }
+
+    .final-info {
+      font-family: $fontKR;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      line-height: 28px;
+    }
+  }
+
+  .ant-slider.ant-slider-disabled {
+    cursor: default;
+
+    .ant-slider-track {
+      background-color: $black !important;
+    }
+
+    .ant-slider-rail {
+      @include themeChangeMixin(background-color, 1, !important);
+    }
+
+    .ant-slider-handle {
+      display: none;
+    }
+  }
+
+  .ant-radio-wrapper {
+    @include fontFamilyBody(sr);
+  }
+
+  .ant-radio-wrapper-checked {
+    .direct-input .ant-input {
+      pointer-events: auto;
+    }
+  }
+
+  .direct-input {
+    display: inline-flex;
+    align-items: center;
+
+    .ant-input {
+      @include fontFamilyInput(xs);
+      @include placeholder($gray60);
+
+      width: 200px;
+      margin: 0 4px 0 8px;
+      pointer-events: none;
+      text-align: right;
+
+      &.active {
+        pointer-events: auto;
+      }
+    }
+  }
+}
+
+.maker-signature-table {
+  span {
+    @include fontFamilyTable(br);
+  }
+
+  .user-cell {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    .wallet-address {
+      margin-left: 6px;
+    }
+
+    .tag {
+      width: 50px;
+    }
+
+    .has-tag {
+      margin-left: 6px;
+    }
+
+    .no-tag {
+      margin-left: 56px;
+    }
+  }
+}
+
+.dao-maker-signature-wrap {
+  &.only-button-area {
+    padding-top: 32px;
+    border-top: 1px solid $gray80;
+    margin-top: 60px;
+  }
+
+  .signature-header-wrap {
+    padding-top: 60px;
+    border-top: 1px solid $gray80;
+    margin-top: 60px;
+
+    .form-title {
+      margin-top: 0;
+    }
+
+    .desc-wrap {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 12px;
+
+      .desc {
+        @include fontFamilyBody(cl);
+
+        color: $gray30;
+      }
+
+      .date {
+        @include themeChangeMixin(color, 1);
+        @include fontFamilyChip(m1b);
+      }
+    }
+
+    & + .ant-table-wrapper {
+      margin-top: 32px;
+    }
+  }
+
+  .signature-button-area {
+    @include themeChangeMixin(background-color, 3);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0;
+    border-radius: 4px;
+    margin-top: 32px;
+
+    .text-area {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      strong {
+        @include fontFamilyBody(lb);
+
+        text-align: center;
+        white-space: pre-line;
+      }
+
+      span {
+        @include fontFamilyNBody(SR_F);
+
+        margin-top: 4px;
+        color: $gray30;
+      }
+    }
+
+    .button-area {
+      margin-top: 16px;
+
+      .ant-btn + .ant-btn {
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.contract-signature-result-wrap {
+  padding-top: 60px;
+  border-top: 1px solid $gray80;
+  margin-top: 60px;
+
+  .contract-signature-result-collapse {
+    .ant-collapse-expand-icon {
+      display: none;
+    }
+
+    .ant-collapse-header {
+      padding: 0;
+    }
+
+    .contract-collapse-header {
+      display: flex;
+      height: 54px;
+      justify-content: space-between;
+
+      .text-wrap {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        strong {
+          @include fontFamilyHeading(mb);
+        }
+
+        span {
+          @include fontFamilyBody(cl);
+
+          margin-top: 12px;
+          color: $gray30;
+        }
+      }
+
+      .right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+
+        .deadline-date {
+          @include fontFamilyChip(m1b);
+          @include themeChangeMixin(color, 1);
+
+          display: none;
+          margin-top: 12px;
+        }
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+      }
+    }
+
+    .ant-collapse-item-active .right {
+      svg {
+        transform: rotate(180deg);
+      }
+
+      .deadline-date {
+        display: block;
+      }
+    }
+
+    .ant-collapse-item {
+      .ant-collapse-content {
+        .ant-collapse-content-box {
+          padding-top: 32px;
+        }
+      }
+    }
+  }
+}

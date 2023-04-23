@@ -1,0 +1,1007 @@
+{
+  "header": {
+    "notification": {
+      "noMessage": "There are no notification to display.",
+      "finalExchangeRate": "Final Exchange Ratio",
+      "acquiredWonder": "Claimed Wonder",
+      "deleteNotification": "notification deletion",
+      "allRead": "All Read",
+      "allDelete": "Delete All",
+      "setNotification": "Set Notifications",
+      "confirmDeleteNotification": "Confirm Notifications Deletion",
+      "confirmDeleteButton": "Yes, delete them.",
+      "confirmCancelButton": "Yes, I will cancel.",
+      "confirmDeleteMessage": "Would you like to delete all notifications?",
+      "saved": "It's saved.",
+      "nft": {
+        "1": "{{nft}} from your notifications list has been begun {{type}}.",
+        "2": "A higher bid has been made in your NFT bid.",
+        "3": "Congratulations. Your NFT bid was successful. You can claim your NFT in the details page.",
+        "4": "Your NFT bid failed. The bid amount refund is available in the details page.",
+        "5": "{{nft}} from your notifications list is now available for sale in the Marketplace.",
+        "6": "{{nft}} has been sold.",
+        "7": "An offer has been made in your NFT.",
+        "8": "The offer period for {{nft}} has expired. Get a refund of your bid.",
+        "9": "{{nft}} from your notifications list is now available for sale in the Marketplace.",
+        "10": "Your offer for {{nft}} has been rejected. Get a refund of your bid.",
+        "11": "You turned on notifications for {{nft}}, and the auction has started.",
+        "12": "You turned on notifications for {{nft}}, and the collection is now on sale."
+      },
+      "dao": {
+        "1": "{{dao}} has been created. Get DAO Tokens.",
+        "2": "The creation of {{dao}} has been canceled. Refunds are available in the Details page.",
+        "3": "{{nickname}} has left a comment on your {{proposal}}.",
+        "4": "{{num}} users including {{nickname}} have left a comment on your {{proposal}}.",
+        "5": "A new proposal has been registered. Proposal details are available in the details page.",
+        "6": "A proposal has ended. Voting results are available in the details page.",
+        "7": "{{dao}} Station recruiting is beginning.",
+        "7-2": "{{dao}} Station additional recruiting is beginning.",
+        "8": "{{dao}} Recruiting NOW",
+        "9": "DAO Token Staking : Claimed {{num}}{{daoToken}}.",
+        "10": "DAO Token Unstaking : Claimed {{num}}{{governanceToken}}.",
+        "11": "Executing the conclusively passed contract of ‘{{name}}’ "
+      },
+      "life": {
+        "1": "You opted in to get notifications for {{project}}, and the collection is now on sale."
+      },
+      "community": {
+        "1": "You can enter {{community}} PAPYRUS now."
+      },
+      "setting": {
+        "title": "Notification Settings",
+        "desc": "Choose when you want to receive notifications.",
+        "cancel": {
+          "title": "Confirm Cancel Setting",
+          "desc-1": "Cancel setting notification?",
+          "desc-2": "If you cancel, the changes will not be saved."
+        },
+        "dao": {
+          "1": "When a DAO from my notifications list begins recruiting in Station",
+          "2": "When a recruiting result (success / fail) from a Station I have participated in comes out",
+          "3": "When a Proposal or discussion I have participated in has a new comment",
+          "4": "When a DAO Proposal I have participated in has been created, conclusively executed or ended",
+          "5": "When I have claimed GT or DT as a result of my DT Staking or Unstaking"
+        },
+        "marketplace": {
+          "1": "When the auction or sale of an NFT from my notifications list begins",
+          "2": "When there's a higher bid in a auction I have bid in",
+          "3": "When the bidding results of an auction I have bid in is out",
+          "4": "When an NFT I put up on the Marketplace has sold or ended sale",
+          "5": "When an NFT I put up on the Marketplace has an offer",
+          "6": "When the status of an NFT I have made an offer on has changed (offer period over, sold, or rejected)",
+          "7": "When an NFT from my notifications list has begun"
+        },
+        "life": {
+          "1": "When a Life project from my notifications list has begun"
+        },
+        "community": {
+          "1": "When a PAPYRUS I can join has been created"
+        }
+      }
+    },
+    "myMiniPage": {
+      "connectedWallet": "Connected wallet",
+      "totalBalance": "Total Balance of included DAO",
+      "noDao": "You are not a member of any DAOs.",
+      "myNFT": "My NFT",
+      "myNFTPrice": "My NFT Price",
+      "OwnedNFT": "Owned NFT",
+      "favorites": "Favorites",
+      "noNFT": "You do not hold any NFTs.",
+      "myPapyrus": "My PAPYRUS"
+    },
+    "account": {
+      "totalAmount": "Total Balance Amount",
+      "holdingCoin": "Coin Balance",
+      "transaction": "Transactions",
+      "confirmChangeWallet": "Confirm Wallet change",
+      "disconnectWalletMessage": "Do you want to disconnect your current Wallet and connect to the new Wallet you selected?",
+      "clearWalletConnectMessage": "Are you sure you want to disconnect {{wallet}}?",
+      "noTransaction": "You have no transaction history."
+    },
+    "search": {
+      "placeHolder": "Search",
+      "noResult": {
+        "title": "There are no search results.",
+        "desc": "There are no search results for '{{keyword}}'."
+      }
+    }
+  },
+  "footer": {
+    "familySites": "Family Sites",
+    "termsOfService": "Terms of Service",
+    "privacyPolicy": "Privacy Policy",
+    "cookiePolicy": "Cookie Policy",
+    "californiaPrivacyStatement": "California Privacy Statement",
+    "termsOfServiceForMarketplace": "Terms of Service for Marketplace",
+    "docs": "NILE Docs",
+    "supportCenter": "Support Center"
+  },
+  "filter": {
+    "title": "Filters",
+    "categories": "Categories",
+    "details": "Details",
+    "status": "Status",
+    "priceRange": "Price Range",
+    "sorting": "Sorting",
+    "setPrice": "Set Price",
+    "resetFilter": "Reset Filters",
+    "properties": "Properties"
+  },
+  "sorting": {
+    "recentlyActive": "Recently Active",
+    "endingSoon": "Ending Soon",
+    "newest": "Newest",
+    "oldest": "Oldest",
+    "highestPrice": "Highest Price",
+    "lowestPrice": "Lowest Price"
+  },
+  "toastMessage": {
+    "RequestComplete": "Request complete.",
+    "supportMsg": "Your application is completed.",
+    "requestAlarm": "Your notification request has been registered."
+  },
+  "modalTerm": {
+    "error": "Incorrect format"
+  },
+  "modalJoin": {
+    "title": "Ask to Collaborate",
+    "desc1": "If you want to work with NILE, send us the following information. \nWe will get back to you for discussions of collaboration when needed.",
+    "desc2": "Send us the following information if you wish to work with NILE Marketplace. \nWe will review it and give you a reply with your contact information.",
+    "text": "Items marked with an <0>{{strong1}}</0> are required.",
+    "button": "Ask to Collaborate",
+    "item": {
+      "0": {
+        "title": "Project Name",
+        "placeholder": "Please enter project name."
+      },
+      "1": {
+        "title": "Email",
+        "placeholder": "Please enter the email address to receive replies to",
+        "message": "Incorrect email format."
+      },
+      "2": {
+        "title1": "Project Category",
+        "placeholder1": "Select the category of your project."
+      },
+      "3": {
+        "title": "About This Project",
+        "placeholder": "Introduce your project."
+      },
+      "4": {
+        "title": "Related URL",
+        "placeholder": "Enter a related URL to speed up the review process.",
+        "message": "Incorrect URL format."
+      },
+      "5": {
+        "title": "Upload File",
+        "placeholder": "Click or drag the file here to upload.",
+        "text": "Only up to 1 jpg/png/pdf file can be uploaded. (Max. 500mb)"
+      }
+    },
+    "form": {
+      "status": "Uploading…",
+      "button": "Send",
+      "text": "Sent."
+    }
+  },
+  "404": {
+    "title": "Page not found",
+    "desc": "This page does not exist or is unavailable. Please check again if the address is correct.",
+    "btn": "Back to home"
+  },
+  "blank": "open new window",
+  "year": "Y",
+  "month": "M",
+  "week": "W",
+  "day": "D",
+  "1Day": "1 Day",
+  "1Week": "1 Week",
+  "1Month": "1 Month",
+  "1Year": "1 Year",
+  "all": "All",
+  "daily": "Daily",
+  "monthly": "Monthly",
+  "yearly": "Yearly",
+  "openProfile": "open profile",
+  "profileSetting": "profile setting",
+  "disconnectSns": "disconnecting social accounts",
+  "favorite": "favorite",
+  "share": "share",
+  "selectLang": "select Language",
+  "papyrus": "PAPYRUS",
+  "copyWallet": "copy wallet address",
+  "copyWalletAnnounce": "Wallet address copied.",
+  "goToMyPage": "go to my page",
+  "prev": "Prev",
+  "next": "Next",
+  "openAllMenu": "open all menu",
+  "refresh": "refresh",
+  "openSearchWindow": "open search window",
+  "openNotification": "open notification",
+  "returnToFullMenu": "return to full menu",
+  "close": "Close",
+  "seeMore": "more",
+  "disconnectWallet": "Disconnect Wallet",
+  "cancel": "Cancel",
+  "clear": "Disconnect",
+  "showMore": "Show more",
+  "exploreMore": "Explore More",
+  "open": "Open",
+  "viewChartDetails": "View Chart Details",
+  "upcoming": "Upcoming",
+  "closed": "Closed",
+  "auctionClosed": "Auction Closed",
+  "onSale": "On Sale",
+  "saleOver": "Sale Over",
+  "collection": "Collection",
+  "status": "Status",
+  "makePriceOffer": "Make Price Offer",
+  "openForOffers": "Open for Offers",
+  "onAuction": "On Auction",
+  "buyNow": "Buy Now",
+  "notForSale": "Not for Sale",
+  "downloadApp": "Download App",
+  "buyNft": "Buy NFT",
+  "viewTokens": "View Tokens",
+  "discoverStory": "Discover Story 3.0",
+  "viewCollectionInfo": "View Collection Info",
+  "viewNft": "View NFT",
+  "startingFrom": "Starting from",
+  "startingBid": "Starting Bid",
+  "currentBid": "Current Bid",
+  "finalBid": "Final Bid",
+  "fixedPrice": "Fixed Price",
+  "lastPrice": "Last Price",
+  "lastSale": "Last Sale",
+  "lastSalePrice": "Last Sale",
+  "currentHighestOfferPrice": "Highest Offer",
+  "currentOffer": "Highest Offer",
+  "startIn": "Sales Starts in",
+  "endsIn": "Ends in",
+  "opensOn": "Opens on",
+  "auctionStartsIn": "Auction Starts in",
+  "auctionEndsIn": "Auction Ends in",
+  "winner": "Winner",
+  "owner": "Owner",
+  "highestOffer": "Highest Offer",
+  "creator": "Creator",
+  "bidders": "Bidders",
+  "highestBidNow": "Highest Bid Now",
+  "winningBid": "Winning Bid",
+  "highestOfferNow": "Highest Offer",
+  "makeOffer": "Make Offer",
+  "salesStartsIn": "Sales Starts In",
+  "auctionStartIn": "Auction Starts In",
+  "salesEndsIn": "Sales Ends In",
+  "nFTLeft": "NFT left",
+  "from": "From",
+  "goAuction": "Live Auction",
+  "viewResult": "View Results",
+  "goToNFTs": "Go to NFTs",
+  "goToTokens": "Go to Tokens",
+  "viewArtwork": "View Artwork",
+  "viewCardType": "view card type",
+  "viewListType": "view list type",
+  "gotoLink": "Learn More",
+  "gotoLinkDynamic": "Go to {{link}}",
+  "viewMore": "View More",
+  "filterEmptyCase": "No results match your search criteria.",
+  "toBeOpened": "To be opened",
+  "end": "End",
+  "currentlyBidding": "Currently Bidding",
+  "goToAboutThisCollection": "Go to About This Collection",
+  "aboutThisCollection": "About This Collection",
+  "ParticipationEnquiry": "Participation Enquiry",
+  "disconnect": "Disconnect",
+  "unfoldingSoonWallet": "Wallet connections will be available from Nov 17th.",
+  "offersConfirm": "The status of this NFT has been changed to 'Open for Offers'. \n From now on, you will able to receive price offers from other users.",
+  "goToMarketplace": "Go to Marketplace",
+  "goToDaoHome": "Go to DAO Home",
+  "completeCopy": "copied.",
+  "placeBid": "Place Bid",
+  "approveButton": "Approve",
+  "cancelBid": "Cancel Bid",
+  "cancelMyOffer": "Cancel my offer",
+  "createListing": "Create listing",
+  "transfers": "Transfers",
+  "cancelSale": "Cancel Sale",
+  "editOrCancel": "Modify sale",
+  "sellAtOfferPrice": "Sell at Offer Price",
+  "acceptOffer": "Accept Offer",
+  "receiveNotification": "Receive notification when this is available for sale",
+  "cancelNotification": "Cancel notification when this is available for sale",
+  "cancelLisiting": "Cancel Sale",
+  "editLisiting": "Modify Sale",
+  "transferListing": "Transfer",
+  "listView": "View List",
+  "agree": "Agree",
+  "disagree": "Disagree",
+  "modified": "Yes, I will modify the sale.",
+  "goToGuide": "Go to NILE Guide",
+  "listedToken": "{{token}} has been listed in Tokens.",
+  "listedTokenMo": "{{token}} has been listed in Tokens.",
+  "partiAuction": "Live Auction",
+  "notShowAgain": "Do not show next time",
+  "discoverBtn": "Discover",
+  "discoverProjectBtn": "Discover Project",
+  "onlyWemix$": "NILE currently supports WEMIX$ only.",
+  "hide": "Hide",
+  "like": "Like",
+  "koDateStandard": "",
+  "claim": "클레임 하러가기",
+  "wallet": {
+    "title": "Connect Wallet",
+    "step": "Open the app on your smartphone.",
+    "step2": "Select the QR button in the upper right corner of the screen.",
+    "step3": "Verify after code scan",
+    "guideText": "Connect your wallet."
+  },
+  "connect": {
+    "firstTime": "If you’re connecting to MetaMask for the first time",
+    "how": "how to connect"
+  },
+  "makeOfferPopup": {
+    "content": "Make an offer for an NFT you wish the buy, \n and the seller will check your offer.",
+    "notice": "NILE currently supports WEMIX$ only.",
+    "notice2": "Any NFT sent to the wrong address cannot be recovered.",
+    "notice3": "Wallet address format is incorrect.",
+    "notice4": "Ownership transfer is not available to your own Wallet address.",
+    "notice5": "Sale starting date can be set from 10 minutes after the current time.",
+    "unit": "Price",
+    "txt": "Enter your offer price.",
+    "txt2": "Offer Expiring",
+    "txt3": "Offers are automatically canceled after 7 days. \n The canceled offer price can be returned through the return process."
+  },
+  "placeBidPopup": {
+    "txt": "NFT",
+    "txt4": "※ NILE requires confirmation of access authorization before WEMIX$(ERC-20) bidding is approved.",
+    "txt5": "Only the additional amount, minus the previous bid price, will be paid."
+  },
+  "shareBtn": {
+    "twitter": "Twitter",
+    "copy": "Copy Link"
+  },
+  "marketPlaceDetailTop": {
+    "open": "OPEN 2022.03.02 17:00 KST",
+    "infoTxt1": "Gas fee is incurred when bidding. The exact gas fee will be confirmed at the actual time of bidding.",
+    "infoTxt2": "A three-hour countdown will be executed at the time of bidding. Three hours will be extended in the event of a higher bidder. If there is no higher bidder, you will win after the countdown. Bidders follow established rules within the platform. Bid withdrawal is only available if there is a higher bidder.",
+    "infoTxt3": "Opens on {{time}}",
+    "infoTxt3-1": "Opens on {{time}}",
+    "infoTxt4": "The auction will end at {{time}} if there is no additional bidding.",
+    "infoTxt5": "Bid withdrawl is available only if there is a higher biddger. \nGas fee will be incurred when bid is withdrawn.",
+    "infoTxt6": "To claim the NFT, you must pay for the gas fee and complete the receipt process.",
+    "infoTxt7": "You have to pay the Gas Fee and complete the refund process to get a refund of your bid.",
+    "infoTxt8": "You have to pay the Gas Fee and complete the refund process to get a refund of your offer.",
+    "infoTxt9": "Even if you don't proceed with listing, users who are interested in your NFTs will be able to offer prices. If you don't want to receive offers, please change the status to not for sale. Gas fee must be paid to change the status.",
+    "infoTxt10": "If you want to get a price offer, please change your status to receive an offer. Even if you don't proceed with listing, users who are interested in your NFTs will be able to offer prices. Gas fee must be paid to change the status.",
+    "infoTxt11": "Gas fee is incurred when purchasing. The exact gas fee will be confirmed at the time of purchase.",
+    "infoTxt12": "Gas fee is incurred when offering and purchasing. The exact gas fee is determined at the time of proposal and purchase.",
+    "infoTxt13": "Offer cancellation is available until the seller accepts the offer. \nGas fee will be incurred when the proposal is canceled.",
+    "infoTxt14": "You can send an NFT to another user's Wallet for ownership transfer. A Gas Fee occurs for ownership transfer, and the exact amount of the Gas Fee is finalized at the point of ownership transfer.",
+    "infoTxt15": "The offer will automatically expire 7 days after it is made.",
+    "infoTxt16": "You have to complete the offer refund process to make an offer or buy.",
+    "infoTxt17": "Gas fees are incurred to make an offer. The exact fee will be confirmed at the time of making an offer.",
+    "infoTxt18": "There is an offer available for refund. You have to complete the offer refund process to make an offer or buy.",
+    "infoTxt19": "Users interested in your NFTs can freely make offers and buy.",
+    "infoTxt20": "Users interested in your NFTs can freely make offers and buy.",
+    "infoTxt21": "Purchase of NFTs for event airdrops in the primary market is not possible.",
+    "infoTxt22": "Ownership will be transferred to the winners after the event ends.",
+    "lookingNft": "{{name}}님이 {{price}}{{unit}}를 제안했습니다."
+  },
+  "changeConfirmPopup": {
+    "title": "Confirm Sale Change",
+    "txt": "Would you like to change the sale method or conditions?\nA Gas Fee occurs on registering for re-sale."
+  },
+  "refundPopup": {
+    "txt2": "Gas Fee",
+    "txt3": "Reimburse Amount",
+    "txt4": "Payment Amount",
+    "btn": "Get Refund"
+  },
+  "failedPopup": {
+    "txt": "Payment Failed",
+    "txt2": "Insufficient balance.",
+    "txt3": "Transaction Failed",
+    "soldOut": "This NFT is Sold Out.",
+    "btn": "Confirm"
+  },
+  "offerHistoryPopup": {
+    "title": "Offer history",
+    "desc": "Select the offer you would like to accept.",
+    "th1": "User",
+    "th2": "Offer Price",
+    "th3": "Offer Date and Time",
+    "btn": "Select"
+  },
+  "successPaymentPopup": {
+    "txt": "Pay",
+    "txt2": "NFT Winning Bid",
+    "txt3": "User",
+    "txt4": "Offer Price",
+    "txt5": "Offer Date and Time",
+    "btn": "Select"
+  },
+  "NFTFirstOpenMessage": "The details of this NFT will be available on February 27th.",
+  "NFTOpenMessage": "This feature will be available soon.",
+  "profileModal": {
+    "copy": "Copy to Clipboard",
+    "view": "View Profile"
+  },
+  "serviceIntroduceModal": {
+    "title": "NILE 서비스 소개 및 유의사항",
+    "btn1": "Disagree",
+    "btn2": "Agree",
+    "txt": "NILE service is subject to digital assets. NILE service is available at the choice of the member and can be terminated at any time if not desired. However, the loss of deposits mentioned in this document may occur in the event of service withdrawal due to the member’s choice.",
+    "txt2": "A member who agrees to the Service Use may use services such as DAO, NFT Marketplace, DApp recommendation etc. according to the periods provided within the Service. This is guided in a way that members can see from the service. All services that use digital assets of NILE service can be used after a member directly enters an amount and completes their signature.",
+    "txt3": "NILE’s DAO(Decentralized Autonomous Organization) service is about generation and management of Decentralized Autonomous Organization operated through users autonomous participation and smart contract. DAO is realized based on the NEITH Protocol composed of a total of 7 components: Station, Trust, Incinerator, Obelisk, Governance, Creator. DAO raises digital funds and distributes DAO Token through the Station. The raised digital funds are managed from the Treasury to DAO’s assets. The asset on consensus objective can be carried out through Trust, where entrusted with DAO’s name and authorization. It proceeds execution and management of the business. Through Trust, the business profits are distributed to the Treasury or Incinerator with promised proportions in the smart contract. The profits sent to the Treasury are managed as an asset of DAO. In Incinerator, the profit is used to purchase DAO Token being circulated. Purchased DAO token is then burned with proportion on the smart contract and sent to the Obelisk. As a result, DAO Token’s value rises through circulation reduction and may expect governance rewards through Staking pool. The management standards such as asset use of each DAOs, change of all distribution ratio may set or change through the Governance. The DAO business may proceed with the core IP provider, Creator and the Creator may be granted with partial authority to the business profits.",
+    "txt4": "The users in NILE’s DAO service may participate in DAO through stations of each DAO and send digital assets and will receive DAO Token equivalent to the amount of digital assets they participated in the Station when DAO is formed. Claimed DAO Token can be staked in DAO’s Taking Poll to acquire Governance Token or may hold DAO Token as it is. The Governance Token may be used to propose an agenda regarding DAO management or for voting. There is an exchange ratio of DAO Token and Governance Token in the Obelisk, and the relative exchange value of the Governance Token constantly rises as the DAO token is distributed in the Obelisk. Users can stake or unstake DAO Token with their own decision.",
+    "txt5": "NILE’s NFT marketplace is a service where NFTs can be bought and traded. NFTs can be bought with an auction or fixed price depending on the type of sale and users may buy or not buy with their decision. Users who wish to participate in the auction may bid on the desired NFT and will win a bid once there are no higher bidders within the limited time. If a higher bidder appears, the auction time will be extended and the lower bidder may withdraw their bid or rebid in the auction. For successful bidders, they will receive their NFT to their connected wallet by NFT transaction. The transaction based services occurring in NILE service such as ‘purchase’, ‘bid’, ‘offer price’, ‘claim NFT’ etc. may be charged with a gas fee and all gas fees shall be paid by the user. Gas fee may change depending on the network status and you can check your gas fee on the screen once you proceed the signature. Users who hold their purchased NFT may sell their NFT at a fixed price or by receiving price offers. For details regarding the Auction, please refer to the NILE’s Auction Terms of Service.",
+    "txt6": "The detailed regulations of the Service can be found through Support, FAQ etc. inside the Service after connecting your wallet and data standard provided in the NILE is based on the WEMIX explorer. Other data provided that are not supported by the explorer are supplementary data provided by the NILE for the convenience of the users.",
+    "txt7": "There may be a fee such as a gas fee while using the NILE service, and if there is a fee to pay, the member must deliver the fee to use the service. The fee rate may change anytime and it will be guided to the member within the service page.",
+    "txt8": "The Service network may fail or be delayed depending on the traffic, environment, circumstances, etc. according to the service types and the Service does not guarantee this.",
+    "txt9": "The service does not guarantee the reward that members received by using the NILE service and is not responsible for fluctuation in the value of digital assets that may occur when using the service. The use of digital assets is a member's choice, so all responsibility rests with the member. Members should be aware of all risks arising from using NILE service and proceed with all actions at members’ own discretion and responsibility.",
+    "txt10": "Content and information, including the estimated profit and price of tokens provided by the service, are supplemental materials to help members use the NILE service, not a solicitation and suggesting investment and trade. The service makes reasonable efforts to provide timely and accurate information as much as possible but does not guarantee the information's timeliness, suitability, or accuracy.",
+    "txt11": "Members are solely responsible for failing to obtain the expected benefits of using the service or for the loss of assets or property due to the risks inherent in the trade.",
+    "txt12": "Services are designed to operate through automated smart contract code to provide secure and transparent financial opportunities, but due to software complexity, inherent limitations of technology, and code integrity cannot be fully guaranteed.",
+    "txt13": "There may be undetected defects in the smart contract code used by the service, and there is a risk of asset loss due to theft through hacking, flash loan attacks, etc. that exploit these defects.",
+    "txt14": "The service is committed to maintaining the latest block synchronization, but due to natural disasters, server maintenance, transaction traffic jam in the chain, computer system errors, software attacks, etc., the service can be stopped/terminated without notice, and the service is not guaranteed to run 24 hours a day.",
+    "txt15": "These circumstances mentioned above can cause errors in numerical values displayed on the interface, temporary service connectivity, connection errors, and suspension. In this case, delays and request failures may occur during transaction processing, such as using the Staking, Unstaking requested by the user. When such suspension/termination occurs, the Company shall promptly notify users about the matter.",
+    "txt16": "In the absence of intentional or gross negligence by the Company in the provision of this service, the Company shall not be liable for this.",
+    "agree": "(필수) 나는 <0>{{a}}</0> 을 읽고 동의합니다.",
+    "term": "이용약관",
+    "nftTerm": "Terms of service for Marketplace"
+  },
+  "nileIntroduceModal": {
+    "title": "Nile Service Introduction & Terms",
+    "txt": {
+      "1": "NILE service is subject to digital assets. NILE service is available at the choice of the member and can be terminated at any time if not desired. However, the loss of deposits mentioned in this document may occur in the event of service withdrawal due to the member’s choice.",
+      "2": "A member who agrees to the Service Use may use services such as DAO, NFT Marketplace, DApp recommendation etc. according to the periods provided within the Service. This is guided in a way that members can see from the service. All services that use digital assets of NILE service can be used after a member directly enters an amount and completes their signature.",
+      "3": "NILE’s DAO(Decentralized Autonomous Organization) service is about generation and management of Decentralized Autonomous Organization operated through users autonomous participation and smart contract. DAO is realized based on the NEITH Protocol composed of a total of 7 components: Station, Trust, Incinerator, Obelisk, Governance, Creator. DAO raises digital funds and distributes DAO Token through the Station. The raised digital funds are managed from the Treasury to DAO’s assets. The asset on consensus objective can be carried out through Trust, where entrusted with DAO’s name and authorization. It proceeds execution and management of the business. Through Trust, the business profits are distributed to the Treasury or Incinerator with promised proportions in the smart contract. The profits sent to the Treasury are managed as an asset of DAO. In Incinerator, the profit is used to purchase DAO Token being circulated. Purchased DAO token is then burned with proportion on the smart contract and sent to the Obelisk. As a result, DAO Token’s value rises through circulation reduction and may expect governance rewards through Staking pool. The management standards such as asset use of each DAOs, change of all distribution ratio may set or change through the Governance. The DAO business may proceed with the core IP provider, Creator and the Creator may be granted with partial authority to the business profits.",
+      "4": "The users in NILE’s DAO service may participate in DAO through stations of each DAO and send digital assets and will receive DAO Token equivalent to the amount of digital assets they participated in the Station when DAO is formed. Claimed DAO Token can be staked in DAO’s Taking Poll to acquire Governance Token or may hold DAO Token as it is. The Governance Token may be used to propose an agenda regarding DAO management or for voting. There is an exchange ratio of DAO Token and Governance Token in the Obelisk, and the relative exchange value of the Governance Token constantly rises as the DAO token is distributed in the Obelisk. Users can stake or unstake DAO Token with their own decision.",
+      "5": "NILE’s NFT marketplace is a service where NFTs can be bought and traded. NFTs can be bought with an auction or fixed price depending on the type of sale and users may buy or not buy with their decision. Users who wish to participate in the auction may bid on the desired NFT and will win a bid once there are no higher bidders within the limited time. If a higher bidder appears, the auction time will be extended and the lower bidder may withdraw their bid or rebid in the auction. For successful bidders, they will receive their NFT to their connected wallet by NFT transaction. The transaction based services occurring in NILE service such as ‘purchase’, ‘bid’, ‘offer price’, ‘claim NFT’ etc. may be charged with a gas fee and all gas fees shall be paid by the user. Gas fee may change depending on the network status and you can check your gas fee on the screen once you proceed the signature. Users who hold their purchased NFT may sell their NFT at a fixed price or by receiving price offers. For details regarding the Auction, please refer to the NILE’s Auction Terms of Service.",
+      "6": "The detailed regulations of the Service can be found through Support, FAQ etc. inside the Service after connecting your wallet and data standard provided in the NILE is based on the WEMIX explorer. Other data provided that are not supported by the explorer are supplementary data provided by the NILE for the convenience of the users.",
+      "7": "There may be a fee such as a gas fee while using the NILE service, and if there is a fee to pay, the member must deliver the fee to use the service. The fee rate may change anytime and it will be guided to the member within the service page.",
+      "8": "The Service network may fail or be delayed depending on the traffic, environment, circumstances, etc. according to the service types and the Service does not guarantee this.",
+      "9": "The service does not guarantee the reward that members received by using the NILE service and is not responsible for fluctuation in the value of digital assets that may occur when using the service. The use of digital assets is a member's choice, so all responsibility rests with the member. Members should be aware of all risks arising from using NILE service and proceed with all actions at members’ own discretion and responsibility.",
+      "10": "Content and information, including the estimated profit and price of tokens provided by the service, are supplemental materials to help members use the NILE service, not a solicitation and suggesting investment and trade. The service makes reasonable efforts to provide timely and accurate information as much as possible but does not guarantee the information's timeliness, suitability, or accuracy.",
+      "11": "Members are solely responsible for failing to obtain the expected benefits of using the service or for the loss of assets or property due to the risks inherent in the trade.",
+      "12": "Services are designed to operate through automated smart contract code to provide secure and transparent financial opportunities, but due to software complexity, inherent limitations of technology, and code integrity cannot be fully guaranteed.",
+      "13": "There may be undetected defects in the smart contract code used by the service, and there is a risk of asset loss due to theft through hacking, flash loan attacks, etc. that exploit these defects.",
+      "14": "The service is committed to maintaining the latest block synchronization, but due to natural disasters, server maintenance, transaction traffic jam in the chain, computer system errors, software attacks, etc., the service can be stopped/terminated without notice, and the service is not guaranteed to run 24 hours a day.",
+      "15": "These circumstances mentioned above can cause errors in numerical values displayed on the interface, temporary service connectivity, connection errors, and suspension. In this case, delays and request failures may occur during transaction processing, such as using the Staking, Unstaking requested by the user. When such suspension/termination occurs, the Company shall promptly notify users about the matter.",
+      "16": "In the absence of intentional or gross negligence by the Company in the provision of this service, the Company shall not be liable for this."
+    },
+    "agree": "(Required) I have read and agree to the <0>{{a}}</0>.",
+    "term": "Terms of Service.",
+    "nftTerm": "Terms of Service for NFT Marketplace.",
+    "pushDisagree": "If you do not agree to the Terms of Service and the Privacy Agreement of NILE, you will not be able to use the service."
+  },
+  "Inspection": {
+    "title": "Service is undergoing maintenance.",
+    "desc": "We apologize for the inconvenience. Please come back later.\nMaintenance schedule:",
+    "btn": "Go to NILE Home"
+  },
+  "askToJoin": {
+    "popup": {
+      "txt1": "Age Confirmation and Terms of Service",
+      "txt2": "NILE is only available to users aged 19 or older, and confirming the date of birth is a requirement to use the service.",
+      "txt3": "California residents must verify their ZIP codes per California Consumer Privacy Act.",
+      "txt4": "Required",
+      "txt5": "Date of Birth",
+      "txt6": "Please enter your date of birth.(YYMMDD)",
+      "txt7": "California residents only",
+      "txt8": "Please enter your ZIP code.",
+      "txt9": "I have read and agree to the <0>{{a1}}</0> and the <1>{{a2}}</1>.",
+      "terms": "Terms of Service",
+      "privacy": "Privacy Agreement"
+    }
+  },
+  "marketplaceModal": {
+    "paymentComplete": "Payment complete",
+    "gasFeeInfo": "Because a transaction was created, a Gas Fee occurred.",
+    "gasFeeChangInfo": "The Gas Fee may change in real-time.",
+    "retractingInfo": "A Gas Fee occurs on cancelling a bid.",
+    "completeInfo": "Pay the Gas Fee to claim your NFT.",
+    "changeInfo": "A Gas Fee occurs on changing status",
+    "buyNowInfo": "A Gas Fee occurs on buying an NFT.",
+    "acceptInfo": "A Gas Fee occurs on accepting an offer.",
+    "paymentAmount": "Payment Amount",
+    "gasFee": "Gas Fee",
+    "buyNow": "Buy Now",
+    "withdrawMyBid": "Withdraw my bid",
+    "cancelMyOffer": "Cancel my offer",
+    "getMyBidBack": "Get Refund of Bid",
+    "getMyOfferBack": "Get Refund of Offer",
+    "completePayment": "Complete payment",
+    "completeCheckout": "Complete Checkout",
+    "confirmCheckout": "Confirm Checkout",
+    "changeStatus": "Change Status",
+    "okay": "Okay, I understand."
+  },
+  "bidHistoryPopup": {
+    "title": "Bid history",
+    "th1": "User",
+    "th2": "Bids",
+    "th3": "date",
+    "canceled": "Canceled",
+    "expired": "Expired"
+  },
+  "buyResultModal": {
+    "successTitle": "Congratulations!",
+    "successDesc": "Your NFT bid for {{price}} {{unit}} was successful. \nPlease complete the rest of the payment to claim the NFT.",
+    "successBtn": "Complete NFT",
+    "failTitle": "Unfortunately, your bid was not successful.",
+    "failDesc": "The winning bid for this NFT was made by {{user}} at {{price}} {{unit}}. \nClick the button below to claim your returned bid.",
+    "failBtn": "Claim Your Returned Bid",
+    "expiredTitle": "Unfortunately, your offer expired.",
+    "expiredDesc": "The seller did not accept your offer. \nClick the button below to claim your offer amount.",
+    "offerSuccessDesc": "The seller has accepted your offer of {{price}} {{unit}}. \nCheck the NFT in your Wallet.",
+    "offerFailTitle": "Unfortunately, your offer was rejected.",
+    "offerFailDesc": "The seller accepted someone else's offer. \nClick the button below to get your offer amount back.",
+    "sellBuyDesc": "Your NFT has been successfully sold.{{buyer}} has bought it for {{price}} {{unit}}."
+  },
+  "nftConfirmMoal": {
+    "cancelTitle": "Confirm Cancel Sale",
+    "cancelDesc": "Would you like to cancel the sale?\nA Gas Fee occurs on cancelling sale registration."
+  },
+  "secAgo": " sec ago",
+  "minutesAgo": " minutes ago",
+  "hourAgo": " hour ago",
+  "getRefund": "Get Refund",
+  "bought": "Bought",
+  "dontMakeOfferBtn": "I don't like to get a make offer",
+  "getMakeOfferBtn": "I'd like to get a make offer",
+  "networkSettingModal": {
+    "title": "How to set up mainnet network",
+    "item": {
+      "0": "Network name",
+      "1": "RPC Url",
+      "2": "Chain ID",
+      "3": "Currency symbol",
+      "4": "Block Explorer URL"
+    }
+  },
+  "walletModal": {
+    "process00-1": "NILE requires confirmation of access authorization for the use of WEMIX$ to proceed with the transaction. Use authorization for WEMIX$ is required only the once.",
+    "process00-2": "Confirmation of access authorization for your Wallet is required for NFT access and NFT transfer.",
+    "process01-1": "Complete confirmation of access authorization for the use of WEMIX$ in the {{wallet}} app to proceed with the transaction.",
+    "process01-2": "Complete approval of access authorization for NFT access and NFT transfer in the {{wallet}} app to proceed with the transaction.",
+    "process02": "Approve the payment in the {{wallet}} app to proceed with the transaction.",
+    "process03": "Please add your signature to complete \n setting up on {{wallet}}.",
+    "process04": "Please add your signature to complete \n setting up on {{wallet}.",
+    "progressText": {
+      "1": "Waiting for approval",
+      "2": "Processing",
+      "3": "Waiting for a signature"
+    },
+    "cancel": {
+      "title": "Signature rejected",
+      "desc": "Adding a signature to a Wallet is canceled. \n Please try again.",
+      "btn": "Confirm"
+    }
+  },
+  "bottomBanner": {
+    "guide": "Want to learn how to use NILE Marketplace? Please visit the Guide for further details.",
+    "guideMo": "NILE Marketplace Guide",
+    "nile": "The auction for {{collection}} has begun. Be the first one to experience the emergence of NILE civilization!",
+    "nileMo": "Sights of NILE Auction has begun",
+    "soon": "The auction for {{collection}} starts soon. Find out more about the collection now!",
+    "soonMo": "{{collection}} Auction has begun",
+    "begin": "The auction for {{nft}} has begun. Don't forget to get your NFT now!",
+    "beginMo": "{{nft}} Auction has begun",
+    "ongoing": "{{collection}} Auction is live. Check out the {{n}} NFTs!",
+    "saleNft": "The {{nft}} is available for purchase. Don't forget to get your NFT now!",
+    "saleNftMo": "{{nft}} Sale has started",
+    "saleCollection": "The {{collection}} collection is available for purchase. Don't forget to get your NFT now!",
+    "saleCollectionMo": "{{collection}} Sale has started",
+    "bid": "{{nft}} was sold for {{price}} {{unit}}.",
+    "bidMo": "{{nft}} Sold",
+    "fixedBid": "{{nft}} was sold for {{price}} {{unit}}.",
+    "fixedBidMo": "{{nft}} Sold",
+    "highest": "Successful bid of {{nft}} collectible at the highest price in NILE. Check out the most popular NFTs!",
+    "highestMo": "Successful bid of {{nft}} collectible at the highest price",
+    "highest2": "Successful bid of {{nft}} at the highest price in NILE. Check out the most popular NFTs!",
+    "highest2Mo": "Successful bid of {{nft}} at the highest price in NILE.",
+    "highest3": "{{nft}} Collectible has been sold at the highest price.",
+    "highest3Mo": "{{nft}} Collectible sold at the highest price",
+    "highest4": "{{nft}} has been sold at the highest price in NILE.",
+    "highest4Mo": "{{nft}} sold at the highest price in NILE",
+    "appear": "The {{n}} bidder of {{nft}} has appeared!",
+    "appearMo": "New: Bidder No. {{n}} of {{nft}}",
+    "story": "New Story 3.0 {{n}} has been published. Check it out!",
+    "storyMo": "New Story 3.0 {{n}} has been published",
+    "showcase": "The Lineup of four DAOs has been released. Check out the introduction video!",
+    "showcaseMo": "The Lineup of four DAOs has been released",
+    "daoPreview": "Recruitment of {{type}} DAO is starting soon. Please check for participation details!",
+    "wonderDaoPreview": "Recruitment of WONDER DAO is starting soon. Please check for participation details!",
+    "wonderDaoPreviewMo": "Recruitment of WONDER DAO is starting soon.",
+    "wonderDaoStart": "WONDER DAO recruitment is open, join us now!",
+    "daoOpen": "{{type}} DAO recruitment is open, join us now!",
+    "neithStationOpen": "NEITH Station has been unveiled! Explore and discover the mystical promise under the NEITH Covenant.",
+    "neithStationOpenMo": "NEITH Station unveiled",
+    "cityOfNileOpen": "{{collection}} has been unveiled. Check it out!",
+    "cityOfNileOpen2": "{{collection}} has been unveiled. Check it out now!",
+    "cityOfNileOpenMo": "{{collection}} unveiled",
+    "cityOfNileOpen2Mo": "{{collection}} is now open",
+    "neithPreview": "{{tier}} {{collection}} sale will start soon. Stay tuned!",
+    "neithPreviewMo": "{{tier}} {{collection}} sale will start soon.",
+    "neithPreviewAuction": "{{tier}} {{collection}} auction will start soon. Stay tuned!",
+    "neithPreviewAuctionMo": "{{tier}} {{collection}} auction will start soon.",
+    "neithMarketSale": "{{tier}} {{collection}} sale is open. Don't miss out on amazing NFTs!",
+    "neithMarketSaleMo": "{{tier}} of {{collection}} is available for purchase",
+    "neithMarketAuction": "{{tier}} {{collection}} auction is open. Don't miss out on amazing NFTs!",
+    "neithMarketAuctionMo": "{{tier}} of {{collection}} is available for purchase",
+    "neithHighest": "Successful bid of {{collection}} {{nft}} at {{price}} {{unit}}.",
+    "collectionPreview": "{{collection}} sale will start soon. Stay tuned!",
+    "collectionPreviewMo": "{{collection}} sale will start soon.",
+    "newTokenStock": "{{token}} has been listed in Tokens.",
+    "newTokenStockMo": "{{token}} has been listed in Tokens."
+  },
+  "transferBtn": "Transfer Ownership",
+  "confirm": "Confirm",
+  "eventPopup": {
+    "project": "Project",
+    "collection": "Collection",
+    "son2": {
+      "title": "SON #2 Invitation",
+      "desc": "Sight of NILE, the first NFT collection presented in NILE, is coming back with a new NFT. Get ready to dive into the creator’s point of view through the second collection of SON!"
+    },
+    "son3": {
+      "title": "SON #3 Utopia",
+      "desc": "The Web3 utopia imagined by NFT art artist NAKTA, check out the Sights of NILE(SON) #3 Collection."
+    },
+    "tipo": {
+      "before": "The SocialFi token TIPO has been listed on WEMIX Mainnet. Meet NILE ecosystem tokens on NILE Tokens that will open soon!",
+      "after": "Meet TIPO, the SocialFi token in NILE Tokens! \nA variety of NILE ecosystem tokens will be released shortly.",
+      "btn1": "Discover WEMIX.Fi",
+      "btn2": "Discover Project",
+      "btn3": "Discover Tokens"
+    },
+    "son4": {
+      "desc": "A painting-like work that incorporate fragments of the artist's emotions, Enjoy the art of the Web3 era from the perspective and through the fingertips of artist Y.Rapic in ‘An unbounded frame’, the 4th collection of Sights of NILE (SON)."
+    },
+    "showcase": {
+      "desc": "The Lineup of four DAOs has been released. \nCheck out the introduction video!",
+      "btn1": "Go to DAO",
+      "btn2": "Watch DAO introduction video"
+    },
+    "son5": {
+      "title": "SON #5 Borderless Era",
+      "desc": "Web3, a virtual world created through human wisdom, invention, and technology. View the world from Web3 in the fifth collection of Sights of NILE (SON) with Regina Kim."
+    },
+    "son6": {
+      "title": "SON #6 Emotion : Road. DNA",
+      "desc": "In the sixth collection of Sights of NILE (SON), immerse into the perspective of UiD on acceptance and boundaries that connect DAOs, where the most authentic light comes together."
+    },
+    "neithStation": {
+      "title": "A new concept of NFT born under the NEITH Covenant,\nthe beginning of a mystical journey.",
+      "desc": "The NEITH Station is a new type of NEITH NFT that bears WEMIX under the promise of NEITH, the goddess of creation. Holders of this NFT can claim the covenant amount of WEMIX on or after the Covenant Date. The Covenant Value is disclosed transparently in NEITH Vault."
+    },
+    "neithLaunch": {
+      "title": "NEITH Station\nWEMIX AirDrop EVENT",
+      "desc": "Mission event to support the Great Journey of NEITH Station.\nComplete missions to earn points, and don't miss the opportunity to receive WEMIX as rewards!",
+      "options": {
+        "period": {
+          "title": "Period",
+          "total": "(10 Days)",
+          "udc": "(KST)"
+        },
+        "reward": {
+          "title": "Total Reward"
+        }
+      },
+      "btn1": "View event details",
+      "btn2": "Discover Project"
+    },
+    "con": {
+      "title": "City of NEITH",
+      "desc": "The first round of NFT sales for the City of NEITH is about to begin. Check out the 88 NFTs featuring NEITH, the goddess of creation and mother of all gods and goddesses.\nDon't miss out, and make sure to review the sale schedule for each Tier.",
+      "btn1": "Discover Marketplace",
+      "schedule": {
+        "launch": "Sale starts on March 16th, 2023 12:00PM",
+        "udc": "(KST)",
+        "table": {
+          "column1": "Auction for 80 Civics",
+          "column2": "Auction for 4 Rares",
+          "column3": "Auction for 2 Epics",
+          "column4": "Auction for 1 Legendary",
+          "column5": "Auction for 1 Mythical"
+        }
+      }
+    },
+    "tangled": {
+      "title": "Tangled",
+      "desc": "Tangled is a NEITH NFT in NILE which allows you to claim WEMIX after a certain period of time upon purchasing the NFT. Prior to the claim period, it can be used on DApps, and you can breed to obtain a High End Timepiece. The higher the rank of your Timepiece, the more WEMIX you can claim.",
+      "subDesc": "Discover Tangled now!",
+      "btn1": "Discover Project",
+      "btn2": "Go to Collection",
+      "schedule": {
+        "launch": "Sale starts on March 23th, 2023 12:00PM",
+        "udc": "(KST)"
+      }
+    },
+    "tangled2": {
+      "title": "Tangled",
+      "desc": "The Second Round of Sales for Tangled Timepieces is about to begin. Tangled Timepieces is a NEITH NFT in NILE. Prior to the claim period, Timepieces can be used through the supported DApp. Do not miss this opportunity to purchase your own Tangled Timepiece and try upcoming Breeding Feature to breed multiple Timpieces for a chance to obtain a higher-tier Timepiece.",
+      "schedule": {
+        "launch": "Sale starts on April 20th, 2023 12:00PM",
+        "udc": "(KST)"
+      }
+    },
+    "kari": {
+      "title": "Kari",
+      "desc": "Kari is an expansion of the virtual human multiverse world of the Ari project, and is the second project from the artist Doonbo. Become a Holder of Kari, the Korean dark-fantasy female warrior, and join in the various activities in the PAPYRUS community.",
+      "btn1": "Discover Project",
+      "btn2": "Go to Collection",
+      "schedule": {
+        "launch": "Sale starts on April 3rd, 2023 12:00PM",
+        "udc": "(KST)"
+      }
+    },
+    "cora": {
+      "title": "City of RA",
+      "desc": "The first round of NFT sales for City of RA will begin soon. Meet the 88 NFTs of City of RA, a city built around the sun god Ra! Don't miss out, and check out the sales schedules by tier!",
+      "schedule": {
+        "launch": "Auction starts on April 12th, 2023 16:00PM",
+        "udc": "(KST)"
+      },
+      "scheduleTable": {
+        "schedule1": {
+          "date": "2023-04-12",
+          "time1": "16:00",
+          "detail1": "Auction for 80 Civics"
+        },
+        "schedule2": {
+          "date": "2023-04-13",
+          "time1": "10:00",
+          "detail1": "Auction for 4 Rares",
+          "time2": "16:00",
+          "detail2": "Auction for 2 Epics",
+          "time3": "17:00",
+          "detail3": "Auction for 1 Legendary",
+          "time4": "18:00",
+          "detail4": "Auction for 1 Mythical"
+        }
+      }
+    },
+    "bagc": {
+      "title": "BAGC",
+      "desc": "BAGC is a golf NFT project launched by ALTAVA Group, utilizing over 110 BAYC in collaboration with Anymoca Brands, The Sandbox, and Elite Apes. BAGG on NILE is an NEITH NFT, which allows you to Claim the covenanted amount of WEMIX at any time once the Covenant Date arrives.",
+      "schedule": {
+        "launch": "Sale scheduled in early May 2023"
+      }
+    },
+    "kariAirdropEvent": {
+      "title": "Kari WEMIX AirDrop Event",
+      "desc": "We have prepared a WEMIX AirDrop Event for Kari NFT holders.\nIf you haven’t held Kari NFTs yet, do not miss out on the exclusive holder benefit of winning the WEMIX!",
+      "details": {
+        "holder": {
+          "title": "Holder Standard",
+          "desc": "Kari NFT holders as of April 9th"
+        },
+        "date": {
+          "title": "AirDrop Date",
+          "desc": "In April"
+        },
+        "total": {
+          "title": "Total Reward",
+          "desc": "Total 2,000 WEMIX (10 WEMIX per NFT)"
+        }
+      },
+      "btn1": "View event details"
+    },
+    "wonderDaoLunch": {
+      "desc": "Recruitment for WONDER DAO, the first DAO of NILE, will begin soon. Join 40 WONDERS and contribute to the development and growth of the WEMIX mega-ecosystem!",
+      "desc2": "Recruitment of WONDER DAO, the first DAO of NILE, has started. Join 40 WONDERS and contribute to the development and growth of the WEMIX mega-ecosystem!",
+      "options": {
+        "period": {
+          "title": "Recruitment Period",
+          "total": "(10 days)",
+          "udc": "Korean Standard Time (KST)"
+        }
+      },
+      "btn1": "Go to Station"
+    },
+    "nftNyc": {
+      "title": "NILE X NFT.NYC 2023",
+      "desc": "Experience City of NILE, the first project of NEITH Station at NFT NYC 2023. We welcome future project teams and artists to join us in NEITH Station. Join NILE team to create and participate in innovative Web3 projects together!",
+      "details": {
+        "pariod": {
+          "title": "Period",
+          "desc": "2023-04-12 ~ 2023-04-14 (3 Days)"
+        },
+        "location": {
+          "title": "Location",
+          "desc": "Javits Center / 4F"
+        }
+      },
+      "btn1": "Show more"
+    },
+    "snkr2": {
+      "title": "SNKR2",
+      "desc": "Sales for SNKR Starter Pack NFT is about to begin. The Starter Pack NFT consists of four items. Get the SNKR2 Starter Pack NFT, only available on NILE, for about 50% off and experience the completely renewed SNKR2 on the WEMIX chain!",
+      "button": "Go to Collection",
+      "date": "Sales starts on April 27th, 2023 12:00PM",
+      "dateInfo": "(KST)"
+    },
+    "wemixChampionship": {
+      "desc": "The KLPGA Tour and WEMIX are coming together in 2023! \u2028Follow the dazzling performances of the players towards the WEMIX Championship via NEITH NFTs from the first to the final round of the KLPGA 2023. Players from 1st to 60th place will be awarded NFTs with prizes, and one more NFT, identical to the one given to the player, will be minted and soon available for sale.",
+      "info1": "RACE TO WEMIX CHAMPIONSHIP NFT",
+      "info2": "Sale Scheduled in the first half of 2023",
+      "buttonText": "Go to WEMIX Championship"
+    }
+  },
+  "toast": {
+    "walletCopy": "Wallet address copied."
+  },
+  "footprint": {
+    "emotion": {
+      "emotional": "Emotional",
+      "impressive": "Impressive",
+      "grateful": "Grateful",
+      "happy": "Happy",
+      "classic": "Classic",
+      "flying": "Flying",
+      "amazing": "Amazing",
+      "light": "Light",
+      "tearful": "Tearful",
+      "strong": "Strong",
+      "tired": "Tired",
+      "proud": "Proud",
+      "tasty": "Tasty",
+      "cool": "Cool",
+      "fresh": "Fresh",
+      "good": "Good",
+      "spicy": "Spicy",
+      "pleasant": "Pleasant",
+      "cozy": "Cozy",
+      "fantastic": "Fantastic",
+      "repentant": "Repentant",
+      "hazy": "Hazy",
+      "clamorous": "Clamorous",
+      "serene": "Serene",
+      "agreeable": "Agreeable",
+      "bold": "Bold",
+      "bright": "Bright",
+      "neat": "Neat",
+      "breathless": "Breathless",
+      "exciting": "Exciting",
+      "confident": "Confident",
+      "cheerful": "Cheerful",
+      "holeful": "Holeful",
+      "lively": "Lively",
+      "active": "Active",
+      "hopeful": "Hopeful",
+      "nectarous": "Nectarous",
+      "nostalgic": "Nostalgic",
+      "fond": "Fond",
+      "tough": "Tough",
+      "strange": "Strange",
+      "beloved": "Beloved",
+      "affable": "Affable",
+      "pure": "Pure",
+      "eager": "Eager",
+      "familiar": "Familiar",
+      "crushing": "Crushing",
+      "hot": "Hot",
+      "vulnerable": "Vulnerable",
+      "longing": "Longing",
+      "expected": "Expected",
+      "desired": "Desired",
+      "hopeless": "Hopeless",
+      "funny": "Funny"
+    },
+    "god": {
+      "ra": "Ra",
+      "amun": "Amun",
+      "geb": "Geb",
+      "nut": "Nut",
+      "shu": "Shu",
+      "tefnut": "Tefnut",
+      "ptah": "Ptah",
+      "khnum": "Khnum",
+      "osiris": "Osiris",
+      "set": "Set",
+      "horus": "Horus",
+      "thoth": "Thoth",
+      "anubis": "Anubis",
+      "khonsu": "Khonsu",
+      "sobek": "Sobek",
+      "imentet": "Imentet",
+      "hapi": "Hapi",
+      "min": "Min",
+      "montu": "Montu",
+      "satet": "Satet",
+      "ihy": "Ihy",
+      "ahti": "Ahti",
+      "besna": "Besna",
+      "ishtar": "Ishtar",
+      "heset": "Heset",
+      "nefertum": "Nefertum",
+      "maahes": "Maahes",
+      "sopdu": "Sopdu",
+      "sait": "Sait",
+      "khenti": "Khenti",
+      "nepit": "Nepit",
+      "ha": "Ha",
+      "isis": "Isis",
+      "nephthys": "Nephthys",
+      "bastet": "Bastet",
+      "sekhmet": "Sekhmet",
+      "amunet": "Amunet",
+      "hathor": "Hathor",
+      "maat": "Maat",
+      "neith": "Neith",
+      "heqet": "Heqet",
+      "serket": "Serket",
+      "nakith": "Nakith",
+      "nekhbet": "Nekhbet",
+      "wadjet": "Wadjet",
+      "tayt": "Tayt",
+      "bat": "Bat",
+      "temet": "Temet",
+      "serapis": "Serapis",
+      "ash": "Ash",
+      "kneph": "Kneph",
+      "anuket": "Anuket",
+      "mnevis": "Mnevis",
+      "anat": "Anat",
+      "khesfu": "Khesfu",
+      "bennu": "Bennu",
+      "atum": "Atum",
+      "heh": "Heh",
+      "ammit": "Ammit",
+      "apis": "Apis"
+    }
+  },
+  "empty": {
+    "noArticle": "No posts are registered.",
+    "noData": "The data is not available."
+  },
+  "recruitmentCard": {
+    "notice": "2023-04-14 ~ 2023-04-24 (10 days)",
+    "notice02": "To participate in WONDER DAO after recruiting is over,</br>you can buy WONDER (the DAO Token) in WEMIX.Fi.",
+    "dynamicNotice": "To participate in {{dao}} DAO after recruiting is over, you can buy {{token}} in WEMIX.Fi.",
+    "watch": " people has explored {{dao}} DAO!",
+    "join": "Participation in {{type}} DAO is always open!",
+    "start": "Recruitment will start in \n{{date}}.",
+    "time01": "Time left until recruiting {{time}}",
+    "time02": "begins",
+    "time03": "ends",
+    "completeDao": "Successfully collected a total of {{n}} WEMIX \nthrough recruiting!",
+    "goToStation": "Go to Station",
+    "goToFi": "Go to WEMIX.Fi",
+    "soon": "Recruiting will begin soon",
+    "soonArteumDelta": "Recruiting opens in\nthe first half of 2023.",
+    "soonArteumDeltaSub": "The schedule will be announced in the near future.",
+    "soonOracle": "Recruiting opens in\nthe second half of 2023.",
+    "soonOracleSub": "The schedule will be announced in the near future.",
+    "fail": "DAO recruiting has failed.",
+    "failDesc": "Recruitment failed as the minimum recruitment goal has not been met."
+  },
+  "rewardPeople": "Members",
+  "rewardDonePeople": "명 참여 완료",
+  "prepareService": "Service is being prepared.",
+  "prepareService2": "Coming Soon",
+  "watchDaoShowcase": "Watch DAO Showcase",
+  "goToStation": "Go to Station",
+  "governanceOpen": "Governance will be open soon.",
+  "goToCollection": "Go to Collection",
+  "goToCollectible": "Go to Collectible",
+  "discoverDetailProject": "Discover Project",
+  "goToBtn": "Go to {{name}}",
+  "goToBtn2": "Go to {{name}}",
+  "goToBtn3": "Discover {{name}}",
+  "toBeRevealed": "To be revealed",
+  "agendaPopup": {
+    "title": "안건삭제",
+    "desc": "안건을 삭제하시겠습니까?",
+    "btn1": "아니오",
+    "btn2": "네",
+    "toast": "삭제되었습니다."
+  },
+  "copyLink": "Copied.",
+  "goToCollection2": "Go to Collection",
+  "comingsoon": "Collection will be begin soon"
+}

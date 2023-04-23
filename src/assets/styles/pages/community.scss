@@ -1,0 +1,748 @@
+.community-wrap {
+  background-color: #fff;
+
+  .community-section-title {
+    @include fontFamilyDp(sb);
+
+    padding-bottom: 18px;
+    border-bottom: 1px solid $black;
+    margin-bottom: 24px;
+
+    @include md {
+      margin-bottom: 16px;
+    }
+
+    @include sm {
+      padding-bottom: 12px;
+      margin-bottom: 14px;
+    }
+  }
+
+  .community-banner {
+    // background: url(#{$publicImgPath}/bg_community_hero.png) no-repeat center center;
+    position: relative;
+
+    @include md {
+      position: relative;
+      background-image: url(#{$rootPath}/img/bg_community_hero_md.png);
+      background-position: right -60px;
+      background-repeat: no-repeat;
+      background-size: 239px 272px;
+    }
+
+    @include sm {
+      position: relative;
+      background-image: url(#{$rootPath}/img/bg_community_hero_sm.png);
+      background-position: right -50px;
+      background-repeat: no-repeat;
+      background-size: 146px 196px;
+    }
+
+    .banner {
+      padding: 40px 0 52px;
+      background-image: url(#{$rootPath}/img/bg_community_hero.png);
+      background-position: right -60px;
+      background-repeat: no-repeat;
+      background-size: 422px 348px;
+
+      @include md {
+        padding-bottom: 40px;
+        background: none;
+      }
+
+      @include sm {
+        height: 100%;
+        padding-bottom: 40px;
+        background: none;
+      }
+
+      @include maxWidthLg;
+
+      .info {
+        p.title {
+          @include fontFamilyDp(xsb);
+        }
+
+        strong {
+          display: inline-block;
+
+
+
+          @include fontFamilyDp(l);
+
+          .beta-beige {
+            @include fontFamilyBody(cxs);
+
+            display: inline-flex;
+            padding: 1px 4px 2px;
+            border-radius: 4px;
+            margin-left: 2px;
+            background-color: $nile60;
+            color: $gray100;
+            font-weight: 400 !important;
+            transform: translateY(6px);
+            vertical-align: text-top;
+          }
+
+          @include sm {
+            margin-top: 4px;
+          }
+
+          + p.description {
+            width: 387px;
+            margin-top: 8px;
+            color: $gray30;
+
+            @include md {
+              width: 384px;
+            }
+
+            @include sm {
+              width: 281px;
+            }
+
+            @include fontFamilyBody(sr);
+          }
+        }
+      }
+
+      .buttons {
+        margin-top: 10px;
+
+        @include md {
+          margin-top: 6px;
+        }
+
+        @include sm {
+          margin-top: 6px;
+        }
+
+        .btn:disabled {
+          svg path {
+            fill: $gray60;
+          }
+        }
+
+        .info {
+          @include fontFamilyBody(sr);
+          @include dotStyle(3px, $gray60, 8px);
+
+          padding-left: 7px;
+          margin-top: 8px;
+          color: $gray60;
+
+          @include sm {
+            margin-top: 4px;
+          }
+        }
+
+        > ul {
+          display: flex;
+          flex-wrap: wrap;
+          align-items: center;
+          justify-content: flex-start;
+
+          > li {
+            margin-top: 10px;
+            margin-right: 8px;
+
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .community-lists-wrap {
+    @include maxWidthLg;
+
+    .community-lists {
+      margin-top: 60px;
+      margin-bottom: 68px;
+
+      @include md {
+        margin-bottom: 80px;
+      }
+
+      @include sm {
+        margin-top: 40px;
+        margin-bottom: 80px;
+
+        .pagination-wrap {
+          margin-top: 40px;
+        }
+      }
+
+      > div:not(.pagination-wrap) {
+        margin-top: 60px;
+
+        @include sm {
+          margin-top: 68px;
+        }
+
+        &:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+
+    h2 {
+      @include fontFamilyDp(sb);
+    }
+
+    .lists {
+      padding-top: 28px;
+      border-top: 2px solid $black;
+      margin-top: 20px;
+
+      @include md {
+        margin-top: 16px;
+      }
+
+      @include sm {
+        padding-top: 48px;
+        margin-top: 14px;
+      }
+
+      > li {
+        &:last-child {
+          .community-card {
+            padding-bottom: 0;
+            border-bottom: 0;
+          }
+
+          .community-card .info {
+            padding-bottom: 0;
+          }
+        }
+
+        & + li {
+          margin-top: 28px;
+
+          @include md {
+            margin-top: 28px;
+          }
+
+          @include sm {
+            margin-top: 60px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.community-card {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  border-bottom: 1px solid $gray80;
+
+  @include lg {
+    padding-bottom: 28px;
+  }
+
+  @include md {
+    height: inherit;
+    padding-bottom: 28px;
+  }
+
+  @include sm {
+    height: inherit;
+    padding-bottom: none;
+    border-bottom: 0;
+  }
+
+  .join-info {
+    @include fontFamilyBody(cs);
+
+    padding-bottom: 8px;
+    color: $gray60;
+  }
+
+  .info {
+    display: flex;
+    height: 100%;
+    flex: 2;
+
+    @include md {
+      flex-basis: 100%;
+    }
+
+    @include sm {
+      width: 100%;
+      flex: auto;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .info-image {
+      position: relative;
+
+      @include lg {
+        width: 200px;
+        height: 200px;
+        flex: 0 0 auto;
+      }
+
+      @include md {
+        width: 240px;
+        height: 240px;
+        flex: 0 0 auto;
+      }
+
+      @include sm {
+        width: 170px;
+        height: 170px;
+      }
+    }
+
+    .info-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding-right: 40px;
+      margin-left: 28px;
+
+      @include md {
+        padding-top: 4px;
+        padding-right: 0;
+      }
+
+      @include sm {
+        padding-right: 0;
+        margin-top: 16px;
+        margin-left: 0;
+        text-align: center;
+      }
+
+      > ul > li {
+        &:first-child {
+          > * {
+            margin-right: 4px;
+          }
+        }
+
+        &.info-title {
+          @include fontFamilyHeading(l);
+
+          padding: 16px 0 8px;
+
+          @include sm {
+            @include fontFamilyHeading(xl);
+
+            padding: 12px 0 4px;
+          }
+        }
+
+        &.info-description {
+          @include fontFamilyBody(mr);
+
+          p {
+            color: $gray30;
+
+            @include ellipsis(2);
+          }
+        }
+      }
+
+      .action-button {
+        margin-bottom: 4px;
+
+        @include sm {
+          margin-bottom: 0;
+        }
+
+        button {
+          width: 150px;
+
+          @include md {
+            width: 165px;
+          }
+
+          @include sm {
+            display: none;
+          }
+        }
+      }
+
+      & + .is-size-sm-action-button {
+        padding-top: 20px;
+        border-top: 1px solid $gray80;
+        margin-top: 20px;
+
+        @include sm {
+          padding-top: 0;
+          border-top: none;
+        }
+      }
+    }
+  }
+
+  // TODO: 22.11.03 11/11 오픈 제외 콘텐츠
+  // .extra-info {
+  //   flex: 1;
+  //   padding-left: 40px;
+  //   border-left: 1px solid $gray80;
+
+  //   @include lg {
+  //     height: 200px;
+  //   }
+
+  //   @include md {
+  //     padding-left: 0;
+  //     border-left: none;
+  //   }
+
+  //   @include sm {
+  //     padding-left: 0;
+  //     border-left: none;
+  //   }
+
+  //   ul {
+  //     display: flex;
+  //     flex-direction: column;
+
+  //     @include lg {
+  //       height: 100%;
+  //       justify-content: space-between;
+  //       padding-top: 4px;
+  //     }
+
+  //     @include md {
+  //       display: inline-flex;
+  //       flex-direction: row;
+  //       margin-bottom: 20px;
+  //     }
+
+  //     @include sm {
+  //       flex-flow: row wrap;
+  //       padding: 20px 0;
+  //       border-top: 1px solid $gray80;
+  //       border-bottom: 1px solid $gray80;
+  //     }
+
+  //     > li {
+  //       margin-bottom: 16px;
+
+  //       &.members-wrap {
+  //         font-size: 0;
+  //       }
+
+  //       @include md {
+  //         flex: 0 0 auto;
+  //         margin-bottom: 0;
+  //         font-size: 0;
+
+  //         & + li {
+  //           margin-left: 48px;
+  //         }
+  //       }
+
+  //       @include sm {
+  //         flex: 0 0 50%;
+  //         flex-direction: row;
+  //         margin-bottom: 0;
+  //       }
+
+  //       &:last-child {
+  //         margin-bottom: 0;
+
+  //         @include sm {
+  //           margin-top: 20px;
+  //         }
+  //       }
+
+  //       .title {
+  //         @include fontFamilyBody(cs);
+
+  //         display: inline-block;
+  //         margin-bottom: 12px;
+  //         color: $gray60;
+  //       }
+
+  //       p {
+  //         @include fontFamilyData(m2);
+
+  //         @include sm {
+  //           @include fontFamilyData(sb);
+  //         }
+  //       }
+
+  //       .unit {
+  //         @include fontFamilyData(sr);
+
+  //         font-weight: 400;
+
+  //         @include sm {
+  //           @include fontFamilyData(cs);
+  //         }
+  //       }
+
+  //       .members {
+  //         display: flex;
+  //         align-items: center;
+
+  //         .unit {
+  //           @include fontFamilyData(sr);
+
+  //           margin-left: 8px;
+  //         }
+  //       }
+  //     }
+
+  //     + .is-size-sm-action-button {
+  //       display: inline-block;
+  //       margin-top: 20px;
+
+  //       > button {
+  //         min-width: 150px;
+  //       }
+  //     }
+  //   }
+  // }
+}
+
+.community-official-wrap {
+  @include maxWidthLg;
+
+  .official-lists {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 20px;
+
+    @include lg {
+      row-gap: 16px;
+    }
+
+    @include md {
+      row-gap: 20px;
+    }
+
+    @include sm {
+      row-gap: 12px;
+    }
+  }
+
+  .official-lists-item {
+    @include lg {
+      width: calc((100% - 40px) / 3);
+    }
+
+    @include md {
+      width: calc((100% - 20px) / 2);
+    }
+
+    @include sm {
+      width: 100%;
+    }
+  }
+
+  .official-card {
+    overflow: hidden;
+    width: 100%;
+    border: 1px solid $gray80;
+    border-radius: 4px;
+    background: $gray100;
+
+    .thumbnail {
+      position: relative;
+      width: 100%;
+      height: 128px;
+
+      @include md {
+        height: 15.721vw;
+      }
+
+      @include sm {
+        height: 33.333vw;
+      }
+    }
+
+    .content {
+      position: relative;
+      padding: 18px 20px 20px;
+
+      @include sm {
+        padding: 22px 20px 20px;
+      }
+
+      .logo {
+        position: absolute;
+        top: -46px;
+        display: flex;
+        width: 60px;
+        height: 60px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $gray80;
+        border-radius: 20px;
+        background-color: $gray100;
+
+        .icon-logo-wrap {
+          width: 100% !important;
+          height: 100% !important;
+        }
+
+        .icon-official {
+          position: absolute;
+          right: -10px;
+          bottom: -10px; // 피그마상 -4px이나 icon에 shadow로 인해 사이즈가 6px씩 더 크므로 -10px로 작성.
+        }
+      }
+
+      .text-area {
+        height: 48px;
+
+        @include sm {
+          height: auto;
+        }
+
+        .name {
+          @include ellipsis(2);
+          @include fontFamilyBody(cardmb);
+        }
+
+        .description {
+          margin-top: 4px;
+          color: $gray30;
+
+          @include ellipsis(2);
+          @include fontFamilyBody(sr);
+        }
+      }
+
+      .info-area {
+        display: flex;
+        align-items: stretch;
+        margin-top: 12px;
+
+        li {
+          display: flex;
+          align-items: center;
+          color: $gray30;
+
+          @include fontFamilyData(cs);
+
+          > div {
+            margin-right: 4px;
+          }
+
+          &:not(:first-of-type) {
+            &::before {
+              display: inline-block;
+              width: 1px;
+              height: 15px;
+              background-color: $gray80;
+              content: "";
+              margin-inline: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.channel-list-wrap {
+  @include maxWidthLg;
+
+  margin-top: 40px;
+
+  h2 {
+    @include fontFamilyDp(sb);
+  }
+
+  .channel-list-inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+
+    @include sm {
+      margin-bottom: 40px;
+    }
+
+    .channel-items {
+      width: calc(50% - 10px);
+      margin-right: 20px;
+
+      @include md {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      @include sm {
+        width: 100%;
+        margin-right: 0;
+      }
+
+      &:nth-child(even) {
+        margin-right: 0;
+
+        @include md {
+          margin-right: 0;
+        }
+      }
+
+      &:nth-child(n+3) {
+        margin-top: 12px;
+      }
+
+      &:nth-child(n+2) {
+        @include md {
+          margin-top: 12px;
+        }
+
+        @include sm {
+          margin-top: 12px;
+        }
+      }
+
+      .channel-button {
+        display: flex;
+        width: 100%;
+        padding: 20px;
+        border: 1px solid $gray80;
+        border-radius: 4px;
+        text-align: left;
+
+        @include md {
+          padding: 18px 20px;
+        }
+
+        @include sm {
+          padding: 16px 20px;
+        }
+      }
+
+      .logo {
+        width: 44px;
+        height: 44px;
+        margin-right: 12px;
+      }
+
+      .text-wrap {
+        flex: 1;
+
+        .name {
+          display: block;
+          margin-bottom: 6px;
+
+          @include fontFamilyBody("tb");
+
+          color: $gray00;
+        }
+
+        .schedule {
+          display: block;
+
+          @include fontFamilyBody("cl");
+
+          color: $gray30;
+        }
+      }
+    }
+  }
+}

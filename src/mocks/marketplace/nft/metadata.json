@@ -1,0 +1,70 @@
+{
+  "name": [
+    {
+      "language": "en",
+      "value": "Meebit #12347"
+    }
+  ],
+  "description": [
+    {
+      "language": "en",
+      "value": "Meebit #12347"
+    }
+  ],
+  "image": "https://file.nile.io/nft/lus264/1.png",
+  "externalLink": "",
+  "backgroundColor": {
+  },
+  "attributes": [
+    {
+      "trait_type": "Zone",
+      "value": [
+        2,
+        3
+      ]
+    },
+    {
+      "trait_type": "Line",
+      "value": "Ponytail"
+    },
+    {
+      "trait_type": "Hair Color",
+      "value": "Dark"
+    },
+    {
+      "trait_type": "Glasses",
+      "value": "Aviators"
+    },
+    {
+      "trait_type": "Shirt",
+      "value": "Tube Top"
+    },
+    {
+      "trait_type": "Shirt Color",
+      "value": "Green"
+    },
+    {
+      "trait_type": "Pants",
+      "value": "Leggings"
+    },
+    {
+      "trait_type": "Pants Color",
+      "value": "Blue Camo"
+    },
+    {
+      "trait_type": "Shoes",
+      "value": "Canvas"
+    },
+    {
+      "trait_type": "Shoes Color",
+      "value": "Gray"
+    }
+  ],
+  "imageDetails": {
+    "bytes": "",
+    "format": "",
+    "sha256": "",
+    "width": "",
+    "height": ""
+  }
+}

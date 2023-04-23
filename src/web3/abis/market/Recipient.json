@@ -1,0 +1,455 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_feeManagerAddress",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "constructor"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_orderContract",
+        "type": "address",
+        "indexed": true
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "_orderIndex",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "address[]",
+        "name": "_recipient",
+        "type": "address[]"
+      },
+      {
+        "type": "uint256[]",
+        "indexed": false,
+        "internalType": "uint256[]",
+        "name": "_price"
+      }
+    ],
+    "name": "DistributionEvent",
+    "type": "event",
+    "anonymous": false
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "previousOwner",
+        "type": "address"
+      },
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "OwnershipTransferred",
+    "type": "event"
+  },
+  {
+    "type": "event",
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "address",
+        "name": "_collection",
+        "type": "address"
+      },
+      {
+        "indexed": false,
+        "internalType": "enum Type.Round",
+        "name": "_round",
+        "type": "uint8"
+      },
+      {
+        "components": [
+          {
+            "internalType": "address[]",
+            "name": "recipient",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "rate",
+            "type": "uint256[]"
+          }
+        ],
+        "indexed": false,
+        "internalType": "struct Type.FeeSet",
+        "name": "_feeSet",
+        "type": "tuple"
+      }
+    ],
+    "name": "RecipientSetted"
+  },
+  {
+    "inputs": [
+      {
+        "name": "account",
+        "type": "address",
+        "internalType": "address"
+      }
+    ],
+    "name": "addEditor",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_orderIndex",
+        "type": "uint256"
+      },
+      {
+        "name": "_collection",
+        "type": "address",
+        "internalType": "address"
+      },
+      {
+        "name": "tid",
+        "type": "uint256",
+        "internalType": "uint256"
+      },
+      {
+        "internalType": "enum Type.Round",
+        "name": "_round",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "price",
+        "type": "uint256"
+      }
+    ],
+    "name": "distributionEventEmit",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "name": "getFeaturedFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_collection",
+        "type": "address"
+      }
+    ]
+  },
+  {
+    "name": "getFeeManagerAddress",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": []
+  },
+  {
+    "type": "function",
+    "inputs": [],
+    "name": "getMaxFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "type": "function",
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_collection",
+        "type": "address"
+      }
+    ],
+    "name": "getPlatformFee",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_collection",
+        "type": "address"
+      },
+      {
+        "internalType": "enum Type.Round",
+        "name": "_round",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tid",
+        "type": "uint256"
+      }
+    ],
+    "name": "getRecipient",
+    "outputs": [
+      {
+        "internalType": "struct Type.FeeSet",
+        "name": "",
+        "type": "tuple",
+        "components": [
+          {
+            "name": "recipient",
+            "type": "address[]",
+            "internalType": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "rate",
+            "type": "uint256[]"
+          }
+        ]
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function",
+    "inputs": [],
+    "name": "getTokenManagerAddress"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "isEditor",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "owner",
+    "outputs": [
+      {
+        "internalType": "address",
+        "name": "",
+        "type": "address"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "account",
+        "type": "address"
+      }
+    ],
+    "name": "removeEditor",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [],
+    "name": "renounceOwnership",
+    "outputs": []
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "_newAddress",
+        "type": "address"
+      }
+    ],
+    "name": "setFeeManagerAddress",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "_fee",
+        "type": "uint256"
+      }
+    ],
+    "name": "setMaxFee",
+    "outputs": [],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "struct Type.Collection",
+        "name": "_collection",
+        "type": "tuple",
+        "components": [
+          {
+            "type": "string",
+            "internalType": "string",
+            "name": "name"
+          },
+          {
+            "internalType": "address",
+            "name": "addr",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "owner",
+            "type": "address"
+          },
+          {
+            "internalType": "address",
+            "name": "genesis",
+            "type": "address"
+          },
+          {
+            "name": "fRecipient",
+            "type": "address[]",
+            "internalType": "address[]"
+          },
+          {
+            "internalType": "address[]",
+            "name": "sRecipient",
+            "type": "address[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "fRate",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256[]",
+            "name": "sRate",
+            "type": "uint256[]"
+          },
+          {
+            "internalType": "uint256",
+            "name": "genesisHolderFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "platformFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "uint256",
+            "name": "featuredFee",
+            "type": "uint256"
+          },
+          {
+            "internalType": "enum Type.GenesisType",
+            "name": "genesisType",
+            "type": "uint8"
+          }
+        ]
+      }
+    ],
+    "name": "setRecipient",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "stateMutability": "nonpayable",
+    "type": "function",
+    "inputs": [
+      {
+        "type": "address",
+        "internalType": "address",
+        "name": "_newAddress"
+      }
+    ],
+    "name": "setTokenManagerAddress",
+    "outputs": []
+  },
+  {
+    "type": "function",
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "newOwner",
+        "type": "address"
+      }
+    ],
+    "name": "transferOwnership",
+    "outputs": [],
+    "stateMutability": "nonpayable"
+  }
+]

@@ -1,0 +1,7206 @@
+/* stylelint-disable scss/no-global-function-names */
+.dao-wrap {
+  .ant-breadcrumb {
+    li {
+      display: flex;
+      align-items: center;
+
+      span {
+        color: $gray60;
+
+        &.now {
+          color: $gray00;
+        }
+      }
+    }
+
+    .ant-breadcrumb-link {
+      @include fontFamilyBody(cs);
+    }
+
+    .ant-breadcrumb-separator {
+      margin: 0 4px;
+
+      svg {
+        font-size: 12px;
+        transform: rotate(-90deg);
+
+        path {
+          fill: $gray60;
+        }
+      }
+    }
+  }
+}
+
+// 거버넌스
+.dao-governance-wrap {
+  .governance-tab-wrap {
+    overflow: hidden;
+    border-radius: 4px;
+    margin-top: 24px;
+    background-color: $gray100;
+
+    @include daoMd {
+      background-color: $gray100;
+    }
+
+    @include daoSm {
+      background-color: $gray100;
+    }
+
+    div[role="tabpanel"] {
+      padding: 16px 0 60px;
+
+      @include daoSm {
+        background-color: $gray100;
+      }
+    }
+
+    i.new {
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 100%;
+      margin-left: 2px;
+      transform: translateY(-3px);
+
+      @include themeChangeMixin(background-color, 1);
+
+      @include sm {
+        width: 4px;
+        height: 4px;
+        margin-left: 4px;
+        transform: translateY(calc(-100% - 5px));
+      }
+    }
+
+    .ant-select-dropdown.select-size-sm-dropdown {
+      top: 32px !important;
+      width: 344px;
+      padding: 8px;
+
+      .rc-virtual-list {
+        .ant-select-item {
+          @include fontFamilyInput(sm);
+
+          height: 20px;
+          padding: 0;
+          color: $gray00;
+
+          & + .ant-select-item {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+
+    @include md {
+      .ant-tabs-top.tab-type.tab-lg .ant-tabs-tab .ant-tabs-tab-btn {
+        height: 56px;
+        padding: 0;
+      }
+    }
+
+    div[role="tablist"] {
+      margin-bottom: 0;
+      background-color: $white;
+
+      &::after {
+        @include content;
+
+        position: absolute;
+        z-index: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background-color: $gray80;
+      }
+    }
+
+    .radio-chip {
+      .ant-radio-button-wrapper {
+        &.ant-radio-button-wrapper.ant-radio-button-wrapper-checked {
+          .chip {
+            background-color: $black;
+            color: $gray100;
+
+            @include fontFamilyChip(mb);
+
+            .count {
+              color: $gray100;
+              font-weight: 400;
+            }
+          }
+        }
+
+        .chip {
+          border: 0;
+          background-color: $gray90;
+          color: $gray30;
+
+          @include fontFamilyChip(mb);
+
+          .count {
+            color: $gray30;
+          }
+        }
+      }
+    }
+
+    .switch-button {
+      @include fontFamilyNBody(MR_F);
+
+      margin-right: 24px;
+
+      span {
+        color: $gray00;
+        vertical-align: middle;
+      }
+
+      .ant-switch {
+        margin-left: 4px;
+      }
+
+      @include daoMd {
+        padding: 8px 0;
+        margin-right: 16px;
+      }
+
+      @include daoSm {
+        padding: 8px 0;
+        margin-right: 20px;
+      }
+    }
+
+    .ant-tabs-top > .ant-tabs-nav {
+      .ant-tabs-nav-wrap {
+        @include daoMd {
+          display: block;
+          width: 100%;
+        }
+
+        @include daoSm {
+          display: block;
+          width: 100%;
+        }
+
+        .ant-tabs-tab {
+          .ant-tabs-tab-btn {
+            @include daoSm {
+              text-align: center;
+              white-space: pre-line;
+            }
+          }
+        }
+
+        .ant-tabs-nav-list .ant-tabs-tab [role="tab"] {
+          @include fontFamilyNUi(SR_V_Tab);
+        }
+      }
+    }
+
+    .ant-tabs-nav-wrap {
+      z-index: 10;
+      border-radius: 4px 4px 0 0;
+    }
+
+    .ant-tabs-content-holder {
+      background-color: $white;
+    }
+
+    .content-filters {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      @include md {
+        padding: 0 24px;
+
+        .ant-select.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+          min-width: 250px;
+        }
+      }
+
+      @include sm {
+        padding: 0 20px;
+
+        .ant-select.ant-select-single:not(.ant-select-customize-input) .ant-select-selector {
+          min-width: 160px;
+        }
+      }
+
+      button.outline-highlight {
+        width: 88px;
+        min-width: auto;
+        height: 36px;
+        padding: 0;
+
+        @include daoSm {
+          width: 70px;
+        }
+
+        svg {
+          margin-left: 4px;
+
+          path {
+            @include themeChangeMixin(stroke, 1);
+          }
+        }
+
+        .btn-inner {
+          justify-content: center;
+        }
+      }
+
+      .content-radio-group {
+        padding: 0 16px;
+
+        .ant-radio-group {
+          overflow-x: auto;
+        }
+      }
+
+      .content-select-group {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 16px;
+
+        @include daoMd {
+          padding: 0 16px;
+          margin-top: 16px;
+        }
+
+        @include daoSm {
+          padding: 0 16px;
+          margin-top: 16px;
+        }
+
+        .ant-select-selector {
+          border-color: $gray80;
+        }
+
+        .ant-select-selection-item {
+          display: inline-block;
+          overflow: hidden;
+          padding: 8px 13px 8px 0;
+          color: $gray30;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+
+        .ant-select:first-child,
+        .ant-select:last-child {
+          position: relative;
+          z-index: 3;
+          width: 160px;
+
+          @include daoMd {
+            width: calc(50% - 4px);
+          }
+
+          @include daoSm {
+            width: calc(50% - 4px);
+          }
+        }
+
+        .ant-select:last-child {
+          margin-left: 8px;
+        }
+      }
+
+      .ant-select-selection-item {
+        padding: 8px 13px 8px 0;
+      }
+    }
+
+    .content-wrap {
+      padding: 0 24px;
+
+      @include daoSm {
+        padding: 16px 20px 0;
+      }
+
+      .governance-contents {
+        & .btn-icon-arrow {
+          width: 100%;
+          padding: 24px 0;
+        }
+
+        .empty {
+          display: flex;
+          min-height: 400px;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          > svg {
+            width: 40px;
+            height: 40px;
+
+            @include daoSm {
+              width: 32px;
+              height: 32px;
+            }
+          }
+
+          p {
+            width: 260px;
+            height: 36px;
+            color: $gray60;
+            font-size: 12px;
+            line-height: 36px;
+            text-align: center;
+            vertical-align: middle;
+          }
+        }
+      }
+
+      .content-top {
+        min-height: 500px;
+        margin-top: 16px;
+      }
+    }
+  }
+
+  .switch-button-wrap-lg {
+    @include daoLg {
+      display: block;
+    }
+
+    @include daoMd {
+      display: none;
+    }
+
+    @include daoSm {
+      display: none;
+    }
+  }
+
+  .switch-button-wrap-md-sm {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include daoXl {
+      display: none;
+    }
+
+    @include daoLg {
+      display: none;
+    }
+  }
+}
+
+.governance-filter-modal-content {
+  margin-top: -20px;
+
+  .list {
+    .title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 14px 0;
+      border-bottom: 1px solid $gray80;
+    }
+
+    .governance-filter-inner-list {
+      display: flex;
+      flex-direction: column;
+      padding-top: 19px;
+
+      label {
+        & + label {
+          margin-top: 15px;
+        }
+      }
+    }
+  }
+}
+
+.governance-card {
+  border: 1px solid $gray80;
+  border-radius: 8px;
+  margin-top: 16px;
+  background-color: $gray100;
+
+  @include sm {
+    &:first-of-type {
+      margin-top: 0;
+    }
+  }
+
+  &.my-agenda {
+    border: 1px solid $black;
+  }
+
+  &.trust-check {
+    .top {
+      .governance-content-visual {
+        .quorum-info-wrap {
+          @include daoXl {
+            justify-content: center;
+            padding-bottom: 0;
+          }
+
+          @include daoLg {
+            justify-content: center;
+            padding-bottom: 0;
+          }
+
+          @include daoMd {
+            position: relative;
+            z-index: 10;
+          }
+
+          .chart {
+            margin-bottom: 40px;
+
+            @include daoSm {
+              margin-bottom: 0;
+            }
+          }
+        }
+
+        @include daoSm {
+          padding-bottom: calc(56px + 8px);
+        }
+      }
+    }
+  }
+
+  .top {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    @include daoMd {
+      position: relative;
+      z-index: 1;
+      flex-direction: column;
+    }
+
+    @include daoSm {
+      flex-direction: column;
+      padding: 16px;
+    }
+
+    .governance-content-visual {
+      .bar-chart-wrap {
+        height: 106px;
+      }
+
+      .quorum-info-wrap {
+        @include daoXl {
+          justify-content: flex-end;
+          padding-bottom: 18px;
+
+          .factor {
+            top: 68px;
+          }
+        }
+
+        @include daoLg {
+          justify-content: flex-end;
+          padding-bottom: 18px;
+
+          .factor {
+            top: 68px;
+          }
+        }
+      }
+    }
+
+    .governance-content-info {
+      height: 250px;
+      flex: 1;
+      padding: 24px 28px 24px 24px;
+
+      @include daoMd {
+        padding: 24px 24px 0;
+      }
+
+      @include daoSm {
+        flex: 1;
+        padding: 0;
+      }
+
+      .tags {
+        .chip {
+          height: 20px;
+
+          @include fontFamilyChip(mb);
+
+          &-bg {
+            @include themeChangeMixin(background-color, 1);
+          }
+
+          &.disabled {
+            border: 1px solid $gray60;
+          }
+        }
+
+        .tag-primary {
+          @include fontFamilyChip(mr);
+          @include themeChangeMixin(border-color, 2);
+
+          font-weight: 400;
+          vertical-align: bottom;
+
+          &.tag-bg {
+            @include themeChangeMixin(border-color, 1);
+          }
+
+          svg {
+            margin-top: -2px;
+            margin-right: 4px;
+
+            path {
+              @include themeChangeMixin(fill, 1);
+            }
+          }
+        }
+      }
+
+      .content-info {
+        .content-info-link {
+          display: block;
+
+          &:hover {
+            .title strong,
+            .description {
+              text-decoration: underline;
+              text-underline-offset: 3px;
+            }
+          }
+        }
+
+        .tags {
+          display: block;
+
+          ul {
+            display: flex;
+
+            > li {
+              margin-right: 8px;
+              font-size: 0;
+
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+
+        .content-info-link {
+          margin-top: 12px;
+
+          .title {
+            display: flex;
+
+            .trust-icon {
+              margin-right: 4px;
+            }
+          }
+
+          @include daoMd {
+            margin-top: 16px;
+          }
+
+          .title {
+            strong {
+              @include themeChangeMixin(color, 1);
+              @include fontFamilyNBody(MB_F);
+            }
+          }
+
+          .description {
+            @include ellipsis(3);
+
+            height: 66px;
+            margin-top: 4px;
+            color: $gray00;
+
+            @include fontFamilyNBody(MB_F);
+
+            @include daoMd {
+              height: 44px;
+              margin-top: 8px;
+
+              @include ellipsis(2);
+            }
+
+            @include daoSm {
+              @include ellipsis(5);
+
+              height: 110px;
+            }
+          }
+        }
+
+        .thumb-address {
+          margin-top: 16px;
+
+          @include daoMd {
+            margin-top: 24px;
+          }
+
+          @include daoSm {
+            margin-top: 12px;
+          }
+
+          > button {
+            display: flex;
+            align-items: center;
+
+            &:focus,
+            &:hover {
+              text-decoration: underline;
+            }
+
+            .address {
+              margin-left: 8px;
+              color: $gray30;
+
+              @include fontFamilyNBody(MR_F);
+            }
+          }
+        }
+
+        .proceed {
+          margin-top: 12px;
+
+          @include daoMd {
+            position: absolute;
+            z-index: 10;
+            bottom: 24px;
+            left: 24px;
+          }
+
+          > button[class*="btn-outline"] {
+            border: 0;
+
+            @include themeChangeMixin(background-color, 3);
+
+            span {
+              @include fontFamilyButton(sr);
+              @include themeChangeMixin(color, 1);
+            }
+
+            @include daoSm {
+              height: auto;
+              justify-content: flex-start;
+              padding: 8px;
+              text-align: left;
+              white-space: pre-wrap;
+            }
+          }
+
+          > button[class*="btn-bg"] {
+            width: 120px;
+          }
+
+          > a[class*="btn-bg"] {
+            @include themeChangeMixin(background-color, 3);
+            @include themeChangeMixin(border-color, 3);
+
+            white-space: normal;
+
+            @include daoMd {
+              height: auto;
+              justify-content: flex-start;
+              padding: 8px !important;
+              text-align: left;
+            }
+
+            @include daoSm {
+              height: auto;
+              justify-content: flex-start;
+              padding: 8px !important;
+              text-align: left;
+            }
+
+            > span {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              text-align: left;
+
+              @include fontFamilyButton(sr);
+
+              @include daoMd {
+                line-height: 1.333;
+                white-space: pre-line;
+              }
+
+              @include daoSm {
+                line-height: 1.333;
+                white-space: pre-line;
+              }
+            }
+
+            svg {
+              width: 12px;
+              height: 12px;
+
+              path {
+                @include themeChangeMixin(stroke, 1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 24px 9px;
+    border-top: 1px solid $gray80;
+
+    @include daoMd {
+      padding: 9px 24px 10px;
+    }
+
+    @include daoSm {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 12px 16px;
+    }
+
+    .date-status {
+      display: flex;
+      align-items: center;
+
+      @include daoMd {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      @include daoSm {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .date {
+        display: flex;
+        align-items: center;
+
+        @include daoSm {
+          flex-wrap: wrap;
+        }
+
+        dt {
+          @include fontFamilyNBody(MB_F);
+
+          margin-right: 8px;
+          color: $gray30;
+        }
+
+        dd {
+          @include fontFamilyNBody(MR_F);
+
+          color: $gray30;
+        }
+      }
+
+      .status {
+        @include themeChangeMixin(color, 1);
+        @include fontFamilyNBody(MB_F);
+
+        @include daoSm {
+          margin-top: 4px;
+        }
+
+        &::before {
+          display: inline-block;
+          width: 1px;
+          height: 12px;
+          margin: 0 8px;
+          background-color: $gray80;
+          content: "";
+
+          @include daoMd {
+            display: none;
+          }
+
+          @include daoSm {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .comment-view-wrap {
+      margin-top: auto;
+
+      @include daoSm {
+        margin-top: 4px;
+      }
+    }
+  }
+
+  .governance-content-visual {
+    overflow: hidden;
+    width: 430px;
+    max-width: 430px;
+    height: 100%;
+    flex: 1;
+
+    @include daoXl {
+      height: 250px;
+    }
+
+    @include daoLg {
+      height: 250px;
+    }
+
+    @include daoMd {
+      display: inline-flex;
+      width: 324px;
+      padding: 0;
+      padding-bottom: 24px;
+      margin: 0 48px 0 auto;
+    }
+
+    @include daoSm {
+      width: 100%;
+      padding: 20px 0 0;
+    }
+  }
+}
+
+.discussion-card {
+  display: flex;
+  min-height: 278px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px 20px;
+  border: 1px solid #f3f3fc;
+  border-radius: 8px;
+  background-color: $gray100;
+
+  @include themeChangeMixin(border-color, 3);
+
+  .tag-wrap {
+    margin-bottom: 12px;
+
+    @include daoMd {
+      margin-bottom: 16px;
+    }
+  }
+
+  .card-title {
+    @include fontFamilyBody(lr);
+
+    display: block;
+  }
+
+  .desc {
+    @include fontFamilyBody(sr);
+
+    margin-top: 8px;
+  }
+
+  .card-bottom {
+    .card-info {
+      display: flex;
+      margin-top: 12px;
+
+      li + li {
+        margin-left: 20px;
+      }
+
+      span {
+        display: inline-block;
+      }
+
+      .info-name {
+        @include fontFamilyBody(sr);
+
+        color: $gray60;
+      }
+
+      .info-content {
+        @include fontFamilyBody(sb);
+
+        margin-left: 4px;
+      }
+    }
+  }
+}
+
+.governance-detail-contents-wrap {
+  padding: 24px 24px 0;
+  border-radius: 4px;
+  background-color: $gray100;
+}
+
+.governance-check-contents-wrap {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-top: 24px;
+  gap: 24px;
+
+  @include md {
+    display: block;
+  }
+
+  @include sm {
+    display: block;
+  }
+
+  .governance-check-contents-left {
+    flex: 0 0 712px;
+
+    @include daoLg {
+      flex: 3;
+      flex: 0 0 648px;
+    }
+  }
+
+  .governance-check-contents-right {
+    flex: 0 0 344px;
+
+    @include daoLg {
+      flex: 1;
+      flex: 0 0 312px;
+    }
+  }
+}
+
+@mixin governanceCheckSettingTable($nth1, $nth2) {
+  .check-content-wrap table {
+    col {
+      &:nth-child(1) {
+        width: $nth1;
+      }
+    }
+
+    th,
+    td {
+      width: auto;
+    }
+
+    &.detail-table {
+      col {
+        &:nth-child(2) {
+          width: $nth2;
+        }
+      }
+    }
+  }
+}
+
+.governance-check-contents-left {
+  .governance-setting-wrap {
+    @include daoSm {
+      border: none;
+      border-radius: 0;
+      border-top: 1px solid $gray80;
+    }
+  }
+
+  .governance-setting-type-wrap {
+    @include daoXl {
+      @include governanceCheckSettingTable(160px, 184px);
+    }
+
+    @include daoLg {
+      @include governanceCheckSettingTable(160px, 150px);
+    }
+
+    @include daoMd {
+      @include governanceCheckSettingTable(160px, 184px);
+    }
+
+    .proposal-table {
+      min-width: 320px;
+
+      td {
+        text-align: right;
+
+        @include daoSm {
+          min-width: 168px;
+        }
+      }
+    }
+  }
+}
+
+.dao-comment-card {
+  padding-top: 12px;
+  padding-bottom: 24px;
+
+  & + .dao-comment-card {
+    border-top: 1px solid $gray80;
+  }
+
+  .card-header {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+
+    .profile-info {
+      display: flex;
+      align-items: center;
+
+      .wallet-address {
+        @include fontFamilyData(cl);
+
+        margin-left: 12px;
+      }
+    }
+
+    .date {
+      @include fontFamilyData(cl);
+
+      color: $gray60;
+    }
+  }
+
+  .comment-content {
+    @include fontFamilyBody(mr);
+
+    margin-top: 12px;
+    white-space: pre-line;
+
+    @include daoMd {
+      margin-top: 24px;
+    }
+
+    @include daoSm {
+      margin-top: 8px;
+    }
+  }
+
+  .btn-wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+
+    .ant-btn + .ant-btn {
+      margin-left: 4px;
+    }
+
+    .ant-btn {
+      width: 100px;
+      min-width: auto;
+      padding: 0 14px;
+
+      @include daoSm {
+        width: 92px;
+      }
+    }
+  }
+}
+
+.dao-check-comments-view-input {
+  padding: 0 24px;
+  padding-bottom: 60px;
+  background: $gray100;
+
+  .quote-wrap {
+    + .dao-check-comment-input {
+      margin-top: 12px;
+    }
+  }
+}
+
+.dao-check-content {
+  padding: 24px;
+  border-bottom: 1px solid $gray80;
+  margin-top: 24px;
+  background-color: $gray100;
+
+  @include daoMd {
+    margin-top: 12px;
+  }
+
+  @include daoSm {
+    padding: 24px 20px;
+    margin-top: 8px;
+  }
+
+  strong {
+    @include fontFamilyHeading(s);
+  }
+
+  p {
+    width: 100%;
+    margin-top: 16px;
+
+    @include fontFamilyBody(mr);
+
+    @include daoSm {
+      margin-top: 12px;
+    }
+
+    a {
+      @include themeChangeMixin(color, 1);
+    }
+  }
+}
+
+.governance-check-profile-info {
+  .profile {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      .wallet-address {
+        text-decoration: underline;
+      }
+    }
+
+    .wallet-address {
+      @include fontFamilyBody(lb);
+
+      margin-left: 8px;
+      color: $gray00;
+    }
+  }
+
+  // standard
+  &.governance-check-profile-standard {
+    .profile {
+      .tag {
+        margin-left: 8px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  // quote
+  &.governance-check-profile-quote {
+    display: flex;
+    height: 32px;
+    align-items: center;
+    justify-content: space-between;
+
+    .profile {
+      display: flex;
+      align-items: center;
+    }
+
+    .move-anchor {
+      display: flex;
+      width: 24px;
+      height: 24px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background-color: $gray100;
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+
+      @include daoMd {
+        width: 32px;
+        height: 32px;
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+
+    .wallet-address {
+      @include fontFamilyBody(mb);
+
+      margin-left: 4px;
+    }
+  }
+}
+
+.quote-wrap {
+  padding: 16px 32px;
+
+  @include themeChangeMixin(background-color, 3);
+
+  p.quote-deleted {
+    text-align: center;
+  }
+
+  p {
+    @include fontFamilyBody(mr);
+
+    color: $gray00;
+  }
+
+  p.ellipsis {
+    overflow: hidden;
+    max-width: 500px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  p.quote-in-comment {
+    &.more {
+      overflow: hidden;
+      height: 100px;
+
+      + button {
+        > span {
+          transform: rotate(0deg);
+        }
+      }
+    }
+
+    height: auto;
+    line-height: 20px;
+
+    + button {
+      display: inline-flex;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      padding: 9px 0;
+      color: $gray00;
+      gap: 4px;
+
+      > span {
+        transform: rotate(-180deg);
+      }
+
+      @include fontFamilyButton(sr);
+
+      svg {
+        path {
+          fill: $gray00;
+        }
+      }
+    }
+  }
+}
+
+.dao-check-comment-edit-input {
+  padding-top: 24px;
+  padding-bottom: 8px;
+  border-top: 1px solid $gray80;
+  margin-top: 24px;
+}
+
+.dao-comment-input {
+  position: relative;
+  border: 1px solid $gray80;
+  border-radius: 4px;
+
+  &:focus-within {
+    border: 1px solid $gray00;
+  }
+
+  &::after {
+    @include fontFamilyInput(xs);
+
+    position: absolute;
+    right: 12px;
+    bottom: 8px;
+    color: $gray60;
+    float: none;
+  }
+
+  textarea {
+    @include fontFamilyInput(s);
+  }
+}
+
+.dao-check-comment-input {
+  background: $gray100;
+
+  .dao-check-comment-input-buttons {
+    margin-top: 12px;
+    text-align: right;
+
+    > :not(.btn-bg) {
+      margin-right: 8px;
+    }
+  }
+}
+
+.dao-check-comments-none {
+  display: flex;
+  min-height: 184px;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    color: $gray60;
+    text-align: center;
+
+    @include fontFamilyBody(sr);
+  }
+}
+
+.dao-check-comments-wrap {
+  padding: 24px;
+  background: $gray100;
+
+  // border-top: 1px solid $gray80;
+
+  @include daoSm {
+    padding: 20px;
+  }
+
+  .dao-check-comments-more {
+    display: inline-flex;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 0;
+    color: $gray00;
+    gap: 4px;
+
+    @include fontFamilyButton(sr);
+  }
+}
+
+.dao-check-extra-agree {
+  padding-bottom: 24px;
+}
+
+.dao-check-comment-term {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+
+  @include themeChangeMixin(background-color, 3);
+
+  p {
+    margin-left: 4px;
+    color: $gray30;
+
+    @include fontFamilyNCaption(SR_F_Caption);
+  }
+
+  svg {
+    path {
+      fill: $gray30;
+    }
+  }
+}
+
+.dao-check-extra-input {
+  padding: 24px 24px 0;
+  background: $gray100;
+
+  @include daoSm {
+    padding-bottom: 24px;
+  }
+
+  .dao-check-extra-info {
+    padding: 16px 0;
+
+    @include daoMd {
+      padding: 16px 0;
+    }
+  }
+}
+
+.dao-check-extra-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 0;
+
+  @include daoMd {
+    padding: 0;
+  }
+
+  @include daoSm {
+    padding: 4px 0;
+  }
+
+  > div {
+    display: flex;
+    align-items: center;
+
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+
+    span.dao-check-extra-info-title {
+      display: inline-block;
+      margin-left: 8px;
+      color: $gray00;
+
+      @include fontFamilyHeading(s);
+    }
+
+    + button {
+      @include daoMd {
+        min-width: 100px;
+      }
+    }
+  }
+}
+
+.dao-check-comments-modal {
+  height: 100%;
+
+  &.modal-wrap.modal-size-lg-t {
+    .ant-modal-header {
+      position: relative;
+      height: 64px;
+      border-bottom: none;
+
+      .dao-check-comment-term {
+        position: absolute;
+        z-index: 1;
+        bottom: -30px;
+        left: 0;
+        width: 100%;
+
+        &.disable-z-index {
+          z-index: 0;
+        }
+      }
+
+      .dao-check-extra-info {
+        padding: 0;
+      }
+    }
+
+    .ant-modal-body {
+      position: relative;
+      height: calc(100vh - 64px);
+      max-height: none;
+      padding: 0;
+
+      .dao-check-include-term {
+        margin: 22px 10px 0 24px;
+      }
+
+      .modal-body > ul {
+        padding-bottom: 136px;
+
+        > li {
+          &:first-child {
+            .dao-check-comment-card {
+              padding-top: 0;
+            }
+          }
+
+          .dao-check-comment-card {
+            padding-top: 24px;
+            padding-bottom: 24px;
+          }
+        }
+      }
+
+      .quote-wrap {
+        margin-right: 16px;
+
+        @include sm {
+          margin-left: 16px;
+        }
+      }
+    }
+
+    .dao-check-extra-info {
+      .dao-check-extra-info-title {
+        @include fontFamilyNBody(lb);
+      }
+    }
+  }
+}
+
+.dao-check-comments-modal-input-wrap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 24px;
+  border-top: 1px solid $gray80;
+  background: #fff;
+
+  &.insert-mode {
+    padding: 0;
+
+    .dao-check-comments-modal-input-dim {
+      position: fixed;
+      z-index: 9;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #000;
+      opacity: 0.5;
+    }
+
+    .dao-check-comments-modal-input {
+      position: fixed;
+      z-index: 9;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      padding: 24px;
+      background: $gray100;
+
+      .ant-input-textarea {
+        height: 140px;
+
+        .ant-input {
+          margin: 0;
+        }
+
+        &.wait-mode {
+        }
+      }
+    }
+
+    .dao-comment-input {
+      padding: 8px 0 30px;
+    }
+  }
+
+  .dao-check-comments-modal-input {
+    display: flex;
+    background: $gray100;
+    gap: 8px;
+
+    .dao-comment-input {
+      &.wait-mode {
+        overflow: hidden;
+        height: 52px;
+        border: 1px solid $gray80;
+        border-radius: 4px;
+        margin: auto 0;
+        margin: 0;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+
+        @include fontFamilyInput(s);
+      }
+    }
+
+    > div {
+      flex: 4;
+    }
+  }
+}
+
+.dao-check-edit-comment {
+  padding-bottom: 24px;
+  border-bottom: 1px solid $gray80;
+
+  .dao-check-comment-edit-input {
+    padding-top: 0;
+    border-top: none;
+    margin-top: 0;
+  }
+}
+
+.dao-check-comment-card {
+  &:first-of-type {
+    // border-top: 1px solid $gray80;
+  }
+
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $gray80;
+
+  @include daoMd {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  & + .dao-comment-card {
+    border-top: 1px solid $gray80;
+  }
+
+  .card-header {
+    display: flex;
+    height: 40px;
+    align-items: center;
+    justify-content: space-between;
+
+    @at-root .dao-check-comment-dropdown {
+      width: 120px;
+
+      .ant-dropdown-menu-item {
+        color: $gray00;
+        transition: none;
+
+        @include fontFamilyInput(sm);
+      }
+
+      .ant-dropdown-menu-item-active {
+        background: url("#{$publicPath}/ico_check_b1.svg") no-repeat center right 8px;
+      }
+    }
+  }
+
+  .date {
+    display: inline-block;
+    margin-top: 8px;
+
+    @include fontFamilyData(cl);
+
+    @include daoSm {
+      margin-top: 4px;
+    }
+
+    color: $gray60;
+
+    > span {
+      @include fontFamilyData(cl);
+
+      color: $gray60;
+    }
+  }
+
+  .comment-content {
+    @include fontFamilyBody(mr);
+
+    margin-top: 8px;
+    white-space: pre-line;
+  }
+
+  .btn-wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+
+    @include daoSm {
+      margin-top: 20px;
+    }
+
+    .like-btn {
+      > div {
+        margin-right: 4px;
+
+        svg {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+
+    button.liked {
+      svg {
+        path {
+          fill: #000;
+        }
+      }
+    }
+
+    .ant-btn + .ant-btn {
+      margin-left: 4px;
+    }
+
+    .ant-btn {
+      width: 100px;
+      min-width: auto;
+      padding: 0 9.5px;
+
+      @include daoSm {
+        width: 92px;
+
+        &:hover,
+        &:focus {
+          background-color: inherit;
+        }
+      }
+    }
+  }
+
+  .quote-wrap {
+    margin-top: 8px;
+  }
+}
+
+.governance-detail-header {
+  display: flex;
+  flex-direction: column;
+
+  @include daoSm {
+    padding: 0 20px;
+
+    &.ko {
+      padding-bottom: 26px;
+    }
+
+    &.en {
+      padding-bottom: 46px;
+    }
+  }
+
+  @include daoSm {
+    padding: 0 20px;
+
+    &.ko {
+      padding-bottom: 26px;
+    }
+
+    &.en {
+      padding-bottom: 46px;
+    }
+  }
+
+  & + .governance-detail-contents-wrap {
+    margin-top: 40px;
+  }
+
+  .all-text {
+    @include fontFamilyHeading(xs);
+  }
+
+  .tag-wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+
+    .tag {
+      background-color: transparent;
+    }
+  }
+
+  .ant-breadcrumb {
+    margin-left: 12px;
+  }
+
+  .detail-title {
+    @include fontFamilyBody(xlb);
+
+    margin-top: 8px;
+
+    & + .detail-date {
+      margin-top: 12px;
+
+      @include daoSm {
+        margin-top: 9px;
+      }
+    }
+  }
+
+  .date-time-wrap {
+    margin-top: 12px;
+
+    @include daoSm {
+      display: flex;
+      flex-direction: column;
+
+      span + span {
+        margin-top: 10px;
+      }
+    }
+
+    .left-time {
+      @include fontFamilyBody(cl);
+      @include themeChangeMixin(color, 1);
+
+      & + .detail-date {
+        margin-left: 16px;
+
+        @include daoSm {
+          display: block;
+          margin-top: 10px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .detail-date {
+    @include fontFamilyBody(cl);
+
+    color: $gray60;
+
+    & + .left-time {
+      margin-left: 12px;
+
+      @include daoMd {
+        margin-left: 16px;
+      }
+
+      @include daoSm {
+        margin-top: 10px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .detail-header-row {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+
+    @include daoMd {
+      align-items: flex-end;
+      margin-top: 20px;
+    }
+
+    @include daoSm {
+      flex-direction: column;
+      margin-top: 21px;
+    }
+
+    &.step1 {
+      @include daoMd {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .info-area + .btn-area {
+          margin-top: 20px;
+        }
+      }
+
+      @include daoSm {
+        .btn-area {
+          flex-wrap: wrap;
+
+          button:first-child {
+            flex-shrink: 0;
+            margin-right: 470px;
+          }
+
+          button:nth-child(2) {
+            margin-top: 8px;
+            margin-left: 0;
+          }
+
+          button:nth-child(3) {
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+
+    .info-area {
+      display: flex;
+      align-items: center;
+
+      @include daoMd {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      @include daoSm {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      @at-root .governance-detail-header.proposal .detail-header-row .info-area {
+        @include daoMd {
+          flex-direction: row;
+        }
+
+        @include daoSm {
+          flex-direction: row;
+        }
+      }
+
+      .user-info {
+        display: flex;
+        align-items: center;
+
+        .ant-avatar {
+          @include daoSm {
+            width: 20px !important;
+            height: 20px !important;
+          }
+        }
+
+        & + .user-info {
+          margin-left: 24px;
+        }
+      }
+
+      .wallet-address {
+        @include fontFamilyBody(mb);
+
+        margin-left: 8px;
+        color: $gray00;
+      }
+
+      .detail-info-list {
+        position: relative;
+        display: flex;
+        margin-left: 40px;
+
+        &::before {
+          @include content;
+
+          position: absolute;
+          top: 3px;
+          left: -20px;
+          width: 1px;
+          height: 16px;
+          background-color: $gray80;
+        }
+
+        @include daoMd {
+          margin-top: 16px;
+          margin-left: 0;
+
+          &::before {
+            content: none;
+          }
+        }
+
+        @include daoSm {
+          margin-top: 8px;
+          margin-left: 0;
+
+          &::before {
+            content: none;
+          }
+        }
+
+        li + li {
+          margin-left: 20px;
+        }
+
+        .info-name {
+          @include fontFamilyBody(mr);
+
+          color: $gray60;
+        }
+
+        .info-content {
+          @include fontFamilyBody(mr);
+
+          margin-left: 4px;
+        }
+      }
+    }
+
+    .btn-area {
+      display: flex;
+
+      @include daoSm {
+        position: relative;
+        margin-top: 16px;
+      }
+
+      .ant-btn + .ant-btn {
+        margin-left: 8px;
+      }
+
+      .ant-btn {
+        min-width: 84px;
+        padding: 0 12px;
+
+        @include daoMd {
+          min-width: 88px;
+        }
+
+        @include daoSm {
+          min-width: 88px;
+          height: 32px;
+        }
+      }
+
+      .bg-black {
+        @include themeChangeMixin(background-color, 1);
+        @include themeChangeMixin(border-color, 1);
+
+        width: 93px;
+
+        @include daoMd {
+          width: 85px;
+        }
+
+        @include daoSm {
+          width: 72px;
+          min-width: 72px;
+        }
+      }
+
+      .button-tooltip {
+        @include fontFamilyBody(sr);
+
+        position: absolute;
+        top: -40px;
+        right: 0;
+        padding: 6px 8px;
+        background-color: $gray20;
+        color: $gray100;
+
+        @include daoMd {
+          top: -42px;
+        }
+
+        &::after {
+          position: absolute;
+          top: 29px;
+          right: 41.5px;
+          display: block;
+          width: 10px;
+          height: 7px;
+          border-top: solid 7px $gray20;
+          border-right: solid 5px transparent;
+          border-left: solid 5px transparent;
+          content: "";
+
+          @include daoMd {
+            top: 31px;
+            right: 37.5px;
+          }
+        }
+
+        @include daoSm {
+          &::after {
+            top: -6px;
+            right: auto;
+            left: 226px;
+            transform: rotate(180deg);
+          }
+
+          &.en {
+            top: 42px;
+            right: auto;
+            left: 0;
+          }
+
+          &.ko {
+            top: 42px;
+            right: auto;
+            left: 21px;
+
+            &::after {
+              left: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.governance-comment-list {
+  padding-top: 28px;
+  border-top: 1px solid $gray80;
+  margin-top: 20px;
+
+  @include daoMd {
+    padding-top: 24px;
+  }
+
+  @include daoSm {
+    padding-top: 24px;
+    padding-bottom: 8px;
+  }
+
+  .day-unit {
+    & + .day-unit {
+      padding-top: 40px;
+      border-top: 1px solid $gray80;
+    }
+
+    .day {
+      @include fontFamilyData(sr);
+
+      color: $gray60;
+    }
+  }
+}
+
+.governance-explanation-wrap {
+  .explanation-title {
+    @include fontFamilyHeading(s);
+  }
+
+  .explanation-content {
+    @include fontFamilyBody(mr);
+
+    position: relative;
+    overflow: hidden;
+    max-height: 240px;
+    margin-top: 16px;
+    transition: max-height 0.3s;
+    white-space: pre-line;
+
+    &::after {
+      position: absolute;
+      bottom: 0;
+      display: block;
+      width: 100%;
+      height: 80px;
+      background: linear-gradient(180deg, rgb(255 255 255 / 0%) 0%, rgb(255 255 255 / 80%) 60.94%, #fff 100%);
+      content: "";
+    }
+
+    &.open::after {
+      content: none;
+    }
+  }
+
+  .explanation-link {
+    @include fontFamilyButton(lr);
+    @include themeChangeMixin(color, 1);
+
+    margin-top: 24px;
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+  }
+
+  .more-btn-wrap {
+    // margin-top: ;
+    .more-btn {
+      @include fontFamilyButton(sr);
+
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      padding: 18px 0 10px;
+
+      svg {
+        margin-left: 4px;
+      }
+
+      &.open {
+        svg {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+}
+
+.comment-wrap {
+  padding: 32px 24px 0;
+  border-top: 1px solid $gray80;
+  margin: 24px -24px 0;
+
+  .ant-input-textarea {
+    position: relative;
+    border: 1px solid $gray80;
+    border-radius: 4px;
+    margin-top: 12px;
+
+    &::after {
+      @include fontFamilyInput(xs);
+
+      position: absolute;
+      right: 12px;
+      bottom: 12px;
+      color: $gray60;
+      float: none;
+    }
+
+    textarea {
+      @include fontFamilyInput(s);
+    }
+  }
+
+  > .ant-btn {
+    @include themeChangeMixin("background-color", 1);
+    @include themeChangeMixin("border-color", 1);
+
+    display: block;
+    margin-top: 12px;
+    margin-left: auto;
+  }
+}
+
+.proposal-discussion-wrap {
+  padding: 40px 0;
+
+  @include daoSm {
+    padding: 24px 0 32px;
+  }
+
+  .detail-title {
+    @include fontFamilyHeading(s);
+  }
+
+  .detail-title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .ant-btn {
+      @include themeChangeMixin("background-color", 1);
+      @include themeChangeMixin("border-color", 1);
+
+      width: 68px;
+    }
+  }
+
+  .discussion-vote-info-wrap {
+    display: flex;
+    margin-top: 16px;
+
+    @include daoMd {
+      margin-top: 10px;
+    }
+
+    @include daoSm {
+      flex-direction: column;
+      margin-top: 12px;
+    }
+
+    .discussion-vote-info-box {
+      @include themeChangeMixin(background-color, 3);
+
+      position: relative;
+      flex: 1;
+      padding: 12px;
+      border-radius: 4px;
+      text-align: start;
+
+      &.selected {
+        @include themeChangeMixin(border-color, 1);
+
+        padding: 11px;
+        border: 1px solid transparent;
+
+        .cancel-btn {
+          top: 11px;
+          right: 11px;
+        }
+      }
+
+      & + .discussion-vote-info-box {
+        margin-left: 24px;
+
+        @include daoSm {
+          margin-top: 10px;
+          margin-left: 0;
+        }
+      }
+
+      .box-header {
+        display: flex;
+        align-items: center;
+
+        svg {
+          margin-right: 4px;
+          font-size: 24px;
+        }
+      }
+
+      .vote-amount {
+        @include fontFamilyBody(sb);
+
+        display: block;
+        margin-top: 4px;
+
+        & + .info-row {
+          margin-top: 0;
+        }
+
+        @include daoMd {
+          display: none;
+        }
+
+        @include daoSm {
+          display: none;
+        }
+      }
+
+      .info-row {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 22px;
+
+        @include daoMd {
+          margin-top: 24px;
+        }
+
+        .amount {
+          @include fontFamilyData(cs);
+
+          color: $gray60;
+        }
+
+        .percentage {
+          @include fontFamilyData(sb);
+        }
+      }
+
+      .progress-wrap {
+        @include themeChangeMixin("background-color", 2);
+
+        position: relative;
+        z-index: 10;
+        overflow: hidden;
+        height: 4px;
+        border-radius: 100px;
+        margin-top: 12px;
+
+        .progress-inner {
+          height: 100%;
+
+          &.for {
+            background-color: $positive;
+          }
+
+          &.against {
+            background-color: $negative;
+          }
+        }
+      }
+
+      .cancel-btn {
+        @include fontFamilyButton(sr);
+
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        padding: 8px 16px;
+        border-radius: 2px;
+        background-color: $gray100;
+      }
+    }
+  }
+}
+
+.proposal-infobox-wrap {
+  @include themeChangeMixin("background-color", 3);
+
+  padding: 20px;
+  border-radius: 4px;
+  margin-top: 16px;
+
+  .info-title {
+    @include fontFamilyBody(mb);
+  }
+
+  .info-content {
+    @include fontFamilyBody(sr);
+
+    margin-top: 2px;
+    white-space: pre-line;
+  }
+
+  & + .detail-title-wrap {
+    margin-top: 40px;
+  }
+}
+
+.proposal-detail-wrap {
+  display: flex;
+  margin-top: 40px;
+
+  @include daoMd {
+    display: block;
+    margin-top: 28px;
+  }
+
+  @include daoSm {
+    display: block;
+    margin-top: 32px;
+  }
+
+  .governance-detail-contents-wrap {
+    width: 712px;
+
+    @include daoLg {
+      width: 632px;
+    }
+
+    @include daoMd {
+      width: 100%;
+    }
+
+    @include daoSm {
+      width: 100%;
+    }
+  }
+
+  .proposal-detail-sub-info {
+    width: 344px;
+    margin-left: 24px;
+
+    @include daoMd {
+      width: 100%;
+      margin-top: 20px;
+      margin-left: 0;
+    }
+
+    @include daoSm {
+      width: 100%;
+      margin-top: 8px;
+      margin-left: 0;
+    }
+
+    .info-name {
+      @include fontFamilyHeading(s);
+    }
+  }
+}
+
+.governance-members {
+  border-radius: 4px;
+  background-color: $gray100;
+
+  @include daoXl {
+    padding: 24px 24px 60px;
+  }
+
+  @include daoLg {
+    padding: 24px;
+  }
+
+  @include daoMd {
+    padding: 24px 24px 36px;
+  }
+
+  @include daoSm {
+    padding: 20px;
+  }
+
+  .title {
+    display: block;
+    padding-bottom: 20px;
+    border-bottom: 1px solid $gray80;
+    color: $gray00;
+
+    @include fontFamilyHeading(mb);
+
+    @include daoSm {
+      padding: 0 20px 18px;
+      margin-right: -20px;
+      margin-left: -20px;
+    }
+  }
+}
+
+.dao-members-table-desc-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 24px;
+
+  @include daoSm {
+    padding-bottom: 12px;
+    margin-top: 20px;
+  }
+
+  .info-name {
+    @include fontFamilyBody(mb);
+  }
+
+  .figure {
+    @include fontFamilyBody(mr);
+
+    // @include themeChangeMixin(color, 1);
+
+    margin-left: 4px;
+  }
+
+  .date {
+    @include fontFamilyBody(cs);
+
+    color: $gray60;
+  }
+
+  & + .dao-members-table {
+    margin-top: 12px;
+
+    @include daoMd {
+      margin-top: 16px;
+    }
+  }
+}
+
+.dao-members-table {
+  table > thead > tr:first-child th {
+    border-top: 1px solid $gray00 !important;
+  }
+
+  &.ant-table-wrapper {
+    @include daoSm {
+      margin: {
+        right: -20px;
+        left: -20px;
+      }
+    }
+  }
+
+  .ant-table {
+    background-color: transparent;
+  }
+
+  .member-cell {
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      .wallet-address {
+        text-decoration: underline;
+      }
+    }
+
+    .ant-avatar {
+      margin-right: 4px;
+    }
+  }
+
+  .ant-table-container table > thead th {
+    &:not(.ant-table-column-sort).ant-table-cell {
+      .ant-table-column-sorters {
+        .ant-table-column-sorter {
+          display: none;
+        }
+      }
+    }
+
+    &:not(&:nth-child(2)) {
+      @include fontFamilyTable(tb);
+    }
+
+    &:nth-child(2) {
+      @include fontFamilyTable(tr);
+    }
+  }
+}
+
+.dao-table-more-btn-wrap {
+  display: flex;
+  justify-content: center;
+
+  .pagination-wrap {
+    margin-top: 12px;
+  }
+
+  .ant-btn {
+    width: 100%;
+    padding: 24px 0;
+    margin-top: 12px;
+  }
+}
+
+// DaoCreateLayout
+.create-layout-wrap {
+  @include themeChangeMixin(background-color, 3);
+
+  &.discussion {
+    .dao-create-wrap > .dao-create-box {
+      width: 100%;
+    }
+
+    .edit-header-wrap .input-wrap .ant-input {
+      margin-top: 0;
+    }
+  }
+
+  &.common {
+    .dao-create-wrap.ratio .dao-create-box {
+      @include daoLg {
+        width: calc(100% - 336px);
+      }
+    }
+
+    .dao-create-wrap.ratio .dao-create-box + .dao-create-box {
+      @include daoLg {
+        width: 312px;
+      }
+    }
+
+    .dao-create-wrap .dao-create-box .dao-box-inner {
+      @include daoMd {
+        padding: 0;
+      }
+
+      @include daoSm {
+        padding: 0;
+      }
+    }
+
+    .dao-create-box {
+      .dao-box-inner {
+        padding: 0;
+      }
+    }
+  }
+}
+
+.dao-create-wrap {
+  display: flex;
+  max-width: 1320px;
+  flex-wrap: wrap;
+  padding-bottom: 80px;
+  margin: 0 auto;
+
+  @include daoLg {
+    max-width: none;
+    padding: 0 20px 80px;
+  }
+
+  @include daoMd {
+    max-width: none;
+    padding: 0 20px 80px;
+  }
+
+  @include daoSm {
+    max-width: none;
+  }
+
+  &.ratio {
+    .dao-create-box {
+      width: calc(100% - 448px);
+
+      @include daoLg {
+        width: calc(100% - 336px);
+      }
+
+      @include daoMd {
+        width: 100%;
+      }
+
+      @include daoSm {
+        width: 100%;
+      }
+
+      & + .dao-create-box {
+        width: 424px;
+
+        @include daoLg {
+          width: 312px;
+        }
+
+        @include daoMd {
+          width: 100%;
+        }
+
+        @include daoSm {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .dao-create-box {
+    &.create-box-info {
+      .ant-btn {
+        width: 100%;
+
+        & + .info-box {
+          margin-top: 16px;
+        }
+      }
+    }
+
+    & + .dao-create-box {
+      margin-left: 24px;
+
+      @include daoMd {
+        margin-top: 20px;
+        margin-left: 0;
+      }
+
+      @include daoSm {
+        margin-top: 8px;
+        margin-left: 0;
+      }
+    }
+
+    .dao-box-inner {
+      padding: 24px;
+      background: $white;
+
+      @include daoSm {
+        padding: 32px 20px;
+      }
+
+      & + .dao-box-inner {
+        margin-top: 24px;
+
+        @include daoMd {
+          margin-top: 20px;
+        }
+
+        @include daoSm {
+          margin-top: 8px;
+        }
+      }
+
+      & + .governance-agenda-history-wrap {
+        margin-top: 24px;
+      }
+    }
+
+    .governance-setting-wrap {
+      & + .dao-box-inner {
+        margin-top: 24px;
+
+        @include daoMd {
+          margin-top: 20px;
+        }
+
+        @include daoSm {
+          margin-top: 8px;
+        }
+      }
+    }
+
+    .dao-create-inner-info-list {
+      li + li {
+        padding-top: 16px;
+        border-top: 1px solid $gray80;
+        margin-top: 16px;
+      }
+
+      li {
+        display: flex;
+        justify-content: space-between;
+
+        .info-name {
+          @include fontFamilyNBody(MB_F);
+        }
+
+        .info {
+          @include fontFamilyNBody(MR_F);
+
+          .bold {
+            font-weight: 600;
+          }
+        }
+      }
+
+      & + .desc {
+        @include fontFamilyNBody(SR_F);
+
+        position: relative;
+        display: block;
+        padding-top: 24px;
+        padding-left: 8px;
+        border-top: 1px solid $gray80;
+        margin-top: 16px;
+        color: $gray30;
+
+        &::before {
+          position: absolute;
+          top: 32px;
+          left: 0;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          background-color: $gray60;
+          content: "";
+        }
+      }
+    }
+  }
+
+  .dao-create-title {
+    display: flex;
+    width: 100%;
+    flex: none;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0 28px;
+
+    @include md {
+      padding: 40px 0 24px;
+    }
+
+    @include daoSm {
+      padding: 32px 20px 20px;
+    }
+
+    .title-wrap {
+      .title {
+        @include fontFamilyHeading(l);
+      }
+    }
+  }
+
+  .agenda-cont-wrap {
+    .proposal-table,
+    .detail-table {
+      .one-line {
+        th {
+          width: 33.3333%;
+        }
+
+        td {
+          text-align: right;
+
+          .exchange {
+            display: block;
+            color: $gray60;
+          }
+        }
+      }
+
+      .column-line {
+        td {
+          text-align: center;
+        }
+
+        &:first-child {
+          > td {
+            font-weight: 600;
+
+            &:last-child {
+              color: $gray30;
+            }
+          }
+        }
+      }
+
+      td {
+        &.is-changed {
+          font-weight: 600;
+
+          @include themeChangeMixin(color, 1);
+        }
+
+        &.etc-text {
+          color: $gray30;
+          text-align: left;
+          white-space: pre-line;
+
+          @include fontFamilyBody(mr);
+        }
+      }
+    }
+
+    .empty-wrap {
+      &.icon-none {
+        height: 150px;
+      }
+    }
+  }
+
+  .edit-box-wrap {
+    .edit-header-wrap {
+      .ant-input {
+        border: 1px solid $gray80;
+        border-radius: 4px;
+        margin-top: 0;
+      }
+    }
+  }
+
+  .info-box {
+    padding: 24px;
+    border-radius: 4px;
+    background-color: $gray100;
+
+    @include daoLg {
+      padding: 16px;
+    }
+  }
+}
+
+// ProposalGTInfo
+.proposal-gt-info {
+  .gt-info-list {
+    li {
+      & + li {
+        margin-top: 16px;
+      }
+
+      .name {
+        display: block;
+
+        @include fontFamilyBody(sr);
+
+        color: $gray60;
+
+        @include daoSm {
+          @include fontsizeMixin(12, 12);
+        }
+      }
+
+      .num {
+        display: block;
+        margin-top: 4px;
+
+        @include fontFamilyData(m2);
+
+        color: $gray00;
+
+        @include daoSm {
+          margin-top: 8px;
+        }
+      }
+
+      .sub {
+        margin-left: 4px;
+        color: $gray00;
+        font-weight: 400;
+
+        @include fontFamilyData(sr);
+      }
+    }
+  }
+
+  .desc {
+    margin-top: 24px;
+
+    @include fontFamilyBody(sr);
+
+    color: $gray60;
+
+    span {
+      color: $gray60;
+    }
+  }
+}
+
+.proposal-dual-slider-wrap {
+  .slider-info-list {
+    margin-top: 8px;
+
+    li {
+      & + li {
+        margin-top: 4px;
+      }
+
+      @include fontFamilyBody(sr);
+
+      display: flex;
+      align-items: center;
+
+      &::before {
+        display: block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin-right: 4px;
+        background-color: $gray00;
+        content: "";
+      }
+
+      .figure {
+        margin-left: 2px;
+        font-weight: 700;
+      }
+
+      &:last-child {
+        &::before {
+          @include themeChangeMixin(background-color, 1);
+        }
+      }
+    }
+  }
+
+  .slider-desc {
+    @include fontFamilyBody(sr);
+
+    display: block;
+    margin-top: 8px;
+    color: $gray60;
+  }
+}
+
+.proposal-amount-input-box {
+  .input-block {
+    padding: 12px;
+    border: 1px solid $gray80;
+    border-radius: 4px;
+
+    &.error {
+      border-color: $negative;
+    }
+
+    &.disabled {
+      background-color: $gray90;
+    }
+  }
+
+  .unit {
+    @include fontFamilyInput(xs);
+  }
+
+  .input-wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 4px;
+
+    input {
+      @include fontFamilyInput(m);
+
+      flex: 1;
+      padding: 0 4px;
+      color: $gray30;
+      text-align: right;
+
+      &:focus {
+        outline: none;
+
+        &:focus-visible {
+          outline: 1px solid;
+        }
+      }
+
+      &:disabled {
+        background-color: $gray90;
+      }
+    }
+
+    .ant-btn {
+      margin-left: 12px;
+    }
+  }
+
+  .error-message {
+    display: flex;
+    margin-top: 8px;
+
+    svg {
+      margin-top: 3px;
+    }
+
+    span {
+      @include fontFamilyBody(sr);
+
+      margin-left: 4px;
+    }
+  }
+}
+
+.input-number-wrap.governance {
+  overflow: hidden;
+  height: 52px;
+  border: 1px solid $gray80;
+  border-radius: 2px;
+
+  @include daoMd {
+    height: 44px;
+    padding: 0 32px;
+  }
+
+  @include daoSm {
+    height: 44px;
+    padding: 0 32px;
+  }
+
+  .input-wrap {
+    @include fontFamilyInput(m);
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 8px;
+    border: none;
+    border-radius: 0;
+    background-color: $gray100;
+  }
+
+  .button-wrap {
+    width: 32px;
+    border-radius: 0;
+    margin-left: 0;
+    background-color: $gray90;
+
+    @include daoMd {
+      width: auto;
+    }
+
+    @include daoSm {
+      width: auto;
+    }
+
+    button {
+      width: 100%;
+      height: 50%;
+      border: 1px solid $gray80;
+      border-radius: 0;
+      background-color: $gray90;
+
+      @include daoMd {
+        width: 32px;
+        height: 100%;
+      }
+
+      @include daoSm {
+        width: 32px;
+        height: 100%;
+      }
+
+      &:first-child {
+        border-width: 0 0 1px 1px;
+
+        @include daoMd {
+          border-width: 0 0 0 1px;
+        }
+
+        @include daoSm {
+          border-width: 0 0 0 1px;
+        }
+      }
+
+      &:last-child {
+        border-width: 0 0 0 1px;
+
+        @include daoMd {
+          border-width: 0 1px 0 0;
+        }
+
+        @include daoSm {
+          border-width: 0 1px 0 0;
+        }
+      }
+    }
+  }
+}
+
+.change-input-row-wrap {
+  display: flex;
+  align-items: center;
+
+  .category {
+    @include fontFamilyBody(sr);
+
+    width: 128px;
+
+    @include daoSm {
+      width: 120px;
+    }
+  }
+
+  .input-area {
+    display: flex;
+    flex: 1;
+    flex-basis: calc((100% - 80px) / 2);
+    margin-left: 16px;
+
+    .init-input:disabled {
+      color: $gray00 !important;
+    }
+
+    .arrow-icon {
+      width: 32px;
+      flex-shrink: 0;
+      margin: 0 16px;
+      background: url("#{$publicPath}/ico_long_arrow_32.svg") no-repeat center center / contain;
+
+      @include daoSm {
+        width: 20px;
+        margin: 0 12px;
+        background: url("#{$publicPath}/ico_long_arrow_20.svg") no-repeat center center / contain;
+      }
+    }
+
+    > .ant-input,
+    .ant-input-affix-wrapper {
+      width: calc((100% - 64px) / 2);
+      flex-grow: 0;
+      flex-shrink: 0;
+
+      @include daoSm {
+        width: calc((100% - 44px) / 2);
+      }
+    }
+  }
+}
+
+.proposal-change-form-wrap {
+  & + .proposal-change-form-wrap {
+    padding-top: 24px;
+    border-top: 1px solid $gray80;
+    margin-top: 24px;
+  }
+
+  .change-form-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    strong {
+      @include fontFamilyBody(mb);
+    }
+
+    & + .input-info-row {
+      margin-top: 8px;
+
+      @include daoMd {
+        margin-top: 10px;
+      }
+
+      @include daoSm {
+        margin-top: 10px;
+      }
+    }
+
+    & + .ant-slider {
+      margin-top: 8px;
+    }
+  }
+
+  .input-info-row {
+    display: flex;
+    padding-left: 144px;
+
+    @include daoSm {
+      padding-left: 136px;
+    }
+
+    span {
+      @include fontFamilyBody(sr);
+
+      width: calc((100% - 64px) / 2);
+      color: $gray60;
+
+      @include daoSm {
+        width: calc((100% - 44px) / 2);
+      }
+
+      &:last-child {
+        margin-left: 64px;
+
+        @include daoSm {
+          margin-left: 44px;
+        }
+      }
+    }
+
+    & + .change-input-row-wrap {
+      margin-top: 4px;
+    }
+  }
+
+  .percentage-change {
+    @include fontFamilyBody(sb);
+
+    display: block;
+    margin-top: 8px;
+  }
+
+  .desc {
+    @include fontFamilyBody(sr);
+
+    margin-top: 8px;
+    color: $gray60;
+  }
+
+  .change-input-row-wrap + .change-input-row-wrap {
+    margin-top: 8px;
+  }
+
+  &.disabled {
+    .category,
+    .input-area .ant-input,
+    .ant-input-suffix {
+      color: $gray60 !important;
+    }
+
+    .ant-switch {
+      background-color: $gray80;
+    }
+
+    .percentage-change {
+      color: $gray60;
+    }
+  }
+
+  .error-message {
+    display: flex;
+    margin-top: 8px;
+
+    svg {
+      margin-top: 3px;
+    }
+
+    span {
+      @include fontFamilyBody(sr);
+
+      margin-left: 4px;
+    }
+  }
+}
+
+// EditorBox
+.edit-header-wrap {
+  .input-wrap {
+    .ant-input {
+      height: auto;
+      padding: 0;
+      border: none;
+      margin-top: 16px;
+      color: $gray30;
+
+      @include fontFamilyBody(mr);
+
+      @include daoMd {
+        margin-top: 18px;
+      }
+
+      @include daoSm {
+        margin-top: 18px;
+      }
+    }
+  }
+}
+
+.edit-box-wrap {
+  .ant-input-textarea {
+    border: 1px solid $gray80;
+    border-radius: 4px;
+    margin-top: 24px;
+
+    &::after {
+      display: block;
+      padding: 12px;
+      float: none;
+      text-align: right;
+
+      @include fontFamilyInput(xs);
+    }
+
+    .ant-input {
+      $layoutHeight: $headerHeight-pc + $footerHeight-pc;
+      $contentPadding: 80px + 102px;
+      $editTop: 100px;
+
+      // height: calc((var(--vh, 1vh) * 100) - $layoutHeight - $contentPadding - $editTop) !important;
+      // height: calc((#{$vh} * 100) - $layoutHeight - $contentPadding - $editTop) !important;
+      height: 740px;
+      padding: 12px !important;
+      margin: 0;
+
+      @include fontFamilyInput(s);
+
+      color: $gray30;
+
+      @include daoMd {
+        height: calc(490px - 36px - 2px) !important;
+      }
+
+      @include daoSm {
+        height: calc(380px - 36px - 2px) !important;
+      }
+    }
+  }
+}
+
+.proposal-action-wrap {
+  padding-bottom: 8px;
+
+  .tooltip-contents {
+    white-space: pre-line;
+  }
+
+  /* stylelint-disable-next-line selector-class-pattern */
+  .ant-popover-placement-bottomRight .ant-popover-arrow {
+    transform: translate(7px, -100%);
+  }
+
+  .ant-select {
+    width: 100%;
+
+    &.proposal-action-main-slider {
+      width: calc(100% - 40px);
+    }
+
+    &.ant-select-single:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-placeholder {
+      display: block;
+      color: $gray60;
+    }
+
+    .ant-select-item-option-content {
+      padding-right: 24px;
+    }
+
+    &.ant-select-single .ant-select-selector {
+      align-items: center;
+    }
+
+    &.ant-select-single:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-item,
+    &.ant-select-single:not(.ant-select-customize-input) .ant-select-selector .ant-select-selection-placeholder {
+      display: block;
+      height: auto;
+    }
+  }
+
+  .ant-select.distant-contents .ant-select-dropdown.select-size-md-dropdown {
+    top: 40px !important;
+  }
+
+  .selector-wrap {
+    display: flex;
+    align-items: center;
+
+    .ant-select {
+      // flex: 1;
+    }
+
+    button {
+      display: flex;
+      width: 24px;
+      height: 24px;
+      flex-shrink: 0;
+      align-items: center;
+      justify-content: center;
+      margin-left: 16px;
+
+      svg {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .proposal-tooltip {
+    &.disabled {
+      pointer-events: none;
+
+      svg path {
+        fill: $gray60;
+      }
+    }
+  }
+
+  .proposal-action-contents-wrap {
+    padding-top: 24px;
+    border-top: 1px solid $gray80;
+    margin-top: 32px;
+
+    .bottom-desc {
+      @include fontFamilyBody(sr);
+
+      display: block;
+      margin-top: 28px;
+      color: $gray30;
+    }
+
+    .ant-checkbox-wrapper {
+      align-items: center;
+      margin-top: 28px;
+
+      .ant-checkbox {
+        top: 0;
+
+        & + span {
+          @include fontFamilyBody(mr);
+
+          color: $negative;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  .ant-input[disabled]:hover {
+    border-color: $gray80;
+  }
+}
+
+.proposal-action-info-section {
+  & + .proposal-action-info-section {
+    margin-top: 28px;
+  }
+
+  .info-section-title {
+    @include fontFamilyBody(mb);
+  }
+
+  .info-section-contents {
+    margin-top: 8px;
+
+    .ant-collapse {
+      margin-top: 12px;
+
+      .ant-collapse-item {
+        border-bottom: none;
+      }
+
+      .ant-collapse-header {
+        align-items: center;
+        padding: 0;
+
+        .ant-collapse-header-text {
+          @include fontFamilyButton(sr);
+
+          flex: 0;
+          flex-basis: auto;
+          flex-shrink: 0;
+          order: 1;
+        }
+
+        .ant-collapse-expand-icon {
+          order: 2;
+
+          .ant-collapse-arrow {
+            margin-right: 0;
+            margin-left: 4px;
+            vertical-align: 0;
+          }
+        }
+
+        .ant-collapse-extra {
+          @include fontFamilyBody(sr);
+
+          order: 3;
+          margin-left: 16px;
+
+          span {
+            color: $gray60;
+          }
+        }
+      }
+
+      .ant-collapse-content {
+        margin-top: 16px;
+
+        .treasury-collapse-contents {
+          padding-top: 28px;
+        }
+      }
+
+      &.add-wallet-collapse {
+        .ant-collapse-content {
+          margin-top: 20px;
+
+          input[type="text"].ant-input:disabled {
+            color: $gray30;
+          }
+        }
+      }
+    }
+
+    input[type="text"].ant-input {
+      color: $gray30;
+    }
+
+    .text-info-row {
+      @include fontFamilyBody(sr);
+
+      display: flex;
+      justify-content: space-between;
+      margin-top: 8px;
+
+      .subject-area {
+        display: flex;
+        flex-direction: column;
+
+        .subject-desc {
+          color: $gray60;
+
+          @include daoLg {
+            font-size: 10px;
+            line-height: 14px;
+          }
+        }
+      }
+    }
+
+    .date-standard {
+      @include fontFamilyBody(sr);
+
+      display: block;
+      margin-top: 8px;
+      color: $gray60;
+      text-align: right;
+    }
+
+    .wallet-address {
+      @include fontFamilyBody(sr);
+
+      display: block;
+      margin-top: 8px;
+    }
+  }
+
+  .business-info-box {
+    @include themeChangeMixin(background-color, 3);
+
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+
+    .info-title {
+      @include fontFamilyBody(mb);
+
+      display: block;
+    }
+
+    .list-type-dot {
+      margin-top: 4px;
+
+      li {
+        @include fontFamilyBody(mr);
+
+        padding-left: 20px;
+        color: $gray00;
+
+        &::before {
+          left: 8px;
+        }
+
+        & + li {
+          margin-top: 0;
+        }
+      }
+
+      & + .info-title {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.dao-governance-proposal-vote-cancel-modal .modal-body {
+  white-space: pre-line;
+}
+
+.dao-governance-proposal-slider {
+  height: 16px;
+  padding: 6px 0;
+  margin: 0;
+
+  &:hover {
+    .ant-slider-rail {
+      background-color: $gray80;
+    }
+
+    .ant-slider-handle {
+      @include themeChangeMixin(border-color, 1);
+    }
+  }
+
+  .ant-slider-rail {
+    border-radius: 10px;
+    background-color: $gray80;
+  }
+
+  .ant-slider-track {
+    @include themeChangeMixin(background-color, 1);
+  }
+
+  .ant-slider-handle {
+    width: 16px;
+    height: 16px;
+    border: 1px solid transparent;
+    margin-top: -6px;
+
+    @include themeChangeMixin(border-color, 1);
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  &.ant-slider-disabled {
+    .ant-slider-track {
+      background-color: $gray60 !important;
+    }
+
+    .ant-slider-handle {
+      border-color: $gray60 !important;
+    }
+
+    .ant-slider-rail {
+      background-color: $gray80 !important;
+    }
+  }
+
+  &.dual {
+    .ant-slider-rail {
+      @include themeChangeMixin(background-color, 1);
+    }
+
+    .ant-slider-track {
+      background-color: $gray00;
+    }
+
+    &:hover {
+      .ant-slider-rail {
+        @include themeChangeMixin(background-color, 1);
+      }
+    }
+  }
+}
+
+.change-button-input-row {
+  display: flex;
+  flex-basis: calc((100% - 80px) / 2);
+  align-items: center;
+
+  .arrow-icon {
+    width: 32px;
+    height: 52px;
+    flex-shrink: 0;
+    margin: 0 16px;
+    margin-top: 22px;
+    background: url("#{$publicPath}/ico_long_arrow_32.svg") no-repeat center center / contain;
+
+    @include daoSm {
+      margin-top: 24px;
+    }
+  }
+
+  .before,
+  .after {
+    display: flex;
+    width: calc((100% - 64px) / 2);
+    flex-direction: column;
+
+    .change-desc {
+      @include fontFamilyBody(sr);
+
+      margin-bottom: 4px;
+      color: $gray60;
+    }
+
+    input[type="text"].ant-input:disabled {
+      height: 52px;
+      padding-top: 24px;
+      color: $gray00;
+      text-align: right;
+
+      @include daoSm {
+        height: 44px;
+        padding-top: 16px;
+      }
+    }
+  }
+}
+
+.governance-card-empty-case {
+  display: flex;
+  height: 956px;
+  justify-content: center;
+
+  @include daoMd {
+    height: 734px;
+  }
+
+  @include daoSm {
+    height: 402px;
+  }
+
+  .empty-text {
+    @include fontFamilyBody(mr);
+
+    padding-top: 260px;
+    color: $gray60;
+
+    @include daoMd {
+      padding-top: 216px;
+    }
+
+    @include daoSm {
+      padding-top: 120px;
+    }
+  }
+}
+
+.available-amount-wrap {
+  padding: 26px 24px;
+  border-radius: 4px;
+  background-color: $gray100;
+
+  .figure-wrap {
+    display: flex;
+    align-items: flex-end;
+    margin-top: 20px;
+
+    span {
+      @include themeChangeMixin(color, 1);
+    }
+
+    .figure {
+      @include fontFamilyData(m1b);
+    }
+
+    .unit {
+      @include fontFamilyData(sr);
+
+      margin-left: 4px;
+    }
+  }
+}
+
+.proposal-sub-info-voters {
+  padding: 20px 24px 24px;
+  border-radius: 4px;
+  margin-top: 24px;
+  background-color: $gray100;
+
+  .sub-info-voters-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & + .proposal-voters-wrap {
+      margin-top: 24px;
+    }
+  }
+}
+
+.proposal-voters-wrap {
+  span {
+    @include fontFamilyTable(br);
+  }
+
+  .user-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+      margin-top: 2px;
+    }
+  }
+
+  &.popup .user-wrap {
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+
+    // @include daoSm {
+    //   flex-direction: column;
+    // }
+
+    .user-id {
+      &:hover {
+        border-bottom: 1px solid $gray00;
+      }
+    }
+
+    span {
+      margin-top: 0;
+
+      // @include daoSm {
+      //   margin-top: 2px;
+      //   margin-left: 0;
+      // }
+    }
+
+    .ant-avatar {
+      width: 20px !important;
+      height: 20px !important;
+
+      // @include daoSm {
+      //   width: 20px !important;
+      //   height: 28px !important;
+      // }
+
+      & + span {
+        margin-left: 4px;
+      }
+    }
+  }
+
+  &.page .figure-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .unit {
+      margin-top: 2px;
+      color: $gray60;
+    }
+  }
+
+  &.popup .figure-wrap {
+    // @include daoSm {
+    //   display: flex;
+    //   flex-direction: column;
+    //   align-items: center;
+    // }
+
+    .unit {
+      margin-left: 4px;
+
+      @include daoSm {
+        margin-top: 2px;
+      }
+    }
+  }
+
+  & + .pagination-wrap {
+    margin: {
+      top: 15px;
+      bottom: 10px;
+    }
+
+    @include daoMd {
+      padding: 12px 0;
+      margin: {
+        top: 10px;
+        bottom: 14px;
+      }
+    }
+
+    @include daoSm {
+      margin: {
+        top: 16px;
+        bottom: 0;
+      }
+    }
+  }
+
+  .ant-table-filter-column {
+    justify-content: center;
+
+    .ant-table-column-title {
+      flex: inherit;
+    }
+  }
+}
+
+.ant-dropdown {
+  z-index: 1061 !important;
+}
+
+.dao-governance-voters-modal {
+  .modal-wrap.modal-size-lg .ant-modal-body {
+    max-height: 565px;
+
+    @include daoSm {
+      max-height: none;
+    }
+  }
+
+  .filter-voters-wrap {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+    padding-bottom: 8px;
+    background-color: $gray100;
+
+    .ant-radio-button-wrapper {
+      &:not(.ant-radio-button-wrapper-checked) {
+        .chip {
+          border-color: $gray90;
+          background-color: $gray90;
+          color: $gray30;
+
+          span {
+            margin-left: 4px;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dao-governance-status-board {
+  display: flex;
+  flex-direction: column;
+
+  @include daoSm {
+    padding: 0 20px;
+  }
+
+  .btn-wrap {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+    @include daoSm {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .tablet-waring {
+      color: $gray30;
+
+      @include fontFamilyBody(cs);
+
+      @include daoMd {
+        display: block;
+      }
+
+      @include daoSm {
+        display: block;
+        margin-top: 8px;
+      }
+    }
+
+    a.btn-xl {
+      width: 240px;
+    }
+  }
+
+  .status-box {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-between;
+    border: 1px solid $gray00;
+    border-radius: 4px;
+    margin-top: 24px;
+    background-color: $gray100;
+
+    @include daoMd {
+      flex-direction: column;
+    }
+
+    @include daoSm {
+      flex-direction: column;
+      margin-top: 16px;
+    }
+
+    .status-wrap {
+      display: flex;
+      padding: 24px 40px;
+
+      @include daoLg {
+        padding: 26px 40px;
+      }
+
+      @include daoMd {
+        width: 100%;
+        padding: 0;
+      }
+
+      @include daoSm {
+        flex-wrap: wrap;
+        padding: 0;
+      }
+
+      .status-detail {
+        width: 160px;
+
+        @include daoLg {
+          width: 144px;
+        }
+
+        @include daoMd {
+          display: flex;
+          width: 25%;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 12px 16px;
+        }
+
+        @include daoSm {
+          display: flex;
+          width: 50%;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 12px 16px;
+        }
+      }
+
+      .status-detail + .status-detail {
+        margin-left: 24px;
+
+        @include daoMd {
+          border-left: 1px solid $gray85;
+          margin: 0;
+        }
+
+        @include daoSm {
+          border-left: 1px solid $gray85;
+          margin: 0;
+
+          &:nth-child(3) {
+            border-top: 1px solid $gray85;
+          }
+
+          &:last-child {
+            border-top: 1px solid $gray85;
+          }
+        }
+      }
+
+      .status-title {
+        color: $gray30;
+
+        @include fontFamilyBody(sr);
+      }
+
+      .status-value {
+        margin-top: 8px;
+
+        @include fontFamilyData(m3);
+
+        @include daoMd {
+          margin-top: 4px;
+        }
+
+        @include daoSm {
+          margin-top: 4px;
+        }
+      }
+    }
+
+    .members-wrap {
+      width: 288px;
+      padding: 20px 40px;
+      border-left: 1px solid $veryBlack;
+
+      @include daoLg {
+        width: 256px;
+      }
+
+      @include daoMd {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 17px 40px;
+        border-top: 1px solid $gray85;
+        border-left: none;
+      }
+
+      @include daoSm {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: 15px 20px;
+        border-top: 1px solid $gray85;
+        border-left: none;
+      }
+
+      .link {
+        display: flex;
+        align-items: center;
+
+        .icon-wrap {
+          display: flex;
+          align-items: center;
+          margin-left: 8px;
+
+          svg {
+            width: 16px;
+            height: 16px;
+
+            path {
+              stroke: $gray00;
+            }
+          }
+        }
+
+        .members-title {
+          display: flex;
+          align-items: center;
+
+          @include fontFamilyBody(sb);
+
+          @include daoSm {
+            position: relative;
+            max-width: 94px;
+            align-items: flex-end;
+          }
+        }
+      }
+
+      .members-volume {
+        display: flex;
+        align-items: center;
+        padding: 4px 0;
+        margin-top: 8px;
+
+        @include daoMd {
+          margin-top: 0;
+        }
+
+        @include daoSm {
+          margin-top: 0;
+        }
+
+        .status-value {
+          display: block;
+          margin-left: 8px;
+
+          @include fontFamilyData(m3);
+        }
+      }
+    }
+  }
+}
+
+// quorum chart
+.quorum-info-wrap {
+  display: flex;
+  max-width: 360px;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+
+  @include daoMd {
+    max-width: 324px;
+  }
+
+  @include daoSm {
+    max-width: 288px;
+  }
+
+  .vote-displayer {
+    position: relative;
+
+    .chart {
+      margin: 0 auto;
+
+      @include daoMd {
+        width: 324px;
+
+        .bar-chart-wrap {
+          height: 90px;
+        }
+      }
+
+      @include daoSm {
+        width: 100%;
+
+        .semi-circle-pie-chart {
+          width: calc(100% - 55px);
+          margin: auto;
+
+          .bar-chart-wrap {
+            height: 106px;
+          }
+        }
+      }
+    }
+
+    .factor {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+
+      @include daoMd {
+        top: 48px;
+      }
+
+      @include daoSm {
+        top: calc(100% + 8px);
+        flex-flow: row wrap;
+        align-items: flex-end;
+      }
+
+      strong {
+        display: flex;
+        align-items: center;
+
+        @include fontFamilyNCaption(MB_F_Caption);
+
+        .icon {
+          display: inline-block;
+          vertical-align: text-bottom;
+        }
+      }
+
+      em {
+        @include fontFamilyData(m3);
+
+        @include daoSm {
+          margin-left: 2px;
+        }
+      }
+
+      p {
+        display: flex;
+        align-items: center;
+        margin-top: 8px;
+
+        @include daoMd {
+          flex-flow: column wrap;
+        }
+
+        @include daoSm {
+          width: 100%;
+          flex-flow: column wrap;
+          margin-top: 4px;
+        }
+
+        span {
+          color: $gray30;
+
+          @include fontFamilyNCaption(SR_F_Caption);
+        }
+      }
+
+      &.agree {
+        left: 0;
+        justify-content: flex-start;
+
+        strong {
+          @include themeChangeMixin(color, 1);
+
+          .icon {
+            margin-right: 2px;
+          }
+        }
+
+        em {
+          @include themeChangeMixin(color, 1);
+        }
+
+        p {
+          @include daoMd {
+            align-items: flex-start;
+          }
+
+          @include daoSm {
+            align-items: flex-start;
+          }
+        }
+      }
+
+      &.against {
+        right: 0;
+        justify-content: flex-end;
+
+        strong {
+          justify-content: flex-end;
+          color: $gray00;
+
+          @include daoSm {
+            flex-direction: row-reverse;
+          }
+
+          .icon {
+            display: inline-flex;
+            align-items: center;
+            margin-left: 2px;
+
+            @include daoSm {
+              margin-right: 2px;
+              margin-left: 0;
+            }
+          }
+        }
+
+        em {
+          color: $gray00;
+          text-align: right;
+        }
+
+        p {
+          align-items: flex-end;
+          justify-content: flex-end;
+          text-align: right;
+        }
+      }
+    }
+  }
+
+  .quorum-condition-wrap {
+    margin-top: calc(8px + 32px + 8px);
+
+    @include daoSm {
+      margin-top: calc(8px + 56px + 8px);
+    }
+
+    .progress-bar {
+      position: relative;
+      overflow: hidden;
+      width: 208px;
+      height: 10px;
+      border-radius: 6px;
+      margin: 0 auto;
+      background-color: $gray85;
+
+      @include daoMd {
+        width: 200px;
+      }
+
+      @include sm {
+        width: 200px;
+        margin-top: 8px;
+      }
+
+      .rate-gauge {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        border-radius: 6px;
+
+        @include themeChangeMixin(background-color, 1);
+      }
+    }
+
+    .condition-info {
+      margin-top: 4px;
+      color: $gray00;
+      text-align: center;
+
+      /* 23.04.04 수정: 모바일 일때 정족수 글 위치 8px 수정 */
+      @include sm {
+        margin-top: 8px;
+      }
+
+      @include fontFamilyNBody(SR_F);
+
+      strong {
+        @include fontFamilyNBody(SB_F);
+
+        color: $gray00;
+
+        &::before {
+          display: inline-block;
+          width: 1px;
+          height: 10px;
+          margin: 0 8px;
+          background-color: $gray80;
+          content: "";
+        }
+      }
+
+      span {
+        display: block;
+        color: $gray30;
+
+        @include fontFamilyNBody(SR_F);
+      }
+    }
+  }
+}
+
+.dao-governance-how-it-works {
+  .content-text {
+    padding: 0 16px;
+    margin-top: 24px;
+    color: $gray00;
+
+    @include fontFamilyNBody(LR_F);
+
+    @include sm {
+      padding: 0;
+      margin-top: 0;
+    }
+  }
+
+  .steps-wrap {
+    padding: 0 16px 32px;
+
+    @include lg {
+      padding: 0 16px 40px;
+    }
+
+    @include sm {
+      padding: 0;
+    }
+
+    .step {
+      display: flex;
+      flex-direction: column;
+      padding: 24px 0;
+
+      &:last-child {
+        padding-bottom: 0;
+      }
+
+      @include lg {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 16px 0 10px;
+
+        &:first-child {
+          padding-top: 22px;
+        }
+      }
+
+      @include sm {
+        padding: 16px 0;
+      }
+
+      &:not(:first-of-type) {
+        border-top: 1px solid $gray80;
+      }
+
+      .title-wrap {
+        display: flex;
+        align-items: center;
+
+        @include lg {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .chips {
+          position: relative;
+          display: flex;
+          overflow: hidden;
+          width: 80px;
+          height: 24px;
+          align-items: center;
+          justify-content: center;
+          border-radius: 2px;
+
+          @include lg {
+            width: 70px;
+          }
+
+          @include sm {
+            width: 60px;
+          }
+
+          .bg {
+            position: absolute;
+            right: 0;
+          }
+
+          .text {
+            z-index: 1;
+            display: inline-block;
+            margin-left: -2px;
+            color: $gray100;
+
+            @include fontFamilyChip(mr);
+
+            span {
+              display: inline-block;
+              width: 24px;
+              margin-left: 2px;
+              color: inherit;
+              text-align: center;
+
+              @include fontFamilyChip(mb);
+            }
+          }
+        }
+
+        .title {
+          display: inline-block;
+          margin-left: 8px;
+
+          @include fontFamilyHeading(s);
+          @include themeChangeMixin(color, 1);
+
+          @include lg {
+            margin-top: 8px;
+            margin-left: 0;
+          }
+        }
+      }
+
+      .desc-wrap {
+        width: 100%;
+        margin-top: 16px;
+
+        @include lg {
+          width: 500px;
+          margin-top: 0;
+        }
+
+        @include sm {
+          margin-top: 8px;
+        }
+
+        * {
+          @include fontFamilyNBody(MR);
+        }
+
+        ol {
+          margin-top: 8px;
+
+          li {
+            display: flex;
+            align-items: center;
+            color: $gray30;
+
+            @include fontFamilyNBody(SR_F);
+
+            &::before {
+              display: inline-block;
+              width: 4px;
+              height: 4px;
+              border-radius: 50%;
+              margin-right: 4px;
+              background-color: $gray30;
+              content: "";
+            }
+
+            &:not(:first-child) {
+              margin-top: 2px;
+
+              @include lg {
+                margin-top: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.agenda-create-form-wrap,
+.article-create-form-wrap {
+  padding: 24px;
+  border-radius: 4px;
+  background-color: $gray100;
+
+  .ant-form-item {
+    margin-bottom: 0;
+
+    & + .ant-form-item {
+      margin-top: 16px;
+
+      @include sm {
+        margin-top: 12px;
+      }
+    }
+
+    .ant-input::placeholder {
+      color: $gray60;
+    }
+
+    .input-title {
+      @include fontFamilyInput(s);
+
+      overflow: hidden;
+      height: 44px;
+      padding: 12px 8px !important;
+      border: 1px solid $gray80;
+      border-radius: 4px;
+      margin: 0;
+
+      &:hover,
+      &:focus {
+        border-color: $gray00;
+      }
+    }
+
+    .ant-input-textarea-show-count.ant-input-textarea-in-form-item.input-detail {
+      height: 740px;
+      max-height: 740px;
+
+      @include md {
+        height: 450px;
+        max-height: 450px;
+      }
+
+      @include sm {
+        height: 440px;
+        max-height: 440px;
+      }
+
+      textarea.ant-input {
+        height: calc(100% - 50px);
+      }
+    }
+  }
+}
+
+.agenda-create-form-wrap {
+  padding: 0;
+}
+
+.governance-agenda-history-wrap {
+  padding: 24px;
+  border-radius: 4px;
+  background-color: $gray100;
+
+  .wrap-title {
+    @include fontFamilyHeading(s);
+  }
+
+  .governance-agenda-history-list {
+    margin-top: 20px;
+
+    .agenda-history-item {
+      padding: 16px 16px 6px;
+      border: 1px solid $gray80;
+      border-radius: 8px;
+
+      & + .agenda-history-item {
+        margin-top: 20px;
+      }
+
+      .history-item-link {
+        display: block;
+      }
+
+      .item-header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .chip-sm {
+          height: 20px;
+          padding: 0 8px;
+        }
+      }
+
+      .item-body {
+        margin-top: 12px;
+
+        .info {
+          @include fontFamilyInput(xs);
+          @include themeChangeMixin(color, 1);
+        }
+
+        .title-area {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 2px;
+
+          .item-title {
+            @include fontFamilyBody(tb);
+            @include ellipsis;
+
+            width: calc(100% - 24px);
+          }
+
+          svg {
+            transform: rotate(-90deg);
+          }
+        }
+
+        .vote-term {
+          display: flex;
+          align-items: center;
+          margin-top: 8px;
+
+          .name {
+            @include fontFamilyNBody(SB_F);
+
+            color: $gray30;
+          }
+
+          .date {
+            @include fontFamilyNBody(SR_F);
+
+            margin-left: 8px;
+            color: $gray30;
+          }
+        }
+      }
+
+      .item-bottom {
+        @include fontFamilyNCaption(XSR_V_Caption);
+
+        padding: {
+          top: 6px;
+          right: 16px;
+          left: 16px;
+        };
+
+        border-top: 1px solid $gray80;
+        margin: {
+          top: 12px;
+          right: -16px;
+          left: -16px;
+        };
+
+        color: $gray30;
+
+        .bold {
+          font-weight: 600;
+        }
+
+        .date {
+          color: $gray60;
+        }
+      }
+    }
+  }
+}
+
+// Governance 안건 설정 상세
+.governance-setting-wrap {
+  padding: 24px;
+  border: 1px solid $gray00;
+  border-radius: 4px;
+  background-color: $gray100;
+
+  @include sm {
+    padding: 24px 20px;
+  }
+
+  .proposal-wrap {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+
+    .tag {
+      padding: 4px 8px;
+      border: none;
+      border-radius: 2px;
+      color: $gray100;
+      white-space: nowrap;
+
+      @include daoSm {
+        max-width: 93px;
+      }
+
+      @include themeChangeMixin(background-color, 1);
+      @include fontFamilyChip(mr);
+    }
+
+    strong {
+      padding-right: 4px;
+      padding-left: 8px;
+
+      @include daoSm {
+        padding-right: 0;
+      }
+
+      @include fontFamilyHeading(s);
+    }
+  }
+
+  .bottom-btn-wrap {
+    margin-top: 16px;
+    text-align: right;
+  }
+}
+
+.governance-setting-type-wrap {
+  &:not(.more),
+  &.open {
+    + .more {
+      margin-top: 16px;
+    }
+  }
+
+  &.more {
+    &:last-child {
+      .check-title-wrap {
+        border-bottom: 1px solid $gray80;
+      }
+    }
+
+    .check-title-wrap {
+      border-top: 1px solid $gray80;
+      cursor: pointer;
+
+      .date {
+        padding-top: 0;
+      }
+    }
+
+    .check-content-wrap {
+      max-height: 0;
+    }
+  }
+
+  &.open {
+    .more-icon {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    &:last-child {
+      .check-title-wrap {
+        border-bottom-color: transparent;
+      }
+    }
+  }
+
+  .check-title-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0;
+
+    @include sm {
+      flex-wrap: wrap;
+      padding: 13px 0;
+    }
+
+    > div {
+      display: flex;
+      align-items: center;
+    }
+
+    .tag {
+      position: relative;
+      width: 25.5px;
+      height: 16px;
+      justify-content: flex-start;
+      border: none;
+      margin-right: 14px;
+      background: url("#{$rootPath}/img/bg_governance_check_number.svg") no-repeat left center / 100%;
+      border-bottom-left-radius: 4px;
+      border-top-left-radius: 4px;
+
+      span {
+        padding-left: 4px;
+
+        @include themeChangeMixin(color, 1);
+        @include fontFamilyData(csb);
+      }
+
+      &.hide {
+        display: none;
+      }
+    }
+
+    .title {
+      display: inline-block;
+
+      @include fontFamilyHeading(s);
+    }
+
+    .change-notice {
+      padding: 4px 8px;
+      border-radius: 100px;
+      margin-right: 8px;
+
+      @include fontFamilyNCaption(SR_F_Caption);
+      @include themeChangeMixin(background-color, 3);
+      @include themeChangeMixin(color, 1);
+
+      @include sm {
+        display: block;
+        width: calc(100% - 16px);
+        margin: 8px auto 0;
+        text-align: center;
+      }
+
+      &.hide {
+        display: none;
+      }
+    }
+
+    .date {
+      padding-top: 2px;
+      color: $gray30;
+
+      @include fontFamilyBody(cs);
+    }
+
+    .more-icon {
+      margin-left: 12px;
+    }
+  }
+
+  .check-content-wrap {
+    overflow: hidden;
+    transition: max-height 0.3s;
+
+    .column-line + tr td {
+      padding: 12px 16px;
+    }
+
+    .proposal-table {
+      col {
+        &.column4 {
+          width: 25%;
+
+          @include daoSm {
+            width: 41.25%;
+          }
+
+          & + .column2 {
+            width: 75%;
+
+            @include daoSm {
+              width: 58.75%;
+            }
+          }
+        }
+
+        &.column3 {
+          width: 33.3333%;
+
+          &:first-child {
+            @include daoSm {
+              width: 41.25%;
+            }
+          }
+
+          & ~ .column3 {
+            @include daoSm {
+              width: 29.375%;
+            }
+          }
+        }
+
+        &.column2 {
+          width: 33.3333%;
+
+          @include daoSm {
+            width: 25%;
+          }
+
+          & + .column2 {
+            width: 66.6667%;
+
+            @include daoSm {
+              width: 75%;
+            }
+          }
+        }
+      }
+
+      // th {
+      //   @include sm {
+      //     width: 41.25%; // 132/320
+      //   }
+      // }
+
+      // td {
+      //   width: 75%;
+      //   text-align: right;
+
+      //   @include sm {
+      //     width: 58.75%; // 188/320
+      //   }
+      // }
+    }
+
+    table {
+      position: relative;
+      width: 100%;
+      border-bottom: 1px solid $gray80;
+      border-left: 1px solid $gray80;
+      border-collapse: separate;
+      table-layout: fixed;
+
+      &::before { // gray80 컬러인 세로(좌,우) border이 상단의 검은 border 영역으로 올라오지 않도록 수정 요청이 있어서 추가
+        @include content;
+
+        position: absolute;
+        top: 0;
+        left: -1px;
+        width: calc(100% + 1px);
+        height: 1px;
+        border-top: 1px solid $veryBlack;
+      }
+
+      thead {
+        td {
+          padding: 9px 20px;
+
+          @include sm {
+            padding: 9px 16px;
+          }
+
+          @include fontFamilyTable(tb);
+        }
+      }
+
+      tr {
+        &:first-child {
+          th,
+          td {
+            border-top-color: $veryBlack;
+          }
+        }
+
+        &.dark-line {
+          th,
+          td {
+            border-top-color: $gray60;
+          }
+        }
+      }
+
+      th,
+      td {
+        width: 25%;
+        border-top: 1px solid $gray80;
+        border-right: 1px solid $gray80;
+        word-break: break-word;
+
+        @include sm {
+          vertical-align: middle;
+        }
+      }
+
+      th {
+        padding: 9px 16px;
+        text-align: left;
+
+        @include fontFamilyTable(tb);
+        @include themeChangeMixin(background-color, 3);
+
+        @include sm {
+          // width: 15%; // 48/320
+          padding: 7px; // 원래 양 옆은 8px이나, 디자인과 동일하게 줄바꿈되기 위해 7px
+        }
+
+        span {
+          @include fontFamilyTable(br);
+
+          font-weight: 400;
+        }
+
+        &.sub {
+          color: $gray30;
+          font-weight: 400;
+
+          @include sm {
+            // width: 26.25%; // 84/320
+          }
+        }
+      }
+
+      td {
+        padding: 7px 20px;
+        color: $gray30;
+        text-align: center;
+        vertical-align: middle;
+
+        @include fontFamilyTable(br);
+
+        @include sm {
+          // width: 29.375%; // 94/320
+          padding: 7px 11px 7px 8px;
+        }
+
+        &.change {
+          @include fontFamilyTable(bb);
+          @include themeChangeMixin(color, 1);
+        }
+      }
+
+      @include sm {
+        col:nth-child(1) {
+          width: 21.25%; // 68/320
+          min-width: 68px;
+        }
+
+        &.proposal-table {
+          col {
+            &:nth-child(1) {
+              width: calc(21.25% + 26.25%);
+              min-width: 152px;
+            }
+          }
+        }
+
+        &.detail-table {
+          col {
+            &:nth-child(2) {
+              width: 26.25%; // 84/320
+              min-width: 84px;
+            }
+
+            &:nth-child(3),
+            &:nth-child(4) {
+              width: 26.25%; // 84/320
+              min-width: 84px;
+            }
+          }
+        }
+      }
+    }
+
+    .detail-table {
+      margin-top: 16px;
+
+      tbody {
+        tr:nth-child(1) {
+          th {
+            @include sm {
+              white-space: pre-line;
+            }
+          }
+        }
+      }
+
+      col {
+        &.column4 {
+          width: 25%;
+
+          &:nth-child(1) {
+            @include daoSm {
+              width: 15%;
+            }
+          }
+
+          &:nth-child(2) {
+            @include daoSm {
+              width: 26.25%;
+            }
+          }
+
+          &:nth-child(3),
+          &:nth-child(4) {
+            @include daoSm {
+              width: 29.375%;
+            }
+          }
+
+          & + .column2 {
+            width: 75%;
+          }
+        }
+      }
+    }
+
+    .first-cell-fix {
+      overflow: auto hidden;
+
+      thead td:first-child {
+        background-color: #fff;
+      }
+
+      th,
+      thead td:first-child {
+        @include daoSm {
+          position: sticky !important;
+          z-index: 2;
+          left: 0;
+
+          &.sub {
+            left: 68px;
+          }
+
+          &::after {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: -1px;
+            width: 30px;
+            box-shadow: inset 10px 0 8px -8px rgb(0 0 0 / 15%);
+            content: "";
+            pointer-events: none;
+            transform: translateX(100%);
+            transition: box-shadow 0.3s;
+          }
+        }
+      }
+    }
+  }
+}
+
+// 거버넌스 디테일 헤더
+
+.detail-header-area {
+  display: flex;
+  flex-direction: column;
+
+  @include daoSm {
+    padding: 12px 20px 0;
+  }
+
+  .title-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    @include sm {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .title {
+      @include fontFamilyHeading(xs);
+
+      color: $gray30;
+    }
+
+    .tag-area {
+      display: flex;
+    }
+
+    .tag-s {
+      & + .square-tag {
+        margin-left: 4px;
+
+        @include md {
+          margin-left: 8px;
+        }
+      }
+    }
+
+    .square-tag {
+      @include themeChangeMixin(border-color, 2);
+      @include themeChangeMixin(color, 1);
+      @include fontFamilyChip(mr);
+
+      min-width: auto;
+      height: 20px;
+      padding: 0 8px;
+      border: 1px solid;
+      background-color: $white;
+      font-weight: 400;
+      gap: 4px;
+
+      path {
+        @include themeChangeMixin(fill, 1);
+      }
+
+      & + .square-tag {
+        margin-left: 4px;
+
+        @include md {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+
+  .sub-title {
+    @include fontFamilyBody(mb);
+    @include themeChangeMixin(color, 1);
+
+    margin-top: 16px;
+
+    &.trust {
+      padding-left: 24px;
+      background: url("https://nile.blob.core.windows.net/images/assets/images/icon/ico_flag.svg") left 0 center no-repeat;
+      background-size: 20px;
+    }
+  }
+
+  .header-desc {
+    @include fontFamilyBody(cardxl);
+
+    margin-top: 4px;
+  }
+
+  & + .governance-detail-contents-wrap {
+    margin-top: 40px;
+  }
+
+  .detail-header-cont {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+
+    @include sm {
+      flex-direction: column;
+      margin-top: 16px;
+    }
+
+    .info-area {
+      display: flex;
+
+      .user-info {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        &:hover {
+          .wallet-address {
+            text-decoration: underline;
+          }
+        }
+
+        .wallet-address {
+          @include fontFamilyBody(cl);
+
+          color: $gray00;
+        }
+      }
+
+      .comment-view-wrap {
+        margin-left: 16px;
+      }
+    }
+
+    .btn-area {
+      display: flex;
+      gap: 8px;
+
+      @include sm {
+        margin-top: 12px;
+
+        .share-wrap {
+          flex: 1;
+
+          button {
+            width: 100%;
+          }
+        }
+      }
+
+      button {
+        min-width: 106px;
+        border-color: $gray80;
+
+        @include md {
+          min-width: 94px;
+
+          svg {
+            width: 16px;
+            height: 16px;
+          }
+        }
+
+        @include sm {
+          min-width: auto;
+          max-width: initial;
+          flex: 1;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
+
+.dao-agenda-register-modal.ant-modal-wrap {
+  .ant-modal {
+    width: 984px;
+  }
+
+  .ant-modal-body {
+    height: 642px;
+    max-height: 642px;
+    padding: 0;
+  }
+
+  .ant-tabs-nav {
+    width: 272px;
+    border-right: 1px solid $gray80;
+
+    @include themeChangeMixin(background-color, 3);
+
+    .ant-tabs-tab {
+      padding: 14px 24px;
+      margin-top: 0;
+
+      .ant-tabs-tab-btn {
+        color: $gray00;
+        cursor: pointer;
+        text-align: left;
+        white-space: pre-line;
+
+        @include fontFamilyNUi(SR_V_Tab);
+      }
+
+      &.ant-tabs-tab-active {
+        .ant-tabs-tab-btn {
+          color: $gray100;
+
+          @include fontFamilyNUi(SB_V_Tab);
+        }
+      }
+    }
+
+    .ant-tabs-ink-bar {
+      z-index: -1;
+      width: 100%;
+    }
+  }
+
+  .ant-tabs-content {
+    > .ant-tabs-tabpane {
+      padding-left: 0;
+    }
+  }
+
+  .ant-modal-header {
+    height: 78px;
+    padding: 16px;
+
+    .headline-wrap {
+      .headline {
+        display: flex;
+        align-items: center;
+
+        .label {
+          padding: 4px 8px;
+          border-radius: 2px;
+          margin-right: 8px;
+          color: $gray100;
+
+          @include fontFamilyChip(mr);
+          @include themeChangeMixin(background-color, 1);
+        }
+
+        .title {
+          color: $gray00;
+
+          @include fontFamilyNBody(LB_F);
+        }
+      }
+
+      .desc {
+        margin-top: 8px;
+        color: $gray00;
+        font-weight: 400;
+
+        @include fontFamilyNBtnChips(MR_F);
+      }
+    }
+  }
+
+  .agenda-cont-wrap {
+    height: 100%;
+
+    .agenda-modal-body {
+      height: 562px;
+      padding: 24px;
+      overflow-y: auto;
+
+      .governance-setting-type-wrap {
+        margin-top: 24px;
+      }
+
+      .check-content-wrap {
+        .proposal-table {
+          border-top: 0 none;
+          border-right: 0 none;
+          border-collapse: separate;
+          table-layout: fixed;
+
+          .column-line {
+            th {
+              width: 222px;
+              color: $gray30;
+              font-weight: 400;
+
+              @include fontFamilyTable(br);
+
+              & + td:last-child {
+                width: 441px;
+              }
+            }
+
+            td {
+              width: 221px;
+
+              & ~ td {
+                width: 220px;
+              }
+            }
+          }
+
+          tr:first-child {
+            th {
+              font-weight: 600;
+            }
+          }
+
+          td {
+            text-align: left;
+          }
+        }
+
+        .ant-radio-group {
+          display: flex;
+          flex-flow: row wrap;
+          gap: 8px 12px;
+
+          .ant-radio-wrapper {
+            align-items: center;
+
+            .ant-radio {
+              top: 0;
+            }
+
+            span {
+              color: $gray30;
+              text-align: left;
+
+              @include fontFamilyNCaption(XSR_V_Caption);
+            }
+          }
+        }
+      }
+
+      .treasury-money-use-table1,
+      .treasury-money-use-table2 {
+        .ant-form-item {
+          margin-bottom: 0;
+        }
+
+        .ant-radio-group {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 8px;
+        }
+
+        .token-name {
+          color: $gray30;
+          text-align: right;
+
+          @include fontFamilyNCaption(MR_V);
+
+          .amount {
+            color: $gray30;
+            text-align: left;
+
+            @include fontFamilyNCaption(MR_V);
+          }
+
+          .exchange {
+            display: block;
+            color: $gray60;
+
+            @include fontFamilyNCaption(XSR_V_Caption);
+          }
+        }
+
+        .tokens-list {
+          color: $gray30;
+        }
+
+        .coins-list {
+          .ant-radio-group {
+            display: flex;
+            flex-flow: row wrap;
+
+            label {
+              width: calc(25% - 8px);
+              margin-right: 0;
+            }
+          }
+        }
+      }
+
+      .treasury-money-use-table3 {
+        .ant-form-item {
+          margin-bottom: 0;
+        }
+
+        .ant-form-item-explain-error {
+          min-height: 1em;
+        }
+
+        .token-field {
+          display: flex;
+          align-items: center;
+          color: $gray30;
+          gap: 10px;
+
+          @include fontFamilyNCaption(XSR_V_Caption);
+
+          .ant-input {
+            text-align: right;
+
+            @include fontFamilyInput(xs);
+          }
+        }
+      }
+
+      .dao-ratio-edit-table1 {
+        .ant-form-item {
+          margin-bottom: 0;
+        }
+
+        .ant-form-item-explain-error {
+          min-height: 1em;
+          margin-left: 171px;
+          text-align: left;
+        }
+
+        .proposal-table {
+          tr:first-child {
+            td {
+              color: $gray30;
+
+              @include fontFamilyTable(tb);
+            }
+          }
+
+          td {
+            text-align: center;
+          }
+        }
+
+        .ratio-list {
+          width: 540px;
+
+          .ant-radio-group {
+            display: flex;
+            flex-wrap: wrap;
+
+            label {
+              width: 25%;
+              margin-right: 0;
+
+              &:last-child {
+                width: 100%;
+                margin-top: 8px;
+              }
+            }
+
+            .custom-input {
+              display: flex;
+              align-items: center;
+              color: $gray30;
+              gap: 8px;
+
+              .custom-fieldset {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                .input-outer {
+                  width: 120px;
+                  color: $gray30;
+                  text-align: right;
+
+                  @include fontFamilyNCaption(XSR_V_Caption);
+
+                  .ant-input {
+                    width: calc(100% - 15px);
+                    margin-right: 4px;
+                    text-align: right;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .radio-edit-info {
+        margin-top: 12px;
+
+        li {
+          color: $gray60;
+
+          @include fontFamilyNCaption(XSR_V_Caption);
+
+          & + li {
+            margin-top: 4px;
+          }
+        }
+      }
+
+      .gov-setting-table {
+        &.sub-table {
+          margin-top: -1px;
+
+          tr {
+            &:first-child {
+              th,
+              td {
+                border-top-color: $gray60;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+
+        .proposal-table {
+          th[rowspan="2"] ~ td {
+            font-weight: 600;
+          }
+
+          th {
+            .sub {
+              padding-left: 4px;
+              font-weight: 400;
+            }
+          }
+
+          td {
+            text-align: center;
+
+            .set-val1 {
+              text-align: right;
+            }
+          }
+        }
+
+        .ant-form-item {
+          margin-bottom: 0;
+
+          &.error-case1 {
+            .ant-form-item-explain-error {
+              margin-left: 171px;
+            }
+          }
+
+          &.error-case2 {
+            .ant-form-item-explain-error {
+              margin-left: 77px;
+            }
+          }
+        }
+
+        .ant-form-item-explain-error {
+          min-height: 1em;
+          text-align: left;
+        }
+
+        .gov-set-list1 {
+          .ant-radio-group {
+            display: flex;
+            flex-wrap: wrap;
+
+            .ant-radio-wrapper {
+              width: calc((100% - 24px) / 3);
+              align-items: flex-start;
+              margin-right: 0;
+
+              &::after {
+                height: 16px;
+              }
+            }
+          }
+        }
+
+        .gov-set-list2 {
+          width: 540px;
+
+          .ant-radio-group {
+            display: flex;
+            flex-wrap: wrap;
+
+            label {
+              width: 25%;
+              margin-right: 0;
+
+              &:last-child {
+                width: 100%;
+                margin-top: 8px;
+              }
+            }
+
+            .custom-input {
+              display: flex;
+              align-items: center;
+              gap: 8px;
+
+              .custom-fieldset {
+                display: flex;
+                gap: 16px;
+
+                .input-outer {
+                  display: flex;
+                  width: 215px;
+                  align-items: center;
+
+                  .ant-input {
+                    width: calc(100% - 25px);
+                    margin-right: 4px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .station-reopen-table {
+        .recruitment-period-wrap {
+          display: flex;
+          align-items: center;
+
+          .divide {
+            display: block;
+            margin: 0 16px;
+          }
+
+          .ant-picker-input {
+            width: 160px;
+            height: 28px;
+
+            input {
+              color: $gray30;
+
+              @include fontFamilyInput(xs);
+            }
+          }
+        }
+
+        .ant-form-item {
+          margin-bottom: 0;
+
+          .ant-form-item-explain-error {
+            min-height: 1em;
+            text-align: left;
+          }
+        }
+
+        .station-reopen-desc {
+          display: block;
+          margin-top: 8px;
+          color: $gray60;
+
+          @include fontFamilyNCaption(XSR_V_Caption);
+        }
+      }
+
+      .station-reopen-table2 {
+        position: relative;
+
+        .check-content-wrap {
+          .proposal-table td {
+            height: 78px;
+          }
+        }
+
+        .ant-form-item {
+          margin-bottom: 0;
+
+          .ant-form-item-explain-error {
+            min-height: 1em;
+            text-align: left;
+          }
+        }
+
+        .token-field {
+          display: flex;
+          align-items: center;
+          color: $gray30;
+          gap: 10px;
+
+          @include fontFamilyNCaption(XSR_V_Caption);
+
+          .ant-input {
+            color: $gray30;
+            text-align: right;
+
+            @include fontFamilyInput(xs);
+          }
+        }
+
+        .station-reopen-desc {
+          display: block;
+          margin-top: 8px;
+          color: $gray60;
+
+          @include fontFamilyNCaption(XSR_V_Caption);
+        }
+
+        .token-value {
+          position: absolute;
+          right: 0;
+          bottom: -25px;
+          color: $gray60;
+
+          @include fontFamilyNCaption(XSR_V_Caption);
+
+          .ant-input {
+            @include placeholder($gray60);
+          }
+        }
+      }
+
+      .station-reopen-table3 {
+        .proposal-table {
+          td {
+            &:nth-child(2) {
+              text-align: end;
+            }
+          }
+
+          .radio-wrap {
+            width: 100%;
+            text-align: left;
+
+            .ant-radio-wrapper {
+              width: 126px;
+              margin-right: 12px;
+
+              &:nth-child(4) {
+                width: 100%;
+                margin-top: 8px;
+
+                .ant-input {
+                  width: 195px;
+                  margin-right: 8px;
+                  margin-left: 7px;
+                }
+              }
+            }
+          }
+        }
+
+        .ant-form-item {
+          margin-bottom: 0;
+
+          .ant-form-item-explain-error {
+            min-height: 1em;
+            margin-left: 75px;
+            text-align: left;
+          }
+        }
+
+        .tokens-list {
+          .ant-input {
+            text-align: right;
+          }
+        }
+
+        .station-reopen-desc {
+          display: block;
+          margin-top: 8px;
+          color: $gray60;
+
+          @include fontFamilyNCaption(XSR_V_Caption);
+        }
+      }
+
+      .trust-check-table {
+        .check-content-wrap {
+          .proposal-table {
+            th[rowspan="2"] ~ td {
+              font-weight: 600;
+            }
+
+            td {
+              position: relative;
+              color: $gray30;
+              text-align: center;
+
+              .ant-input {
+                width: 200px;
+                margin-right: 4px;
+                margin-left: 8px;
+                text-align: end;
+              }
+            }
+
+            .radio-wrap {
+              width: 100%;
+              text-align: left;
+
+              .ant-radio-wrapper {
+                width: 126px;
+                margin-right: 12px;
+
+                &:nth-child(5) {
+                  width: 100%;
+                  margin-top: 8px;
+                }
+              }
+            }
+          }
+        }
+
+        .ant-form-item {
+          margin-bottom: 0;
+
+          &.error-case1 {
+            .ant-form-item-explain-error {
+              margin-left: 75px;
+            }
+          }
+
+          &.error-case2 {
+            .ant-form-item-explain-error {
+              margin-left: 167px;
+            }
+          }
+
+          .ant-form-item-explain-error {
+            min-height: 1em;
+            text-align: left;
+          }
+        }
+      }
+
+      .etc-box-wrap {
+        width: 100%;
+
+        .text-box {
+          width: 100%;
+          height: 310px;
+          border: none;
+          resize: none;
+        }
+
+        .text-length {
+          display: block;
+          color: $gray60;
+          text-align: end;
+        }
+      }
+
+      .etc-agenda-desc {
+        display: block;
+        margin-top: 12px;
+        color: $gray60;
+        text-align: end;
+
+        @include fontFamilyNCaption(SR_F_Caption);
+      }
+    }
+
+    .agenda-modal-footer {
+      display: flex;
+      justify-content: flex-end;
+      padding: 15px 24px 20px;
+      border-top: 1px solid $gray80;
+    }
+
+    .agenda-desc {
+      color: $gray00;
+
+      @include fontFamilyBody(mb);
+    }
+  }
+}
+
+.article-create-form-wrap {
+  // display: flex;
+
+  // .article-create-form-wrap {
+  //   width: 872px;
+  // }
+
+  // .form-create-button-wrap {
+  //   width: 424px;
+  //   margin-left: 24px;
+  // }
+}
+
+.form-create-button-wrap {
+  @include daoMd {
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 24px 0;
+    border-top: 1px solid $gray80;
+    background-color: $gray100;
+  }
+
+  @include daoSm {
+    position: fixed;
+    z-index: 100;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    padding: 20px 20px 24px;
+    border-top: 1px solid $gray80;
+    background-color: $gray100;
+  }
+
+  .ant-btn {
+    width: 424px;
+
+    @include daoLg {
+      width: 312px;
+    }
+
+    @include daoMd {
+      width: 360px;
+    }
+
+    @include daoSm {
+      width: 100%;
+    }
+
+    &:disabled {
+      background-color: $gray60;
+      color: $gray80;
+    }
+  }
+}
+
+.comment-view-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+
+  @include daoSm {
+    gap: 8px;
+  }
+
+  .comments {
+    .icon-sns-hover {
+      display: none;
+    }
+
+    &:not(.comments-temp-disable-hover) {
+      &:hover {
+        .count {
+          @include themeChangeMixin(color, 1);
+        }
+
+        svg {
+          & > path {
+            @include themeChangeMixin(fill, 1);
+          }
+        }
+      }
+    }
+
+    @at-root .trust-check-wrap & {
+      &:hover {
+        .icon-sns {
+          display: none;
+        }
+
+        .icon-sns-hover {
+          display: block;
+
+          svg {
+            path {
+              fill: $gray100;
+            }
+          }
+        }
+      }
+    }
+
+    @include daoSm {
+      margin-right: 8px;
+    }
+
+    .count {
+      transition: color 0.2s;
+    }
+
+    svg {
+      path {
+        transition: fill 0.2s;
+      }
+    }
+  }
+
+  .watch,
+  .comments {
+    display: flex;
+    align-items: center;
+
+    .count {
+      @include fontFamilyNBody(MR_F);
+
+      margin-left: 4px;
+      color: $gray30;
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+// governance vote
+.wrap-governance-vote {
+  width: 344px;
+
+  @include daoLg {
+    width: 312px;
+  }
+
+  @include daoMd {
+    width: 100%;
+  }
+
+  @include daoSm {
+    width: 100%;
+  }
+
+  .quorum-info-wrap {
+    padding: 0 20px;
+    margin: 0 auto;
+
+    @include daoXl {
+      padding: 20px 20px 0;
+    }
+
+    @include daoLg {
+      padding: 20px 0 0;
+    }
+
+    @include daoSm {
+      padding: 20px 0 0;
+    }
+
+    .quorum-condition-wrap {
+      margin-top: 8px;
+
+      .progress-bar {
+        width: 162px;
+
+        @include daoSm {
+          width: 200px;
+        }
+      }
+
+      .condition-info {
+        margin-top: 8px;
+      }
+    }
+
+    .vote-displayer {
+      padding-bottom: calc(8px + 20px + 8px + 32px);
+
+      @include daoMd {
+        padding: 0 5px;
+        padding-bottom: calc(8px + 22px + 8px + 32px);
+      }
+
+      @include daoSm {
+        padding-bottom: calc(4px + 22px + 4px + 32px);
+      }
+
+      .chart {
+        width: 100%;
+
+        .bar-chart-wrap {
+          width: 210px;
+          height: 106px;
+          margin: 0 auto;
+
+          @include daoMd {
+            width: 190px;
+            height: 96px;
+          }
+        }
+      }
+
+      .factor {
+        bottom: 0;
+        flex-flow: row wrap;
+        align-items: center;
+
+        @include daoMd {
+          top: auto;
+        }
+
+        @include daoSm {
+          top: auto;
+        }
+
+        strong {
+          @include fontFamilyData(csb);
+        }
+
+        .icon {
+          width: 12px;
+          height: 12px;
+          vertical-align: top;
+        }
+
+        em {
+          @include fontFamilyData(m3);
+
+          margin-left: 4px;
+        }
+
+        p {
+          display: block;
+          width: 100%;
+
+          @include fontFamilyNCaption(XSR_V_Caption);
+
+          span {
+            display: block;
+          }
+
+          &.detail {
+            span {
+              margin-left: 0;
+            }
+          }
+        }
+
+        &.against {
+          text-align: right;
+
+          strong {
+            flex-direction: row-reverse;
+          }
+
+          .icon {
+            margin-right: 2px;
+            margin-left: 0;
+          }
+
+          p {
+            justify-content: flex-end;
+            text-align: right;
+          }
+        }
+      }
+    }
+
+    .condition-info {
+      @include fontFamilyNBody(SR_F);
+
+      strong {
+        @include fontFamilyNBody(SB_F);
+      }
+
+      span {
+        @include fontFamilyNBody(SR_F);
+
+        display: block;
+      }
+    }
+  }
+
+  .wrap-vote-state {
+    width: 100%;
+    border-radius: 4px;
+    background: $gray100;
+
+    @include daoMd {
+      margin-top: 12px;
+    }
+
+    > div {
+      padding: 24px 20px;
+
+      @include daoLg {
+        padding: 20px 24px 24px;
+      }
+
+      & + div {
+        padding-top: 18px;
+      }
+    }
+
+    & + .wrap-vote-state {
+      margin-top: 24px;
+
+      @include daoMd {
+        margin-top: 12px;
+      }
+
+      @include daoSm {
+        margin-top: 12px;
+      }
+    }
+
+    &.last {
+      @include daoLg {
+        margin-top: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+      }
+
+      @include daoSm {
+        padding-bottom: 60px;
+        border-radius: 0;
+        border-top: 1px solid $gray80;
+        margin-top: 0;
+        margin-bottom: 15px;
+      }
+    }
+
+    .title-wrap {
+      display: flex;
+      justify-content: space-between;
+
+      @include daoXl {
+        padding-bottom: 4px;
+      }
+
+      @include daoLg {
+        padding-bottom: 8px;
+      }
+
+      @include daoMd {
+        padding-bottom: 16px;
+      }
+    }
+
+    .title {
+      display: block;
+      color: $gray00;
+
+      @include fontFamilyHeading(s);
+
+      @include daoLg {
+        width: 58px;
+      }
+    }
+  }
+
+  .wrap-button {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    gap: 8px;
+
+    &.double {
+      @include daoMd {
+        > div,
+        button,
+        a {
+          max-width: 100%;
+        }
+      }
+
+      @include daoSm {
+        > div,
+        button,
+        a {
+          max-width: 100%;
+        }
+      }
+    }
+
+    & + .wrap-vote-state {
+      margin-top: 24px;
+
+      @include daoMd {
+        margin-top: 12px;
+      }
+
+      @include daoSm {
+        margin-top: 12px;
+      }
+    }
+
+    @include daoMd {
+      position: fixed;
+      z-index: 1100;
+      bottom: 0;
+      left: 0;
+
+      // display: none;
+      width: 100%;
+      justify-content: space-around;
+      padding: 18px 20px;
+      background: #fff;
+
+      button,
+      a,
+      .on-call {
+        max-width: 360px;
+      }
+    }
+
+    @include daoSm {
+      position: fixed;
+
+      // 모바일에서 댓글보기 팝업 오픈시 투표하기 버튼에 가려지는 현상 때문에 1100 -> 1060 으로 수정
+      z-index: 1060; // 1100;
+      bottom: 0;
+      left: 0;
+
+      // display: none;
+      width: 100%;
+      justify-content: space-around;
+      padding: 18px 20px;
+      background: #fff;
+
+      button,
+      a,
+      .on-call {
+        max-width: 360px;
+      }
+    }
+
+    & + .wrap-button {
+      margin-top: 16px;
+    }
+
+    & + .wrap-vote-state {
+      // 임시 주석 처리(현기) 레이아웃 작업 중
+      // margin-top: 24px;
+
+      @include daoMd {
+        // 임시 주석 처리(현기) 레이아웃 작업 중
+        // margin-top: 12px;
+      }
+    }
+
+    > div {
+      flex: 1;
+    }
+
+    .on-call {
+      display: flex;
+      width: 100%;
+      height: 52px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      line-height: 1.2;
+      text-align: center;
+
+      @include themeChangeMixin(background-color, 2);
+      @include themeChangeMixin(color, 1);
+      @include fontFamilyButton(mr);
+
+      .on-call-text {
+        display: block;
+
+        @include themeChangeMixin(color, 1);
+
+        & + .on-call-text {
+          margin-top: 8px;
+        }
+      }
+    }
+
+    .link-consensus-check {
+      display: flex;
+      width: 100%;
+      height: 52px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 16px;
+      border-radius: 4px;
+
+      @include themeChangeMixin(background-color, 2);
+      @include themeChangeMixin(color, 1);
+
+      line-height: 1.2;
+      text-align: left;
+
+      @include fontFamilyButton(mr);
+
+      svg {
+        width: 12px;
+        height: 12px;
+      }
+
+      .check-text {
+        display: block;
+
+        @include themeChangeMixin(color, 1);
+
+        & + .check-text {
+          margin-top: 8px;
+        }
+      }
+    }
+
+    button {
+      width: 100%;
+      min-width: 0;
+
+      @include fontFamilyButton(mr);
+    }
+
+    .active {
+      button {
+        @include themeChangeMixin(background-color, 1);
+        @include themeChangeMixin(border-color, 1);
+
+        color: $white;
+
+        span {
+          color: $white;
+        }
+
+        svg path {
+          fill: $gray100;
+        }
+      }
+    }
+  }
+
+  .vote-info {
+    position: relative;
+
+    .title {
+      & + .date {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        text-align: right;
+
+        & + .participation-state {
+          margin-top: 32px;
+        }
+      }
+    }
+
+    .passed-state {
+      @include themeChangeMixin(color, 1);
+      @include fontFamilyHeading(s);
+
+      & + .date {
+        position: inherit;
+        margin-top: 16px;
+      }
+
+      span {
+        display: block;
+        margin-top: 8px;
+
+        @include themeChangeMixin(color, 1);
+        @include fontFamilyHeading(s);
+      }
+    }
+
+    .date {
+      color: $gray00;
+
+      @include fontFamilyData(cl);
+
+      span {
+        display: block;
+        margin-top: 4px;
+
+        @include fontFamilyData(csb);
+        @include themeChangeMixin(color, 1);
+      }
+    }
+
+    .participation-state {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 16px;
+
+      @include fontFamilyNBody(MR_F);
+
+      > div {
+        display: flex;
+        min-height: 24px;
+        align-items: center;
+        padding: 3px 8px;
+        border: 1px solid $gray90;
+        border-radius: 4px;
+        background-color: $gray90;
+        color: $gray30;
+        gap: 4px;
+
+        @include fontFamilyChip(mr);
+
+        p { @include fontFamilyChip(mr); }
+
+        &.participation {
+          @include themeChangeMixin(color, 1);
+          @include themeChangeMixin(border-color, 2);
+          @include themeChangeMixin(background-color, 3);
+        }
+      }
+    }
+
+    .title-voting-capacity {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 16px;
+      border-top: 1px solid $gray80;
+      margin-top: 16px;
+
+      .voting-capacity {
+        @include fontFamilyData(m3);
+        @include themeChangeMixin(color, 1);
+
+        span {
+          font-weight: 400;
+
+          @include fontFamilyData(cl);
+          @include themeChangeMixin(color, 1);
+        }
+      }
+
+      & + .vote-info-list {
+        margin-top: 12px;
+      }
+    }
+
+    dl {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 12px;
+
+      dt {
+        width: 136px;
+        color: $gray30;
+
+        @include fontFamilyNBody(SR_F);
+
+        @include daoMd {
+          width: 127px;
+        }
+
+        @include daoSm {
+          width: 128px;
+        }
+      }
+
+      dd {
+        width: calc(100% - 136px);
+        color: $gray30;
+        text-align: right;
+
+        @include fontFamilyData(cs);
+
+        @include daoMd {
+          width: calc(100% - 127px);
+        }
+
+        @include daoSm {
+          width: calc(100% - 128px);
+        }
+      }
+    }
+
+    .governance-vote-info {
+      padding-top: 16px;
+      border-top: 1px solid $gray80;
+      margin-top: 16px;
+      color: $gray30;
+
+      @include fontFamilyNBody(SR_F);
+    }
+  }
+
+  .vote-state {
+    position: relative;
+
+    .quorum-info-list {
+      @include daoMd {
+        display: flex;
+        gap: 16px;
+      }
+
+      @include daoSm {
+        display: block;
+      }
+
+      .quorum-info-wrap {
+        @include daoMd {
+          width: 320px;
+          max-width: 320px;
+        }
+
+        @include daoSm {
+          width: 100%;
+        }
+      }
+
+      ul {
+        @include daoMd {
+          width: calc(100% - 320px - 16px);
+        }
+
+        @include daoSm {
+          width: 100%;
+        }
+      }
+    }
+
+    .total-vote-info {
+      color: $gray00;
+      text-align: right;
+
+      @include fontFamilyData(cl);
+
+      @include daoMd {
+        display: flex;
+        align-items: center;
+      }
+
+      span {
+        display: block;
+        margin-top: 4px;
+        color: $gray30;
+
+        @include fontFamilyData(cs);
+
+        @include daoMd {
+          margin-top: 0;
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+
+  .vote-user {
+    .user-info {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        margin-top: 4px;
+        color: $gray00;
+
+        @include fontFamilyData(cl);
+      }
+
+      button,
+      a {
+        margin-top: -4px;
+      }
+    }
+
+    .governance-members {
+      padding: 20px 0 0;
+
+      table {
+        > thead th {
+          font-weight: 400 !important;
+        }
+
+        .user-image {
+          margin: auto;
+        }
+
+        td {
+          p span {
+            display: block;
+            color: $gray60;
+          }
+        }
+      }
+    }
+
+    .member-link {
+      &:hover {
+        .wallet-address {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .vote-info-list {
+    margin-top: 24px;
+
+    @include daoSm {
+      margin-top: 16px;
+    }
+
+    li {
+      position: relative;
+      padding-left: 8px;
+      color: $gray30;
+      white-space: pre-line;
+
+      @include fontFamilyNBody(SR_F);
+
+      span {
+        color: $gray30;
+        font-weight: 600;
+      }
+
+      & + li {
+        margin-top: 4px;
+      }
+
+      &::before {
+        position: absolute;
+        top: 8px;
+        left: 0;
+        display: block;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background-color: $gray60;
+        content: "";
+      }
+    }
+  }
+}
+
+.trust-check-wrap {
+  position: relative;
+  z-index: 1;
+  padding: 24px;
+  border-radius: 4px;
+  margin-top: 24px;
+  background: $gray100;
+
+  @include daoSm {
+    padding: 24px 20px;
+    margin-top: 20px;
+  }
+
+  .slide-top-wrap {
+    strong {
+      @include fontFamilyUi(tabmb);
+
+      color: $gray00;
+    }
+  }
+
+  .trust-slide-wrap {
+    margin-top: 24px; // 디자인 간격(23px)
+    .governance-card {
+      overflow: hidden;
+      border-color: $gray00;
+      margin-top: 0;
+
+      .top {
+        .governance-content-info {
+          .content-info {
+            .content-info-link {
+              .description {
+                @include daoMd {
+                  @include ellipsis(3);
+
+                  height: 72px;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .bottom {
+        @include themeChangeMixin(background-color, 1);
+
+        border: none;
+
+        .status {
+          color: $gray100;
+        }
+
+        .date {
+          dt,
+          dd {
+            color: $gray100;
+          }
+        }
+
+        .comment-view-wrap {
+          .count {
+            color: $gray100;
+          }
+
+          .icon-sns {
+            svg {
+              path {
+                fill: $gray100;
+              }
+            }
+          }
+
+          .watch {
+            svg {
+              path {
+                stroke: $gray100;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .btn-wrap {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+
+    .btn-prev,
+    .btn-next {
+      width: 24px;
+      height: 24px;
+
+      &.swiper-button-disabled {
+        cursor: default;
+
+        svg {
+          path {
+            fill: $gray60;
+          }
+        }
+      }
+
+      svg {
+        width: 100%;
+        height: 100%;
+
+        path {
+          fill: $gray00;
+        }
+      }
+    }
+
+    .btn-prev {
+      svg {
+        transform: rotate(90deg);
+      }
+    }
+
+    .btn-next {
+      svg {
+        transform: rotate(-90deg);
+      }
+    }
+
+    .swiper-button-lock {
+      display: block;
+    }
+
+    .slide-pagination {
+      display: flex;
+      margin: 0 16px;
+
+      span {
+        width: 14px;
+        height: 2px;
+        background: rgba($gray00, 20%);
+
+        &.swiper-pagination-bullet-active {
+          background: $gray00;
+        }
+      }
+    }
+  }
+}
+
+@mixin tdHighlight {
+  position: relative;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+
+  @include themeChangeMixin(border-color, 1);
+
+  span {
+    @include fontFamilyTable(br);
+  }
+
+  &:first-child {
+    border-left: 1px solid;
+
+    @include themeChangeMixin(border-color, 1);
+
+    span::before {
+      background-color: #e3b419;
+    }
+  }
+
+  &:last-child {
+    border-right: 1px solid;
+    font-weight: 400;
+
+    @include themeChangeMixin(border-color, 1);
+  }
+}
+
+.governance-members-page-wrap {
+  .dao-members-table {
+    tr:nth-child(1) {
+      td {
+        @include tdHighlight;
+      }
+    }
+
+    tr:nth-child(3) {
+      td:first-child {
+        span::before {
+          background-color: #a6a6a6;
+        }
+      }
+    }
+
+    .ant-table-fixed-column {
+      tr:nth-child(2) {
+        td {
+          @include tdHighlight;
+
+          &:first-child {
+            span::before {
+              background-color: #b49579;
+            }
+          }
+        }
+      }
+    }
+
+    tr:nth-child(1),
+    tr:nth-child(2),
+    tr:nth-child(3) {
+      td:first-child {
+        font-weight: 700;
+
+        span {
+          position: relative;
+          display: flex;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+
+          &::before {
+            position: relative;
+            top: 12%;
+            left: 0;
+            display: block;
+            width: 15px;
+            height: 11px;
+            margin-right: 4px;
+            content: "";
+            mask: url("#{$rootPath}/icon/ico_dao_members_ranking.svg") no-repeat;
+          }
+        }
+      }
+    }
+  }
+}

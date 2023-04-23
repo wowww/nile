@@ -1,0 +1,527 @@
+{
+  "hero": {
+    "title": "A Community Pioneering the Evolution\nof the Blockchain Ecosystem",
+    "videoBtn": "Watch DAO introduction video",
+    "item": {
+      "recruitScheduleChip": "Recruiting soon",
+      "recruitChip": "Currently Recruiting",
+      "recruitSchedule": "Recruiting will begin soon",
+      "recruitScheduleQuarterly": "In the {{quarterly}} of {{year}}",
+      "recruitScheduleFirstHalf": "In the first half of {{year}}",
+      "recruitScheduleSecondHalf": "In the second half of {{year}}",
+      "recruitScheduleShort": "Recruiting soon",
+      "recruitDays": "DAYS",
+      "recruitHours": "HOUR",
+      "recruitMinutes": "MINUTES",
+      "recruitSeconds": "SECONDS",
+      "recruitDateShort": "Recruiting will begin on {{dateStart}}",
+      "recruitShort": "{{day}} days {{hour}} hours left until recruiting ends",
+      "recruitShortDeadline": "Recruiting will end soon",
+      "recruitEndTitle1": "Recruiting",
+      "recruitEndTitle2": "Participating",
+      "recruitEndTitle1Suffix": "WEMIX",
+      "recruitEndTitle2Suffix": "People",
+      "recruitEndShort": "{{applicant}}People Participating",
+      "recruitFailureChip": "Failure To Establish DAO",
+      "recruitFailure": "Recruitment failed as the minimum recruitment goal has not been met."
+    }
+  },
+  "check": {
+    "title": "Learn more about WONDER DAO* in advance!",
+    "desc": "Decentralized Autonomous Organization",
+    "about": {
+      "title": "Introduction DAO",
+      "desc": "WONDER DAO is a DAO authorized to operate WEMIX3.0 mainnet nodes, and takes responsibility as a Node Council Partner contributing to the stable operation and innovation of WEMIX3.0.",
+      "btn1": "Go to Whitepaper",
+      "btn2": "Explore {{link}}",
+      "subdesc1": "Recruitment is scheduled to begin\n in <0>{{period}}</0>",
+      "subdesc2": "Until the end of recruitment\n<0>{{period}}</0> left.",
+      "subdesc3": "Recruitment has <0>ended</0>.",
+      "subdesc4": "You can participate in WONDER DAO anytime!",
+      "subdesc5": "If you want to participate in WONDER DAO after the recruitment ends, you can participate by purchasing Wonder (DAO Token) on WEMIX.Fi.",
+      "subdescBtn": "Go to Buy Wonder on WEMIX.Fi",
+      "year": "of",
+      "quarter": "the",
+      "date": "days",
+      "hour": "hours",
+      "minute": "minutes",
+      "caption": "This is before recruitment begins.",
+      "fieldName": "Current Amount",
+      "fieldName2": "Goal Amount",
+      "fieldName3": "Accomplished!",
+      "participate": "This is before recruitment begins.",
+      "participating": "<0>{{num}}</0> People participated",
+      "before": {
+        "desc": "Join us now. The higher the participation rate, the more Wonders you can earn.",
+        "btn1": "Participate",
+        "additionalTooltip": "Additional recruitment has begun!"
+      },
+      "after": {
+        "desc": "참여 수량 : <0>{{amount}}</0> WEMIX\n현재 참여 비중 : <1>{{percent}}</1> %",
+        "info1": "Participation Amount",
+        "info2": "Participation Proportion",
+        "btn1": "Additional Participation",
+        "btn2": "Participation Cancel",
+        "tooltip": "You can increase the proportion of participation through additional participation!"
+      },
+      "btn": {
+        "tooltip": {
+          "1": "It will take about 2 hours to calculate Wonder's distribution. Once the calculation is complete, you can earn Wonders at Station.",
+          "2": "We're sorry. The DAO formation was canceled because the minimum recruitment target amount was not met. Please proceed with the refund of the participation amount!"
+        },
+        "btn": {
+          "1": "Computing for Wonder distribution",
+          "2": "Refund"
+        }
+      },
+      "end": "{{num}} Members"
+    },
+    "reward": {
+      "title": "WONDER DAO TOKEN FLOW",
+      "desc": "(temp) WONDER DAO pursues the vision of a continuously growing community through tokenomics.",
+      "item": {
+        "0": {
+          "name": "DAO Token\nInitial Sale"
+        },
+        "1": {
+          "name": "Participate in\nWONDER DAO NCP\n& Acquire PMR",
+          "value": "(26,280 WEMIX per month)"
+        },
+        "2": {
+          "name": "DAO Token\nBuyback"
+        },
+        "3": {
+          "name": "DAO Token\nincineration"
+        },
+        "4": {
+          "name": "DAO Token\nrise in value"
+        }
+      }
+    },
+    "recruit": {
+      "title": "Recruitment information",
+      "item": {
+        "0": {
+          "name": "Recruitment\nMethod",
+          "value": "Subscription\nmethod"
+        },
+        "1": {
+          "name": "Recruitment\nToken Unit"
+        },
+        "2": {
+          "name": "Minimum\nParticipation Quantity",
+          "value": "No limit"
+        },
+        "3": {
+          "name": "Maximum\nParticipation Quantity",
+          "value": "No limit"
+        },
+        "4": {
+          "name": "Wonder\nIssuance",
+          "value": "Prorated\ndistribution",
+          "sub": "(Distribition according to participation ratio)"
+        },
+        "5": {
+          "name": "Wonder Price"
+        }
+      },
+      "caution": {
+        "0": "If the participating WEMIX quantity is greater than the WEMIX quantity corresponding to the distributed Wonder quantity, the difference will be refunded.",
+        "1": "Additional participation and cancellation of participation are only possible during the recruitment period.",
+        "2": "Recruitment information may change later."
+      }
+    }
+  },
+  "members": {
+    "title": "Participate in WONDER DAO \nand become a part of the 40 WONDERS.",
+    "desc": "Becoming a member of WONDER DAO means becoming a partner to the global leaders \nin the various areas and industries that consist the 40 WONDERS.",
+    "btn": "Explore 40 WONDERS"
+  },
+  "coreValue": {
+    "title1": "Core Values of DAO",
+    "title2": "A Community Pioneering the Evolution \nof the Blockchain Ecosystem",
+    "subtitle1": "Transparent rules",
+    "subdesc1-1": "Manage DAOs with a \ntransparent On-chain governance program!",
+    "subdesc1-2": "DAO is operated with transparent rules:\nactivities like discussions on various topics, voting using Governance Tokens, moving funds that are recorded on the blockchain, etc.",
+    "subtitle2": "Cooperation and collaboration",
+    "subdesc2-1": "Create results like never before \n with collaboration that goes beyond time!",
+    "subdesc2-2": "Engage with people with various interests beyond space and time.",
+    "subtitle3": "Sustainable growth",
+    "subdesc3-1": "Grow together with DAOs you create!",
+    "subdesc3-2": "The performance of DAOs is transparently managed to achieve the growth of DAOs and create a virtuous cycle through reinvestment."
+  },
+  "neith": {
+    "title": "What is the Neith Protocol?",
+    "desc": "The seven elements of the Neith Protocol allow community members to work together in various ways, unlimited. Join us to bring innovation and creative ideas to life.",
+    "btn1": "Read more about the Neith Protocol",
+    "item": {
+      "0": {
+        "title": "Station",
+        "desc": "Members are recruited, and DAO Tokens get  distributed to achieve the collective goal of a DAO."
+      },
+      "1": {
+        "title": "Trust",
+        "desc": "DAO's name and authority are delegated to become the subject of the contract Off-chain with the execution and management of the business."
+      },
+      "2": {
+        "title": "Treasury",
+        "desc": "This is the community vault where DAO funds are collected and stored."
+      },
+      "3": {
+        "title": "Obelisk",
+        "desc": "NILERS can receive Governance Tokens by staking DAO Tokens to participate in Governance."
+      },
+      "4": {
+        "title": "Incinerator",
+        "desc": "The value of DAO Token increases by burning a part of DAO Tokens."
+      },
+      "5": {
+        "title": "Governance",
+        "desc": "By using Governance Tokens, agendas can be created to operate DAO while making decisions through voting."
+      },
+      "6": {
+        "title": "Creator",
+        "desc": "Creator provides IP and core business for the growth of DAO. For NFT business, NILERS can receive the Creator share of profits."
+      }
+    }
+  },
+  "type": {
+    "title1": "What is your area of interest?",
+    "title2": "Discover your next DAO!",
+    "desc1": "DAOs can have countless purposes.",
+    "desc2": "Explore various types of DAOs with unique values!"
+  },
+  "join": {
+    "title": "I want to create a DAO!",
+    "desc": "Request to create a DAO of your own.",
+    "btn1": "Request to Create"
+  },
+  "DaoRequestModal": {
+    "title": "Request to Create",
+    "desc": "Enter the details of the DAO you want to create.",
+    "form": {
+      "daoCategory": {
+        "label": "DAO Type",
+        "placeholder": "Select the type of DAO you are looking for.",
+        "errorMessage": "Select the type of DAO."
+      },
+      "introduction": {
+        "label": "Detailed Requests (Optional)",
+        "placeholder": "If you have detailed requests about the DAO you want to see created, please write them in here. (This part is mandatory if you have selected Misc. for the type of DAO.)"
+      },
+      "email": {
+        "label": "Email",
+        "placeholder": "Please type your email address here."
+      }
+    },
+    "btnText": "Send"
+  },
+  "protocol": {
+    "title": "Protocol",
+    "wonderTitle": "The 6 protocols \nplay a pivotal role in WONDER DAO operations and development.",
+    "arteumTitle": "The 7 protocols \nplay a pivotal role in ARTEUM DAO operations and development.",
+    "deltaTitle": "The 6 protocols \nand the Delta protocol play a pivotal role in DELTA DAO operations and development.",
+    "oracleTitle": "The 6 protocols \nplay a pivotal role in ORACLE DAO operations and development."
+  },
+  "governance": {
+    "wonder": {
+      "title": "Transparent and Democratic Decision-making",
+      "desc": "Make various proposals related to WONDER DAO operations, and participate in the decision-making process through discussions and votes.",
+      "tag": ["Station Re-recruiting", "Set distribution within the protocol", "Set WEMIX3.0 support targets", "Set amount of DAO Tokens to burn"],
+      "stepDesc": "Proposals are voted on with g.WONDER, the Governance Token, as voting rights \nand DAO Governance has 3 steps."
+    },
+    "arteum": {
+      "title": "Transparent and Democratic Decision-making",
+      "desc": "Make various proposals related to ARTEUM DAO operations, and participate in the decision-making process through discussions and votes.",
+      "tag": [
+        "Select art pieces to collect",
+        "Decide on the sale of art pieces",
+        "Plan various art-related events",
+        "Set amount of DAO Tokens to burn"
+      ],
+      "stepDesc": "Proposals are voted on with g.ARTEUM, the Governance Token, as voting rights \nand DAO Governance has 3 steps."
+    },
+    "delta": {
+      "title": "Transparent and Democratic Decision-making",
+      "desc": "Make various proposals related to DELTA DAO operations, and participate in the decision-making process through discussions and votes.",
+      "tag": ["Improvement of management strategies", "Set management methods", "Set profits and rewards distributions"],
+      "stepDesc": "Agendas are voted on with Governance Tokens as voting rights, \nand DAO Governance has 3 steps."
+    },
+    "oracle": {
+      "title": "Transparent and Democratic Decision-making",
+      "desc": "The DAO contributes to the growth of the protocol ecosystem through the various activities connecting the Off-chain world to the On-chain world.",
+      "tag": ["Technical Data Refining Requests", "Set On-chain data conversions"],
+      "stepDesc": "Proposals are voted on with PARTICLE, the Governance Token, as voting rights \nand DAO Governance has 3 steps."
+    }
+  },
+  "trust": {
+    "title": "Trust",
+    "wonder": {
+      "text": "Supporting the stable operations \nand transparent communications of the WONDER DAO",
+      "descript": "The WONDER DAO's Trust is delegated the NCP node operations of the WONDER DAO. It exercises its voting rights under the WONDER DAO name on WEMIX3.0 Governance Proposals. It also communicates and provides information related to the activities mentioned above to the WONDER DAO in transparent notices."
+    },
+    "arteum": {
+      "text": "Support from expert counsel such as Yeolmaecompany And transparent communications",
+      "descript": "The Trust makes valuable data public and supports the activities of the DAO members with advice from expert counsel in the art world such as Yeolmaecompany, who successfully launched the first domestic group art purchase platform. Matters related to the Trust, such as its duties and possible replacements are also decided by the DAO."
+    },
+    "delta": {
+      "text": "Trust built through constant communication and advanced technologies",
+      "descript": "The team that built the DELTA protocol and designed the initial strategies is responsible for the Trust. The Trust's role is to develop and deploy decisions made by the DAO into Smart Contracts. Furthermore, it also provides information on and communicates about newly deployed strategies and new products to the community in a transparent way."
+    },
+    "oracle": {
+      "text": "A Way of Management Created Together and More Trustworthy",
+      "descript": "Participate as a new Feeder or Aggregator following the DAO's decisions, or delegate your voting rights to an existing participant in the ecosystem as selected by the DAO and get the resulting performance distributed to you."
+    }
+  },
+  "membership": {
+    "title": "Membership",
+    "wonder": {
+      "text": "Get DAO Tokens and Governance Tokens to become a member of WONDER DAO and participate in the decision-making process.",
+      "token1": {
+        "cate": "DAO Token",
+        "name": "WONDER",
+        "ticker": "WDR",
+        "descript": "WONDER Token is a utility token that can be used to issue Governance Tokens. You can Stake WONDER to obtain g.WONDER Tokens.",
+        "feature": {
+          "p1": "Issued amount: 1,900,010 WDR",
+          "p2": "To get this token: Participate in Station or Use the Swap service in WEMIX.Fi"
+        }
+      },
+      "token2": {
+        "cate": "Governance Token",
+        "name": "g.WONDER",
+        "ticker": "g.WDR",
+        "descript": "g.WONDER gives you the right to participate in On-chain Governance, which decides on all matters of WONDER DAO operations.",
+        "feature": {
+          "p1": "A Governance Token that is issued or burned in the DAO Obelisk",
+          "p2": "To get this token: Use the Obelisk in WONDER DAO"
+        }
+      }
+    },
+    "arteum": {
+      "text": "Get DAO Tokens and Governance Tokens to become a member of ARTEUM DAO and participate in the decision-making process.",
+      "token1": {
+        "cate": "DAO Token",
+        "name": "ARTEUM",
+        "ticker": "ART",
+        "descript": "The ARTEUM Token is a Utility Token that can be used to issue Governance Tokens. Stake ARTEUM to issue g.ARTEUM Tokens.",
+        "feature": {
+          "p1": "Issued amount: To be decided (Please refer to future notices)",
+          "p2": "To get this token: Participate in Station or Use the Swap service in WEMIX.Fi"
+        }
+      },
+      "token2": {
+        "cate": "Governance Token",
+        "name": "g.ARTEUM",
+        "ticker": "g.ART",
+        "descript": "g.ARTEUM is an On-chain Token that gives you the right to participate in On-chain Governance, which decides on all matters of ARTEUM DAO operations.",
+        "feature": {
+          "p1": "A Governance Token that is issued or burned in the DAO Obelisk",
+          "p2": "To get this token: Use the Obelisk in ARTEUM DAO"
+        }
+      }
+    },
+    "delta": {
+      "text": "Get DAO Tokens and Governance Tokens to become a member of DELTA DAO and participate in the decision-making process.",
+      "token1": {
+        "cate": "DAO Token",
+        "name": "DELTA",
+        "ticker": "DELTA",
+        "descript": "DELTA is the DAO Token for the DELTA protocol, and the first sale of this Token is made to the DELTA DAO, putting it into circulation. DELTA is allocated as rewards for depositing base assets to products connected to DELTA. DELTA is a Token utilized for Governance necessary to manage the DELTA protocol, and the DAO decides on the main variables of the protocol, as well as the addition of more strategies, and directions for future development."
+      },
+      "token2": {
+        "cate": "Governance Token",
+        "name": "g.DELTA",
+        "ticker": "g.DELTA",
+        "descript": "g.DELTA is used for the DAO to decide on all matters related to DAO operations, like profits from operations and the improvement of DELTA protocol strategies, reward allocation, and more. There are no plans for the initial Governance Token to be issued, and more information on the issuance date of Governance Tokens and detailed uses will be provided following discussions between the DAO and the Trust."
+      }
+    },
+    "oracle": {
+      "text": "Get PARTICLE Token to prove your membership in the ORACLE DAO.",
+      "token1": {
+        "cate": "DAO Token",
+        "name": "PARTICLE",
+        "ticker": "PTC",
+        "descript": "The PARTICLE Token is a Governance Token with which you can prove your membership in the ORACLE DAO, as well as a necessary Utility Token utilized within the ORACLE ecosystem."
+      }
+    }
+  },
+  "profile": {
+    "wonder": {
+      "title": "WONDER DAO",
+      "subTitle": "The First, The Wonder of WONDERS",
+      "tag": {
+        "1": "WEMIX3.0",
+        "2": "Protocol",
+        "3": "Authority Node",
+        "4": "PMR"
+      },
+      "cont": {
+        "title": "This Community is the first node of the 40 nodes\nthat have come together to participate in the Governance of the WEMIX3.0 mainnet.",
+        "desc": "By contributing to the development and growth of the WEMIX ecosystem, the DAO received PMR* and continuously promotes the joint growth of the DAO.",
+        "footnote": "*Permanent Minting Reward"
+      }
+    },
+    "arteum": {
+      "title": "ARTEUM DAO",
+      "subTitle": "The most influential Art Collector community",
+      "tag": {
+        "1": "Art",
+        "2": "Culture",
+        "3": "Collector"
+      },
+      "cont": {
+        "title": "With Tokens as the medium, the ARTEUM DAO realizes limitless potential by recruiting a group art collecting guild for the collection of various art pieces, gallery management, and other cultural ventures.",
+        "desc": "The DAO supports various activities based on collected works of art, contributing to revitalization of the art world through the discovery of rising artists, and collecting art pieces that may not be within the reach of individuals.",
+        "footnote": ""
+      }
+    },
+    "delta": {
+      "title": "DELTA DAO",
+      "subTitle": "Onchain Asset Management Protocol",
+      "tag": {
+        "1": "Asset",
+        "2": "DeFi",
+        "3": "Transparency",
+        "4": "Stability"
+      },
+      "cont": {
+        "title": "The DELTA DAO operates an automated asset management protocol based on WEMIX3.0.",
+        "desc": "The DELTA DAO's strategic directions and pivotal parameters of the protocol are operated with the Trust. The DAO contributes to the development of the WEMIX3.0-based DeFi ecosystem with new ideas.",
+        "footnote": ""
+      }
+    },
+    "oracle": {
+      "title": "ORACLE DAO",
+      "subTitle": "Linking Blockchain with the real-world through Zero-Knowledge Proof",
+      "tag": {
+        "1": "Data",
+        "2": "Zero-Knowledge Proof",
+        "3": "Feeder",
+        "4": "Aggregator"
+      },
+      "cont": {
+        "title": "The ORACLE DAO refines real world data to connect it On-chain.",
+        "desc": "The DAO's goal is to refine many types of real world (Off-chain) data to provide it to users in real-time. Data provided by the ORACLE is utilized to develop various financial products, contributing to the enrichment of the WEMIX3.0 ecosystem.",
+        "footnote": ""
+      }
+    }
+  },
+  "social": {
+    "btn1": "Discord",
+    "btn2": "PAPYRUS",
+    "blank": "open new window",
+    "prepareService": "Service is being prepared.",
+    "title": "Talk about {{type}} DAO now!",
+    "desc": "The Discord channel is a space anyone interested in the DAO can join. \nThere is no designated channel manager. \nOnce the DAO has been opened, the DAO members' community will be moved to the Token-based messenger, PAPYRUS.",
+    "wonder": {
+      "list": {
+        "0": "Hooray! I can join the WEMIX3.0 ecosystem!",
+        "1": "Who will join the 40 WONDERS next?",
+        "2": "I'm so looking forward to seeing \nthe transparent operations of the WONDER DAO",
+        "3": "I guess I will need g.WONDER \nto vote, right?",
+        "4": "I'm really looking forward to the first DAO in NILE!"
+      }
+    },
+    "arteum": {
+      "list": {
+        "0": "Best wishes to the art ecosystem designed by WEMADE!",
+        "1": "I want to know more about the latest art market news.",
+        "2": "An art ecosystem utilizing \nspecialized technologies? That's new!",
+        "3": "I want to be a member of the \nARTEUM DAO.",
+        "4": "An art collecting DAO? What a novel idea!"
+      }
+    },
+    "delta": {
+      "list": {
+        "0": "Guaranteed stability, transparency and convenience! Sounds awesome!",
+        "1": "I've been waiting for a DeFi DAO.",
+        "2": "I have questions about the \nmanagement strategy of DELTA DAO! \nI hope recruiting begins soon!",
+        "3": "I think I'll have to get \nGovernance Tokens first.",
+        "4": "It seems trustworthy! I want to participate!"
+      }
+    },
+    "oracle": {
+      "list": {
+        "0": "A DAO that utilizes technical data? How curious!",
+        "1": "I'm so looking forward to the \nopening of this DAO!",
+        "2": "Now that I've read the protocol \nit makes me want to join this DAO even more.",
+        "3": "I think I'll have to get \nGovernance Tokens first.",
+        "4": "I want to be part of ORACLE DAO."
+      }
+    }
+  },
+  "oracleShowcase": {
+    "purpose": {
+      "title": "Purpose",
+      "subTitle": "Connecting the real world with blockchain",
+      "subInfo": "With the goal of resolving the issue of lack of access, which is a deep-rooted limit of blockchain technology, the DAO will create a foundation for connecting the real world (Off-chain) with the blockchain where the data can be utilized in various ways.",
+      "infoList": {
+        "1": {
+          "title": "Connect the Off-chain data you want On-chain",
+          "info": "Various types of data created Off-chain can be connected On-chain to be utilized for transactions, loans, and more."
+        },
+        "2": {
+          "title": "Various types of technical data \nalso used On-chain",
+          "info": "Requests to refine On-chain pricing data into technical data such as M/A, RSI, VWAP, TWAP can be made. Various types of technical data can also be used On-chain to make investment decisions."
+        }
+      },
+      "comment": ""
+    }
+  },
+  "wonderShowcase": {
+    "purpose": {
+      "title": "Purpose",
+      "subTitle": "Right at the center \nof the 40 authorities of WEMIX3.0 mainnet operations",
+      "subInfo": "As a member of the 40 WONDERS*, the goal is to promote continuous development and growth of the WEMIX mega-ecosystem through transparent and democratic operations.",
+      "infoList": {
+        "1": {
+          "title": "With the rights to participate in the various decisions related to mainnet operations",
+          "info": "Being an NCP comes with the right to participate in \nthe various decision-making processes within the WEMIX mega-ecosystem."
+        },
+        "2": {
+          "title": "Contributing to the continuous growth of the DAO Token through DAO operations",
+          "info": "Contributing to the growth of the DAO Token \nthrough transparent and democratic operations"
+        }
+      },
+      "comment": "*The 40 NCP (Node Council Partner) that make up a pillar of the WEMIX3.0 mainnet"
+    }
+  },
+  "deltaShowcase": {
+    "purpose": {
+      "title": "Purpose",
+      "subTitle": "On-chain Financial Portfolio\n Built Easy and Stable",
+      "subInfo": "By providing an asset management protocol service that enables easy asset deposits and stable realization of profits, the DAO aims to resolve the stereotype of 'DeFi' service being complex and difficult.",
+      "infoList": {
+        "1": {
+          "title": "Simple On-chain Investment",
+          "info": "The DELTA protocol automatically invests deposited assets in carefully selected DeFi protocols according to its strategic algorithms by allocating the assets into diverse blockchains."
+        },
+        "2": {
+          "title": "Stable On-chain Investment",
+          "info": "The goal of the initial strategies of the DELTA protocol is to minimize the influence of market volatility and to realize stable and continuous profits by utilizing DELTA neutral, which enables the stable generation of profits."
+        }
+      },
+      "comment": ""
+    }
+  },
+  "arteumShowcase": {
+    "purpose": {
+      "title": "Purpose",
+      "subTitle": "A new paradigm in the culture of art collecting",
+      "subInfo": "The DAO builds a new cultural community in the art market through various activities such as collection of art pieces, gallery management, and discovery of rising artists.",
+      "infoList": {
+        "1": {
+          "title": "Defining a new art collecting system",
+          "info": "With recommendations of art pieces through expert counsel and an AI that provides estimates of appropriate pricing, the DAO provides opportunities to participate in the main decisions to be made in the purchase, sale, and storage of art pieces, and more."
+        },
+        "2": {
+          "title": "Building a new cultural art community",
+          "info": "The DAO contributes to the revitalization of the art market by generating values for real collectors through various cultural and artistic activities."
+        }
+      },
+      "comment": ""
+    }
+  },
+  "daoMarquee": "Experience a new Art-Ecosystem and realize the way of collecting art that you've always dreamed of."
+}

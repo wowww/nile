@@ -1,0 +1,86 @@
+export const daoMembers = [
+  {
+    index: 100,
+    name: '첫번째',
+    greeting: 'Hello everyone!',
+    image: '',
+  },
+  {
+    index: 110,
+    name: 'Hello',
+    greeting: '',
+    image: 'https://i.picsum.photos/id/1/32/32.jpg?hmac=qcz_c4KiXiTB1dMGE5A7Q-XgnkwzY7pxQsWD1PGkI4g',
+  },
+  {
+    index: 120,
+    name: '0xabcd...abcd',
+    greeting: 'Glad to meet you',
+    image: '',
+  },
+  {
+    index: 130,
+    name: '0xabcd...abcd',
+    greeting: 'hi~~',
+    image: '',
+  },
+  {
+    index: 200,
+    name: 'CryptoSimeji Official',
+    greeting: '',
+    image: 'https://i.picsum.photos/id/1/32/32.jpg?hmac=qcz_c4KiXiTB1dMGE5A7Q-XgnkwzY7pxQsWD1PGkI4g',
+  },
+  {
+    index: 210,
+    name: '0xabcd...abcd',
+    greeting: 'Hello everyone! Hello everyone!',
+    image: '',
+  },
+  {
+    index: 220,
+    name: '0xabcd...abcd',
+    greeting: '',
+    image: '',
+  },
+  {
+    index: 300,
+    name: '0xabcd...abcd',
+    greeting: 'Hello everyone!',
+    image: '',
+  },
+  {
+    index: 310,
+    name: '0xabcd...abcd',
+    greeting: '',
+    image: 'https://i.picsum.photos/id/1/32/32.jpg?hmac=qcz_c4KiXiTB1dMGE5A7Q-XgnkwzY7pxQsWD1PGkI4g',
+  },
+  {
+    index: 320,
+    name: '0xabcd...abcd',
+    greeting: 'Hi there! Glad to meet you',
+    image: '',
+  },
+  {
+    index: 330,
+    name: '0xabcd...abcd',
+    greeting: '',
+    image: '',
+  },
+  {
+    index: 330,
+    name: '0xabcd...abcd',
+    greeting: '',
+    image: '',
+  },
+  {
+    index: 400,
+    name: '0xabcd...abcd',
+    greeting: 'Hi there! Glad to meet you',
+    image: 'https://i.picsum.photos/id/1/32/32.jpg?hmac=qcz_c4KiXiTB1dMGE5A7Q-XgnkwzY7pxQsWD1PGkI4g',
+  },
+  {
+    index: 410,
+    name: '0xabcd...abcd',
+    greeting: '',
+    image: '',
+  },
+];

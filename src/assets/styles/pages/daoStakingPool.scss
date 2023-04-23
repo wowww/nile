@@ -1,0 +1,1283 @@
+/* stylelint-disable scss/no-global-function-names */
+.dao-staking-wrap {
+  @mixin obeliskChart {
+    .dao-box-wrap.ratio.full {
+      .dao-box {
+        display: flex;
+
+        // height: 100%;
+        flex-direction: column;
+      }
+    }
+
+    .chart-box {
+      display: flex;
+      height: 100%;
+      flex-direction: column;
+
+      .chart-area {
+        height: calc(100% - 41px);
+
+        .chart-wrap.obelisk {
+          height: calc(100% - 72px);
+
+          .chart-wrap {
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+
+  @include daoXl {
+    @include obeliskChart;
+  }
+
+  @include daoLg {
+    @include obeliskChart;
+  }
+
+  .dao-title-box {
+    .title-wrap .desc {
+      @include daoLg {
+        white-space: normal;
+      }
+    }
+  }
+
+  .staking-table-area {
+    margin-top: 24px;
+
+    @include daoMd {
+      margin-top: 20px;
+    }
+
+    @include daoSm {
+      margin-top: 8px;
+    }
+  }
+
+  .dao-common-card {
+    // min-height: 216px; // obelisk report
+
+    .card-title.flex-box {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h4 {
+        @include fontFamilyNHeading(MB_F);
+      }
+    }
+
+    .card-tooltip {
+      margin-right: -4px; /* 23.04.03 수정: 말풍선 꼬리 중앙 정렬로 인해 추가 */
+      color: $gray50;
+      font-weight: 400;
+
+      .ant-popover.tooltip {
+        max-width: 240px;
+
+        // transform: translateX(4px);
+
+        &[class*="topRight"] {
+          .ant-popover-arrow {
+            right: 0;
+          }
+        }
+      }
+
+      button {
+        padding: 0 4px; /* 23.04.03 수정: 말풍선 꼬리 중앙 정렬로 인해 추가 */
+        vertical-align: top;
+
+        svg {
+          path {
+            fill: $gray30;
+          }
+        }
+      }
+
+      @include fontFamilyBody(cs);
+
+      .sub-desc {
+        @include fontFamilyNCaption(SR_F_Caption);
+
+        color: $gray60;
+      }
+    }
+
+    .wallet-none-area {
+      display: flex;
+      min-height: 244px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      @include md {
+        min-height: 226px;
+      }
+
+      @include sm {
+        min-height: 286px;
+      }
+
+      .card-guide-info {
+        text-align: center;
+        white-space: pre-line;
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+
+        @include md {
+          width: 32px;
+          height: 32px;
+        }
+
+        path {
+          fill: $gray00;
+        }
+      }
+    }
+
+    .card-guide-info {
+      margin-top: 12px;
+      color: $gray00;
+
+      @include fontFamilyNBody(MR_F);
+
+      & + .btn-wrap {
+        width: 100%;
+        margin-top: 12px;
+
+        @include daoMd {
+          margin-top: 20px;
+        }
+
+        @include daoSm {
+          margin-top: 20px;
+        }
+      }
+    }
+
+    .card-item-list {
+      & + .btn-wrap {
+        margin-top: 8px;
+
+        @include daoSm {
+          margin-top: 16px;
+        }
+
+        button {
+          width: 100%;
+          border-radius: 2px;
+        }
+      }
+    }
+
+    .card-title {
+      @include md {
+        padding: 18px 0;
+        margin: 0 -4px;
+      }
+    }
+
+    &.horizontal {
+      padding: 0;
+
+      .card-title {
+        @include fontFamilyNHeading(MB_F);
+
+        height: calc(60px - 18px);
+        padding: 0 24px 18px;
+        border-bottom: none;
+        border-bottom: 1px solid $gray80;
+        margin: 0 -24px;
+
+        @include daoMd {
+          height: calc(56px - 16px);
+          padding-bottom: 16px;
+        }
+
+        @include sm {
+          height: 52px;
+          padding: 14px 20px;
+          margin: 0;
+        }
+      }
+    }
+
+    .obelisk-report-content {
+      display: flex;
+      margin-top: 24px;
+      gap: 20px;
+
+      @include daoMd {
+        gap: 16px;
+      }
+
+      @include daoSm {
+        margin-top: 20px;
+        gap: 8px;
+      }
+    }
+  }
+
+  .obelisk-box-content {
+    @include themeChangeMixin(background-color, 4);
+    @include themeChangeMixin(border-color, 2);
+
+    display: inline-flex;
+    min-height: 100px;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px 16px;
+    border: 1px solid;
+    border-radius: 4px;
+    margin: 0;
+    text-align: center;
+
+    @include md {
+      min-height: 140px;
+    }
+
+    @include sm {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+
+    .box-notice {
+      @include fontFamilyNCaption(MR_F_Caption);
+
+      color: $gray30;
+      text-align: center;
+
+      @include sm {
+        max-width: calc(100% - 55px);
+      }
+    }
+
+    .box-unit {
+      @include fontFamilyData(m3);
+
+      display: inline-block;
+      margin-top: 8px;
+      color: $gray00;
+
+      @include sm {
+        padding: 0 12px;
+        margin-top: 12px;
+      }
+
+      &.active {
+        @include themeChangeMixin(color, 1);
+      }
+
+      .unit {
+        @include fontFamilyData(cl);
+
+        margin-left: 4px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .obelisk-horizontal {
+    @include sm {
+      padding: 0;
+
+      .swiper {
+        padding: 20px;
+      }
+    }
+
+    .swiper-slide {
+      width: auto !important;
+    }
+  }
+
+  .card-item-list.staking-pool {
+    margin: 20px 0 0;
+
+    @include daoMd {
+      margin-bottom: 0;
+    }
+
+    @include daoSm {
+      margin: 24px 0 0;
+    }
+
+    &.top-type {
+      @include daoSm {
+        margin: 24px 0 8px;
+      }
+
+      .card-item {
+        margin-bottom: 16px;
+
+        &:last-of-type {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    & + .btn-wrap {
+      display: flex;
+
+      @include daoMd {
+        margin-top: 20px;
+      }
+
+      @include daoSm {
+        margin-top: 20px;
+      }
+
+      @at-root .dao-unstaking-btn-tooltip {
+        max-width: none;
+      }
+
+      .ant-popover-open {
+        display: block;
+        width: 100%;
+        min-width: auto;
+        margin-left: 8px;
+      }
+
+      .bg-highlight {
+        width: 100%;
+        min-width: auto;
+        padding: 0;
+
+        & + .bg-highlight {
+          margin-left: 8px;
+        }
+      }
+    }
+
+    .card-item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+      &:last-child {
+        margin-bottom: 18px;
+
+        @include daoSm {
+          margin-bottom: 0;
+        }
+      }
+
+      @include daoSm {
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      & + .card-item {
+        padding: 0;
+        border: none;
+      }
+
+      .card-notice {
+        @include fontFamilyNCaption(MR_F_Caption);
+
+        & + .card-unit {
+          margin-top: 0;
+
+          &:not(.active) {
+            @include daoXl {
+              @include fontsizeMixin(20, 20);
+            }
+
+            @include daoLg {
+              @include fontsizeMixin(20, 20);
+            }
+          }
+        }
+      }
+
+      .card-unit {
+        @include daoSm {
+          margin-top: 12px;
+        }
+
+        .unit {
+          margin-left: 4px;
+          color: $gray00;
+          font-weight: 400;
+
+          @include fontFamilyBody(cl);
+        }
+      }
+    }
+  }
+
+  .mobile-scan-btn {
+    display: none;
+
+    @include sm {
+      display: block;
+      padding: 16px 0;
+      margin-top: 8px;
+      background-color: $gray100;
+
+      a {
+        min-width: 200px;
+      }
+    }
+  }
+}
+
+// 최초 코인 사용 시 팝업, 승인 완료 포함 케이스 (DAO 내 토큰 2개 이상 활용 시)
+.coin-confirm-wrap {
+  .text-wrap {
+    @include fontFamilyNBody(LR_F);
+
+    color: $gray30;
+    word-break: break-all;
+  }
+
+  .coin-confirm-list {
+    margin-top: 12px;
+
+    dt {
+      @include fontFamilyNHeading(SB_F);
+    }
+
+    dd {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+      padding: 8px 12px;
+      border: 1px solid $gray80;
+      border-radius: 4px;
+      margin-top: 8px;
+
+      .coin-wrap {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+
+        .coin-name {
+          color: $gray30;
+
+          @include fontFamilyButton(sb);
+        }
+      }
+    }
+  }
+}
+
+.stake-modal-top-wrap {
+  @include themeChangeMixin(background-color, 3);
+
+  padding: 12px 20px;
+
+  @include md {
+    padding: 14px 20px;
+  }
+
+  dl {
+    & > div {
+      display: block;
+      padding-bottom: 12px;
+
+      &::after {
+        @include content;
+      }
+
+      &.no-line {
+        margin-top: -4px;
+      }
+
+      & + div:not(.no-line) {
+        padding-top: 12px;
+        padding-bottom: 0;
+        border-top: 1px solid $gray80;
+      }
+
+      dt {
+        display: flex;
+        width: 50%;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-top: 3px;
+        float: left;
+
+        @include md {
+          padding-top: 0;
+        }
+
+        @include sm {
+          padding-top: 0;
+        }
+
+        & > span:not(.logo) {
+          width: calc(100% - 24px);
+          padding-left: 4px;
+          color: $gray50;
+
+          @include fontFamilyBody(cs);
+        }
+
+        .logo {
+          display: flex;
+          min-width: 24px;
+          height: 16px;
+
+          .dao-color-bg {
+            @include themeChangeMixin(fill, 1);
+            @include themeChangeMixin(stroke, 1);
+          }
+
+          & > span:nth-child(2) {
+            border-radius: 100%;
+            margin-left: -8px;
+            background-color: $white;
+          }
+        }
+      }
+
+      dd {
+        float: right;
+
+        & + dd {
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+
+  .buy-fi-wrap {
+    width: 100%;
+    padding-top: 3px;
+    margin-top: 8px;
+
+    @include md {
+      padding-top: 0;
+    }
+
+    @include sm {
+      padding-top: 0;
+    }
+
+    & > button {
+      background-color: $white;
+
+      .btn-inner {
+        > div svg {
+          width: 12px;
+          height: 12px;
+        }
+      }
+    }
+  }
+
+  .stake-price-wrap {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: flex-end;
+
+    @include md {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    @include sm {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: flex-end;
+    }
+
+    strong:not(.price) {
+      @include fontFamilyChip(mr);
+    }
+
+    .price {
+      @include fontFamilyChip(m1b);
+
+      & + .unit {
+        margin-left: 2px;
+      }
+    }
+
+    .unit {
+      @include fontFamilyData(cs);
+    }
+
+    .dollar {
+      margin-left: 4px;
+      color: $gray60;
+
+      @include fontFamilyChip(s);
+
+      @include md {
+        width: 100%;
+        margin-top: 4px;
+        text-align: right;
+      }
+    }
+  }
+}
+
+.stake-modal-content {
+  padding: 20px 36px 24px;
+
+  @include md {
+    padding: 16px 32px 24px;
+  }
+
+  @include sm {
+    padding: 16px 20px;
+  }
+
+  &.rock-up {
+    @include lg {
+      padding-top: 92px;
+    }
+
+    @include md {
+      padding-top: 78px;
+    }
+
+    @include sm {
+      padding-top: 86px;
+    }
+  }
+
+  .rock-up-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+
+    strong {
+      @include fontFamilyBody(lb);
+    }
+
+    span {
+      @include fontFamilyBody(mr);
+
+      color: $gray30;
+    }
+  }
+
+  .vote-info {
+    color: $gray00;
+
+    @include fontFamilyBody(lb);
+  }
+
+  .vote-wdr-info {
+    display: block;
+    margin: 8px 0 20px;
+    color: $gray30;
+
+    @include fontFamilyBody(cs);
+  }
+}
+
+.vote-radio {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 24px;
+
+  @include md {
+    margin-top: 20px;
+  }
+
+  @include sm {
+    margin-top: 20px;
+  }
+
+  .ant-radio-button-wrapper {
+    display: inline-flex;
+    width: 50%;
+    height: 100px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    text-align: center;
+
+    @include themeChangeMixin(border-color, 2);
+    @include themeChangeMixin(background-color, 3);
+    @include fontFamilyButton(lb);
+
+    @include md {
+      height: 78px;
+    }
+
+    @include sm {
+      height: 78px;
+    }
+
+    &.ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+      border: none;
+
+      @include themeChangeMixin(background-color, 1);
+
+      span {
+        color: $gray100;
+      }
+
+      .icd-icon svg {
+        circle,
+        path {
+          stroke: $gray100;
+        }
+      }
+    }
+
+    &:first-child {
+      border-right: 0;
+    }
+
+    &:last-child {
+      border-left: 0;
+
+      &::before {
+        @include themeChangeMixin(background-color, 2);
+      }
+    }
+  }
+
+  & + .stake-confirm-title {
+    margin: 20px 0 8px;
+  }
+
+  .icd-icon {
+    div {
+      display: inline-block;
+      margin-bottom: -1px;
+    }
+  }
+}
+
+.prev-vote-wrap {
+  .stake-confirm-title {
+    margin: 23px 0 7px;
+  }
+
+  & + .stake-confirm-title {
+    margin: 19px 0 8px;
+  }
+}
+
+.prev-vote {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  height: 72px;
+  justify-content: space-between;
+  border: 1px solid;
+  border-radius: 4px;
+
+  @include themeChangeMixin(border-color, 1);
+
+  @include md {
+    height: 70px;
+  }
+
+  @include sm {
+    height: 70px;
+  }
+
+  > span {
+    display: block;
+    width: 100px;
+    flex-shrink: 0;
+    padding: 25px 0;
+    color: $gray100;
+    text-align: center;
+
+    @include themeChangeMixin(background-color, 1);
+    @include fontFamilyButton(lb);
+
+    @include md {
+      width: 70px;
+    }
+
+    @include sm {
+      width: 80px;
+    }
+
+    div {
+      display: inline-block;
+      margin-bottom: -2px;
+
+      svg {
+        circle,
+        path {
+          stroke: $gray100;
+        }
+      }
+    }
+  }
+
+  .input-unit {
+    padding: 20px 0;
+    text-align: right;
+    vertical-align: top;
+  }
+
+  input {
+    @include fontFamilyData(m3);
+
+    display: inline-block;
+    width: calc(100% - 68px);
+    text-align: right;
+    &:focus { outline: none; }
+  }
+
+  .unit {
+    @include fontFamilyData(cl);
+
+    display: inline-block;
+    margin: 5px 21px 0 4px;
+    color: $gray00;
+    vertical-align: top;
+
+    @include md {
+      margin-right: 16px;
+    }
+  }
+}
+
+.stake-input-wrap {
+  position: relative;
+  padding: 16px 20px 12px;
+  border: 1px solid $gray80;
+  border-radius: 4px;
+
+  @include sm {
+    padding: 12px 16px;
+  }
+
+  @include md {
+    padding: 16px 20px 12px;
+  }
+
+  &.focus {
+    border-color: $gray00;
+  }
+
+  .input-block-title {
+    display: flex;
+    min-height: 22px;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+      @include fontFamilyBody(sb);
+      @include themeChangeMixin(color, 1);
+    }
+  }
+
+  .input-wrap {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    margin-top: 4px;
+
+    @include md {
+      padding-bottom: 20px;
+    }
+
+    @include sm {
+      padding-bottom: 16px;
+    }
+
+    .token-logo {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+
+      div {
+        @include sm {
+          svg {
+            width: 24px !important;
+            height: 24px !important;
+          }
+        }
+      }
+    }
+
+    .token-text {
+      display: flex;
+      flex-direction: column;
+
+      // gap: 4px;
+
+      @include sm {
+        gap: 0;
+      }
+
+      strong {
+        @include fontFamilyBody(lb);
+      }
+
+      span {
+        color: $gray30;
+        white-space: nowrap;
+
+        @include fontFamilyBody(cs);
+      }
+    }
+
+    input {
+      width: 100%;
+      text-align: right;
+
+      &:focus {
+        outline: none;
+      }
+
+      @include fontFamilyData(m3);
+    }
+  }
+
+  .error-text {
+    position: absolute;
+    right: 20px;
+    bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    text-align: right;
+
+    @include fontFamilyBody(cs);
+
+    @include sm {
+      bottom: 10px;
+    }
+  }
+
+  .input-info-text {
+    display: block;
+    width: 100%;
+    color: $gray30;
+
+    @include fontFamilyBody(cxs);
+  }
+}
+
+.stake-modal-list {
+  @include themeChangeMixin(background-color, 3);
+
+  margin-top: 8px;
+
+  dl {
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+
+  &.default {
+    padding: 16px 0;
+
+    @include sm {
+      padding: 12px 0;
+    }
+
+    .title {
+      display: block;
+      padding: 0 20px 12px;
+      border-bottom: 1px solid $gray80;
+      color: $gray30;
+
+      @include fontFamilyNBody(SB_F);
+
+      @include sm {
+        padding: 0 16px 12px;
+      }
+
+      & + dl {
+        padding-top: 12px;
+        gap: 8px;
+      }
+    }
+
+    dl {
+      display: flex;
+      flex-direction: column;
+      padding: 0 20px;
+      gap: 16px;
+
+      @include sm {
+        padding: 0 16px;
+      }
+
+      dt {
+        color: $gray50;
+
+        @include fontFamilyBody(cs);
+      }
+
+      dd {
+        color: $gray10;
+        font-size: 0;
+
+        strong {
+          @include fontFamilyData(clb);
+        }
+
+        span:not(.dollar) {
+          @include fontFamilyData(cs);
+
+          padding-left: 2px;
+        }
+
+        .dollar {
+          display: block;
+          margin-top: 4px;
+          color: $gray60;
+          text-align: right;
+
+          @include fontFamilyData(cs);
+        }
+      }
+    }
+  }
+
+  &.important {
+    padding: 16px 20px;
+
+    @include sm {
+      padding: 12px 16px;
+    }
+
+    dt {
+      @include fontFamilyNBody(SB_F);
+    }
+
+    dd {
+      display: flex;
+      align-items: center;
+
+      strong {
+        @include fontFamilyData(sb);
+      }
+
+      strong,
+      span:not(.dollar) {
+        @include themeChangeMixin(color, 1);
+      }
+
+      span:not(.dollar) {
+        margin-left: 4px;
+
+        @include fontFamilyData(cs);
+      }
+    }
+  }
+}
+
+.stake-bottom-info {
+  .stake-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    // padding-top: 20px;
+    padding-top: 12px; // Add 팝업 기준으로 수정
+    gap: 2px;
+    grid-row: 2px;
+    text-align: left;
+
+    @include sm {
+      padding-top: 16px;
+
+      .step2 & {
+        padding-top: 8px;
+      }
+    }
+
+    .step1 & {
+      &:first-child {
+        @include lg {
+          padding-top: 16px;
+        }
+
+        @include md {
+          padding-top: 12px;
+        }
+
+        @include sm {
+          padding-top: 16px;
+        }
+      }
+    }
+
+    &.important {
+      strong {
+        @include fontFamilyNBody(SB_F);
+      }
+    }
+
+    & + .stake-info {
+      padding-top: 4px;
+
+      @include sm {
+        padding-top: 4px;
+
+        .step2 & {
+          padding-top: 4px;
+        }
+      }
+    }
+
+    .text {
+      @include fontFamilyNBody(SR_F);
+
+      color: $gray30;
+      line-height: 18px;
+
+      &.bold {
+        @include fontFamilyNBody(SB_F);
+      }
+
+      @include md {
+        line-height: 20px;
+      }
+
+      @include sm {
+        line-height: 20px;
+      }
+    }
+
+    .desc {
+      @include fontFamilyNBody(SR_F);
+
+      display: block;
+      width: 100%;
+      color: $gray60;
+    }
+  }
+}
+
+.stake-confirm-title {
+  @include fontFamilyBody(mb);
+
+  @include md {
+    padding-top: 4px;
+  }
+
+  @include sm {
+    padding-top: 4px;
+  }
+}
+
+.stake-modal-confirm-box {
+  border: 1px solid $gray80;
+  border-radius: 4px;
+  margin-top: 12px;
+
+  .title {
+    display: block;
+    padding: 16px 20px 12px;
+    border-bottom: 1px solid $gray80;
+    color: $gray30;
+
+    @include fontFamilyNBody(SB_F);
+
+    @include sm {
+      padding: 12px 16px;
+    }
+  }
+
+  dl {
+    padding: 0 20px 4px;
+
+    @include sm {
+      padding: 0 16px;
+    }
+
+    & > div {
+      display: flex;
+      min-height: 28px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 0;
+
+      &:nth-of-type(1) {
+        dt {
+          .icon {
+            .dao-color-bg {
+              @include themeChangeMixin(stroke, 1);
+
+              & + path {
+                @include themeChangeMixin(stroke, 1);
+              }
+            }
+          }
+        }
+      }
+
+      &:nth-of-type(2) {
+        dt {
+          .icon {
+            transform: rotate(180deg);
+
+            .dao-color-bg {
+              stroke: $gray30;
+
+              & + path {
+                stroke: $gray30;
+              }
+            }
+          }
+        }
+      }
+
+      & + div {
+        border-top: 1px solid $gray80;
+      }
+
+      dt {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+
+        @include fontFamilyBody(mb);
+
+        .icon {
+          .dao-color-bg {
+            fill: $white;
+          }
+        }
+      }
+
+      dd {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+
+        strong {
+          text-align: right;
+
+          @include fontFamilyData(m3);
+        }
+
+        .dollar {
+          color: $gray60;
+          text-align: right;
+
+          @include fontFamilyData(cl);
+        }
+      }
+    }
+  }
+}

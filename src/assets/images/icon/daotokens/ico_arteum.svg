@@ -1,0 +1,12 @@
+<svg width="1em" height="1em" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="30" cy="30" r="30" fill="#EB605F"/>
+<path d="M12.6133 13.2959H23.1815L12.6133 45.6823V13.2959Z" fill="white" fill-opacity="0.8"/>
+<path d="M24.8857 31.0229L46.363 46.3639H47.0448V31.0229H24.8857Z" fill="white" fill-opacity="0.5"/>
+<path d="M33.4093 23.1823C34.5002 17.7277 29.7729 14.3186 27.2729 13.2959H47.0456L46.3638 30.3414H25.5684C31.0229 30.0686 33.0684 25.455 33.4093 23.1823Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M46.3634 13.6366H13.6361V46.3639H46.3634V13.6366ZM12.2725 12.2729V47.7275H47.727V12.2729H12.2725Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.8634 13.6366H13.6361V46.3639H23.8634V13.6366ZM12.2725 12.2729V47.7275H25.227V12.2729H12.2725Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M46.3633 31.3636H25.2269V46.3636H46.3633V31.3636ZM23.8633 30V47.7273H47.7269V30H23.8633Z" fill="white"/>
+<path d="M25.2266 31.3398C30.1802 30.9902 34.0902 26.8609 34.0902 21.8184C34.0902 16.7758 30.1802 12.6465 25.2266 12.2969V13.6645C29.4262 14.011 32.7266 17.5293 32.7266 21.8184C32.7266 26.1074 29.4262 29.6257 25.2266 29.9722V31.3398Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M46.6433 47.2553L25.166 31.5735L25.9701 30.4722L47.4474 46.154L46.6433 47.2553Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M12.3059 46.6157L23.215 13.085L24.5117 13.5068L13.6026 47.0375L12.3059 46.6157Z" fill="white"/>
+</svg>

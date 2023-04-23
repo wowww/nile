@@ -1,0 +1,96 @@
+[
+  {
+    "network": "ethereum",
+    "name": "mainnet",
+    "chain": "eth",
+    "chainId": 1,
+    "networkId": 1,
+    "type": "production"
+  },
+  {
+    "network": "ethereum",
+    "name": "ropsten",
+    "chain": "eth",
+    "chainId": 3,
+    "networkId": 3,
+    "type": "test"
+  },
+  {
+    "network": "ethereum",
+    "name": "rinkby",
+    "chain": "eth",
+    "chainId": 4,
+    "networkId": 4,
+    "type": "test"
+  },
+  {
+    "network": "ethereum",
+    "name": "goerli",
+    "chain": "eth",
+    "chainId": 5,
+    "networkId": 5,
+    "type": "test"
+  },
+  {
+    "network": "ethereum",
+    "name": "sepolia",
+    "chain": "eth",
+    "chainId": 11155111,
+    "networkId": 11155111,
+    "type": "test"
+  },
+  {
+    "network": "ethereum",
+    "name": "dev",
+    "chain": "eth",
+    "chainId": 2018,
+    "networkId": 2018,
+    "type": "development"
+  },
+  {
+    "network": "ethereum",
+    "name": "classic",
+    "chain": "etc",
+    "chainId": 61,
+    "networkId": 1,
+    "type": "production"
+  },
+  {
+    "network": "ethereum",
+    "name": "mordor",
+    "chain": "etc",
+    "chainId": 63,
+    "networkId": 7,
+    "type": "test"
+  },
+  {
+    "network": "ethereum",
+    "name": "kotti",
+    "chain": "etc",
+    "chainId": 6,
+    "networkId": 6,
+    "type": "test"
+  },
+  {
+    "network": "ethereum",
+    "name": "astor",
+    "chain": "etc",
+    "chainId": 212,
+    "networkId": 212,
+    "type": "test"
+  },
+  {
+    "network": "wemix",
+    "name": "mainnet",
+    "chain": "wemix",
+    "chainId": 1111,
+    "type": "production"
+  },
+  {
+    "network": "wemix",
+    "name": "mainnet",
+    "chain": "twemix",
+    "chainId": 1112,
+    "type": "development"
+  }
+]

@@ -1,0 +1,95 @@
+[
+  {
+    "id": 0,
+    "tagText": "Pixel Art",
+    "tagColor": "#1A1A1A",
+    "title": "London Underground Station(LUS) 264 Genesis",
+    "desc": "home.nft.item.0.desc",
+    "buttonLink": "/life/lus264",
+    "data": [
+      {
+        "name": "Total Trading Volume",
+        "amount": "$2,490,371"
+      },
+      {
+        "name": "Total Transaction Count",
+        "amount": "$2,490,371"
+      },
+      {
+        "name": "Floor Price",
+        "amount": "$12,000"
+      }
+    ],
+    "thumbnail": "/img/bg_life_lus2.png"
+  },
+  {
+    "id": 1,
+    "tagText": "Collectibles",
+    "tagColor": "#1A1A1A",
+    "title": "Sights of NILE(SON)",
+    "desc": "home.nft.item.2.desc",
+    "buttonLink": "/life/story",
+    "data": [
+      {
+        "name": "TIPO Market Cap",
+        "amount": "$315,371"
+      },
+      {
+        "name": "TIPO Price",
+        "amount": "$1.30"
+      },
+      {
+        "name": "App Download",
+        "amount": "30,315,928"
+      }
+    ],
+    "thumbnail": "/img/bg_life_story2.png"
+  },
+  {
+    "id": 2,
+    "tagText": "Walk to Earn",
+    "tagColor": "#1A1A1A",
+    "title": "SNKRZ",
+    "desc": "home.nft.item.3.desc",
+    "disabled": true,
+    "buttonLink": "/life/snkrz",
+    "data": [
+      {
+        "name": "TIPO Market Cap",
+        "amount": "$315,371"
+      },
+      {
+        "name": "TIPO Price",
+        "amount": "$1.30"
+      },
+      {
+        "name": "App Download",
+        "amount": "30,315,928"
+      }
+    ],
+    "thumbnail": "/img/bg_life_snkrz2.png"
+  },
+  {
+    "id": 3,
+    "tagText": "Talk to Earn",
+    "tagColor": "#1A1A1A",
+    "title": "Tangled",
+    "desc": "home.nft.item.1.desc",
+    "buttonLink": "/life/ttps",
+    "data": [
+      {
+        "name": "TIPO Market Cap",
+        "amount": "$315,371"
+      },
+      {
+        "name": "TIPO Price",
+        "amount": "$1.30"
+      },
+      {
+        "name": "App Download",
+        "amount": "30,315,928"
+      }
+    ],
+    "thumbnail": "/img/bg_life_tangled2.png"
+  }
+]

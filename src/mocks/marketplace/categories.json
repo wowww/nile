@@ -1,0 +1,30 @@
+[
+  {
+    "value": "COLLECTIBLES",
+    "img": "/img/banner/bg_apply_collectibles.png"
+  },
+  {
+    "value": "MUSIC",
+    "img": "/img/banner/bg_apply_music.png"
+  },
+  {
+    "value": "SPORTS",
+    "img": "/img/banner/bg_apply_sports.png"
+  },
+  {
+    "value": "UTILITY",
+    "img": "/img/banner/bg_apply_utility.png"
+  },
+  {
+    "value": "PHOTOGRAPHY",
+    "img": "/img/banner/bg_apply_photography.png"
+  },
+  {
+    "value": "DOMAIN NAME",
+    "img": "/img/banner/bg_apply_domainname.png"
+  },
+  {
+    "value": "ART",
+    "img": "/img/banner/bg_apply_art.png"
+  }
+]

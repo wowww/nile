@@ -1,0 +1,401 @@
+.dao-content-wrap {
+  .dao-title-box {
+    // @include daoLg {
+    //   padding-bottom: 0;
+    // }
+
+    // @include daoMd {
+    //   padding-bottom: 0;
+    // }
+
+    // @include daoSm {
+    //   display: none;
+    // }
+
+    .title-wrap {
+      .desc {
+        @include daoLg {
+          margin-top: 12px;
+        }
+
+        @include daoMd {
+          margin-top: 12px;
+        }
+      }
+    }
+  }
+}
+
+.transaction-card-wrap {
+  width: 100%;
+
+  .transaction-card {
+    display: flex;
+
+    @include daoSm {
+      display: block;
+
+      // overflow: visible;
+    }
+
+    .swiper-wrapper {
+      @include daoLg {
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      @include daoMd {
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+
+      @include daoSm {
+        width: calc(100% - 40px);
+      }
+    }
+
+    .swiper-pagination {
+      @include daoLg {
+        display: none;
+      }
+
+      @include daoMd {
+        display: none;
+      }
+    }
+
+    .swiper-slide {
+      display: flex;
+      width: 25%;
+      height: max-content;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      border: none;
+      border-radius: 4px;
+      background-color: $gray100;
+
+      @include daoLg {
+        width: calc(50% - 8px) !important;
+      }
+
+      @include daoMd {
+        width: calc(50% - 6px) !important;
+      }
+
+      @include daoSm {
+        position: relative;
+        width: 100%;
+        flex-direction: column;
+        padding: 20px 16px;
+        margin-bottom: 8px;
+      }
+
+      .title-wrap {
+        position: relative;
+
+        strong {
+          color: $gray00;
+
+          @include fontFamilyNHeading(XSB_V);
+        }
+
+        .volume-wrap {
+          display: flex;
+          align-items: center;
+          margin-top: 12px;
+          color: $gray00;
+
+          @include daoSm {
+            margin-top: 0;
+          }
+
+          .dollar {
+            @include fontFamilyData(m2);
+
+            display: block;
+            margin-right: 4px;
+          }
+
+          .dollar-volume {
+            @include fontFamilyData(m2);
+          }
+        }
+
+        &::after {
+          position: absolute;
+          bottom: -20px;
+          left: -20px;
+          width: calc(100% + 40px);
+          border-top: 1px solid $gray80;
+          content: "";
+
+          @include daoLg {
+            bottom: -16px;
+          }
+
+          @include daoMd {
+            bottom: -16px;
+          }
+
+          @include daoSm {
+            left: -16px;
+            width: calc(100% + 32px);
+          }
+        }
+
+        @include daoSm {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+
+      .week-wrap {
+        display: flex;
+        flex-direction: column;
+        margin-top: 40px;
+
+        @include daoLg {
+          flex-direction: row;
+          margin-top: 32px;
+        }
+
+        @include daoMd {
+          flex-direction: row;
+          margin-top: 32px;
+        }
+
+        @include daoSm {
+          margin-top: 40px;
+
+          div + div {
+            margin-top: 12px;
+          }
+        }
+
+        .week-detail {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+
+          strong {
+            @include fontFamilyTable(br);
+
+            color: $gray50;
+          }
+
+          .detail-info {
+            display: flex;
+            align-items: flex-end;
+            margin-top: 8px;
+
+            .arrow {
+              @include daoMd {
+                svg {
+                  width: 20px;
+                  height: 20px;
+                }
+              }
+
+              @include daoSm {
+                svg {
+                  width: 20px;
+                  height: 20px;
+                }
+              }
+
+              &.decrease {
+                svg path {
+                  stroke: $gray60;
+                }
+
+                transform: rotate(90deg);
+              }
+
+              &.increase {
+                svg path {
+                  stroke: $gray10;
+                }
+              }
+            }
+
+            .dollar {
+              @include fontFamilyData(sb);
+            }
+
+            .volume {
+              display: block;
+              margin-left: 2px;
+
+              @include fontFamilyData(sb);
+
+              &.empty {
+                font-weight: 400;
+              }
+            }
+
+            .type {
+              @include fontFamilyData(sb);
+            }
+
+            @include daoLg {
+              margin-top: 0;
+              margin-left: 8px;
+            }
+
+            @include daoMd {
+              margin-top: 4px;
+            }
+
+            @include daoSm {
+              align-items: center;
+              justify-content: flex-end;
+              margin-top: 0;
+            }
+          }
+
+          @include daoLg {
+            width: 50%;
+            justify-content: flex-start;
+          }
+
+          @include daoMd {
+            width: 50%;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+          }
+
+          @include daoSm {
+            text-align: right;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dao-container .dao-content-wrap {
+  &.menu-wonderscan {
+    .dao-individual-table-area {
+      border-radius: 4px;
+      margin-top: 24px;
+
+      @include daoMd {
+        margin-top: 12px;
+      }
+
+      @include daoSm {
+        margin-top: 24px;
+      }
+
+      .dao-table-wrap {
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+
+        @include daoSm {
+          padding-top: 20px;
+          margin-top: 60px;
+        }
+
+        .ant-table-wrapper {
+          @include daoMd {
+            width: calc(100% + 24px);
+          }
+        }
+      }
+
+      .dao-individual-table-title {
+        align-items: center;
+        justify-content: space-between;
+        padding: 12px 24px;
+
+        @include daoXl {
+          height: 60px;
+        }
+
+        @include daoLg {
+          height: 60px;
+        }
+
+        @include daoMd {
+          height: 56px;
+          padding: 10px 24px;
+        }
+
+        @include daoSm {
+          align-items: flex-start;
+          padding: 20px;
+        }
+
+        .search-bar {
+          width: 360px;
+
+          .ant-input {
+            @include fontFamilyInput(s);
+
+            font-weight: 400;
+          }
+
+          input::placeholder {
+            color: $gray60;
+          }
+
+          @include daoSm {
+            width: 100%;
+            margin-top: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dao-container .dao-content-wrap .ant-table-wrapper .ant-table-content {
+  @include daoSm {
+    padding: 0 20px;
+  }
+}
+
+.result-info {
+  display: flex;
+  align-items: center;
+  padding-bottom: 24px;
+  cursor: pointer;
+
+  @include daoSm {
+    padding: 0 20px 20px 0;
+  }
+
+  span {
+    @include fontFamilyData(sr);
+  }
+
+  strong {
+    @include fontFamilyData(sb);
+  }
+
+  &::before {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 4px;
+    background: url("#{$rootPath}/icon/ico_arrow_16.svg") no-repeat center center;
+    content: "";
+    transform: rotate(90deg);
+
+    @include daoSm {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.pagination-transaction-wrap {
+  padding: 18px 0;
+
+  @include daoMd {
+    padding: 14px 0;
+  }
+}

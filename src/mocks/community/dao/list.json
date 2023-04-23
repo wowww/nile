@@ -1,0 +1,134 @@
+[
+  {
+    "id": 0,
+    "type": "dao",
+    "thumbnail": "/img/community/img_community_thumbnail_dao2.png",
+    "tags": ["DAO", "Protocol DAO"],
+    "name": "Wonders Members",
+    "desc": "Wonders, A Community for DAO members.",
+    "members": [
+      {
+        "id": 1,
+        "thumbnail": "/img/banner/img_A02_Aldgate.png",
+        "name": "hello"
+      },
+      {
+        "id": 2,
+        "thumbnail": "/img/banner/img_A02_Aldgate.png",
+        "name": "world"
+      },
+      {
+        "id": 3,
+        "thumbnail": "/img/banner/img_A02_Aldgate.png",
+        "name": "pxd"
+      },
+      {
+        "id": 4,
+        "thumbnail": "/img/banner/img_A02_Aldgate.png",
+        "name": "wemix"
+      }
+    ],
+    "latestChat": 59,
+    "marketCap": 1923000,
+    "unit": "$"
+  },
+  {
+    "id": 1,
+    "type": "dao",
+    "thumbnail": "/img/community/img_community_thumbnail_nft2.png",
+    "tags": ["NFT", "Pixel Art"],
+    "name": "LUS 264",
+    "desc": "London Underground Station 264 Genesis, A Community for NFT Holders.",
+    "members": [
+      {
+        "id": 1,
+        "thumbnail": "/img/banner/img_A02_Aldgate.png",
+        "name": "hello"
+      },
+      {
+        "id": 2,
+        "thumbnail": "/img/banner/img_A02_Aldgate.png",
+        "name": "world"
+      },
+      {
+        "id": 3,
+        "thumbnail": "/img/banner/img_A02_Aldgate.png",
+        "name": "pxd"
+      },
+      {
+        "id": 4,
+        "thumbnail": "/img/banner/img_A02_Aldgate.png",
+        "name": "wemix"
+      }
+    ],
+    "latestChat": 59,
+    "marketCap": 1923000,
+    "unit": "$"
+  },
+  {
+    "id": 2,
+    "type": "nft",
+    "thumbnail": "/img/community/img_community_thumbnail_story2.png",
+    "tags": ["NFT", "Pixel Art"],
+    "name": "Sights of NILE(SON)",
+    "desc": "Sights of NILE, A Community for NFT Holders.",
+    "members": [
+      {
+        "id": 1,
+        "thumbnail": "/img/banner/img_A02_Aldgate.png",
+        "name": "hello"
+      },
+      {
+        "id": 2,
+        "thumbnail": "/img/banner/img_A02_Aldgate.png",
+        "name": "world"
+      },
+      {
+        "id": 3,
+        "thumbnail": "/img/banner/img_A02_Aldgate.png",
+        "name": "pxd"
+      },
+      {
+        "id": 4,
+        "thumbnail": "/img/banner/img_A02_Aldgate.png",
+        "name": "wemix"
+      }
+    ],
+    "latestChat": 59,
+    "totalVolume": 1923000,
+    "unit": "$"
+  },
+  {
+    "id": 3,
+    "type": "nft",
+    "thumbnail": "/img/community/img_community_thumbnail_tangled2.png",
+    "tags": ["Life", "NFT", "Talk to Earn"],
+    "name": "Trangled Timepieces",
+    "desc": "Tangled, A Community for NFT Holders.",
+    "members": [
+      {
+        "id": 1,
+        "thumbnail": "/img/banner/img_A02_Aldgate.png",
+        "name": "hello"
+      },
+      {
+        "id": 2,
+        "thumbnail": "/img/banner/img_A02_Aldgate.png",
+        "name": "world"
+      },
+      {
+        "id": 3,
+        "thumbnail": "/img/banner/img_A02_Aldgate.png",
+        "name": "pxd"
+      },
+      {
+        "id": 4,
+        "thumbnail": "/img/banner/img_A02_Aldgate.png",
+        "name": "wemix"
+      }
+    ],
+    "latestChat": 59,
+    "totalVolume": 1923000,
+    "unit": "$"
+  }
+]

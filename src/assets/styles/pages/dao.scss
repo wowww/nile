@@ -1,0 +1,9650 @@
+/* stylelint-disable scss/no-global-function-names */
+/* stylelint-disable selector-class-pattern */
+/* stylelint-disable at-rule-name-space-after */
+// dao home title
+%daoHomeTitle {
+  @include fontFamilyPhrase(l);
+}
+
+// dao recruiting title
+%daoRecruitingTitle {
+  @include fontFamilyDp(mb);
+}
+
+// dao recruiting description
+%daoRecruitingDesc {
+  @include fontFamilyBody(mr);
+
+  color: $gray40;
+}
+
+/* stylelint-disable-next-line scss/at-mixin-pattern */
+@mixin type-banner-wrap {
+  position: relative;
+  z-index: 1;
+
+  .type-banner {
+    $type-show-el: 11;
+    $type-transition-duration: $type-show-el * 5s;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+
+    @keyframes scrolling-type {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(calc(-1 * var(--item-width) * var(--banner-show-el)));
+      }
+    }
+
+    @keyframes scrolling-type-m {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(calc(-1 * var(--item-width) * var(--banner-show-el)));
+      }
+    }
+
+    @keyframes scrolling-type-s {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(calc(-1 * var(--item-width) * var(--banner-show-el)));
+      }
+    }
+  }
+
+  .banner-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.dao-main {
+  width: 100% !important;
+
+  .header.hide::after {
+    position: absolute;
+    z-index: 1000;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: $gray100;
+    content: "";
+
+    @include sm {
+      top: 48px;
+      height: 48px;
+    }
+  }
+
+  .header + div {
+    min-height: auto;
+  }
+
+  .bottom-banner-inner {
+    @include lg {
+      transform: translateX(-7px);
+    }
+  }
+}
+
+.dao-page {
+  @include themeChangeMixin(background-color, 3);
+}
+
+.dao-container {
+  display: flex;
+  max-width: 1320px;
+
+  // min-height: 200vh; // 임시코드
+  align-items: flex-start;
+  padding-top: 32px;
+  margin: 0 auto;
+
+  @include daoXl {
+    justify-content: space-between;
+  }
+
+  @include daoLg {
+    max-width: 100%;
+    flex-direction: column;
+    /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0;
+  }
+
+  @include daoMd {
+    max-width: 100%;
+    flex-direction: column;
+    /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  @include daoSm {
+    max-width: 100%;
+    flex-direction: column;
+    /* stylelint-disable-next-line declaration-block-no-redundant-longhand-properties */
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .dao-lnb-wrap {
+    position: sticky;
+    z-index: 50;
+    top: 40px;
+    width: 200px;
+    transition: top 0.3s;
+
+    @include daoLg {
+      top: 0;
+    }
+
+    @include daoMd {
+      top: 0;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 35px;
+        height: 100%;
+        background: linear-gradient(270deg, rgb(0 0 0 / 15%) 0%, rgb(0 0 0 / 0%) 100%);
+        content: "";
+        opacity: 0.53;
+      }
+    }
+
+    @include daoSm {
+      z-index: 110;
+      top: 0;
+    }
+
+    &::after {
+      @include content;
+
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+    }
+
+    &.lnb-active {
+      .btn-papyrus {
+        display: none;
+      }
+    }
+
+    &.active {
+      top: 100px;
+
+      @include daoLg {
+        top: 60px;
+      }
+
+      @include daoMd {
+        top: 60px;
+      }
+
+      @include daoSm {
+        top: $headerHeight-mo-dao;
+      }
+    }
+
+    @include daoXl {
+      padding-bottom: 60px;
+      margin-top: calc(200px - 32px);
+
+      @at-root .dao-wrap.dao-recruiting .dao-container .dao-lnb-wrap {
+        margin-top: 156px;
+      }
+    }
+
+    @include daoLg {
+      width: 100%;
+      background: $gray100;
+
+      &::after {
+        height: 1px;
+        background-color: $gray80;
+      }
+    }
+
+    @include daoMd {
+      width: 100%;
+      background: $gray100;
+
+      &::after {
+        height: 1px;
+        background-color: $gray80;
+      }
+    }
+
+    @include daoSm {
+      width: 100%;
+      background: $gray100;
+
+      &.lnb-active {
+        &.active {
+          top: 48px;
+        }
+      }
+
+      &::after {
+        height: 1px;
+        background-color: $gray80;
+      }
+
+      .ant-dropdown-trigger {
+        display: flex;
+        width: 100%;
+        height: 56px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 12px;
+
+        @include fontFamilyUi(lnbb);
+
+        .lnb-text-wrap {
+          display: flex;
+          align-items: center;
+          gap: 4px;
+
+          svg {
+            width: 44px;
+            height: auto;
+          }
+
+          .dao-lnb-text {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+
+            svg {
+              width: 12px;
+              height: auto;
+              transition: transform 300ms;
+              will-change: transform;
+            }
+          }
+        }
+
+        &.ant-dropdown-open {
+          .lnb-text-wrap {
+            .dao-lnb-text {
+              svg {
+                transform: rotate(180deg);
+              }
+            }
+          }
+        }
+      }
+
+      .lnb-tooltip-wrap {
+        position: absolute;
+        z-index: 10;
+        top: 0;
+        right: 0;
+        height: 100%;
+
+        button {
+          display: flex;
+          height: 100%;
+          align-items: center;
+          padding: 0 12px;
+
+          svg {
+            path {
+              fill: $gray60;
+            }
+          }
+        }
+
+        .tooltip {
+          top: 38px !important;
+          right: 12px !important;
+          left: auto !important;
+          width: 220px;
+
+          .ant-popover-arrow {
+            right: -4px;
+          }
+
+          .ant-popover-arrow-content {
+            width: 6px;
+            height: 6px;
+          }
+
+          .tooltip-contents {
+            @include fontFamilyNCaption(SR_F_Caption);
+          }
+        }
+      }
+    }
+
+    .ant-menu-vertical {
+      border-right: 0;
+      background: transparent;
+
+      @include daoLg {
+        padding: 0 20px;
+        margin: 0 auto;
+      }
+
+      @include daoMd {
+        display: flex;
+        padding: 0 20px;
+        margin: 0 auto;
+        overflow-x: auto;
+      }
+
+      .ant-menu-item {
+        display: inline-flex;
+        width: 100%;
+        height: 44px;
+        padding: 0 12px;
+        margin: 0;
+
+        a {
+          @include fontFamilyNUi(LR_F_DAO);
+
+          color: $black;
+          font-family: $fontEN;
+
+          &.menu-soon {
+            color: $gray60;
+          }
+        }
+
+        .ant-menu-title-content {
+          display: flex;
+          align-items: center;
+        }
+
+        &.ant-menu-item-selected {
+          @include themeChangeMixin(background-color, 1);
+
+          &::after {
+            position: absolute;
+            z-index: 1;
+            top: auto;
+            bottom: 0;
+            left: 0;
+            display: none;
+            width: 100%;
+            height: 2px;
+            border: 0;
+            opacity: 1;
+            transform: none;
+
+            @include content;
+            @include themeChangeMixin(background-color, 1);
+
+            // daoLg
+            @media (min-width: 1024px) and (max-width: 1439px) {
+              display: block;
+            }
+
+            // daoMd
+            @media (min-width: 768px) and (max-width: 1023px) {
+              display: block;
+            }
+          }
+
+          a {
+            color: $white;
+            font-weight: 600;
+
+            // daoLg
+            @media (min-width: 1024px) and (max-width: 1439px) {
+              @include themeChangeMixin(color, 1);
+            }
+
+            // daoMd
+            @media (min-width: 768px) and (max-width: 1023px) {
+              @include themeChangeMixin(color, 1);
+            }
+          }
+        }
+      }
+
+      @mixin daoLgLnb {
+        .ant-menu-item {
+          position: relative;
+          width: auto;
+          padding: 0 20px;
+
+          a {
+            @include fontFamilyUi(tabmr);
+          }
+
+          &.ant-menu-item-selected {
+            background-color: transparent !important;
+          }
+        }
+      }
+
+      @include daoLg {
+        @include daoLgLnb;
+      }
+
+      @include daoMd {
+        @include daoLgLnb;
+
+        .ant-menu-item {
+          flex-shrink: 0;
+        }
+      }
+    }
+
+    .dao-lnb-outline-button {
+      @include fontFamilyButton(mr);
+      @include themeChangeMixin(color, 1);
+      @include themeChangeMixin(border-color, 1);
+
+      display: none;
+      width: auto;
+      width: 100%;
+      height: 38px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $gray60;
+      border-radius: 2px;
+      margin-top: 16px;
+
+      @include daoXl {
+        display: flex;
+      }
+
+      @at-root .dao-recruiting .dao-lnb-wrap .ant-menu {
+        li:first-child {
+          display: none;
+        }
+
+        li:not(.ant-menu-item-selected) {
+          pointer-events: none;
+
+          a {
+            color: $gray60;
+          }
+        }
+      }
+    }
+
+    .external-link-wrap {
+      display: none;
+      justify-content: space-between;
+      margin-top: 4px;
+
+      @include daoXl {
+        display: flex;
+      }
+
+      a {
+        display: flex;
+        flex-basis: calc(50% - 2px);
+        align-items: center;
+        padding: 9px 0;
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+
+        > span {
+          @include fontFamilyButton(mr);
+
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+
+  .dao-content-wrap {
+    width: 100%;
+    padding-bottom: 60px;
+
+    @include daoSm {
+      padding-bottom: 0;
+    }
+
+    &.menu-home {
+      @include daoSm {
+        margin-top: 8px;
+      }
+    }
+
+    &.menu-trust .dao-box-wrap + .dao-box-wrap .dao-table-wrap,
+    &.menu-trust .trust-about-wrap,
+    &.menu-trust .trust-notice-wrap,
+    &.menu-treasury .dao-individual-table-area + .dao-individual-table-area .dao-table-wrap,
+    &.menu-incinerator .dao-individual-table-area .dao-table-wrap,
+    &.menu-wonderscan .dao-table-wrap,
+    &.menu-obelisk .dao-table-wrap,
+    &.menu-station .ant-tabs-content {
+      padding-bottom: 60px;
+
+      @include daoLg {
+        padding-bottom: 40px;
+      }
+
+      @include daoMd {
+        padding-bottom: 40px;
+      }
+
+      @include daoSm {
+        padding-bottom: 60px;
+      }
+    }
+
+    &.menu-trust .dao-table-wrap {
+      border-top: none;
+    }
+
+    &.menu-incinerator {
+      .dao-common-card .card-item-list .card-item .card-unit.active {
+        color: $gray00;
+
+        > .unit {
+          color: $gray00;
+        }
+      }
+    }
+
+    .ant-table-wrapper {
+      .ant-table-fixed-column {
+        .ant-table-content {
+          tr.ant-table-row:hover {
+            & > td {
+              background: $gray100;
+            }
+          }
+
+          @include sm {
+            padding-left: 0 !important;
+            margin-left: 20px;
+          }
+        }
+      }
+
+      @include sm {
+        margin: 0 -20px;
+      }
+
+      .ant-table-content {
+        @include sm {
+          padding: 0 24px;
+        }
+
+        .icon-arrow-direction {
+          width: 12px;
+          height: 12px;
+          margin: 0 auto;
+          background: url("#{$rootPath}/icon/ico_arrow_direction.svg") no-repeat center center;
+          background-size: 12px 12px;
+        }
+      }
+
+      td {
+        &.ant-table-cell {
+          @include sm {
+            background-color: $white;
+          }
+        }
+
+        .amount-value {
+          .unit {
+            &.block {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+
+    &.lnb {
+      @include daoXl {
+        width: calc(100% - 240px);
+      }
+
+      @include daoLg {
+        max-width: 984px;
+        padding-top: 24px;
+        margin: 0 auto;
+      }
+
+      @include daoMd {
+        padding-top: 24px;
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+    }
+
+    .dao-table-wrap {
+      padding: 24px;
+      border-top: 1px solid $gray80;
+      background: $gray100;
+
+      @include daoSm {
+        padding: 12px 20px 20px;
+      }
+    }
+
+    .dao-individual-table-area {
+      position: relative;
+    }
+
+    .dao-individual-table-area,
+    .staking-table-area {
+      border-radius: 4px;
+      background: $white;
+
+      .dao-individual-table-title,
+      .staking-table-title {
+        @include fontFamilyNHeading(MB_F);
+
+        display: inline-block;
+        height: 60px;
+        padding: 18px 24px;
+
+        @include md {
+          height: 56px;
+          padding: 16px 24px;
+        }
+
+        @include sm {
+          height: 52px;
+          padding: 14px 20px;
+        }
+
+        &.row {
+          display: flex;
+          flex-direction: row;
+        }
+
+        &.column {
+          display: flex;
+          flex-direction: column;
+        }
+
+        &.row-reverse {
+          display: flex;
+          flex-direction: row-reverse;
+        }
+
+        &.column-reverse {
+          display: flex;
+          flex-direction: column-reverse;
+        }
+      }
+
+      .dao-table-wrap {
+        .table-top-wrap {
+          display: flex;
+          justify-content: space-between;
+          padding-bottom: 16px;
+
+          @include daoLg {
+            padding-bottom: 12px;
+          }
+
+          @include daoMd {
+            padding-bottom: 12px;
+          }
+
+          @include daoSm {
+            display: block;
+          }
+
+          .ant-select {
+            @include daoSm {
+              width: 100%;
+            }
+          }
+
+          .table-tooltip-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            @include daoSm {
+              margin-top: 8px;
+            }
+
+            .table-tooltip {
+              margin-right: 5px;
+
+              @include fontFamilyBody(cs);
+
+              color: $gray60;
+
+              & + button {
+                vertical-align: bottom;
+
+                svg path {
+                  fill: $gray60;
+                }
+              }
+            }
+
+            .tooltip {
+              max-width: 218px;
+
+              .ant-popover-arrow {
+                right: 0;
+              }
+            }
+
+            .tooltip-contents {
+              .tooltip-list-wrap {
+                .defined-list-wrap {
+                  display: flex;
+                  justify-content: space-between;
+
+                  dt,
+                  dd {
+                    @include fontFamilyBody(sr);
+
+                    color: $gray100;
+
+                    strong {
+                      @include fontFamilyBody(sb);
+                    }
+                  }
+                }
+
+                li {
+                  position: relative;
+                  z-index: 1;
+                  padding-left: 8px;
+
+                  & + li {
+                    margin-top: 4px;
+                  }
+
+                  &::before {
+                    position: absolute;
+                    z-index: 10;
+                    top: 8px;
+                    left: 2px;
+                    width: 4px;
+                    height: 4px;
+                    border-radius: 4px;
+                    background: $gray100;
+                    content: "";
+                  }
+                }
+              }
+
+              .text {
+                margin-top: 8px;
+
+                &.depth {
+                  padding-left: 8px;
+                }
+
+                @include fontFamilyBody(sr);
+
+                color: $gray100;
+              }
+            }
+          }
+        }
+      }
+
+      .ant-table {
+        background: transparent;
+      }
+    }
+  }
+}
+
+.amount-value {
+  .unit {
+    padding-left: 3px;
+  }
+}
+
+.tx-fee {
+  display: inline-block;
+  width: 60px;
+  text-align: left;
+  white-space: nowrap;
+
+  @include fontFamilyTable(br);
+}
+
+.mobile-lnb {
+  z-index: 100 !important;
+
+  .ant-dropdown-menu {
+    padding: 12px 8px;
+    margin-top: -4px;
+    background-color: $white;
+    box-shadow: 0 10px 10px rgb(0 0 0 / 10%);
+
+    .ant-dropdown-menu-item {
+      display: flex;
+      width: 100%;
+      height: 40px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 17px 0 12px;
+      border-radius: 4px;
+
+      a {
+        @include fontsizeMixin(14, 14);
+      }
+
+      &.ant-dropdown-menu-item-selected {
+        @include themeChangeMixin(background-color, 1);
+
+        a {
+          color: $white;
+          font-weight: 600;
+        }
+
+        &::after {
+          @include content($display: flex);
+
+          width: 11px;
+          height: 6px;
+          border-bottom: 1px solid $white;
+          border-left: 1px solid $white;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  @at-root .dao-recruiting .mobile-lnb .ant-dropdown-menu {
+    li:first-child {
+      display: none;
+    }
+
+    li:not(.ant-dropdown-menu-item-selected) {
+      pointer-events: none;
+
+      a {
+        color: $gray60;
+      }
+    }
+  }
+}
+
+/* stylelint-disable-next-line custom-property-pattern */
+$initVh: var(--initVh);
+
+.dao-home-wrap {
+  .dao-profile-section {
+    overflow: hidden;
+  }
+
+  & + .footer {
+    display: none;
+  }
+
+  /* 23.04.11 수정: 프리뷰 오픈 건으로 임시 수정 */
+  .dao-profile-section .profile-section-card .profile-section-countdown .recruitment-card-wrap .recruitment-main-title {
+    @include fontFamilyBody(xlb);
+  }
+}
+
+.body-lock {
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  // -webkit-backface-visibility: hidden;
+  // -webkit-overflow-scrolling: none;
+  // overscroll-behavior: none;
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  // -webkit-perspective: 1000;
+  // perspective: 1000;
+  // pointer-events: none;
+  // touch-action: none;
+  // transform: translate3d(0, 0, 0);
+
+  @at-root [data-device="window"] & {
+    .lottie-wrap {
+      padding-right: 18px;
+    }
+  }
+
+  @at-root [data-device="window"][data-browser="Edge"] & {
+    .lottie-wrap {
+      padding-right: 16px;
+    }
+  }
+}
+
+// 개별 다오 header
+.dao-wrap:not(.dao-main) {
+  &.wonder-wrap {
+    .header,
+    .dao-header {
+      background-color: nth($daoWonder, 5);
+    }
+
+    &.create {
+      .dao-header-title {
+        > div {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &.oracle-wrap {
+    .header,
+    .dao-header {
+      background-color: nth($daoOracle, 5);
+    }
+  }
+
+  &.arteum-wrap {
+    .header,
+    .dao-header {
+      background-color: nth($daoArteum, 5);
+    }
+  }
+
+  &.delta-wrap {
+    .header,
+    .dao-header {
+      background-color: nth($daoDelta, 5);
+    }
+  }
+
+  &.topstpot-wrap {
+    .header,
+    .dao-header {
+      background-color: nth($daoTopstpot, 5);
+    }
+  }
+
+  .dao-header {
+    background: linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 20%));
+
+    &::before {
+      @include content;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: $veryBlack;
+      opacity: 0.4;
+    }
+  }
+
+  .header {
+    background: linear-gradient(rgb(0 0 0 / 20%), rgb(0 0 0 / 20%));
+
+    @include sm {
+      height: $headerHeight-mo-dao;
+    }
+
+    &::before {
+      @include content;
+
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: $veryBlack;
+      opacity: 0.4;
+    }
+
+    > h1 {
+      z-index: 1;
+    }
+
+    .header-logo {
+      .logo-typo {
+        fill: white;
+      }
+
+      .symbol1 {
+        fill: $white;
+      }
+
+      .symbol2 {
+        fill: rgba($white, 0.7);
+      }
+    }
+
+    .user-wallet {
+      .btn-wallet-join {
+        background-color: $white;
+        color: $black;
+
+        &:hover {
+          background-color: $gray90;
+        }
+
+        path {
+          fill: $black;
+        }
+      }
+
+      .btn-wallet-id {
+        border-color: $white;
+        background-color: transparent;
+        color: $white;
+
+        &:hover {
+          background-color: rgba($white, 0.2);
+        }
+      }
+    }
+
+    .lang-wrap-pc {
+      path {
+        fill: $white;
+      }
+    }
+
+    .mobile-menu {
+      .btn-menu-open {
+        path {
+          stroke: $white;
+        }
+      }
+    }
+
+    &-navigation {
+      display: none;
+    }
+
+    .btn-header {
+      &:focus {
+        border-color: $white;
+      }
+
+      &:hover {
+        background-color: rgba($white, 0.2);
+      }
+    }
+
+    .header-utils {
+      z-index: 1;
+
+      .search-wrap {
+        path {
+          fill: $white;
+        }
+      }
+
+      .notice-wrap {
+        path {
+          fill: $white;
+        }
+      }
+
+      .user-info-wrap {
+        .btn-user-open {
+          &:hover {
+            background-color: rgba($white, 0.2);
+          }
+
+          &:focus {
+            border-color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+.dao-header {
+  position: relative;
+  z-index: 40;
+  height: 88px;
+  margin-top: -$headerHeight-pc;
+  transition: transform 0.3s, opacity 0.3s;
+
+  @include sm {
+    padding-top: $headerHeight-mo-dao;
+    margin-top: calc(#{$headerHeight-mo-dao} * -1);
+  }
+
+  @include daoLg {
+    height: 60px;
+  }
+
+  @include daoMd {
+    height: 60px;
+  }
+
+  @include daoSm {
+    height: $headerHeight-mo-dao;
+  }
+
+  &::after {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(#000, 0.4);
+
+    // content: "";
+  }
+
+  &.active {
+    position: sticky;
+    top: 0;
+    transition: top 0.2s;
+  }
+
+  &.hide:not(.dao-header-active) {
+    top: -100%;
+  }
+
+  &.dao-header-active {
+    // position: sticky;
+    // top: 0;
+
+    // &.active {
+    //   position: sticky;
+    //   top: 0;
+    //   opacity: 1;
+    //   transform: translateY(0);
+    //   transition: transform 0.3s;
+    // }
+
+    // &.hide {
+    //   opacity: 0;
+    //   transform: translateY(-100%);
+    // }
+  }
+
+  &.non-transition {
+    &.hide {
+      transition: none;
+    }
+  }
+
+  &-inner {
+    position: relative;
+    display: flex;
+    max-width: 1320px;
+    height: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 20px 16px;
+    margin: 0 auto;
+    color: $white;
+
+    @include daoXl {
+      padding-right: 0;
+      padding-bottom: 20px;
+      padding-left: 18px;
+    }
+
+    @include daoLg {
+      max-width: none;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 14px 36px;
+      border-top: 1px solid rgba($gray100, 0.2);
+      background-color: rgba($black, 0.2);
+    }
+
+    @include daoMd {
+      align-items: center;
+      padding: 13px 20px;
+      border-top: 1px solid rgba($gray100, 0.2);
+      background-color: rgba($black, 0.2);
+    }
+
+    @include daoSm {
+      overflow: auto;
+      align-items: center;
+      padding: 0 16px;
+      border-top: 1px solid rgba($gray100, 0.2);
+      background-color: rgba($black, 0.2);
+    }
+
+    .dao-header-title {
+      position: relative;
+      display: inline-flex;
+      align-items: center;
+      padding-bottom: 4px;
+
+      @include daoLg {
+        display: none;
+        padding-bottom: 0;
+      }
+
+      @include daoMd {
+        display: none;
+        padding-bottom: 0;
+      }
+
+      @include daoSm {
+        display: none;
+        padding-bottom: 0;
+      }
+
+      span {
+        @include fontFamilyHeading(l);
+
+        color: $gray100;
+
+        @include daoXl {
+          visibility: hidden;
+        }
+      }
+
+      > div {
+        @include daoXl {
+          position: absolute;
+          bottom: -200px;
+          left: 0;
+        }
+
+        svg {
+          width: 164px;
+          height: 200px;
+
+          @include daoLg {
+            width: 40px;
+            height: 50px;
+            margin-right: 16px;
+          }
+
+          @include daoMd {
+            width: 40px;
+            height: 50px;
+            margin-right: 16px;
+          }
+
+          @include daoSm {
+            width: 32px;
+            height: 40px;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+
+    .doa-header-info {
+      display: inline-flex;
+
+      & > div {
+        display: flex;
+        align-items: center;
+
+        & + div {
+          margin-left: 32px;
+
+          @include daoMd {
+            position: relative;
+            padding-left: 12px;
+            margin-left: 12px;
+          }
+
+          @include daoSm {
+            position: relative;
+            padding-left: 12px;
+            margin-left: 12px;
+          }
+
+          &::before {
+            position: absolute;
+            top: 1px;
+            left: 0;
+            display: none;
+            width: 1px;
+            height: 12px;
+            background-color: rgb(255 255 255 / 20%);
+            content: "";
+
+            @include daoMd {
+              display: block;
+            }
+
+            @include daoSm {
+              display: block;
+            }
+          }
+        }
+      }
+
+      dt {
+        display: inline-flex;
+
+        @include fontFamilyData(cs);
+        @include themeChangeMixin(color, 2);
+      }
+
+      dd {
+        display: inline-flex;
+
+        @include fontFamilyData(m3);
+
+        margin-left: 8px;
+        color: $white;
+
+        @include daoMd {
+          @include fontFamilyData(clb);
+        }
+
+        @include daoSm {
+          @include fontFamilyData(clb);
+        }
+
+        .unit {
+          @include fontFamilyData(m3);
+
+          margin-right: 4px;
+
+          @include daoMd {
+            @include fontFamilyData(clb);
+          }
+
+          @include daoSm {
+            @include fontFamilyData(clb);
+          }
+        }
+      }
+
+      .unit {
+        @include fontFamilyData(cs);
+
+        padding-left: 4px;
+        color: $white;
+      }
+    }
+  }
+}
+
+.dao-recruiting-header {
+  @include themeChangeMixin(background-color, 6);
+
+  height: 200px;
+  padding-top: $headerHeight-pc;
+  transition: transform 0.3s, opacity 0.3s;
+
+  @include md {
+    height: 160px;
+  }
+
+  @include sm {
+    height: 160px;
+  }
+
+  &-inner {
+    position: relative;
+    display: flex;
+    max-width: 1320px;
+    height: 100%;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 0 auto;
+    color: $white;
+
+    @include md {
+      padding-right: 20px;
+      padding-bottom: 8px;
+      padding-left: 20px;
+    }
+
+    @include sm {
+      padding-bottom: 8px;
+    }
+
+    .dao-recruiting-header-title {
+      @include fontFamilyHeading(l);
+
+      display: inline-flex;
+      align-items: center;
+
+      @include sm {
+        padding: 0 20px;
+      }
+
+      svg {
+        position: absolute;
+        top: 8px;
+        left: 18px;
+        width: 164px;
+        height: 200px;
+
+        @include md {
+          position: static;
+          width: 40px;
+          height: 50px;
+        }
+
+        @include sm {
+          position: static;
+          width: 32px;
+          height: 40px;
+        }
+      }
+
+      .title-text {
+        @include fontFamilyHeading(l);
+
+        color: $white;
+        visibility: hidden;
+
+        @include md {
+          padding-left: 16px;
+          visibility: visible;
+        }
+
+        @include sm {
+          padding-left: 8px;
+          visibility: visible;
+        }
+      }
+    }
+  }
+}
+
+.wonder-wrap {
+  .dao-header {
+    // @include themeChangeMixin(background-color, 5);
+
+    // background: url("#{$rootPath}/img/bg_wonder_top.png") no-repeat center;
+    // background-color: $black;
+    // background-size: auto 200px;
+
+    // @media (min-width: 768px) and (max-width: 1023px) {
+    //   background-size: auto 160px;
+    // }
+
+    // @media (max-width: 767px) {
+    //   background-size: auto 100px;
+    // }
+  }
+
+  .dao-recruiting-header {
+    background: url("#{$rootPath}/img/bg_wonder_top.png") no-repeat center;
+    background-color: $black;
+    background-size: auto 200px;
+
+    @media (min-width: 768px) and (max-width: 1279px) {
+      background-size: auto 160px;
+    }
+
+    @include sm {
+      background-size: auto 100px;
+    }
+  }
+
+  .tooltip-wrap {
+    .tooltip {
+      .tooltip-contents {
+        // 23.03.02 : color 공통으로 초기화 ( dao에서 컬러 분기 했던 코드 삭제)
+        white-space: nowrap;
+
+        @include fontFamilyNCaption(SR_F_Caption);
+      }
+    }
+  }
+}
+
+// 개별 다오 모집중 header
+.dao-recruiting {
+  &.dao-recruiting-protocol {
+    .header {
+      background: transparent;
+    }
+
+    .dao-protocol-container {
+      min-height: calc(100vh - 200px - 312px);
+    }
+  }
+
+  .dao-header {
+    height: 88px;
+
+    // at root 충돌을 피하기 위해 media 쿼리 사용
+    @media (min-width: 768px) and (max-width: 1439px) {
+      height: 60px;
+    }
+
+    // at root 충돌을 피하기 위해 daoSm 대신 sm 사용
+    @include sm {
+      height: 48px;
+    }
+  }
+
+  .dao-header-inner {
+    // at root 충돌을 피하기 위해 media 쿼리 사용
+    @media (min-width: 768px) and (max-width: 1439px) {
+      display: none;
+    }
+
+    // at root 충돌을 피하기 위해 daoSm 대신 sm 사용
+    @include sm {
+      display: none;
+    }
+  }
+
+  .doa-header-info {
+    display: none;
+  }
+}
+
+// Hero banner
+.hero-banner-section {
+  width: 100%;
+  height: 660px;
+  padding-top: 60px;
+
+  @media (min-width: 768px) and (max-width: 1023px) {
+    @at-root .dao-main & {
+      height: auto;
+    }
+  }
+
+  @include sm {
+    height: auto;
+    padding-top: 48px;
+  }
+
+  .swiper {
+    height: 100%;
+  }
+
+  .swiper-slide {
+    height: 100%;
+
+    @include sm {
+      padding: 46px 0 68px;
+    }
+
+    &.wonder-dao {
+      background-color: $black;
+    }
+
+    .hero-banner-wrap {
+      height: 100%;
+    }
+  }
+
+  .hero-banner-inner {
+    display: flex;
+    width: $maxWidthLg;
+    height: 100%;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    @include md {
+      width: 100%;
+      flex-direction: column;
+      padding: 40px 40px 78px;
+    }
+
+    @include sm {
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    .hero-text-container {
+      display: flex;
+      width: calc(100% - 624px - 56px);
+      flex-wrap: wrap;
+      align-content: center;
+
+      @include md {
+        width: 100%;
+        order: 2;
+      }
+
+      @include sm {
+        width: 100%;
+        order: 2;
+        margin-top: 48px;
+      }
+
+      & > * {
+        width: 100%;
+      }
+
+      .hero-logo {
+        width: 50px;
+        height: 62px;
+
+        @include sm {
+          width: 32px;
+          height: 40px;
+        }
+
+        svg {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      h2 {
+        padding-top: 40px;
+
+        span:not(.tag) {
+          @include fontFamilyHeading(mr);
+
+          display: block;
+          color: $white;
+        }
+
+        strong {
+          @include fontFamilyDp(xl);
+
+          display: block;
+          padding-top: 16px;
+          color: $white;
+          font-weight: 700;
+
+          @include md {
+            padding-top: 12px;
+          }
+
+          @include sm {
+            padding-top: 8px;
+
+            @include fontsizeMixin(32, 34);
+          }
+        }
+
+        @include sm {
+          padding-top: 20px;
+        }
+      }
+
+      .hero-desc {
+        @include fontFamilyBody(lr);
+
+        padding-top: 16px;
+        color: $white;
+        white-space: pre-line;
+        word-break: break-all;
+
+        @include sm {
+          padding-top: 8px;
+
+          @include fontFamilyBody(mr);
+        }
+      }
+
+      .hero-wonder-btn {
+        padding-top: 24px;
+
+        .btn {
+          span {
+            color: $gray100;
+          }
+
+          svg {
+            path {
+              fill: $gray100;
+            }
+          }
+        }
+
+        @include sm {
+          padding-top: 20px;
+        }
+      }
+
+      .hero-dashboard {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        padding-top: 60px;
+        color: $white;
+
+        @include sm {
+          padding-top: 40px;
+        }
+
+        .hero-dash-column {
+          display: inline-flex;
+          flex-wrap: wrap;
+
+          & + .hero-dash-column {
+            margin-left: 20px;
+
+            @include sm {
+              margin-top: 16px;
+              margin-left: 0;
+            }
+          }
+
+          & > span {
+            @include fontFamilyBody(cl);
+
+            display: block;
+            width: 100%;
+            color: $gray60;
+
+            @include md {
+              @include fontsizeMixin(14, 18);
+            }
+          }
+
+          & > strong {
+            @include fontFamilyHeading(l);
+
+            // 폰트 예외
+            @at-root [lang="ko"] & {
+              font-family: $fontKR;
+              letter-spacing: -0.01em;
+
+              @include fontsizeMixin(22, 22);
+
+              @include sm {
+                @include fontsizeMixin(20, 20);
+              }
+            }
+
+            display: block;
+            width: 100%;
+            padding-top: 16px;
+            color: $white;
+            font-family: $fontEN;
+            font-weight: 600;
+          }
+        }
+
+        @include sm {
+          flex-direction: column;
+
+          .hero-dash-column {
+            display: inline-flex;
+            flex-wrap: wrap;
+
+            & > strong {
+              // @include fontsizeMixin(16, 20.8);
+              padding-top: 8px;
+            }
+          }
+        }
+      }
+
+      .hero-button-wrap {
+        padding-top: 44px;
+
+        .btn {
+          width: 240px;
+        }
+
+        @media (min-width: 1024px) and (max-width: 1280px) {
+          padding-top: 40px;
+        }
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+          padding-top: 44px;
+        }
+
+        @include sm {
+          padding-top: 20px;
+
+          .btn {
+            width: 100% !important;
+          }
+        }
+      }
+
+      @include sm {
+        .hero-logo {
+          width: 32px;
+        }
+      }
+    }
+
+    .hero-lottie {
+      width: 624px;
+      margin: 0 0 0 56px;
+
+      @media (min-width: 768px) and (max-width: 1023px) {
+        width: 100%;
+        padding: 69px 0 52px;
+        margin: 0 auto;
+      }
+
+      @include sm {
+        width: 100%;
+        margin: 0;
+      }
+
+      svg {
+        width: auto;
+        height: 100%;
+      }
+    }
+  }
+}
+
+// check more
+.check-section {
+  height: 100%;
+  min-height: 680px;
+  background-color: $gray90;
+
+  @include sm {
+    min-height: auto;
+  }
+
+  .check-section-inner {
+    @include maxWidthLg;
+
+    // height: 100%;
+    padding: 80px 0 122px;
+
+    @media (min-width: 1024px) and (max-width: 1280px) {
+      padding: 80px 40px 164px;
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      padding: 80px 40px 84px;
+    }
+
+    @include sm {
+      padding: 40px 20px 42px;
+    }
+
+    .check-section-title {
+      text-align: center;
+
+      h2 {
+        @extend %daoHomeTitle;
+
+        max-width: 544px;
+        margin: 0 auto;
+        white-space: pre-line;
+      }
+
+      strong {
+        @include fontFamilyBody(mr);
+
+        display: block;
+        padding-top: 12px;
+        color: $gray30;
+
+        @include sm {
+          padding-top: 8px;
+        }
+      }
+
+      span {
+        display: block;
+        margin-top: 4px;
+        color: $gray60;
+
+        @include fontFamilyBody(sr);
+      }
+    }
+
+    .check-swiper-box {
+      padding: 24px 4px;
+      margin-top: 40px;
+      background-color: $white;
+      box-shadow: 0 1px 1px 0 rgba(#000, 0.2);
+
+      @media (min-width: 768px) and (max-width: 1023px) {
+        padding: 24px 8px;
+      }
+
+      @include sm {
+        padding: 0;
+        margin-top: 32px;
+        background: none;
+        box-shadow: none;
+      }
+    }
+
+    .swiper {
+      height: 100%;
+      min-height: 208px;
+
+      .swiper-slide {
+        height: auto;
+
+        &:first-child {
+          // TODO: 다오 오픈 전 css 오픈 후 삭제 필요
+          .check-swiper-field {
+            // margin-top: 22px;
+
+            @include sm {
+              margin-top: 0;
+            }
+
+            .ant-popover {
+              min-width: 250px;
+
+              @include sm {
+                min-width: 290px;
+              }
+            }
+          }
+        }
+
+        &:last-child {
+          .check-swiper-wrap {
+            &::after {
+              display: none;
+            }
+          }
+        }
+
+        @include sm {
+          padding: 24px 4px;
+          background: $white;
+          box-shadow: 0 1px 1px 0 rgba(#000, 0.1);
+        }
+
+        .check-swiper-wrap {
+          position: relative;
+          display: flex;
+          width: 100%;
+          height: 100%;
+          flex-wrap: wrap;
+          align-content: flex-start;
+          padding: 0 20px;
+
+          &::after {
+            @include content;
+
+            position: absolute;
+            right: 0;
+            width: 1px;
+            height: 100%;
+            background-color: $gray80;
+          }
+
+          @media (min-width: 768px) and (max-width: 1023px) {
+            padding: 0 16px;
+          }
+
+          @include sm {
+            padding: 0 12px 24px;
+
+            &::after {
+              display: none;
+            }
+          }
+
+          &.period {
+            .check-swiper-content {
+              height: calc(100% - 24px);
+              align-items: center;
+              padding-bottom: 24px;
+
+              @include daoMd {
+                height: calc(100% - 16px);
+                padding-bottom: 16px;
+              }
+
+              .remaining-period-wrap {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+              }
+
+              // TODO: 11일 오픈 컨텐츠 추후 삭제 요망
+              .coming-open {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                font-size: 135px;
+
+                @include md {
+                  font-size: 163px;
+                }
+
+                @include sm {
+                  font-size: 143px;
+                }
+
+                svg {
+                  width: 100%;
+                  margin: 0 auto;
+                }
+
+                .text-wrap {
+                  margin-top: 16px;
+
+                  strong {
+                    @include fontFamilyBody(mb);
+                  }
+
+                  span {
+                    margin-top: 4px;
+                    color: $gray30;
+
+                    @include fontFamilyBody(sr);
+                  }
+
+                  & > strong,
+                  & > span {
+                    display: block;
+                    text-align: center;
+                  }
+                }
+              }
+            }
+          }
+
+          &.price {
+            .check-swiper-content {
+              justify-content: flex-start;
+            }
+          }
+        }
+      }
+
+      .swiper-pagination {
+        display: none;
+        margin-bottom: 24px;
+
+        @include sm {
+          position: relative;
+          z-index: 10;
+          display: flex;
+          margin-top: -24px;
+          margin-bottom: 24px;
+        }
+      }
+
+      .check-swiper-title {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        @include sm {
+          align-items: center;
+        }
+
+        h3 {
+          @include fontFamilyHeading(mb);
+
+          padding: 4px 0 4px 2px;
+          font-family: $fontEN;
+          font-weight: 600;
+
+          @include sm {
+            padding: 0;
+          }
+        }
+
+        .btn-sm {
+          @media (min-width: 768px) and (max-width: 1023px) {
+            height: 24px;
+            padding: 0 12px;
+          }
+        }
+      }
+
+      .check-swiper-content {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 20px;
+
+        @media (min-width: 768px) and (max-width: 1023px) {
+          padding-top: 16px;
+        }
+
+        @include sm {
+          padding-top: 16px;
+        }
+
+        .dao-token {
+          svg {
+            margin: 2px auto 0;
+
+            @media (min-width: 1024px) and (max-width: 1280px) {
+              margin-top: 22px;
+            }
+
+            @media (min-width: 768px) and (max-width: 1023px) {
+              margin-top: 22px;
+            }
+
+            @include sm {
+              margin-top: 22px;
+            }
+          }
+
+          .check-swiper-desc {
+            margin-top: 24px;
+          }
+        }
+
+        .check-swiper-desc {
+          @include fontFamilyBody(sr);
+
+          strong {
+            @include fontFamilyBody(sb);
+          }
+
+          @media (min-width: 768px) and (max-width: 1023px) {
+            @include fontsizeMixin(16, 24);
+          }
+
+          @include sm {
+            @include fontFamilyBody(mr);
+
+            strong {
+              @include fontFamilyBody(mb);
+            }
+
+            // @include fontsizeMixin(12, 18);
+          }
+
+          span {
+            display: block;
+            margin-top: 4px;
+            color: $gray60;
+          }
+        }
+
+        .check-swiper-field {
+          display: flex;
+          width: 100%;
+          flex-wrap: wrap;
+          padding-top: 24px;
+
+          .ant-popover-placement-top .ant-popover-arrow,
+          .ant-popover-placement-bottom .ant-popover-arrow {
+            left: 16px;
+
+            @include md {
+              left: 12px;
+            }
+
+            @include sm {
+              left: 12px;
+            }
+          }
+
+          .ant-popover-placement-top .ant-popover-arrow {
+            transform: translateY(100%) translateX(0);
+          }
+
+          .ant-popover-placement-bottom .ant-popover-arrow {
+            transform: translateY(-100%) translateX(0);
+          }
+
+          @include sm {
+            display: block;
+            padding-top: 20px;
+
+            & > div + div {
+              margin-top: 20px;
+            }
+          }
+
+          & > div {
+            display: flex;
+            width: 50%;
+            flex-wrap: wrap;
+            align-content: space-between;
+
+            &:last-child {
+              margin-top: 24px;
+
+              @include sm {
+                margin-top: 20px;
+              }
+            }
+
+            @include md {
+              width: 100%;
+
+              & + div {
+                margin-top: 24px;
+              }
+            }
+
+            @include sm {
+              width: 100%;
+            }
+          }
+
+          dt {
+            display: flex;
+            width: 100%;
+            align-items: flex-start;
+
+            span {
+              @include fontFamilyBody(cl);
+
+              color: $gray30;
+              line-height: 1.2 !important;
+            }
+
+            button {
+              margin-right: 4px;
+
+              svg path {
+                fill: $gray30;
+              }
+            }
+          }
+
+          dd {
+            display: block;
+            width: 100%;
+            margin-top: 8px;
+
+            .num {
+              @include fontFamilyData(m3);
+
+              color: $gray00;
+            }
+
+            .unit {
+              margin-left: 4px;
+              color: $gray00;
+
+              @include fontFamilyData(cl);
+
+              & + span {
+                padding: 0 8px;
+              }
+            }
+          }
+        }
+
+        .check-swiper-price {
+          .num {
+            @include fontFamilyData(m2);
+
+            color: $gray00;
+          }
+
+          .unit,
+          .value {
+            margin-left: 4px;
+
+            @include fontFamilyData(sr);
+
+            color: $gray00;
+          }
+
+          .value {
+            @media (min-width: 768px) and (max-width: 1023px) {
+              display: block;
+              margin: 8px 0 0;
+            }
+          }
+        }
+
+        .check-swiper-chart {
+          width: 100%;
+          height: 110px;
+          margin-top: 28px;
+
+          @media (min-width: 768px) and (max-width: 1023px) {
+            height: 120px;
+            margin-top: 40px;
+          }
+
+          .date-axis {
+            @include fontFamilyData(cl);
+
+            display: flex;
+            justify-content: space-between;
+
+            @include md {
+              margin-top: -8px;
+            }
+
+            span {
+              color: $gray60;
+            }
+          }
+        }
+
+        .recruiting-wrap {
+          margin-top: 30px;
+        }
+      }
+    }
+
+    .check-section-btn-wrap {
+      padding-top: 24px;
+      text-align: center;
+
+      @include sm {
+        padding: 16px 16px 0;
+      }
+
+      .btn {
+        width: 120px;
+
+        @include sm {
+          width: 100%;
+          height: 44px;
+
+          @include fontFamilyButton(lr);
+        }
+      }
+    }
+  }
+}
+
+.remaining-period-dday {
+  display: inline-flex;
+  padding-top: 19px;
+  margin: 0 auto;
+
+  & > * {
+    @include sm {
+      width: calc((100% - 12px) / 4);
+    }
+
+    & + * {
+      margin-left: 40px;
+
+      @include md {
+        margin-left: 24px;
+      }
+
+      @media (min-width: 768px) and (max-width: 1023px) {
+        margin-left: 15px !important;
+      }
+
+      @include sm {
+        margin-left: 4px;
+      }
+    }
+  }
+
+  strong,
+  span {
+    display: block;
+    text-align: center;
+  }
+
+  strong {
+    @include fontFamilyData(m1r);
+  }
+
+  span {
+    @include fontFamilyData(cs);
+
+    padding-top: 8px;
+    color: $gray30;
+  }
+
+  @include sm {
+    padding-top: 16px;
+    gap: 4px;
+
+    & > div {
+      min-width: 69px;
+    }
+  }
+}
+
+.remaining-period-date {
+  padding-top: 24px;
+
+  .remaion-period-item {
+    display: block;
+
+    @include fontFamilyData(cs);
+
+    & + .remaion-period-item {
+      margin-top: 8px;
+    }
+
+    .tag {
+      width: 53px;
+      margin-right: 8px;
+    }
+  }
+
+  @include daoMd {
+    padding-top: 20px;
+  }
+
+  @include sm {
+    flex-wrap: wrap;
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    & > span {
+      width: 100%;
+      text-align: center;
+
+      & + span {
+        margin-top: 4px;
+      }
+
+      .tag {
+        min-width: 54px;
+        margin-right: 4px;
+      }
+    }
+  }
+}
+
+.fp-is-overflow.fp-table.height-auto {
+  height: auto;
+}
+
+// dao Lottie
+.dao-lottie {
+  position: relative;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+// TODO: 23.2.10 다오 쇼케이스 오픈 후 삭제(기존 DaoHomeLottie)
+.lottie-wrap {
+  position: relative;
+  top: 0;
+
+  &.event-prevent {
+    .swiper-fade .swiper-slide-active,
+    .swiper-fade .swiper-slide-active .swiper-slide-active {
+      pointer-events: none;
+    }
+  }
+
+  .fp-overflow {
+    overflow-y: inherit !important;
+  }
+
+  @at-root [data-device="ios"] .body-lock & {
+    top: 0;
+  }
+}
+
+.lottie-wrap .dao-lottie-inner {
+  position: relative;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: calc(#{$vh} * 100);
+  /* stylelint-disable-next-line property-no-vendor-prefix */
+  -webkit-perspective: 1000;
+  transform: translate3d(0, 0, 0);
+  transition: height 0.2s;
+
+  .swiper {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-wrapper {
+    height: 100vh !important;
+    height: calc(#{$vh} * 100) !important;
+  }
+
+  .lottie-component-wrap {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+
+    .lottie-component-inner {
+      position: relative;
+      display: flex;
+      width: 100%;
+      height: 100%;
+      margin: 0 auto;
+
+      .lottie-component {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        display: flex;
+        width: 100%;
+        max-width: 2560px;
+        height: 100%;
+        max-height: 800px;
+        justify-content: center;
+        background-color: #fff;
+        opacity: 0;
+        transform: translateX(-50%);
+
+        svg {
+          position: absolute;
+          bottom: 0;
+          left: calc(50% + 7.5%);
+          width: auto !important;
+          height: 100% !important;
+          transform: translate3d(-50%, 0, 0) !important;
+        }
+
+        @media (min-width: 1921px) and (max-width: 2560px) {
+          svg {
+            left: calc(50% + 7.96%);
+          }
+        }
+
+        @media (min-width: 1441px) and (max-width: 1920px) {
+          svg {
+            left: calc(50% + 7.96%);
+          }
+        }
+
+        @media (min-width: 1281px) and (max-width: 1440px) {
+          svg {
+            left: calc(50% + 5.07%);
+          }
+        }
+
+        @media (min-width: 1025px) and (max-width: 1280px) {
+          svg {
+            left: calc(50% + 9.29%);
+          }
+        }
+
+        @media (max-width: 1024px) {
+          svg {
+            left: 50%;
+            height: 70.9vh !important;
+          }
+        }
+
+        @include sm {
+          svg {
+            height: 100.834vw !important;
+
+            @at-root .body-lock & {
+              height: 100.834vw !important;
+            }
+          }
+        }
+
+        @for $i from 1 to 8 {
+          &:nth-of-type(#{$i}) {
+            z-index: 20 - $i;
+
+            &.fix {
+              z-index: 10 - $i;
+            }
+          }
+        }
+
+        &.active {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.lottie-wrap .lottie-desc-wrap {
+  position: relative;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  padding-top: 7.29vw;
+
+  .lottie-desc-inner {
+    @include maxWidthLg;
+  }
+
+  @include md {
+    padding-top: 11.73vw;
+  }
+
+  @include sm {
+    padding-top: 11.73vw;
+  }
+
+  .lottie-title-wrap {
+    position: relative;
+    padding-bottom: 80px;
+    transition: all 300ms;
+
+    h2 {
+      span {
+        display: block;
+
+        &:first-child {
+          padding-bottom: 0;
+
+          @include fontsizeMixin(24, 24);
+
+          font-family: $fontEN;
+          font-weight: 500;
+
+          @include sm {
+            @include fontFamilyHeading(mr);
+
+            padding-bottom: 0 !important;
+            font-weight: 400;
+          }
+        }
+
+        &:last-child {
+          @include fontFamilyPhrase(l);
+          @extend %daoHomeTitle;
+
+          overflow: hidden;
+          height: 0;
+          transition: all 300ms;
+
+          @include sm {
+            display: none;
+            padding-top: 16px;
+          }
+        }
+      }
+    }
+
+    @include md {
+      padding-bottom: 44px;
+    }
+
+    @include sm {
+      padding-bottom: 0;
+      text-align: center;
+      transition: none;
+    }
+
+    & + ol {
+      max-width: 486px;
+
+      @include daoMd {
+        max-width: 421px;
+      }
+
+      @include sm {
+        max-width: none;
+
+        &::before {
+          display: none;
+        }
+      }
+    }
+
+    &.active {
+      padding-bottom: 120px;
+
+      @include md {
+        padding-bottom: 44px;
+      }
+
+      h2 {
+        span {
+          &:first-child {
+            padding-bottom: 40px;
+
+            @include daoMd {
+              padding-bottom: 24px;
+            }
+          }
+
+          &:last-child {
+            display: block;
+            height: auto !important;
+            white-space: pre-line;
+
+            @include sm {
+              white-space: normal;
+            }
+          }
+        }
+      }
+
+      & + ol {
+        max-width: 424px;
+
+        @include daoMd {
+          max-width: 421px;
+        }
+
+        @include sm {
+          display: none;
+        }
+
+        &::before {
+          @include content;
+
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          border-top: 0;
+        }
+      }
+    }
+  }
+
+  ol {
+    position: relative;
+    counter-reset: number;
+
+    &::before {
+      @include content;
+
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      border-top: 1px solid $black;
+    }
+
+    li {
+      position: relative;
+      transition: all 300ms;
+      will-change: all;
+
+      h3 {
+        @include fontsizeMixin(20, 36);
+
+        padding: 12px 0 12px 61px;
+        font-family: $fontEN;
+        text-indent: -61px;
+        transition: all 300ms;
+
+        @include sm {
+          @include fontFamilyPhrase(l);
+        }
+
+        &::before {
+          padding-right: 24px;
+          content: "0" counter(number);
+          counter-increment: number;
+          font-weight: 700;
+        }
+
+        &::after {
+          @include content;
+
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 100%;
+          border-top: 1px solid #1a1a1a;
+        }
+
+        @include daoMd {
+          @include fontsizeMixin(20, 20);
+
+          padding: 24px 0 18px 44px;
+          text-indent: -44px;
+
+          &::before {
+            padding-right: 24px;
+          }
+        }
+      }
+
+      @include sm {
+        display: none;
+        text-align: center;
+      }
+
+      .lottie-desc-box {
+        overflow: hidden;
+        height: 0;
+        padding-left: 52px;
+        transition: all 300ms;
+
+        strong {
+          display: block;
+          padding-top: 12px;
+          white-space: pre-line;
+
+          @include fontFamilyBody(lb);
+
+          @include sm {
+            color: $textSubdued;
+            font-weight: 400;
+
+            @include fontFamilyBody(mr);
+          }
+
+          & + div {
+            padding: 8px 0 40px;
+            color: $textSubdued;
+            white-space: pre-line;
+
+            @include fontFamilyBody(mr);
+
+            @include sm {
+              padding-top: 0;
+            }
+          }
+        }
+
+        @include daoMd {
+          padding-left: 45px;
+
+          strong {
+            @include fontsizeMixin(18, 26);
+
+            padding-top: 0;
+
+            & + div {
+              @include fontsizeMixin(16, 24);
+
+              padding: 12px 0 24px;
+            }
+          }
+        }
+
+        @include sm {
+          height: auto !important;
+          padding-left: 0;
+        }
+      }
+
+      &.active {
+        padding: 40px 0 0;
+
+        @include daoMd {
+          padding-top: 0;
+        }
+
+        @include sm {
+          display: block;
+          padding-top: 20px;
+        }
+
+        h3 {
+          padding: 0 0 0 52px;
+
+          @include fontFamilyPhrase(mb);
+
+          text-indent: -52px;
+
+          &::before {
+            @include fontFamilyHeading(l);
+          }
+
+          &::after {
+            @include content;
+
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            border-top: 1px solid #1a1a1a;
+          }
+
+          @include daoMd {
+            @include fontsizeMixin(32, 40);
+
+            padding: 24px 0 18px 44px;
+            text-indent: -44px;
+
+            &::before {
+              padding-right: 22px;
+            }
+          }
+
+          @include sm {
+            padding-left: 0;
+            text-indent: 0;
+
+            @include fontsizeMixin(24, 32);
+
+            &::before {
+              display: none;
+              padding: 0;
+            }
+
+            &::after {
+              border: 0;
+            }
+          }
+        }
+
+        .lottie-desc-box {
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .lottie-scroll-wrap {
+    position: absolute;
+    z-index: 10;
+    bottom: 80px;
+
+    @include md {
+      bottom: 60px;
+    }
+
+    @include sm {
+      bottom: 24px;
+    }
+
+    .text-scroll {
+      @include sm {
+        margin-top: 28px;
+      }
+
+      svg {
+        animation: none;
+      }
+    }
+  }
+}
+
+// Dao Home Type & Join
+.dao-type-join {
+  position: relative;
+  z-index: 1;
+  background: url("#{$rootPath}/img/bg_daotype_lg.png") no-repeat top center / 1920px;
+  background-color: $gray10;
+
+  @include md {
+    background-size: auto 240px;
+  }
+
+  @include sm {
+    background-image: url("#{$rootPath}/img/bg_daotype_sm.png");
+    background-size: auto 200px;
+  }
+
+  .title-wrap {
+    text-align: center;
+
+    @include sm {
+      max-width: 320px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .title-small {
+      @include fontFamilyHeading(s);
+
+      display: block;
+      color: $white;
+
+      & + .title-large {
+        margin-top: 20px;
+
+        @include daoMd {
+          margin-top: 20px;
+        }
+
+        @include sm {
+          margin-top: 12px;
+        }
+      }
+    }
+
+    .title-large {
+      @include fontFamilyPhrase(sb);
+
+      display: block;
+      color: $white;
+
+      @include sm {
+        white-space: pre-line;
+      }
+    }
+
+    .title-desc {
+      @include fontsizeMixin(14, 22);
+
+      margin: 24px auto 0;
+      color: $gray60;
+      text-align: center;
+
+      span {
+        display: block;
+        color: $gray60;
+
+        @include fontsizeMixin(14, 22);
+      }
+
+      @include md {
+        margin-top: 12px;
+
+        @include fontsizeMixin(16, 24);
+
+        span {
+          @include fontsizeMixin(16, 24);
+        }
+      }
+
+      @include sm {
+        margin-top: 12px;
+      }
+    }
+  }
+
+  .button-wrap {
+    margin-top: 20px;
+    text-align: center;
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+      @at-root .dao-wrap & {
+        margin-top: 24px;
+      }
+    }
+
+    @include sm {
+      margin-top: 24px;
+    }
+  }
+
+  .type-banner-wrap {
+    @include type-banner-wrap;
+
+    overflow: hidden;
+    padding-top: 160px;
+
+    @include md {
+      padding-top: 140px;
+      margin-top: 26px;
+    }
+
+    @include sm {
+      padding-top: 160px;
+      margin-top: 26px;
+    }
+
+    .banner-item {
+      width: 200px;
+      height: 160px;
+
+      @include md {
+        width: 200px;
+        height: 170px;
+      }
+
+      @include sm {
+        width: 160px;
+        height: 160px;
+      }
+
+      svg {
+        width: 48px;
+        height: 48px;
+
+        @include md {
+          width: 48px;
+          height: 48px;
+        }
+
+        @include sm {
+          width: 48px;
+          height: 48px;
+        }
+      }
+
+      .banner-item-name {
+        @include fontFamilyHeading(xs);
+
+        margin-top: 24px;
+        color: $white;
+        text-align: center;
+        text-transform: uppercase;
+
+        @include md {
+          margin-top: 20px;
+
+          @include fontFamilyHeading(s);
+        }
+      }
+    }
+  }
+
+  .dao-type-wrap {
+    padding-top: 48px;
+    padding-bottom: 48px; //TODO: 23.04.11 임시 수정 (개발 요청 하기 버튼 주석 처리로 인한 간격 수정)
+
+    @include md {
+      padding-top: 80px;
+      padding-bottom: 80px; //TODO: 23.04.11 임시 수정 (개발 요청 하기 버튼 주석 처리로 인한 간격 수정)
+    }
+
+    @include sm {
+      padding-top: 40px;
+      padding-bottom: 40px; //TODO: 23.04.11 임시 수정 (개발 요청 하기 버튼 주석 처리로 인한 간격 수정)
+    }
+
+    .title-wrap {
+      .title-large {
+        @include md {
+          margin: 20px auto 0;
+        }
+
+        @include sm {
+          margin: 12px auto 0;
+        }
+      }
+
+      .title-desc {
+        @include md {
+          margin-top: 16px;
+        }
+      }
+    }
+  }
+
+  .dao-join-wrap {
+    padding: 40px 0 52px;
+
+    @include md {
+      padding: 32px 0;
+    }
+
+    @include sm {
+      padding: 0 0 42px;
+    }
+
+    .title-large.join-title {
+      @include fontFamilyHeading(s);
+    }
+
+    .join-desc {
+      margin-top: 8px;
+    }
+  }
+}
+
+// neith protocol
+.neith-protocol {
+  position: relative;
+  z-index: 1;
+  padding: 80px 0;
+  background-color: $gray90;
+
+  @include md {
+    padding: 80px 0 36px;
+  }
+
+  @include sm {
+    padding: 40px 0 42px;
+  }
+
+  .neith-protocol-container {
+    @include maxWidthLg;
+  }
+
+  .title-wrap {
+    max-width: 603px;
+    margin: 0 auto;
+    text-align: center;
+
+    @include daoMd {
+      max-width: 576px;
+    }
+
+    @include sm {
+      max-width: 320px;
+    }
+
+    .title-large {
+      @extend %daoHomeTitle;
+
+      @include sm {
+        white-space: pre-line;
+      }
+    }
+
+    .title-desc {
+      margin: 12px auto 0;
+
+      span {
+        display: block;
+        color: $gray30;
+        white-space: pre-line;
+
+        @include fontFamilyBody(mr);
+      }
+
+      @include sm {
+        margin-top: 12px;
+      }
+    }
+  }
+
+  .button-wrap {
+    margin-top: calc(40px - 20px);
+    text-align: center;
+
+    @include md {
+      margin-top: calc(24px - 20px);
+    }
+
+    @include sm {
+      margin-top: 24px;
+    }
+
+    button {
+      @include sm {
+        width: 100%;
+      }
+    }
+  }
+
+  .neith-item-wrap {
+    width: 100%;
+    max-height: 564px;
+    margin-top: 40px;
+    column-count: 4;
+    column-fill: balance;
+    column-gap: 0;
+
+    @include md {
+      max-height: 700px;
+      column-count: 3;
+      column-gap: 0;
+    }
+
+    @include sm {
+      display: none;
+    }
+
+    .neith-item {
+      position: relative;
+      display: inline-flex;
+      overflow: hidden;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 20px;
+      margin-bottom: 20px;
+      background-color: $white;
+      break-inside: avoid;
+      -webkit-column-break-inside: avoid;
+      column-width: 282px;
+      page-break-inside: avoid;
+      transition: background-color 0.4s;
+
+      &:nth-child(n + 3):nth-child(-n + 7) {
+        margin-left: 24px;
+      }
+
+      @include md {
+        column-width: 216px;
+
+        &:nth-child(n + 3):nth-child(-n + 7) {
+          margin-left: 20px;
+        }
+      }
+
+      @include lg {
+        &.item-treasury:hover {
+          .item-image {
+            top: 40px;
+          }
+        }
+
+        &:hover {
+          @include themeChangeMixin(background-color, 1);
+
+          .item-desc {
+            transform: translateY(0);
+
+            dt {
+              color: $white;
+            }
+
+            dd {
+              color: $white;
+              opacity: 1;
+            }
+          }
+
+          .item-image {
+            top: 20px;
+          }
+        }
+      }
+
+      &.item {
+        &-treasury {
+          .item-image {
+            left: 40px;
+            width: 242px;
+            max-width: 242px;
+          }
+        }
+
+        // item 높이 처리
+        @include lg {
+          &-station,
+          &-incinerator,
+          &-governance {
+            min-height: 220px;
+          }
+
+          &-trust,
+          &-staking,
+          &-creator {
+            min-height: 300px;
+          }
+
+          &-treasury {
+            .item-image {
+              font-size: 320px;
+            }
+
+            min-height: 540px;
+          }
+        }
+
+        @include md {
+          &-station,
+          &-trust {
+            min-height: 330px;
+
+            .item-image {
+              top: 40px;
+              right: auto;
+              left: 50%;
+              width: 140px;
+              max-width: 140px;
+              margin: 0 auto;
+              transform: translate(-50%, 0);
+            }
+          }
+
+          &-treasury {
+            width: calc(100% - 20px);
+            min-height: 420px;
+
+            .item-image {
+              top: 40px;
+              width: 176px;
+              max-width: 176px;
+              font-size: 240px;
+            }
+          }
+
+          &-staking,
+          &-creator {
+            min-height: 240px;
+
+            .item-image {
+              top: 20px;
+              width: 100px;
+              font-size: 100px;
+            }
+          }
+
+          &-incinerator,
+          &-governance {
+            min-height: 200px;
+
+            .item-image {
+              top: 20px;
+              width: 100px;
+              font-size: 100px;
+            }
+          }
+        }
+      }
+
+      .item-image {
+        position: absolute;
+        top: 40px;
+        right: 24px;
+        width: 140px;
+        max-width: 140px;
+        font-size: 140px;
+        transition: top 0.4s;
+
+        .dao-neith {
+          @include themeChangeMixin(fill, 1);
+        }
+
+        // @include daoMd {
+        //   top: 20px;
+        //   width: 100px;
+        //   max-width: 100px;
+        //   font-size: 100px;
+        // }
+      }
+
+      .item-desc {
+        @include lg {
+          transform: translateY(calc(100% - 20px));
+          transition: transform 0.5s;
+        }
+
+        dt {
+          @include fontFamilyHeading(mb);
+
+          @include md {
+            @include fontsizeMixin(16, 16);
+          }
+
+          text-transform: capitalize;
+        }
+
+        dd {
+          @include fontFamilyBody(mr);
+
+          margin-top: 12px;
+          color: $gray30;
+
+          @include lg {
+            opacity: 0;
+            transition: opacity 0.4s;
+          }
+
+          @include md {
+            @include fontsizeMixin(12, 20);
+          }
+        }
+      }
+    }
+  }
+
+  .neith-slider {
+    width: calc(100% + 40px);
+    margin-top: 32px;
+    margin-left: -20px;
+
+    .neith-slider-item {
+      position: relative;
+      display: flex;
+      height: 280px;
+      flex-direction: column;
+      justify-content: flex-end;
+      padding: 16px 16px 20px;
+      margin: 0 8px;
+      background-color: $white;
+      box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    }
+
+    .item-image {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      width: 140px;
+      max-width: 140px;
+      font-size: 140px;
+
+      .dao-neith {
+        @include themeChangeMixin(fill, 1);
+      }
+    }
+
+    .item-desc {
+      dt {
+        @include fontFamilyHeading(mb);
+
+        @include md {
+          @include fontFamilyHeading(s);
+        }
+      }
+
+      dd {
+        @include fontFamilyBody(mr);
+
+        @include md {
+          @include fontFamilyBody(s);
+        }
+
+        margin-top: 12px;
+        color: $gray30;
+      }
+    }
+
+    .swiper-pagination {
+      margin-top: 24px;
+
+      .swiper-pagination-bullet {
+        background-color: $gray60;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: $black;
+      }
+    }
+  }
+}
+
+.dao-station-section {
+  margin-top: 80px;
+
+  &:first-child {
+    margin-top: 0;
+
+    @include sm {
+      margin-top: 0;
+    }
+  }
+
+  @include md {
+    margin-top: 60px;
+  }
+
+  @include sm {
+    margin-top: 40px;
+  }
+
+  @at-root .recruiting-section + & {
+    margin-top: 60px;
+
+    @include md {
+      margin-top: 60px;
+    }
+
+    @include sm {
+      margin-top: 42px;
+    }
+  }
+}
+
+.dao-wonders-member {
+  overflow: hidden;
+  padding: 80px 0;
+  border-top: 1px solid $gray80;
+
+  @include md {
+    padding-top: 60px;
+  }
+
+  @include sm {
+    padding-top: 40px;
+  }
+
+  .wonders-member-title {
+    padding: 0 20px;
+    text-align: center;
+
+    @include md {
+      padding: 0 40px;
+    }
+
+    .title {
+      @include fontFamilyHeading(xl);
+
+      @include md {
+        white-space: pre-line;
+      }
+    }
+
+    .desc {
+      margin-top: 8px;
+
+      @include fontFamilyBody(mr);
+
+      color: $gray30;
+
+      @include md {
+        margin-top: 16px;
+        white-space: pre-line;
+      }
+
+      @include sm {
+        margin-top: 12px;
+      }
+    }
+  }
+
+  .type-banner-wrap {
+    @include type-banner-wrap;
+
+    padding-top: 170px;
+    padding-bottom: 25px;
+    margin-top: 65px;
+
+    @include md {
+      padding-top: 170px;
+    }
+
+    @include sm {
+      padding-top: 112px;
+      padding-bottom: 10px;
+      margin-top: 34px;
+    }
+
+    .wonder-dao-card {
+      position: absolute;
+      z-index: 10;
+      top: -25px;
+      left: 50%;
+      display: flex;
+      width: 234px;
+      height: 220px;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid $gray100;
+      background-color: $black;
+      box-shadow: 0 1px 1px rgba($veryBlack, 10%);
+      transform: translate(-50%, 0);
+
+      @include sm {
+        top: -10px;
+        width: 138px;
+        height: 132px;
+      }
+
+      svg {
+        width: 115px;
+        height: 128px;
+
+        @include sm {
+          width: 80px;
+          height: 88px;
+        }
+      }
+    }
+
+    .type-banner {
+      .banner-item {
+        width: 180px;
+        height: 170px;
+        border: 1px solid $gray80;
+        margin-left: 24px;
+
+        @include sm {
+          width: 120px;
+          height: 112px;
+          margin-left: 16px;
+        }
+
+        svg {
+          path {
+            fill: $gray30;
+          }
+        }
+
+        .circle {
+          svg {
+            width: 48px;
+            height: 48px;
+
+            @include sm {
+              width: 32px;
+              height: 32px;
+            }
+          }
+        }
+
+        .square {
+          svg {
+            width: 140px;
+            height: 48px;
+
+            @include sm {
+              width: 96px;
+              height: 32px;
+            }
+          }
+        }
+
+        .horizontal-long {
+          svg {
+            width: 52px;
+            height: 48px;
+
+            @include sm {
+              width: 34px;
+              height: 32px;
+            }
+          }
+        }
+
+        .vertical-long {
+          svg {
+            width: 36px;
+            height: 48px;
+
+            @include sm {
+              width: 24px;
+              height: 32px;
+            }
+          }
+        }
+
+        .banner-item-name {
+          margin-top: 24px;
+          color: $gray30;
+          text-align: center;
+
+          @include fontFamilyBody(cl);
+
+          @include md {
+            margin-top: 16px;
+          }
+        }
+      }
+    }
+  }
+
+  .btn-wrap {
+    margin-top: 24px;
+    text-align: center;
+  }
+}
+
+/* Smart Contract 순서도 */
+.smart-contract-wrap {
+  @mixin lineStyle($position: right, $transform: 100%, $width: 60px) {
+    @include content;
+
+    @if $position == right {
+      #{$position}: -1px;
+    } @else {
+      #{$position}: 0;
+    }
+
+    position: absolute;
+    top: 50%;
+    width: $width;
+    border-top: 1px solid $gray60;
+    transform: translateX($transform);
+  }
+
+  @mixin arrowStyle($position: right) {
+    @include content;
+
+    @if $position == right {
+      #{$position}: -62px;
+    } @else {
+      #{$position}: -4px;
+    }
+
+    position: absolute;
+    top: 50%;
+    width: 5px;
+    height: 5px;
+    border-top: 1px solid $gray60;
+    border-right: 1px solid $gray60;
+    transform: rotate(45deg) translateX(-50%);
+  }
+
+  .smart-contract-inner {
+    .smart-contract-section {
+      & + .smart-contract-section {
+        margin-top: 40px;
+      }
+
+      h4 {
+        @include fontFamilyHeading(mb);
+      }
+
+      .smart-contract-flowchart {
+        display: flex;
+        width: 100%;
+        max-width: 888px;
+        align-items: center;
+        padding-top: 30px;
+        margin-top: 20px;
+
+        & > li {
+          & + li {
+            margin-left: 60px;
+          }
+
+          @include sm {
+            & + li {
+              margin-left: 0;
+            }
+
+            &.smart-contract-inner-flowchart-wrap {
+              margin-left: 5%;
+            }
+          }
+        }
+
+        & > li:not(:last-child),
+        ol > li {
+          width: 20.045%;
+          height: 100%;
+          min-height: 68px;
+          padding: 12px 20px;
+
+          &:last-child {
+            &::before {
+              @include lineStyle($position: left, $transform: -100%);
+            }
+
+            &::after {
+              @include arrowStyle($position: left);
+            }
+          }
+
+          @include sm {
+            width: 30%;
+
+            &:last-child {
+              &::before {
+                @include lineStyle($position: left, $transform: -100%, $width: 16.67%);
+              }
+            }
+          }
+        }
+
+        & > li:first-child {
+          &::before {
+            @include lineStyle($position: right, $transform: 100%);
+          }
+
+          &::after {
+            @include arrowStyle($position: right);
+          }
+
+          @include sm {
+            display: none;
+
+            &::before {
+              @include lineStyle($width: 8.335%);
+            }
+          }
+        }
+
+        & > li:nth-child(2) {
+          &::before {
+            @include lineStyle($position: right, $transform: 100%, $width: 30px);
+
+            @include sm {
+              @include lineStyle($position: right, $transform: 100%, $width: 8.335%);
+            }
+          }
+        }
+
+        & > li:last-child {
+          width: calc(20.045% * 2 + 60px);
+
+          @include sm {
+            width: calc(100% - 30% - 5%);
+          }
+        }
+
+        li {
+          position: relative;
+          display: inline-flex;
+          flex-wrap: wrap;
+          align-content: center;
+          justify-content: center;
+          border-radius: 4px;
+
+          span,
+          strong {
+            display: block;
+            width: 100%;
+            text-align: center;
+          }
+
+          strong {
+            @include fontFamilyBody(mb);
+
+            @include md {
+              @include fontFamilyBody(sb);
+            }
+
+            @include sm {
+              @include fontFamilyBody(sb);
+            }
+          }
+
+          span {
+            @include fontFamilyBody(cs);
+
+            padding-top: 4px;
+            color: $gray40;
+          }
+        }
+
+        .line {
+          border: 1px solid $black;
+
+          & + .bg-white {
+            @include sm {
+              margin-left: 0;
+            }
+          }
+        }
+
+        .bg-white {
+          margin-left: 60px;
+          background-color: $white;
+
+          @include sm {
+            margin-left: 7.69%;
+          }
+        }
+
+        .bg-negative {
+          background-color: #fbe7e7;
+
+          strong {
+            color: $negative;
+
+            @include fontFamilyData(sb);
+          }
+        }
+
+        .bg-dao-color1 {
+          position: relative;
+
+          @include themeChangeMixin(background-color, 1);
+
+          strong {
+            color: $white;
+
+            @include fontFamilyData(sb);
+          }
+
+          div {
+            @include themeChangeMixin(color, 1);
+
+            position: absolute;
+            top: -12px;
+            left: 0;
+            width: 100%;
+            font-weight: 600;
+            text-align: center;
+            transform: translateY(-100%);
+          }
+        }
+
+        .bg-dao-color2 {
+          @include themeChangeMixin(background-color, 2);
+
+          strong {
+            @include fontFamilyData(sb);
+            @include themeChangeMixin(color, 1);
+          }
+        }
+
+        .line-dot {
+          border: 1px dashed $black;
+          margin-left: 60px;
+
+          @include sm {
+            margin-left: 7.69%;
+          }
+        }
+      }
+
+      .smart-contract-inner-flowchart-wrap {
+        position: relative;
+      }
+
+      .smart-contract-inner-flowchart {
+        position: relative;
+        display: flex;
+        width: 100%;
+        align-items: flex-start;
+
+        &::before {
+          @include content;
+
+          position: absolute;
+          left: 0;
+          width: 30px;
+          height: calc(50% + 32px);
+          border: 1px solid $gray60;
+          border-right: 0;
+          transform: translateX(-100%);
+
+          @include sm {
+            width: 3.845%;
+          }
+        }
+
+        &:first-of-type {
+          &::before {
+            top: 50%;
+            border-bottom: 0;
+          }
+        }
+
+        & > li {
+          width: calc((100% - 60px) / 2) !important;
+
+          &:first-child {
+            &::before {
+              @include arrowStyle($position: left);
+            }
+          }
+
+          @include sm {
+            width: 46.153% !important;
+          }
+        }
+
+        & + .smart-contract-inner-flowchart {
+          margin-top: 32px;
+
+          @include sm {
+            margin-top: 20px;
+          }
+
+          &::before {
+            bottom: calc(50% - 1px);
+            border-top: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* 모집중 Dao members */
+.dao-recruiting-members {
+  .title-wrap {
+    @include maxWidthLg;
+
+    .title {
+      @extend %daoRecruitingTitle;
+
+      text-align: center;
+    }
+
+    .desc {
+      @extend %daoRecruitingDesc;
+
+      margin-top: 12px;
+      text-align: center;
+    }
+  }
+
+  .user-list-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 216px;
+    margin-top: 40px;
+
+    @include md {
+      margin-top: 32px;
+    }
+
+    @include sm {
+      margin-top: 28px;
+    }
+  }
+
+  .user-list {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    padding-top: 14px;
+
+    @keyframes scrolling-user {
+      0% {
+        transform: translateX(0);
+      }
+
+      100% {
+        transform: translateX(calc(-1 * 224px * var(--user-show-el)));
+      }
+    }
+  }
+
+  .user-item {
+    @include themeChangeMixin(background-color, 3);
+
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+    padding: 48px 24px 24px;
+    border-radius: 4px;
+    margin: 0 12px;
+    filter: drop-shadow(0 1px 1px rgb(0 0 0 / 10%));
+
+    &.special-user {
+      background-image: url(#{$rootPath}/img/bg_recruiting_members.png);
+      background-position: top center;
+      background-repeat: no-repeat;
+      background-size: contain;
+
+      &::before {
+        @include themeChangeMixin(background-color, 1);
+        @include fontFamilyBody(sb);
+
+        position: absolute;
+        top: 0;
+        left: 50%;
+        padding: 4px 12px;
+        border-radius: 28px;
+        color: $white;
+        content: attr(data-text);
+        transform: translate(-50%, -50%);
+        white-space: nowrap;
+      }
+    }
+
+    .user-image {
+      border: none;
+    }
+
+    .user-name {
+      @include fontFamilyBody(mb);
+
+      margin-top: 16px;
+    }
+
+    .user-greeting {
+      @include fontFamilyBody(sr);
+      @include ellipsis;
+
+      width: 100%;
+      margin-top: 8px;
+      color: $gray40;
+      text-align: center;
+    }
+  }
+}
+
+/* 모집중 상단 대시보드 */
+.recruiting-section {
+  width: $maxWidthLg;
+  border: 1px solid $gray80;
+  border-radius: 4px;
+  margin: 0 auto;
+  background-color: $white;
+
+  @include md {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+  }
+
+  @include sm {
+    width: calc(100% - 40px);
+    margin: 0 20px;
+  }
+
+  .recruiting-section-inner {
+    position: relative;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 35px 60px;
+    gap: 4.334%;
+
+    @include md {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 36px 40px;
+      gap: 4.07%;
+    }
+
+    @include sm {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .recruiting-section-columns {
+      &:first-child {
+        width: 100%;
+
+        // width: 33.334%;
+        min-width: 304px;
+
+        @include md {
+          width: 33.774%;
+        }
+
+        @include sm {
+          min-width: 100%;
+        }
+      }
+
+      &:nth-child(2) {
+        width: 100%;
+
+        // width: 31.334%;
+        min-width: 304px;
+
+        @include md {
+          // width: 33.774%;
+          width: calc(100% - 16.276% - 33.774% - (4.07% * 2));
+        }
+
+        @include sm {
+          min-width: 100%;
+        }
+      }
+
+      &:last-child {
+        width: auto;
+
+        // width: 16.667%;
+        // min-width: calc(100% - 332px - 331px - (40px * 2));
+
+        button {
+          width: 100%;
+          min-width: 200px;
+        }
+
+        @include md {
+          width: 16.276%;
+
+          // min-width: 160px;
+
+          button {
+            min-width: 160px;
+            margin-top: 28px;
+          }
+        }
+
+        @include sm {
+          width: 100%;
+        }
+      }
+    }
+
+    .recruiting-section-tit {
+      @include fontFamilyHeading(s);
+
+      display: block;
+    }
+
+    .recruiting-chart-data {
+      display: flex;
+
+      @include sm {
+        display: block;
+      }
+
+      .data-percent {
+        position: relative;
+        padding-right: 25px;
+
+        &::after {
+          @include content;
+
+          position: absolute;
+          top: 0;
+          right: 13px;
+          width: 1px;
+          height: 24px;
+          background-color: $gray80;
+        }
+
+        @include sm {
+          display: block;
+          padding-right: 0;
+
+          &::after {
+            display: none;
+          }
+        }
+      }
+
+      .data-percent,
+      .data-dollar {
+        @include fontFamilyData(m2);
+      }
+
+      .data-dollar {
+        @include sm {
+          display: block;
+          padding-top: 12px;
+        }
+      }
+
+      .data-unit {
+        padding-left: 4px;
+        font-weight: 400;
+
+        @include fontFamilyData(sr);
+      }
+
+      & + .recruiting-wrap {
+        margin-top: 12px;
+
+        @include sm {
+          margin-top: 8px;
+        }
+      }
+    }
+
+    .recruiting-chart-data,
+    .remaining-period-dday {
+      padding-top: 20px;
+    }
+
+    .remaining-period-dday {
+      strong {
+        @include fontFamilyData(lr);
+      }
+
+      span {
+        @include fontFamilyData(cs);
+      }
+
+      @include md {
+        gap: 30px;
+
+        strong {
+          @include fontsizeMixin(32, 32);
+        }
+      }
+    }
+
+    .remaining-period-date {
+      position: relative;
+
+      &::after {
+        @include content;
+
+        position: absolute;
+        top: 18px;
+        left: calc(50% - 3px);
+        width: 1px;
+        height: 16px;
+        background-color: $gray80;
+
+        @include md {
+          display: none;
+        }
+
+        @include sm {
+          display: none;
+        }
+      }
+
+      @include sm {
+        padding-bottom: 0;
+
+        & > span {
+          position: relative;
+          width: 50%;
+          padding-top: 28px;
+          text-align: left;
+
+          & + span {
+            margin-top: 0;
+          }
+
+          .tag {
+            position: absolute;
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+// dao station 3points
+.dao-station-points {
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include md {
+    padding: 0 44px;
+  }
+
+  @include sm {
+    padding: 0 20px;
+  }
+
+  @at-root .dao-wrap & {
+    padding: 0;
+  }
+
+  .title-wrap {
+    text-align: center;
+
+    .title {
+      @extend %daoRecruitingTitle;
+
+      @at-root .dao-wrap & {
+        @include fontFamilyHeading(mb);
+
+        text-align: left;
+      }
+    }
+  }
+
+  .dao-points-list {
+    display: flex;
+    margin-top: 40px;
+    column-gap: 48px;
+    row-gap: 28px;
+
+    @include md {
+      flex-wrap: wrap;
+      margin-top: 32px;
+    }
+
+    @include sm {
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    @at-root .dao-wrap & {
+      margin-top: 20px;
+      column-gap: 54px;
+    }
+
+    & > li {
+      padding-top: 60px;
+      background-position: top left;
+      background-repeat: no-repeat;
+      background-size: auto 40px;
+
+      @at-root .wonder-wrap & {
+        @for $i from 1 through 3 {
+          &:nth-child(#{$i}) {
+            background-image: url("#{$rootPath}/icon/ico_point#{$i}_wonder.png");
+          }
+        }
+      }
+
+      @include md {
+        width: 100%;
+      }
+
+      @include sm {
+        width: 100%;
+        padding-top: 52px;
+        background-size: auto 32px;
+      }
+    }
+
+    .point-title {
+      @include fontFamilyHeading(mb);
+
+      // TODO: 모집완료 화면에서의 타이틀 스타일은 디자인 확정 후 적용
+    }
+
+    .point-desc {
+      @include fontFamilyBody(mr);
+
+      margin-top: 8px;
+      color: $gray40;
+
+      @include md {
+        margin-top: 12px;
+      }
+
+      @include sm {
+        margin-top: 12px;
+      }
+    }
+
+    .list-type-dot {
+      margin-top: 8px;
+
+      @include md {
+        margin-top: 12px;
+      }
+
+      @include sm {
+        margin-top: 12px;
+      }
+
+      li {
+        // TODO: 폰트 스타일 확인 필요 (구간별 폰트 다름, 완료화면이랑 다름)
+        @include fontFamilyBody(cl);
+
+        color: $gray40;
+
+        & + li {
+          margin-top: 8px;
+        }
+
+        &::before {
+          top: 50%;
+          background-color: $gray40;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+}
+
+// dao station our mission
+.dao-station-mission {
+  @include themeChangeMixin(background-color, 3);
+
+  display: flex;
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @include md {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  @include sm {
+    flex-direction: column;
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  @at-root .dao-wrap & {
+    margin-right: 0;
+    margin-left: 0;
+  }
+
+  & > div {
+    width: 50%;
+
+    @include sm {
+      width: 100%;
+    }
+  }
+
+  .img-block {
+    min-height: 320px;
+    background: url("#{$rootPath}/img/bg_station_mission.png") no-repeat center center / cover;
+
+    @include md {
+      // height: 400px;
+    }
+
+    @include sm {
+      min-height: 160px;
+    }
+  }
+
+  .text-block {
+    padding: 40px 20px 40px 40px;
+
+    @include md {
+      padding: 32px 30px 24px 24px;
+    }
+
+    @include sm {
+      padding: 34px 20px;
+    }
+
+    @at-root .dao-wrap & {
+      padding: 40px 40px 32px;
+    }
+
+    @include daoLg {
+      padding: 40px 40px 16px;
+    }
+
+    .title {
+      @include fontFamilyDp(mb);
+
+      @at-root .dao-wrap & {
+        @include fontFamilyHeading(mb);
+      }
+    }
+
+    .desc {
+      @include fontFamilyBody(mr);
+
+      margin-top: 12px;
+      color: $gray30;
+
+      @include md {
+        margin-top: 8px;
+      }
+
+      @include sm {
+        margin-top: 22px;
+      }
+
+      @at-root .dao-wrap & {
+        margin-top: 20px;
+      }
+    }
+
+    .button-wrap {
+      margin-top: 24px;
+
+      @include md {
+        margin-top: 20px;
+      }
+
+      @include sm {
+        margin-top: 20px;
+      }
+    }
+
+    .mission-link {
+      @include fontFamilyButton(mb);
+
+      display: inline-flex;
+      align-items: center;
+      margin-top: 40px;
+      gap: 8px;
+
+      @include md {
+        margin-top: 36px;
+      }
+
+      @include sm {
+        margin-top: 32px;
+      }
+
+      span {
+        @include fontFamilyButton(mb);
+      }
+
+      svg {
+        width: 24px;
+        height: 24px;
+        flex-shrink: 0;
+
+        @include md {
+          width: 32px;
+          height: 32px;
+        }
+      }
+
+      @at-root .dao-wrap & {
+        margin-top: 32px;
+      }
+    }
+  }
+}
+
+.dao-protocol-container {
+  @include themeChangeMixin(background-color, 3);
+
+  padding: 108px 0 85px;
+
+  @at-root .dao-content-wrap & {
+    padding: 0;
+
+    @include daoMd {
+      padding: 0;
+    }
+
+    @include sm {
+      padding: 0;
+    }
+  }
+
+  @include md {
+    padding-top: 40px;
+  }
+
+  @include sm {
+    padding: 40px 0 60px;
+  }
+
+  .dao-box-wrap.half .protocol-info h4 {
+    padding: 2px 0;
+
+    @include md {
+      padding: 0;
+    }
+  }
+
+  .protocol-inner {
+    @include daoSm {
+      padding-top: 20px;
+    }
+
+    @at-root .dao-recruiting-container & {
+      @include maxWidthLg;
+
+      @include md {
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+
+      @include sm {
+        padding-right: 0;
+        padding-left: 0;
+      }
+    }
+  }
+
+  .protocol-title {
+    padding-bottom: 24px;
+
+    @include md {
+      padding-bottom: 28px;
+    }
+
+    @at-root .dao-content-wrap & {
+      @include sm {
+        padding-right: 20px;
+        padding-left: 20px;
+      }
+    }
+
+    @include sm {
+      padding: 0 20px 20px;
+    }
+  }
+
+  .protocol-info {
+    h4 {
+      @include fontFamilyHeading(mb);
+    }
+
+    p {
+      margin-top: 12px;
+
+      @include fontFamilyBody(mr);
+    }
+
+    .ant-tabs-tab-btn {
+      @include md {
+        height: 56px !important;
+      }
+
+      @include sm {
+        height: 50px !important;
+      }
+    }
+
+    @include sm {
+      padding: 24px 20px;
+
+      .ant-tabs-nav {
+        padding: 0 20px;
+      }
+    }
+  }
+
+  .protocol-system-image {
+    overflow: auto;
+    margin-top: 20px;
+
+    @include sm {
+      margin-top: 16px;
+    }
+
+    svg {
+      width: 100%;
+      height: 100%;
+
+      [class*="dao-color"] {
+        @include themeChangeMixin(fill, 1);
+        @include themeChangeMixin(stroke, 1);
+      }
+    }
+  }
+
+  .protocol-system-tab {
+    margin: 24px -24px 0;
+
+    @include sm {
+      margin: 24px -20px 0;
+    }
+
+    .ant-tabs {
+      .ant-tabs-nav {
+        border-bottom: 1px solid $gray80;
+        margin-bottom: 0;
+
+        .ant-tabs-nav-wrap {
+          &::after {
+            @include daoSm {
+              width: 100px;
+            }
+
+            @include sm {
+              width: 100px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .protocol-system-content {
+    padding: 24px 24px 22px;
+
+    @include sm {
+      padding: 20px 20px 16px;
+    }
+
+    dl {
+      & + dl {
+        margin-top: 24px;
+      }
+    }
+
+    dt {
+      @include fontFamilyBody(tb);
+    }
+
+    dd {
+      margin-top: 8px;
+      color: $gray30;
+
+      @include fontFamilyBody(mr);
+
+      ul {
+        width: 100%;
+        margin-top: 8px;
+
+        ul {
+          margin-top: 4px;
+        }
+
+        li {
+          position: relative;
+          align-items: center;
+          padding-left: 12px;
+          color: $gray30;
+          font-weight: normal;
+
+          @include dotStyle;
+
+          // .important {
+          //   font-weight: 700;
+          // }
+
+          & + li {
+            margin-top: 4px;
+          }
+
+          // &.has-depth2 {
+          //   font-weight: 700;
+          // }
+        }
+      }
+    }
+  }
+}
+
+.dao-box-wrap {
+  display: flex;
+  flex-wrap: wrap;
+
+  & + .dao-box-wrap {
+    margin-top: 24px;
+
+    @include daoMd {
+      margin-top: 20px;
+    }
+
+    @include daoSm {
+      margin-top: 8px;
+    }
+
+    @include md {
+      margin-top: 12px;
+    }
+
+    @include sm {
+      margin-top: 8px;
+    }
+  }
+
+  &.dao-graph {
+    $cardWidth: 344px;
+
+    display: flex;
+    width: calc(100% - #{$cardWidth});
+
+    & + .dao-common-card {
+      width: $cardWidth;
+    }
+  }
+}
+
+.dao-box {
+  display: flex;
+  width: 100%;
+  flex: 1 0 auto;
+  flex-direction: column;
+  padding: 18px 24px 24px;
+  border-radius: 4px;
+  background: $gray100;
+
+  @include daoMd {
+    padding: 16px 24px 24px;
+  }
+
+  @include daoSm {
+    padding: 14px 20px 20px;
+    border-radius: 0;
+  }
+
+  &.transparent {
+    padding: 0;
+    background: transparent;
+
+    @include daoSm {
+      padding: 0;
+    }
+
+    .dao-common-card {
+      padding: 24px;
+      border-radius: 4px;
+      background: $gray100;
+
+      @include daoSm {
+        padding: 24px 20px;
+      }
+
+      & + .dao-common-card {
+        margin-top: 24px;
+
+        @include daoMd {
+          margin-top: 20px;
+        }
+
+        @include daoSm {
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+
+  &.full {
+    padding: 0;
+  }
+
+  @at-root .dao-box-wrap.half & {
+    width: calc(50% - 12px);
+  }
+
+  @at-root .dao-box-wrap.ratio & {
+    width: calc(67% - 12px);
+
+    & + .dao-box {
+      width: calc(33% - 12px);
+
+      @include daoXl {
+        min-height: 351px;
+      }
+
+      @include daoLg {
+        min-height: 351px;
+      }
+    }
+  }
+
+  @at-root .dao-box-wrap.half &,
+  .dao-box-wrap.ratio & {
+    @include daoMd {
+      width: 100%;
+    }
+
+    @include daoSm {
+      width: 100%;
+    }
+  }
+
+  & + .dao-box {
+    margin-left: 24px;
+
+    @include daoMd {
+      margin-top: 12px;
+      margin-left: 0;
+    }
+
+    @include daoSm {
+      margin-top: 8px;
+      margin-left: 0;
+    }
+  }
+
+  .chart-box {
+    display: flex;
+    flex: 1 0 auto;
+    flex-direction: column;
+
+    .title {
+      display: block;
+      height: calc(60px - 18px);
+      padding: 0 24px 18px;
+      border-bottom: 1px solid $gray80;
+      margin: -1px -24px 0;
+
+      @include fontFamilyNHeading(MB_F);
+
+      @include daoMd {
+        height: calc(56px - 16px);
+        padding-bottom: 16px;
+      }
+
+      @include daoSm {
+        height: calc(52px - 14px);
+        padding: 0 0 14px;
+        margin: 0;
+      }
+    }
+
+    .chart-area {
+      display: flex;
+      flex: 1 0 auto;
+      flex-direction: column;
+      padding-top: 20px;
+
+      .info-area {
+        display: flex;
+        justify-content: space-between;
+
+        .left {
+          .main-info {
+            @include daoSm {
+              flex-direction: column;
+              align-items: flex-start;
+            }
+
+            > .figure {
+              display: flex;
+              flex-wrap: wrap;
+              align-items: flex-start;
+
+              @include daoSm {
+                flex-flow: column wrap;
+
+                &.home {
+                  flex-flow: initial;
+                }
+              }
+
+              &.trust {
+                @include daoSm {
+                  flex-direction: row;
+                  align-items: center;
+                }
+              }
+
+              .amount-data {
+                @include fontFamilyData(m2);
+              }
+
+              .chart-unit {
+                @include fontFamilyData(sr);
+
+                display: inline-block;
+                margin-left: 4px;
+                font-weight: 400;
+              }
+            }
+
+            .ant-tag {
+              margin-left: 8px;
+            }
+
+            .dollar-tag {
+              @include fontFamilyChip(mb);
+
+              display: inline-flex;
+              height: 22px;
+              align-items: center;
+              padding: 0 8px;
+              border-radius: 4px;
+              margin-left: 8px;
+              background-color: $gray90;
+              color: $gray30;
+              vertical-align: top;
+
+              @include daoLg {
+                margin-top: 2px;
+              }
+
+              @include md {
+                margin-top: 3px;
+              }
+
+              @include sm {
+                display: flex;
+                width: fit-content;
+                margin-top: 8px;
+                margin-left: 0;
+              }
+            }
+
+            .flow-info {
+              display: inline-block;
+              padding: 6px 8px;
+              border-radius: 4px;
+              margin-left: 24px;
+              background-color: $gray90;
+
+              @include daoSm {
+                margin-top: 8px;
+                margin-left: 0;
+              }
+
+              .info-row {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                @include daoSm {
+                  align-items: center;
+                }
+
+                & + .info-row {
+                  margin-top: 8px;
+
+                  @include daoSm {
+                    margin-top: 6px;
+                  }
+                }
+              }
+
+              .info-name {
+                @include fontFamilyChip(s);
+
+                color: $gray50;
+              }
+
+              .figure {
+                @include fontFamilyChip(mb);
+
+                margin-left: 8px;
+                color: $gray30;
+
+                &.first {
+                  margin-right: 8px;
+                  margin-left: 0;
+                }
+
+                &.for-incinerator {
+                  margin-left: 4px;
+                }
+              }
+
+              .chart-unit {
+                @include fontFamilyData(sr);
+              }
+            }
+          }
+
+          .wemix-unit {
+            display: block;
+            margin-top: 4px;
+            color: $gray30;
+            font-weight: 400;
+
+            @include fontFamilyData(cs);
+
+            & + .date {
+              margin-top: 10px;
+            }
+          }
+
+          .date {
+            @include fontFamilyNCaption(XSR_V_Caption); // 퍼블 검수2 - 4/5 DAO 추가 - 공통가이드 PC 에서 이 부분 폰트가 다른 상태임. 참고.
+
+            display: block;
+            margin-top: 8px;
+            color: $gray50;
+            font-weight: 400;
+
+            @include daoSm {
+              margin-top: 8px;
+            }
+          }
+        }
+
+        .right {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+
+          .period {
+            .ant-radio-group {
+              display: flex;
+
+              .ant-radio-button-wrapper {
+                color: $gray50;
+              }
+            }
+          }
+
+          .total {
+            display: flex;
+            align-items: center;
+            padding: 6px 8px;
+            border-radius: 4px;
+            background-color: $gray90;
+
+            @include daoSm {
+              flex-direction: column;
+              align-items: flex-end;
+            }
+
+            .info-name {
+              @include fontFamilyData(cs);
+
+              color: $gray50;
+            }
+
+            .info-detail {
+              display: flex;
+              align-items: center;
+              margin-left: 8px;
+
+              @include daoSm {
+                margin-top: 8px;
+                margin-left: 0;
+              }
+            }
+
+            .figure {
+              @include fontFamilyData(sb);
+
+              color: $gray30;
+            }
+
+            .unit {
+              @include fontFamilyData(cs);
+
+              margin-left: 2px;
+              color: $gray30;
+            }
+          }
+
+          .treasury-custom-legend {
+            @include themeChangeMixin(background-color, 3);
+
+            display: flex;
+            padding: 5px 11px;
+            border: 1px solid $gray80;
+            border-radius: 4px;
+            margin-top: 8px;
+
+            li {
+              @include fontFamilyData(cs);
+
+              position: relative;
+              padding-left: 12px;
+              margin-right: 0;
+
+              &::after {
+                position: absolute;
+                top: 50%;
+                left: 0;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                content: "";
+                transform: translateY(-50%);
+              }
+
+              & + li {
+                margin-left: 10px;
+              }
+
+              &:nth-child(1)::after {
+                @include themeChangeMixin(background-color, 1);
+              }
+
+              &:nth-child(2)::after {
+                @include themeChangeMixin(background-color, 2);
+              }
+
+              &:nth-child(3)::after {
+                @include themeChangeMixin(border-color, 1);
+
+                border: 2px solid;
+              }
+            }
+
+            &.incinerator {
+              li {
+                &:nth-child(1)::after {
+                  background-color: $gray30;
+                }
+
+                &:nth-child(2)::after {
+                  @include themeChangeMixin(background-color, 1);
+                }
+              }
+            }
+          }
+
+          .tooltip-button-wrap {
+            display: flex;
+            align-items: center;
+            padding: 4px 0;
+            margin-top: 12px;
+            margin-right: -4px;
+
+            .tooltip-name {
+              @include fontFamilyChip(mr);
+
+              color: $gray60;
+            }
+
+            .chart-area-tooltip-button {
+              padding: 0 3px 0 4px;
+
+              svg path {
+                fill: $gray30;
+              }
+            }
+          }
+
+          .ant-popover-inner-content .treasury-custom-legend {
+            display: block;
+            padding: 7px 8px;
+            border: none;
+            border-radius: 2px;
+            margin-top: 0;
+            background-color: $gray20;
+
+            li {
+              color: $gray100;
+
+              & + li {
+                margin-top: 6px;
+                margin-left: 0;
+              }
+
+              &:nth-child(3)::after {
+                background-color: $gray100;
+              }
+            }
+          }
+
+          .ant-popover {
+            transform: translateX(2px);
+          }
+
+          .ant-popover-arrow {
+            right: -2px;
+          }
+        }
+      }
+
+      .chart-wrap {
+        position: relative;
+        display: flex;
+        width: 100%;
+        flex: 1 0 auto;
+        flex-direction: column;
+        margin-top: 20px;
+
+        > .chart-wrap {
+          margin-top: 0;
+        }
+
+        .chart-button {
+          position: absolute;
+
+          // 임시 위치
+          top: calc(50% - 12px);
+          width: 24px;
+          height: 24px;
+          padding: 5px;
+          border: 1px solid $gray00;
+
+          @include daoSm {
+            top: 75px;
+          }
+
+          svg {
+            width: 12px;
+            height: 12px;
+          }
+
+          &:nth-child(2) {
+            left: 0;
+            transform: rotate(90deg);
+          }
+
+          &:last-child {
+            // 임시 위치
+            right: 50px;
+            transform: rotate(-90deg);
+          }
+        }
+
+        &.home .negative-chart-wrap,
+        &.treasury .line-chart-wrap,
+        &.obelisk .filled-chart-wrap,
+        &.trust .filled-chart-wrap,
+        &.incinerator .line-mix-chart-wrap {
+          position: relative;
+          display: flex;
+          height: auto;
+          flex: 1 0 auto;
+
+          @include daoMd {
+            height: 200px;
+          }
+
+          @include daoSm {
+            height: 180px;
+          }
+        }
+
+        &.treasury {
+          .am5-html-container {
+            > div {
+              display: block !important;
+              overflow: initial !important;
+              width: auto !important;
+              min-width: 20px;
+              min-height: 20px;
+              padding-left: 0 !important;
+              opacity: 1 !important;
+
+              &:nth-child(1) {
+                transform: translateY(9px);
+              }
+
+              &:nth-child(2) {
+                transform: translateY(-18px);
+              }
+
+              .total-tooltip {
+                position: relative;
+                padding: 6px 8px;
+                border-radius: 2px;
+                background-color: $gray20;
+
+                @include daoSm {
+                  padding: 4px 6px;
+                }
+
+                span {
+                  @include fontFamilyBody(sb);
+
+                  color: $gray100;
+                }
+
+                &::after {
+                  position: absolute;
+                  top: 50%;
+                  left: -10px;
+                  border-width: 5px;
+                  border-style: solid;
+                  border-color: transparent $gray20 transparent transparent;
+                  content: "";
+                  transform: translateY(-50%);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &.dao-home-type {
+    .dao-title-box {
+      @include daoSm {
+        display: block;
+      }
+    }
+  }
+}
+
+.dao-content-wrap {
+  // @include daoSm {
+  //   .dao-title-box {
+  //     &.img {
+  //       display: none;
+  //     }
+  //   }
+  // }
+
+  .dao-title-box {
+    margin-bottom: 16px;
+
+    @include daoMd {
+      margin-bottom: 24px;
+    }
+
+    @include daoSm {
+      display: none;
+    }
+
+    & + div {
+      @include daoSm {
+        margin-top: 8px;
+      }
+    }
+  }
+}
+
+.dao-title-box {
+  &.img {
+    display: flex;
+    justify-content: space-between;
+
+    @include sm {
+      flex-direction: column-reverse;
+      padding: 0 20px 40px;
+      text-align: center;
+    }
+
+    .img-wrap {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .title-wrap {
+    .title {
+      @include fontFamilyNHeading(LB_V);
+
+      color: $gray00;
+
+      .ant-btn {
+        @include fontFamilyNHeading(MB_F);
+      }
+    }
+
+    .desc {
+      @include fontFamilyNBody(MR_F);
+
+      margin-top: 16px;
+      color: $gray00;
+      white-space: pre-line;
+
+      @include daoMd {
+        white-space: normal;
+      }
+
+      @include sm {
+        margin-top: 12px;
+      }
+    }
+  }
+
+  .img-wrap {
+    padding: 0 32px;
+    margin-left: 24px;
+
+    @include daoLg {
+      padding: 0 3px;
+    }
+
+    svg {
+      width: 135px;
+      height: 110px;
+    }
+
+    @include sm {
+      margin: 0 auto 24px;
+    }
+  }
+}
+
+.dao-chart-top {
+  .chart-info-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .title {
+      @include fontFamilyHeading(mb);
+
+      color: $gray00;
+    }
+
+    .date {
+      @include fontFamilyData(cs);
+
+      color: $gray60;
+    }
+  }
+
+  .chart-detail-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    margin-top: 20px;
+
+    @include daoMd {
+      margin-top: 24px;
+    }
+
+    @include daoSm {
+      display: block;
+    }
+
+    .chart-summary-wrap {
+      &:only-child {
+        width: 100%;
+
+        .summary-wrap {
+          width: 50%;
+
+          @include daoSm {
+            width: 100%;
+          }
+        }
+      }
+
+      .summary-wrap {
+        display: inline-block;
+        padding: 12px;
+        border-radius: 4px;
+
+        @include daoSm {
+          display: block;
+        }
+
+        &.active {
+          @include themeChangeMixin(background-color, 1);
+
+          min-width: 280px;
+
+          .name {
+            color: $gray100;
+          }
+
+          .value {
+            .num {
+              @include fontFamilyData(m2);
+
+              color: $gray100;
+            }
+
+            .unit {
+              color: $gray100;
+
+              @include fontFamilyData(sr);
+            }
+          }
+
+          .sub-value {
+            color: $gray100;
+          }
+        }
+
+        &.sub {
+          @include daoSm {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 8px;
+            padding: {
+              right: 0;
+              left: 0;
+            }
+
+            .value {
+              margin-top: 0;
+            }
+          }
+        }
+
+        .name {
+          display: block;
+
+          @include fontFamilyData(cs);
+        }
+
+        .value {
+          display: block;
+          margin-top: 8px;
+
+          .num {
+            @include fontFamilyData(m3);
+
+            color: $gray00;
+          }
+
+          .unit {
+            margin-left: 4px;
+
+            @include fontFamilyData(cl);
+
+            color: $gray00;
+          }
+        }
+
+        .sub-value {
+          margin-left: 4px;
+
+          @include fontFamilyData(sr);
+
+          color: $gray00;
+        }
+      }
+    }
+
+    .chart-control-wrap {
+      @include daoSm {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 12px;
+      }
+    }
+  }
+}
+
+.individual-home-chart {
+  .mypage-chart-area .line-chart-wrap {
+    height: 240px;
+
+    @include daoMd {
+      height: 280px;
+    }
+  }
+}
+
+// dao treasury pages
+// dao incinerator
+.dao-individual-content-wrap {
+  @include sm {
+    // margin: 0 -20px;
+  }
+
+  .dao-individual-graph-wrap {
+    width: 100%;
+
+    &.treasury {
+      .dao-box-wrap {
+        .dao-box:first-child {
+          @include daoXl {
+            width: 712px;
+          }
+        }
+
+        .dao-box:last-child {
+          @include daoXl {
+            width: 344px;
+          }
+        }
+      }
+    }
+
+    & ~ .dao-individual-table-area {
+      border-radius: 4px;
+      margin-top: 24px;
+
+      @include daoMd {
+        margin-top: 12px;
+      }
+
+      @include daoSm {
+        margin-top: 8px;
+      }
+    }
+  }
+
+  .dao-chart-top {
+    &.treasury {
+      .chart-detail-wrap {
+        @include sm {
+          flex-direction: column;
+        }
+
+        .chart-summary-wrap {
+          min-width: 280px;
+        }
+      }
+
+      .btn-wrap {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 24px;
+
+        @include sm {
+          margin-top: 0;
+        }
+      }
+
+      button {
+        display: flex;
+        width: 24px;
+        height: 24px;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid $gray00;
+
+        &:first-child {
+          transform: rotate(90deg);
+        }
+
+        &:last-child {
+          margin-left: 8px;
+          transform: rotate(-90deg);
+        }
+
+        svg {
+          font-size: 12px;
+        }
+
+        &:disabled {
+          border-color: $gray80;
+          cursor: default;
+
+          svg path {
+            stroke: $gray80;
+          }
+        }
+      }
+    }
+
+    .char-control-wrap {
+      @include sm {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 16px;
+      }
+    }
+  }
+}
+
+// dao treasury card component
+.dao-common-card {
+  padding: 0 16px 16px;
+
+  @include md {
+    padding: 0 24px 24px;
+  }
+
+  @include daoSm {
+    padding: 0 20px 20px;
+  }
+
+  &.trust-report,
+  &.incinerator-report {
+    .card-item-list {
+      .card-item {
+        &:nth-child(2) {
+          .card-notice {
+            width: calc(100% - 17px);
+          }
+        }
+      }
+    }
+  }
+
+  .card-title {
+    padding: 18px 0;
+
+    @include md {
+      padding: 16px 0;
+    }
+
+    @include sm {
+      padding: 14px 0;
+    }
+
+    h4 {
+      padding: 0;
+    }
+  }
+
+  .card-title,
+  .card-title h4,
+  .card-title span {
+    // padding: 1px 0;
+
+    @include fontFamilyNHeading(MB_F);
+  }
+
+  .card-item-list {
+    .card-item {
+      padding: 16px 4px;
+      margin: 0 12px;
+
+      @include md {
+        display: flex;
+        padding: 21px 4px;
+      }
+
+      @include sm {
+        padding: 16px;
+        margin: 0;
+      }
+
+      & + .card-item {
+        border-top: 1px solid $gray80;
+      }
+
+      .card-notice {
+        @include fontFamilyNCaption(MR_F_Caption);
+
+        display: block;
+        color: $gray30;
+
+        svg {
+          display: inline-block;
+          margin-right: 4px;
+
+          @include md {
+            width: 16px;
+            height: 16px;
+          }
+        }
+
+        &.outflow {
+          white-space: pre-line;
+
+          svg {
+            transform: rotate(180deg);
+
+            circle {
+              stroke: $gray00;
+            }
+
+            path {
+              fill: $gray00;
+            }
+          }
+        }
+
+        & + .card-unit {
+          margin-top: 8px;
+
+          @include daoMd {
+            margin-top: 0;
+          }
+        }
+
+        > button {
+          margin-left: 4px;
+
+          svg {
+            width: 12px;
+            margin-right: 0;
+          }
+        }
+      }
+
+      .card-unit {
+        @include fontFamilyData("sb");
+
+        display: inline-block;
+        flex: 1 0 auto;
+        text-align: right;
+
+        &.active {
+          @include themeChangeMixin(color, 1);
+
+          & > .unit {
+            @include themeChangeMixin(color, 1);
+          }
+        }
+
+        & > .unit {
+          @include fontFamilyData(cs);
+
+          margin-left: 4px;
+          font-weight: normal;
+        }
+      }
+
+      .card-unit-dollar {
+        @include fontFamilyData(cs);
+
+        padding-left: 8px;
+        color: $gray30;
+
+        @include md {
+          display: flex;
+          align-items: flex-end;
+          padding-bottom: 3px;
+        }
+
+        @include sm {
+          display: inline-flex;
+          align-items: flex-end;
+          padding-bottom: 3px;
+        }
+      }
+
+      .ant-popover {
+        min-width: 240px;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+
+        .ant-popover {
+          min-width: 260px;
+
+          .ant-popover-content {
+            white-space: pre-line;
+          }
+        }
+      }
+
+      &.sub-data {
+        .card-unit {
+          @include fontFamilyData(sb);
+
+          .unit {
+            margin-left: 4px;
+
+            @include fontFamilyData(cs);
+
+            font-weight: 400;
+          }
+        }
+
+        .card-unit-dollar {
+          font-weight: 400;
+
+          @include daoMd {
+            display: inline-flex;
+          }
+        }
+      }
+
+      .unstake-date {
+        @include fontFamilyNCaption(SR_F_Caption);
+
+        display: block;
+        margin-top: 4px;
+        color: $gray60;
+        font-weight: 400;
+
+        @include md {
+          margin-top: 0;
+        }
+      }
+    }
+
+    &.primary {
+      border: 1px solid transparent;
+      border-radius: 4px;
+
+      @include themeChangeMixin(border-color, 2);
+      @include themeChangeMixin(background-color, 4);
+
+      .card-item {
+        padding: 20px 0;
+        margin: 0 16px;
+
+        @include md {
+          padding: 24px 16px;
+          margin: 0;
+        }
+
+        @include sm {
+          padding: 18px 0;
+          margin: 0 16px;
+        }
+
+        .card-unit {
+          @include fontFamilyNNum(M2B_V);
+
+          text-align: left;
+
+          @include md {
+            text-align: right;
+          }
+
+          @include sm {
+            margin-top: 12px;
+          }
+
+          .unit {
+            @include fontFamilyData(cl);
+
+            margin-left: 0;
+          }
+        }
+      }
+
+      & + .card-item-list {
+        margin-top: 8px;
+
+        @include sm {
+          margin-top: 4px;
+        }
+      }
+    }
+
+    /* 23.03.29 수정: 검수 - Treasury 기준으로 하단 패딩 필요하여 주석. 다른 페이지 확인 필요. */
+    // &:last-child {
+    //   .card-item:last-child {
+    //     padding-bottom: 0;
+    //   }
+    // }
+  }
+}
+
+.notice-list-wrap {
+  .notice-list-inner {
+    .notice-title-wrap {
+      position: relative;
+      padding: 16px 56px 16px 8px;
+      border-bottom: 1px solid $gray80;
+
+      @include sm {
+        padding: 20px 0;
+      }
+
+      .tag {
+        & + .title {
+          margin-top: 2px;
+
+          @include sm {
+            margin-top: 12px;
+          }
+        }
+      }
+
+      .title {
+        display: block;
+
+        @include fontFamilyNBody(MB_F);
+      }
+
+      .date-wrap {
+        margin-top: 8px;
+
+        @include sm {
+          display: flex;
+          justify-content: space-between;
+        }
+
+        .date {
+          color: $gray60;
+
+          @include fontFamilyBody(sr);
+        }
+
+        .attachment {
+          position: absolute;
+          top: 50%;
+          right: 8px;
+          width: 16px;
+          height: 16px;
+          font-size: 16px;
+          transform: translateY(-50%);
+
+          @include sm {
+            position: static;
+            transform: none;
+          }
+        }
+      }
+    }
+  }
+
+  .pagination-wrap {
+    margin-top: 0;
+
+    @include sm {
+      padding: 12px 0;
+    }
+  }
+}
+
+.dao-table-wrap {
+  .ant-table-empty .ant-table-tbody {
+    tr {
+      &.ant-table-placeholder {
+        .ant-table-cell {
+          .empty-wrap {
+            height: 176px;
+
+            @include daoMd {
+              height: 180px;
+            }
+
+            @include daoSm {
+              height: 180px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .ant-table-filter-column {
+    justify-content: center;
+
+    .ant-table-column-title {
+      flex: inherit;
+    }
+  }
+
+  .currency-td,
+  .amount-td {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.left {
+      justify-content: flex-start;
+    }
+  }
+
+  .operating-td {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    span {
+      margin-right: 4px;
+    }
+  }
+
+  .currency-td {
+    span {
+      margin-right: 4px !important;
+    }
+
+    svg {
+      margin-left: 4px;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .amount-td-amount {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    & + .amount-td-amount {
+      margin-top: 3px;
+    }
+  }
+
+  .amount-td-amount,
+  .amount-td {
+    svg {
+      margin-right: 4px;
+    }
+
+    &.outflow {
+      svg {
+        transform: rotate(180deg);
+
+        path {
+          fill: $positive;
+        }
+
+        circle {
+          stroke: $positive;
+        }
+      }
+    }
+  }
+
+  .show-more-btn {
+    display: flex;
+    justify-content: center;
+    padding: 24px 0;
+    margin-top: 12px;
+
+    @include sm {
+      padding: 18px 0;
+      margin-top: 8px;
+    }
+
+    button {
+      @include fontFamilyButton(sr);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    svg {
+      width: 12px;
+      margin-left: 4px;
+    }
+  }
+
+  .incinerator-table-select {
+    width: 280px;
+
+    .ant-select-dropdown.select-size-md-dropdown {
+      top: 40px !important;
+    }
+
+    & + .ant-table-wrapper {
+      margin-top: 16px;
+
+      @include daoLg {
+        margin-top: 12px;
+      }
+    }
+  }
+
+  .purchase-amount-cell {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .pagination-wrap {
+    .ant-pagination-item:not(.ant-pagination-item-active) {
+      background-color: transparent;
+    }
+  }
+}
+
+// DaoIndividualHomeCommunity
+.community-box-wrap {
+  & + .community-box-wrap {
+    padding-top: 20px;
+    margin-top: 20px;
+  }
+
+  .community-list-wrap {
+    display: flex;
+
+    @include daoSm {
+      height: 306px;
+    }
+
+    .swiper {
+      width: 100%;
+
+      .swiper-pagination {
+        display: none;
+
+        @include daoSm {
+          display: flex;
+          margin-top: -8px;
+        }
+      }
+    }
+
+    .swiper-discuss-scrollbar {
+      display: none;
+    }
+  }
+}
+
+.dao-discuss-wrap {
+  display: block;
+  padding: 0;
+  border: 1px solid $gray80;
+  border-radius: 4px;
+  margin: 0;
+  font-size: 0;
+
+  @include daoMd {
+    min-height: 302px;
+  }
+
+  @include daoSm {
+    min-height: 286px;
+  }
+
+  .discuss-container {
+    padding: 24px 19px 68px;
+
+    @at-root .dao-home-type & {
+      padding: 20px 19px 68px;
+    }
+
+    @include daoMd {
+      padding: 20px 19px 48px;
+    }
+
+    @include daoSm {
+      padding: 20px 19px 42px;
+    }
+
+    .discuss-title {
+      strong {
+        display: block;
+
+        @include fontFamilyBody(lb);
+
+        color: $gray00;
+      }
+    }
+
+    .discuss-desc {
+      height: 54px;
+      margin-top: 12px;
+      color: $gray00;
+
+      @include ellipsis(3);
+      @include fontFamilyBody(sr);
+
+      @include daoMd {
+        height: 80px;
+        margin-top: 8px;
+
+        @include ellipsis(4);
+      }
+
+      @include daoSm {
+        height: 80px;
+        margin-top: 8px;
+
+        @include ellipsis(4);
+      }
+    }
+
+    .discuss-group {
+      margin-top: 24px;
+
+      @include daoMd {
+        margin-top: 20px;
+      }
+
+      @include daoSm {
+        margin-top: 20px;
+      }
+
+      .ant-avatar {
+        @include themeChangeMixin(border-color, 3);
+      }
+
+      .avatar-group-more {
+        margin-left: 8px;
+
+        @include fontFamilyData(cl);
+
+        color: $gray30;
+      }
+    }
+  }
+
+  .discuss-info {
+    padding: 16px 20px;
+    border-top: 1px solid $gray80;
+
+    .info-list-wrap {
+      display: flex;
+
+      @include daoMd {
+        flex-wrap: wrap;
+      }
+
+      @include daoSm {
+        flex-wrap: wrap;
+      }
+
+      li {
+        margin-left: 24px;
+
+        @include daoMd {
+          width: 50%;
+          margin: 0;
+
+          & + li {
+            margin-top: 12px;
+
+            &:nth-child(1),
+            &:nth-child(2) {
+              margin-top: 0;
+            }
+          }
+        }
+
+        @include daoSm {
+          width: 50%;
+          margin: 0;
+
+          & + li {
+            margin-top: 12px;
+
+            &:nth-child(1),
+            &:nth-child(2) {
+              margin-top: 0;
+            }
+          }
+        }
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
+
+      .name {
+        @include fontFamilyData(cl);
+
+        color: $gray60;
+      }
+
+      .value {
+        margin-left: 4px;
+
+        @include fontFamilyData(clb);
+
+        color: $gray30;
+      }
+    }
+  }
+}
+
+.dao-agora-wrap {
+  display: block;
+  border: 1px solid $gray80;
+  border-radius: 4px;
+
+  .agora-container {
+    padding: 24px;
+
+    @include daoMd {
+      margin-top: 24px;
+    }
+
+    @include daoSm {
+      margin-top: 24px;
+    }
+
+    @at-root .dao-home-type & {
+      padding: 20px;
+    }
+
+    .agora-step {
+      @include fontFamilyBody(cs);
+
+      color: $gray60;
+    }
+
+    .agora-title {
+      strong {
+        display: block;
+        min-height: 48px;
+        margin-top: 16px;
+
+        @include ellipsis(2);
+        @include fontFamilyBody(lb);
+      }
+
+      .date {
+        display: block;
+        margin-top: 16px;
+
+        @include fontFamilyBody(cs);
+
+        color: $gray30;
+      }
+    }
+  }
+
+  .agora-person-wrap {
+    display: flex;
+    padding: 13px 20px 15px;
+
+    // padding: 14px 20px;
+    border-top: 1px solid $gray80;
+
+    @include daoMd {
+      display: block;
+      margin-top: 16px;
+    }
+
+    @include daoSm {
+      display: block;
+      margin-top: 16px;
+    }
+
+    > div {
+      width: 50%;
+
+      @include sm {
+        width: auto;
+      }
+    }
+
+    .agora-suggest {
+      display: flex;
+      align-items: center;
+
+      .value {
+        margin-left: 8px;
+
+        @include fontFamilyBody(cs);
+        @include themeChangeMixin(color, 1);
+      }
+    }
+  }
+}
+
+.dao-social-wrap {
+  margin-top: 60px;
+
+  @include daoSm {
+    padding: 0 20px;
+    margin-top: 32px;
+  }
+
+  .dao-home-type {
+    @include daoSm {
+      padding-bottom: 12px;
+    }
+  }
+
+  .title-wrap {
+    display: flex;
+    align-items: center;
+
+    .icon {
+      display: inline-block;
+      margin-right: 8px;
+      vertical-align: top;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        transform: none;
+
+        @include sm {
+          width: 16px;
+          height: 16px;
+        }
+
+        path {
+          fill: #2aa9e0;
+        }
+      }
+    }
+
+    .title {
+      @include daoSm {
+        @include fontFamilyHeading(mb);
+      }
+
+      span {
+        vertical-align: bottom;
+      }
+
+      .twitter {
+        color: #2aa9e0;
+      }
+    }
+  }
+
+  .tag-wrap {
+    .tag {
+      & + .tag {
+        margin-left: 4px;
+      }
+    }
+  }
+
+  .slide-wrap {
+    margin-top: 24px;
+
+    @include daoSm {
+      margin-top: 20px;
+    }
+
+    .swiper {
+      @include daoSm {
+        height: 224px;
+      }
+
+      .swiper-pagination {
+        display: none;
+
+        @include daoSm {
+          display: flex;
+          margin-top: -8px;
+        }
+      }
+    }
+  }
+}
+
+// DaoTrust
+.dao-trust-wrap {
+  .dao-trust-tab {
+    position: relative;
+    width: 100%;
+
+    .list-dot-wrap {
+      button {
+        @include lg {
+          margin-bottom: 8px;
+        }
+      }
+    }
+  }
+
+  .ant-tabs-top {
+    border-radius: 4px;
+    background: $white;
+
+    > .ant-tabs-nav {
+      position: relative;
+      z-index: 1;
+      margin-bottom: 0;
+
+      @include sm {
+        margin: 0 !important;
+
+        .ant-tabs-nav-list {
+          padding: 0 20px;
+        }
+      }
+
+      &::after {
+        position: absolute;
+        z-index: -1;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 1px;
+        background: $gray80;
+        content: "";
+      }
+
+      @include sm {
+        margin: 0 20px;
+      }
+    }
+  }
+}
+
+.trust-about-wrap {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 0 48px;
+
+  @include md {
+    padding: 0 32px;
+  }
+
+  @include sm {
+    $daoBoxSpacing: 1px;
+    $boxSpacing: 20px;
+
+    padding: 0 20px;
+  }
+
+  /* 23.04.04 수정: 이미지 png교체 후 위치 top값 조정 */
+  .bg-wrap {
+    position: absolute;
+    z-index: -1;
+    top: -30px;
+    right: 0;
+    width: 315px;
+    height: 309px;
+
+    @include md {
+      right: -50px;
+    }
+
+    @include daoMd {
+      visibility: hidden;
+    }
+
+    @include daoSm {
+      visibility: hidden;
+    }
+
+    svg {
+      width: 460px;
+      height: 300px;
+
+      @include sm {
+        width: 414px;
+        height: 371px;
+        margin-left: auto;
+      }
+    }
+  }
+
+  .title-wrap {
+    padding: 48px 0;
+
+    // @include md {
+    //   padding: 100px 0;
+    // }
+
+    @include daoSm {
+      padding: 0 0 52px;
+      margin-top: 40px;
+    }
+
+    .desc {
+      @include fontFamilyBody(xlr);
+
+      color: $gray30;
+    }
+
+    .title {
+      margin-top: 8px;
+      font-weight: 700;
+
+      @include fontFamilyNHeading(LB_V);
+    }
+  }
+
+  .list-content-wrap {
+    .list-item {
+      display: flex;
+
+      @include daoSm {
+        .icon-wrap + .inner-wrap {
+          margin-left: 12px;
+        }
+      }
+
+      & + .list-item {
+        margin-top: 52px;
+
+        @include md {
+          margin-top: 56px;
+        }
+      }
+
+      .icon-wrap {
+        display: block;
+        margin-right: 32px;
+
+        @include daoSm {
+          margin: 0 0 16px;
+        }
+
+        svg {
+          width: 60px;
+          height: 60px;
+
+          @include md {
+            width: 72px;
+            height: 72px;
+          }
+
+          @include sm {
+            width: 40px;
+            height: 40px;
+          }
+        }
+      }
+
+      .inner-wrap {
+        @include lg {
+          max-width: 512px;
+        }
+
+        .inner-title-wrap {
+          padding-bottom: 8px;
+
+
+
+          .list-title {
+            @include fontFamilyNBody(LB_F);
+
+            color: $gray00;
+          }
+
+          .list-desc {
+            margin-top: 8px;
+            color: $gray30;
+
+            // @include fontFamilyBody(lr);
+
+            @include fontFamilyNBody(MR_F);
+
+            @include sm {
+              padding-bottom: 4px;
+              margin-top: 4px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .list-dot-wrap {
+    .list-dot-wrap {
+      margin-top: 4px;
+
+      @include md {
+        margin-top: 8px;
+      }
+
+      @include sm {
+        margin-top: 8px;
+      }
+    }
+
+    > li {
+      position: relative;
+      z-index: 1;
+      padding-left: 8px;
+      color: $gray30;
+      white-space: break-spaces;
+
+      @include fontFamilyNBody(MR_F);
+
+      & + li {
+        margin-top: 8px;
+      }
+
+      & + button {
+        margin-top: 4px;
+      }
+
+      &::before {
+        position: absolute;
+        top: 9px;
+        left: 0;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        margin-right: 4px;
+        background: $gray30;
+        content: "";
+      }
+
+      .list-dot-title {
+        display: block;
+        color: $gray30;
+
+        @include fontFamilyNBody(MB_F);
+      }
+    }
+  }
+}
+
+// .trust-activity-wrap,
+.trust-notice-wrap {
+  padding: 8px 24px 0;
+
+  .notice-write-btn-wrap {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 8px 0 16px;
+    border-bottom: 1px solid $gray80;
+
+    @include daoSm {
+      padding: 12px 0;
+    }
+
+    .ant-btn {
+      padding: 0 12px;
+    }
+
+    .btn-sm {
+      .btn-inner {
+        div + span {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+
+  @at-root .dao-container .dao-content-wrap & {
+    .ant-table-wrapper:first-child {
+      @include daoSm {
+        margin-top: 0;
+      }
+    }
+  }
+
+  @include sm {
+    padding: 0 24px;
+  }
+
+  .table-top-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 12px;
+
+    @include sm {
+      display: block;
+    }
+
+    .ant-select {
+      min-width: 280px;
+
+      @include sm {
+        min-width: none;
+      }
+    }
+
+    .table-tooltip-wrap {
+      display: flex;
+      align-items: center;
+      text-align: right;
+
+      .tooltip-wrap {
+        span {
+          margin-right: 4px;
+          color: $gray60;
+        }
+
+        button svg path {
+          fill: $gray60;
+        }
+
+        .ant-popover-placement-topRight .ant-popover-arrow {
+          right: 0;
+        }
+      }
+    }
+
+    .table-tooltip-wrap .tooltip-contents {
+      width: 218px;
+
+      @include sm {
+        width: 220px;
+      }
+
+      .list-dot-wrap {
+        li {
+          position: relative;
+          z-index: 1;
+          padding-left: 8px;
+
+          &.line {
+            padding-bottom: 4px;
+            border-bottom: 1px solid $gray30;
+
+            @include sm {
+              padding-bottom: 12px;
+            }
+
+            & + li {
+              margin-top: 4px;
+
+              @include sm {
+                margin-top: 12px;
+              }
+            }
+          }
+
+          & + li {
+            margin-top: 2px;
+          }
+
+          &::before {
+            position: absolute;
+            z-index: 10;
+            top: 8px;
+            left: 0;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            margin-right: 4px;
+            background: $gray100;
+            content: "";
+          }
+        }
+      }
+
+      .data-wrap {
+        display: flex;
+        justify-content: space-between;
+
+        dt {
+          @include fontFamilyBody(sm);
+
+          color: $gray100;
+        }
+
+        dd {
+          @include fontFamilyBody(sb);
+
+          color: $gray100;
+        }
+      }
+    }
+  }
+
+  .ant-table {
+    background: transparent;
+
+    td.ant-table-cell {
+      @include daoSm {
+        background: transparent;
+      }
+    }
+  }
+}
+
+.dao-twitter-wrap {
+  display: flex;
+  min-height: 200px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border-radius: 4px;
+  background: $gray100;
+
+  .twitter-container {
+    p {
+      @include ellipsis(4);
+      @include fontFamilyBody(mr);
+
+      @include daoMd {
+        @include ellipsis(3);
+      }
+    }
+
+    .twitter-tag {
+      margin-top: 8px;
+
+      span {
+        & + span {
+          margin-left: 8px;
+        }
+
+        @include fontFamilyBody(mr);
+        @include themeChangeMixin(color, 1);
+      }
+    }
+  }
+
+  .twitter-author {
+    display: flex;
+    align-items: center;
+
+    .ant-avatar {
+      margin-left: 0;
+    }
+
+    span {
+      margin-left: 8px;
+
+      @include fontFamilyBody(mb);
+    }
+  }
+}
+
+.dao-floating {
+  position: fixed;
+  z-index: 1000;
+  right: 50%;
+  bottom: 40px;
+  width: 60px;
+  height: 60px;
+  margin-right: -592px;
+
+  @include md {
+    right: 40px;
+    margin-right: 0;
+  }
+
+  @include sm {
+    right: 24px;
+    margin-right: 0;
+  }
+
+  & > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    width: 60px;
+    height: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: $white;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    opacity: 0;
+    transition: opacity 0.3s;
+    visibility: hidden;
+    will-change: opacity;
+  }
+
+  &.active-scroll {
+    .scroll {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+
+  &.active-top {
+    .top {
+      opacity: 1;
+      visibility: visible;
+
+      svg {
+        width: 24px;
+        height: 24px;
+        animation: none;
+        transform: translate3d(-5px, 0, 0);
+      }
+    }
+  }
+
+  &.active-abs {
+    position: absolute;
+  }
+
+  .top {
+    z-index: 1;
+    background: $black;
+
+    .icon {
+      transform: translateY(-10px) rotate(-90deg);
+    }
+
+    svg {
+      path {
+        fill: $white;
+      }
+    }
+
+    span {
+      color: $white;
+    }
+  }
+
+  .icon {
+    transform: rotate(90deg);
+  }
+
+  svg {
+    width: 24px;
+    height: 24px;
+    animation: jump-arrow 2.5s infinite;
+  }
+
+  span {
+    margin-top: 2px;
+    font-weight: bold;
+
+    @include fontsizeMixin(10, 10);
+  }
+}
+
+@keyframes jump-arrow {
+  0%,
+  20%,
+  55%,
+  80%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  40% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  70% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(-3px, 0, 0);
+  }
+}
+
+@keyframes jump-arrow2 {
+  0%,
+  20%,
+  55%,
+  80%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  40% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  70% {
+    transform: translate3d(0, -5px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -3px, 0);
+  }
+}
+
+.fp-watermark {
+  display: none;
+}
+
+.incinerator-chart-wrap {
+  width: 100%;
+  height: 280px;
+}
+
+// DaoStationCheckMore
+@mixin symbolStar {
+  &::before {
+    content: "* ";
+  }
+}
+
+.dao-check-wrap {
+  padding: 80px 0;
+  background: $gray90;
+
+  @include md {
+    padding: 80px 40px;
+  }
+
+  @include sm {
+    padding: 40px 20px;
+  }
+
+  .inner-wrap {
+    width: $maxWidthLg;
+    margin: 0 auto;
+
+    @include md {
+      width: auto;
+    }
+
+    @include sm {
+      width: auto;
+    }
+  }
+
+  .content-title-wrap {
+    text-align: center;
+
+    .title {
+      @include fontFamilyPhrase(l);
+
+      color: $gray00;
+
+      @include md {
+        // TODO: 우측 스크롤 영역 때문
+        letter-spacing: -1.9px;
+      }
+    }
+
+    .desc {
+      margin-top: 8px;
+
+      @include fontFamilyBody(sr);
+
+      color: $gray60;
+
+      @include symbolStar;
+
+      @include sm {
+        white-space: pre-line;
+      }
+    }
+  }
+
+  .check-item-wrap {
+    margin-top: 40px;
+
+    @include sm {
+      margin-top: 24px;
+
+      & + .check-item-wrap {
+        margin-top: 32px;
+      }
+    }
+  }
+}
+
+.check-item-wrap {
+  .check-item {
+    & + .check-item {
+      margin-top: 40px;
+
+      @include sm {
+        margin-top: 32px;
+      }
+    }
+
+    .title-wrap {
+      @include sm {
+        padding: 0;
+        text-align: center;
+      }
+
+      .title {
+        @include fontFamilyPhrase(sb);
+
+        color: $gray00;
+      }
+
+      .desc {
+        margin-top: 8px;
+
+        @include fontFamilyBody(mr);
+
+        color: $gray30;
+
+        @include sm {
+          margin-top: 4px;
+        }
+      }
+    }
+
+    .list-wrapper {
+      margin-top: 16px;
+
+      @include md {
+        margin-top: 20px;
+      }
+
+      @include sm {
+        margin-top: 12px;
+      }
+    }
+  }
+
+  .check-item.about {
+    display: flex;
+    background: $white;
+    box-shadow: 0 1px 1px rgba($veryBlack, 10%);
+
+    @include md {
+      display: block;
+    }
+
+    @include sm {
+      display: block;
+    }
+
+    .logo-wrap {
+      position: relative;
+      z-index: 1;
+      width: 400px;
+      height: 400px;
+      flex: none;
+
+      @include md {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 688/280;
+      }
+
+      @include sm {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 2/1;
+      }
+    }
+
+    .box-wrap {
+      .title-wrap {
+        position: relative;
+        z-index: 1;
+        min-height: 152px;
+        padding: 32px;
+
+        @include md {
+          padding: 32px 24px;
+        }
+
+        @include sm {
+          padding: 24px 20px;
+          text-align: left;
+        }
+
+        .title {
+          @include fontFamilyHeading(mb);
+
+          @include sm {
+            @include fontsizeMixin(16, 16);
+          }
+        }
+
+        .desc {
+          margin-top: 20px;
+
+          @include fontFamilyBody(mr);
+
+          @include md {
+            margin-top: 28px;
+          }
+
+          @include sm {
+            margin-top: 12px;
+          }
+        }
+
+        .ant-btn {
+          position: absolute;
+          z-index: 10;
+          top: 32px;
+          right: 32px;
+
+          @include md {
+            right: 24px;
+          }
+
+          @include sm {
+            position: static;
+            margin-top: 20px;
+          }
+        }
+      }
+
+      .control-wrap {
+        display: flex;
+        height: 72px;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 32px;
+        border-top: 1px solid $gray80;
+
+        @include md {
+          height: 80px;
+          padding: 0 24px;
+        }
+
+        @include sm {
+          display: block;
+          height: auto;
+          padding: 20px;
+        }
+
+        .desc {
+          @include fontFamilyBody(mr);
+          @include themeChangeMixin(color, 1);
+
+          white-space: pre-line;
+
+          @include sm {
+            @include fontFamilyBody(sr);
+          }
+
+          &.participate + .btn-wrap {
+            @include sm {
+              margin-top: 40px;
+            }
+          }
+
+          & + .btn-wrap {
+            @include sm {
+              margin-top: 12px;
+            }
+          }
+
+          strong {
+            @include fontFamilyBody(mb);
+            @include themeChangeMixin(color, 1);
+          }
+        }
+
+        .user-join-info {
+          li {
+            @include themeChangeMixin(color, 1);
+            @include fontFamilyBody(mr);
+
+            .figure {
+              @include themeChangeMixin(color, 1);
+              @include fontFamilyBody(mb);
+            }
+          }
+        }
+
+        .btn-wrap {
+          position: relative;
+          z-index: 1;
+
+          &:only-child {
+            margin-left: auto;
+
+            @include md {
+              min-width: 160px;
+            }
+          }
+
+          @include md {
+            min-width: 148px;
+          }
+
+          .ant-btn {
+            position: relative;
+            z-index: 1;
+            min-width: 160px;
+
+            @include sm {
+              width: 100%;
+            }
+
+            & + .ant-btn {
+              margin-left: 8px;
+
+              @include sm {
+                margin: 8px 0 0;
+              }
+            }
+
+            &:disabled {
+              border-color: $gray90;
+              background-color: $gray90;
+
+              span {
+                color: $gray80;
+              }
+            }
+          }
+
+          .ant-popover-open {
+            & + .ant-btn {
+              margin-left: 8px;
+
+              @include sm {
+                margin: 8px 0 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// RecruitingBottom
+.recruiting-bottom-wrap {
+  position: relative;
+  z-index: 1;
+
+  .nav-tooltip-wrap {
+    position: absolute;
+    z-index: 20;
+    top: -50px;
+    left: 50%;
+    opacity: 1;
+    transform: translateX(-50%);
+    transition: opacity 0.3s;
+
+    @include sm {
+      right: 0;
+      left: auto;
+      transform: none;
+    }
+
+    &.hide {
+      opacity: 0;
+    }
+
+    .nav-tooltip {
+      @include themeChangeMixin(background-color, 1);
+      @include fontFamilyBody(sr);
+
+      min-width: 218px;
+      padding: 6px 8px;
+      border-radius: 2px;
+      color: $gray100;
+      text-align: center;
+      white-space: pre-line;
+    }
+
+    &::after {
+      position: absolute;
+      z-index: 30;
+      bottom: -7px;
+      left: 50%;
+      width: 10px;
+      height: 7px;
+      border-top: solid 7px #404040;
+      border-right: solid 5px transparent;
+      border-left: solid 5px transparent;
+      content: "";
+      transform: translateX(-50%);
+
+      @include sm {
+        right: 3px;
+        left: auto;
+        transform: none;
+      }
+
+      @include themeChangeMixin(border-top-color, 1);
+    }
+  }
+}
+
+.recruiting-bottom-inner {
+  @include maxWidthLg;
+
+  padding-top: 80px;
+
+  @include md {
+    padding-top: 72px;
+  }
+
+  @include sm {
+    padding-top: 88px;
+  }
+
+  .check-item-wrap {
+    margin-top: 40px;
+
+    @include md {
+      margin-top: 40px;
+    }
+
+    @include sm {
+      margin-top: 32px;
+    }
+  }
+}
+
+.recruit-section-title {
+  @include fontFamilyPhrase(mb);
+
+  display: block;
+  text-align: center;
+
+  & + .recruitment-information-wrap {
+    margin-top: 50px;
+
+    @include md {
+      margin-top: 40px;
+    }
+
+    @include sm {
+      margin-top: 32px;
+    }
+  }
+
+  & + .dao-works-wrap {
+    margin-top: 40px;
+
+    @include md {
+      margin-top: 32px;
+    }
+
+    @include sm {
+      margin-top: 24px;
+    }
+  }
+}
+
+.recruit-wrapper-title {
+  @include fontFamilyHeading(l);
+
+  & + .info-box-list {
+    margin-top: 16px;
+  }
+
+  & + .procedure-list {
+    margin-top: 20px;
+
+    @include md {
+      margin-top: 24px;
+    }
+  }
+}
+
+// .participant-procedure-wrap {
+//   margin-top: 80px;
+
+//   @include md {
+//     margin-top: 72px;
+//   }
+
+//   @include sm {
+//     margin-top: 40px;
+//   }
+
+//   & + .recruit-section-title {
+//     margin-top: 80px;
+
+//     @include md {
+//       margin-top: 72px;
+//     }
+
+//     @include sm {
+//       margin-top: 40px;
+//     }
+//   }
+// }
+
+// RecruitingTop
+.recruiting-top-wrap {
+  padding: 60px 0;
+
+  @include themeChangeMixin(background-color, 3);
+
+  @include sm {
+    padding: 40px 0;
+  }
+
+  .inner-wrap {
+    @include maxWidthLg;
+
+    padding-top: 60px;
+
+    @include sm {
+      padding-top: 40px;
+    }
+
+    .recruiting-title-wrap {
+      .title {
+        @include fontFamilyPhrase(l);
+
+        color: $gray00;
+        text-align: center;
+      }
+    }
+
+    .check-item-wrap {
+      margin-top: 40px;
+
+      .check-item.about {
+        .box-wrap .item-wrap .period-wrap .caption-wrap .preview .inner {
+          @include sm {
+            display: flex;
+            align-items: center;
+          }
+
+          .caption {
+            @include sm {
+              margin: 0 0 0 8px;
+
+              @include fontFamilyBody(sr);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .recruit-marquee-banner-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 236px;
+    margin-top: 40px;
+
+    @include md {
+      height: 240px;
+    }
+
+    @include sm {
+      height: 248px;
+      margin-top: 32px;
+    }
+
+    .banner-title {
+      @include fontFamilyPhrase(sb);
+
+      display: block;
+      text-align: center;
+
+      @include sm {
+        white-space: pre-line;
+      }
+    }
+
+    .recruit-marquee-banner {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      display: flex;
+
+      .banner-item {
+        position: relative;
+        display: flex;
+        width: 160px;
+        height: 160px;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 16px 12px 13px;
+        border: 1px solid $gray80;
+        border-radius: 4px;
+        margin: 0 6px;
+        background-color: $gray100;
+        background-position-y: 97px;
+        background-repeat: no-repeat;
+        background-size: 160px 63px;
+        cursor: pointer;
+
+        .top-tag {
+          @include fontFamilyBody(sb);
+          @include themeChangeMixin(background-color, 1);
+
+          position: absolute;
+          z-index: 100;
+          top: -16px;
+          left: 50%;
+          width: max-content;
+          padding: 3px 8px;
+          border-radius: 28px;
+          color: $gray100;
+          transform: translateX(-50%);
+        }
+
+        .lottie-wrap {
+          position: absolute;
+          bottom: 36px;
+          left: 12px;
+          overflow: hidden;
+          width: calc(100% - 24px);
+          height: calc(100% - 24px);
+          padding: 12px;
+        }
+
+        .lottie-area {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          width: 280px;
+          height: 234px;
+          transform: translateX(-50%);
+        }
+
+        .top-area {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          .name {
+            @include fontFamilyChip(m1b);
+
+            margin-top: 4px;
+          }
+
+          .desc {
+            @include fontFamilyChip(mr);
+            @include ellipsis;
+
+            width: 100%;
+            margin-top: 8px;
+            color: $gray40;
+            text-align: center;
+          }
+        }
+
+        .bottom-area {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          span {
+            // display: block;
+
+            &.info-name {
+              @include fontFamilyChip(s);
+
+              color: $gray30;
+            }
+
+            &.figure {
+              @include fontFamilyChip(mb);
+
+              margin-top: 4px;
+              color: $gray20;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.dao-works-wrap {
+  .work-list {
+    display: flex;
+    flex-direction: column;
+
+    // > [id]::before {
+    //   content: '';
+    //   display: block;
+    //   height: 75px;
+    //   visibility: hidden;
+    //   position: absolute;
+    //   width: 100%;
+    //   top: -75px;
+    //   left: 0;
+    // }
+
+    > li:not(.distribution-method-item) {
+      display: flex;
+      align-items: center;
+      padding-top: 24px;
+      border-top: 1px solid $gray80;
+
+      @include md {
+        flex-direction: column;
+        padding-top: 32px;
+
+        &:first-child {
+          padding-top: 0;
+          border-top: none;
+        }
+
+        &:last-child {
+          padding-bottom: 32px;
+          border-bottom: 1px solid $gray80;
+        }
+      }
+
+      @include sm {
+        flex-direction: column;
+
+        &:first-child {
+          padding-top: 0;
+          border-top: none;
+        }
+      }
+
+      &:first-child {
+        padding-top: 0;
+        border-top: none;
+      }
+
+      & + li {
+        margin-top: 24px;
+
+        @include md {
+          margin-top: 32px;
+        }
+      }
+
+      .text-area {
+        @include md {
+          order: 2;
+        }
+
+        @include sm {
+          order: 2;
+        }
+
+        .title {
+          @include fontFamilyHeading(l);
+
+          display: block;
+
+          @include md {
+            margin-top: 20px;
+          }
+
+          & + .desc-area {
+            margin-top: 16px;
+          }
+        }
+
+        .desc {
+          @include fontFamilyBody(mr);
+
+          padding-right: 24px;
+          margin-top: 16px;
+          color: $gray30;
+
+          @include md {
+            padding-right: 0;
+            margin-top: 12px;
+          }
+
+          @include sm {
+            padding-right: 0;
+            margin-top: 12px;
+          }
+
+          & + .desc {
+            margin-top: 20px;
+          }
+
+          & + .list-type-dot {
+            margin-top: 8px;
+
+            ol > li {
+              padding-left: 4px;
+
+              &::before {
+                content: none;
+              }
+            }
+          }
+        }
+
+        .link {
+          @include fontFamilyButton(mb);
+
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+
+          @include md {
+            margin-top: 12px;
+          }
+
+          @include sm {
+            margin-top: 12px;
+          }
+
+          > div {
+            margin-left: 8px;
+            font-size: 24px;
+          }
+        }
+
+        .figure-desc {
+          @include fontFamilyBody(cs);
+
+          display: flex;
+          align-items: center;
+          margin-top: 20px;
+          color: $gray30;
+          word-break: break-all;
+
+          @include md {
+            margin-top: 24px;
+          }
+
+          @include sm {
+            margin-top: 24px;
+          }
+
+          .tooltip-btn {
+            margin-left: 4px;
+            font-size: 12px;
+
+            svg {
+              color: $gray30;
+            }
+          }
+        }
+
+        .reward {
+          display: block;
+          margin-top: 8px;
+
+          .figure {
+            @include fontFamilyData(m2);
+          }
+
+          .unit {
+            @include fontFamilyData(sr);
+
+            margin-left: 4px;
+          }
+        }
+
+        > ol {
+          margin-top: 20px;
+
+          @include md {
+            margin-top: 24px;
+          }
+
+          li {
+            @include fontFamilyBody(mr);
+
+            color: $gray30;
+            white-space: pre-line;
+
+            & + li {
+              margin-top: 1em;
+            }
+          }
+        }
+
+        .desc-area {
+          & + .desc-area {
+            margin-top: 20px;
+
+            @include md {
+              margin-top: 24px;
+            }
+          }
+
+          .desc-title {
+            @include fontFamilyBody(mb);
+
+            color: $gray30;
+
+            & + .desc {
+              margin-top: 0;
+            }
+          }
+
+          ul {
+            margin-top: 8px;
+          }
+        }
+      }
+
+      .img-area {
+        position: relative;
+        width: 400px;
+        min-height: 240px;
+        flex-shrink: 0;
+        margin-left: 48px;
+
+        @include md {
+          margin-left: 0;
+        }
+
+        @include sm {
+          width: 100%;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+}
+
+.business-management-wrap {
+  padding-bottom: 80px;
+  margin-top: 80px;
+
+  @include md {
+    padding-bottom: 60px;
+    margin-top: 72px;
+  }
+
+  @include sm {
+    padding-bottom: 66px;
+    margin-top: 40px;
+  }
+
+  .header-wrap {
+    position: relative;
+
+    .title-desc {
+      @include fontFamilyBody(mr);
+
+      display: block;
+      margin-top: 16px;
+      color: $gray30;
+
+      @include md {
+        margin-top: 8px;
+      }
+
+      @include sm {
+        margin-top: 8px;
+      }
+    }
+
+    .ant-btn {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
+
+      @include md {
+        position: static;
+        margin-top: 24px;
+        transform: none;
+      }
+
+      @include sm {
+        position: static;
+        width: 100%;
+        margin-top: 16px;
+        transform: none;
+      }
+    }
+  }
+
+  .detail-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+
+    @include md {
+      flex-direction: column;
+      margin-top: 40px;
+    }
+
+    @include sm {
+      flex-direction: column;
+      margin-top: 32px;
+    }
+
+    .left,
+    .right {
+      width: 584px;
+
+      @include md {
+        width: 100%;
+      }
+
+      @include sm {
+        width: 100%;
+      }
+    }
+
+    .right {
+      @include md {
+        margin-top: 40px;
+      }
+
+      @include sm {
+        margin-top: 32px;
+      }
+    }
+
+    .detail-title {
+      @include fontFamilyHeading(l);
+
+      display: flex;
+      align-items: center;
+
+      > div {
+        margin-right: 16px;
+
+        @include sm {
+          margin-right: 12px;
+        }
+
+        svg {
+          font-size: 60px;
+
+          @include md {
+            font-size: 48px;
+          }
+
+          @include sm {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+
+    .list-type-dot {
+      padding-left: 76px;
+      color: $gray30;
+
+      @include md {
+        padding-left: 64px;
+      }
+
+      @include sm {
+        padding-left: 52px;
+      }
+
+      dt,
+      dd {
+        margin-top: 4px;
+      }
+
+      dt,
+      .subject {
+        @include fontFamilyBody(mb);
+
+        color: $gray30;
+      }
+
+      li:nth-child(2) {
+        dt {
+          position: relative;
+          padding-left: 8px;
+
+          // margin-left: 16px;
+          font-weight: 400;
+
+          &::before {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            display: block;
+            width: 4px;
+            height: 4px;
+            border-radius: 4px;
+            background-color: $gray30;
+            content: "";
+          }
+        }
+      }
+
+      dd {
+        position: relative;
+        padding-left: 8px;
+        margin-left: 8px;
+        color: $gray30;
+
+        &::before {
+          position: absolute;
+          top: 10px;
+          left: 0;
+          display: block;
+          width: 4px;
+          height: 4px;
+          border-radius: 4px;
+          background-color: $gray30;
+          content: "";
+        }
+      }
+
+      li:last-child {
+        dd {
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}
+
+.recruit-navigation-wrap {
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid $gray80;
+
+  @include sm {
+    top: 0;
+  }
+
+  @at-root header.active {
+    & + .station-recruiting-wrap > .recruiting-bottom-wrap > .recruit-navigation-wrap {
+      top: 60px;
+      transition: top 0.3s;
+
+      @include sm {
+        top: 48px;
+      }
+    }
+  }
+
+  .swiper {
+    padding: {
+      // top: 47px;
+      right: 20px;
+      left: 20px;
+    }
+
+    .swiper-slide {
+      position: relative;
+    }
+  }
+
+  .recruit-navigation-list {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 20px;
+    background-color: $gray100;
+
+    @include sm {
+      margin-top: 6px;
+    }
+
+    .swiper-slide {
+      width: auto;
+      margin-bottom: -1px;
+      text-align: center;
+      white-space: pre-line;
+
+      a {
+        @include fontFamilyUi(tabmr);
+
+        display: flex;
+        height: 56px;
+        align-items: center;
+        padding: 14px 20px;
+
+        @include sm {
+          height: 42px;
+        }
+      }
+
+      &.selected {
+        @include themeChangeMixin(border-color, 1);
+
+        border-bottom: 2px solid transparent;
+
+        a {
+          @include fontFamilyUi(tabmb);
+          @include themeChangeMixin(color, 1);
+
+          .ant-popover-open {
+            @include themeChangeMixin(color, 1);
+          }
+        }
+      }
+    }
+  }
+}
+
+.reward-flow-img-area {
+  position: relative;
+
+  // overflow: hidden;
+  height: auto;
+
+  // max-height: 340px;
+  padding: 40px 0 100px;
+  border: 1px solid $gray80;
+  border-radius: 4px;
+  margin-top: 40px;
+  transition: all 0.3s;
+
+  @include md {
+    padding-top: 32px;
+    padding-bottom: 80px;
+    margin-top: 32px;
+  }
+
+  @include sm {
+    max-height: 288px;
+    padding: 24px 0 56px;
+    padding: 20px 0 56px;
+    margin-top: 24px;
+  }
+
+  &.active {
+    max-height: 1200px;
+
+    .show-btn {
+      > div {
+        transform: rotate(180deg);
+      }
+
+      &::before {
+        content: none;
+      }
+    }
+  }
+
+  .text-area {
+    text-align: center;
+
+    .text-area-title {
+      @include fontFamilyHeading(s);
+    }
+
+    .text-paragraph {
+      @include fontFamilyNBody(SR_F);
+
+      padding: 0 24px;
+      margin-top: 12px;
+      color: $gray30;
+      text-align: center;
+
+      @include md {
+        padding: 0 32px;
+      }
+
+      @include sm {
+        padding: 0 20px;
+        margin-top: 12px;
+      }
+
+      strong {
+        @include fontFamilyBody(mb);
+
+        color: $gray30;
+      }
+    }
+
+    .hidden-tooltip-btn {
+      position: absolute;
+      width: 12px;
+      height: 12px;
+
+      &.first {
+        top: 87px;
+        right: 51px;
+      }
+
+      &.second {
+        top: 236px;
+        right: 51px;
+      }
+
+      &.third {
+        top: 512px;
+        right: 51px;
+      }
+    }
+
+    .popup-wrap.en {
+      .hidden-tooltip-btn {
+        &.first {
+          top: 117px;
+        }
+
+        &.second {
+          top: 283px;
+        }
+
+        &.third {
+          top: 563px;
+        }
+      }
+    }
+  }
+
+  .img-area {
+    position: relative;
+    width: 624px;
+    margin: 40px auto 0;
+
+    @include sm {
+      width: 280px;
+      margin-top: 24px;
+    }
+
+    & > span {
+      position: unset !important;
+
+      > img {
+        position: relative !important;
+        height: auto !important;
+      }
+    }
+  }
+
+  .desc-list {
+    padding-left: 288px;
+    margin-top: 24px;
+
+    @include md {
+      padding: 0 32px;
+      margin-top: 40px;
+    }
+
+    @include sm {
+      padding: 0;
+      margin-top: 16px;
+      text-align: center;
+    }
+
+    li + li {
+      margin-top: 8px;
+    }
+
+    li {
+      @include fontFamilyBody(cs);
+
+      color: $gray60;
+      text-align: start;
+
+      @include sm {
+        text-align: center;
+      }
+    }
+  }
+
+  .show-btn {
+    @include fontFamilyButton(sr);
+
+    position: absolute;
+    z-index: 20;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 24px 0;
+    background: $gray100;
+
+    @include sm {
+      @include fontFamilyButton(sr);
+
+      padding: 12px 0;
+    }
+
+    &::before {
+      position: absolute;
+      bottom: 48px;
+      display: block;
+      width: 100%;
+      height: 120px;
+      background: linear-gradient(360deg, $gray100 0%, rgb(255 255 255 / 0%) 100%);
+      content: "";
+
+      @include sm {
+        z-index: -1;
+        bottom: 0;
+      }
+    }
+
+    > div {
+      margin-left: 4px;
+    }
+  }
+}
+
+.dao-tooltip {
+  z-index: 999;
+  transition: opacity 0.3s;
+
+  &.close {
+    opacity: 0;
+  }
+
+  .tooltip-contents,
+  .ant-popover-arrow-content {
+    @include themeChangeMixin(background-color, 1);
+  }
+
+  .tooltip-contents {
+    text-align: center;
+  }
+}
+
+.recruiting-img-tooltip {
+  max-width: 220px;
+
+  .ant-popover-arrow {
+    right: -2px;
+  }
+}
+
+.recruit-reward-tooltip .ant-popover-arrow {
+  @include sm {
+    right: -4px;
+  }
+}
+
+.recruiting-floating-bar-wrap {
+  @include themeChangeMixin("background-color", 3);
+
+  position: fixed;
+  z-index: 100;
+  bottom: 0;
+  width: 100%;
+
+  .recruiting-floating-bar-inner {
+    display: flex;
+    width: 1200px;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    margin: 0 auto;
+
+    @include md {
+      width: 100%;
+      max-width: none;
+      padding: 14px 40px;
+    }
+
+    @include sm {
+      width: 100%;
+      max-width: none;
+      padding: 14px 20px 30px;
+    }
+
+    .info-area {
+      @include fontFamilyBody(xlr);
+
+      @include md {
+        display: none;
+      }
+
+      @include sm {
+        display: none;
+      }
+
+      strong {
+        font-weight: 600;
+      }
+    }
+
+    .button-area {
+      display: flex;
+
+      @include md {
+        flex-basis: 100%;
+      }
+
+      @include sm {
+        flex-basis: 100%;
+      }
+
+      .ant-btn {
+        width: 232px;
+
+        @include md {
+          width: 100%;
+        }
+
+        @include sm {
+          width: 100%;
+        }
+
+        &:disabled {
+          background-color: $gray60;
+
+          span {
+            color: $gray100;
+          }
+        }
+
+        span {
+          @include fontFamilyButton(mr);
+        }
+      }
+
+      .ant-btn + .ant-btn {
+        margin-left: 8px;
+      }
+    }
+  }
+}
+
+.notice-table {
+  .ant-table-container {
+    table {
+      table-layout: fixed !important;
+
+      th.title-cell {
+        padding-left: 24px;
+      }
+
+      td.title-cell {
+        padding: 12px 24px;
+
+        @include daoSm {
+          padding: 12px 8px;
+        }
+      }
+    }
+  }
+
+  .notice-title-wrap {
+    display: flex;
+    min-width: 0;
+    align-items: center;
+
+    .title {
+      @include fontFamilyTable(blr);
+      @include ellipsis;
+    }
+
+    .tag,
+    .attachment {
+      flex-shrink: 0;
+      margin-left: 8px;
+
+      svg {
+        width: 16px;
+        height: 16px;
+      }
+    }
+  }
+
+  & + .pagination-wrap {
+    margin-top: 12px;
+
+    @include daoSm {
+      margin-top: 8px;
+    }
+  }
+}
+
+.notice-post-wrap {
+  padding-top: 6px;
+
+  @include sm {
+    padding-bottom: 36px;
+    margin-top: -4px;
+  }
+
+  .notice-top {
+    .tag {
+      margin-bottom: 12px;
+
+      @include daoSm {
+        height: 24px;
+        padding-right: 12px;
+        padding-left: 12px;
+      }
+    }
+
+    .date {
+      @include fontFamilyBody(cl);
+
+      margin-top: 12px;
+      color: $gray60;
+    }
+  }
+
+  .notice-title-wrap {
+    display: flex;
+    align-items: center;
+
+    .title {
+      @include fontFamilyNBody(LB_F);
+    }
+
+    .attachment {
+      margin-left: 8px;
+
+      svg {
+        width: 24px;
+        height: 24px;
+
+        @include daoMd {
+          width: 32px;
+          height: 32px;
+        }
+      }
+    }
+  }
+
+  .sub-title-wrap {
+    display: flex;
+    justify-content: space-between;
+
+    @include daoSm {
+      flex-direction: column;
+
+      .btn-wrap {
+        margin-top: 20px;
+
+        button {
+          width: calc(50% - 4px);
+        }
+      }
+    }
+
+    button + button {
+      margin-left: 8px;
+    }
+  }
+
+  .notice-post {
+    padding-top: 24px;
+    padding-bottom: 40px;
+    border-top: 1px solid $gray80;
+    margin-top: 24px;
+
+    @include daoSm {
+      padding-top: 20px;
+      padding-bottom: 40px;
+      margin-top: 20px;
+    }
+
+    p {
+      @include fontFamilyNBody(MR_F);
+
+      color: $gray30;
+    }
+
+    strong {
+      font-weight: bolder;
+    }
+
+    em {
+      font-style: italic;
+    }
+  }
+
+  .download-list {
+    li {
+      margin-top: 24px;
+
+      @include daoSm {
+        margin-top: 20px;
+      }
+
+      .download-link {
+        @include fontFamilyBody(u);
+
+        display: inline-flex;
+        align-items: center;
+
+        svg {
+          width: 16px;
+          height: 16px;
+          margin-right: 8px;
+        }
+      }
+    }
+  }
+
+  .notice-nav {
+    border-top: 1px solid $gray60;
+
+    > li + li {
+      border-top: 1px solid $gray80;
+    }
+
+    .prev-item {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+
+    .nav-link {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      padding: 16px 24px;
+      transition: background-color 0.2s;
+
+      @include daoSm {
+        padding: 16px;
+      }
+
+      &:hover {
+        background-color: $gray90;
+      }
+
+      .nav-state {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+
+        .nav-text {
+          @include fontFamilyButton(mr);
+
+          margin-left: 12px;
+
+          @include daoSm {
+            display: none;
+          }
+        }
+
+        svg {
+          width: 24px;
+          height: 24px;
+        }
+      }
+
+      .nav-title {
+        display: flex;
+        min-width: 0;
+        align-items: center;
+        margin-left: 40px;
+
+        @include daoSm {
+          margin-left: 24px;
+        }
+
+        strong {
+          @include fontFamilyNBody(MB_F);
+          @include ellipsis;
+        }
+
+        .tag,
+        .attachment {
+          flex-shrink: 0;
+          margin-right: 8px;
+        }
+
+        .attachment {
+          margin-left: 8px;
+        }
+
+        .tag {
+          margin-left: 8px;
+        }
+      }
+    }
+  }
+}
+
+.station-recruit-item-wrap {
+  display: flex;
+  min-height: 176px;
+  padding: 32px 32px 16px;
+  border-top: 1px solid $gray80;
+
+  @include md {
+    min-height: 198px;
+    padding: 32px 24px 26px;
+  }
+
+  @include sm {
+    display: block;
+    padding: 24px 20px;
+  }
+
+  .period-wrap {
+    flex-basis: 328px;
+
+    @include md {
+      flex-basis: 295px;
+    }
+
+    .period {
+      @include fontFamilyBody(xlr);
+
+      color: $gray00;
+      white-space: pre-line;
+
+      @include sm {
+        @include fontsizeMixin(16, 24);
+      }
+
+      strong {
+        @include fontFamilyBody(xlb);
+
+        @include sm {
+          @include fontsizeMixin(16, 24);
+        }
+      }
+    }
+
+    .caption-wrap {
+      margin-top: 24px;
+
+      @include md {
+        margin-top: 20px;
+      }
+
+      @include sm {
+        margin-top: 12px;
+      }
+
+      .preview {
+        .inner {
+          .tag {
+            @include themeChangeMixin(border-color, 1);
+            @include themeChangeMixin(color, 1);
+          }
+
+          .caption {
+            margin-top: 8px;
+          }
+        }
+      }
+
+      .progress {
+        .inner {
+          display: flex;
+          align-items: center;
+
+          & + .inner {
+            margin-top: 8px;
+          }
+
+          .tag {
+            min-width: 56px;
+
+            @include md {
+              min-width: 67px;
+              height: 26px;
+            }
+
+            @include sm {
+              min-width: 64px;
+              height: 24px;
+            }
+          }
+
+          .caption {
+            margin-left: 8px;
+          }
+        }
+      }
+
+      .caption {
+        @include fontFamilyBody(cl);
+
+        color: $gray00;
+      }
+    }
+  }
+
+  .data-wrap {
+    flex: 1 0 auto;
+    margin-left: 56px;
+
+    @include sm {
+      margin: 0;
+    }
+
+    .chart-wrap {
+      margin-top: 12px;
+
+      @include md {
+        margin-top: 20px;
+      }
+
+      @include sm {
+        margin-top: 24px;
+      }
+
+      .progress-type.reward-wrap {
+        min-height: 88px;
+        padding-top: 24px;
+
+        @include md {
+          min-height: 106px;
+          padding-top: 26px;
+        }
+
+        @include sm {
+          min-height: 86px;
+        }
+
+        &::before {
+          position: absolute;
+          z-index: 10;
+          top: 0;
+          right: 0;
+          width: 20px;
+          height: 20px;
+          background: url("#{$rootPath}/icon/daostation/ico_about_goal.svg") no-repeat center center;
+          background-size: 20px 20px;
+          content: "";
+        }
+
+        &::after {
+          top: 24px;
+          height: 10px;
+          border-radius: 10px;
+
+          @include md {
+            top: 26px;
+            height: 12px;
+            border-radius: 12px;
+          }
+        }
+
+        .guide {
+          position: absolute;
+          z-index: 10;
+          top: 0;
+          left: 0;
+          color: $gray30;
+
+          // @include symbolStar;
+          @include fontFamilyData(cl);
+
+          &.participating {
+            @include themeChangeMixin(color, 1);
+
+            span {
+              @include themeChangeMixin(color, 1);
+            }
+          }
+        }
+
+        &.end > .guide {
+          color: $gray30 !important;
+        }
+
+        .progress-line .progress-rate {
+          top: 0;
+          min-width: 10px;
+          height: 10px;
+          border-radius: 10px;
+
+          @include md {
+            min-width: 12px;
+            height: 12px;
+            border-radius: 12px;
+          }
+
+          &::after {
+            top: 2px;
+            right: 2px;
+
+            @include md {
+              top: 3px;
+              right: 3px;
+            }
+          }
+        }
+
+        &.end > .progress-line .progress-rate {
+          background-color: $gray30;
+        }
+
+        .chart-field-wrap {
+          position: absolute;
+          z-index: 10;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          display: flex;
+          justify-content: space-between;
+
+          .name {
+            display: block;
+
+            @include fontFamilyBody(mb);
+
+            color: $gray00;
+          }
+
+          .value {
+            display: block;
+            margin-top: 4px;
+            color: $gray30;
+
+            @include fontFamilyData(cl);
+
+            @include md {
+              margin-top: 6px;
+            }
+
+            .percent {
+              @include fontFamilyData(sb);
+              @include themeChangeMixin(color, 1);
+
+              &.over-num {
+                @include sm {
+                  @include fontFamilyHeading(s);
+                }
+              }
+            }
+          }
+
+          .target {
+            text-align: right;
+          }
+
+          &.ongoing .value {
+            @include themeChangeMixin(color, 1);
+          }
+        }
+
+        &.end .chart-field-wrap .value {
+          color: $gray30 !important;
+
+          .percent {
+            color: $gray30;
+          }
+        }
+      }
+    }
+  }
+
+  .recruit-complete {
+    width: 100%;
+    padding-right: 188px;
+    background-image: url("#{$rootPath}/icon/ico_wonder_recruit_complete.svg");
+    background-position: center right 0;
+    background-repeat: no-repeat;
+    background-size: 148px;
+
+    @include sm {
+      padding-top: 128px;
+      padding-right: 0;
+      margin-top: -10px;
+      background-position: top 0 right 50%;
+      background-size: 120px;
+    }
+
+    .complete-title {
+      @include fontFamilyBody(xlb);
+    }
+
+    .desc {
+      @include fontFamilyBody(mr);
+
+      margin-top: 8px;
+
+      & + .ant-btn {
+        margin-top: 20px;
+      }
+    }
+  }
+}
+
+.dao-scan-table-button-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  &.hash {
+    justify-content: center;
+  }
+
+  .img-area {
+    display: flex;
+    width: 34px;
+    flex-shrink: 0;
+    justify-content: center;
+
+    svg {
+      width: auto;
+      height: 24px;
+    }
+  }
+
+  &.hash {
+    justify-content: center;
+  }
+
+  &:not(.hash) {
+    > .dao-scan-table-button {
+      &:first-child {
+        margin-left: 34px;
+      }
+
+      &:last-child {
+        margin-right: calc(4px + 12px);
+      }
+    }
+
+    .tooltip-wrap {
+      &:first-child {
+        margin-left: 34px;
+      }
+
+      &:last-child {
+        margin-right: calc(4px + 12px);
+      }
+    }
+  }
+
+  .tooltip-wrap {
+    .dao-scan-btn {
+      a {
+        text-align: left;
+      }
+    }
+
+    .tooltip {
+      max-width: 240px;
+
+      .tooltip-contents {
+        text-align: center;
+
+        .button-text {
+          color: $gray100;
+
+          & + .detail-info {
+            &::before {
+              content: "(";
+            }
+
+            &::after {
+              content: ")";
+            }
+          }
+        }
+
+        .detail-info {
+          display: block;
+          color: $gray100;
+          white-space: normal;
+
+          /* 23.03.29 수정: 툴팁 폰트 일괄 14->12px 수정 */
+          @include fontFamilyNCaption(SR_F_Caption);
+        }
+      }
+    }
+  }
+
+  .icon-contract {
+    display: block;
+    margin-left: 4px;
+  }
+}
+
+.mobile-scan-btn {
+  display: none;
+
+  .more-btn-st-wrap {
+    @include sm {
+      position: relative;
+      top: 0;
+      right: 0;
+      display: block;
+      text-align: center;
+    }
+  }
+
+  @include sm {
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+    margin-top: 8px;
+    background-color: $gray100;
+
+    a {
+      min-width: 200px;
+      border: none;
+    }
+  }
+}
+
+.more-btn-st-wrap {
+  position: absolute;
+  z-index: 10;
+  top: 16px;
+  right: 20px;
+
+  svg {
+    transform: rotate(-90deg);
+  }
+
+  @include sm {
+    display: none;
+  }
+}
+
+.wemix-allow-popup {
+  .modal-wrap {
+    .ant-modal-header {
+      border-bottom: 1px solid $gray80;
+    }
+  }
+
+  .wemix-allow-table-wrap {
+    padding: 24px 0;
+
+    @include sm {
+      padding: 0;
+    }
+
+    .governance-setting-type-wrap + .governance-setting-type-wrap {
+      margin-top: 28px;
+    }
+
+    .wemix-allow-table1 {
+      .proposal-table {
+        th {
+          padding: 9px 16px;
+
+          @include fontFamilyTable(tb);
+        }
+
+        td {
+          @include fontFamilyTable(br);
+
+          padding: 7px 16px;
+        }
+      }
+    }
+
+    .wemix-allow-table2 {
+      position: relative;
+
+      .proposal-table {
+        th {
+          padding: 9px 16px;
+
+          @include fontFamilyTable(tb);
+        }
+
+        td {
+          padding: 12px 16px;
+        }
+      }
+
+      .wemix-allow-field {
+        display: flex;
+        width: 100%;
+        align-items: center;
+
+        @include daoSm {
+          flex-direction: column;
+          align-items: flex-end;
+
+          button {
+            margin-top: 8px;
+          }
+        }
+
+        .input-wrap {
+          display: flex;
+          width: 100%;
+          align-items: center;
+
+          .ant-input {
+            text-align: right;
+          }
+
+          .unit-wrap {
+            display: block;
+            margin: 0 16px 0 8px;
+            color: $gray30;
+
+            @include fontFamilyNBody(SR_F);
+
+            @include daoSm {
+              margin: 0 0 0 8px;
+            }
+          }
+        }
+      }
+
+      .ant-form-item {
+        margin-bottom: 0;
+      }
+
+      .ant-form-item-explain-error {
+        display: flex;
+        min-height: 0;
+
+        @include daoSm {
+          position: absolute;
+          top: 44px;
+          left: 0;
+        }
+      }
+    }
+  }
+}
+
+.list-bar-wrap {
+  li {
+    position: relative;
+    padding-left: 10px;
+    margin-top: 4px;
+    color: $gray30;
+
+    @at-root [lang="en"] & {
+      word-break: break-word;
+    }
+
+    @include fontFamilyNBody(MR_F);
+
+    .caption {
+      @include fontFamilyNBody(SR_F);
+
+      color: $gray50;
+
+      &::before {
+        content: "*";
+      }
+    }
+
+    &::before {
+      position: absolute;
+      top: 1px;
+      left: 0;
+      display: block;
+      content: "- ";
+    }
+  }
+}

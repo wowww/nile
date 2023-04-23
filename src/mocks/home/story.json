@@ -1,0 +1,70 @@
+[
+  {
+    "id": 6,
+    "videoUrl": "https://nile.blob.core.windows.net/media/SON6/low/1.mp4",
+    "tags": ["home.story.item.7.tag.0", "home.story.item.7.tag.1", "home.story.item.7.tag.2", "home.story.item.7.tag.3"],
+    "title": "home.story.item.7.title",
+    "content": "home.story.item.7.desc",
+    "link": "/nile/storydetail6",
+    "date": "2023-03-16",
+    "columnist": "home.story.item.7.columnist.name",
+    "creator": "home.story.item.7.creator"
+  },
+  {
+    "id": 5,
+    "videoUrl": "/video/life_sights_of_nile5_regina.mp4",
+    "tags": ["home.story.item.6.tag.0", "home.story.item.6.tag.1", "home.story.item.6.tag.2", "home.story.item.6.tag.3"],
+    "title": "home.story.item.6.title",
+    "content": "home.story.item.6.desc",
+    "link": "/nile/storydetail5",
+    "date": "2023-02-24",
+    "columnist": "home.story.item.6.columnist.name",
+    "creator": "home.story.item.6.creator"
+  },
+  {
+    "id": 4,
+    "image": "/images/img_sights_of_nile_son4_1920.jpg",
+    "tags": ["home.story.item.5.tag.0", "home.story.item.5.tag.1", "home.story.item.5.tag.2", "home.story.item.5.tag.3"],
+    "title": "home.story.item.5.title",
+    "content": "home.story.item.5.desc",
+    "link": "/nile/storydetail4",
+    "date": "2023-01-19",
+    "columnist": "home.story.item.5.columnist.name",
+    "creator": "home.story.item.5.creator"
+  },
+  {
+    "id": 3,
+    "videoUrl": "/video/life_sights_of_nile3_nakta.mp4",
+    "tags": ["home.story.item.4.tag.0", "home.story.item.4.tag.1", "home.story.item.4.tag.2", "home.story.item.4.tag.3"],
+    "title": "home.story.item.4.title",
+    "content": "home.story.item.4.desc",
+    "link": "/nile/storydetail3",
+    "date": "2022-12-27",
+    "columnist": "home.story.item.4.columnist.name",
+    "creator": "home.story.item.4.creator"
+  },
+  {
+    "id": 2,
+    "image": "/images/img_sights_of_nile_son2.png",
+    "tags": ["home.story.item.3.tag.0", "home.story.item.3.tag.1", "home.story.item.3.tag.2", "home.story.item.3.tag.3"],
+    "title": "home.story.item.3.title",
+    "content": "home.story.item.3.desc",
+    "link": "/nile/storydetail2",
+    "date": "2022-12-12",
+    "columnist": "home.story.item.3.columnist.name",
+    "creator": "home.story.item.3.creator"
+  },
+  {
+    "id": 1,
+    "videoUrl": "https://nile.blob.core.windows.net/media/SON/1.mp4",
+    "tags": ["home.story.item.2.tag.0", "home.story.item.2.tag.1", "home.story.item.2.tag.2", "home.story.item.2.tag.3"],
+    "title": "home.story.item.2.title",
+    "content": "home.story.item.2.desc",
+    "link": "/nile/storydetail",
+    "date": "2022-11-11",
+    "work": "home.story.item.2.work",
+    "info": "home.story.item.2.info",
+    "columnist": "home.story.item.4.columnist.name",
+    "creator": "home.story.item.2.creator"
+  }
+]

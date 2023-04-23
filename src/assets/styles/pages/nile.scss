@@ -1,0 +1,1422 @@
+@use "sass:map";
+
+.nile-visual {
+  .video-wrap {
+    overflow: hidden;
+    height: 560px;
+
+    @include md {
+      height: auto;
+
+      // TODO : 11/11 오픈 대비 코드
+      // padding: 92px 0 143px;
+      padding: 92px 0 0;
+    }
+
+    backface-visibility: hidden;
+
+    @include sm {
+      height: auto;
+
+      // TODO : 11/11 오픈 대비 코드
+      // padding: 50px 0 70px;
+      padding: 50px 0 30px;
+    }
+
+    video {
+      position: relative;
+      z-index: 1;
+
+      // top: -9px;
+      width: auto;
+      height: 560px;
+      margin: 0 auto;
+      object-fit: cover;
+
+      @include md {
+        top: 0;
+        width: auto;
+        height: 640px; // 700px;
+      }
+
+      @include sm {
+        top: 0;
+        width: auto;
+        height: 280px; // 312px
+      }
+    }
+  }
+}
+
+.nile-content-wrap {
+  @include maxWidthLg;
+
+  padding: 20px 0 70px;
+
+  @include md {
+    padding-top: 0;
+  }
+
+  @include sm {
+    padding-top: 60px;
+  }
+
+  .nile-content {
+    .content-title {
+      margin-bottom: 24px;
+
+      @include md {
+        margin-bottom: 20px;
+      }
+
+      @include sm {
+        margin-bottom: 20px;
+      }
+    }
+
+    & + .nile-content {
+      margin-top: 80px;
+
+      @include md {
+        margin-top: 60px;
+      }
+
+      @include sm {
+        margin-top: 60px;
+      }
+    }
+  }
+}
+
+.nile-docs-banner {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  height: 280px;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 40px;
+  border: 1px solid $gray80;
+  background-color: #fafafa;
+
+  @include md {
+    padding: 36px 40px 40px;
+  }
+
+  @include sm {
+    height: 426px;
+    padding: 28px 28px 224px;
+  }
+
+  .title-wrap {
+    .title {
+      @include fontFamilyDp(title);
+    }
+
+    .desc {
+      @include fontFamilyBody(xlb);
+
+      margin-top: 8px;
+
+      @include md {
+        font-size: 18px;
+        line-height: 26px;
+        white-space: pre-line;
+      }
+
+      @include sm {
+        font-size: 16px;
+        line-height: 24px;
+
+        // white-space: pre-line;
+      }
+    }
+  }
+
+  .btn-wrap {
+    @include sm {
+      margin-top: 12px;
+    }
+  }
+
+  .img-wrap {
+    position: absolute;
+    top: 50%;
+    right: 60px;
+    width: 444px;
+    height: 191px;
+    transform: translateY(-50%);
+
+    @include md {
+      top: 48px;
+      right: -74px;
+      transform: none;
+    }
+
+    @include sm {
+      top: auto;
+      right: -58px;
+      bottom: 40px;
+      width: 320px;
+      height: 138px;
+      transform: none;
+    }
+
+    img {
+      width: 100% !important;
+      height: auto !important;
+      min-height: auto !important;
+      max-height: none !important;
+    }
+  }
+}
+
+.recently-sold-card {
+  @include lg {
+    width: 220px;
+  }
+
+  @include md {
+    display: flex;
+    width: 100%;
+  }
+
+  @include sm {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @include md {
+      display: none;
+    }
+
+    @include sm {
+      width: 100%;
+      justify-content: flex-start;
+    }
+
+    .left-time {
+      @include fontFamilyData(cs);
+
+      color: $gray60;
+
+      @include sm {
+        margin-left: 8px;
+      }
+    }
+  }
+
+  .image-block {
+    position: relative;
+    width: 100%;
+    margin-top: 8px;
+    aspect-ratio: 1 / 1;
+    background-color: $gray90;
+
+    @include md {
+      width: 240px;
+      margin-top: 0;
+    }
+
+    @include sm {
+      width: 152px;
+    }
+  }
+
+  .video-wrap {
+    display: block;
+    overflow: hidden;
+    width: 220px;
+    height: 220px;
+    margin-top: 8px;
+
+    @include md {
+      width: 240px;
+      height: 240px;
+      margin-top: 0;
+    }
+
+    @include sm {
+      width: 152px;
+      height: 152px;
+    }
+
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .info-block {
+    margin-top: 12px;
+
+    @include md {
+      display: flex;
+      width: calc(100% - 264px);
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 8px 0;
+      margin-top: 0;
+      margin-left: 24px;
+    }
+
+    @include sm {
+      display: flex;
+      width: calc(100% - 168px);
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 2px 0;
+      margin-top: 8px;
+      margin-left: 16px;
+    }
+
+    .info-top-md {
+      display: none;
+
+      @include md {
+        display: flex;
+        align-items: center;
+      }
+
+      .left-time {
+        @include fontFamilyData(cs);
+
+        margin-left: 8px;
+        color: $gray60;
+      }
+    }
+
+    .info-top {
+      .product-name {
+        @include fontFamilyBody(tb);
+        @include ellipsis;
+
+        display: block;
+
+        @include md {
+          margin-top: 16px;
+        }
+      }
+    }
+
+    .info-bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 12px;
+      border-top: 1px solid $gray80;
+      margin-top: 12px;
+
+      @include md {
+        border: none;
+      }
+
+      @include sm {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 0;
+        border: none;
+        margin-top: 0;
+      }
+
+      dl {
+        display: flex;
+        width: 118px;
+        height: 38px;
+        flex-direction: column;
+        justify-content: space-between;
+
+        @include md {
+          width: 154px;
+        }
+
+        @include sm {
+          width: 100%;
+          height: 35px;
+        }
+
+        & + dl {
+          width: 116px;
+          margin-left: 4px;
+
+          @include md {
+            margin-left: 24px;
+          }
+
+          @include sm {
+            width: 100%;
+            height: 38px;
+            margin-top: 8px;
+            margin-left: 0;
+          }
+
+          dd {
+            @include ellipsis;
+
+            position: relative;
+            display: block;
+            width: 100%;
+            padding-left: 24px;
+            line-height: 20px;
+
+            @include md {
+              line-height: 20px;
+            }
+
+            .user-image {
+              position: absolute;
+              top: 50%;
+              left: 0;
+              transform: translateY(-50%);
+            }
+          }
+        }
+
+        dt {
+          @include fontFamilyData(cs);
+
+          color: $gray60;
+        }
+
+        dd {
+          @include fontFamilyData(cl);
+
+          display: flex;
+          height: 20px;
+          align-items: center;
+          color: $gray20;
+
+          @include sm {
+            height: auto;
+          }
+        }
+
+        &:first-of-type {
+          dd {
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+}
+
+.recently-slide-wrap {
+  display: flex;
+
+  > li > a {
+    width: 100%;
+  }
+
+  @include md {
+    flex-direction: column;
+  }
+
+  @include sm {
+    flex-direction: column;
+  }
+
+  li + li {
+    @include lg {
+      margin-left: 24px;
+    }
+
+    @include md {
+      padding-top: 20px;
+      border-top: 1px solid $gray80;
+      margin-top: 20px;
+    }
+
+    @include sm {
+      padding-top: 20px;
+      border-top: 1px solid $gray80;
+      margin-top: 20px;
+    }
+  }
+}
+
+.nile-hero {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  &-content {
+    display: flex;
+    width: 100%;
+    padding: 28px 0 76px;
+
+    @include md {
+      justify-content: space-between;
+      padding: 40px 0 88px;
+    }
+
+    @include sm {
+      position: relative;
+      display: block;
+      padding-top: 40px;
+      padding-bottom: 24px;
+    }
+  }
+
+  &-item {
+    @include md {
+      width: 50%;
+      margin-left: 24px;
+    }
+
+    @include sm {
+      width: 100%;
+      padding: 32px 20px 28px;
+      margin-right: 0;
+    }
+  }
+
+  .text-wrap {
+    width: 568px;
+    padding-top: 60px;
+    padding-left: 100px;
+
+    @include md {
+      width: 50%;
+      flex-shrink: 0;
+      padding: 0 0 0 40px;
+    }
+
+    @include sm {
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    .title {
+      @include fontFamilyDp(l);
+
+      white-space: pre-line;
+
+      .br {
+        @include sm {
+          display: none;
+        }
+      }
+
+      @include sm {
+        text-align: center;
+      }
+    }
+
+    .desc {
+      @include fontFamilyBody(cardmr);
+
+      margin-top: 20px;
+      color: $gray20;
+      white-space: pre-line;
+
+      @include md {
+        margin-top: 16px;
+
+        @include fontFamilyBody(mr);
+      }
+
+      @include sm {
+        @include fontFamilyBody(mr);
+
+        margin-top: 12px;
+        text-align: center;
+      }
+    }
+
+    .btn {
+      min-width: 200px;
+      margin-top: 40px;
+
+      @include md {
+        min-width: 180px;
+        margin-top: 48px;
+        font-size: 16px;
+      }
+
+      @include sm {
+        display: none;
+      }
+    }
+  }
+
+  .swiper-wrap {
+    width: 100%;
+    margin-right: 56px;
+
+    .nile-hero-swiper {
+      width: 576px;
+      border-radius: 4px;
+      box-shadow: 0 5px 20px rgb(0 0 0 / 20%);
+
+      @include md {
+        width: 320px;
+        margin: 0 40px 0 0;
+      }
+
+      @include sm {
+        width: calc(100% - 40px);
+        margin: 32px 20px 28px;
+      }
+    }
+
+    .swiper-slide {
+      // &-active {
+      //   .contents-wrap {
+      //     box-shadow: 0 5px 20px rgb(0 0 0 / 20%);
+      //   }
+      // }
+
+      .nile-hero-item {
+        background: $white;
+
+        @include md {
+          display: flex;
+          width: auto;
+          margin-left: 0;
+        }
+
+        @include sm {
+          padding: 0;
+        }
+
+        .has-logo-contents {
+          display: flex;
+
+          > div {
+            .logo-wrap {
+              position: relative;
+              height: 72px;
+              transform: initial;
+            }
+          }
+        }
+
+        &.wemix-champion,
+        &.cora,
+        &.con,
+        &.tangled,
+        &.neith {
+          .contents-wrap {
+            width: 576px;
+
+            @include md {
+              width: 320px;
+            }
+
+            @include sm {
+              width: 100%;
+            }
+          }
+
+          .info-wrap {
+            position: relative;
+            z-index: 1;
+
+            .info-bottom {
+              .info-desc {
+                @include md {
+                  white-space: normal !important;
+
+                  @at-root [lang="en"] & {
+                    line-height: 1.2 !important;
+                    word-break: break-word;
+                  }
+                }
+
+                @include sm {
+                  white-space: normal !important;
+
+                  @at-root [lang="en"] & {
+                    line-height: 1.2 !important;
+                    word-break: break-word;
+                  }
+                }
+              }
+            }
+          }
+
+          .img-wrap {
+            @include sm {
+              display: block;
+            }
+          }
+
+          .item-title {
+            @include fontFamilyPhrase(xsb);
+          }
+
+          .info-desc {
+            @include fontFamilyBody(sr);
+
+            white-space: pre-line;
+          }
+
+          .logo-wrap {
+            position: absolute;
+            z-index: 10;
+            top: 50%;
+            right: 24px;
+            width: 72px;
+            height: 72px;
+            transform: translate(0, -50%);
+
+            @include md {
+              right: 20px;
+            }
+
+            @include sm {
+              right: 20px;
+            }
+          }
+        }
+
+        &.kari,
+        &.neith {
+          .info-wrap {
+            .info-bottom {
+              .info-desc {
+                @include md {
+                  white-space: normal !important;
+                  word-break: break-word;
+                }
+
+                @include sm {
+                  white-space: normal !important;
+                  word-break: break-word;
+                }
+              }
+            }
+          }
+        }
+
+        &.kari,
+        &.dao {
+          .contents-wrap {
+            width: 576px;
+
+            @include md {
+              width: 320px;
+            }
+
+            @include sm {
+              width: 100%;
+            }
+          }
+        }
+
+        &.nft {
+          min-width: 576px;
+          text-align: center;
+
+          @include md {
+            min-width: 320px;
+          }
+
+          @include sm {
+            min-width: 100%;
+          }
+
+          .contents-wrap {
+            width: 324px;
+
+            .info-wrap .info-bottom {
+              @include lg {
+                align-items: flex-end;
+              }
+            }
+
+            @include md {
+              width: 320px;
+            }
+
+            @include sm {
+              width: 100%;
+            }
+          }
+        }
+
+        .item-title {
+          @include fontFamilyHeading(xs);
+
+          margin-left: 96px;
+
+          @include md {
+            margin-left: 24px;
+          }
+
+          @include sm {
+            margin-left: 20px;
+          }
+        }
+
+        .item-wrap {
+          display: block;
+
+          // margin: 0 auto;
+          cursor: pointer;
+          text-align: left;
+
+          @include md {
+            // margin-right: 0;
+            // margin-left: auto;
+          }
+        }
+
+        .contents-wrap {
+          overflow: hidden;
+          border-radius: 4px;
+          margin: 0 auto;
+
+          .img-wrap {
+            position: relative;
+            height: 324px;
+            background: $gray90;
+
+            @include md {
+              width: 320px;
+              height: 320px;
+            }
+
+            @include sm {
+              width: 100%;
+              height: auto;
+              aspect-ratio: 1 / 1;
+            }
+
+            .dao-img {
+              position: relative;
+              display: block;
+              width: 100%;
+              padding: 0 55px;
+
+              span {
+                position: relative !important;
+
+                img {
+                  position: relative !important;
+                  width: auto !important;
+                  height: auto !important;
+                }
+              }
+            }
+
+            .play-btn {
+              position: absolute;
+              z-index: 100;
+              top: 50%;
+              left: 50%;
+              width: 80px;
+              height: 80px;
+              transform: translate(-50%, -50%);
+
+              svg {
+                width: 100%;
+                height: auto;
+              }
+            }
+
+            .img-desc {
+              @include fontFamilyBody(sr);
+
+              position: absolute;
+              top: 336px;
+              left: 50%;
+              width: 100%;
+              max-width: 377px;
+              color: $gray40;
+              text-align: center;
+              transform: translateX(-50%);
+              white-space: pre-line;
+
+              @include md {
+                top: 228px;
+                max-width: 251px;
+                white-space: normal;
+              }
+
+              @include sm {
+                top: 71%;
+                max-width: 216px;
+                white-space: normal;
+              }
+            }
+
+            .insignia {
+              position: absolute;
+              z-index: 1;
+              top: 0;
+              left: 8px;
+
+              svg {
+                width: 50px;
+                height: 63px;
+              }
+            }
+
+            .badge-wrap {
+              position: absolute;
+              right: 16px;
+              bottom: 16px;
+              width: 101px;
+              height: 28px;
+            }
+          }
+
+          .video-wrap {
+            display: block;
+            overflow: hidden;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+
+            video {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+
+          .info-wrap {
+            min-height: 100px;
+            padding: 12px 20px;
+
+            @include md {
+              padding: 20px;
+            }
+
+            @include sm {
+              padding: 16px 20px 22px;
+            }
+
+            &.desc {
+              min-height: 100px;
+              padding: 12px 20px;
+
+              .info-bottom {
+                margin-top: 0;
+
+                @include md {
+                  margin-top: 4px;
+                }
+
+                @include sm {
+                  margin-top: 4px;
+                }
+              }
+            }
+
+            .info-title {
+              @include fontFamilyPhrase(xsb);
+              @include ellipsis;
+
+              @include md {
+                line-height: normal;
+              }
+
+              @include sm {
+                line-height: normal;
+              }
+            }
+
+            .info-bottom {
+              display: flex;
+              width: 100%;
+              height: 44px;
+              justify-content: space-between;
+
+              @include lg {
+                // align-items: flex-end;
+              }
+
+              @include md {
+                height: auto;
+                margin-top: 4px;
+              }
+
+              @include sm {
+                height: auto;
+                margin-top: 8px;
+              }
+
+              &.desc {
+                margin-top: 12px;
+              }
+
+              dl {
+                & + dl {
+                  width: 50%;
+                }
+              }
+
+              dt {
+                @include fontFamilyData(cs);
+
+                color: $gray60;
+              }
+
+              dd {
+                @include fontFamilyData(cs);
+
+                margin-top: 6px;
+                color: $gray20;
+
+                @include md {
+                  margin-top: 6px;
+                }
+
+                @include sm {
+                  margin-top: 14px;
+                }
+
+                .price {
+                  @include fontFamilyData(sb);
+
+                  padding-right: 4px;
+
+                  @include sm {
+                    @include fontFamilyData(sb);
+                  }
+                }
+              }
+
+              .user-info {
+                dd {
+                  display: flex;
+                  align-items: center;
+                  margin-top: 4px;
+
+                  @include md {
+                    margin-top: 6px;
+                  }
+
+                  @include sm {
+                    margin-top: 4px;
+                  }
+
+                  .user-image {
+                    flex-shrink: 0;
+
+                    @include md {
+                      width: 24px !important;
+                      height: 24px !important;
+                    }
+
+                    @include sm {
+                      width: 24px !important;
+                      height: 24px !important;
+                    }
+                  }
+
+                  .user-name {
+                    @include ellipsis;
+
+                    margin-left: 8px;
+                    color: $gray20;
+                    line-height: 1.4;
+                  }
+                }
+              }
+
+              .price-info {
+                dd {
+                  @include sm {
+                    margin-top: 8px;
+                  }
+                }
+              }
+
+              .period-info {
+                width: 100%;
+                margin-top: 5px;
+
+                @include md {
+                  margin-top: 4px;
+                }
+
+                @include sm {
+                  margin-top: 8px;
+                }
+
+                dd {
+                  width: 100%;
+                  margin-top: 6px;
+
+                  @include md {
+                    margin-top: 10px;
+                  }
+
+                  @include sm {
+                    margin-top: 6px;
+                  }
+                }
+
+                &.join-now {
+                  dd {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-top: 6px;
+
+                    @include md {
+                      margin-top: 6px;
+                    }
+
+                    @include sm {
+                      margin-top: 8px;
+                    }
+
+                    .period {
+                      color: $gray20;
+
+                      @include md {
+                        width: 147px;
+                      }
+
+                      @include sm {
+                        width: 147px;
+                      }
+                    }
+                  }
+                }
+              }
+
+              .info-desc {
+                display: block;
+                color: $gray20;
+                line-height: 22px;
+                white-space: pre-line;
+
+                @include fontFamilyBody(sr);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .slide-bottom {
+    position: absolute;
+    z-index: 1;
+
+    @include lg {
+      right: 28px;
+      bottom: 28px;
+      width: 576px;
+    }
+
+    @include md {
+      right: 40px;
+      bottom: 40px;
+      width: 320px;
+    }
+
+    @include sm {
+      bottom: 0;
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    .btn-wrap {
+      flex-shrink: 1;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .hero-btn-prev,
+      .hero-btn-next {
+        flex:1;
+        min-width: 24px;
+        max-width: 24px;
+        width: 24px;
+        height: 24px;
+
+        &.swiper-button-disabled {
+          cursor: default;
+
+          svg {
+            path {
+              fill: $gray60;
+            }
+          }
+        }
+
+        svg {
+          width: 100%;
+          height: 100%;
+
+          path {
+            fill: $gray00;
+          }
+        }
+      }
+
+      .hero-btn-prev {
+        svg {
+          transform: rotate(90deg);
+        }
+      }
+
+      .hero-btn-next {
+        svg {
+          transform: rotate(-90deg);
+        }
+      }
+
+      .swiper-button-lock {
+        display: block;
+      }
+
+      .hero-slide-pagination {
+        display: flex;
+        width: 356px;
+        margin: 0 16px;
+        gap: 4px;
+
+        @include sm {
+         width: calc(100% - 48px);
+        }
+
+        .swiper-pagination-bullet {
+          border-radius: 0;
+          margin: 0;
+          opacity: 1;
+        }
+
+        span {
+          position: relative;
+          width: 100%;
+          height: 4px;
+          background: $gray85;
+          cursor: pointer;
+
+
+          &::after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: $gray00;
+            content: "";
+          }
+
+          &.swiper-pagination-bullet-active {
+            &::after {
+              width: 100%;
+              animation: pagination linear var(--swiper-time);
+              animation-iteration-count: unset;
+            }
+          }
+
+          @keyframes pagination {
+            from {
+              width: 0;
+            }
+
+            to {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.nile-footprint-wrap {
+  @at-root .nile-main-wrap {
+    overflow: hidden; // swiper-initialize overflow: visible 추가로 화면 가로 스크롤 발생
+  }
+
+  position: relative;
+  z-index: 1;
+
+  &::after {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: $white;
+    content: "";
+  }
+
+  .content-title {
+    margin-bottom: 10px;
+  }
+
+  .swiper-initialized {
+    padding: 10px 8px;
+
+    @include sm {
+      padding: 0;
+    }
+  }
+
+  .swiper-slide {
+    width: 160px;
+
+    @include sm {
+      width: 154px;
+    }
+  }
+
+  .footprint-item {
+    width: 180px;
+    height: 280px;
+    border: 1px solid $gray00;
+    border-radius: 4px;
+  }
+
+  .nile-footprint-card {
+    display: flex;
+    overflow: hidden;
+    width: 160px;
+    height: 220px;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid $gray80;
+    border-radius: 4px;
+    transition: all 0.2s;
+
+    @include sm {
+      width: 154px;
+    }
+
+    &:hover {
+      border-color: $gray00;
+      transform: scale(1.05);
+
+      @include md {
+        transform: scale(1);
+      }
+
+      .user-name.login {
+        text-decoration: underline;
+      }
+
+      .bottom-contents {
+        text-decoration: underline;
+      }
+    }
+
+    .card-top {
+      padding: 12px;
+
+      .card-top-header {
+        display: flex;
+        justify-content: space-between;
+
+        .profile-wrap {
+          @for $i from 1 through 10 {
+            &.profile-color-#{$i} {
+              // background-color: $egypt#{$i};
+              background-color: map.get($egypt, $i);
+            }
+          }
+
+          border-radius: 50%;
+
+          svg {
+            width: 40px;
+            height: 40px;
+          }
+        }
+
+        .user-image {
+          flex-shrink: 0;
+        }
+
+        .time-left {
+          @include fontFamilyChip(s);
+
+          margin-left: 10px;
+          color: $gray80;
+
+          @include sm {
+            margin-left: 6px;
+          }
+        }
+      }
+
+      .user-name {
+        @include fontFamilyChip(s);
+
+        display: block;
+        margin-top: 8px;
+        color: $gray30;
+        cursor: pointer;
+
+        &.anon {
+          color: $gray60;
+          cursor: initial;
+        }
+      }
+
+      .activity-desc {
+        display: block;
+        margin-top: 4px;
+
+        @include fontFamilyChip(m1b);
+      }
+
+      .figure {
+        @include fontFamilyData(cs);
+
+        margin-top: 4px;
+        color: $gray60;
+      }
+    }
+
+    .card-bottom {
+      display: flex;
+      height: 66px;
+      align-items: flex-end;
+      background: no-repeat center/cover;
+      padding: {
+        right: 4px;
+        bottom: 10px;
+        left: 4px;
+      };
+
+      .bottom-contents {
+        display: flex;
+        width: 100%;
+        padding: 4px 8px;
+        background-color: $gray100;
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+
+        .image-wrap {
+          position: relative;
+          width: 20px;
+          height: 20px;
+          flex-shrink: 0;
+        }
+
+        .bottom-contents-text {
+          @include fontFamilyBody(sr);
+          @include ellipsis;
+
+          margin-left: 8px;
+
+          @include sm {
+            margin-left: 4px;
+          }
+        }
+      }
+    }
+  }
+}

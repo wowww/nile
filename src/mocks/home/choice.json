@@ -1,0 +1,36 @@
+[
+  {
+    "tag": "home.choice.item.3.tag",
+    "image": "/temp/@temp_pick_thumbnail8.png",
+    "pickTitle": "home.choice.item.3.title",
+    "pickDescription": "home.choice.item.3.desc",
+    "marketOpen": true,
+    "buttonType": [
+      {
+        "buttonText": "discoverProjectBtn",
+        "link": "/life/snkrz"
+      },
+      {
+        "buttonText": "goToCollection",
+        "link": "/marketplace/SNKRZ"
+      }
+    ]
+  },
+  {
+    "tag": "home.choice.item.4.tag",
+    "image": "/temp/@temp_pick_thumbnail10.png",
+    "pickTitle": "home.choice.item.5.title",
+    "pickDescription": "home.choice.item.5.desc",
+    "marketOpen": true,
+    "buttonType": [
+      {
+        "buttonText": "discoverProjectBtn",
+        "link": "/life/ttps"
+      },
+      {
+        "buttonText": "goToCollection",
+        "link": "/marketplace/TTPS"
+      }
+    ]
+  }
+]

@@ -1,0 +1,2385 @@
+// life-tangled top
+.life-top-section.tangled {
+  &::before {
+    background-image: url("#{$rootPath}/img/img_tangled_visual.png");
+
+    @include md {
+      background-position: right -252px bottom -37px;
+    }
+
+    @include sm {
+      mask-image: linear-gradient(180deg, rgb(26 26 26 / 70%) 0%, rgb(26 26 26 / 70%) 100%);
+    }
+  }
+
+  &::after {
+    @include sm {
+      display: none;
+    }
+  }
+}
+
+.life-tangled-inner {
+  @include maxWidthLg;
+
+  .tangled-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+      @include fontFamilyHeading(xl);
+
+      color: $gray100;
+    }
+
+    p {
+      margin-top: 16px;
+      color: $gray80;
+      white-space: pre-line;
+
+      @include fontFamilyBody(lr);
+
+      @include sm {
+        margin-top: 8px;
+        white-space: normal;
+      }
+    }
+  }
+
+  // overview
+  &.overview {
+    // Women Friendly Web3 Live Chat
+    .overview-women-friendly {
+      margin-top: 60px;
+      text-align: center;
+
+      .ttps-title-wrap {
+        .color-title {
+          display: inline-block;
+          background: linear-gradient(-90deg, #1271ff 0%, #b338ff 74.1%, #e1b0ff 106.17%);
+          background-clip: text;
+          -webkit-text-fill-color: transparent;
+
+          @include fontFamilyDp(xl);
+        }
+
+        .desc {
+          @include fontFamilyBody(xlr);
+
+          max-width: 650px;
+          margin: 20px auto 0;
+          color: $gray80;
+          white-space: pre-line;
+
+          @include sm {
+            margin-top: 12px;
+          }
+        }
+      }
+
+      .ttps-video-wrap {
+        position: relative;
+        margin-top: 60px;
+
+        @include md {
+          padding-bottom: 60px;
+        }
+
+        @include sm {
+          overflow: hidden;
+          width: calc(100% + 40px);
+          height: 282px;
+          padding-bottom: 40px;
+          margin-top: 44px;
+          margin-left: -20px;
+        }
+
+        .video-inner {
+          width: 800px;
+          margin: 0 auto;
+
+          @include md {
+            width: 600px;
+          }
+
+          @include sm {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 440px;
+            transform: translateX(-50%);
+          }
+        }
+      }
+
+      .ttps-women-friendly-list {
+        padding-bottom: 96px;
+        margin-top: 60px;
+
+        @include md {
+          padding-bottom: 60px;
+          margin-top: 64px;
+        }
+
+        @include sm {
+          position: relative;
+          width: 100%;
+          max-width: 336px;
+          padding-top: 24px;
+          padding-bottom: 24px;
+          margin: 0 auto;
+        }
+
+        .friendly-list-wrap {
+          width: 1200px;
+          margin: 0 auto;
+
+          @include md {
+            width: 100%;
+          }
+
+          @include sm {
+            // width: calc(100% - 48px);
+            width: 272px;
+          }
+
+          .friendly-list {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+
+            @include sm {
+              flex-wrap: nowrap;
+              gap: 0;
+            }
+
+            li {
+              display: flex;
+              width: calc(50% - 8px);
+              padding: 0 17px;
+              border: 1px solid $gray10;
+              border-radius: 8px;
+              background-color: $gray00;
+              gap: 16px;
+
+              @include md {
+                width: 100%;
+                padding: 0 20px;
+              }
+
+              @include sm {
+                width: 100%;
+                height: auto;
+                min-height: 360px;
+                flex-direction: column;
+                align-items: center;
+                padding: 16px 16px 10px;
+                gap: 8px;
+              }
+
+              .img {
+                position: relative;
+                width: 200px;
+                aspect-ratio: 1/1;
+              }
+
+              .list-content {
+                display: flex;
+                width: calc(100% - 227px);
+                flex-direction: column;
+                justify-content: center;
+                gap: 4px;
+                text-align: left;
+
+                @include md {
+                  width: calc(100% - 240px);
+                }
+
+                @include sm {
+                  width: 100%;
+                }
+
+                strong {
+                  color: $gray100;
+
+                  @include fontFamilyBody(xlb);
+                }
+
+                span {
+                  color: $gray60;
+
+                  @include fontFamilyBody(mr);
+                }
+              }
+            }
+          }
+        }
+
+        .btn-swiper {
+          position: absolute;
+          top: 50%;
+          width: 24px;
+          height: 24px;
+          transform-origin: center;
+
+          svg {
+            width: 24px;
+            height: 24px;
+
+            path {
+              fill: $gray100;
+            }
+          }
+
+          &.swiper-button-disabled {
+            svg {
+              path {
+                fill: $gray30;
+              }
+            }
+          }
+
+          &.btn-prev {
+            left: -8px;
+            transform: translate(0, -50%);
+
+            svg {
+              transform: rotate(90deg);
+            }
+          }
+
+          &.btn-next {
+            right: -8px;
+            transform: translate(0, -50%);
+
+            svg {
+              transform: rotate(-90deg);
+            }
+          }
+        }
+      }
+    }
+
+    // Tangled 이해하기
+    .overview-understanding {
+      padding-top: 60px;
+
+      @include sm {
+        position: relative;
+        padding: 60px 24px 40px;
+        border-bottom: 1px solid $gray10;
+      }
+
+      .features-wrap,
+      .swiper {
+        padding: 40px 30px;
+        margin-top: 40px;
+
+        @include md {
+          padding: 20px;
+          margin-top: 24px;
+        }
+
+        @include sm {
+          padding: 16px;
+          margin-top: 24px;
+        }
+
+        /* stylelint-disable-next-line max-line-length */
+        @include gradientBorder(1px, 8px, rgb(0 0 0 / 50%), linear-gradient(90deg, rgb(225 176 255 / 50%) 0%, rgb(179 56 255 / 50%) 65.8%, rgb(18 113 255 / 50%) 100%));
+
+        background-color: transparent;
+
+        .items {
+          display: flex;
+          height: 230px;
+          flex-direction: column;
+          justify-content: center;
+          padding: 4px 0 4px 40px;
+
+          @include md {
+            height: 180px;
+            padding: 16px 0;
+          }
+
+          @include sm {
+            height: 336px;
+            padding: 0;
+          }
+
+          & + .items {
+            border-top: 1px solid $gray10;
+
+            @include sm {
+              border: 0 none;
+            }
+          }
+        }
+
+        .thumbnail {
+          position: absolute;
+          width: 360px;
+          height: 220px;
+
+          @include md {
+            width: 240px;
+            height: 146px;
+          }
+
+          @include sm {
+            position: relative;
+            width: 240px;
+            height: 146px;
+            margin: 14px auto 0;
+          }
+        }
+
+        .def {
+          margin-left: 380px;
+          color: $gray100;
+
+          @include fontFamilyHeading(xs);
+
+          @include md {
+            margin-left: 240px;
+          }
+
+          @include sm {
+            margin-left: 0;
+          }
+        }
+
+        .name {
+          margin-top: 8px;
+          margin-left: 380px;
+
+          @include md {
+            margin-left: 240px;
+          }
+
+          @include sm {
+            margin-top: 4px;
+            margin-left: 0;
+          }
+
+          > span {
+            background: linear-gradient(90deg, #1271ff 0%, #b338ff 74.1%, #e1b0ff 106.17%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+
+            @include fontFamilyBody(xlb);
+          }
+        }
+
+        .text {
+          max-width: 600px;
+          margin-top: 8px;
+          margin-left: 380px;
+          color: $gray100;
+          white-space: pre-line;
+
+          @include fontFamilyBody(cardsr);
+
+          @include md {
+            margin-left: 240px;
+            white-space: normal;
+          }
+
+          @include sm {
+            margin-top: 4px;
+            margin-left: 0;
+            white-space: normal;
+          }
+        }
+      }
+
+      .swiper-button-wrap {
+        .btn-swiper {
+          position: absolute;
+          top: calc(50% + 44px);
+          width: 24px;
+          height: 24px;
+          margin-top: -12px;
+
+          svg {
+            width: 24px;
+            height: 24px;
+
+            path {
+              fill: $gray100;
+            }
+          }
+
+          &.swiper-button-disabled {
+            svg {
+              path {
+                fill: $gray30;
+              }
+            }
+          }
+
+          &.btn-prev {
+            left: -8px;
+            transform: rotate(90deg);
+          }
+
+          &.btn-next {
+            right: -8px;
+            transform: rotate(-90deg);
+          }
+        }
+      }
+    }
+
+    // TangledServiceStructure
+    .service-structure-wrap {
+      padding: 60px 0;
+
+      @include sm {
+        padding: 40px 0;
+      }
+
+      .inner {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 44px;
+
+        @include md {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        @include sm {
+          flex-direction: column;
+          align-items: center;
+          margin-top: 24px;
+        }
+
+        .milestone {
+          width: 50px;
+          margin: 158px 20px 0;
+
+          @include md {
+            display: flex;
+            width: 92px;
+            height: 48px;
+            align-items: center;
+            margin: 16px 0;
+            justify-items: center;
+          }
+
+          @include sm {
+            display: flex;
+            width: 92px;
+            height: 48px;
+            margin: 16px 0;
+          }
+
+          .direction-img {
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            width: 32px;
+            height: 48px;
+            margin-top: 8px;
+
+            @include md {
+              margin: -20px 8px 0 0;
+              transform: rotate(90deg);
+            }
+
+            @include sm {
+              margin: -10px 8px 0 0;
+              transform: rotate(90deg);
+            }
+          }
+
+          &.earn {
+            @include md {
+              flex-direction: row-reverse;
+            }
+
+            @include sm {
+              flex-direction: row-reverse;
+            }
+
+            .direction-img {
+              > span {
+                transform: rotate(90deg) translate(0, -10px);
+                transform-origin: center;
+              }
+            }
+          }
+
+          &.consumption {
+            @include md {
+              flex-direction: row-reverse;
+            }
+
+            @include sm {
+              flex-direction: row-reverse;
+            }
+
+            .direction-img {
+              > span {
+                transform: rotate(-90deg) translate(0, 10px);
+                transform-origin: center;
+              }
+            }
+          }
+
+          .text {
+            padding-left: 24px;
+            background-image: url("#{$rootPath}/img/timepoint2.png");
+            background-position: center left;
+            background-repeat: no-repeat;
+            background-size: 20px;
+            color: $gray100;
+
+            @include fontFamilyBody(mb);
+
+            @include md {
+              display: flex;
+              align-items: center;
+            }
+
+            @include sm {
+              display: flex;
+              align-items: center;
+            }
+          }
+        }
+      }
+
+      .service-card {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 20px;
+        border-radius: 8px;
+        background-color: $gray00;
+
+        &.service-card {
+          margin-top: 8px;
+        }
+
+        .img-area {
+          width: 50px;
+          height: 50px;
+          margin-right: 8px;
+        }
+
+        .text-area {
+          strong {
+            display: block;
+            color: $gray100;
+
+            @include fontFamilyHeading(s);
+          }
+
+          span {
+            display: block;
+            margin-top: 4px;
+
+            @include fontFamilyBody(sr);
+
+            color: $gray60;
+          }
+        }
+      }
+
+      .steps {
+        width: 100%;
+        max-width: 300px;
+
+        @include md {
+          max-width: 320px;
+        }
+
+        @include sm {
+          max-width: 320px;
+        }
+
+        .step-title {
+          display: block;
+          padding: 12px 0;
+          border-radius: 8px;
+          margin-bottom: 16px;
+          background-color: $nile50;
+          color: $gray100;
+          text-align: center;
+
+          @include fontFamilyHeading(mb);
+        }
+
+        &.step2 {
+          .step-contents {
+            @include md {
+              padding: 20px;
+              /* stylelint-disable-next-line max-line-length */
+              @include gradientBorder(1px, 8px, rgb(0 0 0 / 50%), linear-gradient(90deg, rgba(225, 176, 255, 100%), rgba(179, 56, 255, 100%), rgba(18, 113, 255, 100%)));
+            }
+
+            @include sm {
+              padding: 20px;
+              /* stylelint-disable-next-line max-line-length */
+              @include gradientBorder(1px, 8px, rgb(0 0 0 / 50%), linear-gradient(90deg, rgba(225, 176, 255, 100%), rgba(179, 56, 255, 100%), rgba(18, 113, 255, 100%)));
+            }
+          }
+        }
+
+        .time-point {
+          position: relative;
+          /* stylelint-disable-next-line max-line-length */
+          @include gradientBorder(1px, 8px, rgb(0 0 0 / 50%), linear-gradient(90deg, rgba(225, 176, 255, 100%), rgba(179, 56, 255, 100%), rgba(18, 113, 255, 100%)));
+
+          padding: 16px 30px;
+
+          @include md {
+            padding: 0;
+
+            &::before {
+              display: none;
+            }
+          }
+
+          @include sm {
+            padding: 0;
+
+            &::before {
+              display: none;
+            }
+          }
+
+          .timepoints {
+            position: absolute;
+            top: 0;
+            left: -60px;
+            width: 120px;
+            height: 120px;
+
+            @include md { display: none; }
+
+            @include sm { display: none; }
+          }
+
+          .img-area {
+            position: relative;
+            z-index: 1;
+            width: 180px;
+            height: 180px;
+            margin: 0 auto;
+
+            @include md {
+              width: 168px;
+              height: 168px;
+            }
+          }
+
+          .text-area {
+            @include md {
+              margin-top: 15px;
+            }
+
+            strong {
+              display: block;
+              margin-bottom: 4px;
+              color: $gray100;
+
+              @include fontFamilyHeading(s);
+
+              text-align: center;
+            }
+
+            span {
+              display: block;
+
+              @include fontFamilyBody(sr);
+
+              color: $gray60;
+              text-align: center;
+              white-space: pre-line;
+            }
+          }
+        }
+
+        .arrows {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin: 8px auto;
+          text-align: center;
+
+          @include md {
+            margin: 10px auto;
+          }
+
+          > span {
+            position: relative;
+            z-index: 1;
+            display: inline-block;
+            width: 32px;
+            height: 48px;
+            margin: 0 5px;
+            font-size: 0;
+
+            @include md {
+              width: 24px;
+              height: 36px;
+              margin: 0 2px;
+            }
+
+            @include sm {
+              width: 24px;
+              height: 36px;
+              margin: 0 2px;
+            }
+          }
+        }
+      }
+    }
+
+    // 기능 살펴보기
+    .ability-wrap {
+      padding: {
+        top: 60px;
+        bottom: 60px;
+      };
+
+      @include sm {
+        padding: 40px 0;
+      }
+
+      border-top: 1px solid $gray20;
+
+      .features-wrap {
+        display: flex;
+        width: 1190px;
+        margin: 40px auto 0;
+        gap: 23px;
+
+        @include md {
+          width: auto;
+          flex-wrap: wrap;
+          gap: 48px;
+        }
+
+        @include sm {
+          width: auto;
+          flex-direction: column;
+          margin-top: 20px;
+          gap: 0;
+        }
+
+        .items {
+          flex: 1;
+          text-align: center;
+
+          @include md {
+            width: calc(50% - 24px);
+            flex: initial;
+          }
+
+          @include sm {
+            width: 320px;
+            padding: 20px 0;
+            margin: auto;
+          }
+
+          & + .items {
+            @include sm {
+              border-top: 1px solid $gray00;
+            }
+          }
+
+          .status {
+            display: block;
+            margin-top: 20px;
+            color: $nile40;
+
+            @include fontFamilyData(cl);
+
+            @include md {
+              margin-top: 12px;
+            }
+
+            @include sm {
+              margin-top: 8px;
+            }
+          }
+
+          .name {
+            display: block;
+            margin-top: 7px;
+            color: $gray100;
+
+            @include fontFamilyHeading(mb);
+          }
+
+          .text {
+            margin-top: 16px;
+            color: $gray70;
+
+            @include fontFamilyBody(mr);
+
+            @include lg {
+              min-height: 66px;
+            }
+
+            @include md {
+              margin-top: 12px;
+            }
+
+            @include sm {
+              margin-top: 8px;
+            }
+          }
+
+          .info {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 8px;
+            background: url("#{$rootPath}/icon/ico_info.svg") no-repeat left center;
+            background-size: 12px 12px;
+            color: $gray40;
+            text-align: left;
+
+            > span {
+              margin-right: 4px;
+            }
+
+            svg {
+              width: 12px;
+              height: 12px;
+
+              path {
+                fill: $gray40;
+              }
+            }
+
+            @include fontFamilyBody(cl);
+          }
+        }
+      }
+    }
+  }
+
+  // nfts
+  &.nfts {
+    // Tangled Timepieces
+    .tangled-timepiece {
+      padding-top: 60px;
+
+      .nfts-timepieces-wrap {
+        display: flex;
+        width: 1000px;
+        margin: 40px auto 60px;
+        gap: 23px;
+
+        @include md {
+          width: 400px;
+          flex-flow: column wrap;
+          gap: 12px;
+        }
+
+        @include sm {
+          width: auto;
+          flex-flow: column wrap;
+          margin-top: 24px;
+          gap: 12px;
+        }
+
+        .items {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          padding: 40px 0;
+
+          @include md {
+            padding: 32px 0;
+          }
+
+          @include sm {
+            padding: 24px 0;
+          }
+
+          /* stylelint-disable-next-line max-line-length */
+          @include gradientBorder(1px, 8px, rgb(0 0 0 / 50%), linear-gradient(90deg, rgb(225 176 255 / 50%) 0%, rgb(179 56 255 / 50%) 65.8%, rgb(18 113 255 / 50%) 100%));
+
+          dt {
+            @include fontFamilyHeading(s);
+
+            color: $nile50;
+          }
+
+          dd {
+            margin-top: 12px;
+
+            @include fontFamilyBody(xxlb);
+
+            color: $gray100;
+
+            @include sm {
+              margin-top: 8px;
+            }
+          }
+        }
+      }
+    }
+
+    .tangled-time-class {
+      padding-top: 60px;
+      border-top: 1px solid $gray10;
+
+      .time-class-cards {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 40px;
+
+        @include md {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        @include sm {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        > li {
+          @include lg {
+            margin-left: 8px;
+          }
+        }
+
+        > li:nth-child(1) {
+          margin-left: 0;
+
+          @include lg {
+            margin-top: 80px;
+          }
+
+          .time-class-card-thumbnail {
+            background-color: #be9bf8;
+          }
+
+          .time-class-card-info-title {
+            strong {
+              color: $nile20;
+            }
+          }
+        }
+
+        > li:nth-child(2),
+        > li:nth-child(4) {
+          @include lg {
+            margin-top: 117px;
+          }
+
+          @include md {
+            margin: 2px 0;
+          }
+
+          @include sm {
+            margin: 2px 0;
+          }
+
+          span {
+            display: inline-block;
+            color: $gray100;
+            text-align: center;
+
+            @include lg {
+              width: 100%;
+              margin-top: 8px;
+            }
+
+            @include fontFamilyBody(sr);
+          }
+        }
+
+        > li:nth-child(3) {
+          @include lg {
+            margin-top: 40px;
+          }
+
+          .time-class-card-thumbnail {
+            background-color: #a864ff;
+          }
+
+          .time-class-card-info-title {
+            strong {
+              color: $nile40;
+            }
+          }
+        }
+
+        > li:nth-child(5) {
+          .time-class-card-thumbnail {
+            background: linear-gradient(90deg, #1271ff 0%, #933fff 106.17%);
+          }
+
+          .time-class-card-info-title {
+            strong {
+              background: linear-gradient(90deg, #e1b0ff 0%, #b338ff 65.8%, #1271ff 106.17%);
+              background-clip: text;
+              -webkit-text-fill-color: transparent;
+            }
+          }
+        }
+
+        .time-class-probability {
+          @include md {
+            display: flex;
+          }
+
+          @include sm {
+            display: flex;
+          }
+
+          &.time-class-probability-lg {
+            @include md {
+              display: none;
+            }
+
+            @include sm {
+              display: none;
+            }
+          }
+
+          &.time-class-probability-md {
+            position: relative;
+
+            span {
+              position: absolute;
+              top: 50%;
+              left: calc(55px + 8px);
+              white-space: normal;
+            }
+
+            @include sm {
+              svg {
+                width: 47.5px;
+                height: 76px;
+              }
+            }
+
+            @include lg {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .time-class-card {
+        width: 300px;
+        height: 330px;
+        border-radius: 20px;
+
+        @include md {
+          height: inherit;
+        }
+
+        @include sm {
+          width: 240px;
+          height: inherit;
+        }
+
+        .time-class-card-thumbnail {
+          display: flex;
+          justify-content: center;
+          border-top-left-radius: 16px;
+          border-top-right-radius: 16px;
+
+          > div {
+            position: relative;
+            width: 190px;
+            height: 190px;
+
+            @include sm {
+              width: 120px;
+              height: 120px;
+            }
+          }
+        }
+
+        .time-class-card-info {
+          padding: 10px 16px 12px;
+          border-right: 1px solid rgb(255 255 255 / 30%);
+          border-bottom: 1px solid rgb(255 255 255 / 30%);
+          border-left: 1px solid rgb(255 255 255 / 30%);
+          background: rgb(255 255 255 / 8%);
+          border-bottom-left-radius: 16px;
+          border-bottom-right-radius: 16px;
+          text-align: center;
+
+          @include md {
+            padding: 10px 16px;
+          }
+
+          @include sm {
+            padding: 10px;
+          }
+
+          .time-class-card-info-title {
+            strong {
+              @include fontFamilyPhrase(mb);
+            }
+          }
+
+          .time-class-card-info-desc,
+          .time-class-card-info-ratio {
+            @include fontFamilyBody(sr);
+          }
+
+          .time-class-card-info-desc {
+            padding: 4px 0;
+            color: $gray100;
+          }
+
+          .time-class-card-info-ratio {
+            color: $gray60;
+          }
+        }
+      }
+    }
+
+    // Round
+
+    // Tangled Timepieces 클래스
+  }
+
+  // ! NEITH station
+  &.neith-station {
+    // ^ Component: TangledNeithCovenantInfo
+    .covenant-info-wrap {
+      @include lg {
+        padding: 60px 0;
+      }
+
+      @include md {
+        padding: 60px 0;
+      }
+
+      @include sm {
+        padding: 60px 0;
+      }
+    }
+
+    .covenant-info {
+      width: 100%;
+
+      .img-wrap {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        aspect-ratio: 800 / 460;
+        margin-inline: auto;
+
+        @include lg {
+          width: 800px;
+          margin-top: 60px;
+        }
+
+        @include md {
+          width: 640px;
+          margin-top: 40px;
+        }
+
+        @include sm {
+          width: calc(100% + 40px);
+          height: 276px;
+          margin-top: 40px;
+          margin-left: -20px;
+
+          & > span {
+            overflow: hidden;
+            max-width: 480px !important;
+            margin: 0 auto !important;
+
+            img {
+              width: 480px !important;
+              max-width: none !important;
+              inset: 0 auto auto 50% !important;
+              transform: translateX(-50%);
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // ^ Component: TangledNeithNFTClaim
+  .covenant-claim-wrap {
+    padding: 60px 0;
+    border-top: 1px solid $gray10;
+
+    @include md {
+      padding: 59px 0 58px;
+    }
+
+    @include sm {
+      padding: 59px 0 60px;
+    }
+
+    .neith-section-title {
+      @include fontFamilyHeading(xl);
+
+      color: $gray100;
+      text-align: center;
+    }
+
+    .claim-list {
+      display: flex;
+      width: 100%;
+      margin-top: 40px;
+      gap: 53px;
+
+      @include md {
+        flex-direction: column;
+        margin-top: 32px;
+        gap: 24px;
+      }
+
+      @include sm {
+        flex-direction: column;
+        margin-top: 24px;
+        gap: 24px;
+      }
+
+      li {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+
+        .step {
+          @include fontFamilyData(sb);
+
+          color: $nile50;
+        }
+
+        strong {
+          display: block;
+          margin-top: 12px;
+          color: $gray100;
+
+          @include fontFamilyBody(lb);
+
+          @include sm {
+            margin-top: 8px;
+          }
+        }
+
+        p {
+          @include fontFamilyBody(lr);
+
+          margin-top: 8px;
+          color: $gray60;
+
+          @include md {
+            margin-top: 2px;
+          }
+
+          @include sm {
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+  }
+
+  // 활용
+  .how-to-wrap {
+    padding-top: 60px;
+    border-top: 1px solid $gray10;
+
+    p {
+      text-align: center;
+
+      strong {
+        @include fontFamilyPhrase(sb);
+
+        color: $gray100;
+      }
+    }
+
+    > ul {
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      margin-top: 20px;
+
+      @include md {
+        flex-direction: column;
+        margin-top: 0;
+      }
+
+      @include sm {
+        flex-direction: column;
+        margin-top: 0;
+      }
+
+      > li {
+        display: flex;
+        flex-direction: column;
+        margin-right: 60px;
+        text-align: center;
+
+        @include lg {
+          text-align: left;
+        }
+
+        @include md {
+          width: 100%;
+          margin-top: 40px;
+          margin-right: 0;
+
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+
+        @include sm {
+          width: 100%;
+          margin-top: 20px;
+          margin-right: 0;
+
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+
+        .img-wrap {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          .img {
+            position: relative;
+            width: 360px;
+            height: 240px;
+
+            @include sm {
+              width: 300px;
+              height: 200px;
+            }
+          }
+        }
+
+        .title-description-wrap {
+          width: 360px;
+          margin: 0 auto;
+
+          @include md {
+            width: 540px;
+          }
+
+          @include sm {
+            max-width: 100%;
+            margin: 0 auto;
+          }
+
+          .title {
+            margin-top: 20px;
+            text-align: left;
+
+            @include md {
+              margin-top: 0;
+              text-align: center;
+            }
+
+            @include sm {
+              margin-top: 0;
+              text-align: center;
+            }
+
+            strong {
+              @include fontFamilyHeading(mb);
+
+              color: $nile50;
+            }
+          }
+
+          .description {
+            margin-top: 12px;
+            color: $gray100;
+            text-align: center;
+            white-space: pre-line;
+
+            @include lg {
+              text-align: left;
+            }
+
+            @include sm {
+              padding: 0 30px;
+            }
+
+            @include fontFamilyBody(cardsr);
+          }
+        }
+
+        .button {
+          border-color: $gray100;
+          margin-top: 16px;
+          color: $gray100;
+
+          @include lg {
+            margin-top: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.life-tangled .nfts {
+  background: url("#{$rootPath}/img/bg_tangled_bottom2.png") no-repeat top 360px center;
+}
+
+.nfts {
+  background-size: 1920px;
+  // Tangled Timepieces
+  .tangled-timepiece {
+    border-bottom: 1px solid $gray10;
+    margin-top: 60px;
+
+    @include sm {
+      padding-bottom: 40px;
+    }
+
+    .nfts-timepieces-wrap {
+      display: flex;
+      width: 1000px;
+      margin: 40px auto 60px;
+      gap: 23px;
+
+      @include md {
+        width: 400px;
+        flex-flow: column wrap;
+        gap: 12px;
+      }
+
+      @include sm {
+        width: auto;
+        flex-flow: column wrap;
+        margin-top: 24px;
+        gap: 12px;
+      }
+
+      .items {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 40px 0;
+
+        @include md {
+          padding: 32px 0;
+        }
+
+        @include sm {
+          padding: 24px 0;
+        }
+
+        /* stylelint-disable-next-line max-line-length */
+        @include gradientBorder(1px, 8px, rgb(0 0 0 / 50%), linear-gradient(90deg, rgb(225 176 255 / 50%) 0%, rgb(179 56 255 / 50%) 65.8%, rgb(18 113 255 / 50%) 100%));
+
+        dt {
+          @include fontFamilyHeading(s);
+
+          color: $nile50;
+        }
+
+        dd {
+          margin-top: 12px;
+
+          @include fontFamilyBody(xxlb);
+
+          color: $gray100;
+
+          @include sm {
+            margin-top: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  .tangled-time-class {
+    padding-bottom: 60px;
+    border-bottom: 1px solid $gray10;
+    margin-top: 60px;
+
+    @include sm {
+      padding-bottom: 40px;
+      margin-top: 40px;
+    }
+
+    .time-class-cards {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 40px;
+
+      @include md {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      @include sm {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      > li {
+        @include lg {
+          margin-left: 8px;
+        }
+      }
+
+      > li:nth-child(1) {
+        margin-left: 0;
+
+        @include lg {
+          margin-top: 80px;
+        }
+
+        .time-class-card-thumbnail {
+          background-color: #be9bf8;
+        }
+
+        .time-class-card-info-title {
+          strong {
+            color: $nile20;
+          }
+        }
+      }
+
+      > li:nth-child(2),
+      > li:nth-child(4) {
+        @include lg {
+          max-width: 134px;
+          margin-top: 117px;
+        }
+
+        @include md {
+          margin: 2px 0;
+        }
+
+        @include sm {
+          margin: 2px 0;
+        }
+
+        span {
+          display: inline-block;
+          color: $gray100;
+          text-align: center;
+
+          @include lg {
+            width: 100%;
+            margin-top: 8px;
+          }
+          span {
+            width: auto;
+          }
+
+          @include fontFamilyBody(sr);
+        }
+      }
+
+      > li:nth-child(3) {
+        @include lg {
+          margin-top: 40px;
+        }
+
+        .time-class-card-thumbnail {
+          background-color: #a864ff;
+        }
+
+        .time-class-card-info-title {
+          strong {
+            color: $nile40;
+          }
+        }
+      }
+
+      > li:nth-child(5) {
+        .time-class-card-thumbnail {
+          background: linear-gradient(90deg, #1271ff 0%, #933fff 106.17%);
+        }
+
+        .time-class-card-info-title {
+          strong {
+            background: linear-gradient(90deg, #e1b0ff 0%, #b338ff 65.8%, #1271ff 106.17%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+      }
+
+      .time-class-probability {
+        @include md {
+          display: flex;
+        }
+
+        @include sm {
+          display: flex;
+        }
+
+        &.time-class-probability-lg {
+          @include md {
+            display: none;
+          }
+
+          @include sm {
+            display: none;
+          }
+        }
+
+        &.time-class-probability-md {
+          position: relative;
+
+          > span {
+            position: absolute;
+            top: 50%;
+            left: calc(55px + 8px);
+            transform: translate(0, -50%);
+            
+            @include sm {
+              display: block;
+              width: 55px;
+              text-align: left;
+            }
+          }
+
+          @include md {
+            white-space: nowrap;
+          }
+
+          @include sm {
+            text-align: left;
+
+            svg {
+              width: 47.5px;
+              height: 76px;
+            }
+          }
+
+          @include lg {
+            display: none;
+          }
+        }
+      }
+    }
+
+    .time-class-info-wrap {
+      margin-top: 20px;
+      text-align: center;
+
+      @include md {
+        margin-top: 24px;
+      }
+
+      @include sm {
+        padding: 0 30px;
+        margin-top: 24px;
+      }
+
+      .time-class-info {
+        display: inline-flex;
+        flex-direction: column;
+
+        > li {
+          display: flex;
+          margin-top: 12px;
+          text-align: left;
+
+          &:first-child {
+            margin-top: 0;
+            font-weight: 700;
+          }
+
+          svg {
+            width: 12px;
+            height: 12px;
+
+            path {
+              fill: $gray40;
+            }
+          }
+
+          p {
+            @include fontFamilyBody(cs);
+
+            padding-left: 4px;
+            color: $gray40;
+          }
+        }
+      }
+    }
+
+    .time-class-card {
+      width: 300px;
+
+      // height: 330px;
+      border-radius: 20px;
+
+      @include md {
+        height: inherit;
+      }
+
+      @include sm {
+        width: 240px;
+        height: inherit;
+      }
+
+      .time-class-card-thumbnail {
+        display: flex;
+        justify-content: center;
+        padding: 10px 0;
+        border-top-left-radius: 16px;
+        border-top-right-radius: 16px;
+
+        > div {
+          position: relative;
+          width: 190px;
+          height: 190px;
+
+          @include sm {
+            width: 120px;
+            height: 120px;
+          }
+        }
+      }
+
+      .time-class-card-info {
+        padding: 10px 16px 12px;
+        border-right: 1px solid rgb(255 255 255 / 30%);
+        border-bottom: 1px solid rgb(255 255 255 / 30%);
+        border-left: 1px solid rgb(255 255 255 / 30%);
+        background: rgb(255 255 255 / 8%);
+        border-bottom-left-radius: 16px;
+        border-bottom-right-radius: 16px;
+        text-align: center;
+
+        @include md {
+          padding: 10px 16px;
+        }
+
+        @include sm {
+          padding: 10px;
+        }
+
+        .time-class-card-info-title {
+          strong {
+            @include fontFamilyPhrase(mb);
+          }
+        }
+
+        .time-class-card-info-desc,
+        .time-class-card-info-ratio {
+          @include fontFamilyBody(sr);
+        }
+
+        .time-class-card-info-desc {
+          padding: 4px 0;
+          color: $gray100;
+        }
+
+        .time-class-card-info-ratio {
+          color: $gray60;
+        }
+      }
+    }
+  }
+
+  // Round
+  .tangled-rounds-wrap {
+    position: relative;
+
+    .round-swiper-buttons {
+      position: absolute;
+      z-index: 10;
+      top: 0;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+
+      @include sm {
+        padding: 0 20px;
+      }
+
+      > div {
+        display: flex;
+        width: 640px;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      button.round-swiper-button {
+        width: 40px;
+        height: 40px;
+
+        &:disabled {
+          svg {
+            path {
+              stroke: $gray30;
+            }
+          }
+        }
+
+        svg {
+          width: 40px;
+          height: 40px;
+
+          path {
+            stroke: $gray100;
+          }
+
+          @include sm {
+            width: 24px;
+            height: 24px;
+          }
+        }
+
+        &.round-prev {
+          // left: 0;
+
+          svg {
+            transform: rotate(-180deg);
+          }
+        }
+
+        &.round-next {
+          // right: 0;
+        }
+      }
+    }
+
+    .tangled-rounds {
+      margin-top: 60px;
+
+      @include sm {
+        margin-top: 40px;
+      }
+
+      .tangled-round-info-wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include sm {
+          padding: 0 20px;
+        }
+
+        .tangled-round-heading {
+          width: 640px;
+          text-align: center;
+
+          @include sm {
+            width: 100%;
+          }
+
+          span {
+            display: inline-block;
+            padding: 4px 8px;
+            border-radius: 100px;
+            background-color: $gray100;
+            color: $gray00;
+
+            @include fontFamilyChip(mb);
+
+            @include md {
+              padding: 6px 12px;
+            }
+
+            @include sm {
+              padding: 6px 12px;
+            }
+          }
+
+          &.off {
+            span {
+              background: $gray60;
+              color: $gray100;
+            }
+          }
+
+          h2 {
+            @include fontFamilyHeading(xl);
+
+            margin-top: 8px;
+            color: $gray100;
+
+            @include md {
+              margin-top: 12px;
+            }
+
+            @include sm {
+              margin-top: 12px;
+            }
+          }
+        }
+
+        .tangled-round-info {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 20px;
+
+          @include sm {
+            width: 100%;
+            flex-direction: column;
+            padding: 0 10px;
+          }
+
+          > li {
+            width: 180px;
+            border-right: 1px solid $gray30;
+            text-align: center;
+
+            &:last-child {
+              border-right: 0;
+            }
+
+            @include sm {
+              display: flex;
+              width: 100%;
+              align-items: center;
+              justify-content: space-between;
+              padding: 11px 0;
+              border-right: none;
+              border-bottom: 1px solid rgb(255 255 255 / 20%);
+
+              &:last-child {
+                border-bottom: none;
+              }
+            }
+
+            span {
+              @include fontFamilyData(cs);
+
+              color: $gray60;
+            }
+
+            p {
+              margin-top: 8px;
+
+              @include sm {
+                margin-top: 0;
+              }
+
+              @include fontFamilyData(sb);
+
+              color: $gray100;
+
+              span {
+                @include fontFamilyData(cs);
+
+                color: $gray100;
+                font-weight: 400;
+              }
+            }
+          }
+        }
+      }
+
+      .tangled-round-cards {
+        max-width: 1200px;
+        margin: 40px auto 0;
+
+        @include md {
+          display: flex;
+          justify-content: center;
+          padding-left: 40px;
+        }
+
+        @include sm {
+          padding-left: 20px;
+        }
+
+        .swiper {
+          justify-content: center;
+
+          .swiper-wrapper {
+            display: inline-flex;
+          }
+
+          .swiper-slide {
+            width: 214px;
+            height: 376px;
+            margin-right: 32px;
+
+            @include md {
+              width: 191px;
+              height: 335px;
+              margin-right: 24px;
+            }
+
+            @include sm {
+              width: 136px;
+              height: 240px;
+              margin-right: 24px;
+            }
+          }
+        }
+
+        @include md {
+          margin-top: 36px;
+        }
+
+        @include sm {
+          margin-top: 20px;
+        }
+
+        // .tangled-round-card-image {
+        //   position: relative;
+        //   width: 214px;
+        //   height: 376px;
+        //   margin-right: 32px;
+
+        //   @include md {
+        //     width: 191px;
+        //     height: 335px;
+        //   }
+
+        //   @include sm {
+        //     width: 136px;
+        //     height: 240px;
+        //   }
+        // }
+      }
+
+      .tangled-show-all-cards {
+        display: flex;
+        justify-content: center;
+        padding: 40px 0 60px;
+        border-bottom: 1px solid $gray10;
+
+        @include maxWidthLg;
+
+        @include sm {
+          padding-bottom: 40px;
+        }
+      }
+    }
+  }
+
+  // ^ Component: TangledNeithCovenantDate
+  .covenant-date-wrap {
+    position: relative;
+    overflow: hidden;
+    height: 320px;
+    padding-top: 62px;
+    margin-top: 40px;
+
+    @include md {
+      height: 440px;
+      padding-top: 0;
+    }
+
+    @include sm {
+      height: auto;
+      padding-top: 0;
+    }
+
+    .date-info {
+      text-align: center;
+
+      @include lg {
+        text-align: left;
+      }
+
+      .title {
+        color: $gray100;
+
+        @include fontFamilyHeading(mb);
+      }
+
+      .date {
+        display: inline-block;
+        margin-top: 20px;
+        background: linear-gradient(90deg, #e1b0ff 0%, #b338ff 65.8%, #1271ff 106.17%);
+        background-clip: text;
+        color: $gray100;
+        -webkit-text-fill-color: transparent;
+
+        @include fontFamilyData(lb);
+
+        @include lg {
+          margin-top: 40px;
+        }
+      }
+
+      p {
+        margin-bottom: 16px;
+        color: $gray80;
+        white-space: pre-line;
+
+        @include fontFamilyBody(lr);
+
+        @include lg {
+          position: relative;
+          z-index: 10;
+          max-width: 440px;
+          margin-top: 16px;
+        }
+
+        @include md {
+          max-width: 510px;
+          margin: 12px auto 20px;
+
+          @include fontFamilyBody(cardmr);
+        }
+
+        @include sm {
+          margin: 8px auto 20px;
+        }
+      }
+    }
+
+    .date-image {
+      position: absolute;
+      width: 744px;
+      height: 280px;
+      background: url("#{$rootPath}/img/bg_tangled_covenant_date.png") no-repeat center center / cover;
+
+      @include lg {
+        right: -40px;
+        bottom: 20px;
+      }
+
+      @include md {
+        position: relative;
+        left: 50%;
+        margin-top: 20px;
+        transform: translateX(-50%);
+      }
+
+      @include sm {
+        position: relative;
+        width: calc(100% + 40px);
+        height: 140px;
+        margin-top: 40px;
+        margin-left: -20px;
+        background-size: 373px auto;
+      }
+
+      span {
+        vertical-align: bottom;
+      }
+    }
+  }
+
+  .class-covenant-info-title-wrap {
+    margin-top: 60px;
+    margin-inline: auto;
+
+    @include lg {
+      width: 860px;
+    }
+
+    @include sm {
+      margin-top: 40px;
+    }
+  }
+
+  .class-covenant-info {
+    position: relative;
+    z-index: 1;
+
+    @include sm {
+      width: 320px;
+      margin: auto;
+      padding: 0 20px;
+    }
+
+    &::before {
+      position: absolute;
+      z-index: -1;
+      padding: 1px;
+      border-radius: 12px;
+      /* stylelint-disable-next-line max-line-length */
+      background: linear-gradient(90deg, rgb(225 176 255 / 50%) 0%, rgb(179 56 255 / 50%) 65.8%, rgb(18 113 255 / 50%) 106.17%);
+      background-origin: border-box;
+      background-position: 100% 0;
+      background-size: 100%;
+      content: "";
+      inset: calc(0px - 1px);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0) padding-box;
+      mask-composite: xor;
+      pointer-events: none;
+    }
+
+    .class-covenant-desc {
+      max-width: 860px;
+      padding-top: 60px;
+      margin: 24px auto 0;
+      color: $gray80;
+      text-align: center;
+
+      @include md {
+        padding-top: 40px;
+      }
+
+      @include sm {
+        padding-top: 24px;
+        margin-top: 16px;
+      }
+
+      @include fontFamilyNBody(LR_F);
+    }
+
+    .class-list-wrap {
+      display: flex;
+      justify-content: center;
+      border: 1px solid transparent;
+      border-radius: 12px;
+      margin-top: 32px;
+      padding-bottom: 40px;
+      backdrop-filter: blur(30px);
+      background: rgb(0 0 0 / 50%);
+      background-clip: padding-box;
+
+       @include md {
+        padding-bottom: 24px;
+      }
+
+      @include sm {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        padding-bottom: 24px;
+      }
+
+      .class-list {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include lg {
+          width: 280px;
+        }
+
+        @include md {
+          width: calc(100% / 3);
+        }
+
+        @include sm {
+          width: 100%;
+          flex-direction: row;
+        }
+
+        &:not(:first-child) {
+          border-left: 1px solid $gray00;
+
+          @include sm {
+            border-top: 1px solid $gray00;
+            border-left: 0;
+          }
+        }
+
+        &.luxury {
+          .type {
+            background-color: $nile30;
+          }
+
+          .name {
+            color: $nile20;
+          }
+        }
+
+        &.highend {
+          .type {
+            background-color: $nile40;
+          }
+
+          .name {
+            color: $nile40;
+          }
+        }
+
+        &.zenith {
+          .type {
+            display: inline-block;
+            background: linear-gradient(90deg, #1271ff 0%, #933fff 106.17%);
+          }
+
+          .name {
+            background: linear-gradient(90deg, #e1b0ff 0%, #b338ff 65.8%, #1271ff 106.17%);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+          }
+        }
+
+        .type {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 6px 8px;
+          border-radius: 2px;
+          color: $gray100;
+
+          @include fontFamilyBody(cs);
+
+          @include sm {
+            width: 95px;
+            margin-inline: 20px 24px;
+          }
+        }
+
+        .info-wrap {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-block: 20px 24px;
+
+          @include sm {
+            align-items: flex-start;
+            margin-block: 12px;
+          }
+
+          .name {
+            text-align: center;
+
+            @include fontFamilyHeading(mb);
+
+            @include sm {
+              @include fontFamilyBody(xlb);
+            }
+          }
+
+          .price {
+            margin-top: 4px;
+            color: $gray100;
+            text-align: center;
+
+            @include fontFamilyHeading(mr);
+
+            @include sm {
+              margin-top: 0;
+            }
+
+            strong {
+              margin-right: 4px;
+              color: inherit;
+
+              @include fontFamilyHeading(xl);
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1 @@
+az storage blob upload-batch -d nile-beta --account-name nile --account-key QYImbM8rcBjejzIlxvk2iON1d/agnUwOifSe3qNN0rJgo6KcF49ea660tSVL592cu0Z9rTX7diEL+ASttNhwxg== -s src/assets -d images --destination-path assets --overwrite true

@@ -1,0 +1,522 @@
+{
+  "hero": {
+    "title": "A Community Pioneering the Evolution\nof the Blockchain Ecosystem",
+    "videoBtn": "DAO 소개 영상보기",
+    "item": {
+      "recruitScheduleChip": "모집 예정",
+      "recruitChip": "모집 중",
+      "recruitSchedule": "곧 모집이 시작됩니다",
+      "recruitScheduleQuarterly": "{{year}}년 {{quarterly}}분기 예정",
+      "recruitScheduleFirstHalf": "{{year}}년 상반기 예정",
+      "recruitScheduleSecondHalf": "{{year}}년 하반기 예정",
+      "recruitScheduleShort": "모집 예정",
+      "recruitDays": "DAYS",
+      "recruitHours": "HOUR",
+      "recruitMinutes": "MINUTES",
+      "recruitSeconds": "SECONDS",
+      "recruitDateShort": "{{dateStart}} 모집 시작 예정",
+      "recruitShort": "모집 종료까지 {{day}}일 {{hour}}시간",
+      "recruitShortDeadline": "곧 모집이 종료됩니다",
+      "recruitEndTitle1": "모집",
+      "recruitEndTitle2": "참여",
+      "recruitEndTitle1Suffix": "WEMIX",
+      "recruitEndTitle2Suffix": "명",
+      "recruitEndShort": "{{applicant}}명 참여",
+      "recruitFailureChip": "DAO 결성 무산",
+      "recruitFailure": "최소 모집 목표 금액을 달성하지 못하여 DAO 결성이 무산되었습니다."
+    }
+  },
+  "check": {
+    "title": "WONDER DAO*에 \n대한 더 많은 정보를 확인해보세요!",
+    "desc": "Decentralized Autonomous Organization \n(탈중앙화된 자율조직)",
+    "about": {
+      "title": "DAO 소개",
+      "desc": "WONDER DAO는 WEMIX3.0 메인넷 노드 운영의 권한을 부여받은 DAO로서, WEMIX3.0의 안정된 운영과 혁신에 기여하는 Node Council Partner로서의 책임을 지닙니다.",
+      "btn1": "Whitepaper 보러가기",
+      "btn2": "{{link}} 보러가기",
+      "subdesc1": "<0>{{period}}</0>에\n 모집이 시작될 예정입니다.",
+      "subdesc2": "모집 종료까지\n<0>{{period}}</0> 남았습니다.",
+      "subdesc3": "모집이 <0>종료</0>되었습니다.",
+      "subdesc4": "언제든지 WONDER DAO에 참여할 수 있습니다!",
+      "subdesc5": "모집 종료된 후에 WONDER DAO에 참여하려면, WEMIX.Fi에서 Wonder(DAO Token)구매를 통해 참여할 수 있습니다.",
+      "subdescBtn": "WEMIX.Fi에서 Wonder 구매하러 가기",
+      "year": "년",
+      "quarter": "분기",
+      "date": "일",
+      "hour": "시간",
+      "minute": "분",
+      "caption": "상세 일정은 이른 시일 내로 공지하도록 하겠습니다.",
+      "fieldName": "현재 모집금액",
+      "fieldName2": "모집 목표 금액",
+      "fieldName3": "모집 목표 달성!",
+      "participate": "아직 모집이 시작되기 전이에요",
+      "participating": "<0>{{num}}</0>명 참가중",
+      "before": {
+        "desc": "지금 참여해보세요. 참여 비중이 높아질수록 \n 더 많은 Wonder를 획득할 수 있어요.",
+        "btn1": "참여하기",
+        "additionalTooltip": "추가 모집이 시작되었습니다!"
+      },
+      "after": {
+        "desc": "참여 수량 : <0>{{amount}}</0> WEMIX\n현재 참여 비중 : <1>{{percent}}</1>%",
+        "info1": "참여 수량",
+        "info2": "현재 참여 비중",
+        "btn1": "추가 참여",
+        "btn2": "참여 취소",
+        "tooltip": "추가 참여를 통해 참여 비중을 더 높일 수 있어요!"
+      },
+      "btn": {
+        "tooltip": {
+          "1": "WONDER의 배분 계산을 위해 24시간 이내 완료될 예정입니다.\n계산이 완료되면 Station에서 WONDER를 획득할 수 있습니다.",
+          "2": "죄송합니다.최소 모집 목표 금액 달성하지 못하여 DAO 결성이 무산되었습니다. 참여금액 환불 진행을 해주세요!"
+        },
+        "btn": {
+          "1": "Wonder 배분을 위한 계산 중",
+          "2": "환불하기"
+        }
+      },
+      "end": "{{num}} 명"
+    },
+    "reward": {
+      "title": "WONDER DAO TOKEN FLOW",
+      "desc": "WONDER DAO의 토크노믹스를 통해 지속적으로 성장하는 커뮤니티의 비전을 추구합니다.",
+      "item": {
+        "0": {
+          "name": "다오 토큰\n이니셜 세일"
+        },
+        "1": {
+          "name": "WONDER DAO\nNCP 참여 & PMR 획득",
+          "value": "(월 26,280 WEMIX)"
+        },
+        "2": {
+          "name": "다오 토큰\n바이백"
+        },
+        "3": {
+          "name": "다오 토큰\n소각"
+        },
+        "4": {
+          "name": "다오 토큰\n성장"
+        }
+      }
+    },
+    "recruit": {
+      "title": "참여정보",
+      "item": {
+        "0": {
+          "name": "모집 방식",
+          "value": "청약 방식"
+        },
+        "1": {
+          "name": "모집 토큰 단위"
+        },
+        "2": {
+          "name": "최소 참여 수량",
+          "value": "제한없음"
+        },
+        "3": {
+          "name": "최대 참여 수량",
+          "value": "제한없음"
+        },
+        "4": {
+          "name": "Wonder 발행량",
+          "value": "",
+          "sub": "(참여 비중에 따라 배분)"
+        },
+        "5": {
+          "name": "Wonder 가격"
+        }
+      },
+      "caution": {
+        "0": "참여 WEMIX 수량이 배분 받은 Wonder 수량에 상응하는 WEMIX 수량보다  많을 경우, 차액은 환불됩니다.",
+        "1": "추가 참여 및 참여 취소는 모집 기간 중에만 가능합니다.",
+        "2": "모집 정보는 추후 변경될 수 있습니다."
+      }
+    }
+  },
+  "members": {
+    "title": "WONDER DAO에 참여하여\n40 WONDERS의 일원이 되어보세요.",
+    "desc": "WONDER DAO의 멤버가 된다는 것은 40 WONDERS를 구성하는\n다양한 분야와 산업의 세계적인 리더들과 파트너가 되는 것을 의미합니다.",
+    "btn": "40 WONDERS 살펴보기"
+  },
+  "coreValue": {
+    "title1": "DAO의 핵심 가치",
+    "title2": "블록체인 생태계에서 \n진화를 선도하는 공동체",
+    "subtitle1": "투명한 룰",
+    "subdesc1-1": "투명한 On-chain Governance Program을 통해 DAO를 운영하세요!",
+    "subdesc1-2": "다양한 주제에 대한 토론, Governance Token을 사용한 투표, 블록체인에 기록되는 자금의 이동 등 DAO는 투명한 룰에 의해 운영됩니다.",
+    "subtitle2": "협력하는 관계",
+    "subdesc2-1": "시공간을 뛰어넘는 콜라보레이션으로 그동안 없었던 결과를 만들어보세요!",
+    "subdesc2-2": "다양한 관심을 가진 재능있는 인재들이 시간과 공간을 뛰어넘어 블록체인상에서 협업을 이뤄냅니다.",
+    "subtitle3": "지속가능한 성장",
+    "subdesc3-1": "DAO의 성과를 통해 지속적인 성장을 이뤄가세요!",
+    "subdesc3-2": "DAO의 성과는 투명하게 관리되어 DAO의 성장을 이뤄내고, 재투자를 통한 선순환 구조를 만듭니다."
+  },
+  "neith": {
+    "title": "NEITH Protocol이란?",
+    "desc": "NEITH Protocol의 7가지 요소를 통해 커뮤니티 구성원들은 제한 없이 다양한 방식으로 함께 일할 수 있습니다. 혁신적이고 창의적인 아이디어에 생명을 불어넣어 보세요.",
+    "btn1": "NEITH Protocol Guide 더 읽어보기",
+    "item": {
+      "0": {
+        "title": "Station",
+        "desc": "DAO의 목적을 달성하기 위해 멤버를 모집하고, DAO Token을 최초로 배분하는 곳입니다."
+      },
+      "1": {
+        "title": "Trust",
+        "desc": "DAO의 이름과 권한을 위임받아 오프체인에서 계약의 주체가 되는 곳입니다. 사업을 수행하고 관리합니다."
+      },
+      "2": {
+        "title": "Treasury",
+        "desc": "DAO의 자금이 모이고 보관되는 커뮤니티 금고입니다."
+      },
+      "3": {
+        "title": "Obelisk",
+        "desc": "DAO Token 스테이킹을 통해 Governance Token을 획득함으로써 Governance 참여를 가능하게 하는 곳입니다."
+      },
+      "4": {
+        "title": "Incinerator",
+        "desc": "매입한 DAO Token의 일부를 소각(Burn)하여, DAO Token의 가치를 높이는 곳입니다."
+      },
+      "5": {
+        "title": "Governance",
+        "desc": "보유한 Governance Token을 활용하여 DAO 운영에 관한 안건을 올리고 투표를 통해 의사결정 할 수 있는 곳입니다."
+      },
+      "6": {
+        "title": "Creator",
+        "desc": "Creator는 DAO의 성장을 위한 IP와 핵심사업을 제공합니다. NFT 사업의 경우 수익에 대한 Creator share를 배분받을 수 있습니다."
+      }
+    }
+  },
+  "type": {
+    "title1": "어떤 분야에 관심 있으신가요?",
+    "title2": "다양한 DAO 유형을 NILE에서 만나볼 수 있어요!",
+    "desc1": "DAO는 여러가지 목적으로 개설될 수 있습니다.",
+    "desc2": "다양한 가치의 DAO 유형을 둘러보세요."
+  },
+  "join": {
+    "title": "이런 DAO가 개설되었으면 좋겠어요!",
+    "desc": "개설을 원하는 DAO가 있다면 요청해주세요.",
+    "btn1": "개설 요청하기"
+  },
+  "DaoRequestModal": {
+    "title": "개설 요청하기",
+    "desc": "희망하는 DAO가 있다면 알려주세요.",
+    "form": {
+      "daoCategory": {
+        "label": "DAO 유형",
+        "placeholder": "희망하는 DAO 유형을 선택해주세요.",
+        "errorMessage": "DAO 유형을 선택해주세요."
+      },
+      "introduction": {
+        "label": "상세 요청 사항 (선택항목)",
+        "placeholder": "개설에 대한 상세한 요청사항이 있을 경우, 여기에 적어주세요. \n(DAO 유형에서 기타를 선택하셨을 경우, 상세 요청 사항을 필수로 적어주세요.)"
+      },
+      "email": {
+        "label": "이메일",
+        "placeholder": "이메일 주소를 적어주세요."
+      }
+    },
+    "btnText": "보내기"
+  },
+  "protocol": {
+    "title": "Protocol",
+    "wonderTitle": "6개의 프로토콜은 \nWONDER DAO의 운영 및 발전에 중추적인 역할을 수행합니다.",
+    "arteumTitle": "7개의 프로토콜은 \n ARTEUM DAO의 운영 및 발전에 중추적인 역할을 수행합니다.",
+    "deltaTitle": "6개의 프로토콜과 \n Delta Protocol은 DELTA DAO의 운영및 발전에 중추적인 역할을 수행합니다.",
+    "oracleTitle": "6개의 프로토콜은 \n  ORACLE DAO의 운영 및 발전에 중추적인 역할을 수행합니다."
+  },
+  "governance": {
+    "wonder": {
+      "title": "투명하고 민주적인 의사결정",
+      "desc": "WONDER DAO의 운영과 관련된 다양한 안건을 올리고 논의와 투표를 통해 의사결정을 할 수 있습니다.",
+      "tag": ["Station 재모집", "Protocol 내 배분 설정", "WEMIX3.0 지원대상 설정", "DAO Token 소각량 설정"],
+      "stepDesc": "안건의 의결은 Governance Token인 g.WONDER가 의결권으로 사용되며\nDAO 거버넌스는 세단계로 진행됩니다."
+    },
+    "arteum": {
+      "title": "투명하고 민주적인 의사결정",
+      "desc": "ARTEUM DAO의 운영과 관련된 다양한 안건을 올리고 논의와 투표를 통해 의사결정을 할 수 있습니다.",
+      "tag": ["수집할 작품 선정", "매각 여부 결정", "다양한 아트 관련 행사 기획", "DAO Token 소각량 설정"],
+      "stepDesc": "안건의 의결은 Governance Token인 g.ARTEUM이 의결권으로 사용되며\nDAO 거버넌스는 세단계로 진행됩니다."
+    },
+    "delta": {
+      "title": "투명하고 민주적인 의사결정",
+      "desc": "DELTA DAO의 운영과 관련된 다양한 안건을 올리고 논의와 투표를 통해 의사결정을 할 수 있습니다.",
+      "tag": ["운용 전략 개선", "운용방식 설정", "수익 및 리워드 분배방식 설정"],
+      "stepDesc": "안건의 의결은 Governance Token인 g.DELTA가 의결권으로 사용되며\nDAO 거버넌스는 세단계로 진행됩니다."
+    },
+    "oracle": {
+      "title": "투명하고 민주적인 의사결정",
+      "desc": "Off-chain과 On-chain을 연결하는 다양한 활동을 하며 Protocol 생태계의 성장에 기여합니다.",
+      "tag": ["테크니컬 데이터 정제 요청", "On-chain 전환 데이터 설정"],
+      "stepDesc": "안건의 의결은 Governance Token인 PARTICLE이 의결권으로 사용되며\nDAO 거버넌스는 세단계로 진행됩니다."
+    }
+  },
+  "trust": {
+    "title": "Trust",
+    "wonder": {
+      "text": "WONDER DAO의 안정적인 운영과\n투명한 의사소통 지원",
+      "descript": "WONDER DAO의 Trust는 WONDER DAO의 NCP 노드 운영을 대행하며 WEMIX3.0 Governance 안건에 WONDER DAO의 이름으로 의결권을 행사합니다. 또한 위 수행내역에 대해 WONDER DAO 대상으로 투명하게 공지하며 소통합니다."
+    },
+    "arteum": {
+      "text": "열매컴퍼니 등 미술계 전문 자문단의 지원과\n투명한 의사소통",
+      "descript": "국내 최초 미술품 공동구매 플랫폼을 성공적으로 런칭한 열매컴퍼니 등 미술계 관련 전문 자문단의 자문을 받아 수준 높은 정보를 공개하고 DAO 구성원들의 활동을 지원합니다. Trust의 수행업무, Trust 교체 등 관련한 사항 역시 DAO에 의해 결정하게 됩니다."
+    },
+    "delta": {
+      "text": "끊임없는 소통과 진보된 기술력을 통한 신뢰",
+      "descript": "DELTA 프로토콜을 구축하고 초기 전략을 설계한 팀에서 담당하며, DAO에 의해 결정된 사항들을 스마트 컨트랙트로 개발/배포하는 역할을 수행합니다. 더 나아가 새로 배포된 전략 및 신규 상품을 커뮤니티에 투명하게 안내하고 소통하는 역할을 담당합니다."
+    },
+    "oracle": {
+      "text": "함께 만들어 더 신뢰할 수 있는 운영방식",
+      "descript": "DAO의 결정에 의해 새로운 Feeder 또는 Aggregator로 참여하거나 DAO에 의해 선택된 기존 생태계 참여자에게 의결권을 대리 위임하고 획득하는 성과를 분배 받을 수 있습니다."
+    }
+  },
+  "membership": {
+    "title": "Membership",
+    "wonder": {
+      "text": "DAO Token과 Governance Token 획득을\n통해 WONDER DAO의 멤버가 되고 의사결정에 참여해보세요.",
+      "token1": {
+        "cate": "DAO Token",
+        "name": "WONDER",
+        "ticker": "WDR",
+        "descript": "WONDER Token은 Governance Token을 발행할 수 있는 Utility Token으로, WONDER를 스테이킹하여 g.WONDER Token을 획득할 수 있습니다.",
+        "feature": {
+          "p1": "발행량: 1,900,010 WDR",
+          "p2": "획득처: Station 참여 or WEMIX.Fi 스왑 이용"
+        }
+      },
+      "token2": {
+        "cate": "Governance Token",
+        "name": "g.WONDER",
+        "ticker": "g.WDR",
+        "descript": "g.WONDER는 WONDER DAO의 모든 운영사항을 결정하는 On-chain Governance에 참여할 수 있는 참여권한 Token입니다.",
+        "feature": {
+          "p1": "DAO Obelisk에서 발행 또는 소각되는 거버넌스 토큰",
+          "p2": "획득처: WONDER DAO Obelisk"
+        }
+      }
+    },
+    "arteum": {
+      "text": "DAO Token과 Governance Token 획득을 통해 ARTEUM DAO의 멤버가 되고 의사결정에 참여해보세요.",
+      "token1": {
+        "cate": "DAO Token",
+        "name": "ARTEUM",
+        "ticker": "ART",
+        "descript": "ARTEUM Token은 Governance Token을 발행할 수 있는 Utility Token으로, ARTEUM을 스테이킹하여 g.ARTEUM Token을 발행할 수 있습니다.",
+        "feature": {
+          "p1": "발행량: 미정 (추후 공지 예정입니다)",
+          "p2": "획득처: Station 참여 or WEMIX.Fi 스왑 이용"
+        }
+      },
+      "token2": {
+        "cate": "Governance Token",
+        "name": "g.ARTEUM",
+        "ticker": "g.ART",
+        "descript": "g.ARTEUM은 ARTEUM DAO의 모든 운영사항을 결정하는 On-chain Governance에 참여할 수 있는 참여권한 Token입니다.",
+        "feature": {
+          "p1": "DAO Obelisk에서 발행 또는 소각되는 거버넌스 토큰",
+          "p2": "획득처: ARTEUM DAO Obelisk"
+        }
+      }
+    },
+    "delta": {
+      "text": "DAO Token 과 Governance Token 획득을 통해 DELTA DAO의 멤버가 되고 의사결정에 참여해보세요.",
+      "token1": {
+        "cate": "DAO Token",
+        "name": "DELTA",
+        "ticker": "DELTA",
+        "descript": "DELTA는 DELTA 프로토콜의 DAO Token으로 DELTA DAO에게 최초로 판매하여 유통되며, DELTA와 연계된 Product에 기초 자산을 예치하는 경우 보상으로 분배 받게 됩니다. DELTA는 DELTA 프로토콜을 관리하기 위해 필요한 거버넌스에 활용되는 Token이며, DAO는 프로토콜의 주요 변수 값과 전략 추가 여부, 개발 방향 등을 결정합니다."
+      },
+      "token2": {
+        "cate": "Governance Token",
+        "name": "g.DELTA",
+        "ticker": "g.DELTA",
+        "descript": "g.DELTA는 DELTA 프로토콜의 전략의 개선과 운용으로 인한 수익 및 DELTA 리워드 분배 등 DAO 운영에 관한 모든 사항을 DAO가 결정하는데 사용됩니다. 초기 Governance Token은 발행되지 않으며, 추후 DAO와 Trust의 논의하에 Governance Token의 발행 시기와 구체적 활용을 안내할 예정입니다."
+      }
+    },
+    "oracle": {
+      "text": "PARTICLE Token의 획득으로 ORACLE DAO의 일원임을 증명합니다.",
+      "token1": {
+        "cate": "DAO Token",
+        "name": "PARTICLE",
+        "ticker": "PTC",
+        "descript": "PARTICLE Token은 ORACLE DAO의 일원임을 증명하는 Governance Token임과 동시에 구축한 오라클 생태계 내에서 필수로 활용되는 Utility Token입니다."
+      }
+    }
+  },
+  "profile": {
+    "wonder": {
+      "title": "WONDER DAO",
+      "subTitle": "The First, The Wonder of WONDERS",
+      "tag": {
+        "1": "WEMIX3.0",
+        "2": "Protocol",
+        "3": "Authority Node",
+        "4": "PMR"
+      },
+      "cont": {
+        "title": "WEMIX3.0 메인넷 거버넌스에 참여하기 위해 모인\n40개의 노드 중 첫번째 노드를 담당하는 커뮤니티입니다.",
+        "desc": "WEMIX 생태계의 발전과 성장에 기여함으로써 DAO는 PMR* 을 수취하고 이를 통해 지속적으로 DAO의 공동 성장을 추구합니다.",
+        "footnote": "*Permanent Minting Reward"
+      }
+    },
+    "arteum": {
+      "title": "ARTEUM DAO",
+      "subTitle": "The most influential Art Collector community",
+      "tag": {
+        "1": "Art",
+        "2": "Culture",
+        "3": "Collector"
+      },
+      "cont": {
+        "title": "ARTEUM DAO는 Token을 매개로 공동의 아트 컬렉팅 길드를  모집해 다양한 작품을 수집하고 갤러리 운영, 문화 사업 등 무한한 가능성을 실현합니다.",
+        "desc": "개인의 접근이 어려운 미술작품 수집, 신진작가 발굴 등을 통한 미술계 활성화 기여, 수집 작품 기반의 다양한 활동을 지원합니다. ",
+        "footnote": ""
+      }
+    },
+    "delta": {
+      "title": "DELTA DAO",
+      "subTitle": "Onchain Asset Management Protocol",
+      "tag": {
+        "1": "Asset",
+        "2": "DeFi",
+        "3": "Transparency",
+        "4": "Stability"
+      },
+      "cont": {
+        "title": "DELTA DAO는 WEMIX3.0 기반의 자동화된 자산 운용 프로토콜을 운영하는 DAO 입니다.",
+        "desc": "DELTA DAO는 프로토콜의 중추적인 파라미터와 전략의 방향성을 Trust와 함께 운영하며, 새로운 아이디어로 WEMIX3.0 기반의 DeFi 생태계를 발전시킵니다.",
+        "footnote": ""
+      }
+    },
+    "oracle": {
+      "title": "ORACLE DAO",
+      "subTitle": "Linking Blockchain with the real-world through Zero-Knowledge Proof",
+      "tag": {
+        "1": "Data",
+        "2": "Zero-Knowledge Proof",
+        "3": "Feeder",
+        "4": "Aggregator"
+      },
+      "cont": {
+        "title": "ORACLE DAO는 현실 세계의 데이터를 정제해 온체인 상으로 연결시켜주는 DAO입니다.",
+        "desc": "현실 세계(Off-chain)의 많은 데이터들을 정제해 순도 높은 데이터들을 사용자들에게 실시간으로 제공하고자 합니다. ORACLE에서 제공하는 데이터는 다양한 금융상품을 개발하는데 활용되어 WEMIX3.0 생태계를 더욱 풍성하게 만드는데 기여합니다.",
+        "footnote": ""
+      }
+    }
+  },
+  "social": {
+    "btn1": "Discord",
+    "btn2": "PAPYRUS",
+    "blank": "새창 열림",
+    "prepareService": "서비스 준비 중입니다.",
+    "title": "지금 {{type}} DAO와 관련된 이야기를 나눌 수 있어요!",
+    "desc": "Discord 채널은 DAO에 관심있는 누구나 입장할 수 있는 공간으로 별도의 관리자가 존재하지 않습니다. \nDAO가 개설된 이후에는 Token 기반의 메신저 PAPYRUS에서 \nDAO 멤버들의 커뮤니티를 이어갈 예정입니다.",
+    "wonder": {
+      "list": {
+        "0": "WEMIX3.0 생태계에 참여할 수 있어서 너무 좋아요!",
+        "1": "새로 합류될 40 WONDERS는 누구일까요?",
+        "2": "투명하게 운영될 \nWONDER DAO에 대한 기대가 큽니다.",
+        "3": "g.WONDER가 있어야\n투표에 참여할 수 있겠죠?",
+        "4": "NILE에서의 첫번째 DAO 너무 기대됩니다! "
+      }
+    },
+    "arteum": {
+      "list": {
+        "0": "위메이드가 그리는 예술 생태계를 응원합니다!",
+        "1": "아트 시장의 최신 정보가 궁금해요.",
+        "2": "전문적인 기술이 적용된 아트 생태계는\n처음 들어봐서 기대가 돼요~ ",
+        "3": "ARTEUM DAO의\n멤버가 되고싶어요.",
+        "4": "미술작품 콜렉팅 DAO라니 새로워요!"
+      }
+    },
+    "delta": {
+      "list": {
+        "0": "안정성, 투명성, 편리성을 모두 보장해주니 매력적이에요!",
+        "1": "DeFi DAO를 기다리고 있었어요.",
+        "2": "DELTA DAO의 운용 전략이 궁금해요!\n얼른 모집 시작했으면 좋겠어요!",
+        "3": "얼른 Governance Token부터\n획득해야할 것 같아요.",
+        "4": "신뢰가 가요! 꼭 참여해보고 싶습니다!"
+      }
+    },
+    "oracle": {
+      "list": {
+        "0": "데이터를 활용하는 DAO라니 신기해요.",
+        "1": "DAO 오픈이 너무 기대됩니다! ",
+        "2": "프로토콜을 확인해보니\n더욱 더 참여하고 싶은 DAO로 느껴져요.",
+        "3": "얼른 Governance Token부터\n획득해야할 것 같아요.",
+        "4": "Oracle DAO의 멤버가 되고싶어요."
+      }
+    }
+  },
+  "oracleShowcase": {
+    "purpose": {
+      "title": "Purpose",
+      "subTitle": "실제 세상과 블록체인의 연결",
+      "subInfo": "블록체인의 고질적인 한계인 폐쇄성을 해소하기 위해, 실제 세상(Off-chain)과 블록체인을 연결하고 다양하게 활용할 수 있는 기반을 만들어갑니다.",
+      "infoList": {
+        "1": {
+          "title": "원하는 Off-chain 데이터를\nOn-chain으로 연결",
+          "info": "Off-chain에서 생성되는 다양한 데이터를 On-chain에 연결하여 거래, 대출, 대여 등에 활용할 수 있습니다."
+        },
+        "2": {
+          "title": "On-chain에서도 사용하는\n다양한 테크니컬 데이터",
+          "info": "정제자에게 On-chain에 저장된 가격 데이터를 M/A, RSI, VWAP, TWAP 등 테크니컬 데이터로 정제를 요청할 수 있습니다. On-chain에서도 다양한 테크니컬 데이터를 참고하여 투자할 수 있습니다."
+        }
+      },
+      "comment": ""
+    }
+  },
+  "wonderShowcase": {
+    "purpose": {
+      "title": "Purpose",
+      "subTitle": "WEMIX3.0 메인넷 운영의 40개의 권한, \n그 중심에 서다",
+      "subInfo": "40 WONDERS*의 일원으로서 민주적이고 투명한 운영을 통해 WEMIX 메가 에코 시스템의 지속적인 발전과 성장을 목표로 합니다.",
+      "infoList": {
+        "1": {
+          "title": "메인넷 운영과 관련된 \n다양한 의사결정 참여 가능",
+          "info": "NCP의 권한으로 WEMIX 메가 에코 시스템에서 발생하는 다양한 의사결정에 참여할 수 있습니다."
+        },
+        "2": {
+          "title": "DAO 운영을 통한 DAO Token의 \n지속적인 성장에 기여",
+          "info": "민주적이고 투명한 운영을 통해 \nDAO Token의 성장에 기여합니다."
+        }
+      },
+      "comment": "*WEMIX3.0 메인넷의 축을 구성하는 40개의 NCP(Node Council Partner)"
+    }
+  },
+  "deltaShowcase": {
+    "purpose": {
+      "title": "Purpose",
+      "subTitle": "간편하고 안정적으로 구축하는\n 온체인 금융 포트폴리오",
+      "subInfo": "간편하게 자산을 맡기고 안정적으로 수익실현이 가능한 자산 운용 프로토콜 서비스를 제공하여 ‘DeFi’ 가 어렵고 복잡한 서비스라는 선입견을 해소하고자 합니다.",
+      "infoList": {
+        "1": {
+          "title": "간편한 온체인 투자",
+          "info": "DELTA 프로토콜에 자산을 맡기면 전략 알고리즘에 따라 여러 블록체인으로 자산이 분산되고 엄선된 DeFi 프로토콜에 자동으로 투자할 수 있습니다."
+        },
+        "2": {
+          "title": "안정적인 온체인 투자",
+          "info": "DELTA 프로토콜의 초기 전략은 시장 변동성에 대한 영향을 최소화하고 안정적 수익 창출이 가능한 DELTA 중립을 활용하여 안정적이고 지속적인 수익실현을 지향합니다."
+        }
+      },
+      "comment": ""
+    }
+  },
+  "arteumShowcase": {
+    "purpose": {
+      "title": "Purpose",
+      "subTitle": "예술 컬렉팅 문화의 새로운 패러다임",
+      "subInfo": "미술품 수집, 갤러리 운영, 신진작가 발굴 등 다양한 활동을 통해 예술 시장의 새로운 문화 공동체를 형성합니다.",
+      "infoList": {
+        "1": {
+          "title": "새로운 아트 컬렉팅 시스템 정의",
+          "info": "전문가의 자문과 적정 가격 추정 AI를 통한 작품 추천으로 작품의 매입, 매각, 보관 등 주요 의사결정에 참여합니다."
+        },
+        "2": {
+          "title": "예술 문화 공동체 형성",
+          "info": "다양한 문화 예술 활동을 통해 진정한 컬렉터로서의 가치를 창출하고 미술시장 활성화에 기여합니다."
+        }
+      },
+      "comment": ""
+    }
+  },
+  "daoMarquee": "새로운 Art-Ecosystem을 경험하고 꿈꾸던 예술작품 컬렉팅을 실현하세요."
+}

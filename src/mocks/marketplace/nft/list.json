@@ -1,0 +1,199 @@
+[
+  {
+    "id": "tangled-collection",
+    "slug": "Tangled",
+    "name": "Tangled",
+    "status": "NONE",
+    "baseUri": "",
+    "createdAt": "2022-11-22T10:17:14.9055",
+    "updatedAt": "2023-01-06T01:44:18.158992",
+    "registeredAt": "2023-01-06T01:44:18.158992",
+    "ownerName": "Tangled",
+    "imageUrl": "https://nile.blob.core.windows.net/images/images/bg_market_collection_tangled.png",
+    "bannerImageUrl": "https://nile.blob.core.windows.net/images/images/bg_market_collection_tangled.png",
+    "featuredImageUrl": "https://nile.blob.core.windows.net/images/images/bg_market_collection_tangled.png",
+    "logoImageUrl": "https://nile.blob.core.windows.net/images/temp/@temp_alarm_Tangled.png",
+    "address": "0x0",
+    "ownerAddress": "0x0",
+    "profile": {
+      "address": "0x0",
+      "id": "1",
+      "createdAt": "2022-11-17T08:25:16.052+00:00",
+      "updatedAt": "2022-11-28T06:21:47.667+00:00",
+      "nickname": "Tangled",
+      "nonce": 42069,
+      "themeIndex": 4,
+      "snsLinks": []
+    },
+    "tokens": [
+      {
+        "id": "tangled-token-1",
+        "createdAt": "2022-11-22T10:20:14.81843",
+        "updatedAt": "2023-01-04T12:14:45.936934",
+        "mintedAt": "",
+        "collectionId": "1",
+        "collectionAddress": "0x0",
+        "name": "Tangled Timepiece Luxury 79",
+        "description": "",
+        "image": "https://nile.blob.core.windows.net/images/temp/@temp_collection_tangled_79.png",
+        "imageUrl": "https://nile.blob.core.windows.net/images/temp/@temp_collection_tangled_79.png",
+        "tokenId": "1",
+        "ownerAddress": "0x0",
+        "viewCount": 119,
+        "likeCount": 0,
+        "collection": {
+          "id": "1",
+          "slug": "Tangled",
+          "name": "Tangled",
+          "status": "NONE",
+          "baseUri": "",
+          "createdAt": "2022-11-22T10:17:14.9055",
+          "updatedAt": "2023-01-06T01:44:18.158992",
+          "registeredAt": "2023-01-06T01:44:18.158992",
+          "ownerName": "Tangled",
+          "imageUrl": "/img/bg_market_collection_tangled.png",
+          "bannerImageUrl": "/img/bg_market_collection_tangled.png",
+          "featuredImageUrl": "/img/bg_market_collection_tangled.png",
+          "logoImageUrl": "/img/bg_market_collection_tangled.png",
+          "address": "0x0",
+          "ownerAddress": "0x0",
+          "profile": {
+            "address": "0x0",
+            "id": "1",
+            "createdAt": "2022-11-17T08:25:16.052+00:00",
+            "updatedAt": "2022-11-28T06:21:47.667+00:00",
+            "nickname": "Tangled",
+            "nonce": 42069,
+            "themeIndex": 4,
+            "snsLinks": []
+          }
+        },
+        "price": "200000000000000000000",
+        "payment": "0x8E81fCc2d4A3bAa0eE9044E0D7E36F59C9BbA9c1",
+        "orderList": [
+          {
+            "id": "1",
+            "tokenId": 1,
+            "payment": "0x8E81fCc2d4A3bAa0eE9044E0D7E36F59C9BbA9c1",
+            "type": "FIXED_PRICE",
+            "price": "200000000000000000000",
+            "status": "NONE",
+            "startAt": "2023-03-01"
+          }
+        ]
+      },
+      {
+        "id": "tangled-token-2",
+        "createdAt": "2022-11-22T10:20:14.81843",
+        "updatedAt": "2023-01-04T12:14:45.936934",
+        "mintedAt": "",
+        "collectionId": "1",
+        "collectionAddress": "0x0",
+        "name": "Tangled Timepiece Luxury 80",
+        "description": "",
+        "image": "https://nile.blob.core.windows.net/images/temp/@temp_collection_tangled_80.png",
+        "imageUrl": "https://nile.blob.core.windows.net/images/temp/@temp_collection_tangled_80.png",
+        "tokenId": "1",
+        "ownerAddress": "0x0",
+        "viewCount": 119,
+        "likeCount": 0,
+        "collection": {
+          "id": "1",
+          "slug": "Tangled",
+          "name": "Tangled",
+          "status": "NONE",
+          "baseUri": "",
+          "createdAt": "2022-11-22T10:17:14.9055",
+          "updatedAt": "2023-01-06T01:44:18.158992",
+          "registeredAt": "2023-01-06T01:44:18.158992",
+          "ownerName": "Tangled",
+          "imageUrl": "/img/bg_market_collection_tangled.png",
+          "bannerImageUrl": "/img/bg_market_collection_tangled.png",
+          "featuredImageUrl": "/img/bg_market_collection_tangled.png",
+          "logoImageUrl": "/img/bg_market_collection_tangled.png",
+          "address": "0x0",
+          "ownerAddress": "0x0",
+          "profile": {
+            "address": "0x0",
+            "id": "1",
+            "createdAt": "2022-11-17T08:25:16.052+00:00",
+            "updatedAt": "2022-11-28T06:21:47.667+00:00",
+            "nickname": "Tangled",
+            "nonce": 42069,
+            "themeIndex": 4,
+            "snsLinks": []
+          }
+        },
+        "price": "200000000000000000000",
+        "payment": "0x8E81fCc2d4A3bAa0eE9044E0D7E36F59C9BbA9c1",
+        "orderList": [
+          {
+            "id": "1",
+            "tokenId": 1,
+            "payment": "0x8E81fCc2d4A3bAa0eE9044E0D7E36F59C9BbA9c1",
+            "type": "FIXED_PRICE",
+            "price": "200000000000000000000",
+            "status": "NONE",
+            "startAt": "2023-03-01"
+          }
+        ]
+      },
+      {
+        "id": "tangled-token-3",
+        "createdAt": "2022-11-22T10:20:14.81843",
+        "updatedAt": "2023-01-04T12:14:45.936934",
+        "mintedAt": "",
+        "collectionId": "1",
+        "collectionAddress": "0x0",
+        "name": "Tangled Timepiece Luxury 167",
+        "description": "",
+        "image": "https://nile.blob.core.windows.net/images/temp/@temp_collection_tangled_167.png",
+        "imageUrl": "https://nile.blob.core.windows.net/images/temp/@temp_collection_tangled_167.png",
+        "tokenId": "1",
+        "ownerAddress": "0x0",
+        "viewCount": 119,
+        "likeCount": 0,
+        "collection": {
+          "id": "1",
+          "slug": "Tangled",
+          "name": "Tangled",
+          "status": "NONE",
+          "baseUri": "",
+          "createdAt": "2022-11-22T10:17:14.9055",
+          "updatedAt": "2023-01-06T01:44:18.158992",
+          "registeredAt": "2023-01-06T01:44:18.158992",
+          "ownerName": "Tangled",
+          "imageUrl": "/img/bg_market_collection_tangled.png",
+          "bannerImageUrl": "/img/bg_market_collection_tangled.png",
+          "featuredImageUrl": "/img/bg_market_collection_tangled.png",
+          "logoImageUrl": "/img/bg_market_collection_tangled.png",
+          "address": "0x0",
+          "ownerAddress": "0x0",
+          "profile": {
+            "address": "0x0",
+            "id": "1",
+            "createdAt": "2022-11-17T08:25:16.052+00:00",
+            "updatedAt": "2022-11-28T06:21:47.667+00:00",
+            "nickname": "Tangled",
+            "nonce": 42069,
+            "themeIndex": 4,
+            "snsLinks": []
+          }
+        },
+        "price": "200000000000000000000",
+        "payment": "0x8E81fCc2d4A3bAa0eE9044E0D7E36F59C9BbA9c1",
+        "orderList": [
+          {
+            "id": "1",
+            "tokenId": 1,
+            "payment": "0x8E81fCc2d4A3bAa0eE9044E0D7E36F59C9BbA9c1",
+            "type": "FIXED_PRICE",
+            "price": "200000000000000000000",
+            "status": "NONE",
+            "startAt": "2023-03-01"
+          }
+        ]
+      }
+    ]
+  }
+]

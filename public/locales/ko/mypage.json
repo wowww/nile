@@ -1,0 +1,184 @@
+{
+  "a11y": {
+    "settingProfile": "프로필 설정",
+    "gotoSetting": "setting 화면으로 이동",
+    "copyWallerAdd": "지갑 주소 복사"
+  },
+  "tooltip": {
+    "totalAsset": "Total Balance of DAO와 My NFT Price를 합산한 금액입니다.",
+    "includedDAO": "참여 중인 모든 DAO에서 보유하고 있는 DAO Token과 Governance Token을 WEMIX$로 환산하여 합산한 금액입니다.",
+    "nftPrice": "내가 구매한 NFT가격을 WEMIX$로 환산하여 합산한 금액입니다."
+  },
+  "toast": {
+    "walletCopy": "지갑 주소가 복사되었습니다."
+  },
+  "filters": "필터",
+  "empty": {
+    "ownedNft": "보유한 NFT가 없습니다.",
+    "biddedNft": "응찰한 NFT가 없습니다.",
+    "nft": "컬렉션 NFT가 없습니다.\nMarketplace에서 다양한 NFT를 만나보세요!",
+    "favorites": "‘좋아요’한 NFT가 없습니다.\nMarketplace에서 다양한 NFT를 만나보세요!",
+    "activity": "활동한 내역이 없습니다.",
+    "results": "조건을 만족하는 결과가 없습니다.",
+    "searchDefault": "검색 결과가 없습니다.",
+    "search": "에 해당하는 검색 결과가 없습니다.",
+    "nftAlbum": "컬렉션 NFT가 없습니다.\nMarketplace에서 다양한 NFT를 만나보세요!",
+    "dao": "참여하고 있는 DAO가 없습니다."
+  },
+  "statusFilter": {
+    "upcoming": "오픈 예정",
+    "closed": "종료",
+    "openForOffers": "제안받기",
+    "onAuction": "응찰 중",
+    "buyNow": "지금 구매하기",
+    "notForSale": "미판매",
+    "sales": "거래",
+    "listings": "판매등록",
+    "offers": "제안",
+    "bidings": "응찰",
+    "checkout": "수령",
+    "transfers": "소유자 이전",
+    "minted": "민팅"
+  },
+  "NFTAlbum": "컬렉션 수집 현황",
+  "album": {
+    "title": "NFT 컬렉션 수집 현황",
+    "subTitle": "전체 컬렉션 중 내가 소유한 NFT 개수를 확인할 수 있어요."
+  },
+  "search": "컬렉션명 검색",
+  "table": "환불받기",
+  "profileSetting": {
+    "title": "프로필 설정",
+    "desc": "보유한 NFT를 프로필 사진으로 설정 가능합니다.",
+    "userName": "사용자명",
+    "userNamePlaceholder": "사용자명을 입력해 주세요.",
+    "userNameValidCorrect": "사용 가능한 이름 입니다.",
+    "userNameValidNotAllowed": "공백 및 특수문자 입력이 불가합니다.",
+    "userNameValidCount": "유효하지 않은 닉네임입니다.",
+    "userNameValidAlreadyUse": "이미 사용중인 이름 입니다.",
+    "useNameGuide": "공백 및 특수문자 입력이 불가합니다.",
+    "userNameHelper": "한글/영문 대소문자/숫자(공백/특수문자 입력 불가)를 사용. 한글 2-4글자, 영문 4-16글자 사이로 입력. 중복명 사용 불가",
+    "userNameDesc": "이용약관에 따라 부적절한 사용자명의 경우 불이익을 받을 수 있습니다. \n서비스 이용 과정에서 지갑 주소와 함께 공개될 수 있습니다. 자세한 사항은 <0>개인정보 보호정책</0>을 참고해 주세요.",
+    "about": "소개",
+    "aboutPlaceholder": "소개글을 입력해 주세요.",
+    "social": "소셜 계정 연결",
+    "socialDesc": "소셜 계정을 연결하여 본인 계정임을 확인해 주세요.",
+    "socialButton": "연결",
+    "disconnectSocial": "소셜 계정 연결 해제",
+    "link": "링크",
+    "linkPlaceholder": "웹사이트 URL을 입력해 주세요.",
+    "asset": "Asset 공개 범위",
+    "public": "전체공개",
+    "onlyMe": "나만보기",
+    "cancel": "취소하기 ",
+    "save": "저장하기",
+    "confirmCancel": "입력 취소 확인",
+    "confirmCancelDesc": "프로필 입력을 취소하시겠습니까?\n취소 시 변경사항은 저장되지 않습니다.",
+    "close": "닫기",
+    "yesClose": "예, 취소합니다."
+  },
+  "pfp": {
+    "title": "프로필 사진 선택",
+    "default": "기본 프로필 설정",
+    "cancel": "취소하기",
+    "apply": "적용하기",
+    "empty1": "소유하고 있는 NFT가 없습니다. \nMarketplace에서 다양한 NFT를 만나보세요!",
+    "empty2": "Marketplace 바로가기",
+    "profile": "프로필",
+    "recent": "최근 추가된"
+  },
+  "nftCollectionStatus": {
+    "title": "NFT 컬렉션 수집 현황",
+    "desc": "전체 컬렉션 중 내가 소유한 NFT 개수를 확인할 수 있어요."
+  },
+  "daoHistory": {
+    "title": "히스토리",
+    "failMessage": "모집에 실패한 DAO Station 유지기간 종료 시, My Page에서 자동으로 삭제됩니다.",
+    "recruiting": "{{name}} DAO에 가입했습니다. (모집 중 : {{percent}})%",
+    "balanceAmount": "{{wonder}}와 {{Gwonder}}를 달러로 환산한 금액입니다."
+  },
+  "daoOperate": {
+    "tab": {
+      "1": "Token 사용 이력",
+      "2": "Proposal 참여 이력",
+      "3": "Discussion 참여 이력",
+      "4": "히스토리"
+    },
+    "table": {
+      "1": "구분",
+      "2": "획득 토큰수",
+      "3": "교환비율",
+      "4": "보유토큰",
+      "5": "날짜"
+    },
+    "history": {
+      "1": "Station 모집에 성공했습니다.",
+      "2": "WONDER DAO에 가입했습니다.",
+      "3": "모든 DAO Token을 인출하여 DAO 운영 권한이 없습니다.",
+      "4": "WEMIX Fi에서 DAO Token을 구매해 WONDER DAO에 가입했습니다."
+    }
+  },
+  "sorting": {
+    "1": "최근 활성화",
+    "2": "마감순",
+    "3": "최신순",
+    "4": "오래된순",
+    "5": "가격 높은 순",
+    "6": "가격 낮은 순"
+  },
+  "withdrawal": {
+    "link": "서비스 탈퇴하기",
+    "title": "NILE 서비스 탈퇴",
+    "h2-1": "탈퇴 계정",
+    "h2-2": "탈퇴 안내",
+    "announce": {
+      "desc": "회원 탈퇴 시 아래 주의사항을 읽어 보시고 진행해 주시기 바랍니다.",
+      "list": {
+        "1": "회원 탈퇴 안내",
+        "1-1": "회원탈퇴 시, 개인정보 및 NILE 서비스 이용 시 자동으로 생성된 모든 데이터는 삭제됩니다.",
+        "2": "주의사항",
+        "2-1": "Token 및 NFT 보유 여부와 상관없이 탈퇴가 가능합니다.",
+        "2-2": "월렛에 저장된 Token 및 NFT는 탈퇴 후에도 소멸되지 않으며, 월렛에서 확인이 가능합니다.",
+        "2-3": "탈퇴 시, 연동된 월렛은 자동으로 연동 해제됩니다.",
+        "2-4": "모든 회원 정보는 탈퇴 시 삭제되며, 복구가 불가합니다.",
+        "2-5": "포럼 내, 작성 게시물은 탈퇴하더라도 자동으로 삭제되지 않으며, 사용자를 식별할 수 없도록 처리됩니다."
+      }
+    },
+    "check": "해당 내용을 모두 확인하였으며, 회원 탈퇴에 동의합니다.",
+    "cancel": "탈퇴 취소하기",
+    "next": "다음 단계",
+    "confirmText": {
+      "title": "탈퇴 확인 문구 입력",
+      "desc": "회원 탈퇴에 동의하시면 아래에 확인 문구 ‘DELETE’를 직접 입력해 주세요.",
+      "placeholder": "‘DELETE’ 입력",
+      "error": "탈퇴 문구를 정확히 입력해 주세요."
+    },
+    "walletModal": "WEMIX Wallet 앱에서\n서명 및 인증 진행 시 탈퇴가 완료됩니다.",
+    "metamaskModal": "Wallet에서 서명 및 인증 진행 시\n탈퇴가 완료됩니다.",
+    "waiting": "입력 대기 중",
+    "failModal": {
+      "title": "비밀번호 입력 실패",
+      "desc": "비밀번호 입력에 실패했습니다."
+    },
+    "ongoing": "탈퇴를 진행중입니다. \n잠시만 기다려주세요.",
+    "success": {
+      "title": "탈퇴가 완료되었습니다.",
+      "desc": "지금까지 NILE을 이용해 주셔서 감사합니다.",
+      "btn": "NILE Home으로 바로가기"
+    }
+  },
+  "activity": {
+    "type": {
+      "FIXED_PRICE_COMPLETE": "거래",
+      "FIXED_PRICE_CANCEL": "판매등록 취소",
+      "AUCTION_REGISTERED": "판매등록",
+      "AUCTION_BID_CLOSE": "환불",
+      "FIXED_PRICE_REGISTERED": "판매등록",
+      "OPEN_PRICE_OPEN": "제안",
+      "AUCTION_BID": "응찰",
+      "AUCTION_CLAIM": "수령",
+      "TRANSFER": "소유자 이전",
+      "MINT": "민팅"
+    }
+  }
+}
